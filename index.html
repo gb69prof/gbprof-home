@@ -1,25 +1,40 @@
 <!doctype html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07121d">
-  <meta name="description" content="gbprof — porta d'ingresso ai percorsi didattici, strumenti digitali, laboratori e progetti.">
-  <title>gbprof — Laboratorio didattico digitale</title>
-  <link rel="stylesheet" href="assets/style.css">
-<style>.gbprof-legal-band{position:relative;z-index:2;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.35rem 1rem;width:100%;margin:0;padding:.7rem 1rem calc(.7rem + env(safe-area-inset-bottom));box-sizing:border-box;color:#f5f5f5;background:#172431;border-top:1px solid #52616d;font:500 .9rem/1.45 system-ui,sans-serif}.gbprof-legal-band a{display:inline-flex;align-items:center;min-height:44px;color:#fff!important;text-decoration:underline;text-underline-offset:.2em}.gbprof-legal-band a:focus-visible{outline:3px solid #ffbf47;outline-offset:3px}@media print{.gbprof-legal-band{display:none}}</style>
-<style>.project-group{padding-top:2rem;scroll-margin-top:6rem}.project-group+.project-group{margin-top:2rem}.project-group>.section-head h3{font:500 clamp(1.7rem,4vw,2.4rem)/1.2 Georgia,serif;margin:0}.project h4{font:500 1.55rem/1.2 Georgia,serif;margin:18px 0 9px}.architecture p{color:var(--muted);line-height:1.6}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.door{transition:none}}a:focus-visible{outline:3px solid #ffbf47;outline-offset:3px}</style>
-</head>
-<body>
-<a class="skip" href="#contenuto">Vai al contenuto</a>
-<header class="topbar"><div class="wrap topbar-inner"><a class="brand" href="#top" aria-label="gbprof home"><span class="brand-mark">g</span><span><strong>gbprof</strong><small>laboratorio digitale</small></span></a><nav class="nav" aria-label="Navigazione principale"><a href="#porte">Porte</a><a href="#progetti">Progetti</a><a href="#architettura">Architettura</a></nav></div></header>
-<main id="contenuto">
-<section class="hero" id="top"><div class="hero-media"><img src="assets/gbprof-cover.webp" alt="Un portale tra libri, storia, filosofia, intelligenza artificiale e ambienti digitali"><div class="hero-shade"></div></div><div class="wrap hero-content"><div class="eyebrow">Porta d'ingresso</div><h1>gbprof</h1><p>Un unico accesso a lezioni, percorsi, strumenti, laboratori e sperimentazioni. I progetti restano autonomi; qui diventano un ecosistema.</p><div class="hero-actions"><a class="btn primary" href="#porte">Entra nel laboratorio →</a><a class="btn" href="#progetti">Esplora i progetti</a></div></div></section>
-<section class="section" id="porte"><div class="wrap"><div class="section-head"><h2>Quattro porte</h2><p>Non una collezione di cartelle, ma una mappa. Ogni area raccoglie progetti diversi senza confonderne struttura e identità.</p></div><div class="doors"><a class="door" href="#didattica"><div class="num">01</div><span>↗</span><h3>Didattica</h3><p>Dal I al V anno, filosofia, competenze e percorsi disciplinari.</p></a><a class="door" href="#strumenti"><div class="num">02</div><span>↗</span><h3>Strumenti</h3><p>PWA e utility per studiare, organizzare, annotare, collegare e presentare.</p></a><a class="door" href="#laboratorio"><div class="num">03</div><span>↗</span><h3>Laboratorio</h3><p>Arte, storia dello sguardo, immagini e sperimentazione digitale.</p></a><a class="door" href="#archivio"><div class="num">04</div><span>↗</span><h3>Archivio</h3><p>Conversazioni con Libera: dialoghi filosofici, didattici e civili.</p></a></div></div></section>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#080e13"><meta name="description" content="gbprof — laboratorio didattico digitale. Lezioni, strumenti, spazi e conversazioni: tra l'uomo e la macchina c'è il dialogo.">
+<title>gbprof — Laboratorio didattico digitale</title>
+<link rel="preload" as="image" href="assets/dialogo.webp"><link rel="stylesheet" href="assets/style.css"><script src="assets/home.js" defer></script>
+</head><body>
+<a class="skip" href="#contenuto">Vai al contenuto</a><main id="contenuto"><section class="hero" id="top" aria-labelledby="hero-title">
+ <header class="masthead"><a href="#top" class="brand" aria-label="gbprof home">gbprof<span>laboratorio didattico digitale</span></a></header>
+ <div class="scene" role="img" aria-label="gbprof, tra libri e legno, tocca un tablet. Di fronte a lui Libera, una presenza di luce blu e connessioni: il dialogo unisce i due mondi.">
+ <svg class="scene-art" viewBox="0 0 1402 1122" aria-hidden="true" focusable="false">
+ <defs>
+ <radialGradient id="contact-glow"><stop stop-color="#fff5d8" stop-opacity=".85"/><stop offset=".25" stop-color="#efc67d" stop-opacity=".4"/><stop offset="1" stop-color="#70d7ff" stop-opacity="0"/></radialGradient>
+ <radialGradient id="libera-light"><stop stop-color="#89daff" stop-opacity=".20"/><stop offset="1" stop-color="#38aeff" stop-opacity="0"/></radialGradient>
+ <filter id="finger-warp" x="480" y="718" width="148" height="150" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+ <feImage href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221402%22%20height%3D%221122%22%3E%3Cdefs%3E%3CradialGradient%20id%3D%22g%22%3E%3Cstop%20stop-color%3D%22rgb%28128%2C245%2C128%29%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22rgb%28128%2C128%2C128%29%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3Cpath%20fill%3D%22rgb%28128%2C128%2C128%29%22%20d%3D%22M0%200h1402v1122H0z%22%2F%3E%3Cellipse%20cx%3D%22558%22%20cy%3D%22791%22%20rx%3D%2265%22%20ry%3D%2262%22%20fill%3D%22url%28%23g%29%22%2F%3E%3C%2Fsvg%3E" x="0" y="0" width="1402" height="1122" result="displacement"/>
+ <feDisplacementMap in="SourceGraphic" in2="displacement" scale="0" xChannelSelector="R" yChannelSelector="G"><animate id="finger-motion" attributeName="scale" values="0;0;-5;0;0" keyTimes="0;.05;.11;.18;1" dur="18s" repeatCount="indefinite" begin="indefinite"/></feDisplacementMap>
+ </filter>
+ </defs>
+ <image href="assets/dialogo.webp" width="1402" height="1122"/>
+ <image class="finger-layer" href="assets/dialogo.webp" width="1402" height="1122" filter="url(#finger-warp)"/>
+ <g class="contact"><ellipse cx="585" cy="829" rx="95" ry="47" fill="url(#contact-glow)"/><ellipse class="ripple" cx="585" cy="829" rx="25" ry="12" fill="none" stroke="#f6d49c" stroke-width="1.4"/></g>
+ <path class="dialogue-thread" d="M585 829 C700 755 724 723 792 651 S870 549 922 409" fill="none" stroke="#a9e1f7" stroke-width="1" stroke-dasharray="2 13"/>
+ <g class="thought" style="--delay:0.0s;--dx:310px;--dy:-190px"><text class="human-word" x="585" y="818">testo</text><text class="data-word" x="585" y="818">t : 01</text><circle class="data-node" cx="585" cy="812" r="3"/></g><g class="thought" style="--delay:0.26s;--dx:331px;--dy:-252px"><text class="human-word" x="585" y="818">storia</text><text class="data-word" x="585" y="818">s → 10</text><circle class="data-node" cx="585" cy="812" r="3"/></g><g class="thought" style="--delay:0.52s;--dx:352px;--dy:-314px"><text class="human-word" x="585" y="818">contesto</text><text class="data-word" x="585" y="818">{ c }</text><circle class="data-node" cx="585" cy="812" r="3"/></g><g class="thought" style="--delay:0.78s;--dx:373px;--dy:-376px"><text class="human-word" x="585" y="818">domanda</text><text class="data-word" x="585" y="818">? : 01</text><circle class="data-node" cx="585" cy="812" r="3"/></g><g class="thought" style="--delay:1.04s;--dx:394px;--dy:-438px"><text class="human-word" x="585" y="818">idea</text><text class="data-word" x="585" y="818">i → ●</text><circle class="data-node" cx="585" cy="812" r="3"/></g>
+ <g class="libera-response"><ellipse cx="1040" cy="446" rx="270" ry="360" fill="url(#libera-light)"/><g fill="none" stroke="#80cefa" stroke-width="1.2"><path d="M895 307L943 253 1010 280 1069 236 1145 294 1092 345 1010 280 989 361 943 253M1069 236L1092 345 1163 406 1116 495 1049 434 989 361 942 400M1116 495L1135 611 1227 657 1182 746 1093 687 1046 574 1116 495"/></g><g fill="#c1efff"><circle cx="895" cy="307" r="3"/><circle cx="943" cy="253" r="3"/><circle cx="1010" cy="280" r="3"/><circle cx="1069" cy="236" r="3"/><circle cx="1145" cy="294" r="3"/><circle cx="1092" cy="345" r="3"/><circle cx="989" cy="361" r="3"/><circle cx="1163" cy="406" r="3"/><circle cx="1116" cy="495" r="3"/><circle cx="1135" cy="611" r="3"/><circle cx="1227" cy="657" r="3"/><circle cx="1182" cy="746" r="3"/><circle cx="1093" cy="687" r="3"/></g></g>
+ </svg></div>
+ <div class="hero-veil" aria-hidden="true"></div>
+ <h1 id="hero-title">Tra l’uomo e la macchina<br>c’è <em>il dialogo.</em></h1>
+ <a class="explore" href="#porte">ESPLORA <span aria-hidden="true">↓</span></a>
+ </section>
+<section id="porte" class="worlds" aria-labelledby="worlds-title"><div class="worlds-heading wrap"><div><span class="eyebrow">UN LABORATORIO, QUATTRO MONDI</span><h2 id="worlds-title">Ogni porta, un inizio.</h2></div><button class="motion-toggle" type="button" aria-pressed="false" hidden>Animazione: attiva</button></div><div class="portals"><a class="portal portal-lezioni" href="#didattica"><img src="assets/porta-lezioni.svg" alt="" loading="lazy" width="600" height="800"><span class="portal-number">01 /</span><div class="portal-copy"><span class="portal-note">Le idee abitano qui.</span><h3>LEZIONI</h3><p>Letteratura, storia, filosofia.</p><span class="portal-enter">ENTRA <span aria-hidden="true">↗</span></span></div></a><a class="portal portal-strumenti" href="#strumenti"><img src="assets/porta-strumenti.svg" alt="" loading="lazy" width="600" height="800"><span class="portal-number">02 /</span><div class="portal-copy"><span class="portal-note">Il pensiero prende forma.</span><h3>STRUMENTI</h3><p>Appunti, mappe, presentazioni.</p><span class="portal-enter">ENTRA <span aria-hidden="true">↗</span></span></div></a><a class="portal portal-spazi" href="#laboratorio"><img src="assets/porta-spazi.svg" alt="" loading="lazy" width="600" height="800"><span class="portal-number">03 /</span><div class="portal-copy"><span class="portal-note">Oltre la pagina.</span><h3>SPAZI</h3><p>Arte, sguardi, sperimentazioni.</p><span class="portal-enter">ENTRA <span aria-hidden="true">↗</span></span></div></a><a class="portal portal-archivio" href="#archivio"><img src="assets/porta-archivio.svg" alt="" loading="lazy" width="600" height="800"><span class="portal-number">04 /</span><div class="portal-copy"><span class="portal-note">Le parole restano.</span><h3>ARCHIVIO</h3><p>Conversazioni con Libera.</p><span class="portal-enter">ENTRA <span aria-hidden="true">↗</span></span></div></a></div></section>
+<nav class="index-nav wrap" aria-label="Navigazione principale"><a href="#porte">Porte</a><a href="#progetti">Tutti i progetti</a><a href="#architettura">Architettura</a><a href="#top" aria-label="Torna all’inizio">↑</a></nav>
 <section class="section projects-section" id="progetti"><div class="wrap">
-<div class="section-head"><h2>I lavori</h2><p>Le PWA e i progetti pubblicati: scegli un percorso o apri direttamente lo strumento che ti serve.</p></div>
+<div class="section-head"><h2>Da dove vuoi cominciare?</h2><p>Le PWA e i progetti pubblicati: scegli un percorso o apri direttamente lo strumento che ti serve.</p></div>
 <section class="project-group" id="didattica" aria-labelledby="didattica-title">
-<div class="section-head"><h3 id="didattica-title">Percorsi didattici</h3><p>Dal primo al quinto anno: letture, storia, filosofia e cittadinanza.</p></div>
+<div class="section-head"><span class="eyebrow">01 / LEZIONI</span><h3 id="didattica-title">Incontrare le idee.</h3><p>Dal primo al quinto anno: letture, storia, filosofia e cittadinanza.</p></div>
 <div class="projects"><article class="project"><span class="tag">Didattica</span><h4>I anno · Miti</h4><p>Il cielo, la terra, il mito: sei lezioni, mappe e autoverifiche per leggere il mondo greco.</p><a href="/I-anno/Lezioni/Miti/" aria-label="Apri I anno · Miti">Apri il progetto →</a></article>
 <article class="project"><span class="tag">Didattica</span><h4>I anno · Antologia</h4><p>Racconti, miti e scelte: un percorso di lettura con lezioni, mappe, taccuino e cittadinanza.</p><a href="/I-anno/antologia/" aria-label="Apri I anno · Antologia">Apri il progetto →</a></article>
 <article class="project"><span class="tag">Didattica</span><h4>II anno</h4><p>Un’antologia di domande: incontrare la letteratura partendo dalle domande umane.</p><a href="/II-anno/" aria-label="Apri II anno">Apri il progetto →</a></article>
@@ -30,7 +45,7 @@
 <article class="project"><span class="tag">Didattica</span><h4>Competenze</h4><p>Il valore delle competenze: un percorso di educazione civica. Disponibile su GitHub Pages.</p><a href="https://gb69prof.github.io/Competenze/" aria-label="Apri Competenze">Apri il progetto →</a></article></div>
 </section>
 <section class="project-group" id="strumenti" aria-labelledby="strumenti-title">
-<div class="section-head"><h3 id="strumenti-title">PWA e strumenti</h3><p>Gli strumenti di UTILITY, accessibili anche direttamente da qui.</p></div>
+<div class="section-head"><span class="eyebrow">02 / STRUMENTI</span><h3 id="strumenti-title">Dare forma al pensiero.</h3><p>Gli strumenti di UTILITY, accessibili anche direttamente da qui.</p></div>
 <div class="projects"><article class="project"><span class="tag">Strumenti</span><h4>UTILITY</h4><p>La raccolta completa degli strumenti digitali per il lavoro e lo studio.</p><a href="/UTILITY/" aria-label="Apri UTILITY">Apri il progetto →</a></article>
 <article class="project"><span class="tag">Strumenti</span><h4>Spazio · Presentazioni</h4><p>Crea presentazioni visuali e percorsi zoomabili.</p><a href="/UTILITY/presentazioni/" aria-label="Apri Spazio · Presentazioni">Apri il progetto →</a></article>
 <article class="project"><span class="tag">Strumenti</span><h4>thinkgbLink</h4><p>Trasforma immagini didattiche in percorsi interattivi.</p><a href="/UTILITY/thinkgbLink/" aria-label="Apri thinkgbLink">Apri il progetto →</a></article>
@@ -40,15 +55,15 @@
 <article class="project"><span class="tag">Strumenti</span><h4>Testo-Focus</h4><p>Dal testo ai concetti, un focus alla volta.</p><a href="/UTILITY/Testo-focus/" aria-label="Apri Testo-Focus">Apri il progetto →</a></article></div>
 </section>
 <section class="project-group" id="laboratorio" aria-labelledby="laboratorio-title">
-<div class="section-head"><h3 id="laboratorio-title">Arte e laboratorio</h3><p>Immagini, domande ed esperienze per esplorare la storia dello sguardo.</p></div>
+<div class="section-head"><span class="eyebrow">03 / SPAZI</span><h3 id="laboratorio-title">Cambiare prospettiva.</h3><p>Immagini, domande ed esperienze per esplorare la storia dello sguardo.</p></div>
 <div class="projects"><article class="project"><span class="tag">Laboratorio</span><h4>Arte · Storia dello sguardo</h4><p>Un percorso di storia dell’arte, dalle origini alle esperienze digitali e all’intelligenza artificiale.</p><a href="/Arte/" aria-label="Apri Arte · Storia dello sguardo">Apri il progetto →</a></article></div>
 </section>
 <section class="project-group" id="archivio" aria-labelledby="archivio-title">
-<div class="section-head"><h3 id="archivio-title">Archivio e conversazioni</h3><p>Dialoghi e riflessioni fra didattica, filosofia e intelligenza artificiale.</p></div>
+<div class="section-head"><span class="eyebrow">04 / ARCHIVIO</span><h3 id="archivio-title">Continuare il dialogo.</h3><p>Dialoghi e riflessioni fra didattica, filosofia e intelligenza artificiale.</p></div>
 <div class="projects"><article class="project"><span class="tag">Archivio</span><h4>Conversazioni con Libera</h4><p>L’archivio dei dialoghi fra gbprof e Libera, con ricerca e filtri per anno e tema.</p><a href="/Conversazioni-con-Libera/" aria-label="Apri Conversazioni con Libera">Apri il progetto →</a></article></div>
 </section>
 </div></section>
-<section class="section" id="architettura"><div class="wrap principle"><div class="quote"><blockquote>Un dominio.<br>Una porta.<br>Molti mondi.</blockquote><p>gbprof non ingloba i progetti: li rende raggiungibili. Ogni repository conserva autonomia, cronologia e possibilità di crescita.</p></div><div class="architecture"><h2>Struttura pubblica</h2><code>gbprof.it/
+<section class="section" id="architettura"><div class="wrap principle"><div class="quote"><blockquote>Un dominio.<br>Una porta.<br>Molti mondi.</blockquote><p>gbprof non ingloba i progetti: li rende raggiungibili. Ogni repository conserva autonomia, cronologia e possibilità di crescita.</p></div><details class="architecture"><summary>Struttura pubblica <span aria-hidden="true">＋</span></summary><code>gbprof.it/
 ├── I-anno/Lezioni/Miti/
 ├── I-anno/antologia/
 ├── II-anno/
@@ -58,9 +73,8 @@
 ├── Filosofia/
 ├── UTILITY/
 ├── Arte/
-└── Conversazioni-con-Libera/</code><p>Competenze è disponibile su GitHub Pages.</p></div></div></section>
+└── Conversazioni-con-Libera/</code><p>Competenze è disponibile su GitHub Pages.</p></details></div></section>
+
 </main>
-<footer class="footer"><div class="wrap footer-inner"><div><strong>gbprof</strong> — Laboratorio didattico digitale</div><div><a href="mailto:gb.prof.69@gmail.com">Contatti</a></div></div></footer>
-<nav class="gbprof-legal-band" aria-label="Informazioni sui materiali didattici"><a href="privacy.html">Privacy dei materiali</a><a href="accessibilita.html">Accessibilità</a></nav>
-</body>
-</html>
+<footer class="footer"><div class="wrap footer-inner"><a class="footer-brand" href="#top">gbprof<span>laboratorio didattico digitale</span></a><a href="mailto:gb.prof.69@gmail.com">Contatti ↗</a><nav aria-label="Informazioni sui materiali didattici"><a href="privacy.html">Privacy dei materiali</a><a href="accessibilita.html">Accessibilità</a></nav></div></footer>
+</body></html>
