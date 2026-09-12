@@ -1,4 +1,4 @@
-/* The scene runs only while visible, with a long quiet interval per cycle.
+/* The scene runs only while visible, with a three-second interval per cycle.
    No tracking, remote scripts, fonts, cookies or persistent storage. */
 (() => {
   'use strict';
@@ -40,4 +40,10 @@
     new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; sync(); }, {threshold:0}).observe(hero);
   }
   sync();
+})();
+
+(() => {
+ const routes = {didattica:'lezioni.html',strumenti:'strumenti.html',laboratorio:'/Arte/',archivio:'/Conversazioni-con-Libera/'};
+ function routeOldLink(){const target=routes[location.hash.slice(1)];if(target) location.replace(target);}
+ window.addEventListener('hashchange',routeOldLink);routeOldLink();
 })();

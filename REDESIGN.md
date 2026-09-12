@@ -40,3 +40,18 @@ Prima di approvare la pubblicazione, verificare in un browser con accesso all'an
 - Navigazione da tastiera, pausa/ripresa, preferenza di movimento ridotto, ingrandimento e assenza di scorrimento orizzontale.
 
 Non unire questo branch a `main` senza autorizzazione di gbprof.
+
+## Revisione 2 — ciclo continuo e home essenziale
+
+Su richiesta di gbprof, il ciclo passa a 3 secondi: contatto, parole, trasformazione in dati, otto brevi impulsi che percorrono le connessioni. Riduzione del movimento, pausa manuale e sospensione fuori vista rimangono attive.
+
+La home ora termina dopo le porte e il footer legale. Lezioni e Strumenti aprono rispettivamente `lezioni.html` e `strumenti.html`, che conservano tutti i progetti e le descrizioni delle due aree. Filosofia resta dentro Lezioni; Spazi apre Arte e Archivio apre Conversazioni con Libera. Tutte le 20 destinazioni originali non interne (progetti, contatti e pagine legali) restano raggiungibili. Il vecchio schema Architettura è stato rimosso su richiesta; i quattro hash delle categorie precedenti vengono instradati alle nuove destinazioni.
+
+Le fotografie delle porte sono salvate in `assets/porta-lezioni.webp`, `assets/porta-strumenti.webp`, `assets/porta-spazi.webp`, `assets/porta-archivio.webp`. Lezioni usa l'allegato IMG_5195, senza cambiamenti estetici e con inquadratura CSS sulla classe. Le altre tre immagini sono state generate con lo strumento integrato imagegen e poi compresse in WebP.
+
+Prompt delle tre nuove scene (tutti con IMG_5195 come riferimento di stile):
+- Strumenti: fotografia verticale realistica, studio italiano illuminato dalla finestra, scrivania in legno, quaderno con diagrammi, tablet, computer, libri e pianta; toni caldi, oliva e blu; nessun testo o marchio.
+- Spazi: fotografia verticale di una galleria didattica con proiezione immersiva di un cortile classico mediterraneo, colonne e mare; visore VR, libro d'arte e strumenti da disegno sul tavolo; medesima luce naturale e matericità del riferimento; nessun testo.
+- Archivio: fotografia verticale di uno studio italiano, due sedute intorno al tavolo, quaderni, fascicoli, libri e tablet con sottili connessioni blu; atmosfera di dialogo conservato, nessun robot, testo leggibile o marchio.
+
+Verificati i collegamenti distribuiti sulle tre pagine, gli asset, gli ID, la sintassi JavaScript e le impostazioni del ciclo. L'anteprima privata Sites viene aggiornata sullo stesso indirizzo; non equivale a verifica visiva del browser cloud.
