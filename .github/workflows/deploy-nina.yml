@@ -1,4 +1,4 @@
-name: Inspect Nina private access
+name: Inspect Nina deploy privileges
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
   inspect:
     runs-on: ubuntu-latest
     steps:
-      - name: Inspect Git and Caddy access
+      - name: Inspect GitHub SSH and sudo
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.DEPLOY_HOST }}
@@ -20,15 +20,16 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
             set +e
-            echo "=== PRIVATE REPO ACCESS ==="
+            mkdir -p "$HOME/.ssh"
+            chmod 700 "$HOME/.ssh"
+            ssh-keyscan -H github.com >> "$HOME/.ssh/known_hosts" 2>/dev/null
+            chmod 600 "$HOME/.ssh/known_hosts"
+            echo "=== PRIVATE REPO AFTER HOST KEY ==="
             git ls-remote git@github.com:gb69prof/Nina-saga.git HEAD
             echo "GIT_SSH_STATUS=$?"
-            echo "=== CADDY CANDIDATES ==="
-            find /opt/gbprof -maxdepth 3 \( -iname 'Caddyfile' -o -iname '*caddy*.conf' -o -iname 'docker-compose.yml' -o -iname 'compose.yml' \) -print 2>/dev/null
-            echo "=== CADDYFILE PERMISSIONS ==="
-            for f in $(find /opt/gbprof -maxdepth 3 -iname 'Caddyfile' -print 2>/dev/null); do
-              ls -l "$f"
-              test -r "$f" && echo "READABLE:$f"
-              test -w "$f" && echo "WRITABLE:$f"
-              head -n 80 "$f" 2>/dev/null
-            done
+            echo "=== SUDO CHECK ==="
+            sudo -n true
+            echo "SUDO_STATUS=$?"
+            echo "=== CADDY READ VIA SUDO ==="
+            sudo -n head -n 120 /opt/gbprof/Caddyfile
+            echo "CADDY_READ_STATUS=$?"
