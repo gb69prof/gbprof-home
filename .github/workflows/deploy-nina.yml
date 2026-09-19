@@ -1,4 +1,4 @@
-name: Deploy Nina Reader
+name: Inspect Nina deploy path
 
 on:
   push:
@@ -6,16 +6,13 @@ on:
       - main
     paths:
       - '.github/workflows/deploy-nina.yml'
-  schedule:
-    - cron: '17 * * * *'
   workflow_dispatch:
 
 jobs:
-  deploy:
+  inspect:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Deploy Nina-saga via existing SSH bridge
+      - name: Inspect server paths
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.DEPLOY_HOST }}
@@ -23,12 +20,12 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
             set -e
-            mkdir -p /opt/gbprof/projects
-            if [ ! -d /opt/gbprof/projects/Nina-saga/.git ]; then
-              git clone git@github.com:gb69prof/Nina-saga.git /opt/gbprof/projects/Nina-saga
-            fi
-            cd /opt/gbprof/projects/Nina-saga
-            git fetch origin
-            git reset --hard origin/main
-            echo "Deploy Nina-saga completato"
-            git log -1 --oneline
+            echo "USER=$(whoami)"
+            echo "HOME=$HOME"
+            pwd
+            id
+            ls -ld /opt /opt/gbprof /opt/gbprof/projects || true
+            ls -ld /opt/gbprof/projects/gbprof-home || true
+            test -w /opt/gbprof/projects/gbprof-home && echo "GBPROF_HOME_WRITABLE=yes" || echo "GBPROF_HOME_WRITABLE=no"
+            test -w "$HOME" && echo "HOME_WRITABLE=yes" || echo "HOME_WRITABLE=no"
+            git -C /opt/gbprof/projects/gbprof-home remote -v || true
