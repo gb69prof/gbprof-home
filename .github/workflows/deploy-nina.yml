@@ -1,0 +1,34 @@
+name: Deploy Nina Reader
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/deploy-nina.yml'
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy Nina-saga via existing SSH bridge
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script: |
+            set -e
+            mkdir -p /opt/gbprof/projects
+            if [ ! -d /opt/gbprof/projects/Nina-saga/.git ]; then
+              git clone git@github.com:gb69prof/Nina-saga.git /opt/gbprof/projects/Nina-saga
+            fi
+            cd /opt/gbprof/projects/Nina-saga
+            git fetch origin
+            git reset --hard origin/main
+            echo "Deploy Nina-saga completato"
+            git log -1 --oneline
