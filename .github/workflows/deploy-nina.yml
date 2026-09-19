@@ -1,4 +1,4 @@
-name: Inspect Nina deploy path
+name: Inspect Nina private access
 
 on:
   push:
@@ -12,20 +12,23 @@ jobs:
   inspect:
     runs-on: ubuntu-latest
     steps:
-      - name: Inspect server paths
+      - name: Inspect Git and Caddy access
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.DEPLOY_HOST }}
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
-            set -e
-            echo "USER=$(whoami)"
-            echo "HOME=$HOME"
-            pwd
-            id
-            ls -ld /opt /opt/gbprof /opt/gbprof/projects || true
-            ls -ld /opt/gbprof/projects/gbprof-home || true
-            test -w /opt/gbprof/projects/gbprof-home && echo "GBPROF_HOME_WRITABLE=yes" || echo "GBPROF_HOME_WRITABLE=no"
-            test -w "$HOME" && echo "HOME_WRITABLE=yes" || echo "HOME_WRITABLE=no"
-            git -C /opt/gbprof/projects/gbprof-home remote -v || true
+            set +e
+            echo "=== PRIVATE REPO ACCESS ==="
+            git ls-remote git@github.com:gb69prof/Nina-saga.git HEAD
+            echo "GIT_SSH_STATUS=$?"
+            echo "=== CADDY CANDIDATES ==="
+            find /opt/gbprof -maxdepth 3 \( -iname 'Caddyfile' -o -iname '*caddy*.conf' -o -iname 'docker-compose.yml' -o -iname 'compose.yml' \) -print 2>/dev/null
+            echo "=== CADDYFILE PERMISSIONS ==="
+            for f in $(find /opt/gbprof -maxdepth 3 -iname 'Caddyfile' -print 2>/dev/null); do
+              ls -l "$f"
+              test -r "$f" && echo "READABLE:$f"
+              test -w "$f" && echo "WRITABLE:$f"
+              head -n 80 "$f" 2>/dev/null
+            done
