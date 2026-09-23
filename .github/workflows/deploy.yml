@@ -30,7 +30,7 @@ jobs:
               echo "Il percorso pubblico Spazi esiste e non è un collegamento: intervento manuale necessario" >&2
               exit 1
             else
-              ln -s "$repo/Spazi" "$web"
+              sudo -n ln -s "$repo/Spazi" "$web"
             fi
             test -f "$web/index.html"
             test "$(curl -sS -L --max-time 15 -o /dev/null -w '%{http_code}' https://gbprof.it/Spazi/)" = 200
