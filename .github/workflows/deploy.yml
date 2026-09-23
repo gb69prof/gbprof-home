@@ -17,29 +17,24 @@ jobs:
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
-            set -e
-            cd /opt/gbprof/projects/gbprof-home
+            set -eu
+            repo=/opt/gbprof/projects/gbprof-home
+            web=/opt/gbprof/www/Spazi
+            cd "$repo"
             git fetch origin
             git reset --hard origin/main
-            echo "Deploy gbprof-home completato"
+            test -f "$repo/Spazi/index.html"
+            if [ -L "$web" ]; then
+              test "$(readlink -f "$web")" = "$(readlink -f "$repo/Spazi")"
+            elif [ -e "$web" ]; then
+              echo "Il percorso pubblico Spazi esiste e non è un collegamento: intervento manuale necessario" >&2
+              exit 1
+            else
+              ln -s "$repo/Spazi" "$web"
+            fi
+            test -f "$web/index.html"
+            test "$(curl -sS -L --max-time 15 -o /dev/null -w '%{http_code}' https://gbprof.it/Spazi/)" = 200
+            curl -fsSL --max-time 15 https://gbprof.it/Spazi/ | grep -Fq 'Spazi e passioni'
+            curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'class="portal portal-spazi" href="/Spazi/"'
+            echo "Deploy gbprof-home e pagina Spazi verificati"
             git log -1 --oneline
-            echo "DIAGNOSTICA INIZIO"
-            for path in /opt/gbprof/www /opt/gbprof/www/index.html /opt/gbprof/www/Spazi/index.html; do
-              if [ -e "$path" ]; then
-                printf '%s: presente, destinazione=%s\n' "$path" "$(readlink -f "$path")"
-              else
-                printf '%s: assente\n' "$path"
-              fi
-            done
-            for path in index.html Spazi/index.html /opt/gbprof/www/index.html /opt/gbprof/www/Spazi/index.html; do
-              if [ -f "$path" ]; then
-                if grep -Fq 'href="/Spazi/"' "$path"; then
-                  printf '%s: link Spazi presente\n' "$path"
-                fi
-                if grep -Fq 'Spazi e passioni' "$path"; then
-                  printf '%s: pagina Spazi presente\n' "$path"
-                fi
-              fi
-            done
-            curl -sS -L --max-time 12 -o /dev/null -w 'URL /Spazi/ HTTP %{http_code} risposta %{url_effective}\n' https://gbprof.it/Spazi/ || true
-            echo "DIAGNOSTICA FINE"
