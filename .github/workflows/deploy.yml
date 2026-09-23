@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy via SSH
+      - name: Deploy via SSH e verifica le pagine pubbliche
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.DEPLOY_HOST }}
@@ -23,3 +23,23 @@ jobs:
             git reset --hard origin/main
             echo "Deploy gbprof-home completato"
             git log -1 --oneline
+            echo "DIAGNOSTICA INIZIO"
+            for path in /opt/gbprof/www /opt/gbprof/www/index.html /opt/gbprof/www/Spazi/index.html; do
+              if [ -e "$path" ]; then
+                printf '%s: presente, destinazione=%s\n' "$path" "$(readlink -f "$path")"
+              else
+                printf '%s: assente\n' "$path"
+              fi
+            done
+            for path in index.html Spazi/index.html /opt/gbprof/www/index.html /opt/gbprof/www/Spazi/index.html; do
+              if [ -f "$path" ]; then
+                if grep -Fq 'href="/Spazi/"' "$path"; then
+                  printf '%s: link Spazi presente\n' "$path"
+                fi
+                if grep -Fq 'Spazi e passioni' "$path"; then
+                  printf '%s: pagina Spazi presente\n' "$path"
+                fi
+              fi
+            done
+            curl -sS -L --max-time 12 -o /dev/null -w 'URL /Spazi/ HTTP %{http_code} risposta %{url_effective}\n' https://gbprof.it/Spazi/ || true
+            echo "DIAGNOSTICA FINE"
