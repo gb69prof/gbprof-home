@@ -19,22 +19,13 @@ jobs:
           script: |
             set -eu
             repo=/opt/gbprof/projects/gbprof-home
-            web=/opt/gbprof/www/Spazi
             cd "$repo"
             git fetch origin
             git reset --hard origin/main
             test -f "$repo/Spazi/index.html"
-            if [ -L "$web" ]; then
-              test "$(readlink -f "$web")" = "$(readlink -f "$repo/Spazi")"
-            elif [ -e "$web" ]; then
-              echo "Il percorso pubblico Spazi esiste e non è un collegamento: intervento manuale necessario" >&2
-              exit 1
-            else
-              sudo -n ln -s "$repo/Spazi" "$web"
-            fi
-            test -f "$web/index.html"
-            test "$(curl -sS -L --max-time 15 -o /dev/null -w '%{http_code}' https://gbprof.it/Spazi/)" = 200
-            curl -fsSL --max-time 15 https://gbprof.it/Spazi/ | grep -Fq 'Spazi e passioni'
-            curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'class="portal portal-spazi" href="/Spazi/"'
+            test "$(curl -sS -L --max-time 15 -o /dev/null -w '%{http_code}' https://gbprof.it/)" = 200
+            curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'class="portal portal-spazi" href="#spazi"'
+            curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq '<section id="spazi" class="directory-view"'
+            curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'PWA in costruzione'
             echo "Deploy gbprof-home e pagina Spazi verificati"
             git log -1 --oneline

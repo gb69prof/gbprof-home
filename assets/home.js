@@ -43,7 +43,7 @@
 })();
 
 (() => {
- const routes = {didattica:'lezioni.html',strumenti:'strumenti.html',laboratorio:'/Arte/',archivio:'/Conversazioni-con-Libera/'};
+ const routes = {didattica:'lezioni.html',strumenti:'strumenti.html',laboratorio:'#spazi',archivio:'/Conversazioni-con-Libera/'};
  function routeOldLink(){const target=routes[location.hash.slice(1)];if(target) location.replace(target);}
  window.addEventListener('hashchange',routeOldLink);routeOldLink();
 })();
