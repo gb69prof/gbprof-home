@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#080e13">
+<meta name="description" content="Arte, filosofia, scienze e passioni personali: gli spazi di esplorazione di gbprof.">
+<title>Spazi e passioni — gbprof</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+.passions-intro{max-width:780px;margin:0 0 2.5rem;color:var(--muted);font-size:16px;line-height:1.85}
+.interest-status{display:inline-flex;align-items:center;gap:.5rem;margin-bottom:14px;color:var(--gold);font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.interest-status::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.interest-status.soon{color:var(--muted)}.interest-status.soon::before{background:#8e9292}
+.project.future{opacity:.7}
+.project .repository-link{position:relative;z-index:1;margin-left:1rem;color:var(--muted)}
+.project a::after{pointer-events:none}
+.open-note{margin-top:3.5rem;padding:1.4rem 1.6rem;border-left:1px solid var(--gold);background:#ffffff08;color:var(--muted);font:italic 18px/1.6 Georgia,serif}
+@media(max-width:520px){.project .repository-link{display:flex;margin:0}.open-note{font-size:16px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenuto">Vai al contenuto</a>
+<header class="directory-header wrap"><a href="/#porte">← Le quattro porte</a><a class="footer-brand" href="/">gbprof</a></header>
+<main id="contenuto" class="wrap directory">
+  <span class="eyebrow">IDEE, ESPERIENZE, POSSIBILITÀ</span>
+  <h1>Spazi e passioni</h1>
+  <p class="passions-intro">Questo spazio raccoglie percorsi che nascono dalle mie passioni e dalla curiosità: l’arte, la filosofia, le scienze e altri mondi da esplorare. La pagina crescerà insieme ai progetti.</p>
+  <section class="project-group" aria-labelledby="passioni-title">
+    <div class="section-head"><span class="eyebrow">01 / ESPLORAZIONI</span><h3 id="passioni-title">Entrare in un’idea.</h3><p>Alcuni percorsi sono già visitabili; altri prenderanno forma più avanti.</p></div>
+    <div class="projects">
+      <article class="project">
+        <span class="interest-status">Disponibile</span>
+        <h4>Arte</h4>
+        <p>Opere, linguaggi visivi e ambienti da attraversare con uno sguardo curioso.</p>
+        <a href="/Arte/" aria-label="Apri lo spazio Arte">Entra nello spazio Arte →</a>
+      </article>
+      <article class="project">
+        <span class="interest-status">PWA in costruzione</span>
+        <h4>Filosofia</h4>
+        <p>Autori e domande per pensare la realtà: il percorso digitale è in fase di completamento.</p>
+        <a href="/Filosofia/" aria-label="Apri la PWA di Filosofia, attualmente in costruzione">Apri la PWA di Filosofia →</a>
+        <a class="repository-link" href="https://github.com/gb69prof/Filosofia" aria-label="Apri il repository GitHub della PWA di Filosofia">Repository GitHub ↗</a>
+      </article>
+      <article class="project future">
+        <span class="interest-status soon">In preparazione</span>
+        <h4>Scienze</h4>
+        <p>Un futuro spazio per fenomeni, esperimenti, universo e domande scientifiche.</p>
+      </article>
+      <article class="project future">
+        <span class="interest-status soon">Spazio aperto</span>
+        <h4>Altre passioni</h4>
+        <p>Qui potranno trovare posto altri progetti, quando sarà il momento di dargli forma.</p>
+      </article>
+    </div>
+  </section>
+  <p class="open-note">Una passione può diventare un percorso: basta trovare una domanda che valga la pena di seguire.</p>
+</main>
+<footer class="footer"><nav class="wrap directory-footer" aria-label="Informazioni sui materiali didattici"><a href="/privacy.html">Privacy dei materiali</a><a href="/accessibilita.html">Accessibilità</a><a href="mailto:gb.prof.69@gmail.com">Contatti</a></nav></footer>
+</body>
+</html>
