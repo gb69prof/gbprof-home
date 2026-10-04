@@ -27,5 +27,7 @@ jobs:
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'class="portal portal-spazi" href="#spazi"'
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq '<section id="spazi" class="directory-view"'
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'PWA in costruzione'
-            echo "Deploy gbprof-home e pagina Spazi verificati"
+            curl -fsSL --max-time 15 https://gbprof.it/strumenti.html | grep -Fq 'Apri UTILITY →'
+            ! curl -fsSL --max-time 15 https://gbprof.it/strumenti.html | grep -Fq 'Spazio · Presentazioni'
+            echo "Deploy gbprof-home e pagina Strumenti verificati"
             git log -1 --oneline
