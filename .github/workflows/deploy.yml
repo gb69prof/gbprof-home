@@ -10,34 +10,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Ispeziona Caddy
+      - name: Deploy via SSH e verifica le pagine pubbliche
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.DEPLOY_HOST }}
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
-            set -u
+            set -eu
             repo=/opt/gbprof/projects/gbprof-home
             cd "$repo"
             git fetch origin
             git reset --hard origin/main
-
-            echo "=== CADDYFILE PERMESSI ==="
-            ls -l /opt/gbprof/Caddyfile 2>&1 || true
-            test -r /opt/gbprof/Caddyfile && echo "LEGGIBILE=SI" || echo "LEGGIBILE=NO"
-            test -w /opt/gbprof/Caddyfile && echo "SCRIVIBILE=SI" || echo "SCRIVIBILE=NO"
-
-            echo "=== CADDYFILE CONTENUTO ==="
-            cat /opt/gbprof/Caddyfile 2>&1 || true
-
-            echo "=== ADMIN API CADDY ==="
-            code="$(curl -sS --max-time 5 -o /tmp/caddy-config.json -w '%{http_code}' http://127.0.0.1:2019/config/ 2>/dev/null || true)"
-            echo "HTTP_ADMIN=$code"
-            if [ "$code" = "200" ]; then
-              head -c 2000 /tmp/caddy-config.json
-              echo
-            fi
-
-            echo "=== PROCESSI CADDY ==="
-            ps aux | grep '[c]addy' 2>&1 || true
+            test -f "$repo/Spazi/index.html"
+            test "$(curl -sS -L --max-time 15 -o /dev/null -w '%{http_code}' https://gbprof.it/)" = 200
+            curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'class="portal portal-spazi" href="#spazi"'
+            curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq '<section id="spazi" class="directory-view"'
+            curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'PWA in costruzione'
+            curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'Apri UTILITY →'
+            ! curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'Spazio · Presentazioni'
+            echo "Deploy gbprof-home e sezione Strumenti verificati"
+            git log -1 --oneline
