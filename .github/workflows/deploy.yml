@@ -26,20 +26,12 @@ jobs:
 
             test -f "$repo/Spazi/index.html"
 
-            # Sincronizza il repository delle prove d'ingresso e pubblica la prova
-            prove_repo=/opt/gbprof/projects/Prove-ingresso-invalsi
-            if [ -d "$prove_repo/.git" ]; then
-              cd "$prove_repo"
-              git fetch origin
-              git reset --hard origin/main
-            else
-              git clone https://github.com/gb69prof/Prove-ingresso-invalsi.git "$prove_repo"
-            fi
+            # Pubblica la prova d'ingresso dal repository sorgente
+            prova_dir="$repo/Prove-ingresso-invalsi/Ingresso-prime"
+            mkdir -p "$prova_dir"
+            curl -fsSL --max-time 30               https://raw.githubusercontent.com/gb69prof/Prove-ingresso-invalsi/main/Ingresso-prime/index.html               -o "$prova_dir/index.html"
 
-            test -f "$prove_repo/Ingresso-prime/index.html"
-            mkdir -p "$repo/Prove-ingresso-invalsi"
-            rm -rf "$repo/Prove-ingresso-invalsi/Ingresso-prime"
-            cp -a "$prove_repo/Ingresso-prime" "$repo/Prove-ingresso-invalsi/"
+            test -s "$prova_dir/index.html"
 
             test "$(curl -sS -L --max-time 15 -o /dev/null -w '%{http_code}' https://gbprof.it/)" = 200
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'class="portal portal-spazi" href="#spazi"'
