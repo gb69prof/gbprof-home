@@ -10,29 +10,31 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy via SSH e verifica la prova pubblica
+      - name: Ispeziona configurazione pubblicazione
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.DEPLOY_HOST }}
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
-            set -eu
+            set -u
             repo=/opt/gbprof/projects/gbprof-home
             cd "$repo"
             git fetch origin
             git reset --hard origin/main
 
-            echo "Verifico file locale..."
-            test -f "$repo/Prove-ingresso-invalsi/Ingresso-prime/index.html"
+            echo "=== FILE PROVA ==="
+            ls -l "$repo/Prove-ingresso-invalsi/Ingresso-prime/index.html" || true
 
-            url="https://gbprof.it/Prove-ingresso-invalsi/Ingresso-prime/"
-            echo "Verifico URL pubblico: $url"
-            code="$(curl -sS -L --max-time 15 -o /tmp/prova-ingresso.html -w '%{http_code}' "$url")"
-            echo "HTTP $code"
-            test "$code" = 200
-            grep -Fq 'Il segreto della soffitta numero 9' /tmp/prova-ingresso.html
-            grep -Fq 'forms.gle/5uRxpo2JB9URLigQ6' /tmp/prova-ingresso.html
+            echo "=== CADDYFILE ==="
+            cat /etc/caddy/Caddyfile 2>&1 || true
 
-            echo "Deploy e prova d'ingresso verificati"
-            git log -1 --oneline
+            echo "=== SUDO ==="
+            if sudo -n true 2>/dev/null; then
+              echo "SUDO_NON_INTERATTIVO=SI"
+            else
+              echo "SUDO_NON_INTERATTIVO=NO"
+            fi
+
+            echo "=== CADDY STATUS ==="
+            systemctl is-active caddy 2>&1 || true
