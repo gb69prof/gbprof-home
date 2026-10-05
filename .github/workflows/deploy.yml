@@ -18,20 +18,13 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
             set -eu
-
             repo=/opt/gbprof/projects/gbprof-home
             cd "$repo"
             git fetch origin
             git reset --hard origin/main
 
             test -f "$repo/Spazi/index.html"
-
-            # Pubblica la prova d'ingresso dal repository sorgente
-            prova_dir="$repo/Prove-ingresso-invalsi/Ingresso-prime"
-            mkdir -p "$prova_dir"
-            curl -fsSL --max-time 30               https://raw.githubusercontent.com/gb69prof/Prove-ingresso-invalsi/main/Ingresso-prime/index.html               -o "$prova_dir/index.html"
-
-            test -s "$prova_dir/index.html"
+            test -f "$repo/Prove-ingresso-invalsi/Ingresso-prime/index.html"
 
             test "$(curl -sS -L --max-time 15 -o /dev/null -w '%{http_code}' https://gbprof.it/)" = 200
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'class="portal portal-spazi" href="#spazi"'
@@ -40,11 +33,9 @@ jobs:
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'Apri UTILITY →'
             ! curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'Spazio · Presentazioni'
 
-            # Verifica la nuova prova d'ingresso
             test "$(curl -sS -L --max-time 15 -o /dev/null -w '%{http_code}' https://gbprof.it/Prove-ingresso-invalsi/Ingresso-prime/)" = 200
             curl -fsSL --max-time 15 https://gbprof.it/Prove-ingresso-invalsi/Ingresso-prime/ | grep -Fq 'Il segreto della soffitta numero 9'
             curl -fsSL --max-time 15 https://gbprof.it/Prove-ingresso-invalsi/Ingresso-prime/ | grep -Fq 'forms.gle/5uRxpo2JB9URLigQ6'
 
             echo "Deploy gbprof-home e prova d'ingresso verificati"
-            cd "$repo"
             git log -1 --oneline
