@@ -18,16 +18,41 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
             set -eu
+
             repo=/opt/gbprof/projects/gbprof-home
             cd "$repo"
             git fetch origin
             git reset --hard origin/main
+
             test -f "$repo/Spazi/index.html"
+
+            # Sincronizza il repository delle prove d'ingresso e pubblica la prova
+            prove_repo=/opt/gbprof/projects/Prove-ingresso-invalsi
+            if [ -d "$prove_repo/.git" ]; then
+              cd "$prove_repo"
+              git fetch origin
+              git reset --hard origin/main
+            else
+              git clone https://github.com/gb69prof/Prove-ingresso-invalsi.git "$prove_repo"
+            fi
+
+            test -f "$prove_repo/Ingresso-prime/index.html"
+            mkdir -p "$repo/Prove-ingresso-invalsi"
+            rm -rf "$repo/Prove-ingresso-invalsi/Ingresso-prime"
+            cp -a "$prove_repo/Ingresso-prime" "$repo/Prove-ingresso-invalsi/"
+
             test "$(curl -sS -L --max-time 15 -o /dev/null -w '%{http_code}' https://gbprof.it/)" = 200
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'class="portal portal-spazi" href="#spazi"'
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq '<section id="spazi" class="directory-view"'
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'PWA in costruzione'
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'Apri UTILITY →'
             ! curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'Spazio · Presentazioni'
-            echo "Deploy gbprof-home e sezione Strumenti verificati"
+
+            # Verifica la nuova prova d'ingresso
+            test "$(curl -sS -L --max-time 15 -o /dev/null -w '%{http_code}' https://gbprof.it/Prove-ingresso-invalsi/Ingresso-prime/)" = 200
+            curl -fsSL --max-time 15 https://gbprof.it/Prove-ingresso-invalsi/Ingresso-prime/ | grep -Fq 'Il segreto della soffitta numero 9'
+            curl -fsSL --max-time 15 https://gbprof.it/Prove-ingresso-invalsi/Ingresso-prime/ | grep -Fq 'forms.gle/5uRxpo2JB9URLigQ6'
+
+            echo "Deploy gbprof-home e prova d'ingresso verificati"
+            cd "$repo"
             git log -1 --oneline
