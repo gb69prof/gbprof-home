@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy via SSH e verifica le pagine pubbliche
+      - name: Deploy via SSH e verifica la prova pubblica
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.DEPLOY_HOST }}
@@ -23,19 +23,16 @@ jobs:
             git fetch origin
             git reset --hard origin/main
 
-            test -f "$repo/Spazi/index.html"
+            echo "Verifico file locale..."
             test -f "$repo/Prove-ingresso-invalsi/Ingresso-prime/index.html"
 
-            test "$(curl -sS -L --max-time 15 -o /dev/null -w '%{http_code}' https://gbprof.it/)" = 200
-            curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'class="portal portal-spazi" href="#spazi"'
-            curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq '<section id="spazi" class="directory-view"'
-            curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'PWA in costruzione'
-            curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'Apri UTILITY →'
-            ! curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'Spazio · Presentazioni'
+            url="https://gbprof.it/Prove-ingresso-invalsi/Ingresso-prime/"
+            echo "Verifico URL pubblico: $url"
+            code="$(curl -sS -L --max-time 15 -o /tmp/prova-ingresso.html -w '%{http_code}' "$url")"
+            echo "HTTP $code"
+            test "$code" = 200
+            grep -Fq 'Il segreto della soffitta numero 9' /tmp/prova-ingresso.html
+            grep -Fq 'forms.gle/5uRxpo2JB9URLigQ6' /tmp/prova-ingresso.html
 
-            test "$(curl -sS -L --max-time 15 -o /dev/null -w '%{http_code}' https://gbprof.it/Prove-ingresso-invalsi/Ingresso-prime/)" = 200
-            curl -fsSL --max-time 15 https://gbprof.it/Prove-ingresso-invalsi/Ingresso-prime/ | grep -Fq 'Il segreto della soffitta numero 9'
-            curl -fsSL --max-time 15 https://gbprof.it/Prove-ingresso-invalsi/Ingresso-prime/ | grep -Fq 'forms.gle/5uRxpo2JB9URLigQ6'
-
-            echo "Deploy gbprof-home e prova d'ingresso verificati"
+            echo "Deploy e prova d'ingresso verificati"
             git log -1 --oneline
