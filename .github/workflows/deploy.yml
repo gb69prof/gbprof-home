@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Ispeziona configurazione pubblicazione
+      - name: Ispeziona web server Docker
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.DEPLOY_HOST }}
@@ -23,18 +23,14 @@ jobs:
             git fetch origin
             git reset --hard origin/main
 
-            echo "=== FILE PROVA ==="
-            ls -l "$repo/Prove-ingresso-invalsi/Ingresso-prime/index.html" || true
+            echo "=== DOCKER PS ==="
+            docker ps --format '{{.Names}}|{{.Image}}|{{.Ports}}' 2>&1 || true
 
-            echo "=== CADDYFILE ==="
-            cat /etc/caddy/Caddyfile 2>&1 || true
+            echo "=== COMPOSE FILES ==="
+            find /opt/gbprof -maxdepth 3 \( -name 'docker-compose.yml' -o -name 'docker-compose.yaml' -o -name 'compose.yml' -o -name 'compose.yaml' \) -print 2>/dev/null || true
 
-            echo "=== SUDO ==="
-            if sudo -n true 2>/dev/null; then
-              echo "SUDO_NON_INTERATTIVO=SI"
-            else
-              echo "SUDO_NON_INTERATTIVO=NO"
-            fi
+            echo "=== CADDY FILES ==="
+            find /opt/gbprof -maxdepth 4 \( -iname 'Caddyfile' -o -iname '*caddy*.conf' \) -print 2>/dev/null || true
 
-            echo "=== CADDY STATUS ==="
-            systemctl is-active caddy 2>&1 || true
+            echo "=== LISTENERS ==="
+            ss -ltn 2>/dev/null | grep -E ':(80|443)\b' || true
