@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Ispeziona web server Docker
+      - name: Ispeziona Caddy
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.DEPLOY_HOST }}
@@ -23,14 +23,21 @@ jobs:
             git fetch origin
             git reset --hard origin/main
 
-            echo "=== DOCKER PS ==="
-            docker ps --format '{{.Names}}|{{.Image}}|{{.Ports}}' 2>&1 || true
+            echo "=== CADDYFILE PERMESSI ==="
+            ls -l /opt/gbprof/Caddyfile 2>&1 || true
+            test -r /opt/gbprof/Caddyfile && echo "LEGGIBILE=SI" || echo "LEGGIBILE=NO"
+            test -w /opt/gbprof/Caddyfile && echo "SCRIVIBILE=SI" || echo "SCRIVIBILE=NO"
 
-            echo "=== COMPOSE FILES ==="
-            find /opt/gbprof -maxdepth 3 \( -name 'docker-compose.yml' -o -name 'docker-compose.yaml' -o -name 'compose.yml' -o -name 'compose.yaml' \) -print 2>/dev/null || true
+            echo "=== CADDYFILE CONTENUTO ==="
+            cat /opt/gbprof/Caddyfile 2>&1 || true
 
-            echo "=== CADDY FILES ==="
-            find /opt/gbprof -maxdepth 4 \( -iname 'Caddyfile' -o -iname '*caddy*.conf' \) -print 2>/dev/null || true
+            echo "=== ADMIN API CADDY ==="
+            code="$(curl -sS --max-time 5 -o /tmp/caddy-config.json -w '%{http_code}' http://127.0.0.1:2019/config/ 2>/dev/null || true)"
+            echo "HTTP_ADMIN=$code"
+            if [ "$code" = "200" ]; then
+              head -c 2000 /tmp/caddy-config.json
+              echo
+            fi
 
-            echo "=== LISTENERS ==="
-            ss -ltn 2>/dev/null | grep -E ':(80|443)\b' || true
+            echo "=== PROCESSI CADDY ==="
+            ps aux | grep '[c]addy' 2>&1 || true
