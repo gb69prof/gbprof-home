@@ -59,6 +59,9 @@
 .manifesto-next a span{font-size:24px}.manifesto-next a:hover{text-decoration:underline}
 @media(max-width:520px){.manifesto{padding:64px 0 78px}.manifesto-head{margin-bottom:48px}.manifesto-kicker{font-size:9px;letter-spacing:.19em}.manifesto-head h2{font-size:44px}.manifesto-text{line-height:1.77}.manifesto-text .manifesto-key{margin:1.8em 0 1.4em}.manifesto-next{margin-top:42px}}
 @media print{.manifesto{background:white;color:black;padding:35px 0}.manifesto-text,.manifesto-head h2,.manifesto-text h3{color:black}.manifesto-text strong,.manifesto-subtitle{color:#333}.manifesto-next{display:none}}
+
+/* Riflessione facoltativa: aperta solo su richiesta, accessibile anche da tastiera. */
+.manifesto-summary{display:block;cursor:pointer;list-style:none}.manifesto-summary::-webkit-details-marker{display:none}.manifesto-summary::marker{content:""}.manifesto-summary .manifesto-head{margin-bottom:0}.manifesto-summary:hover .manifesto-action{text-decoration:underline}.manifesto-action{display:inline-flex;align-items:center;gap:12px;margin-top:24px;color:var(--gold);font-weight:650;letter-spacing:.04em}.manifesto-action-close{display:none}.manifesto-chevron{font-size:28px;line-height:1;transition:transform .25s}.manifesto-disclosure[open] .manifesto-action-open{display:none}.manifesto-disclosure[open] .manifesto-action-close{display:inline}.manifesto-disclosure[open] .manifesto-chevron{transform:rotate(180deg)}.manifesto-disclosure[open] .manifesto-summary{margin-bottom:52px}.manifesto-summary:focus-visible{outline:3px solid #ffcc80;outline-offset:6px}@media(max-width:520px){.manifesto-disclosure[open] .manifesto-summary{margin-bottom:34px}}
 </style>
 </head><body><div id="home-view">
 <a class="skip" href="#contenuto">Vai al contenuto</a><main id="contenuto"><section class="hero" id="top" aria-labelledby="hero-title">
@@ -86,11 +89,15 @@
  </section>
 
 <section class="manifesto" id="sapere-dialogo" aria-labelledby="manifesto-title">
+  <details class="manifesto-disclosure">
+  <summary class="manifesto-summary" aria-label="Apri o chiudi la riflessione sulla conoscenza">
   <header class="manifesto-head wrap">
     <span class="manifesto-kicker">UNA RIFLESSIONE SULLA CONOSCENZA</span>
     <h2 id="manifesto-title">Il sapere torna a dialogare</h2>
     <p class="manifesto-subtitle">Perché esiste questo sito</p>
+    <span class="manifesto-action" aria-hidden="true"><span class="manifesto-action-open">Leggi la riflessione</span><span class="manifesto-action-close">Chiudi la riflessione</span><span class="manifesto-chevron">⌄</span></span>
   </header>
+  </summary>
   <article class="manifesto-text wrap" aria-label="Il sapere torna a dialogare — testo integrale">
 <p>Per secoli abbiamo costruito, raccolto, conservato e trasmesso conoscenze. Le abbiamo affidate ai libri, alle biblioteche, alle università, ai laboratori, alle scuole e, più recentemente, agli immensi spazi virtuali della rete.</p>
 <p>Abbiamo suddiviso il sapere in discipline, settori e specializzazioni. Una necessità, certamente: nessun essere umano può possedere tutto ciò che l'umanità ha conosciuto, pensato e scoperto.</p>
@@ -149,6 +156,7 @@
 <p>Non pretendo di limitare la natura umana: finirei, indirettamente, per limitare anche la mia.</p>
 <p class="manifesto-key"><strong>Quindi, buona lettura. O buona crociata.</strong></p>
   </article>
+  </details>
   <div class="manifesto-next wrap"><a href="#porte">Esplora i quattro mondi <span aria-hidden="true">↓</span></a></div>
 </section>
 
