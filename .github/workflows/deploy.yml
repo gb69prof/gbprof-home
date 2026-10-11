@@ -23,6 +23,17 @@ jobs:
             git fetch origin
             git reset --hard origin/main
             test -f "$repo/Spazi/index.html"
+            echo "=== Struttura della cartella web ==="
+            ls -la /opt/gbprof/www || true
+            ls -la /opt/gbprof/www/assets 2>&1 | head -n 8 || true
+            stat -c '%F %a %U:%G %n' /opt/gbprof/www/index.html /opt/gbprof/projects/gbprof-home/index.html 2>&1 || true
+            readlink -f /opt/gbprof/www/index.html || true
+            command -v getfacl >/dev/null && getfacl -p /opt/gbprof/www 2>&1 || true
+            find /opt/gbprof -maxdepth 4 -name Caddyfile -print 2>/dev/null || true
+            echo "=== URL alternativo GitHub Pages ==="
+            for url in https://gb69prof.github.io/gbprof-home/Spazi/fiumana-scroll-infinito/ https://gb69prof.github.io/gbprof-home/Spazi/fiumana-scroll-infinito/style.css https://gbprof.it/Spazi/index.html; do
+              printf "%s -> %s\n" "$url" "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "$url")"
+            done
             echo "=== Ispezione non distruttiva della pubblicazione ==="
             id
             ls -ld /opt/gbprof /opt/gbprof/www /opt/gbprof/www/Spazi /opt/gbprof/projects/gbprof-home /etc/caddy/Caddyfile 2>&1 || true
