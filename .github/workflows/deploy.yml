@@ -23,6 +23,19 @@ jobs:
             git fetch origin
             git reset --hard origin/main
             test -f "$repo/Spazi/index.html"
+            # Publish only the requested Fiumana space in Caddy's public root.
+            published=/opt/gbprof/www/Spazi/fiumana-scroll-infinito
+            mkdir -p "$published"
+            for asset in index.html style.css site.js favicon.svg hero-fiumana-scroll.webp paper.pdf; do
+              test -f "$repo/Spazi/fiumana-scroll-infinito/$asset"
+              if [ -f "$published/$asset" ] && ! cmp -s "$repo/Spazi/fiumana-scroll-infinito/$asset" "$published/$asset"; then
+                cp -p "$published/$asset" "$published/$asset.backup-$(date -u +%Y%m%dT%H%M%SZ)"
+              fi
+              cp "$repo/Spazi/fiumana-scroll-infinito/$asset" "$published/$asset"
+            done
+            for asset in "" style.css site.js favicon.svg hero-fiumana-scroll.webp paper.pdf; do
+              test "$(curl -sS -L --max-time 15 -o /dev/null -w '%{http_code}' "https://gbprof.it/Spazi/fiumana-scroll-infinito/$asset")" = 200
+            done
             test "$(curl -sS -L --max-time 15 -o /dev/null -w '%{http_code}' https://gbprof.it/)" = 200
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'class="portal portal-spazi" href="#spazi"'
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq '<section id="spazi" class="directory-view"'
