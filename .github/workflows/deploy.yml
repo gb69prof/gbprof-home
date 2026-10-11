@@ -42,5 +42,20 @@ jobs:
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'PWA in costruzione'
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'Apri UTILITY →'
             ! curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'Spazio · Presentazioni'
+            echo "=== Diagnostica pubblicazione Fiumana ==="
+            test -s "$repo/Spazi/fiumana-scroll-infinito/index.html"
+            probe="$(mktemp)"
+            code="$(curl -sSL --max-time 20 -o "$probe" -w '%{http_code}' https://gbprof.it/Spazi/fiumana-scroll-infinito/)"
+            printf "Fiumana pagina: HTTP %s, byte %s\\n" "$code" "$(wc -c < "$probe")"
+            head -c 180 "$probe" || true
+            printf "\\n"
+            test "$code" = 200
+            grep -Fq "Dalla <em>fiumana</em>" "$probe"
+            for asset in style.css site.js hero-fiumana-scroll.webp paper.pdf; do
+              asset_code="$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "https://gbprof.it/Spazi/fiumana-scroll-infinito/$asset")"
+              printf "Fiumana risorsa %s: HTTP %s\\n" "$asset" "$asset_code"
+              test "$asset_code" = 200
+            done
+            rm -f "$probe"
             echo "Deploy gbprof-home e sezione Strumenti verificati"
             git log -1 --oneline
