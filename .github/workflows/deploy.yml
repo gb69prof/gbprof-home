@@ -61,4 +61,13 @@ jobs:
             ! curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'Spazio · Presentazioni'
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'https://gbprof.it/Spazi/fiumana-scroll-infinito/'
             echo "Deploy gbprof-home e sezione Strumenti verificati"
+            public_gravity=https://gbprof.it/Spazi/gravity-lab-3d/
+            for asset in "" css/style.css js/main.js js/ui.js js/scene.js js/physics.js js/interaction.js js/canvas-renderer.js vendor/three.module.js vendor/three.core.js vendor/OrbitControls.js vendor/LICENSE; do
+              code="$(curl -fsSL --max-time 30 -o /dev/null -w '%{http_code}' "${public_gravity}${asset}")"
+              test "$code" = 200
+              echo "Gravity Lab: ${asset:-index.html} HTTP $code"
+            done
+            curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'https://gbprof.it/Spazi/gravity-lab-3d/'
+            curl -fsSL --max-time 15 https://gbprof.it/Spazi/ | grep -Fq 'https://gbprof.it/Spazi/gravity-lab-3d/'
+            echo "Gravity Lab pubblicato con tutte le risorse e collegamenti verificati"
             git log -1 --oneline
