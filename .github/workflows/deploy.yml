@@ -23,10 +23,29 @@ jobs:
             git fetch origin
             git reset --hard origin/main
             test -f "$repo/Spazi/index.html"
-            # Caddy serve la home tramite symlink; il percorso Spazi non e ancora
-            # montato nella root pubblica. La pagina Fiumana usa GitHub Pages
-            # fino alla configurazione dei permessi di pubblicazione sul server.
+            # Verifica ed eventualmente monta la cartella Spazi senza modificare
+            # gli altri progetti pubblicati. Il comando privilegiato e non interattivo.
             test -s "$repo/Spazi/fiumana-scroll-infinito/index.html"
+            public_spazi=/opt/gbprof/www/Spazi
+            if [ ! -e "$public_spazi" ] && [ ! -L "$public_spazi" ]; then
+              if ln -s "$repo/Spazi" "$public_spazi" 2>/dev/null; then
+                echo "Spazi collegato tramite permessi deploy"
+              elif sudo -n ln -s "$repo/Spazi" "$public_spazi" 2>/dev/null; then
+                echo "Spazi collegato tramite sudo autorizzato"
+              else
+                echo "Spazi non collegato: permessi server insufficienti; rimane GitHub Pages"
+              fi
+            fi
+            if [ -L "$public_spazi" ]; then
+              echo "Spazi symlink: $(readlink "$public_spazi")"
+            fi
+            if [ -r /opt/gbprof/Caddyfile ]; then
+              grep -nE 'root |file_server|handle_path|reverse_proxy' /opt/gbprof/Caddyfile || true
+            fi
+            for asset in "" style.css site.js hero-fiumana-scroll.webp paper.pdf; do
+              code="$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "https://gbprof.it/Spazi/fiumana-scroll-infinito/$asset")"
+              echo "gbprof.it Fiumana: ${asset:-index.html} HTTP $code"
+            done
             public_fiumana=https://gb69prof.github.io/gbprof-home/Spazi/fiumana-scroll-infinito/
             test "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "$public_fiumana")" = 200
             test "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "${public_fiumana}style.css")" = 200
