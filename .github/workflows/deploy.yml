@@ -46,19 +46,19 @@ jobs:
               code="$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "https://gbprof.it/Spazi/fiumana-scroll-infinito/$asset")"
               echo "gbprof.it Fiumana: ${asset:-index.html} HTTP $code"
             done
-            public_fiumana=https://gb69prof.github.io/gbprof-home/Spazi/fiumana-scroll-infinito/
+            public_fiumana=https://gbprof.it/Spazi/fiumana-scroll-infinito/
             test "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "$public_fiumana")" = 200
             test "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "${public_fiumana}style.css")" = 200
             test "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "${public_fiumana}site.js")" = 200
             test "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "${public_fiumana}hero-fiumana-scroll.webp")" = 200
             test "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "${public_fiumana}paper.pdf")" = 200
-            echo "Fiumana pubblicata via GitHub Pages con risorse raggiungibili"
+            echo "Fiumana pubblicata su gbprof.it con risorse raggiungibili"
             test "$(curl -sS -L --max-time 15 -o /dev/null -w '%{http_code}' https://gbprof.it/)" = 200
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'class="portal portal-spazi" href="#spazi"'
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq '<section id="spazi" class="directory-view"'
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'PWA in costruzione'
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'Apri UTILITY →'
             ! curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'Spazio · Presentazioni'
-            curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'https://gb69prof.github.io/gbprof-home/Spazi/fiumana-scroll-infinito/'
+            curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'https://gbprof.it/Spazi/fiumana-scroll-infinito/'
             echo "Deploy gbprof-home e sezione Strumenti verificati"
             git log -1 --oneline
