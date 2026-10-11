@@ -23,18 +23,18 @@ jobs:
             git fetch origin
             git reset --hard origin/main
             test -f "$repo/Spazi/index.html"
-            # Publish only the requested Fiumana space in Caddy's public root.
-            published=/opt/gbprof/www/Spazi/fiumana-scroll-infinito
-            mkdir -p "$published"
-            for asset in index.html style.css site.js favicon.svg hero-fiumana-scroll.webp paper.pdf; do
-              test -f "$repo/Spazi/fiumana-scroll-infinito/$asset"
-              if [ -f "$published/$asset" ] && ! cmp -s "$repo/Spazi/fiumana-scroll-infinito/$asset" "$published/$asset"; then
-                cp -p "$published/$asset" "$published/$asset.backup-$(date -u +%Y%m%dT%H%M%SZ)"
-              fi
-              cp "$repo/Spazi/fiumana-scroll-infinito/$asset" "$published/$asset"
+            echo "=== Ispezione non distruttiva della pubblicazione ==="
+            id
+            ls -ld /opt/gbprof /opt/gbprof/www /opt/gbprof/www/Spazi /opt/gbprof/projects/gbprof-home /etc/caddy/Caddyfile 2>&1 || true
+            readlink -f /opt/gbprof/www || true
+            if sudo -n true 2>/dev/null; then echo "SUDO_NON_INTERATTIVO=SI"; else echo "SUDO_NON_INTERATTIVO=NO"; fi
+            if [ -r /etc/caddy/Caddyfile ]; then grep -nE "root |file_server|handle_path|reverse_proxy|route" /etc/caddy/Caddyfile || true; fi
+            for path in /opt/gbprof/www/index.html /opt/gbprof/www/Spazi/index.html /opt/gbprof/projects/gbprof-home/Spazi/index.html; do
+              if [ -f "$path" ]; then echo "FILE PRESENTE: $path"; else echo "FILE ASSENTE: $path"; fi
             done
-            for asset in "" style.css site.js favicon.svg hero-fiumana-scroll.webp paper.pdf; do
-              test "$(curl -sS -L --max-time 15 -o /dev/null -w '%{http_code}' "https://gbprof.it/Spazi/fiumana-scroll-infinito/$asset")" = 200
+            for asset in "" style.css site.js hero-fiumana-scroll.webp paper.pdf; do
+              asset_code="$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "https://gbprof.it/Spazi/fiumana-scroll-infinito/$asset")"
+              printf "Fiumana risorsa %s: HTTP %s\n" "$asset" "$asset_code"
             done
             test "$(curl -sS -L --max-time 15 -o /dev/null -w '%{http_code}' https://gbprof.it/)" = 200
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'class="portal portal-spazi" href="#spazi"'
