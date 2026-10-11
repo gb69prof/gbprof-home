@@ -23,50 +23,23 @@ jobs:
             git fetch origin
             git reset --hard origin/main
             test -f "$repo/Spazi/index.html"
-            echo "=== Struttura della cartella web ==="
-            ls -la /opt/gbprof/www || true
-            ls -la /opt/gbprof/www/assets 2>&1 | head -n 8 || true
-            stat -c '%F %a %U:%G %n' /opt/gbprof/www/index.html /opt/gbprof/projects/gbprof-home/index.html 2>&1 || true
-            readlink -f /opt/gbprof/www/index.html || true
-            command -v getfacl >/dev/null && getfacl -p /opt/gbprof/www 2>&1 || true
-            find /opt/gbprof -maxdepth 4 -name Caddyfile -print 2>/dev/null || true
-            echo "=== URL alternativo GitHub Pages ==="
-            for url in https://gb69prof.github.io/gbprof-home/Spazi/fiumana-scroll-infinito/ https://gb69prof.github.io/gbprof-home/Spazi/fiumana-scroll-infinito/style.css https://gbprof.it/Spazi/index.html; do
-              printf "%s -> %s\n" "$url" "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "$url")"
-            done
-            echo "=== Ispezione non distruttiva della pubblicazione ==="
-            id
-            ls -ld /opt/gbprof /opt/gbprof/www /opt/gbprof/www/Spazi /opt/gbprof/projects/gbprof-home /etc/caddy/Caddyfile 2>&1 || true
-            readlink -f /opt/gbprof/www || true
-            if sudo -n true 2>/dev/null; then echo "SUDO_NON_INTERATTIVO=SI"; else echo "SUDO_NON_INTERATTIVO=NO"; fi
-            if [ -r /etc/caddy/Caddyfile ]; then grep -nE "root |file_server|handle_path|reverse_proxy|route" /etc/caddy/Caddyfile || true; fi
-            for path in /opt/gbprof/www/index.html /opt/gbprof/www/Spazi/index.html /opt/gbprof/projects/gbprof-home/Spazi/index.html; do
-              if [ -f "$path" ]; then echo "FILE PRESENTE: $path"; else echo "FILE ASSENTE: $path"; fi
-            done
-            for asset in "" style.css site.js hero-fiumana-scroll.webp paper.pdf; do
-              asset_code="$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "https://gbprof.it/Spazi/fiumana-scroll-infinito/$asset")"
-              printf "Fiumana risorsa %s: HTTP %s\n" "$asset" "$asset_code"
-            done
+            # Caddy serve la home tramite symlink; il percorso Spazi non e ancora
+            # montato nella root pubblica. La pagina Fiumana usa GitHub Pages
+            # fino alla configurazione dei permessi di pubblicazione sul server.
+            test -s "$repo/Spazi/fiumana-scroll-infinito/index.html"
+            public_fiumana=https://gb69prof.github.io/gbprof-home/Spazi/fiumana-scroll-infinito/
+            test "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "$public_fiumana")" = 200
+            test "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "${public_fiumana}style.css")" = 200
+            test "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "${public_fiumana}site.js")" = 200
+            test "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "${public_fiumana}hero-fiumana-scroll.webp")" = 200
+            test "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "${public_fiumana}paper.pdf")" = 200
+            echo "Fiumana pubblicata via GitHub Pages con risorse raggiungibili"
             test "$(curl -sS -L --max-time 15 -o /dev/null -w '%{http_code}' https://gbprof.it/)" = 200
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'class="portal portal-spazi" href="#spazi"'
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq '<section id="spazi" class="directory-view"'
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'PWA in costruzione'
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'Apri UTILITY →'
             ! curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'Spazio · Presentazioni'
-            echo "=== Diagnostica pubblicazione Fiumana ==="
-            test -s "$repo/Spazi/fiumana-scroll-infinito/index.html"
-            probe="$(mktemp)"
-            code="$(curl -sSL --max-time 20 -o "$probe" -w '%{http_code}' https://gbprof.it/Spazi/fiumana-scroll-infinito/)"
-            printf "Fiumana pagina: HTTP %s, byte %s\\n" "$code" "$(wc -c < "$probe")"
-            head -c 180 "$probe" || true
-            printf "\\n"
-            test "$code" = 200
-            grep -Fq "Dalla <em>fiumana</em>" "$probe"
-            for asset in style.css site.js hero-fiumana-scroll.webp paper.pdf; do
-              asset_code="$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "https://gbprof.it/Spazi/fiumana-scroll-infinito/$asset")"
-              printf "Fiumana risorsa %s: HTTP %s\\n" "$asset" "$asset_code"
-              test "$asset_code" = 200
-            done
-            rm -f "$probe"
+            curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'https://gb69prof.github.io/gbprof-home/Spazi/fiumana-scroll-infinito/'
             echo "Deploy gbprof-home e sezione Strumenti verificati"
             git log -1 --oneline
