@@ -1,0 +1,104 @@
+/* Additions for room 02 only. Shared room 01 styles remain unchanged. */
+.dialogue-room .room-breadcrumb { display: flex; flex-wrap: wrap; gap: 10px; padding-top: 20px; color: var(--work-muted); font-size: 12px; }
+.dialogue-room .room-breadcrumb a { color: var(--work-gold); }
+.dialogue-room .room-hero { padding-block: 44px 68px; }
+.dialogue-room h1 { font-size: clamp(58px, 7.2vw, 98px); }
+.dialogue-room .room-question p { max-width: 25ch; font-size: clamp(23px, 2.2vw, 30px); line-height: 1.5; }
+.dialogue-room .room-question-mark { font-style: normal; font-size: 40px; }
+.dialogue-room .room-prose strong { color: var(--work-text); font-weight: 600; }
+.dialogue-room .dialogue-controls { display: flex; align-items: flex-end; gap: 24px; margin-block: 32px 0; }
+.dialogue-room #dialogue-selector { flex: 1; }
+.dialogue-room .dialogue-choices { display: flex; gap: 0; }
+.dialogue-room .dialogue-choices label { display: flex; align-items: center; gap: 12px; min-height: 54px; padding: 14px 24px; border-bottom: 2px solid var(--work-line); cursor: pointer; }
+.dialogue-room .dialogue-choices label:has(input:checked) { color: var(--work-gold); border-color: var(--work-gold); background: #dcb98808; }
+.dialogue-room #compare-dialogues { margin: 0; min-height: 54px; }
+.dialogue-room #compare-dialogues[aria-pressed="true"] { color: var(--work-bg); background: var(--work-gold); }
+.dialogue-room #dialogue-status { margin-block: 14px 16px; min-height: 1.8em; }
+.dialogue-room #dialogue-panels { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; }
+.dialogue-room #dialogue-panels.is-comparing { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.dialogue-room .dialogue-card { padding: 32px; border: 1px solid #adb7bb55; min-width: 0; }
+.dialogue-room .dialogue-card h3 { margin-top: 16px; font-size: 30px; }
+.dialogue-room .dialogue-exchange { max-width: 78ch; margin-top: 28px; }
+.dialogue-room .dialogue-exchange > div + div { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--work-line); }
+.dialogue-room .dialogue-exchange dt { margin-bottom: 12px; color: var(--work-gold); font-size: 11px; letter-spacing: .13em; text-transform: uppercase; }
+.dialogue-room .dialogue-exchange dd { margin: 0; font: 23px/1.65 Georgia, "Times New Roman", serif; }
+.dialogue-room .is-comparing .dialogue-highlight { color: var(--work-gold); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; }
+.dialogue-room .dialogue-comment { max-width: 80ch; border-top: 1px solid var(--work-line); margin-top: 32px; padding-top: 22px; }
+.dialogue-room .dialogue-comment h4 { margin: 0 0 12px; color: var(--work-gold); font-size: 13px; font-weight: 500; }
+.dialogue-room .dialogue-comment p { color: #c9cecb; font-size: 15px; }
+.dialogue-room .dialogue-comparison { padding: 26px 30px; margin-top: 28px; border-left: 2px solid var(--work-gold); background: #dcb98808; }
+.dialogue-room .dialogue-comparison > div { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; margin-top: 20px; color: #c9cecb; font-size: 16px; }
+.dialogue-room .dialogue-comparison strong { display: block; margin-bottom: 10px; font: 23px/1.4 Georgia, "Times New Roman", serif; color: var(--work-text); }
+.dialogue-room .operation-intro { max-width: 75ch; color: #c9cecb; }
+.dialogue-room .prompt-selector { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.dialogue-room .prompt-selector label { gap: 9px; min-width: 0; padding: 18px 12px; font-size: 14px; }
+.dialogue-room .prompt-selector label span { font-size: 13px; }
+.dialogue-room .prompt-panel h3 { margin-block: 18px; font-size: 32px; }
+.dialogue-room .operation-question { max-width: 45ch; font: 30px/1.4 Georgia, "Times New Roman", serif; }
+.dialogue-room .operation-explanation { max-width: 75ch; color: var(--work-muted); font-size: 15px; margin-top: 20px; }
+.dialogue-room .prompt-label { max-width: 75ch; border-top: 1px solid var(--work-line); margin-top: 30px; padding-top: 24px; margin-bottom: 14px; font-size: 11px; letter-spacing: .13em; text-transform: uppercase; color: var(--work-gold); }
+.dialogue-room .prompt-text { font-size: 22px; }
+.dialogue-room .essay-layout { display: grid; grid-template-columns: minmax(180px, .65fr) minmax(0, 1.8fr); gap: 54px; padding-block: 36px; }
+.dialogue-room .essay-index { align-self: start; padding-top: 10px; position: sticky; top: 28px; }
+.dialogue-room .essay-index ol { padding-left: 22px; margin-block: 24px 28px; }
+.dialogue-room .essay-index li { padding-left: 4px; margin-bottom: 16px; font-size: 13px; line-height: 1.6; color: var(--work-muted); }
+.dialogue-room .essay-index li::marker { color: var(--work-gold); }
+.dialogue-room .essay-index a { display: inline-block; text-decoration-thickness: 1px; }
+.dialogue-room .essay-source-link { min-height: 44px; font-size: 13px; color: var(--work-gold); }
+.dialogue-room .chapter-text { padding-block: 0 24px; margin-inline: 0; }
+.dialogue-room .chapter-text h4 { scroll-margin-top: 32px; }
+.dialogue-room .chapter-text h4:focus { outline: 2px solid var(--work-gold); outline-offset: 8px; }
+.dialogue-room .dialogue-sources { padding-top: 60px; scroll-margin-top: 32px; max-width: 90ch; }
+.dialogue-room .dialogue-sources > p { margin-top: 18px; font-size: 15px; color: var(--work-muted); }
+.dialogue-room .dialogue-sources ol { padding-left: 25px; margin-block: 28px; }
+.dialogue-room .dialogue-sources li { padding-block: 20px; padding-left: 10px; border-top: 1px solid var(--work-line); font-size: 15px; }
+.dialogue-room .dialogue-sources li::marker { color: var(--work-gold); font-family: Georgia, "Times New Roman", serif; }
+.dialogue-room .dialogue-sources li a { display: inline-block; margin-top: 12px; padding-block: 4px; color: var(--work-gold); }
+.dialogue-room .dialogue-sources li small { display: block; color: var(--work-muted); font-size: 13px; }
+.dialogue-room .dialogue-sources .sources-date { font-size: 12px; }
+.dialogue-room .room-neighbours { display: flex; flex-wrap: wrap; gap: 12px 44px; }
+@media (max-width: 1000px) {
+  .dialogue-room .prompt-selector { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .dialogue-room .essay-layout { grid-template-columns: 180px minmax(0, 1fr); gap: 32px; }
+  .dialogue-room .dialogue-card { padding: 26px; }
+  .dialogue-room .dialogue-exchange dd { font-size: 21px; }
+}
+@media (max-width: 760px) {
+  .dialogue-room .room-breadcrumb { padding-top: 10px; font-size: 11px; }
+  .dialogue-room .room-hero { padding-block: 36px 46px; gap: 30px; }
+  .dialogue-room h1 { font-size: clamp(56px, 12vw, 78px); }
+  .dialogue-room .room-question p { max-width: 36ch; font-size: 24px; }
+  .dialogue-room .dialogue-controls { flex-wrap: wrap; gap: 18px; }
+  .dialogue-room #dialogue-selector { flex-basis: 100%; }
+  .dialogue-room .dialogue-choices label { flex: 1; padding-inline: 16px; font-size: 15px; }
+  .dialogue-room #dialogue-panels.is-comparing,
+  .dialogue-room .dialogue-comparison > div { grid-template-columns: minmax(0, 1fr); }
+  .dialogue-room .dialogue-card { padding: 24px 20px; }
+  .dialogue-room .dialogue-card h3 { font-size: 28px; }
+  .dialogue-room .dialogue-comparison { padding: 24px 20px; }
+  .dialogue-room .prompt-selector { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dialogue-room .prompt-selector label { padding-inline: 10px; gap: 8px; font-size: 14px; }
+  .dialogue-room .prompt-selector label span { display: none; }
+  .dialogue-room .operation-question { font-size: 27px; }
+  .dialogue-room .prompt-text { font-size: 21px; }
+  .dialogue-room .essay-layout { grid-template-columns: minmax(0, 1fr); gap: 32px; padding-block: 28px; }
+  .dialogue-room .essay-index { position: static; border-bottom: 1px solid var(--work-line); padding-bottom: 10px; }
+  .dialogue-room .essay-index li { margin-bottom: 12px; }
+  .dialogue-room .dialogue-sources { padding-top: 42px; }
+}
+@media (max-width: 380px) {
+  .dialogue-room h1 { font-size: 50px; }
+  .dialogue-room .prompt-selector { grid-template-columns: minmax(0, 1fr); }
+  .dialogue-room .prompt-selector label span { display: initial; }
+}
+@media print {
+  .dialogue-room .room-breadcrumb,
+  .dialogue-room .dialogue-controls,
+  .dialogue-room #dialogue-status,
+  .dialogue-room .essay-index,
+  .dialogue-room .room-neighbours { display: none !important; }
+  .dialogue-room .essay-layout { display: block; }
+  .dialogue-room .dialogue-exchange dd,
+  .dialogue-room .dialogue-comment p,
+  .dialogue-room .operation-intro { color: #222; }
+}
