@@ -22,6 +22,20 @@ jobs:
             cd "$repo"
             git fetch origin
             git reset --hard origin/main
+            # Applied only after the approved merge to main. Keep the laboratory
+            # self-contained: /assets on the server also serves older projects.
+            test -s "$repo/come-lavoro/index.html"
+            public_laboratorio=/opt/gbprof/www/come-lavoro
+            if [ ! -e "$public_laboratorio" ] && [ ! -L "$public_laboratorio" ]; then
+              ln -s "$repo/come-lavoro" "$public_laboratorio" 2>/dev/null || sudo -n ln -s "$repo/come-lavoro" "$public_laboratorio"
+            fi
+            # Never overwrite an existing directory or a link to another project.
+            test -L "$public_laboratorio"
+            test "$(readlink -f "$public_laboratorio")" = "$repo/come-lavoro"
+            for asset in index.html style.css assets/come-lavoro-720.webp assets/come-lavoro-1448.webp; do
+              curl -fsSL --max-time 20 -o /dev/null "https://gbprof.it/come-lavoro/$asset"
+            done
+            curl -fsSL --max-time 20 https://gbprof.it/come-lavoro/ | grep -Fq 'id="work-title"'
             test -f "$repo/Spazi/index.html"
             # Verifica ed eventualmente monta la cartella Spazi senza modificare
             # gli altri progetti pubblicati. Il comando privilegiato e non interattivo.
