@@ -6,8 +6,8 @@ La home funziona come portale verso repository indipendenti pubblicati sul serve
 
 ## Come lavoro
 
-La sezione sotto le quattro porte apre `come-lavoro/index.html`. La pagina è
-autosufficiente: CSS e immagini sono dentro `come-lavoro/`, perché gli asset
+La sezione sotto le quattro porte apre `Spazi/come-lavoro/index.html`. La pagina è
+autosufficiente: CSS e immagini sono dentro `Spazi/come-lavoro/`, perché gli asset
 preesistenti nella radice del server sono condivisi con altri progetti.
 
 L'immagine è esclusivamente l'allegato personale `immagine(20261025-171600).png`:
@@ -28,11 +28,11 @@ Modificare `home-source.html` e `assets/style.css`, poi eseguire
 «Il sapere torna a dialogare», prima presente soltanto nel bundle, è stato
 riallineato ai sorgenti senza modificarne testo o aspetto.
 
-Il workflow è limitato ai push su `main`. Dopo il merge approvato prepara il
-collegamento `/opt/gbprof/www/come-lavoro` verso la directory del repository,
-senza sovrascrivere directory o collegamenti estranei, e verifica pagina e asset.
-Il branch `feat/come-lavoro` non attiva il deploy. Non unire o pubblicare senza
-l'approvazione di gbprof.
+Il workflow è limitato ai push su `main` e verifica pagina e asset all’indirizzo
+`https://gbprof.it/Spazi/come-lavoro/`. Usa la directory `Spazi` già pubblicata,
+perché il deploy non ha il permesso di creare un nuovo collegamento nella radice
+del server. Non sono necessarie modifiche a Caddy, Docker o ai permessi.
+La pubblicazione è stata autorizzata da gbprof il 25 ottobre 2026.
 
 Verifiche della modifica: build riproducibile, sezioni preesistenti identiche,
 ID e ancore validi nel bundle e nella pagina interna, sintassi JavaScript e shell,
