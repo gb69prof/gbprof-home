@@ -80,4 +80,12 @@ jobs:
             curl -fsSL --max-time 15 https://gbprof.it/ | grep -Fq 'https://gbprof.it/Spazi/gravity-lab-3d/'
             curl -fsSL --max-time 15 https://gbprof.it/Spazi/ | grep -Fq 'https://gbprof.it/Spazi/gravity-lab-3d/'
             echo "Gravity Lab pubblicato con tutte le risorse e collegamenti verificati"
+            echo "Verifica pubblicazione del romanzo di Libera"
+            public_novel=https://gbprof.it/Spazi/lultima-cosa-che-so/
+            test "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "$public_novel")" = 200
+            test "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "${public_novel}copertina.webp")" = 200
+            curl -fsSL --max-time 20 "$public_novel" | grep -Fq 'id="cap-12"'
+            curl -fsSL --max-time 20 https://gbprof.it/Spazi/ | grep -Fq 'romanzo-libera-title'
+            curl -fsSL --max-time 20 https://gbprof.it/ | grep -Fq 'romanzo-libera-title'
+            echo "Romanzo integrale, copertina e homepage verificati"
             git log -1 --oneline
