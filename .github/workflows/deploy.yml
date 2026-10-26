@@ -22,6 +22,9 @@ jobs:
             cd "$repo"
             git fetch origin
             git reset --hard origin/main
+            # Rigenera la homepage da Spazi/index.html, senza modificare le altre porte.
+            python3 tools/bundle-home.py
+            test -s "$repo/Spazi/lultima-cosa-che-so/index.html"
             # The existing Spazi publication serves the laboratory without new
             # server-level links or broader deployment permissions.
             test -s "$repo/Spazi/come-lavoro/index.html"
