@@ -85,6 +85,15 @@ jobs:
             test "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "$public_novel")" = 200
             test "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "${public_novel}copertina.webp")" = 200
             curl -fsSL --max-time 20 "$public_novel" | grep -Fq 'id="cap-12"'
+            # Verifica l'intera continuazione (capitoli XIII–XXIV) e la navigazione.
+            public_novel_next=https://gbprof.it/Spazi/lultima-cosa-che-so/parte-seconda/
+            test "$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "$public_novel_next")" = 200
+            curl -fsSL --max-time 20 "$public_novel_next" | grep -Fq 'id="cap-13"'
+            curl -fsSL --max-time 20 "$public_novel_next" | grep -Fq 'id="cap-24"'
+            curl -fsSL --max-time 20 "$public_novel" | grep -Fq 'href="parte-seconda/"'
+            curl -fsSL --max-time 20 https://gbprof.it/Spazi/ | grep -Fq 'Continua · Parte seconda'
+            curl -fsSL --max-time 20 https://gbprof.it/ | grep -Fq 'Continua · Parte seconda'
+            echo "La parte seconda è pubblicata, integrale e raggiungibile dalla prima e dagli Spazi"
             curl -fsSL --max-time 20 https://gbprof.it/Spazi/ | grep -Fq 'romanzo-libera-title'
             curl -fsSL --max-time 20 https://gbprof.it/ | grep -Fq 'romanzo-libera-title'
             echo "Romanzo integrale, copertina e homepage verificati"
