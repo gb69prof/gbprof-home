@@ -9,12 +9,12 @@ function saveProgress(){try{localStorage.setItem(STORE,JSON.stringify({animal:[.
 const state={type:"animal",mode:"explore",selected:"nucleus",prediction:null,observing:false,direction:"equal",quiz:{index:0,score:0,answered:false}};
 let scene=null;
 
-function selectOrg(id){
+function selectOrg(id,countMission=true){
   if(!SPECIMENS[state.type].list.includes(id)||state.mode!=="explore")return;
   state.selected=id;const d=ORG[id];
   $("org-code").textContent=d.code;$("org-category").textContent=d.category;$("org-name").textContent=d.name;$("org-description").textContent=d.description;$("org-fact").textContent=d.fact;
   $("org-location").textContent=d.location;$("org-observe").textContent=d.observe;$("org-symbol").textContent=d.symbol;$("org-symbol").style.color=d.color;$("org-symbol").style.textShadow="0 0 38px "+d.color+"9c";
-  if(SPECIMENS[state.type].mission.includes(id)){progress[state.type].add(id);saveProgress();}
+  if(countMission&&SPECIMENS[state.type].mission.includes(id)){progress[state.type].add(id);saveProgress();}
   if(scene)scene.select(id);
   renderList();renderMission();
 }
@@ -44,7 +44,7 @@ function setSpecimen(type){
   if(scene){scene.makeCell(type);scene.setMode(state.mode);scene.autoRotate=$("rotate-btn").classList.contains("active");}
   if(state.mode==="explore")stageCopy();else if(state.mode==="osmosis")updateTonicity();
   renderList();renderMission();
-  if(state.mode==="explore")selectOrg("nucleus");
+  if(state.mode==="explore")selectOrg("nucleus",false);
   if(state.mode==="osmosis"&&state.observing)observe();
 }
 function stageCopy(){
@@ -61,7 +61,7 @@ function goTo(mode){
   $("labels-btn").disabled=mode!=="explore";
   if(scene)scene.setMode(mode);
   stageCopy();
-  if(mode==="explore"){selectOrg(state.selected);$("cell-canvas").setAttribute("aria-label","Modello 3D della cellula. Trascina e usa il catalogo degli organuli.");}
+  if(mode==="explore"){selectOrg(state.selected,false);$("cell-canvas").setAttribute("aria-label","Modello 3D della cellula. Trascina e usa il catalogo degli organuli.");}
   if(mode==="osmosis"){$("cell-canvas").setAttribute("aria-label","Esperimento 3D sull'osmosi. Regola il cursore nel pannello per osservare.");updateTonicity();}
   if(mode==="quiz"){$("cell-canvas").setAttribute("aria-label","Modello 3D illustrativo. Svolgi la verifica nel pannello.");renderQuiz();}
 }

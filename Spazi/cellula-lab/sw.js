@@ -1,4 +1,4 @@
-const CACHE = 'cellula-lab-v1';
+const CACHE = 'cellula-lab-v2';
 const ASSETS = ['./','./index.html','./css/style.css','./js/main.js','./js/data.js','./js/scene.js','./manifest.webmanifest','./icons/icon.svg','./icons/icon-192.png','./icons/icon-512.png','../gravity-lab-3d/vendor/three.module.js','../gravity-lab-3d/vendor/three.core.js'];
 self.addEventListener('install', event => { event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', event => { event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k.startsWith('cellula-lab-') && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
