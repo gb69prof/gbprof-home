@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#071218">
+  <meta name="description" content="CELLULA LAB: laboratorio virtuale 3D di biologia per esplorare la cellula animale e vegetale, sperimentare l'osmosi e verificare ciò che hai scoperto.">
+  <meta name="color-scheme" content="dark">
+  <title>CELLULA LAB · Laboratorio virtuale di biologia · gbprof</title>
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icons/icon.svg">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="topbar-left">
+        <a class="back-link" href="/#spazi" aria-label="Torna a Spazi e passioni">← <span>SPAZI</span></a>
+        <span class="top-divider"></span>
+        <a class="lab-brand" href="./" aria-label="CELLULA LAB — torna alla schermata iniziale">
+          <span class="lab-logo" aria-hidden="true"><span class="logo-nucleus"></span><span class="logo-orbit"></span></span>
+          <span>CELLULA<span class="brand-light">LAB</span><small>ATLANTE BIOLOGICO INTERATTIVO</small></span>
+        </a>
+      </div>
+      <div class="topbar-right"><span class="edition"><i class="live-dot"></i> LABORATORIO / 01</span><button class="header-help" id="open-help" type="button">Il modello <span>↗</span></button><button id="install-app" class="install-btn" type="button" hidden>＋ Installa</button></div>
+    </header>
+    <div class="lab-shell">
+      <aside class="rail" aria-label="Percorso di laboratorio">
+        <div class="rail-header"><span class="eyebrow">IL TUO PERCORSO</span><h2>Dentro la vita<span>.</span></h2><p>Osserva, sperimenta, comprendi.</p></div>
+        <nav class="steps-nav" aria-label="Fasi del laboratorio">
+          <button class="step active" data-mode="explore" type="button"><span class="step-n">01</span><span class="step-copy"><b>Esplora</b><small>Dentro la cellula</small></span><span class="step-arrow">↗</span></button>
+          <button class="step" data-mode="osmosis" type="button"><span class="step-n">02</span><span class="step-copy"><b>Sperimenta</b><small>L'osmosi in azione</small></span><span class="step-arrow">↗</span></button>
+          <button class="step" data-mode="quiz" type="button"><span class="step-n">03</span><span class="step-copy"><b>Mettiti alla prova</b><small>La sfida finale</small></span><span class="step-arrow">↗</span></button>
+        </nav>
+        <div class="rail-divider"></div>
+        <div class="rail-sub"><span class="eyebrow">SCEGLI UN CAMPIONE</span><p>Due cellule e una differenza essenziale: come sono organizzate.</p></div>
+        <div class="sample-switch" role="group" aria-label="Tipo di cellula"><button id="animal-btn" class="sample active" type="button" aria-pressed="true"><span class="sample-symbol animal">◉</span><span><b>Animale</b><small>Eucariote</small></span></button><button id="plant-btn" class="sample" type="button" aria-pressed="false"><span class="sample-symbol plant">▣</span><span><b>Vegetale</b><small>Eucariote</small></span></button></div>
+        <div class="catalogue-head"><span class="eyebrow">STRUTTURE DA ESPLORARE</span><span id="found-count">0 / 4</span></div>
+        <div id="organelle-list" class="organelle-list" role="group" aria-label="Seleziona gli organuli"></div>
+        <div class="rail-bottom"><span class="accent-line"></span><span>gbprof <span class="dim">×</span> Libera</span><small>UN LABORATORIO PER IMPARARE FACENDO</small></div>
+      </aside>
+      <main class="workspace" id="main">
+        <section class="visual" aria-label="Modello tridimensionale della cellula">
+          <div class="visual-grid" aria-hidden="true"></div><div class="halo halo-one" aria-hidden="true"></div><div class="halo halo-two" aria-hidden="true"></div>
+          <div class="scene-title"><div class="eyebrow"><span class="eyebrow-line"></span><span id="stage-tag">01 / ANATOMIA CELLULARE</span></div><h1 id="stage-title">Un universo<br><em>invisibile.</em></h1><p id="stage-subtitle">Trascina il modello, avvicinati e tocca un organulo per scoprirne il lavoro.</p></div>
+          <div class="scene-badge"><span class="ring-dot"></span><span id="scene-status">CELLULA ANIMALE · MODELLO 3D</span></div>
+          <canvas id="cell-canvas" aria-label="Modello 3D interattivo della cellula; usa anche l'elenco di strutture per esplorarlo" tabindex="0"></canvas>
+          <div id="webgl-error" class="webgl-error" hidden role="status">La visualizzazione 3D non è disponibile in questo browser. Puoi continuare usando l'elenco degli organuli, il laboratorio e la verifica.</div>
+          <div id="scene-labels" class="scene-labels"></div>
+          <div id="osm-hud" class="osm-hud" hidden><span class="osm-hud-kicker">MOVIMENTO DELL'ACQUA</span><strong id="osm-direction">In equilibrio</strong><small id="osm-description">Il passaggio avviene in entrambe le direzioni.</small></div>
+          <div class="specimen-index"><span id="specimen-code">C·A / 001</span><span>MODELLO SCIENTIFICO SEMPLIFICATO</span></div>
+          <div class="scene-bottom">
+            <div class="scene-hint"><span class="pointer-symbol">⌖</span><span>TRASCINA PER RUOTARE <span class="hint-separator">·</span> SCORRI PER ZOOM</span></div>
+            <div class="scene-tools" aria-label="Controlli 3D"><button id="rotate-btn" type="button" class="tool active" aria-pressed="true" title="Ferma o avvia rotazione automatica"><span>↻</span><small>Ruota</small></button><button id="labels-btn" type="button" class="tool active" aria-pressed="true" title="Mostra o nascondi le etichette"><span>⌗</span><small>Etichette</small></button><button id="zoom-out-btn" type="button" class="tool" title="Allontana la visuale"><span>−</span><small>Zoom</small></button><button id="zoom-in-btn" type="button" class="tool" title="Avvicina la visuale"><span>＋</span><small>Zoom</small></button><button id="reset-view-btn" type="button" class="tool" title="Ripristina la visuale"><span>⟲</span><small>Reset</small></button></div>
+          </div>
+        </section>
+      </main>
+      <aside class="inspector" aria-label="Scheda e attività">
+        <div id="explore-panel" class="panel-content">
+          <div class="panel-top"><span class="eyebrow">MICROSCOPIO / SCHEDA</span><span class="panel-id" id="org-code">ORG. 01</span></div>
+          <div id="org-visual" class="org-visual" aria-hidden="true"><div class="org-visual-ring"><div id="org-symbol" class="org-symbol">◎</div></div><span class="visual-corner">FIG. 001</span></div>
+          <div class="org-type" id="org-category">CENTRO DI CONTROLLO</div><h2 id="org-name">Nucleo</h2><p class="org-description" id="org-description">Custodisce gran parte del DNA e regola molte attività della cellula.</p>
+          <div class="fact-card"><span class="fact-title">PERCHÉ È IMPORTANTE</span><p id="org-fact">Le informazioni del DNA guidano la produzione di proteine attraverso l'espressione genica.</p></div>
+          <div class="info-grid"><div><span>SI TROVA</span><strong id="org-location">Nel citoplasma</strong></div><div><span>OSSERVA</span><strong id="org-observe">L'involucro nucleare</strong></div></div>
+          <button id="focus-btn" class="outline-action" type="button">⌖ <span>Metti a fuoco</span><span>↗</span></button>
+          <div class="mission"><div class="mission-head"><span class="eyebrow">MISSIONE DI OSSERVAZIONE</span><strong id="mission-count">0 / 4</strong></div><p>Riconosci le quattro strutture contrassegnate con una stella.</p><div class="progress-track"><span id="mission-bar"></span></div><div id="mission-items" class="mission-items"></div><div id="mission-success" class="mission-success" hidden>✓ Missione completata: hai riconosciuto le strutture fondamentali.</div></div>
+        </div>
+        <div id="osmosis-panel" class="panel-content" hidden>
+          <div class="panel-top"><span class="eyebrow">ESPERIMENTO / 01</span><span class="panel-id">OSM</span></div>
+          <div class="experiment-illustration"><span class="flask">◌</span><span>H₂O</span><div class="water-bubbles" aria-hidden="true"><i></i><i></i><i></i></div></div>
+          <div class="org-type">MEMBRANA / ACQUA</div><h2>Osmosi</h2><p class="org-description">Cambia la concentrazione di soluti fuori dalla cellula. Formula una previsione e osserva la risposta.</p>
+          <div class="experiment-card"><div class="experiment-label"><span>CONCENTRAZIONE ESTERNA</span><strong id="solute-percent">50%</strong></div><input id="solute-slider" type="range" min="0" max="100" value="50" step="1" aria-label="Concentrazione relativa di soluti all'esterno"><div class="range-labels"><span>Meno soluti</span><span>Più soluti</span></div><div class="tonicity-readout"><span>AMBIENTE</span><b id="tonicity">Isotonico</b></div></div>
+          <div class="predict"><span class="eyebrow">PRIMA OSSERVA CON LA MENTE</span><h3>Che cosa farà l'acqua?</h3><div class="predict-options" role="group" aria-label="Previsione del movimento netto dell'acqua"><button type="button" data-predict="in">Entra</button><button type="button" data-predict="equal">Equilibrio</button><button type="button" data-predict="out">Esce</button></div><button id="observe-btn" class="primary-action" type="button">▶ &nbsp; Avvia l'osservazione</button></div>
+          <div class="result-card" id="osmosis-result" hidden aria-live="polite"><span id="prediction-outcome" class="result-eyebrow"></span><strong id="result-title"></strong><p id="result-body"></p></div>
+          <p class="model-caution">Modello qualitativo: il cursore rappresenta una concentrazione relativa, non valori reali di laboratorio. La pressione osmotica dipende dalle particelle osmoticamente attive.</p>
+          <button id="reset-osmosis" class="text-action" type="button">↺ &nbsp; Ripristina l'esperimento</button>
+        </div>
+        <div id="quiz-panel" class="panel-content" hidden>
+          <div class="panel-top"><span class="eyebrow">VERIFICA / CONOSCENZE</span><span class="panel-id" id="quiz-counter">01 / 08</span></div>
+          <div class="quiz-hero"><span class="quiz-asterisk">✳</span><div><span>LA SFIDA DELLA CELLULA</span><strong id="quiz-score">0 punti</strong></div></div>
+          <div class="quiz-track"><span id="quiz-bar"></span></div>
+          <div id="quiz-content" aria-live="polite"><div class="quiz-topic" id="quiz-topic">FUNZIONI</div><h2 id="quiz-question">Che cosa produce la maggior parte dell'ATP durante la respirazione cellulare?</h2><div id="quiz-answers" class="quiz-answers"></div><div id="quiz-feedback" class="quiz-feedback" hidden></div><button id="quiz-next" class="primary-action" type="button" hidden>Prossima domanda →</button></div>
+          <div id="quiz-finish" class="quiz-finish" hidden><div class="finish-symbol">✧</div><h2>Missione compiuta.</h2><p id="final-score"></p><p id="final-note"></p><button id="quiz-restart" class="primary-action" type="button">↺ &nbsp; Ripeti la sfida</button><button id="back-explore" class="text-action" type="button">Torna a esplorare ↗</button></div>
+          <p class="quiz-note">Rispondi senza fretta: ogni scelta contiene una spiegazione. Il punteggio rimane solo su questo dispositivo.</p>
+        </div>
+      </aside>
+    </div>
+    <footer class="footer"><span><b>gbprof</b> / ESPLORARE PER CAPIRE</span><span>Cellula eucariotica · Rappresentazione didattica, non in scala</span><button id="footer-help" type="button">Metodo e limiti del modello ↗</button></footer>
+  </div>
+  <dialog id="help-dialog" aria-labelledby="help-title"><button id="close-help" class="dialog-close" aria-label="Chiudi">×</button><span class="eyebrow">NOTA SCIENTIFICA</span><h2 id="help-title">Un modello per capire, non una fotografia.</h2><p>Le cellule sono strutture tridimensionali, dinamiche e estremamente complesse. Qui forme, dimensioni, colori, numero di organuli e distanze sono <b>semplificati e non in scala</b> per rendere visibili le funzioni principali.</p><p>Il modello rappresenta cellule eucariotiche generiche; non tutte le cellule animali o vegetali hanno forma e proporzioni identiche. Alcune strutture, come la membrana, sono rese trasparenti o ingrandite per consentire l'esplorazione.</p><p>L'esperimento sull'osmosi mostra la direzione <b>netta</b> del movimento d'acqua attraverso una membrana selettivamente permeabile. In condizioni isotoniche l'acqua continua a passare in entrambe le direzioni: non è immobile. Nelle cellule vegetali interviene anche la parete, che contribuisce a contrastare l'espansione.</p><p>Muovi il modello con il mouse o il tocco, usa la rotella o i pulsanti per lo zoom e scegli gli organuli anche dall'elenco. La verifica è locale: nessun dato dello studente viene inviato a un server.</p><button class="primary-action" id="understood" type="button">Torna al laboratorio</button></dialog>
+  <noscript><p class="noscript">Per utilizzare il laboratorio virtuale, abilita JavaScript nel browser.</p></noscript>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
