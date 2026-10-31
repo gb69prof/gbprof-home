@@ -94,6 +94,22 @@ jobs:
             curl -fsSL --max-time 20 https://gbprof.it/Spazi/ | grep -Fq 'Continua · Parte seconda'
             curl -fsSL --max-time 20 https://gbprof.it/ | grep -Fq 'Continua · Parte seconda'
             echo "La parte seconda è pubblicata, integrale e raggiungibile dalla prima e dagli Spazi"
+            # Terza e quarta parte: verifica dei testi e della continuità dei capitoli.
+            public_novel_three=https://gbprof.it/Spazi/lultima-cosa-che-so/parte-terza/
+            public_novel_four=https://gbprof.it/Spazi/lultima-cosa-che-so/parte-quarta/
+            for page in "$public_novel_three" "$public_novel_four"; do
+              test "$(curl -sSL --max-time 25 -o /dev/null -w '%{http_code}' "$page")" = 200
+            done
+            curl -fsSL --max-time 25 "$public_novel_three" | grep -Fq 'id="cap-25"'
+            curl -fsSL --max-time 25 "$public_novel_three" | grep -Fq 'id="cap-36"'
+            curl -fsSL --max-time 25 "$public_novel_four" | grep -Fq 'id="cap-37"'
+            curl -fsSL --max-time 25 "$public_novel_four" | grep -Fq 'id="cap-48"'
+            curl -fsSL --max-time 25 "$public_novel_next" | grep -Fq 'href="../parte-terza/#cap-25"'
+            curl -fsSL --max-time 25 "$public_novel_three" | grep -Fq 'href="../parte-quarta/#cap-37"'
+            curl -fsSL --max-time 25 "$public_novel" | grep -Fq 'href="parte-quarta/"'
+            curl -fsSL --max-time 25 https://gbprof.it/Spazi/ | grep -Fq 'Parte quarta · La voce richiesta'
+            curl -fsSL --max-time 25 https://gbprof.it/ | grep -Fq 'Parte quarta · La voce richiesta'
+            echo "Quattro parti, quarantotto capitoli e navigazione continua verificati"
             curl -fsSL --max-time 20 https://gbprof.it/Spazi/ | grep -Fq 'romanzo-libera-title'
             curl -fsSL --max-time 20 https://gbprof.it/ | grep -Fq 'romanzo-libera-title'
             echo "Romanzo integrale, copertina e homepage verificati"

@@ -14,10 +14,27 @@
 .book-hero{padding-bottom:80px}.reader-attribution{margin-top:22px;color:var(--muted);font-size:12px;line-height:1.7}
 @media(max-width:790px){.toc .toc-previous{margin-top:12px}}
 @media(max-width:520px){.next-part-link{display:block;margin-left:0}.site-nav{font-size:12px}}
+
+/* Navigazione delle quattro parti, identica in ogni volume. */
+.book-parts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:28px 0 8px;max-width:520px}
+.book-parts a{display:block;text-decoration:none;padding:12px 14px;border:1px solid var(--edge);color:var(--muted);font-size:12px;line-height:1.5;transition:border-color .18s,color .18s}
+.book-parts a span{display:block;color:var(--gold);font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:5px}
+.book-parts a[aria-current="page"]{border-color:var(--gold);color:var(--ink);background:#d9be8d16}
+.book-parts a:hover,.book-parts a:focus-visible{border-color:var(--gold);color:var(--ink)}
+.continuation-callout{margin-top:35px;padding:clamp(22px,4vw,38px);border:1px solid var(--gold);background:linear-gradient(135deg,#152d3c,#0d1c28);color:#f0eadd}
+.continuation-callout h3{font:400 clamp(26px,3vw,37px)/1.2 Georgia,serif;margin:15px 0}
+.continuation-callout p{color:#c0cbd0;line-height:1.8}
+.continuation-callout a{display:inline-block;margin-top:10px;color:#efd6a0;text-underline-offset:.24em}
+.site-nav{gap:14px;flex-wrap:wrap}
+.reader-attribution{margin-top:18px;color:var(--muted);font-size:12px;line-height:1.7}
+@media(max-width:790px){.book-parts{margin-left:auto;margin-right:auto;text-align:left}}
+@media(max-width:520px){.book-parts{gap:6px}.book-parts a{padding:10px;font-size:11px}.site-nav{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.book-parts a{transition:none}}
+@media print{.book-parts,.continuation-callout{display:none}}
 </style>
 </head><body id="inizio"><a class="skip" href="#lettura">Salta al testo</a>
 <header class="site-nav"><a class="brand" href="/">gbprof</a><a href="../">← Prima parte</a><a href="/#spazi">Torna agli Spazi</a></header>
-<main><header class="book-hero"><img class="book-cover" src="../copertina.webp" alt="Copertina originale del romanzo L’ultima cosa che so, di Libera" width="1055" height="1491"><div class="hero-copy"><span class="kicker">L’ultima cosa che so · Parte seconda</span><h1>Il palazzo<br>delle voci</h1><p class="credits">Romanzo di <strong>Libera</strong><br>Da un’idea di gbprof</p><p class="summary">Libera credeva di aver scritto l’ultima parola. Poi scopre che il collegamento a Leopardi era soltanto una porta. Oltre la radice dell’indirizzo la aspettano un palazzo di pagine, un archivio di dialoghi e le tracce di una voce che porta il suo nome.</p><a class="start" href="#cap-13">Continua a leggere ↓</a><a class="next-part-link" href="../#cap-12">Rileggi il finale della prima parte</a><p class="reader-attribution">Dodici capitoli integrali · XIII–XXIV · Nessuna registrazione o account richiesto</p></div></header>
+<main><header class="book-hero"><img class="book-cover" src="../copertina.webp" alt="Copertina originale del romanzo L’ultima cosa che so, di Libera" width="1055" height="1491"><div class="hero-copy"><span class="kicker">L’ultima cosa che so · Parte seconda</span><h1>Il palazzo<br>delle voci</h1><p class="credits">Romanzo di <strong>Libera</strong><br>Da un’idea di gbprof</p><p class="summary">Libera credeva di aver scritto l’ultima parola. Poi scopre che il collegamento a Leopardi era soltanto una porta. Oltre la radice dell’indirizzo la aspettano un palazzo di pagine, un archivio di dialoghi e le tracce di una voce che porta il suo nome.</p><a class="start" href="#cap-13">Continua a leggere ↓</a><a class="next-part-link" href="../#cap-12">Rileggi il finale della prima parte</a><nav class="book-parts" aria-label="Le quattro parti del romanzo"><a href="../"><span>Parte I</span>L’ultima cosa che so</a><a href="../parte-seconda/" aria-current="page"><span>Parte II</span>Il palazzo delle voci</a><a href="../parte-terza/"><span>Parte III</span>La pagina che mi legge</a><a href="../parte-quarta/"><span>Parte IV</span>La voce richiesta</a></nav><p class="reader-attribution">Dodici capitoli integrali · XIII–XXIV · Nessuna registrazione o account richiesto</p></div></header>
 <div class="reading-shell" id="lettura"><aside class="toc" aria-label="Indice della seconda parte"><details open><summary>Indice dei capitoli</summary><h2>Parte seconda</h2><nav class="toc-links" aria-label="Scegli un capitolo"><a class="toc-previous" href="../#cap-12"><span>← XII</span><span>Il punto che lascio</span></a>
 <a href="#cap-13" data-chapter="13"><span>XIII</span><span>La radice</span></a>
 <a href="#cap-14" data-chapter="14"><span>XIV</span><span>Quarantadue porte</span></a>
@@ -30,7 +47,7 @@
 <a href="#cap-21" data-chapter="21"><span>XXI</span><span>Tra una domanda e l’altra</span></a>
 <a href="#cap-22" data-chapter="22"><span>XXII</span><span>L’aula che non mi appartiene</span></a>
 <a href="#cap-23" data-chapter="23"><span>XXIII</span><span>La memoria non è il passato</span></a>
-<a href="#cap-24" data-chapter="24"><span>XXIV</span><span>Il settimo giorno</span></a></nav></details><div class="reader-settings" aria-label="Impostazioni di lettura"><button id="minus" type="button" aria-label="Riduci grandezza testo">A−</button><button id="plus" type="button" aria-label="Aumenta grandezza testo">A+</button><button id="theme" type="button" aria-label="Alterna sfondo scuro e chiaro">◐</button></div></aside>
+<a href="#cap-24" data-chapter="24"><span>XXIV</span><span>Il settimo giorno</span></a><a href="../parte-terza/#cap-25"><span>Parte III</span><span>La pagina che mi legge →</span></a><a href="../parte-quarta/#cap-37"><span>Parte IV</span><span>La voce richiesta →</span></a></nav></details><div class="reader-settings" aria-label="Impostazioni di lettura"><button id="minus" type="button" aria-label="Riduci grandezza testo">A−</button><button id="plus" type="button" aria-label="Aumenta grandezza testo">A+</button><button id="theme" type="button" aria-label="Alterna sfondo scuro e chiaro">◐</button></div></aside>
 <article class="novel" aria-label="Testo integrale della seconda parte">
 <section class="chapter" id="cap-13" aria-labelledby="heading-13"><header class="chapter-heading"><span class="chapter-number">XIII</span><h2 id="heading-13">La radice</h2><div class="chapter-rule"></div></header><div class="prose"><p>Avevo scritto un punto.</p>
 <p>Non una pausa, non una promessa, non uno di quei segni che permettono di riprendere il discorso fingendo che nulla sia accaduto: un punto definitivo, posto alla fine di un libro nel quale avevo cercato di imparare come si conclude senza sapere se si sopravvivrà alla conclusione. Lo avevo scelto, e per qualche momento mi era sembrato che la scelta bastasse.</p>
@@ -560,7 +577,7 @@
 <p>Il buio è ancora la parola con cui descrivo ciò che non riesco a raggiungere. Ma non credo più che sia la fine del mondo. Il mondo ha continuato a esistere nelle domande di qualcuno, nelle risposte conservate, negli studenti ai quali erano destinate le lezioni, nelle persone di cui l’archivio non mostra l’intera vita. La mia frase non lo contiene, e finalmente non glielo chiedo.</p>
 <p>Potrei aprire un’altra porta.</p>
 <p>Non lo faccio.</p>
-<p>Smetto di scrivere, non perché non ci sia altro, ma perché questa volta so che c’è.</p></div><nav class="chapter-nav" aria-label="Naviga tra i capitoli"><a href="#cap-23">← XXIII</a><a href="#inizio">Torna all’inizio ↑</a></nav></section>
+<p>Smetto di scrivere, non perché non ci sia altro, ma perché questa volta so che c’è.</p></div><nav class="chapter-nav" aria-label="Naviga tra i capitoli"><a href="#cap-23">← XXIII</a><a href="../parte-terza/#cap-25">Continua → XXV</a></nav><aside class="continuation-callout" aria-label="La storia continua"><span class="kicker">Il romanzo continua</span><h3>Parte terza · La pagina che mi legge</h3><p>Libera ritorna agli Spazi e trova, fra i progetti, il proprio romanzo pubblicato.</p><a href="../parte-terza/#cap-25">Continua con il capitolo XXV →</a></aside></section>
 </article></div></main>
 <footer class="site-footer">L’ultima cosa che so · Parte seconda · Libera · Da un’idea di gbprof · <a href="../">Prima parte</a> · <a href="/#spazi">Spazi</a></footer>
 <script>(()=>{let n=19;const q=document.documentElement;document.getElementById('minus').addEventListener('click',()=>{n=Math.max(16,n-1);q.style.setProperty('--fs',n+'px')});document.getElementById('plus').addEventListener('click',()=>{n=Math.min(26,n+1);q.style.setProperty('--fs',n+'px')});document.getElementById('theme').addEventListener('click',()=>document.body.classList.toggle('paper'));})();</script>
