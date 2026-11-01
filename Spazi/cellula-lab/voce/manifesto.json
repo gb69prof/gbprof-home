@@ -1,0 +1,312 @@
+{
+  "protein-0": {
+    "duration_seconds": 10.78,
+    "sample_rate": 24000,
+    "text": "Nel nucleo, un gene del DNA viene trascritto in un messaggio di RNA. La cellula può così utilizzare l'informazione genetica senza spostare il DNA fuori dal nucleo.",
+    "voice": "Kokoro v1.0 if_sara",
+    "seconds_generation": 2.62,
+    "details": {
+      "engine_chunks": [
+        {
+          "text": "Nel nucleo, un gene del DNA viene trascritto in un messaggio di RNA. La cellula può così utilizzare l'informazione genetica senza spostare il DNA fuori dal nucleo.",
+          "phoneme_count": 205,
+          "unknown_phoneme_symbols": [
+            "̪"
+          ]
+        }
+      ],
+      "device": "CPU",
+      "codec_termination": []
+    }
+  },
+  "protein-1": {
+    "duration_seconds": 8.82,
+    "sample_rate": 24000,
+    "text": "Il messaggio di RNA viene maturato e attraversa un poro dell'involucro nucleare. Una volta nel citoplasma, può essere letto da un ribosoma.",
+    "voice": "Kokoro v1.0 if_sara",
+    "seconds_generation": 1.79,
+    "details": {
+      "engine_chunks": [
+        {
+          "text": "Il messaggio di RNA viene maturato e attraversa un poro dell'involucro nucleare. Una volta nel citoplasma, può essere letto da un ribosoma.",
+          "phoneme_count": 159,
+          "unknown_phoneme_symbols": []
+        }
+      ],
+      "device": "CPU",
+      "codec_termination": []
+    }
+  },
+  "protein-2": {
+    "duration_seconds": 12.18,
+    "sample_rate": 24000,
+    "text": "Il ribosoma legge il messaggio e comincia a unire gli amminoacidi. Per la proteina destinata alla secrezione che seguiamo qui, il complesso viene indirizzato verso il reticolo endoplasmatico rugoso.",
+    "voice": "Kokoro v1.0 if_sara",
+    "seconds_generation": 2.5,
+    "details": {
+      "engine_chunks": [
+        {
+          "text": "Il ribosoma legge il messaggio e comincia a unire gli amminoacidi. Per la proteina destinata alla secrezione che seguiamo qui, il complesso viene indirizzato verso il reticolo endoplasmatico rugoso.",
+          "phoneme_count": 211,
+          "unknown_phoneme_symbols": []
+        }
+      ],
+      "device": "CPU",
+      "codec_termination": []
+    }
+  },
+  "protein-3": {
+    "duration_seconds": 9.5,
+    "sample_rate": 24000,
+    "text": "La catena proteica nascente entra nel reticolo, dove inizia a ripiegarsi e può subire modifiche. La sua forma contribuirà alla funzione che svolgerà.",
+    "voice": "Kokoro v1.0 if_sara",
+    "seconds_generation": 1.96,
+    "details": {
+      "engine_chunks": [
+        {
+          "text": "La catena proteica nascente entra nel reticolo, dove inizia a ripiegarsi e può subire modifiche. La sua forma contribuirà alla funzione che svolgerà.",
+          "phoneme_count": 163,
+          "unknown_phoneme_symbols": []
+        }
+      ],
+      "device": "CPU",
+      "codec_termination": []
+    }
+  },
+  "protein-4": {
+    "duration_seconds": 9.68,
+    "sample_rate": 24000,
+    "text": "Attraverso il trasporto vescicolare, la proteina raggiunge l'apparato di Golgi. Qui può essere ulteriormente modificata e smistata verso la sua destinazione.",
+    "voice": "Kokoro v1.0 if_sara",
+    "seconds_generation": 1.99,
+    "details": {
+      "engine_chunks": [
+        {
+          "text": "Attraverso il trasporto vescicolare, la proteina raggiunge l'apparato di Golgi. Qui può essere ulteriormente modificata e smistata verso la sua destinazione.",
+          "phoneme_count": 169,
+          "unknown_phoneme_symbols": []
+        }
+      ],
+      "device": "CPU",
+      "codec_termination": []
+    }
+  },
+  "protein-5": {
+    "duration_seconds": 11.62,
+    "sample_rate": 24000,
+    "text": "Una vescicola si fonde con la membrana plasmatica e libera il contenuto all'esterno: è l'esocitosi. Ricorda che molte altre proteine restano nella cellula e seguono percorsi diversi.",
+    "voice": "Kokoro v1.0 if_sara",
+    "seconds_generation": 2.29,
+    "details": {
+      "engine_chunks": [
+        {
+          "text": "Una vescicola si fonde con la membrana plasmatica e libera il contenuto all'esterno: è l'esocitosi. Ricorda che molte altre proteine restano nella cellula e seguono percorsi diversi.",
+          "phoneme_count": 197,
+          "unknown_phoneme_symbols": []
+        }
+      ],
+      "device": "CPU",
+      "codec_termination": []
+    }
+  },
+  "energy": {
+    "duration_seconds": 20.45,
+    "sample_rate": 24000,
+    "text": "Nel mitocondrio la catena respiratoria pompa protoni verso lo spazio tra le due membrane. I protoni rientrano nella matrice attraverso l'enzima a ti pi sintasi, che permette di produrre a ti pi da adenosina difosfato e fosfato. L'ossigeno accetta gli elettroni alla fine della catena. Varia le due risorse: l'indice è qualitativo. Anche altre vie cellulari producono a ti pi.",
+    "voice": "Kokoro v1.0 if_sara",
+    "seconds_generation": 4.21,
+    "details": {
+      "engine_chunks": [
+        {
+          "text": "Nel mitocondrio la catena respiratoria pompa protoni verso lo spazio tra le due membrane. I protoni rientrano nella matrice attraverso l'enzima a ti pi sintasi, che permette di produrre a ti pi da adenosina difosfato e fosfato. L'ossigeno accetta gli elettroni alla fine della catena. Varia le due risorse: l'indice è qualitativo. Anche altre vie cellulari producono a ti pi.",
+          "phoneme_count": 409,
+          "unknown_phoneme_symbols": []
+        }
+      ],
+      "device": "CPU",
+      "codec_termination": []
+    }
+  },
+  "osmosis": {
+    "duration_seconds": 20.82,
+    "sample_rate": 24000,
+    "text": "L'osmosi è il movimento dell'acqua attraverso una membrana selettivamente permeabile. In un mezzo ipotonico, l'acqua tende a entrare nella cellula; in uno ipertonico tende a uscire. In isotonia l'acqua continua a muoversi nei due sensi, senza flusso netto. Nella cellula vegetale, la parete limita l'espansione e contribuisce al turgore. La forma visualizzata è una semplificazione.",
+    "voice": "Kokoro v1.0 if_sara",
+    "seconds_generation": 4.24,
+    "details": {
+      "engine_chunks": [
+        {
+          "text": "L'osmosi è il movimento dell'acqua attraverso una membrana selettivamente permeabile. In un mezzo ipotonico, l'acqua tende a entrare nella cellula; in uno ipertonico tende a uscire. In isotonia l'acqua continua a muoversi nei due sensi, senza flusso netto. Nella cellula vegetale, la parete limita l'espansione e contribuisce al turgore. La forma visualizzata è una semplificazione.",
+          "phoneme_count": 415,
+          "unknown_phoneme_symbols": []
+        }
+      ],
+      "device": "CPU",
+      "codec_termination": []
+    }
+  },
+  "photo": {
+    "duration_seconds": 22.07,
+    "sample_rate": 24000,
+    "text": "Nei cloroplasti, le reazioni dipendenti dalla luce avvengono nelle membrane dei tilacoidi. L'energia luminosa, insieme all'acqua, permette di formare ossigeno e di produrre a ti pi e enne a di pi acca. Nello stroma, il ciclo di Calvin utilizza anidride carbonica e queste molecole per formare composti organici. Cambia luce e anidride carbonica: l'indice è un modello qualitativo, non una previsione sperimentale.",
+    "voice": "Kokoro v1.0 if_sara",
+    "seconds_generation": 4.52,
+    "details": {
+      "engine_chunks": [
+        {
+          "text": "Nei cloroplasti, le reazioni dipendenti dalla luce avvengono nelle membrane dei tilacoidi. L'energia luminosa, insieme all'acqua, permette di formare ossigeno e di produrre a ti pi e enne a di pi acca. Nello stroma, il ciclo di Calvin utilizza anidride carbonica e queste molecole per formare composti organici. Cambia luce e anidride carbonica: l'indice è un modello qualitativo, non una previsione sperimentale.",
+          "phoneme_count": 453,
+          "unknown_phoneme_symbols": []
+        }
+      ],
+      "device": "CPU",
+      "codec_termination": []
+    }
+  },
+  "mitosis-0": {
+    "duration_seconds": 14.95,
+    "sample_rate": 24000,
+    "text": "Prima che inizi la divisione mitotica, durante l'interfase, la cellula cresce e duplica il proprio DNA. Ogni cromosoma duplicato possiede due cromatidi fratelli. La duplicazione avviene nell'interfase e precede la separazione dei cromosomi.",
+    "voice": "Kokoro v1.0 if_sara",
+    "seconds_generation": 3.08,
+    "details": {
+      "engine_chunks": [
+        {
+          "text": "Prima che inizi la divisione mitotica, durante l'interfase, la cellula cresce e duplica il proprio DNA. Ogni cromosoma duplicato possiede due cromatidi fratelli. La duplicazione avviene nell'interfase e precede la separazione dei cromosomi.",
+          "phoneme_count": 268,
+          "unknown_phoneme_symbols": [
+            "̪"
+          ]
+        }
+      ],
+      "device": "CPU",
+      "codec_termination": []
+    }
+  },
+  "mitosis-1": {
+    "duration_seconds": 11.15,
+    "sample_rate": 24000,
+    "text": "Durante profase e prometafase, i cromosomi si condensano, il fuso mitotico si organizza e l'involucro nucleare si disgrega. I microtubuli del fuso si collegano ai cromosomi.",
+    "voice": "Kokoro v1.0 if_sara",
+    "seconds_generation": 2.27,
+    "details": {
+      "engine_chunks": [
+        {
+          "text": "Durante profase e prometafase, i cromosomi si condensano, il fuso mitotico si organizza e l'involucro nucleare si disgrega. I microtubuli del fuso si collegano ai cromosomi.",
+          "phoneme_count": 187,
+          "unknown_phoneme_symbols": []
+        }
+      ],
+      "device": "CPU",
+      "codec_termination": []
+    }
+  },
+  "mitosis-2": {
+    "duration_seconds": 9.97,
+    "sample_rate": 24000,
+    "text": "In metafase, i cromosomi si dispongono nella regione centrale della cellula. I cromatidi fratelli sono collegati ai microtubuli diretti verso poli opposti.",
+    "voice": "Kokoro v1.0 if_sara",
+    "seconds_generation": 2.06,
+    "details": {
+      "engine_chunks": [
+        {
+          "text": "In metafase, i cromosomi si dispongono nella regione centrale della cellula. I cromatidi fratelli sono collegati ai microtubuli diretti verso poli opposti.",
+          "phoneme_count": 171,
+          "unknown_phoneme_symbols": []
+        }
+      ],
+      "device": "CPU",
+      "codec_termination": []
+    }
+  },
+  "mitosis-3": {
+    "duration_seconds": 9.8,
+    "sample_rate": 24000,
+    "text": "In anafase, i cromatidi fratelli si separano e si spostano verso poli opposti. Da questo momento ciascun cromatide separato è considerato un cromosoma.",
+    "voice": "Kokoro v1.0 if_sara",
+    "seconds_generation": 1.95,
+    "details": {
+      "engine_chunks": [
+        {
+          "text": "In anafase, i cromatidi fratelli si separano e si spostano verso poli opposti. Da questo momento ciascun cromatide separato è considerato un cromosoma.",
+          "phoneme_count": 165,
+          "unknown_phoneme_symbols": []
+        }
+      ],
+      "device": "CPU",
+      "codec_termination": []
+    }
+  },
+  "mitosis-4": {
+    "duration_seconds": 8.53,
+    "sample_rate": 24000,
+    "text": "In telofase, i cromosomi raggiungono i poli e cominciano a decondensarsi. Intorno a ciascun gruppo si riforma un involucro nucleare.",
+    "voice": "Kokoro v1.0 if_sara",
+    "seconds_generation": 1.76,
+    "details": {
+      "engine_chunks": [
+        {
+          "text": "In telofase, i cromosomi raggiungono i poli e cominciano a decondensarsi. Intorno a ciascun gruppo si riforma un involucro nucleare.",
+          "phoneme_count": 141,
+          "unknown_phoneme_symbols": []
+        }
+      ],
+      "device": "CPU",
+      "codec_termination": []
+    }
+  },
+  "mitosis-5": {
+    "duration_seconds": 11.3,
+    "sample_rate": 24000,
+    "text": "La citodieresi separa il citoplasma e completa la divisione. In questa cellula animale si forma un solco di divisione; nelle cellule vegetali, invece, si forma una piastra cellulare.",
+    "voice": "Kokoro v1.0 if_sara",
+    "seconds_generation": 2.32,
+    "details": {
+      "engine_chunks": [
+        {
+          "text": "La citodieresi separa il citoplasma e completa la divisione. In questa cellula animale si forma un solco di divisione; nelle cellule vegetali, invece, si forma una piastra cellulare.",
+          "phoneme_count": 201,
+          "unknown_phoneme_symbols": []
+        }
+      ],
+      "device": "CPU",
+      "codec_termination": []
+    }
+  },
+  "stress": {
+    "duration_seconds": 21.0,
+    "sample_rate": 24000,
+    "text": "La cellula può reagire a condizioni sfavorevoli, per esempio a un aumento della temperatura. Uno stress moderato può attivare meccanismi di protezione e riparazione; se intenso o prolungato può alterare la struttura e la funzione delle proteine. Muovi il cursore e osserva il modello: le soglie e le risposte non sono misure biologiche, e il tempo di esposizione conta nelle cellule reali.",
+    "voice": "Kokoro v1.0 if_sara",
+    "seconds_generation": 4.31,
+    "details": {
+      "engine_chunks": [
+        {
+          "text": "La cellula può reagire a condizioni sfavorevoli, per esempio a un aumento della temperatura. Uno stress moderato può attivare meccanismi di protezione e riparazione; se intenso o prolungato può alterare la struttura e la funzione delle proteine. Muovi il cursore e osserva il modello: le soglie e le risposte non sono misure biologiche, e il tempo di esposizione conta nelle cellule reali.",
+          "phoneme_count": 424,
+          "unknown_phoneme_symbols": []
+        }
+      ],
+      "device": "CPU",
+      "codec_termination": []
+    }
+  },
+  "protein-2-bloccata": {
+    "duration_seconds": 9.35,
+    "sample_rate": 24000,
+    "text": "Il messaggio raggiunge il ribosoma. In questo modello la traduzione è stata bloccata: la catena proteica non viene prodotta e il percorso si arresta.",
+    "voice": "Kokoro v1.0 if_sara",
+    "seconds_generation": 1.91,
+    "details": {
+      "engine_chunks": [
+        {
+          "text": "Il messaggio raggiunge il ribosoma. In questo modello la traduzione è stata bloccata: la catena proteica non viene prodotta e il percorso si arresta.",
+          "phoneme_count": 160,
+          "unknown_phoneme_symbols": []
+        }
+      ],
+      "device": "CPU",
+      "codec_termination": []
+    }
+  }
+}

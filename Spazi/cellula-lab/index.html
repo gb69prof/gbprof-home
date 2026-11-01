@@ -2,94 +2,107 @@
 <html lang="it">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#071218">
-  <meta name="description" content="CELLULA LAB: laboratorio virtuale 3D di biologia per esplorare la cellula animale e vegetale, sperimentare l'osmosi e verificare ciò che hai scoperto.">
-  <meta name="color-scheme" content="dark">
-  <title>CELLULA LAB · Laboratorio virtuale di biologia · gbprof</title>
-  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="./icons/icon-192.png">
-  <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#070f18">
+  <meta name="description" content="Cellula Lab 2 — esplorazione tridimensionale e simulazioni interattive del funzionamento delle cellule eucariotiche.">
+  <meta property="og:title" content="Cellula Lab 2 | Dentro la vita">
+  <title>Cellula Lab 2 · Dentro la vita — gbprof</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app">
-    <header class="topbar">
-      <div class="topbar-left">
-        <a class="back-link" href="/#spazi" aria-label="Torna a Spazi e passioni">← <span>SPAZI</span></a>
-        <span class="top-divider"></span>
-        <a class="lab-brand" href="./" aria-label="CELLULA LAB — torna alla schermata iniziale">
-          <span class="lab-logo" aria-hidden="true"><span class="logo-nucleus"></span><span class="logo-orbit"></span></span>
-          <span>CELLULA<span class="brand-light">LAB</span><small>ATLANTE BIOLOGICO INTERATTIVO</small></span>
-        </a>
+  <div class="background-veil" aria-hidden="true"></div>
+  <header class="topbar">
+    <a href="https://gbprof.it/#spazi" class="brand" aria-label="Torna agli spazi di gbprof"><span class="brand-mark">◌</span><strong>gbprof</strong><span class="brand-divider"></span><span>SPAZI / BIOLOGIA</span></a>
+    <div class="top-actions"><span class="edition">LABORATORIO INTERATTIVO <span class="edition-num">02</span></span><button id="soundBtn" class="icon-btn" type="button" aria-label="Attiva o disattiva effetti sonori, separati dalla spiegazione vocale" title="Effetti sonori"><svg viewBox="0 0 24 24"><path d="M11 5 6 9H3v6h3l5 4V5ZM15 9a5 5 0 0 1 0 6m2-9a9 9 0 0 1 0 12"/></svg></button><button id="fullscreenBtn" class="icon-btn" type="button" aria-label="Schermo intero" title="Schermo intero"><svg viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button><button id="installBtn" class="quiet-btn" type="button" hidden>Installa</button></div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="eyebrow"><span class="pulse-dot"></span> BIOLOGIA IMMERSIVA <span class="midline"></span> 01 / LA CELLULA</div>
+      <div class="intro-grid">
+        <div><h1>Dentro <em>la vita.</em></h1><p class="intro-text">Un intero universo in pochi micrometri. Esplora le strutture, segui i processi e scopri come funziona una cellula.</p></div>
+        <div class="tagline"><span>NON SOLO VEDERE.</span><strong>Capire cosa accade.</strong><span class="hairline"></span><small>Modello tridimensionale · Esperienze guidate · Simulazioni qualitative</small></div>
       </div>
-      <div class="topbar-right"><span class="edition"><i class="live-dot"></i> LABORATORIO / 01</span><button class="header-help" id="open-help" type="button">Il modello <span>↗</span></button><button id="install-app" class="install-btn" type="button" hidden>＋ Installa</button></div>
-    </header>
-    <div class="lab-shell">
-      <aside class="rail" aria-label="Percorso di laboratorio">
-        <div class="rail-header"><span class="eyebrow">IL TUO PERCORSO</span><h2>Dentro la vita<span>.</span></h2><p>Osserva, sperimenta, comprendi.</p></div>
-        <nav class="steps-nav" aria-label="Fasi del laboratorio">
-          <button class="step active" data-mode="explore" type="button"><span class="step-n">01</span><span class="step-copy"><b>Esplora</b><small>Dentro la cellula</small></span><span class="step-arrow">↗</span></button>
-          <button class="step" data-mode="osmosis" type="button"><span class="step-n">02</span><span class="step-copy"><b>Sperimenta</b><small>L'osmosi in azione</small></span><span class="step-arrow">↗</span></button>
-          <button class="step" data-mode="quiz" type="button"><span class="step-n">03</span><span class="step-copy"><b>Mettiti alla prova</b><small>La sfida finale</small></span><span class="step-arrow">↗</span></button>
-        </nav>
-        <div class="rail-divider"></div>
-        <div class="rail-sub"><span class="eyebrow">SCEGLI UN CAMPIONE</span><p>Due cellule e una differenza essenziale: come sono organizzate.</p></div>
-        <div class="sample-switch" role="group" aria-label="Tipo di cellula"><button id="animal-btn" class="sample active" type="button" aria-pressed="true"><span class="sample-symbol animal">◉</span><span><b>Animale</b><small>Eucariote</small></span></button><button id="plant-btn" class="sample" type="button" aria-pressed="false"><span class="sample-symbol plant">▣</span><span><b>Vegetale</b><small>Eucariote</small></span></button></div>
-        <div class="catalogue-head"><span class="eyebrow">STRUTTURE DA ESPLORARE</span><span id="found-count">0 / 4</span></div>
-        <div id="organelle-list" class="organelle-list" role="group" aria-label="Seleziona gli organuli"></div>
-        <div class="rail-bottom"><span class="accent-line"></span><span>gbprof <span class="dim">×</span> Libera</span><small>UN LABORATORIO PER IMPARARE FACENDO</small></div>
-      </aside>
-      <main class="workspace" id="main">
-        <section class="visual" aria-label="Modello tridimensionale della cellula">
-          <div class="visual-grid" aria-hidden="true"></div><div class="halo halo-one" aria-hidden="true"></div><div class="halo halo-two" aria-hidden="true"></div>
-          <div class="scene-title"><div class="eyebrow"><span class="eyebrow-line"></span><span id="stage-tag">01 / ANATOMIA CELLULARE</span></div><h1 id="stage-title">Un universo<br><em>invisibile.</em></h1><p id="stage-subtitle">Trascina il modello, avvicinati e tocca un organulo per scoprirne il lavoro.</p></div>
-          <div class="scene-badge"><span class="ring-dot"></span><span id="scene-status">CELLULA ANIMALE · MODELLO 3D</span></div>
-          <canvas id="cell-canvas" aria-label="Modello 3D interattivo della cellula; usa anche l'elenco di strutture per esplorarlo" tabindex="0"></canvas>
-          <div id="webgl-error" class="webgl-error" hidden role="status">La visualizzazione 3D non è disponibile in questo browser. Puoi continuare usando l'elenco degli organuli, il laboratorio e la verifica.</div>
-          <div id="scene-labels" class="scene-labels"></div>
-          <div id="osm-hud" class="osm-hud" hidden><span class="osm-hud-kicker">MOVIMENTO DELL'ACQUA</span><strong id="osm-direction">In equilibrio</strong><small id="osm-description">Il passaggio avviene in entrambe le direzioni.</small></div>
-          <div class="specimen-index"><span id="specimen-code">C·A / 001</span><span>MODELLO SCIENTIFICO SEMPLIFICATO</span></div>
-          <div class="scene-bottom">
-            <div class="scene-hint"><span class="pointer-symbol">⌖</span><span>TRASCINA PER RUOTARE <span class="hint-separator">·</span> SCORRI PER ZOOM</span></div>
-            <div class="scene-tools" aria-label="Controlli 3D"><button id="rotate-btn" type="button" class="tool active" aria-pressed="true" title="Ferma o avvia rotazione automatica"><span>↻</span><small>Ruota</small></button><button id="labels-btn" type="button" class="tool active" aria-pressed="true" title="Mostra o nascondi le etichette"><span>⌗</span><small>Etichette</small></button><button id="zoom-out-btn" type="button" class="tool" title="Allontana la visuale"><span>−</span><small>Zoom</small></button><button id="zoom-in-btn" type="button" class="tool" title="Avvicina la visuale"><span>＋</span><small>Zoom</small></button><button id="reset-view-btn" type="button" class="tool" title="Ripristina la visuale"><span>⟲</span><small>Reset</small></button></div>
+    </section>
+
+    <section class="workbench" aria-label="Esploratore di cellule tridimensionali">
+      <div class="scene-column">
+        <div class="scene-top">
+          <div class="organism-switch" role="group" aria-label="Scegli cellula">
+            <button class="organism-btn active" data-cell="animal" type="button"><span class="tiny-dot coral"></span> Animale</button>
+            <button class="organism-btn" data-cell="plant" type="button"><span class="tiny-dot mint"></span> Vegetale</button>
           </div>
-        </section>
-      </main>
-      <aside class="inspector" aria-label="Scheda e attività">
-        <div id="explore-panel" class="panel-content">
-          <div class="panel-top"><span class="eyebrow">MICROSCOPIO / SCHEDA</span><span class="panel-id" id="org-code">ORG. 01</span></div>
-          <div id="org-visual" class="org-visual" aria-hidden="true"><div class="org-visual-ring"><div id="org-symbol" class="org-symbol">◎</div></div><span class="visual-corner">FIG. 001</span></div>
-          <div class="org-type" id="org-category">CENTRO DI CONTROLLO</div><h2 id="org-name">Nucleo</h2><p class="org-description" id="org-description">Custodisce gran parte del DNA e regola molte attività della cellula.</p>
-          <div class="fact-card"><span class="fact-title">PERCHÉ È IMPORTANTE</span><p id="org-fact">Le informazioni del DNA guidano la produzione di proteine attraverso l'espressione genica.</p></div>
-          <div class="info-grid"><div><span>SI TROVA</span><strong id="org-location">Nel citoplasma</strong></div><div><span>OSSERVA</span><strong id="org-observe">L'involucro nucleare</strong></div></div>
-          <button id="focus-btn" class="outline-action" type="button">⌖ <span>Metti a fuoco</span><span>↗</span></button>
-          <div class="mission"><div class="mission-head"><span class="eyebrow">MISSIONE DI OSSERVAZIONE</span><strong id="mission-count">0 / 4</strong></div><p>Riconosci le quattro strutture contrassegnate con una stella.</p><div class="progress-track"><span id="mission-bar"></span></div><div id="mission-items" class="mission-items"></div><div id="mission-success" class="mission-success" hidden>✓ Missione completata: hai riconosciuto le strutture fondamentali.</div></div>
+          <div class="scene-mode"><span class="live-glyph">◉</span> <span id="modelLabel">CELLULA ANIMALE</span> <span class="scene-mode-mid">/</span> <span id="sceneModeLabel">ESPLORAZIONE 3D</span></div>
         </div>
-        <div id="osmosis-panel" class="panel-content" hidden>
-          <div class="panel-top"><span class="eyebrow">ESPERIMENTO / 01</span><span class="panel-id">OSM</span></div>
-          <div class="experiment-illustration"><span class="flask">◌</span><span>H₂O</span><div class="water-bubbles" aria-hidden="true"><i></i><i></i><i></i></div></div>
-          <div class="org-type">MEMBRANA / ACQUA</div><h2>Osmosi</h2><p class="org-description">Cambia la concentrazione di soluti fuori dalla cellula. Formula una previsione e osserva la risposta.</p>
-          <div class="experiment-card"><div class="experiment-label"><span>CONCENTRAZIONE ESTERNA</span><strong id="solute-percent">50%</strong></div><input id="solute-slider" type="range" min="0" max="100" value="50" step="1" aria-label="Concentrazione relativa di soluti all'esterno"><div class="range-labels"><span>Meno soluti</span><span>Più soluti</span></div><div class="tonicity-readout"><span>AMBIENTE</span><b id="tonicity">Isotonico</b></div></div>
-          <div class="predict"><span class="eyebrow">PRIMA OSSERVA CON LA MENTE</span><h3>Che cosa farà l'acqua?</h3><div class="predict-options" role="group" aria-label="Previsione del movimento netto dell'acqua"><button type="button" data-predict="in">Entra</button><button type="button" data-predict="equal">Equilibrio</button><button type="button" data-predict="out">Esce</button></div><button id="observe-btn" class="primary-action" type="button">▶ &nbsp; Avvia l'osservazione</button></div>
-          <div class="result-card" id="osmosis-result" hidden aria-live="polite"><span id="prediction-outcome" class="result-eyebrow"></span><strong id="result-title"></strong><p id="result-body"></p></div>
-          <p class="model-caution">Modello qualitativo: il cursore rappresenta una concentrazione relativa, non valori reali di laboratorio. La pressione osmotica dipende dalle particelle osmoticamente attive.</p>
-          <button id="reset-osmosis" class="text-action" type="button">↺ &nbsp; Ripristina l'esperimento</button>
+        <div class="viewport" id="viewport">
+          <canvas id="sceneCanvas" aria-label="Ricostruzione interattiva tridimensionale della cellula"></canvas>
+          <div class="fallback-cell" id="fallbackCell" aria-hidden="true"><div class="fallback-membrane"><div class="fallback-nucleus"></div><span class="fallback-mito m1"></span><span class="fallback-mito m2"></span><span class="fallback-mito m3"></span><span class="fallback-golgi"></span></div></div>
+          <div class="scene-vignette" aria-hidden="true"></div>
+          <div id="loadingState" class="loading-state"><span class="load-spinner"></span><strong>Preparazione del modello scientifico</strong><small>Geometrie, membrane, luce e organuli</small></div>
+          <div class="scale-badge"><span>◎</span> RICOSTRUZIONE 3D <span class="scale-line"></span> NON IN SCALA</div>
+          <div class="scene-caption" id="sceneCaption">Trascina per ruotare · Scorri o pizzica per avvicinarti · Tocca un organulo</div>
+          <div class="axis-widget" aria-hidden="true"><span class="axis-x">X</span><span class="axis-y">Y</span><span class="axis-z">Z</span></div>
+          <div class="viewer-controls"><button type="button" id="rotateBtn" class="viewer-btn active" title="Rotazione automatica" aria-label="Rotazione automatica">↻</button><button type="button" id="labelsBtn" class="viewer-btn" title="Mostra etichette" aria-label="Mostra etichette">⌗</button><button type="button" id="zoomOutBtn" class="viewer-btn" title="Allontana">−</button><button type="button" id="zoomInBtn" class="viewer-btn" title="Avvicina">+</button><button type="button" id="resetBtn" class="viewer-btn" title="Reimposta la vista">⌂</button></div>
+          <div id="labelsLayer" class="labels-layer" aria-hidden="true"></div><div id="voiceScene" class="scene-voice" hidden><span>♫ <span id="voiceSceneText">Spiegazione in corso</span></span><button type="button" id="voiceScenePlay" aria-label="Metti in pausa la spiegazione">Ⅱ</button><button type="button" id="voiceSceneStop" aria-label="Ferma la spiegazione nella scena">■</button></div>
         </div>
-        <div id="quiz-panel" class="panel-content" hidden>
-          <div class="panel-top"><span class="eyebrow">VERIFICA / CONOSCENZE</span><span class="panel-id" id="quiz-counter">01 / 08</span></div>
-          <div class="quiz-hero"><span class="quiz-asterisk">✳</span><div><span>LA SFIDA DELLA CELLULA</span><strong id="quiz-score">0 punti</strong></div></div>
-          <div class="quiz-track"><span id="quiz-bar"></span></div>
-          <div id="quiz-content" aria-live="polite"><div class="quiz-topic" id="quiz-topic">FUNZIONI</div><h2 id="quiz-question">Che cosa produce la maggior parte dell'ATP durante la respirazione cellulare?</h2><div id="quiz-answers" class="quiz-answers"></div><div id="quiz-feedback" class="quiz-feedback" hidden></div><button id="quiz-next" class="primary-action" type="button" hidden>Prossima domanda →</button></div>
-          <div id="quiz-finish" class="quiz-finish" hidden><div class="finish-symbol">✧</div><h2>Missione compiuta.</h2><p id="final-score"></p><p id="final-note"></p><button id="quiz-restart" class="primary-action" type="button">↺ &nbsp; Ripeti la sfida</button><button id="back-explore" class="text-action" type="button">Torna a esplorare ↗</button></div>
-          <p class="quiz-note">Rispondi senza fretta: ogni scelta contiene una spiegazione. Il punteggio rimane solo su questo dispositivo.</p>
-        </div>
+        <div class="status-ribbon"><div><span class="status-light"></span><span id="statusText">MODELLO PRONTO ALL’ESPLORAZIONE</span></div><span id="particleStatus">PARTICELLE IN MOVIMENTO</span></div>
+      </div>
+
+      <aside class="inspection" aria-label="Scheda scientifica dell'organulo"><div id="divisionInfo" class="division-info" hidden><div class="side-top">MICROSCOPIO / DIVISIONE CELLULARE</div><div class="specimen-symbol">❋</div><div class="specimen-type">MODELLO ANIMALE · NON IN SCALA</div><h2 id="divisionInfoTitle">Interfase</h2><p id="divisionInfoDescription"></p><div class="thin-rule"></div><div class="info-heading">COSA OSSERVARE</div><p>Quattro cromosomi, i due poli del fuso e gli involucri nucleari sono rappresentati schematicamente. Avanza nelle fasi per seguire la distribuzione del DNA.</p><p class="model-note">Per esplorare di nuovo gli organuli, seleziona un’altra esperienza.</p></div>
+        <div class="side-top"><span>MICROSCOPIO / SCHEDA SCIENTIFICA</span><span id="organId">ORG. 01</span></div>
+        <div class="specimen-symbol" id="organSymbol">◎</div>
+        <div class="specimen-type" id="organType">CENTRO D'INFORMAZIONE</div>
+        <h2 id="organName">Nucleo</h2>
+        <p id="organDescription">Contiene gran parte del DNA cellulare. Coordina l'espressione genica e molte attività della cellula.</p>
+        <div class="thin-rule"></div>
+        <div class="info-heading">NELLA CELLULA</div>
+        <p id="organRole" class="role">L'informazione genetica guida la produzione di RNA e, indirettamente, delle proteine.</p>
+        <div class="info-heading">OSSERVA</div><p id="organObserve" class="observe">L'involucro nucleare, i pori e il nucleolo.</p>
+        <button id="focusBtn" type="button" class="focus-button"><span>⌖</span> Metti a fuoco <span>↗</span></button>
+        <div class="organ-list-head">ESPLORA GLI ORGANULI <span id="exploredCount">1 / 7</span></div>
+        <div id="organList" class="organ-list" role="group" aria-label="Seleziona una struttura cellulare"></div>
       </aside>
-    </div>
-    <footer class="footer"><span><b>gbprof</b> / ESPLORARE PER CAPIRE</span><span>Cellula eucariotica · Rappresentazione didattica, non in scala</span><button id="footer-help" type="button">Metodo e limiti del modello ↗</button></footer>
-  </div>
-  <dialog id="help-dialog" aria-labelledby="help-title"><button id="close-help" class="dialog-close" aria-label="Chiudi">×</button><span class="eyebrow">NOTA SCIENTIFICA</span><h2 id="help-title">Un modello per capire, non una fotografia.</h2><p>Le cellule sono strutture tridimensionali, dinamiche e estremamente complesse. Qui forme, dimensioni, colori, numero di organuli e distanze sono <b>semplificati e non in scala</b> per rendere visibili le funzioni principali.</p><p>Il modello rappresenta cellule eucariotiche generiche; non tutte le cellule animali o vegetali hanno forma e proporzioni identiche. Alcune strutture, come la membrana, sono rese trasparenti o ingrandite per consentire l'esplorazione.</p><p>L'esperimento sull'osmosi mostra la direzione <b>netta</b> del movimento d'acqua attraverso una membrana selettivamente permeabile. In condizioni isotoniche l'acqua continua a passare in entrambe le direzioni: non è immobile. Nelle cellule vegetali interviene anche la parete, che contribuisce a contrastare l'espansione.</p><p>Muovi il modello con il mouse o il tocco, usa la rotella o i pulsanti per lo zoom e scegli gli organuli anche dall'elenco. La verifica è locale: nessun dato dello studente viene inviato a un server.</p><button class="primary-action" id="understood" type="button">Torna al laboratorio</button></dialog>
-  <noscript><p class="noscript">Per utilizzare il laboratorio virtuale, abilita JavaScript nel browser.</p></noscript>
-  <script type="module" src="./js/main.js"></script>
+    </section>
+
+    <section class="experiments" id="esperienze">
+      <div class="section-head"><div><span class="section-index">02 / PROCESSI VITALI</span><h2>La cellula <em>in azione.</em></h2><p>Guarda, prevedi, cambia una variabile. La biologia diventa un'esperienza.</p></div><span class="experiment-count">06 ESPERIENZE ATTIVE <span class="count-line"></span> CON SPIEGAZIONE VOCALE</span></div>
+      <div class="experience-grid">
+        <button class="experience-card active" type="button" data-experience="protein"><span class="card-number">01 <span class="active-pill">ATTIVO</span></span><span class="card-icon">⌁</span><strong>La fabbrica delle proteine</strong><span class="card-description">Dal DNA alla secrezione: segui l'informazione, passo dopo passo.</span><span class="card-bottom">AVVIA IL PERCORSO <span>↗</span></span></button>
+        <button class="experience-card" type="button" data-experience="energy"><span class="card-number">02 <span class="active-pill">ATTIVO</span></span><span class="card-icon">✧</span><strong>L'energia della cellula</strong><span class="card-description">Riduci l'ossigeno e osserva la risposta della produzione energetica.</span><span class="card-bottom">AVVIA LA SIMULAZIONE <span>↗</span></span></button>
+        <button class="experience-card" type="button" data-experience="osmosis"><span class="card-number">03 <span class="active-pill">ATTIVO</span></span><span class="card-icon">◌</span><strong>Membrana e osmosi</strong><span class="card-description">Sposta l'equilibrio: scopri come l'acqua attraversa la membrana.</span><span class="card-bottom">AVVIA L'ESPERIMENTO <span>↗</span></span></button>
+        <button class="experience-card" type="button" data-experience="photo"><span class="card-number">04 <span class="active-pill">ATTIVO</span></span><span class="card-icon">☼</span><strong>La fotosintesi</strong><span class="card-description">Luce e anidride carbonica: esplora il lavoro del cloroplasto.</span><span class="card-bottom">AVVIA LA SIMULAZIONE <span>↗</span></span></button>
+        <button class="experience-card" type="button" data-experience="mitosis"><span class="card-number">05 <span class="active-pill">ATTIVO</span></span><span class="card-icon">❋</span><strong>La divisione cellulare</strong><span class="card-description">Segui i cromosomi dall’interfase alla citodieresi.</span><span class="card-bottom">AVVIA IL PERCORSO <span>↗</span></span></button>
+        <button class="experience-card" type="button" data-experience="stress"><span class="card-number">06 <span class="active-pill">ATTIVO</span></span><span class="card-icon">⋈</span><strong>La cellula sotto stress</strong><span class="card-description">Esplora una risposta qualitativa all’aumento della temperatura.</span><span class="card-bottom">AVVIA LA SIMULAZIONE <span>↗</span></span></button>
+      </div>
+
+      <div class="lab-panel" id="labPanel" aria-live="polite">
+        <div class="lab-panel-heading"><div><span id="labKicker">ESPERIENZA 01 / PERCORSO ANIMATO</span><h3 id="labTitle">La fabbrica delle proteine</h3></div><span id="labIndicator" class="lab-indicator">SEQUENZA GUIDATA</span></div>
+        <div class="lab-columns">
+          <div class="lab-narrative"><div class="lab-step-count" id="labStepCount">FASE 01 / 06</div><h4 id="labStepTitle">Dal DNA al messaggio</h4><p id="labExplanation">Nel nucleo, un gene viene trascritto in RNA messaggero. Il DNA rimane nel nucleo; il messaggio raggiunge il citoplasma.</p><div class="lab-insight" id="labInsight"><span>PER RIFLETTERE</span><p>Perché non è necessario spostare il DNA fuori dal nucleo?</p></div><div id="prediction" class="prediction" hidden></div></div>
+          <div class="lab-activity"><div id="proteinControls"><div class="timeline"><div id="timelineFill"></div></div><div class="timeline-labels"><span>DNA</span><span>RNA</span><span>RIBOSOMA</span><span>RETICOLO</span><span>GOLGI</span><span>MEMBRANA</span></div><div class="lab-buttons"><button type="button" id="prevStep" class="square-button" aria-label="Fase precedente">←</button><button type="button" id="playSteps" class="primary-button">▶ Avvia automaticamente</button><button type="button" id="nextStep" class="square-button" aria-label="Fase successiva">→</button></div><small>La telecamera segue le strutture coinvolte. Puoi fermare o riprendere la sequenza. L’indicatore cambia colore quando cambia ciò che viene rappresentato.</small><div class="variable-row"><label><input id="translationSwitch" type="checkbox" checked> Traduzione attiva</label><label for="proteinSpeed">Velocità delle fasi</label><select id="proteinSpeed"><option value="8000">Lenta</option><option value="5600" selected>Normale</option><option value="2800">Rapida</option></select></div><p id="proteinVariableResult" class="model-note">Traduzione attiva nel modello. Disattivala per osservare dove si arresta il percorso.</p></div>
+            <div id="energyControls" hidden><div class="control-head"><label for="oxygenSlider">DISPONIBILITÀ RELATIVA DI OSSIGENO</label><strong id="oxygenValue">100%</strong></div><input id="oxygenSlider" type="range" min="0" max="100" value="100" step="1"><div class="extremes"><span>OSSIGENO MOLTO BASSO</span><span>OSSIGENO ABBONDANTE</span></div><div class="control-head second-control"><label for="adpSlider">DISPONIBILITÀ RELATIVA DI ADP + FOSFATO</label><strong id="adpValue">100%</strong></div><input id="adpSlider" type="range" min="0" max="100" value="100" step="1"><div class="mechanism" id="atpDiagram" role="img" aria-label="Schema animato: la catena respiratoria crea un gradiente di protoni; il ritorno attraverso l’ATP sintasi sostiene la produzione di ATP"><div class="mechanism-top">SPAZIO INTERMEMBRANA <span>H⁺ &nbsp; H⁺ &nbsp; H⁺</span></div><div class="membrane-strip"><span class="complex">CATENA<br>RESPIRATORIA<br>H⁺ ↑</span><span class="proton-flow">H⁺ ↓</span><span class="complex synthase">ATP SINTASI</span></div><div class="mechanism-bottom">MATRICE <span>ADP + Pᵢ &nbsp; → &nbsp; ATP</span></div></div><p id="atpMechanism" class="model-note">Nel modello il flusso illustrato e la sintesi rallentano quando la variabile limitante diminuisce.</p><div class="meter-label">INDICE DELLA FOSFORILAZIONE OSSIDATIVA <strong id="energyIndex">100 / 100</strong></div><div class="meter"><span id="energyFill"></span></div><p id="energyResult" class="control-result">Con ossigeno abbondante, la fosforilazione ossidativa può sostenere un'elevata produzione di ATP.</p></div>
+            <div id="osmosisControls" hidden><div class="control-head"><label for="soluteSlider">SOLUTI ESTERNI · LIVELLO RELATIVO</label><strong id="soluteValue">50%</strong></div><input id="soluteSlider" type="range" min="0" max="100" value="50" step="1"><div class="extremes"><span>MEZZO IPOTONICO</span><span>MEZZO IPERTONICO</span></div><div class="osm-state"><span>RISPOSTA PREVISTA</span><strong id="osmosisState">ISOTONIA</strong></div><div class="prediction-buttons" id="osmPredict"><button data-predict="entra" type="button">Entra</button><button data-predict="equilibrio" type="button">Nessun flusso netto</button><button data-predict="esce" type="button">Esce</button></div><p id="osmosisResult" class="control-result">La concentrazione efficace è bilanciata: l'acqua attraversa comunque la membrana nei due sensi, senza flusso netto.</p></div>
+            <div id="photoControls" hidden>
+              <div class="control-head"><label for="lightSlider">LUCE DISPONIBILE · LIVELLO RELATIVO</label><strong id="lightValue">80%</strong></div><input id="lightSlider" type="range" min="0" max="100" value="80"><div class="control-head second-control"><label for="co2Slider">ANIDRIDE CARBONICA DISPONIBILE</label><strong id="co2Value">80%</strong></div><input id="co2Slider" type="range" min="0" max="100" value="80">
+              <div class="photo-diagram" id="photoDiagram" role="img" aria-label="Schema: luce e acqua alimentano le reazioni luminose, che producono ossigeno, ATP e NADPH; il ciclo di Calvin utilizza anidride carbonica per formare composti organici."><div class="photo-box"><span>☼ LUCE + ACQUA</span><strong>Reazioni luminose</strong><small>Membrana dei tilacoidi</small><span>↗ O₂</span></div><div class="photo-flow" id="photoFlow">ATP + NADPH →</div><div class="photo-box"><span>CO₂ ↓</span><strong>Ciclo di Calvin</strong><small>Stroma</small><span>↓ COMPOSTI ORGANICI</span></div></div>
+              <div class="meter-label">INDICE DI FISSAZIONE DEL CARBONIO · MODELLO <strong id="photoIndex">80 / 100</strong></div><div class="meter"><span id="photoFill"></span></div><p id="photoResult" class="control-result"></p><small>Il ciclo non usa direttamente luce, ma dipende dai prodotti delle reazioni luminose. L’ossigeno mostrato proviene dall’acqua.</small>
+            </div>
+            <div id="mitosisControls" hidden><div class="timeline"><div id="mitosisFill"></div></div><div class="timeline-labels"><span>INTERFASE</span><span>PROFASE</span><span>METAFASE</span><span>ANAFASE</span><span>TELOFASE</span><span>CITODIERESI</span></div><div class="lab-buttons"><button type="button" id="mitosisPrev" class="square-button" aria-label="Fase precedente della divisione">←</button><button type="button" id="mitosisPlay" class="primary-button">▶ Avvia automaticamente</button><button type="button" id="mitosisNext" class="square-button" aria-label="Fase successiva della divisione">→</button></div><div class="phase-key"><span>● cromatidi</span><span>— fuso mitotico</span><span>◯ involucro nucleare</span></div><p class="model-note">Modello di cellula animale con quattro cromosomi per rendere visibili le fasi: numero e tempi non sono in scala.</p></div>
+            <div id="stressControls" hidden><div class="control-head"><label for="stressSlider">INTENSITÀ DELLO STRESS TERMICO</label><strong id="stressValue">20%</strong></div><input id="stressSlider" type="range" min="0" max="100" value="20"><div class="extremes"><span>CONDIZIONI BASSE</span><span>STRESS ELEVATO</span></div><div class="stress-display"><span class="stress-orbit" id="stressOrb">◌</span><div><span>RISPOSTA SCHEMATICA</span><strong id="stressState">CONDIZIONI DI BASE</strong><p id="stressResult"></p></div></div><p class="model-note">Cursore e soglie sono convenzionali: temperatura, durata, tipo di cellula e capacità di risposta influenzano il risultato reale.</p></div>
+          </div>
+        </div>
+        <div class="voice-panel" aria-label="Spiegazione vocale"><div><span class="voice-kicker">ASCOLTA E OSSERVA</span><strong>Una voce ti accompagna</strong><small>Voce italiana femminile · audio incluso · senza connessione. Nei percorsi a fasi, parte dalla fase selezionata.</small></div><div class="voice-actions"><button type="button" id="voicePlay" class="primary-button">▶ Ascolta la spiegazione</button><button type="button" id="voiceStop" class="square-button" aria-label="Ferma la spiegazione" disabled>■</button></div><p id="voiceStatus" role="status">La spiegazione parte quando premi Ascolta.</p><details><summary>Leggi il testo della spiegazione</summary><p id="voiceTranscript">Seleziona Ascolta per visualizzare il testo.</p></details><audio id="voiceAudio" preload="none"></audio></div>
+      </div>
+    </section>
+
+    <section class="assessment" id="verifica"><div class="assessment-overview"><span class="section-index">03 / METTI ALLA PROVA LE TUE IDEE</span><h2>Hai davvero <em>capito?</em></h2><p>Non serve indovinare un nome: ogni domanda collega una struttura al suo funzionamento.</p><div class="assess-progress"><span>PROGRESSO</span><strong id="quizProgress">0 / 6</strong></div><div class="progress-track"><div id="quizProgressBar"></div></div></div><div class="quiz-box"><div id="quizQuestion" class="quiz-question">Che cosa può accadere alla produzione di ATP mitocondriale se l'ossigeno diminuisce molto?</div><div id="quizAnswers" class="quiz-answers"></div><div id="quizFeedback" class="quiz-feedback" aria-live="polite"></div><button id="quizNext" class="primary-button" type="button" disabled>Prossima domanda →</button></div></section>
+  </main>
+  <footer><div><strong>gbprof × Libera</strong><span>PROGETTARE PER CAPIRE</span></div><button id="scienceNotesBtn" class="footer-link" type="button">Metodo, limiti scientifici e fonti ↗</button><span>Cellula Lab 2.0 · Prototipo didattico</span></footer>
+
+  <dialog id="notesDialog" class="notes-dialog"><div class="dialog-head"><span>NOTA SCIENTIFICA</span><button id="closeDialog" class="icon-btn" type="button" aria-label="Chiudi">×</button></div><h2>Un modello per comprendere. Non una fotografia.</h2><p>Questa applicazione rappresenta cellule eucariotiche generiche. Forme, distanze, numero e dimensioni relative degli organuli sono semplificati. I colori sono convenzionali; le strutture sono ingrandite e la membrana è resa trasparente per consentire l'esplorazione.</p><p>Le particelle e le traiettorie sono illustrazioni esplicative, non riproduzioni misurate del movimento molecolare. La sintesi proteica mostra il percorso di una <strong>proteina destinata alla secrezione</strong>: non tutte le proteine seguono il reticolo endoplasmatico e il Golgi.</p><p>Nella simulazione energetica la barra indica solo un <strong>indice relativo didattico della fosforilazione ossidativa</strong>, non una misura di ATP né una previsione fisiologica quantitativa. La glicolisi può continuare senza ossigeno, ma la fosforilazione ossidativa si riduce in condizioni di forte ipossia.</p><p>Nell'osmosi il cursore varia idealmente la concentrazione di soluti non permeanti rispetto all'interno, non la salinità in unità fisiche. Il bilancio dipende dall'osmolarità efficace e dalla permeabilità. In isotonia persiste un movimento bidirezionale d'acqua. Nelle cellule vegetali la parete modifica la risposta meccanica.</p><p>Lo schema dell’ATP mostra soltanto la fosforilazione ossidativa: la catena respiratoria pompa protoni attraverso la membrana mitocondriale interna; il loro ritorno attraverso l’ATP sintasi sostiene la formazione di ATP. I due cursori e l’indice sono un modello qualitativo, non una legge di velocità sperimentale.</p><p>Altre fonti: <a href="https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis" target="_blank" rel="noopener">fotosintesi</a>, <a href="https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle" target="_blank" rel="noopener">ciclo cellulare e mitosi</a>, <a href="https://openstax.org/books/biology-2e/pages/6-5-enzymes" target="_blank" rel="noopener">effetti della temperatura sulle proteine</a>.</p><p><strong>Fonti consultabili:</strong> OpenStax Biology 2e: <a href="https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells" target="_blank" rel="noopener">cellule eucariotiche</a>, <a href="https://openstax.org/books/biology-2e/pages/5-2-passive-transport" target="_blank" rel="noopener">osmosi</a>, <a href="https://openstax.org/books/biology-2e/pages/7-4-oxidative-phosphorylation" target="_blank" rel="noopener">fosforilazione ossidativa</a>, <a href="https://openstax.org/books/biology-2e/pages/15-5-ribosomes-and-protein-synthesis" target="_blank" rel="noopener">traduzione</a>.</p><p>La fotosintesi e lo stress termico usano indici e soglie convenzionali. La mitosi è mostrata in una cellula animale con quattro cromosomi: la duplicazione del DNA avviene prima della mitosi e nelle cellule vegetali la citodieresi avviene attraverso una piastra cellulare. La narrazione è sintetica. Questo prototipo non sostituisce osservazioni microscopiche o esperimenti di laboratorio.</p><button id="dialogDone" type="button" class="primary-button">Torna al laboratorio</button></dialog>
+  <script type="module" src="app.js"></script>
 </body>
 </html>

@@ -1,15 +1,15 @@
 {
   "id": "/Spazi/cellula-lab/",
-  "name": "CELLULA LAB — Laboratorio virtuale di biologia",
+  "name": "Cellula Lab 2.0 — Dentro la vita",
   "short_name": "Cellula Lab",
-  "description": "Esplora le cellule in 3D, sperimenta l'osmosi e scopri come funziona la vita.",
+  "description": "Laboratorio 3D di biologia con sei esperienze e spiegazioni vocali.",
   "lang": "it",
   "start_url": "/Spazi/cellula-lab/",
   "scope": "/Spazi/cellula-lab/",
   "display": "standalone",
   "orientation": "any",
-  "background_color": "#071218",
-  "theme_color": "#071218",
+  "background_color": "#070f18",
+  "theme_color": "#070f18",
   "icons": [
     {
       "src": "./icons/icon-192.png",
