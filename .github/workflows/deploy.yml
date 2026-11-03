@@ -113,4 +113,19 @@ jobs:
             curl -fsSL --max-time 20 https://gbprof.it/Spazi/ | grep -Fq 'romanzo-libera-title'
             curl -fsSL --max-time 20 https://gbprof.it/ | grep -Fq 'romanzo-libera-title'
             echo "Romanzo integrale, copertina e homepage verificati"
+            echo "Verifica NeuroLab: file, collegamento e pubblicazione"
+            test -s "$repo/Spazi/neuro-lab/index.html"
+            test -s "$repo/Spazi/neuro-lab/style.css"
+            test -s "$repo/Spazi/neuro-lab/main.js"
+            public_neuro=https://gbprof.it/Spazi/neuro-lab/
+            for asset in "" style.css main.js; do
+              code="$(curl -sSL --max-time 25 -o /dev/null -w '%{http_code}' "$public_neuro$asset")"
+              test "$code" = 200
+              echo "NeuroLab asset $asset HTTP $code"
+            done
+            curl -fsSL --max-time 25 "$public_neuro" | grep -Fq 'id="senseList"'
+            curl -fsSL --max-time 25 "$public_neuro"main.js | grep -Fq 'const SENSES ='
+            curl -fsSL --max-time 25 https://gbprof.it/ | grep -Fq '/Spazi/neuro-lab/'
+            curl -fsSL --max-time 25 https://gbprof.it/Spazi/ | grep -Fq '/Spazi/neuro-lab/'
+            echo "NeuroLab pubblicato e raggiungibile dagli Spazi"
             git log -1 --oneline
