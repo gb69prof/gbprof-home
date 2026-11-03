@@ -25,3 +25,30 @@ Questo report è nella radice del repository per non essere pubblicato tramite i
 
 App: https://gbprof.it/Spazi/neuro-lab/
 Codice: https://github.com/gb69prof/gbprof-home/tree/main/Spazi/neuro-lab
+
+---
+
+## NeuroLab 2.1 - voce e anatomia (4 novembre 2026)
+
+### Obiettivo
+Implementare i due miglioramenti richiesti: spiegazione sonora femminile degli esperimenti e rappresentazione umana più realistica.
+
+### Modifiche eseguite
+- Aggiunto Spazi/neuro-lab/narration.js con Web Speech API, testo scientifico derivato dalle tappe di ciascun senso, voce italiana selezionabile, preferenza per voci dai nomi femminili identificabili, comandi Ascolta tutto / Fase / Pausa / Ferma, ritmo di lettura e trascrizione completa.
+- La guida vocale sincronizza le cinque spiegazioni con l'evidenziazione delle tappe. Non avvia audio senza azione dell'utente.
+- Creato Spazi/neuro-lab/anatomy-realistic.svg con testa, rilievi facciali, cervello, coste, polmoni, cuore, muscolatura, vertebre e nervi periferici in vista frontale con volumetria e ombreggiatura.
+- Aggiornati Spazi/neuro-lab/index.html, style.css e main.js. Se il nuovo disegno non si carica, rimane il modello precedente.
+- Aggiunti al workflow controlli HTTP per entrambi i nuovi asset.
+
+### Fonti e decisioni
+- Sintesi vocale: Web Speech API, https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/getVoices
+- Restano valide le precedenti fonti NCBI Bookshelf per i cinque sensi.
+- La voce femminile è preferita automaticamente quando il nome consente di identificarla; il browser non espone un attributo di genere affidabile e la disponibilità varia per dispositivo. In alternativa l'utente può scegliere dal menu una voce italiana. Nessun servizio a pagamento né API esterne.
+- L'anatomia resta un'illustrazione didattica vettoriale 2.5D più ricca, non un modello 3D fotorealistico o un atlante clinico.
+
+### Verifiche e limiti
+- Sintassi JavaScript di main.js e narration.js: parsing V8 superato.
+- ID controlli vocali presenti nell'HTML: verificato.
+- GitHub Actions verifica la pubblicazione online dei nuovi asset e dei collegamenti di NeuroLab.
+- Non è stato effettuato un test manuale della qualità vocale e dell'aspetto su iPad e altri browser.
+- REPORT.md resta nella radice del repository, fuori dalla directory pubblica Spazi.
