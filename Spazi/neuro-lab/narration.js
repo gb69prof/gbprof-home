@@ -7,7 +7,7 @@ const synth = window.speechSynthesis;
 const supported = Boolean(api && synth && window.SpeechSynthesisUtterance);
 const state = {session:0,segments:[],index:0,running:false,paused:false,voice:null,mode:"all"};
 const femaleNames = /(?:alice|elsa|isabella|federica|paola|giulia|silvia|lucia|bianca|elena|francesca|caterina|anna|serena|maria|violetta|vittoria|emma|sophia|sofia|flavia|elisa|giovanna|alessia|carla|margherita|female|donna|woman|rosa|camilla|clara|aurora|valentina|rita|daniela|chiara|valeria|arianna|marta)/i;
-const masculineNames = /(?:cosimo|luca|giorgio|diego|matteo|riccardo|male|uomo|gianni|andrea|mauro|roberto|giuseppe|stefano|fabio|marco|alessandro|enrico|lorenzo|pietro|franco)/i;
+const masculineNames = /(?:cosimo|luca|giorgio|diego|matteo|riccardo|\bmale\b|uomo|gianni|andrea|mauro|roberto|giuseppe|stefano|fabio|marco|alessandro|enrico|lorenzo|pietro|franco)/i;
 let currentVoices = [];
 let lastIntro = "";
 
@@ -34,7 +34,7 @@ function refreshVoices() {
  let voices = [];
  try { voices = synth.getVoices().filter(isItalian).sort(voiceOrder); }
  catch(_error) { voices=[]; }
- const oldChoice = $("voiceChoice").value;
+ const oldChoice = state.voice ? state.voice.voiceURI : "";
  currentVoices=voices;
  $("voiceChoice").replaceChildren();
  if(!voices.length) {
