@@ -143,6 +143,19 @@ const state = {sense:"vista",intensity:65,progress:0,playing:false,mode:"all",hi
 let lastTime = 0;
 let pathLength1 = 0, pathLength2 = 0;
 let audioContext = null;
+// Il numero di segnali luminosi aumenta con l'intensità; la velocità di
+// avanzamento, invece, resta indipendente dall'intensità dello stimolo.
+const extraPulses = Array.from({length:6},function (_,i) {
+ const dot=document.createElementNS("http://www.w3.org/2000/svg","circle");
+ dot.setAttribute("r",i%2===0?"3":"2.5");
+ dot.setAttribute("fill","var(--accent)");
+ dot.setAttribute("stroke","#dffaff");
+ dot.setAttribute("stroke-width",".7");
+ dot.style.filter="drop-shadow(0 0 6px var(--accent))";
+ dot.setAttribute("aria-hidden","true");
+ pulse.before(dot);
+ return dot;
+});
 
 function clamp(value, min, max) { return Math.max(min, Math.min(max, value)); }
 function levelName() {
@@ -315,6 +328,21 @@ function render() {
  [pulse,pulseHalo].forEach(el=>{
   el.setAttribute("cx",pt.x); el.setAttribute("cy",pt.y);
   el.classList.toggle("is-hidden",!visiblePulse);
+ });
+ const count=state.intensity===0?0:Math.ceil(state.intensity/17);
+ extraPulses.forEach((dot,i)=>{
+  const prev=p-(i+1)*.043;
+  const inPeriph=prev>=.17&&prev<.60&&showPeriph;
+  const inCentral=prev>=.60&&prev<.89&&showCentral;
+  dot.style.display=(i<count&&(inPeriph||inCentral))?"":"none";
+  if(inPeriph||inCentral){
+   const part=inPeriph?p1:p2;
+   const len=inPeriph?pathLength1:pathLength2;
+   const fraction=inPeriph?clamp((prev-.17)/.43,0,1):clamp((prev-.59)/.29,0,1);
+   const sample=part.getPointAtLength(fraction*len);
+   dot.setAttribute("cx",sample.x);
+   dot.setAttribute("cy",sample.y);
+  }
  });
  const areaOpacity = state.highlight && state.intensity>0 && p>.60 && showCentral;
  focus.style.opacity = areaOpacity ? String(.28+state.intensity*.007) : ".09";
