@@ -168,6 +168,7 @@ function play(mode) {
  stop(true);
  state.voice=choice;
  state.mode=mode;
+ api.pauseVisual();
  state.running=true;
  const phase=Math.min(4,Math.max(0,Math.floor(api.getProgress()*5)));
  state.segments=buildScript(mode,phase);
