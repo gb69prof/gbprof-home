@@ -16,3 +16,34 @@
 @media(max-width:900px){.workspace{grid-template-columns:1fr}.control-stack{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.senses-panel{grid-row:span 2}.senses-panel .sense-list{grid-template-columns:1fr}.control-stack .sidebar-foot{display:none}.scene{height:650px}.explanation{grid-column:auto}.intro-tag{display:none}}
 @media(max-width:590px){.topbar{padding:9px 13px;min-height:64px}.logo{gap:6px}.logo svg{width:28px;height:28px}.logo strong{font-size:11px}.logo small{font-size:8px}.live-led{display:none}.top-actions{gap:5px}.square-button{width:33px;height:34px;font-size:18px}.intro{padding:21px 16px}.intro h1{font-size:31px}.intro p{font-size:12px}.workspace{padding:0 11px;gap:10px}.control-stack{display:grid;grid-template-columns:1fr}.senses-panel{grid-row:auto}.senses-panel .sense-list{grid-template-columns:repeat(5,1fr);gap:4px}.sense-button{display:flex;min-height:68px;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:5px 0;font-size:10px}.sense-button .symbol{font-size:24px}.sense-button .chevron{display:none}.panel{padding:14px}.panel h2{margin:7px 0 10px}.scene-header{padding:15px 12px 5px}.scene-header h2{font-size:15px}.scene-header h2 span{display:block;font-size:10px;margin-top:2px}.scene{height:480px;min-height:480px}.anatomy-svg{transform:scale(1.2);transform-origin:45% 46%}.floating-stimulus{top:21%;left:2%;width:106px;padding:8px}.float-overline{font-size:8px}.stimulus-art{height:69px;margin:5px 0}.stimulus-art span{font-size:37px}.floating-stimulus strong{font-size:10px}.floating-stimulus small{font-size:9px}.floating-receptor{top:52%;left:2%;max-width:135px;padding:5px 7px;gap:6px}.floating-receptor strong{font-size:9px}.floating-receptor span:not(.dot){font-size:8px}.brain-caption{top:57%;max-width:45%;right:2%;padding:6px}.brain-caption strong{font-size:9px}.brain-caption small{font-size:8px}.signal-readout{bottom:7px;left:2%;right:2%;padding:7px 9px}.signal-readout .readout-light{height:21px;width:21px}.signal-readout strong{font-size:10px}.signal-readout #signalPercent{font-size:11px}.scene-footer{padding:0 11px 6px}.track-labels{font-size:8px}.scene-bottom{padding:6px 11px 13px}.scene-bottom span{font-size:9px}.scene-bottom button{font-size:9px}.steps{grid-template-columns:1fr}.step{grid-template-columns:31px 1fr;padding:10px;border:0;border-bottom:1px solid var(--line)}.perception{grid-template-columns:120px 1fr;gap:9px}.perception-visual{height:90px}.perception-visual>span{font-size:37px}.tablist{padding:8px 8px 0}.tab{font-size:10px;padding:10px 8px}.tab-body{padding:16px;font-size:12px}.below{margin:10px 11px 0}.footer{flex-wrap:wrap;padding:20px 15px;gap:12px}.footer span{order:3;width:100%}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.001ms!important;transition-duration:.001ms!important}}
+
+/* NeuroLab 2.1 — corpo anatomico volumetrico, con fallback sul modello originale */
+#realisticBody{opacity:0;pointer-events:none;transition:opacity .4s ease;filter:drop-shadow(0 0 13px rgba(96,191,235,.16))}
+.scene.anatomy-upgrade #realisticBody{opacity:1}
+.scene.anatomy-upgrade #anatomyBody{opacity:0}
+#anatomyBody{transition:opacity .3s ease}
+
+/* Guida parlata integrata: controlli indipendenti dalla simulazione visiva */
+.narration-bar{max-width:1864px;margin:0 auto 16px;padding:14px 17px;display:grid;grid-template-columns:46px minmax(255px,1fr) auto minmax(175px,220px);align-items:center;column-gap:15px;row-gap:8px;background:linear-gradient(110deg,rgba(11,49,73,.94),rgba(8,27,46,.97));border-color:rgba(76,171,208,.48)}
+.narration-mark{display:grid;place-items:center;width:45px;height:45px;border:1px solid rgba(83,199,250,.55);border-radius:50%;background:radial-gradient(circle,#276d90a3,#0e2d49);box-shadow:0 0 21px #4b9dcc30}
+.narration-intro h2{font-size:15px;line-height:1.25;margin:4px 0 4px;font-weight:760}
+.narration-intro h2 span{font-size:12px;color:#b0d5e6;font-weight:550}
+.narration-intro p{font-size:11px;line-height:1.4;color:#a7c9d9;margin:0}
+.narration-controls{display:flex;gap:7px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.voice-button{border:1px solid #3c789b;border-radius:9px;padding:10px 11px;font-size:11px;font-weight:760;color:#e3f6ff;background:linear-gradient(150deg,rgba(30,78,113,.8),rgba(13,38,62,.9));white-space:nowrap}
+.voice-button:hover:not(:disabled){border-color:#a2eaff;box-shadow:0 0 14px #4bcbff2a}
+.voice-button:disabled{opacity:.38}
+.voice-primary{background:linear-gradient(145deg,#167ba8,#164766);border-color:#71ceeb;box-shadow:0 0 13px #3b9dd731}
+.voice-settings{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:5px 7px;font-size:10px;color:#9dc8d9}
+.voice-settings select{min-width:0;width:100%;height:26px;padding:3px 5px;background:#0e3148;border:1px solid #4282a3;border-radius:6px;color:#e3f5fb;font-size:10px}
+.voice-transcript{grid-column:1/-1;font-size:11px;color:#8db1c5}
+.voice-transcript summary{cursor:pointer;width:max-content;color:#90d9f0;font-weight:700;outline-offset:4px}
+.voice-transcript[open]{border-top:1px solid #37637e;margin-top:5px;padding-top:10px}
+.voice-transcript div{max-height:240px;overflow:auto;padding:0 12px 0 0;line-height:1.6;color:#c2d5e0}
+.voice-transcript h3{font-size:14px;color:#f0faff}
+.voice-transcript p{margin:5px 0 11px}
+.voice-transcript .voice-caveat{font-style:italic;color:#89aabc}
+
+@media(max-width:1600px){.narration-bar{margin-left:22px;margin-right:22px;grid-template-columns:45px minmax(190px,1fr) auto;column-gap:12px}.voice-settings{grid-column:2/-1;grid-template-columns:auto minmax(130px,1fr) auto 100px;justify-self:start}}
+@media(max-width:900px){.narration-bar{grid-template-columns:43px minmax(0,1fr);gap:12px}.narration-controls,.voice-settings{grid-column:1/-1;justify-content:start}.voice-settings{display:flex;flex-wrap:wrap;width:100%}.voice-settings select{width:auto;max-width:310px}.voice-settings label{margin-left:5px}}
+@media(max-width:590px){.narration-bar{margin:0 11px 10px;padding:12px;gap:7px}.narration-mark{width:39px;height:39px}.narration-mark svg{width:32px;height:32px}.narration-intro h2{font-size:14px}.narration-intro h2 span{display:block;font-size:10px;margin-top:3px}.narration-intro p{font-size:10px}.narration-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.voice-button{padding:9px 8px}.voice-settings{gap:6px}.voice-settings select{width:calc(100% - 52px);max-width:none}.voice-settings label{min-width:40px;margin:0}.voice-transcript{font-size:10px}}
