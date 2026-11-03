@@ -275,6 +275,7 @@ function setSense(id) {
  renderTab();
  updateToneButton();
  render();
+ window.dispatchEvent(new CustomEvent("neurolab:sensechange",{detail:{sense:id}}));
 }
 
 function updatePerception() {
@@ -472,6 +473,31 @@ document.addEventListener("visibilitychange",()=>{
 document.addEventListener("keydown",e=>{
  if(e.code==="Space"&&e.target===document.body){e.preventDefault();togglePlay();}
 });
+// API a sola lettura per la guida vocale, senza duplicare i contenuti scientifici.
+window.NeuroLabAPI = Object.freeze({
+ getSense: () => state.sense,
+ getData: () => {
+  const d=current();
+  return {id:state.sense,name:d.name,title:d.title,stimulus:d.stimulus,
+   receptor:d.receptor,brain:d.brain,location:d.location,
+   intensity:state.intensity,steps:d.steps.map(step=>step.slice()),
+   note:d.note,scienceFact:d.scienceFact};
+ },
+ getProgress: () => state.progress,
+ seekStep: (index) => {
+  const positions=[.09,.28,.48,.72,.97];
+  if(!Number.isInteger(index)||index<0||index>=positions.length)return;
+  state.playing=false;
+  state.progress=positions[index];
+  render();
+ }
+});
+// Il modello anatomico originale resta disponibile se il nuovo asset non si carica.
+const anatomyPreview = new Image();
+anatomyPreview.onload = () => scene.classList.add("anatomy-upgrade");
+anatomyPreview.onerror = () => scene.classList.remove("anatomy-upgrade");
+anatomyPreview.src = "anatomy-realistic.svg";
+
 setSense("vista");
 state.playing=false;
 render();
