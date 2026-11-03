@@ -8,6 +8,7 @@
   <title>NeuroLab · I cinque sensi — gbprof</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="main.js"></script>
+  <script defer src="narration.js"></script>
 </head>
 <body>
 <a class="skip" href="#laboratorio">Vai alla simulazione</a>
@@ -26,6 +27,29 @@
 <section class="intro">
  <div><span class="overline">IL VIAGGIO DELL’INFORMAZIONE · 01</span><h1>I cinque sensi <em>nel cervello.</em></h1><p>Attiva uno stimolo. Segui il segnale dal recettore ai circuiti nervosi e osserva come nasce una percezione.</p></div>
  <div class="intro-tag">DAL MONDO ESTERNO<br><strong>ALL’ESPERIENZA</strong><span>Modello interattivo, non in scala</span></div>
+</section>
+<section class="narration-bar glass" aria-labelledby="narration-title">
+ <div class="narration-mark" aria-hidden="true">
+  <svg viewBox="0 0 50 50" fill="none" width="40" height="40"><path d="M21 16L13 23H6v9h7l8 7V16Z" fill="#5cc9ef" fill-opacity=".4" stroke="#a4e8ff" stroke-width="2"/><path d="M28 18q10 8 0 18M32 12q18 13 0 30" stroke="#81d6fa" stroke-width="2" stroke-linecap="round"/></svg>
+ </div>
+ <div class="narration-intro">
+  <span class="panel-number">GUIDA VOCALE INTERATTIVA</span>
+  <h2 id="narration-title">Ascolta la spiegazione <span>· voce femminile italiana</span></h2>
+  <p id="voiceStatus" role="status" aria-live="polite">Preparazione delle voci disponibili sul dispositivo…</p>
+ </div>
+ <div class="narration-controls">
+  <button id="voicePlay" type="button" class="voice-button voice-primary" aria-label="Ascolta la spiegazione completa">▶ Ascolta tutto</button>
+  <button id="voicePhase" type="button" class="voice-button" aria-label="Ascolta la fase selezionata">♫ Fase</button>
+  <button id="voicePause" type="button" class="voice-button" aria-label="Sospendi o riprendi la lettura" disabled>Ⅱ Pausa</button>
+  <button id="voiceStop" type="button" class="voice-button" aria-label="Ferma la spiegazione" disabled>■ Ferma</button>
+ </div>
+ <div class="voice-settings">
+  <label for="voiceChoice">Voce</label>
+  <select id="voiceChoice" aria-label="Scegli una voce italiana"><option value="">Ricerca voci…</option></select>
+  <label for="voiceRate">Ritmo</label>
+  <select id="voiceRate" aria-label="Velocità della spiegazione"><option value=".85">Lento</option><option value=".96" selected>Normale</option><option value="1.12">Veloce</option></select>
+ </div>
+ <details class="voice-transcript"><summary>Testo della spiegazione</summary><div id="voiceTranscript" aria-live="off"></div></details>
 </section>
 <main id="laboratorio" class="workspace">
  <aside class="control-stack" aria-label="Controlli dell'esperimento">
@@ -65,7 +89,7 @@
    <div class="scene-glow" aria-hidden="true"></div>
    <svg class="anatomy-svg" viewBox="0 0 850 660" role="img" aria-labelledby="anatomyTitle anatomyDesc">
     <title id="anatomyTitle">Schema anatomico animato del percorso sensoriale</title>
-    <desc id="anatomyDesc">Un corpo umano semitrasparente, un percorso nervoso luminoso e un ingrandimento schematico del cervello. Il percorso cambia con il senso selezionato.</desc>
+    <desc id="anatomyDesc">Una figura anatomica maschile semitrasparente, resa con volumi e ombre, un percorso nervoso luminoso e un ingrandimento schematico del cervello. Il percorso cambia con il senso selezionato.</desc>
     <defs>
      <radialGradient id="skinGradient" cx="45%" cy="30%" r="75%"><stop stop-color="#235779" stop-opacity=".52"/><stop offset=".56" stop-color="#123b61" stop-opacity=".39"/><stop offset="1" stop-color="#0a2945" stop-opacity=".15"/></radialGradient>
      <linearGradient id="organFill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e2a9c4" stop-opacity=".24"/><stop offset="1" stop-color="#8d80be" stop-opacity=".08"/></linearGradient>
@@ -99,6 +123,8 @@
      <!-- Mano ricettiva per il tatto -->
      <path d="M188 544q-8 4-11 15q-7 20 1 23q6 1 10-10q-4 19 4 19q7 0 11-20q-2 20 5 18q7-2 8-24q4 13 10 7q5-8-11-28" fill="#1c5276" fill-opacity=".35" stroke="#82cde9" stroke-opacity=".57" stroke-width="2"/>
     </g>
+    <!-- Modello anatomico con volumetria: caricato localmente, fallback SVG originale in caso di errore -->
+    <image id="realisticBody" href="anatomy-realistic.svg" x="0" y="0" width="850" height="660" preserveAspectRatio="xMidYMid meet" aria-hidden="true"/>
     <!-- Stimolo dal mondo al recettore -->
     <path id="incomingSignal" d="M140 214L373 166" fill="none" stroke="#75d9ff" stroke-width="2" stroke-dasharray="5 9" opacity=".4"/>
     <path id="pathPeripheralBase" class="route-base" d=""/>
