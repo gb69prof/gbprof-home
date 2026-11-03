@@ -484,6 +484,7 @@ window.NeuroLabAPI = Object.freeze({
    note:d.note,scienceFact:d.scienceFact};
  },
  getProgress: () => state.progress,
+ pauseVisual: () => {state.playing=false;render();},
  seekStep: (index) => {
   const positions=[.09,.28,.48,.72,.97];
   if(!Number.isInteger(index)||index<0||index>=positions.length)return;
