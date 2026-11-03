@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="660" viewBox="0 0 850 660" role="img" aria-label="Figura anatomica maschile semitrasparente vista frontalmente, cervello, colonna vertebrale, torace, terminazioni nervose">
+<defs>
+ <radialGradient id="skin" cx="35%" cy="28%" r="82%"><stop offset="0" stop-color="#a7cbe0" stop-opacity=".83"/><stop offset=".3" stop-color="#5c98bb" stop-opacity=".68"/><stop offset=".67" stop-color="#245475" stop-opacity=".78"/><stop offset="1" stop-color="#071e36" stop-opacity=".92"/></radialGradient>
+ <linearGradient id="torsoFill" x1="0" y1="0" x2="1" y2=".3"><stop stop-color="#0e3856" stop-opacity=".92"/><stop offset=".21" stop-color="#4d87a7" stop-opacity=".76"/><stop offset=".49" stop-color="#1f5474" stop-opacity=".69"/><stop offset=".79" stop-color="#3c86a9" stop-opacity=".64"/><stop offset="1" stop-color="#092c4a" stop-opacity=".9"/></linearGradient>
+ <linearGradient id="faceFill" x1="0" y1="0" x2="1" y2=".13"><stop stop-color="#123b55"/><stop offset=".16" stop-color="#4080a4"/><stop offset=".38" stop-color="#8fc0d1"/><stop offset=".57" stop-color="#659db6"/><stop offset=".83" stop-color="#28607f"/><stop offset="1" stop-color="#0e354e"/></linearGradient>
+ <radialGradient id="headGlow" cx="44%" cy="37%"><stop stop-color="#b7d8de" stop-opacity=".8"/><stop offset=".5" stop-color="#548fb4" stop-opacity=".8"/><stop offset="1" stop-color="#173b5d" stop-opacity=".94"/></radialGradient>
+ <radialGradient id="cranial" cx="42%" cy="34%" r="80%"><stop stop-color="#f2adbb" stop-opacity=".88"/><stop offset=".46" stop-color="#cc8cae" stop-opacity=".75"/><stop offset="1" stop-color="#7c6d9e" stop-opacity=".65"/></radialGradient>
+ <linearGradient id="muscle" x1="0" y1=".2" x2="1" y2="1"><stop stop-color="#ba97ad" stop-opacity=".4"/><stop offset=".65" stop-color="#9f778f" stop-opacity=".27"/><stop offset="1" stop-color="#765b82" stop-opacity=".1"/></linearGradient>
+ <linearGradient id="bone" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e3eff8" stop-opacity=".7"/><stop offset="1" stop-color="#8bc6dd" stop-opacity=".14"/></linearGradient>
+ <radialGradient id="chest" cx=".4" cy=".35"><stop stop-color="#b4e6f7" stop-opacity=".24"/><stop offset=".55" stop-color="#64aacb" stop-opacity=".11"/><stop offset="1" stop-color="#143957" stop-opacity="0"/></radialGradient>
+ <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="4"/></filter>
+ <filter id="blur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6"/></filter>
+ <filter id="micro" x="-20%" y="-20%" width="140%" height="140%"><feTurbulence baseFrequency=".03" numOctaves="2" result="noise" seed="4"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1.2"/></filter>
+</defs>
+<!-- Volumi degli arti: sfumature differenti creano profondità -->
+<path d="M351 245Q309 241 282 263Q260 272 244 310L226 375Q202 443 184 520L176 547Q180 566 198 557L223 509Q245 450 275 383L305 325Z" fill="url(#torsoFill)" stroke="#6fc5ee" stroke-opacity=".66" stroke-width="1.8"/>
+<path d="M454 244Q505 238 535 275Q552 294 561 325L586 431Q600 493 615 545Q607 567 596 554L576 507Q552 455 524 379L492 325Z" fill="url(#torsoFill)" stroke="#6fc5ee" stroke-opacity=".63" stroke-width="1.8"/>
+<path d="M276 298Q256 327 246 375L219 459" fill="none" stroke="#c1e7f4" stroke-opacity=".24" stroke-width="17" filter="url(#blur)"/>
+<path d="M527 301Q548 337 560 395L593 506" fill="none" stroke="#c1e7f4" stroke-opacity=".17" stroke-width="16" filter="url(#blur)"/>
+<!-- Mano sinistra presso il punto sensoriale -->
+<path d="M178 538Q173 552 169 565Q166 583 174 590Q180 594 183 583Q177 598 187 601Q195 602 198 581Q197 594 204 592Q212 590 212 575Q216 584 222 578Q226 572 216 553L203 542Z" fill="url(#skin)" stroke="#83cde9" stroke-opacity=".72" stroke-width="1.3"/>
+<path d="M180 567L178 585M192 565L187 590M205 563L202 582" fill="none" stroke="#d4ebf3" stroke-opacity=".36" stroke-width="1.4"/>
+<!-- Torso uomo: clavicole, pettorali, coste e muscoli -->
+<path d="M354 241Q340 246 313 250Q274 260 279 293L285 363Q275 423 283 480L283 585Q280 605 299 619Q357 650 409 651Q467 651 508 626Q527 612 516 584L517 470Q530 426 517 361L520 294Q515 257 465 246L447 240L432 272L380 273Z" fill="url(#torsoFill)" stroke="#6ec2e9" stroke-opacity=".7" stroke-width="2"/>
+<path d="M330 271Q352 261 379 265Q408 270 414 283Q418 267 441 267Q469 260 492 273Q500 280 496 305Q465 311 425 305L408 295L390 307Q352 313 318 302Q318 283 330 271Z" fill="url(#chest)" stroke="#c2e0e9" stroke-opacity=".2" stroke-width="1.4"/>
+<path d="M323 280Q350 306 387 309M488 280Q454 309 425 310" fill="none" stroke="#bee3ee" stroke-opacity=".23" stroke-width="3"/>
+<path d="M310 318Q351 327 385 340Q405 360 407 384M502 319Q465 327 429 342Q417 364 409 384" fill="none" stroke="#b6deec" stroke-opacity=".12" stroke-width="15" filter="url(#blur)"/>
+<path d="M317 314Q344 319 377 336Q388 346 388 369Q375 399 338 401Q314 386 309 357Z" fill="url(#muscle)"/>
+<path d="M492 313Q463 317 438 336Q422 349 428 370Q437 396 473 400Q501 385 502 354Z" fill="url(#muscle)"/>
+<!-- Clavicole -->
+<path d="M404 275Q378 267 352 255Q327 251 310 267M411 275Q438 265 464 254Q491 251 506 268" fill="none" stroke="url(#bone)" stroke-width="5" stroke-linecap="round"/>
+<!-- Gabbia toracica, dietro i nervi -->
+<g fill="none" stroke="#d7dce7" stroke-opacity=".38" stroke-linecap="round">
+ <path d="M407 314Q378 302 356 310Q328 316 311 337M411 314Q440 302 464 311Q487 317 501 339" stroke-width="3.4"/>
+ <path d="M405 337Q373 319 350 333Q318 341 307 362M413 337Q446 319 472 332Q496 340 507 362" stroke-width="3"/>
+ <path d="M405 357Q376 339 348 354Q316 369 307 391M414 357Q441 342 473 354Q498 367 508 389" stroke-width="2.7"/>
+ <path d="M405 383Q377 359 352 374Q319 392 315 410M414 383Q447 363 471 375Q494 390 502 407" stroke-width="2.6"/>
+ <path d="M404 408Q378 384 357 398Q337 414 333 429M414 407Q438 388 466 399Q486 414 487 431" stroke-width="2.3"/>
+</g>
+<path d="M408 279L407 451" fill="none" stroke="#e8eef8" stroke-opacity=".33" stroke-width="8"/>
+<path d="M408 281L408 457" fill="none" stroke="#b4cfe4" stroke-opacity=".34" stroke-width="2"/>
+<!-- Cuore, polmoni semitrasparenti -->
+<path d="M360 327Q320 337 320 375Q321 405 350 421Q388 413 396 370Q396 334 360 327Z" fill="#76a6bc" fill-opacity=".1" stroke="#a6cedf" stroke-opacity=".28"/>
+<path d="M455 327Q499 340 493 375Q487 405 458 424Q426 413 422 375Q415 336 455 327Z" fill="#76a6bc" fill-opacity=".1" stroke="#a6cedf" stroke-opacity=".25"/>
+<path d="M409 347Q393 330 385 350Q375 370 410 403Q451 367 433 349Q424 336 409 347Z" fill="#da9ca6" fill-opacity=".32" stroke="#ffbccd" stroke-opacity=".35"/>
+<!-- Addome, ombreggiatura per volume -->
+<path d="M322 458Q370 464 407 462Q460 466 491 456" fill="none" stroke="#b0deed" stroke-opacity=".2" stroke-width="4"/>
+<path d="M324 494Q374 499 408 496Q462 501 493 489M328 535Q376 542 408 537Q462 538 484 528" fill="none" stroke="#a6d8e7" stroke-opacity=".12" stroke-width="4"/>
+<path d="M400 457Q391 508 398 601M420 461Q426 510 418 603" fill="none" stroke="#b7d8e5" stroke-opacity=".1" stroke-width="3"/>
+<!-- Collo volumetrico -->
+<path d="M360 214Q364 236 347 253Q365 277 408 279Q453 277 470 255Q452 237 451 214Z" fill="url(#faceFill)" stroke="#8ad3f2" stroke-opacity=".57" stroke-width="1.6"/>
+<path d="M369 223Q379 248 398 259L403 271M443 224Q433 247 416 261L411 269" fill="none" stroke="#c9e9f2" stroke-opacity=".21" stroke-width="5"/>
+<!-- Cranio più realistico con arcate, guance, mandibola -->
+<path d="M330 126Q331 68 360 53Q382 31 409 35Q451 29 472 63Q494 91 481 138Q492 160 477 177Q476 198 456 224Q435 246 409 247Q378 242 359 222Q339 202 337 181Q322 173 325 154Q324 136 330 126Z" fill="url(#headGlow)" stroke="#88d8f8" stroke-opacity=".83" stroke-width="2.4" filter="url(#micro)"/>
+<!-- contorno spazzolato di tempie e orecchie -->
+<path d="M329 140Q316 132 319 152Q319 169 335 174M481 138Q493 134 492 153Q491 172 476 176" fill="#4480a4" stroke="#9cdaf0" stroke-opacity=".7" stroke-width="2"/>
+<path d="M325 148Q332 148 332 163M486 146Q478 148 477 164" fill="none" stroke="#0a344f" stroke-opacity=".45" stroke-width="3"/>
+<!-- Quadro frontale con linee anatomiche -->
+<path d="M350 133Q379 112 409 123Q448 110 465 136Q475 162 469 192Q452 231 409 238Q374 231 352 199Q343 170 350 133Z" fill="url(#faceFill)" fill-opacity=".85"/>
+<path d="M352 140Q373 127 395 138M419 138Q447 128 464 142" fill="none" stroke="#143f5c" stroke-opacity=".75" stroke-width="7" stroke-linecap="round"/>
+<path d="M357 156Q368 148 388 155Q374 167 357 156Z" fill="#1b455e" stroke="#b7e4ee" stroke-opacity=".56" stroke-width="1.7"/>
+<path d="M424 156Q440 148 458 154Q442 169 424 156Z" fill="#1b455e" stroke="#b7e4ee" stroke-opacity=".56" stroke-width="1.7"/>
+<circle cx="373" cy="156" r="6" fill="#a6edff" opacity=".7"/><circle cx="438" cy="156" r="6" fill="#a6edff" opacity=".65"/>
+<circle cx="373" cy="156" r="3.2" fill="#08273e"/><circle cx="438" cy="156" r="3.2" fill="#08273e"/>
+<path d="M409 156Q403 174 401 191Q399 196 410 200L422 197Q421 192 414 189" fill="none" stroke="#d9e9ee" stroke-opacity=".45" stroke-width="2.3"/>
+<path d="M390 215Q406 219 423 214Q411 225 397 222" fill="#285471" stroke="#deeff5" stroke-opacity=".26" stroke-width="1.5"/>
+<path d="M354 181Q359 200 374 211M458 182Q452 202 440 213" fill="none" stroke="#d3e5ec" stroke-opacity=".18" stroke-width="7" stroke-linecap="round" filter="url(#blur)"/>
+<path d="M337 128Q339 65 381 49Q408 35 442 52Q475 70 478 121" fill="none" stroke="#d2edff" stroke-opacity=".12" stroke-width="15" filter="url(#blur)"/>
+<!-- Translucent cranial vault and highly articulated cortical gyri -->
+<path d="M348 116Q346 88 366 77Q383 55 403 66Q416 53 433 67Q465 65 469 100Q481 117 460 136Q442 149 424 145Q405 157 392 146Q369 155 351 136Z" fill="url(#cranial)" fill-opacity=".83" stroke="#e9c2e6" stroke-opacity=".73" stroke-width="1.7"/>
+<g fill="none" stroke="#e7bfd9" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".7">
+ <path d="M364 85Q376 85 375 94Q360 98 372 105Q388 112 372 121Q362 132 379 139" stroke-width="3.8"/>
+ <path d="M386 74Q397 85 386 92Q376 101 393 107Q412 117 393 122Q386 132 396 141" stroke-width="4"/>
+ <path d="M409 69Q399 82 412 90Q424 99 411 112Q402 121 418 126Q422 139 409 143" stroke-width="4"/>
+ <path d="M433 77Q422 83 437 96Q445 104 430 115Q424 121 440 127Q442 140 454 128" stroke-width="3.8"/>
+ <path d="M452 83Q464 95 448 108Q466 113 455 124" stroke-width="3"/>
+ <path d="M353 108Q365 112 356 125M468 107Q458 112 466 122" stroke-width="3"/>
+</g>
+<!-- Midollo e gangli a metà profondità -->
+<path d="M410 226Q407 275 408 320Q406 383 408 435L408 594" fill="none" stroke="#b7d8f7" stroke-opacity=".12" stroke-width="15"/>
+<path d="M410 226Q407 275 408 320Q406 383 408 435L408 594" fill="none" stroke="#9ed3ed" stroke-opacity=".65" stroke-width="4" stroke-linecap="round"/>
+<g fill="#d9c6dc" fill-opacity=".6" stroke="#bfe7f7" stroke-opacity=".4">
+ <ellipse cx="408" cy="258" rx="7" ry="3"/><ellipse cx="408" cy="276" rx="7" ry="3"/><ellipse cx="408" cy="294" rx="7" ry="3"/><ellipse cx="408" cy="314" rx="8" ry="3"/><ellipse cx="408" cy="336" rx="8" ry="3"/><ellipse cx="408" cy="360" rx="8" ry="3"/><ellipse cx="408" cy="384" rx="8" ry="3"/><ellipse cx="408" cy="408" rx="8" ry="3"/><ellipse cx="408" cy="433" rx="8" ry="3"/><ellipse cx="408" cy="460" rx="8" ry="3"/><ellipse cx="408" cy="487" rx="8" ry="3"/><ellipse cx="408" cy="514" rx="8" ry="3"/><ellipse cx="408" cy="541" rx="8" ry="3"/>
+</g>
+<!-- Nervi periferici: rami dorati/azzurri sottili per realismo e profondità -->
+<g fill="none" stroke="#e5bd8f" stroke-opacity=".48" stroke-linecap="round" stroke-width="1.75">
+ <path d="M408 263Q379 260 357 278L320 301L295 335L258 407L216 513L184 550"/>
+ <path d="M408 263Q447 255 469 274L503 305L532 341L564 423L599 533"/>
+ <path d="M407 307Q367 310 334 335L313 379L287 444"/>
+ <path d="M407 308Q445 309 480 336L501 381L532 441"/>
+ <path d="M407 356Q369 360 335 382M409 359Q443 365 478 383"/>
+ <path d="M408 398Q378 408 347 423M408 401Q441 410 473 423"/>
+ <path d="M408 445Q365 457 331 481M408 447Q446 460 484 478"/>
+ <path d="M408 487Q365 502 344 545M408 489Q449 508 476 547"/>
+ <path d="M408 520Q376 547 362 600M409 524Q442 548 451 600"/>
+</g>
+<g fill="none" stroke="#70c9f0" stroke-opacity=".31" stroke-linecap="round" stroke-width="1.5">
+ <path d="M406 240Q370 249 329 272L274 356L233 448L188 543"/>
+ <path d="M406 243Q442 254 491 277L531 362L574 450L605 540"/>
+ <path d="M408 313Q380 328 360 367L347 400M407 314Q433 324 462 369L477 401"/>
+ <path d="M408 390Q358 394 329 423M409 390Q456 399 489 425"/>
+ <path d="M407 477Q359 498 333 531M408 477Q456 505 489 531"/>
+</g>
+<path d="M351 232Q365 251 383 257M463 232Q449 249 432 258" fill="none" stroke="#9be5fa" stroke-opacity=".37" stroke-width="2"/>
+</svg>
