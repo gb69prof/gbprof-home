@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="NeuroLab: esplora come vista, udito, olfatto, gusto e tatto trasformano gli stimoli in segnali nervosi e percezioni.">
+  <title>NeuroLab · I cinque sensi — gbprof</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+<a class="skip" href="#laboratorio">Vai alla simulazione</a>
+<header class="topbar">
+ <a class="logo" href="/#spazi" aria-label="Torna agli Spazi di gbprof">
+  <svg width="35" height="35" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M19 8C9 1 3 14 9 18C3 22 9 32 18 28M21 8C31 1 37 14 31 18C37 22 31 32 22 28M20 8v23M14 14l5 4-5 5M26 14l-5 4 5 5M17 30v6m6-6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span><strong>gbprof / NEUROLAB</strong><small>LABORATORIO DI NEUROSCIENZE</small></span>
+ </a>
+ <div class="top-actions">
+  <span class="live-led"><span></span> ESPERIMENTO INTERATTIVO</span>
+  <button id="playBtn" class="square-button primary" type="button" aria-label="Avvia la simulazione" title="Avvia o metti in pausa">▶</button>
+  <button id="resetBtn" class="square-button" type="button" aria-label="Ricomincia" title="Ricomincia">↻</button>
+  <button id="fullscreenBtn" class="square-button" type="button" aria-label="Schermo intero" title="Schermo intero">⛶</button>
+ </div>
+</header>
+<section class="intro">
+ <div><span class="overline">IL VIAGGIO DELL’INFORMAZIONE · 01</span><h1>I cinque sensi <em>nel cervello.</em></h1><p>Attiva uno stimolo. Segui il segnale dal recettore ai circuiti nervosi e osserva come nasce una percezione.</p></div>
+ <div class="intro-tag">DAL MONDO ESTERNO<br><strong>ALL’ESPERIENZA</strong><span>Modello interattivo, non in scala</span></div>
+</section>
+<main id="laboratorio" class="workspace">
+ <aside class="control-stack" aria-label="Controlli dell'esperimento">
+  <section class="glass panel senses-panel">
+   <div class="panel-number">01 / ESPLORA</div><h2>Quale senso attiviamo?</h2>
+   <div class="sense-list" id="senseList" role="group" aria-label="Seleziona il senso">
+    <button class="sense-button active" data-sense="vista" type="button" aria-pressed="true"><span class="symbol">◉</span><span>Vista</span><span class="chevron">›</span></button>
+    <button class="sense-button" data-sense="udito" type="button" aria-pressed="false"><span class="symbol">♫</span><span>Udito</span><span class="chevron">›</span></button>
+    <button class="sense-button" data-sense="olfatto" type="button" aria-pressed="false"><span class="symbol">≋</span><span>Olfatto</span><span class="chevron">›</span></button>
+    <button class="sense-button" data-sense="gusto" type="button" aria-pressed="false"><span class="symbol">◡</span><span>Gusto</span><span class="chevron">›</span></button>
+    <button class="sense-button" data-sense="tatto" type="button" aria-pressed="false"><span class="symbol">✋</span><span>Tatto</span><span class="chevron">›</span></button>
+   </div>
+  </section>
+  <section class="glass panel">
+   <div class="panel-number">02 / MODIFICA LO STIMOLO</div>
+   <div class="title-row"><h2>Intensità</h2><output id="intensityValue" for="intensity">65%</output></div>
+   <input id="intensity" class="range" type="range" min="0" max="100" step="1" value="65" aria-label="Intensità dello stimolo" aria-describedby="intensityExplanation">
+   <div class="range-labels"><span>Assente</span><span>Media</span><span>Elevata</span></div>
+   <p id="intensityExplanation" class="microcopy">La forza dello stimolo cambia il reclutamento e la frequenza dei segnali, non la velocità con cui un singolo impulso nervoso viaggia.</p>
+  </section>
+  <section class="glass panel">
+   <div class="panel-number">03 / SCEGLI COSA VEDERE</div><h2>Percorso del segnale</h2>
+   <fieldset class="route-select">
+    <legend class="sr-only">Visualizzazione del percorso</legend>
+    <label><input type="radio" name="route" value="all" checked> <span>Intero percorso</span></label>
+    <label><input type="radio" name="route" value="peripheral"> <span>Recettore e vie iniziali</span></label>
+    <label><input type="radio" name="route" value="central"> <span>Vie e aree cerebrali</span></label>
+   </fieldset>
+   <label class="toggle-row"><input id="highlightToggle" type="checkbox" checked><span>Illumina l’area coinvolta</span></label>
+   <div class="speed-row"><label for="speed">Velocità animazione</label><select id="speed"><option value=".65">Lenta</option><option value="1" selected>Normale</option><option value="1.7">Rapida</option></select></div>
+  </section>
+  <p class="sidebar-foot">Le vie mostrate sono schemi semplificati: non rappresentano tempi biologici reali né l’intera rete neurale.</p>
+ </aside>
+ <section class="glass scene-section" aria-label="Visualizzazione anatomica del segnale">
+  <header class="scene-header"><div><span class="panel-number">SIMULAZIONE ANATOMICA</span><h2 id="sceneTitle">Vista <span>· Dalla luce alla corteccia</span></h2></div><span id="statusBadge" class="status-badge">PRONTA</span></header>
+  <div class="scene" id="scene">
+   <div class="scene-glow" aria-hidden="true"></div>
+   <svg class="anatomy-svg" viewBox="0 0 850 660" role="img" aria-labelledby="anatomyTitle anatomyDesc">
+    <title id="anatomyTitle">Schema anatomico animato del percorso sensoriale</title>
+    <desc id="anatomyDesc">Un corpo umano semitrasparente, un percorso nervoso luminoso e un ingrandimento schematico del cervello. Il percorso cambia con il senso selezionato.</desc>
+    <defs>
+     <radialGradient id="skinGradient" cx="45%" cy="30%" r="75%"><stop stop-color="#235779" stop-opacity=".52"/><stop offset=".56" stop-color="#123b61" stop-opacity=".39"/><stop offset="1" stop-color="#0a2945" stop-opacity=".15"/></radialGradient>
+     <linearGradient id="organFill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e2a9c4" stop-opacity=".24"/><stop offset="1" stop-color="#8d80be" stop-opacity=".08"/></linearGradient>
+     <radialGradient id="brainFill"><stop stop-color="#b58ea7" stop-opacity=".60"/><stop offset=".8" stop-color="#6d8cbe" stop-opacity=".42"/><stop offset="1" stop-color="#62c3ed" stop-opacity=".25"/></radialGradient>
+     <radialGradient id="brainZoomFill"><stop stop-color="#b29ab8" stop-opacity=".63"/><stop offset="1" stop-color="#526da9" stop-opacity=".3"/></radialGradient>
+     <filter id="signalGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5"/></filter>
+     <filter id="nodeGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="8"/></filter>
+     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#76b6d3" stroke-opacity=".065" stroke-width=".8"/></pattern>
+    </defs>
+    <rect width="850" height="660" fill="url(#grid)"/>
+    <g class="ornament" opacity=".32" fill="none" stroke="#2b91ba"><path d="M35 115V34h85M730 33h87v85M35 541v83h85M728 624h89v-80" stroke-width="1.2"/><circle cx="408" cy="150" r="145" stroke-dasharray="4 14" opacity=".36"/><path d="M18 330h108m595 0h107" opacity=".5"/></g>
+    <!-- Corpo: figura anatomica schematica, volutamente non in scala -->
+    <g id="anatomyBody">
+     <path d="M350 231Q324 239 304 249C283 263 263 275 249 303C230 352 203 438 190 505L186 551Q195 568 206 555L227 506Q242 468 263 414L283 360L286 591Q285 613 300 623Q397 658 505 624Q522 614 516 590L513 359L544 430L578 548Q585 565 594 549L589 504C577 436 560 351 544 307C532 277 505 258 461 238Z" fill="url(#skinGradient)" stroke="#63c9ed" stroke-opacity=".54" stroke-width="2"/>
+     <path d="M361 223L357 254Q408 280 453 254L449 220" fill="url(#skinGradient)" stroke="#67bbdf" stroke-opacity=".5" stroke-width="2"/>
+     <ellipse cx="406" cy="148" rx="83" ry="111" fill="url(#skinGradient)" stroke="#68d5ff" stroke-opacity=".66" stroke-width="2.3"/>
+     <path d="M327 137Q313 151 322 172L337 175M480 138Q497 151 483 171L475 174" fill="none" stroke="#8fcbea" stroke-opacity=".8" stroke-width="3"/>
+     <path d="M356 165Q375 156 389 168M419 168Q436 156 453 164" fill="none" stroke="#b8e5fa" stroke-opacity=".64" stroke-width="2.8" stroke-linecap="round"/>
+     <ellipse cx="373" cy="166" rx="5" ry="4" fill="#8ce4ff" opacity=".8"/><ellipse cx="435" cy="166" rx="5" ry="4" fill="#8ce4ff" opacity=".8"/>
+     <path d="M405 170Q398 195 405 199L416 199M388 216Q405 220 423 216" fill="none" stroke="#a2d1e3" stroke-opacity=".45" stroke-width="1.8"/>
+     <!-- Cervello all'interno del capo -->
+     <path d="M351 114C341 98 353 77 369 76C383 60 402 65 410 71C421 59 438 70 443 77C467 75 476 94 468 111C479 129 462 146 450 144C432 158 414 148 405 152C392 147 371 154 361 139C348 139 347 126 351 114Z" fill="url(#brainFill)" stroke="#ba9ce4" stroke-opacity=".62" stroke-width="1.5"/>
+     <g fill="none" stroke="#e2a0cb" stroke-opacity=".47" stroke-width="2" stroke-linecap="round"><path d="M367 84q24 10 4 19q25 4 6 17q15 10-3 18"/><path d="M388 76q-12 18 5 22q-10 13 8 18q-6 16 7 27"/><path d="M419 72q-13 20 5 24q-15 14-1 21q-4 12 13 22"/><path d="M450 88q-16 10 1 22q-19 12-2 21"/></g>
+     <!-- Colonna e principali fasci visivi -->
+     <path d="M406 244C407 294 407 342 408 399V595" fill="none" stroke="#b2d6ff" stroke-opacity=".22" stroke-width="12" stroke-linecap="round"/>
+     <path d="M406 244V595" stroke="#9dc5f6" stroke-opacity=".34" stroke-width="2.5" stroke-dasharray="8 7"/>
+     <path d="M366 296Q339 291 328 319Q321 362 338 405Q356 422 384 407Q399 365 386 317Q378 300 366 296ZM451 297Q473 287 485 320Q494 371 477 412Q454 422 428 402Q416 359 427 316Q434 302 451 297Z" fill="url(#organFill)" stroke="#a9a6cc" stroke-opacity=".22"/>
+     <path d="M331 310Q362 332 385 348M331 353Q361 356 386 367M332 393Q356 383 384 387M427 347Q458 336 484 318M425 369Q453 358 492 355M427 389Q453 384 482 392" fill="none" stroke="#d0c4dd" stroke-opacity=".15" stroke-width="2"/>
+     <path d="M407 350Q399 335 395 344Q377 354 395 377L407 390L419 375Q433 354 415 342Q410 341 407 350Z" fill="#db809b" fill-opacity=".27" stroke="#eaa3bd" stroke-opacity=".2"/>
+     <g fill="none" stroke="#74c2f3" stroke-width="1.8" stroke-opacity=".26"><path d="M407 283Q357 288 308 339L231 503M407 289Q454 282 501 338L570 504M408 311Q384 375 365 470L349 605M407 320Q439 377 453 481L463 604"/></g>
+     <!-- Mano ricettiva per il tatto -->
+     <path d="M188 544q-8 4-11 15q-7 20 1 23q6 1 10-10q-4 19 4 19q7 0 11-20q-2 20 5 18q7-2 8-24q4 13 10 7q5-8-11-28" fill="#1c5276" fill-opacity=".35" stroke="#82cde9" stroke-opacity=".57" stroke-width="2"/>
+    </g>
+    <!-- Stimolo dal mondo al recettore -->
+    <path id="incomingSignal" d="M140 214L373 166" fill="none" stroke="#75d9ff" stroke-width="2" stroke-dasharray="5 9" opacity=".4"/>
+    <path id="pathPeripheralBase" class="route-base" d=""/>
+    <path id="pathCentralBase" class="route-base" d=""/>
+    <path id="pathPeripheral" class="route-light" d=""/>
+    <path id="pathCentral" class="route-light" d=""/>
+    <circle id="receptorHalo" cx="373" cy="166" r="21" class="receptor-halo"/>
+    <circle id="receptorCore" cx="373" cy="166" r="5" fill="#fff" />
+    <circle id="pulseHalo" cx="373" cy="166" r="14" class="pulse-halo"/>
+    <circle id="pulse" cx="373" cy="166" r="4.5" class="pulse"/>
+    <g id="brainInZoom" transform="translate(567 34)">
+     <circle cx="130" cy="146" r="143" fill="#123051" fill-opacity=".36" stroke="#53bbec" stroke-opacity=".43" stroke-width="1.5"/>
+     <circle cx="130" cy="146" r="128" fill="none" stroke="#52afd9" stroke-opacity=".15" stroke-dasharray="4 13"/>
+     <path d="M66 163C36 146 36 113 57 96C57 67 86 44 108 51C134 32 160 45 168 53C191 48 215 68 217 90C238 113 224 143 220 155C236 182 211 202 184 202C171 222 131 216 118 201C96 209 70 196 66 163Z" fill="url(#brainZoomFill)" stroke="#d7b1d5" stroke-opacity=".75" stroke-width="2"/>
+     <g fill="none" stroke="#cfa2c9" stroke-opacity=".66" stroke-width="3" stroke-linecap="round">
+      <path d="M72 102q30-3 21 19q-27 8-9 21q29-3 9 22q-8 7 1 17"/>
+      <path d="M102 60q-20 17 0 28q24-2 14 19q-29 10-10 25q20 6 5 23q-14 19 1 35"/>
+      <path d="M127 51q-9 24 12 27q13 13-6 24q-23 14 0 28q25 4 8 19q-8 9 11 19"/>
+      <path d="M168 58q17 15-3 30q-13 10 6 22q23 10 7 30q-8 14 11 24"/>
+      <path d="M201 84q-23 8-10 24q17 13 1 25q-15 8 6 22q13 13-2 26"/>
+      <path d="M60 141q14-4 15 12q10 15 27 12M115 190q15-17 30-6q15 8 28-8"/>
+     </g>
+     <path d="M107 207Q112 239 124 260Q147 269 155 244L151 219" fill="#7899c5" fill-opacity=".3" stroke="#c0b0cd" stroke-opacity=".4"/>
+     <path d="M159 215Q171 211 180 220Q194 231 174 242L154 241Z" fill="#bd9db9" fill-opacity=".45" stroke="#cdb5d7" stroke-opacity=".42"/>
+     <circle id="brainHighlightGlow" cx="200" cy="112" r="27" fill="currentColor" opacity=".22" filter="url(#nodeGlow)"/>
+     <circle id="brainHighlight" cx="200" cy="112" r="17" fill="currentColor" fill-opacity=".47" stroke="#f6e8ff" stroke-opacity=".85" stroke-width="1.4"/>
+     <circle id="brainHighlightPoint" cx="200" cy="112" r="4.5" fill="#ffffff"/>
+    </g>
+    <path d="M504 124Q536 115 570 100" stroke="#52baed" stroke-opacity=".28" stroke-width="1.3" stroke-dasharray="5 9" fill="none"/>
+    <g fill="#9cbacf" font-size="11" font-weight="700" letter-spacing="1.5"><text x="44" y="40">STIMOLO</text><text x="650" y="358" text-anchor="middle">INGRANDIMENTO CEREBRALE</text><text x="396" y="652" text-anchor="middle">CORPO UMANO · SCHEMA DIDATTICO</text></g>
+   </svg>
+   <div class="floating-stimulus" aria-live="polite"><span class="float-overline">STIMOLO ESTERNO</span><div class="stimulus-art" id="stimulusArt" aria-hidden="true"><span id="stimulusGlyph">☀</span></div><strong id="stimulusName">Luce</strong><small id="stimulusDetail">Luce riflessa dagli oggetti</small></div>
+   <div class="floating-receptor"><span class="dot"></span><div><span>RECETTORE</span><strong id="receptorLabel">Retina · fotorecettori</strong></div></div>
+   <div class="brain-caption"><span>AREA EVIDENZIATA</span><strong id="brainAreaLabel">Corteccia visiva primaria (V1)</strong><small id="brainSideNote">Lobo occipitale</small></div>
+   <div class="signal-readout"><span class="readout-light"></span><div><span>SEGNALE NERVOSO</span><strong id="signalStatus">Premi ▶ per cominciare</strong></div><span id="signalPercent">0%</span></div>
+  </div>
+  <div class="scene-footer"><div class="track" aria-label="Avanzamento del segnale"><span id="progressFill"></span></div><div class="track-labels"><span>Recettore</span><span>Vie nervose</span><span>Reti cerebrali</span><span>Percezione</span></div></div>
+  <div class="scene-bottom"><span id="scienceNote">Nella vista il segnale non attraversa il torace: i circuiti sono nella testa.</span><button id="replayBtn" type="button">↻ Ripeti l’esperimento</button></div>
+ </section>
+ <aside class="glass explanation" aria-label="Descrizione delle fasi">
+  <div class="panel-number">DALLO STIMOLO ALLA PERCEZIONE</div><h2 id="processTitle">Il processo della vista</h2>
+  <p class="process-subtitle">Tocca una fase per osservarla nel modello.</p>
+  <div id="steps" class="steps" role="group" aria-label="Fasi della percezione"></div>
+  <div class="perception"><span class="panel-number">05 / L’ESPERIENZA CHE NE RISULTA</span>
+   <div id="perceptionVisual" class="perception-visual vista" aria-hidden="true"><span id="perceptionGlyph">◉</span><div class="visual-rings"></div></div>
+   <div><span class="eyebrow">SENSAZIONE RISULTANTE</span><h3 id="perceptionHeading">Un’immagine del mondo</h3><p id="perceptionText">Il cervello costruisce una rappresentazione di forme, colori e movimento.</p></div>
+   <div class="perception-meter"><span>Intensità dello stimolo</span><strong id="perceptionLevel">Media</strong></div>
+  </div>
+ </aside>
+</main>
+<section class="below glass" aria-label="Approfondimenti">
+ <div class="tablist" role="tablist" aria-label="Approfondimenti della simulazione">
+  <button class="tab active" role="tab" id="tab-route" aria-selected="true" aria-controls="tab-panel" data-tab="route">↝ Tappe anatomiche</button>
+  <button class="tab" role="tab" id="tab-intensity" aria-selected="false" aria-controls="tab-panel" data-tab="intensity">◈ Intensità e codifica</button>
+  <button class="tab" role="tab" id="tab-science" aria-selected="false" aria-controls="tab-panel" data-tab="science">◎ Il cervello interpreta</button>
+ </div>
+ <div id="tab-panel" class="tab-body" role="tabpanel" aria-labelledby="tab-route" tabindex="0"></div>
+</section>
+<footer class="footer"><a href="/#spazi">← Torna agli Spazi</a><span>gbprof · NeuroLab · Modello divulgativo, non clinico</span><a href="https://www.ncbi.nlm.nih.gov/books/" rel="noopener noreferrer" target="_blank">Fonti: NCBI Bookshelf ↗</a></footer>
+</body>
+</html>
