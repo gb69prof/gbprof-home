@@ -127,5 +127,16 @@ jobs:
             curl -fsSL --max-time 25 "$public_neuro"main.js | grep -Fq 'const SENSES ='
             curl -fsSL --max-time 25 https://gbprof.it/ | grep -Fq '/Spazi/neuro-lab/'
             curl -fsSL --max-time 25 https://gbprof.it/Spazi/ | grep -Fq '/Spazi/neuro-lab/'
+            # NeuroLab 2.1 audio + anatomia; verifica asset da server e browser pubblico
+            test -s "$repo/Spazi/neuro-lab/narration.js"
+            test -s "$repo/Spazi/neuro-lab/anatomy-realistic.svg"
+            for asset in narration.js anatomy-realistic.svg; do
+              test "$(curl -sSL --max-time 25 -o /dev/null -w '%{http_code}' "$public_neuro$asset")" = 200
+            done
+            curl -fsSL --max-time 25 "$public_neuro" | grep -Fq 'id="voicePlay"'
+            curl -fsSL --max-time 25 "$public_neuro" | grep -Fq 'anatomy-realistic.svg'
+            curl -fsSL --max-time 25 "$public_neuro"narration.js | grep -Fq 'SpeechSynthesisUtterance'
+            curl -fsSL --max-time 25 "$public_neuro"anatomy-realistic.svg | grep -Fq 'id="faceFill"'
+            echo "NeuroLab 2.1 audio e anatomia verificati"
             echo "NeuroLab pubblicato e raggiungibile dagli Spazi"
             git log -1 --oneline
