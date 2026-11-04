@@ -24,7 +24,9 @@ Data: 4 novembre 2026 (Europe/Rome).
 
 **Limiti:** ritratto raster realistico con livelli SVG e controlli interattivi, non un modello 3D ruotabile. Anatomia e posizioni sono illustrative: strutture profonde proiettate lateralmente, incroci e diramazioni semplificati. Narrazione tramite Web Speech API, preferenza femminile italiana; richiede una voce disponibile nel dispositivo e non usa una registrazione incorporata.
 
-**Pubblicazione:** in preparazione. Il flusso esistente GitHub Actions aggiorna la medesima pagina: https://gbprof.it/Spazi/neuro-lab/ . Il report resta alla radice del repository, fuori dal collegamento pubblico Spazi; HTTP 404 verificato per `/REPORT.md` prima della modifica.
+**Pubblicazione completata e verificata:** https://gbprof.it/Spazi/neuro-lab/ . Commit del codice: `edb6e3687dd52bd1a2dbccae5e9030b0b6322890`. [Deploy to gbprof server — riuscito](https://github.com/gb69prof/gbprof-home/actions/runs/41743981763). HTML, CSS, due JavaScript e tre immagini restituiscono HTTP 200 e hanno SHA-256 identico ai file locali validati. Nel browser pubblico verificati anche cambio Vista/Olfatto, bulbo olfattivo e selezione della fase corticale.
+
+**Report escluso dal sito:** conservato alla radice sorgente. Il workflow verifica HTTP 404 per `/REPORT.md` e `/Spazi/neuro-lab/REPORT.md`; le sole modifiche a questo report non avviano il deploy sul server. Nessun cambiamento delle configurazioni globali di pubblicazione.
 
 ### Asset e generazione
 Generazione tramite strumento immagini integrato, con riferimento visivo dell’utente per il ritratto; conversione WebP senza ritocco del contenuto o perdita della trasparenza degli stimoli.
