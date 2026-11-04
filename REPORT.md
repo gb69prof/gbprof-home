@@ -93,3 +93,14 @@ Implementare i due miglioramenti richiesti: spiegazione sonora femminile degli e
 - GitHub Actions verifica la pubblicazione online dei nuovi asset e dei collegamenti di NeuroLab.
 - Non è stato effettuato un test manuale della qualità vocale e dell'aspetto su iPad e altri browser.
 - REPORT.md resta nella radice del repository, fuori dalla directory pubblica Spazi.
+
+
+## NeuroLab — integrazione del quaderno della vista (4 novembre 2026)
+
+**Obiettivo:** integrare nella simulazione le tre tappe illustrate: percorso della vista, confronto tra specie, riflessione sui limiti della rappresentazione della realtà.
+
+**Operazioni:** aggiunti `lezione-vista/index.html`, `lezione.css` e tre immagini WebP; inserito un collegamento nel laboratorio esistente. Le immagini allegate sono utilizzate come illustrazioni, accompagnate da testo HTML accessibile e da limiti espliciti. Il confronto animale non è una simulazione calibrata.
+
+**Fonti:** OpenStax (vie visive), Neitz e colleghi (cane), studio sul punto neutro nel gatto PubMed 27720709, Communications Biology sull’ottica degli occhi composti, Fenk e colleghi sui movimenti della retina in Drosophila. La questione filosofica è lasciata aperta; l’immagine della cucina luminosa è dichiarata metafora.
+
+**Verifiche:** sintassi HTML, collegamenti e risorse locali; anteprima e verifica della pubblicazione come riportato al termine del lavoro. Nessuna prova su iPad fisico.
