@@ -106,3 +106,8 @@ Implementare i due miglioramenti richiesti: spiegazione sonora femminile degli e
 **Verifiche:** ID e risorse locali, navigazione e collegamento dalla simulazione controllati in anteprima. Pubblicazione completata con [deploy riuscito](https://github.com/gb69prof/gbprof-home/actions/runs/41788972661); pagina online, navigazione tra le tappe e caricamento di tutte le immagini verificati nel browser. Nessuna prova su iPad fisico.
 
 **Indirizzo:** https://gbprof.it/Spazi/neuro-lab/lezione-vista/ . Il report rimane nella radice del repository, escluso dal sito pubblico.
+
+
+## Collegamento rapido alla lezione della vista
+
+Aggiunto un collegamento visibile in alto nel laboratorio verso `lezione-vista/`. Confermati i collegamenti di ritorno dalla lezione. I collegamenti preesistenti restano disponibili. Verifica pubblica da effettuare dopo la distribuzione.
