@@ -103,4 +103,6 @@ Implementare i due miglioramenti richiesti: spiegazione sonora femminile degli e
 
 **Fonti:** OpenStax (vie visive), Neitz e colleghi (cane), studio sul punto neutro nel gatto PubMed 27720709, Communications Biology sull’ottica degli occhi composti, Fenk e colleghi sui movimenti della retina in Drosophila. La questione filosofica è lasciata aperta; l’immagine della cucina luminosa è dichiarata metafora.
 
-**Verifiche:** sintassi HTML, collegamenti e risorse locali; anteprima e verifica della pubblicazione come riportato al termine del lavoro. Nessuna prova su iPad fisico.
+**Verifiche:** ID e risorse locali, navigazione e collegamento dalla simulazione controllati in anteprima. Pubblicazione completata con [deploy riuscito](https://github.com/gb69prof/gbprof-home/actions/runs/41788972661); pagina online, navigazione tra le tappe e caricamento di tutte le immagini verificati nel browser. Nessuna prova su iPad fisico.
+
+**Indirizzo:** https://gbprof.it/Spazi/neuro-lab/lezione-vista/ . Il report rimane nella radice del repository, escluso dal sito pubblico.
