@@ -111,3 +111,16 @@ Implementare i due miglioramenti richiesti: spiegazione sonora femminile degli e
 ## Collegamento rapido alla lezione della vista
 
 Aggiunto un collegamento visibile in alto nel laboratorio verso `lezione-vista/`. Confermati i collegamenti di ritorno dalla lezione. I collegamenti preesistenti restano disponibili. Verifica pubblica da effettuare dopo la distribuzione.
+
+
+## Psicologia — percorso in undici lezioni (4 novembre 2026)
+
+**Obiettivo:** aggiungere una porta per la Psicologia negli Spazi e un percorso derivato dagli undici capitoli Drive indicati da gbprof.
+
+**Modifiche:** aggiornata `Spazi/index.html`; creata `Spazi/psicologia/index.html` con 11 lezioni, domande, snodi storici, limiti, schemi testuali, riflessioni e autoverifiche. Il progresso si conserva nel browser. Report alla radice, fuori dalla directory pubblica `Spazi`.
+
+**Revisione:** distinti Wundt/Titchener e condizionamento classico/operante; segnalata l’etica di Little Albert; Freud trattato come teoria storica; Maslow come modello, non legge; svolta cognitiva presentata come graduale; chiariti BOLD e limiti inferenziali; evitati determinismo situazionale e culturale; contestualizzati i campioni WEIRD.
+
+**Fonti:** Università di Lipsia (1879/1883); APA (psicologia empirica, Little Albert, etica); Mandler (cognitivismo); Henrich, Heine e Norenzayan (campioni WEIRD); Kenrick e colleghi (gerarchia dei bisogni). Link nella pagina.
+
+**Verifica:** commit su `main` avvia il workflow di distribuzione esistente; la pagina e la porta saranno verificate dopo il deploy. Il report resta fuori dal sito pubblico.
