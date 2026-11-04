@@ -124,3 +124,12 @@ Aggiunto un collegamento visibile in alto nel laboratorio verso `lezione-vista/`
 **Fonti:** Università di Lipsia (1879/1883); APA (psicologia empirica, Little Albert, etica); Mandler (cognitivismo); Henrich, Heine e Norenzayan (campioni WEIRD); Kenrick e colleghi (gerarchia dei bisogni). Link nella pagina.
 
 **Verifica:** commit su `main` avvia il workflow di distribuzione esistente; la pagina e la porta saranno verificate dopo il deploy. Il report resta fuori dal sito pubblico.
+
+
+## Psicologia — ampliamento delle lezioni (4 novembre 2026)
+
+**Correzione del primo rilascio:** la prima versione conteneva undici schede sintetiche e non raggiungeva la profondità didattica richiesta. È stata ampliata mantenendo i materiali Drive 01–11 come base e conservando porta, navigazione, autoverifiche e progressi.
+
+**Revisione:** per ciascuna tappa ora sono sviluppati contesto e problema, cambiamento teorico o metodologico, immagine della mente, contributi e limiti; si aggiungono conclusione, parole e saperi essenziali. Restano le domande, le mappe, gli spunti e i quiz. Le precisazioni storiche e metodologiche già registrate sopra restano integrate.
+
+**Verifica richiesta:** controllare la nuova versione online e la porta in `/#spazi` dopo il deploy. REPORT.md resta fuori dalla directory pubblica.
