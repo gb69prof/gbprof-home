@@ -120,6 +120,7 @@ function speakNext(session) {
  if(!state.running || session!==state.session)return;
  if(state.index>=state.segments.length){
   state.running=false;state.paused=false;setButtons();
+  if(state.mode==="all" && api.finish)api.finish();
   status("Spiegazione completata. Seleziona un altro senso o ripeti l’esperimento.");
   return;
  }
@@ -129,7 +130,7 @@ function speakNext(session) {
  sentence.lang="it-IT";
  if(state.voice)sentence.voice=state.voice;
  sentence.rate=Number($("voiceRate").value)||.96;
- sentence.pitch=1.03;
+ sentence.pitch=1;
  sentence.volume=.95;
  sentence.onstart=()=>{
   if(session!==state.session)return;
@@ -169,6 +170,7 @@ function play(mode) {
  state.voice=choice;
  state.mode=mode;
  api.pauseVisual();
+ if(mode==="all")api.seekStep(0);
  state.running=true;
  const phase=Math.min(4,Math.max(0,Math.floor(api.getProgress()*5)));
  state.segments=buildScript(mode,phase);
@@ -185,6 +187,7 @@ function togglePause(){
   setButtons();
  }catch(_error){status("Impossibile mettere in pausa la voce su questo dispositivo.");}
 }
+window.addEventListener("neurolab:interaction",()=>{if(state.running){stop(true);status("Narrazione fermata: i controlli hanno cambiato la simulazione.");}renderTranscript();});
 $("voicePlay").addEventListener("click",()=>play("all"));
 $("voicePhase").addEventListener("click",()=>play("phase"));
 $("voiceStop").addEventListener("click",()=>stop(false));

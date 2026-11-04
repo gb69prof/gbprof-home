@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - REPORT.md
 
 jobs:
   deploy:
@@ -127,16 +129,18 @@ jobs:
             curl -fsSL --max-time 25 "$public_neuro"main.js | grep -Fq 'const SENSES ='
             curl -fsSL --max-time 25 https://gbprof.it/ | grep -Fq '/Spazi/neuro-lab/'
             curl -fsSL --max-time 25 https://gbprof.it/Spazi/ | grep -Fq '/Spazi/neuro-lab/'
-            # NeuroLab 2.1 audio + anatomia; verifica asset da server e browser pubblico
-            test -s "$repo/Spazi/neuro-lab/narration.js"
-            test -s "$repo/Spazi/neuro-lab/anatomy-realistic.svg"
-            for asset in narration.js anatomy-realistic.svg; do
+            # NeuroLab 3.0: ritratto realistico, percorsi interattivi e guida vocale.
+            for asset in narration.js assets/anatomy-portrait.webp assets/stimuli.webp assets/neural-details.webp; do
+              test -s "$repo/Spazi/neuro-lab/$asset"
               test "$(curl -sSL --max-time 25 -o /dev/null -w '%{http_code}' "$public_neuro$asset")" = 200
             done
             curl -fsSL --max-time 25 "$public_neuro" | grep -Fq 'id="voicePlay"'
-            curl -fsSL --max-time 25 "$public_neuro" | grep -Fq 'anatomy-realistic.svg'
+            curl -fsSL --max-time 25 "$public_neuro" | grep -Fq 'assets/anatomy-portrait.webp'
+            curl -fsSL --max-time 25 "$public_neuro" | grep -Fq 'id="journeySteps"'
             curl -fsSL --max-time 25 "$public_neuro"narration.js | grep -Fq 'SpeechSynthesisUtterance'
-            curl -fsSL --max-time 25 "$public_neuro"anatomy-realistic.svg | grep -Fq 'id="faceFill"'
-            echo "NeuroLab 2.1 audio e anatomia verificati"
+            # Il report resta alla radice sorgente, che non è la directory pubblica.
+            test "$(curl -sSL --max-time 25 -o /dev/null -w '%{http_code}' https://gbprof.it/REPORT.md)" = 404
+            test "$(curl -sSL --max-time 25 -o /dev/null -w '%{http_code}' "${public_neuro}REPORT.md")" = 404
+            echo "NeuroLab 3.0: asset e report escluso dalla pubblicazione verificati"
             echo "NeuroLab pubblicato e raggiungibile dagli Spazi"
             git log -1 --oneline

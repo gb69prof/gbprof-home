@@ -1,3 +1,42 @@
+# REPORT.md — NeuroLab 3.0
+
+Data: 4 novembre 2026 (Europe/Rome).
+
+## Autonomia verificabile — revisione dell’interfaccia
+
+**Obiettivo:** rifare il laboratorio esistente sulla base dell’immagine allegata, privilegiando realismo della figura e composizione dei pannelli. Pubblicazione autorizzata direttamente nella richiesta.
+
+**Operazioni:** riscritti `Spazi/neuro-lab/index.html`, `style.css` e il motore di `main.js`; aggiornato `narration.js`; creati tre asset WebP locali in `Spazi/neuro-lab/assets/`; aggiornati soltanto i controlli NeuroLab del workflow di distribuzione. Nessuna modifica a home, altri progetti o configurazioni del server.
+
+**Risultato visivo:** volto, testa, collo e torace realistici; cervello semitrasparente; fiore, piuma, diapason e limone; segnali e regioni cerebrali disegnati e animati separatamente; pannelli blu/ciano/viola, sequenza inferiore cliccabile e cinque schede illustrate. Tutti i controlli precedenti conservati, quelli secondari raccolti in «Controlli avanzati».
+
+**Decisioni scientifiche:** vista fino alla corteccia occipitale; udito attraverso tronco, talamo e aree temporali; olfatto attraverso bulbo e corteccia piriforme senza primo relay talamico obbligatorio; gusto attraverso nervi cranici, nucleo solitario, talamo e insula/opercolo; tatto fine attraverso midollo, bulbo, talamo e S1. Il nuovo stimolo tattile è sulla spalla, visibile nel ritratto: testi e percorso sono stati adattati. Intensità e velocità di animazione restano indipendenti. A intensità zero spariscono risposta e attività evidenziata.
+
+**Verifiche prima della pubblicazione:**
+- Parsing Node di entrambi i JavaScript, `git diff --check`, unicità ID, corrispondenza controlli/JS e presenza degli asset: superati.
+- Browser Chromium: selezione di tutti i cinque sensi, cinque fasi cliccabili, percorsi distinti, olfatto senza talamo iniziale, intensità 0 e 100, tre interruttori e filtri del percorso: superati.
+- Ciclo animato: avvio, pausa, ripresa, completamento a 100%. Corretto il calcolo del tempo affinché l’animazione non rallenti artificialmente quando il browser produce pochi fotogrammi.
+- Responsive: anteprima desktop 1363 px e viewport iframe 1024, 820 e 390 px; nessuno scorrimento orizzontale del documento. Tablet fisico/Safari non provati.
+- Nessun errore applicativo osservato nella console (esclusi messaggi dell’estensione dell’ambiente di prova).
+- Guida vocale: prova con eventi di sintesi simulati per selezione di Elsa italiana, tutte le fasi, pausa/ripresa, stop, ascolto singola fase e annullamento al cambio di senso/controlli. Il browser di prova non dispone di voci italiane: verificato il messaggio di indisponibilità; timbro e resa acustica non validati.
+
+**Fonti:** progetto originale al commit `1308956d2e6facdffff5b3da89d860eb33da1225`; immagine dell’utente `immagine(20261103-234025).png`; OpenStax, [Anatomy and Physiology, 14.2 Central Processing](https://openstax.org/books/anatomy-and-physiology/pages/14-2-central-processing), oltre alle fonti NCBI già documentate sotto.
+
+**Limiti:** ritratto raster realistico con livelli SVG e controlli interattivi, non un modello 3D ruotabile. Anatomia e posizioni sono illustrative: strutture profonde proiettate lateralmente, incroci e diramazioni semplificati. Narrazione tramite Web Speech API, preferenza femminile italiana; richiede una voce disponibile nel dispositivo e non usa una registrazione incorporata.
+
+**Pubblicazione:** in preparazione. Il flusso esistente GitHub Actions aggiorna la medesima pagina: https://gbprof.it/Spazi/neuro-lab/ . Il report resta alla radice del repository, fuori dal collegamento pubblico Spazi; HTTP 404 verificato per `/REPORT.md` prima della modifica.
+
+### Asset e generazione
+Generazione tramite strumento immagini integrato, con riferimento visivo dell’utente per il ritratto; conversione WebP senza ritocco del contenuto o perdita della trasparenza degli stimoli.
+
+- `assets/anatomy-portrait.webp`: ritratto maschile fotorealistico di profilo verso sinistra, cervello blu-lavanda semitrasparente, nervi di collo e torace, laboratorio blu scuro; nessun testo o percorso incorporato. Segnali, didascalie e regioni sono aggiunti dal codice.
+- `assets/stimuli.webp`: griglia trasparente 2×2 con giglio rosa, diapason, piuma e limone; selezione delle celle tramite CSS.
+- `assets/neural-details.webp`: griglia 2×2 di illustrazioni di fotorecettori, fascio nervoso, talamo e corteccia; uso decorativo nei pannelli della vista. Per gli altri recettori si usano icone specifiche del senso; nell’olfatto il pannello non mostra il talamo.
+
+---
+
+## Cronologia precedente (conservata)
+
 # REPORT.md — NeuroLab
 
 Data: 3 novembre 2026
