@@ -141,3 +141,6 @@ Aggiunto un collegamento visibile in alto nel laboratorio verso `lezione-vista/`
 **Operazioni:** sostituzione reversibile della scena con animazione WebP ricavata dalla GIF; originale conservato come fallback per pausa e riduzione movimento. Sorgente e bundler aggiornati; nessuna modifica diretta al server.
 **Fonti:** immagine originale assets/dialogo.webp e prova gbprof_libera_prova.gif.
 **Limiti:** movimento a fotogrammi con scatti; progetto preparato in ramo separato. Il deploy automatico esegue reset --hard sul server: verificare preventivamente che non cancelli modifiche locali.
+
+
+**Esito pubblicazione, 5 novembre 2026:** il deploy ha salvato la precedente modifica locale a `index.html` in uno stash Git e ha aggiornato la cartella del progetto generando la pagina animata. Il controllo successivo della home pubblica è fallito; nel browser la home continua a mostrare la scena precedente. La pubblicazione effettiva nella root del sito non è verificata. Immagine originale conservata in `assets/dialogo.webp`.
