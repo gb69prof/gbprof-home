@@ -144,3 +144,6 @@ Aggiunto un collegamento visibile in alto nel laboratorio verso `lezione-vista/`
 
 
 **Esito pubblicazione, 5 novembre 2026:** il deploy ha salvato la precedente modifica locale a `index.html` in uno stash Git e ha aggiornato la cartella del progetto generando la pagina animata. Il controllo successivo della home pubblica è fallito; nel browser la home continua a mostrare la scena precedente. La pubblicazione effettiva nella root del sito non è verificata. Immagine originale conservata in `assets/dialogo.webp`.
+
+
+**Completamento 5 novembre 2026:** animazione pubblicata nella home; il contenuto HTTP e il file generato sul server hanno SHA-256 `49f7fa9f786f5867f2b10a52c75098fdbe2f1abe9271f07ebe498c0e33e0c565`. La precedente verifica visualizzava una copia in cache. Originale conservato e vecchi index salvati in stash. Verificata la scena nel browser con URL aggiornato; `object-fit:contain` mantiene l'immagine completa. Il workflow riporta ancora errore in un controllo successivo alla pubblicazione; l'insieme delle ulteriori verifiche automatiche non è completo. iPad fisico non verificato.
