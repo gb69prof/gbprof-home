@@ -22,8 +22,14 @@ jobs:
             set -eu
             repo=/opt/gbprof/projects/gbprof-home
             cd "$repo"
+            # Preserve any server-side work; refuse deployment if checkout is dirty.
+            if [ -n "$(git status --porcelain)" ]; then
+              echo "Deploy interrotto: la cartella contiene modifiche locali da conservare."
+              git status --short
+              exit 1
+            fi
             git fetch origin
-            git reset --hard origin/main
+            git merge --ff-only origin/main
             # Rigenera la homepage da Spazi/index.html, senza modificare le altre porte.
             python3 tools/bundle-home.py
             test -s "$repo/Spazi/lultima-cosa-che-so/index.html"
