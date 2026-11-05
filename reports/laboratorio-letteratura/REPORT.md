@@ -42,3 +42,12 @@ Pubblicazione limitata a presentazione, metodo e programma per autori. Tutte le 
 **Decisioni:** pannello laterale non modale, richiudibile con pulsante, miniatura attiva o Escape; sotto 740 px l’immagine viene inserita presso il paragrafo in una sola colonna. Nessuna modifica a server, workflow, homepage o altre lezioni. Il report resta nel percorso tecnico già esistente, fuori dalla cartella pubblica Spazi.
 
 **Verifiche:** confronto dei testi HTML prima/dopo, sette miniature e sette diapositive, ID univoci, presenza degli asset, controllo sintattico JavaScript. Pubblicazione automatica completata con successo (commit e3d45bdc86598c96e2497bba5cf7e7fc9a1f38f0; workflow server 42094063482). Verificati sul dominio pubblico: caricamento delle sette miniature, immagine grande 1200 × 800, affiancamento desktop, cambio immagine, chiusura con pulsante e tasto Escape, ritorno del focus alla miniatura. Nessuna prova su dispositivo iPad fisico.
+
+## Aggiornamento — Immagine nel titolo introduttivo (5 novembre 2026)
+**Obiettivo:** inserire un’immagine nell’apertura «Filosofia di base e contesto culturale», rimasta senza illustrazione.
+
+**Operazioni e fonti:** riutilizzata l’immagine originale «Il lume della ragione», già pubblicata nella cartella della lezione. Aggiunta accanto al titolo con didascalia e testo alternativo; sostituita l’illustrazione schematica della prima diapositiva con la stessa immagine. Modificati soltanto index.html, lettura-immagini.css e questo report.
+
+**Decisioni:** testo su fondo chiaro, immagine a destra nell’apertura e sotto il testo negli schermi stretti; sette miniature e pannello di lettura preservati. Nessuna rigenerazione o modifica dell’immagine.
+
+**Verifiche:** asset già verificato e pubblicato; struttura HTML e riferimenti controllati prima del commit. La verifica visiva della nuova apertura segue il deploy automatico.

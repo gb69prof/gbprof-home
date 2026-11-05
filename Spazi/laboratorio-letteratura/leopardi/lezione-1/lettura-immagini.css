@@ -33,3 +33,13 @@
  .lesson-part:has(.lesson-thumb[aria-expanded="true"]){padding-left:0;border-left:0}
 }
 @media print{.reading-guide,.lesson-thumb,.image-panel{display:none!important}.study-layout,.study-layout.has-image{display:block}.study-layout.has-image .reader{padding:0}.lesson-part:has(.lesson-thumb[aria-expanded="true"]){padding:0;border:0}.lesson-heading{break-after:avoid}}
+
+/* Illustrazione di apertura: testo e immagine restano distinti. */
+.intro-visual{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(240px,1fr);gap:36px;align-items:center}
+.intro-copy{min-width:0}
+.intro-illustration{margin:0}
+.intro-illustration img{display:block;width:100%;height:auto;border-radius:12px}
+.intro-illustration figcaption{margin-top:12px;font-size:.86rem;line-height:1.5;color:var(--muted)}
+.slide-image img{display:block;width:100%;height:auto;max-height:100%;object-fit:contain;border-radius:5px}
+@media(max-width:739px){.intro-visual{grid-template-columns:minmax(0,1fr);gap:20px}.intro-illustration{width:min(100%,440px)}}
+@media print{.intro-visual{display:block}.intro-illustration{max-width:320px;break-inside:avoid}}
