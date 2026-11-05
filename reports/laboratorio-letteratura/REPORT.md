@@ -59,4 +59,4 @@ Pubblicazione limitata a presentazione, metodo e programma per autori. Tutte le 
 
 **Decisioni:** sostituite le sei illustrazioni schematiche delle diapositive 2–7 con immagini in continuità con la prima. Testi, ordine, numero delle diapositive, sfondo bianco e comandi di proiezione preservati. Nessuna nuova immagine generata, nessuna modifica al PowerPoint separato. Caricamento anticipato delle immagini per ridurre attese durante la spiegazione.
 
-**Verifiche:** confronto automatico dei sette blocchi di testo e dell’intera sezione di lettura, rimasti identici; presenza di sette riferimenti a immagini distinti. Verifica di tutte le diapositive sul dominio pubblico da completare dopo il deploy.
+**Verifiche:** confronto automatico dei sette blocchi di testo e dell’intera sezione di lettura, rimasti identici; presenza di sette riferimenti a immagini distinti. Verificate tutte e sette le diapositive nella modalità proiezione del sito pubblico: immagini caricate a 1200 px, testo leggibile, proporzioni integre e navigazione funzionante. Deploy server riuscito (workflow 42095094208), commit applicativo 800341fe1e64fa9c6f1fcbe759f02e874c087374.
