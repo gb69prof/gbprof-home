@@ -31,3 +31,15 @@ Pubblicazione limitata a presentazione, metodo e programma per autori. Tutte le 
 **Decisioni:** pubblicata soltanto una anteprima didattica esplicitamente etichettata come tale. Non sono stati pubblicati gli 11 documenti sorgenti, i link a Google Drive e allo Spazio ChatGPT, né il PowerPoint binario: il PPTX modificabile rimane nella pagina di lavoro di ChatGPT Spazio. Le slide web ricostruiscono i contenuti e la disposizione testo/immagine, ma non sono una copia pixel-identica del file PowerPoint.
 
 **Verifiche:** GitHub ha confermato entrambi i commit di creazione e collegamento. La verifica HTTP da ambiente esterno non ha dato una risposta utilizzabile; non si dichiara pertanto il deploy al server completato o la pagina raggiungibile finché non verificata sul dominio.
+
+## Aggiornamento — Immagini affiancate alla lettura (5 novembre 2026)
+**Obiettivo:** mostrare le sette immagini simboliche all’inizio dei paragrafi e, al clic, ingrandirle a destra mantenendo il testo a sinistra.
+
+**Operazioni:** inserite sette miniature; aggiunti `lettura-immagini.css`, `lettura-immagini.js` e quattordici WebP (sette immagini grandi e sette miniature) nella cartella della lezione. Riutilizzate le immagini già create per il docente, senza rigenerazione o ritaglio; aggiunte descrizioni accessibili e didascalie interpretative. Il testo della lezione e le sette diapositive esistenti sono preservati.
+
+**Fonti:** pagina pubblica indicata dal docente, sorgente GitHub della lezione, sette immagini originali «Telescopio e fiore appassito alla finestra», «Il lume della ragione», «Sfiorare la siepe, immaginare oltre», «L’uomo davanti alle leggi della natura», «Due archi tra antichi e moderni», «Dialogo tra classicismo e romanticismo», «Sentiero verso Leopardi».
+
+**Decisioni:** pannello laterale non modale, richiudibile con pulsante, miniatura attiva o Escape; sotto 740 px l’immagine viene inserita presso il paragrafo in una sola colonna. Nessuna modifica a server, workflow, homepage o altre lezioni. Il report resta nel percorso tecnico già esistente, fuori dalla cartella pubblica Spazi.
+
+**Verifiche:** confronto dei testi HTML prima/dopo, sette miniature e sette diapositive, ID univoci, presenza degli asset, controllo sintattico JavaScript. Verifica interattiva sul dominio prevista dopo la pubblicazione automatica. Nessuna prova su dispositivo iPad fisico.
+
