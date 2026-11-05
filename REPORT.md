@@ -133,3 +133,11 @@ Aggiunto un collegamento visibile in alto nel laboratorio verso `lezione-vista/`
 **Revisione:** per ciascuna tappa ora sono sviluppati contesto e problema, cambiamento teorico o metodologico, immagine della mente, contributi e limiti; si aggiungono conclusione, parole e saperi essenziali. Restano le domande, le mappe, gli spunti e i quiz. Le precisazioni storiche e metodologiche già registrate sopra restano integrate.
 
 **Verifica richiesta:** controllare la nuova versione online e la porta in `/#spazi` dopo il deploy. REPORT.md resta fuori dalla directory pubblica.
+
+
+## Prova animazione home — 5 novembre 2026
+
+**Obiettivo:** provare la GIF approvata per la prima immagine della home, conservando l'originale.
+**Operazioni:** sostituzione reversibile della scena con animazione WebP ricavata dalla GIF; originale conservato come fallback per pausa e riduzione movimento. Sorgente e bundler aggiornati; nessuna modifica diretta al server.
+**Fonti:** immagine originale assets/dialogo.webp e prova gbprof_libera_prova.gif.
+**Limiti:** movimento a fotogrammi con scatti; progetto preparato in ramo separato. Il deploy automatico esegue reset --hard sul server: verificare preventivamente che non cancelli modifiche locali.

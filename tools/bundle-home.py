@@ -9,10 +9,10 @@ s=s.replace('<link rel="stylesheet" href="assets/style.css">','<style>'+css+'''\
 s=s.replace('<script src="assets/home.js" defer></script>','')
 s=s.replace('<body>','<body><div id="home-view">')
 s=s.replace('href="lezioni.html"','href="#lezioni"').replace('href="strumenti.html"','href="#strumenti"').replace('href="/Spazi/"','href="#spazi"')
-# Share the hero bitmap across the base scene and its filtered finger layer.
-hero='data:image/webp;base64,'+base64.b64encode((r/'assets/dialogo.webp').read_bytes()).decode()
-s=s.replace('<image href="assets/dialogo.webp" width="1402" height="1122"/>','<image id="scene-bitmap" href="'+hero+'" width="1402" height="1122"/>')
-s=s.replace('<image class="finger-layer" href="assets/dialogo.webp" width="1402" height="1122" filter="url(#finger-warp)"/>','<use class="finger-layer" href="#scene-bitmap" filter="url(#finger-warp)"/>')
+# Preserve both the still image and the reversible animated preview in the standalone page.
+for filename in ['dialogo.webp', 'dialogo-animato.webp']:
+ data='data:image/webp;base64,'+base64.b64encode((r/'assets'/filename).read_bytes()).decode()
+ s=s.replace('assets/'+filename, data)
 for name in ['lezioni','strumenti','spazi','archivio']:
  data='data:image/webp;base64,'+base64.b64encode((r/f'assets/porta-{name}.webp').read_bytes()).decode()
  s=s.replace('assets/porta-'+name+'.webp',data)
