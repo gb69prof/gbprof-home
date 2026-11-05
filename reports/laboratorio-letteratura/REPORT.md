@@ -50,4 +50,4 @@ Pubblicazione limitata a presentazione, metodo e programma per autori. Tutte le 
 
 **Decisioni:** testo su fondo chiaro, immagine a destra nell’apertura e sotto il testo negli schermi stretti; sette miniature e pannello di lettura preservati. Nessuna rigenerazione o modifica dell’immagine.
 
-**Verifiche:** asset già verificato e pubblicato; struttura HTML e riferimenti controllati prima del commit. La verifica visiva della nuova apertura segue il deploy automatico.
+**Verifiche:** asset già verificato e pubblicato; struttura HTML e riferimenti controllati prima del commit. Verifica sul dominio pubblico completata: illustrazione di apertura visibile accanto al titolo; immagine presente anche nella prima diapositiva; entrambe caricate correttamente a 1200 px. Commit applicativo 61cb26d7e9b6a0de0b97c6a20b6deaccb30be249.
