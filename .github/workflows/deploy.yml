@@ -22,6 +22,12 @@ jobs:
             set -eu
             repo=/opt/gbprof/projects/gbprof-home
             cd "$repo"
+            echo "DIAGNOSTICA HOME"
+            for p in /opt/gbprof/www /opt/gbprof/www/index.html /var/www/html /var/www/html/index.html; do
+              if [ -e "$p" ] || [ -L "$p" ]; then ls -ld "$p"; readlink -f "$p" || true; fi
+            done
+            if [ -r /opt/gbprof/Caddyfile ]; then grep -nE 'root |file_server|handle' /opt/gbprof/Caddyfile || true; fi
+            echo "FINE DIAGNOSTICA HOME"
             # Preserve the generated homepage before updating; stop for other edits.
             status="$(git status --porcelain)"
             if [ -n "$status" ]; then
