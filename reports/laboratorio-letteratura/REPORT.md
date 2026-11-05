@@ -60,3 +60,18 @@ Pubblicazione limitata a presentazione, metodo e programma per autori. Tutte le 
 **Decisioni:** sostituite le sei illustrazioni schematiche delle diapositive 2–7 con immagini in continuità con la prima. Testi, ordine, numero delle diapositive, sfondo bianco e comandi di proiezione preservati. Nessuna nuova immagine generata, nessuna modifica al PowerPoint separato. Caricamento anticipato delle immagini per ridurre attese durante la spiegazione.
 
 **Verifiche:** confronto automatico dei sette blocchi di testo e dell’intera sezione di lettura, rimasti identici; presenza di sette riferimenti a immagini distinti. Verificate tutte e sette le diapositive nella modalità proiezione del sito pubblico: immagini caricate a 1200 px, testo leggibile, proporzioni integre e navigazione funzionante. Deploy server riuscito (workflow 42095094208), commit applicativo 800341fe1e64fa9c6f1fcbe759f02e874c087374.
+
+## Aggiornamento — Percorso completo di Leopardi, anteprima pubblica
+Data: 5 novembre 2026.
+
+**Obiettivo:** completare e pubblicare autonomamente il percorso sul modello della prima tappa, per la revisione del docente.
+
+**Operazioni:** aggiunte cinque tappe (fratture, immagine del mondo, poetica, opere, conclusione), quattro letture guidate (Infinito, Bruto e Saffo, Natura e Islandese, Ginestra), indice del percorso, navigazione, miniature con pannello laterale e presentazioni web. Totale: dieci pagine didattiche e 49 diapositive, comprese le sette già approvate.
+
+**Fonti:** materiali pubblicati in gb69prof/IV-anno, Letteratura/Leopardi/pagine: fratture.html, immagine-mondo.html, poetica.html, scritti.html, conclusione.html, infinito.html, bruto-saffo.html, natura-islandese.html, ginestra.html. Modello grafico e sette immagini già pubblicate nella prima tappa. Controllato il doppio finale dell’Islandese nel testo primario su Wikisource. Nessun accesso ai documenti originali Drive in questa esecuzione; rielaborazione dei materiali già presenti nella PWA.
+
+**Decisioni:** conservata la prima tappa, aggiungendovi solo la navigazione. Nuove pagine etichettate come anteprima, senza dichiararle definitive. Presentazioni HTML proiettabili: nessun nuovo PowerPoint separato. Chiarite natura critica delle categorie storico/cosmico e anti-idillio, irriducibilità del pensiero alla malattia, personificazione della natura, Saffo come figura letteraria; corretto il doppio finale dell’Islandese e l’assolutizzazione della critica al progresso tecnico. Originali non modificati.
+
+**Immagini:** riutilizzate le sette immagini tematiche della prima tappa e generata una nuova illustrazione per la Ginestra. Prompt: fiore giallo sulla lava scura, Vesuvio sullo sfondo, due figure in abiti del 1830 che si sostengono; pittura sobria senza testo né oggetti moderni. La didascalia distingue interpretazione simbolica ed episodio testuale. Asset: Spazi/laboratorio-letteratura/leopardi/assets/ginestra.webp. Generazione integrata, successiva conversione WebP per il web.
+
+**Verifiche:** controllati sintassi JS, unicità degli ID, presenza dei riferimenti locali alle immagini. Verifica browser e pubblicazione da completare prima della chiusura del lavoro. Il report resta in reports/, fuori dalla cartella pubblica Spazi.
