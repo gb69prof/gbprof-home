@@ -43,6 +43,14 @@ jobs:
             git merge --ff-only origin/main
             # Rigenera la homepage da Spazi/index.html, senza modificare le altre porte.
             python3 tools/bundle-home.py
+            echo "DIAGNOSTICA CONTENUTO"
+            sha256sum index.html /opt/gbprof/www/index.html
+            curl -fsSL --max-time 20 https://gbprof.it/ | sha256sum
+            for url in "https://gbprof.it/" "https://gbprof.it/?verifica_home=animated"; do
+              curl -fsSL --max-time 20 "$url" | grep -o 'data-animated=' | wc -l || true
+              curl -fsSL --max-time 20 "$url" | grep -o 'finger-motion' | wc -l || true
+            done
+            echo "FINE DIAGNOSTICA CONTENUTO"
             test -s "$repo/Spazi/lultima-cosa-che-so/index.html"
             # The existing Spazi publication serves the laboratory without new
             # server-level links or broader deployment permissions.
