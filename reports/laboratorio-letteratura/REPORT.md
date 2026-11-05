@@ -41,5 +41,4 @@ Pubblicazione limitata a presentazione, metodo e programma per autori. Tutte le 
 
 **Decisioni:** pannello laterale non modale, richiudibile con pulsante, miniatura attiva o Escape; sotto 740 px l’immagine viene inserita presso il paragrafo in una sola colonna. Nessuna modifica a server, workflow, homepage o altre lezioni. Il report resta nel percorso tecnico già esistente, fuori dalla cartella pubblica Spazi.
 
-**Verifiche:** confronto dei testi HTML prima/dopo, sette miniature e sette diapositive, ID univoci, presenza degli asset, controllo sintattico JavaScript. Verifica interattiva sul dominio prevista dopo la pubblicazione automatica. Nessuna prova su dispositivo iPad fisico.
-
+**Verifiche:** confronto dei testi HTML prima/dopo, sette miniature e sette diapositive, ID univoci, presenza degli asset, controllo sintattico JavaScript. Pubblicazione automatica completata con successo (commit e3d45bdc86598c96e2497bba5cf7e7fc9a1f38f0; workflow server 42094063482). Verificati sul dominio pubblico: caricamento delle sette miniature, immagine grande 1200 × 800, affiancamento desktop, cambio immagine, chiusura con pulsante e tasto Escape, ritorno del focus alla miniatura. Nessuna prova su dispositivo iPad fisico.
