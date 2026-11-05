@@ -51,3 +51,12 @@ Pubblicazione limitata a presentazione, metodo e programma per autori. Tutte le 
 **Decisioni:** testo su fondo chiaro, immagine a destra nell’apertura e sotto il testo negli schermi stretti; sette miniature e pannello di lettura preservati. Nessuna rigenerazione o modifica dell’immagine.
 
 **Verifiche:** asset già verificato e pubblicato; struttura HTML e riferimenti controllati prima del commit. Verifica sul dominio pubblico completata: illustrazione di apertura visibile accanto al titolo; immagine presente anche nella prima diapositiva; entrambe caricate correttamente a 1200 px. Commit applicativo 61cb26d7e9b6a0de0b97c6a20b6deaccb30be249.
+
+## Aggiornamento — Illustrazioni in tutte le diapositive (5 novembre 2026)
+**Obiettivo:** completare anche le altre sei diapositive con le illustrazioni simboliche coerenti con quanto spiegato, come richiesto dal docente.
+
+**Operazioni e fonti:** riutilizzate le sette immagini già pubblicate e già ispezionate. Associazione completa: apertura → lume della ragione; progresso e felicità → telescopio e fiore appassito; sensismo → mano e siepe; materialismo e meccanicismo → uomo davanti ai fenomeni naturali; antichi e moderni → due archi; Classicismo e Romanticismo → busto, libri e finestra; conclusione → sentiero verso Leopardi.
+
+**Decisioni:** sostituite le sei illustrazioni schematiche delle diapositive 2–7 con immagini in continuità con la prima. Testi, ordine, numero delle diapositive, sfondo bianco e comandi di proiezione preservati. Nessuna nuova immagine generata, nessuna modifica al PowerPoint separato. Caricamento anticipato delle immagini per ridurre attese durante la spiegazione.
+
+**Verifiche:** confronto automatico dei sette blocchi di testo e dell’intera sezione di lettura, rimasti identici; presenza di sette riferimenti a immagini distinti. Verifica di tutte le diapositive sul dominio pubblico da completare dopo il deploy.
