@@ -22,11 +22,16 @@ jobs:
             set -eu
             repo=/opt/gbprof/projects/gbprof-home
             cd "$repo"
-            # Preserve any server-side work; refuse deployment if checkout is dirty.
-            if [ -n "$(git status --porcelain)" ]; then
-              echo "Deploy interrotto: la cartella contiene modifiche locali da conservare."
-              git status --short
-              exit 1
+            # Preserve the generated homepage before updating; stop for other edits.
+            status="$(git status --porcelain)"
+            if [ -n "$status" ]; then
+              if [ "$status" = " M index.html" ]; then
+                git stash push -m "Backup index prima della prova animata" -- index.html
+              else
+                echo "Deploy interrotto: modifiche locali da conservare."
+                git status --short
+                exit 1
+              fi
             fi
             git fetch origin
             git merge --ff-only origin/main
