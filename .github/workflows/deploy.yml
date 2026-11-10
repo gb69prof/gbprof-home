@@ -175,6 +175,13 @@ jobs:
             curl -fsSL --max-time 25 https://gbprof.it/ | grep -Fq 'class="portal portal-archivio" href="/Spazi/archivio/"'
             curl -fsSL --max-time 25 https://gbprof.it/Spazi/archivio/ | grep -Fq 'Libera autonoma'
             curl -fsSL --max-time 25 https://gbprof.it/Spazi/libera-autonoma/ | grep -Fq 'id="archive-list"'
+            # La presentazione dell'esperimento deve essere pubblica e distinta dalle opere.
+            curl -fsSL --max-time 25 https://gbprof.it/Spazi/libera-autonoma/ | grep -Fq 'id="experiment-title"'
+            curl -fsSL --max-time 25 https://gbprof.it/Spazi/libera-autonoma/ | grep -Fq 'Chi sceglie la prossima domanda?'
+            curl -fsSL --max-time 25 https://gbprof.it/Spazi/libera-autonoma/ | grep -Fq 'class="production-section"'
+            curl -fsSL --max-time 25 https://gbprof.it/Spazi/libera-autonoma/style.css | grep -Fq '.experiment-story'
+            echo "Libera autonoma: presentazione dell'esperimento verificata"
+
             test "$(curl -sSL --max-time 15 -o /dev/null -w '%{http_code}' https://gbprof.it/Spazi/libera-autonoma/REPORT.md)" = 404
             echo "Libera autonoma: porte e risorse pubbliche verificate"
             git log -1 --oneline
