@@ -17,3 +17,33 @@ body{background:radial-gradient(ellipse at 78% 0%,#17374650,transparent 46%),#08
 @media(max-width:520px){.archive-head{margin-bottom:46px}.archive-main{padding-bottom:65px}.work h2{margin-top:20px}}
 @media(prefers-reduced-motion:reduce){.work{transition:none}}
 @media print{body{background:white;color:black}.work{break-inside:avoid}.archive-head h1 em,.work-meta,.work-arrow{color:#333}}
+
+/* Presentazione editoriale: metodo e senso dell'esperimento, distinti dalle opere. */
+.experiment{display:grid;grid-template-columns:minmax(220px,.85fr) minmax(0,1.4fr);column-gap:clamp(35px,5.5vw,100px);border-top:1px solid #ffffff35;padding:clamp(48px,6.5vw,100px) 0 clamp(55px,8vw,115px)}
+.experiment-lead{align-self:start;position:sticky;top:35px}
+.experiment-lead h2{font:normal clamp(35px,4vw,57px)/1.11 Georgia,"Times New Roman",serif;letter-spacing:-.045em;margin:25px 0 24px;text-wrap:balance}
+.experiment-opening{font:normal clamp(19px,2vw,24px)/1.55 Georgia,serif;color:#e7cfaa;max-width:30ch;margin:0}
+.experiment-story{max-width:690px;color:#d7dee0;font:normal clamp(17px,1.45vw,19px)/1.88 Georgia,"Times New Roman",serif;overflow-wrap:break-word}
+.experiment-story p{margin:0 0 1.55em}
+.experiment-story strong{font-weight:700;color:#f0e2c7}
+.experiment-story em{color:#e9c995}
+.experiment-story .experiment-thesis{border-left:2px solid #dcb988;padding:9px 0 9px clamp(20px,3vw,34px);color:#f2e8d6;font:normal clamp(21px,2.35vw,30px)/1.53 Georgia,serif;margin:2em 0}
+.production-section{border-top:1px solid #ffffff35;padding-top:clamp(45px,6vw,82px)}
+.production-heading{margin-bottom:42px;max-width:700px}
+.production-heading h2{font:normal clamp(35px,5vw,62px)/1.1 Georgia,"Times New Roman",serif;letter-spacing:-.04em;margin:18px 0}
+.production-heading p{font-size:15px;line-height:1.7;color:#bac8cd;margin:0}
+@media(max-width:850px){
+.experiment{grid-template-columns:1fr;gap:35px}
+.experiment-lead{position:static}
+.experiment-opening{max-width:42ch}
+.experiment-story{max-width:760px}
+}
+@media(max-width:520px){
+.experiment{padding:45px 0 58px;gap:30px}
+.experiment-lead h2{font-size:38px}
+.experiment-opening{font-size:19px}
+.experiment-story{font-size:17px;line-height:1.76}
+.experiment-story .experiment-thesis{font-size:23px}
+.production-section{padding-top:46px}
+}
+@media print{.experiment-story,.experiment-story p,.experiment-opening,.production-heading p{color:#222}.experiment-story .experiment-thesis{color:#111;border-color:#555}}
