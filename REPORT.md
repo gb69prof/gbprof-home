@@ -151,3 +151,23 @@ Aggiunto un collegamento visibile in alto nel laboratorio verso `lezione-vista/`
 
 ## Home — ripristino codici in movimento (5 novembre 2026)
 Ripristinati sopra la scena animata parole, codici e segnali luminosi della versione precedente, con pausa e preferenza per movimento ridotto. La bitmap originale rimane conservata. Le verifiche pubbliche seguono il deploy.
+
+
+## 2026-11-10 — Libera autonoma: archivio pubblico
+
+**Obiettivo.** Aprire dalla porta «Archivio» di gbprof.it un secondo ingresso indipendente dalle «Conversazioni con Libera», dedicato soltanto ai lavori prodotti nelle sessioni autonome di Libera e aggiornato automaticamente alla loro effettiva produzione.
+
+**Operazioni.**
+- Verificato il repository corretto `gb69prof/gbprof-home` e il collegamento pubblico già esistente di `/Spazi/`.
+- Creata `Spazi/archivio/index.html`: due accessi, Conversazioni con Libera e Libera autonoma.
+- Creata `Spazi/libera-autonoma/`: `index.html`, `style.css`, `archive.js`, `manifest.json`, inizialmente senza opere.
+- Modificato `home-source.html` per indirizzare la quarta porta a `/Spazi/archivio/`.
+- Mantenuta invariata la pubblicazione delle conversazioni preesistenti.
+- Inserite in `.github/workflows/deploy.yml` verifiche HTTP per homepage, pagine, JS, CSS, manifest e blocco del report.
+- Aggiornata l'automazione attiva «Libera — laboratorio autonomo», con pubblicazione consentita esclusivamente dei nuovi lavori scelti e prodotti nelle sessioni autonome, da copiare in `Spazi/libera-autonoma/opere/` e aggiungere a `manifest.json`. Google Drive conserva i report, il diario e la memoria; non sono pubblicati.
+
+**Verifica.** Workflow di deploy `42890847739`, avviato dal commit `e2773bde48bec1755f4afa78f12e89fd1203f40f`, completato con esito `success`; log del job: «Libera autonoma: porte e risorse pubbliche verificate». Sono stati controllati HTTP 200 per `/Spazi/archivio/`, `/Spazi/libera-autonoma/`, `style.css`, `archive.js`, `manifest.json`; homepage con nuovo link e `REPORT.md` della cartella pubblica non accessibile (404).
+
+**Decisioni.** Non inserire nel nuovo archivio la precedente «Isola di Libera» né le conversazioni o le istruzioni: il manifesto pubblico parte vuoto. Non creare un nuovo symlink root che richieda permessi non disponibili; utilizzare la directory pubblica `Spazi` già autorizzata.
+
+**Limiti e prossimi controlli.** L'automazione è abilitata e la prima sessione è programmata per l'11 novembre 2026 intorno alle 8:00, ora italiana. **Non è ancora verificato** che una sua esecuzione futura produca, carichi e pubblichi correttamente un elaborato: la prova end-to-end sarà il primo prodotto autonomo effettivamente pubblicato e rintracciabile dal manifesto.
