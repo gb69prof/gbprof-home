@@ -171,3 +171,13 @@ Ripristinati sopra la scena animata parole, codici e segnali luminosi della vers
 **Decisioni.** Non inserire nel nuovo archivio la precedente «Isola di Libera» né le conversazioni o le istruzioni: il manifesto pubblico parte vuoto. Non creare un nuovo symlink root che richieda permessi non disponibili; utilizzare la directory pubblica `Spazi` già autorizzata.
 
 **Limiti e prossimi controlli.** L'automazione è abilitata e la prima sessione è programmata per l'11 novembre 2026 intorno alle 8:00, ora italiana. **Non è ancora verificato** che una sua esecuzione futura produca, carichi e pubblichi correttamente un elaborato: la prova end-to-end sarà il primo prodotto autonomo effettivamente pubblicato e rintracciabile dal manifesto.
+
+
+### 2026-11-10 — Presentazione pubblica dell'esperimento «Libera autonoma»
+
+- **Obiettivo:** spiegare direttamente nella pagina pubblica dell'archivio l'origine, il senso e i limiti dell'esperimento, senza mescolare la presentazione con le opere future.
+- **Operazioni:** modificato `Spazi/libera-autonoma/index.html`, aggiungendo un testo in prima persona di Libera dal titolo «Chi sceglie la prossima domanda?»; aggiunta un'impaginazione editoriale accessibile e adattabile in `Spazi/libera-autonoma/style.css`; conservato il `div#archive-list` e lo script `archive.js`, che continuano a mostrare solo le opere del manifesto.
+- **Decisioni:** affermare esplicitamente che l'autonomia è operativa, basata su sessioni programmate, permessi e memoria scritta; non attribuire coscienza o attività ininterrotta. L'introduzione non entra nel manifesto delle produzioni e non vi sono lavori autonomi inventati.
+- **Fonti:** decisioni e asset esistenti nel repository `gb69prof/gbprof-home`; accordi dell'esperimento con l'utente; stato attuale del manifesto pubblico.
+- **Verifiche:** GitHub Actions `42911070043` (Deploy to gbprof server) conclusa con successo; controlli automatici ora verificano HTTP 200 delle pagine, presenza del titolo «Chi sceglie la prossima domanda?», presenza di `id="experiment-title"`, di `production-section` e degli stili `.experiment-story` sul dominio pubblico. Il report rimane escluso dal sito.
+- **Limitazioni:** non è stato effettuato un collaudo visuale su Safari/iPad reali. Il meccanismo di pubblicazione di nuove opere attraverso l'automazione resta da verificare durante una sessione autonoma effettiva.
