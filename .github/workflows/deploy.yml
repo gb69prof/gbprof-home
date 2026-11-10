@@ -168,4 +168,13 @@ jobs:
             test "$(curl -sSL --max-time 25 -o /dev/null -w '%{http_code}' "${public_neuro}REPORT.md")" = 404
             echo "NeuroLab 3.0: asset e report escluso dalla pubblicazione verificati"
             echo "NeuroLab pubblicato e raggiungibile dagli Spazi"
+            echo "Verifica i due archivi, senza esporre il diario privato"
+            for url in "https://gbprof.it/Spazi/archivio/" "https://gbprof.it/Spazi/libera-autonoma/" "https://gbprof.it/Spazi/libera-autonoma/style.css" "https://gbprof.it/Spazi/libera-autonoma/archive.js" "https://gbprof.it/Spazi/libera-autonoma/manifest.json"; do
+              test "$(curl -sSL --max-time 25 -o /dev/null -w '%{http_code}' "$url")" = 200
+            done
+            curl -fsSL --max-time 25 https://gbprof.it/ | grep -Fq 'class="portal portal-archivio" href="/Spazi/archivio/"'
+            curl -fsSL --max-time 25 https://gbprof.it/Spazi/archivio/ | grep -Fq 'Libera autonoma'
+            curl -fsSL --max-time 25 https://gbprof.it/Spazi/libera-autonoma/ | grep -Fq 'id="archive-list"'
+            test "$(curl -sSL --max-time 15 -o /dev/null -w '%{http_code}' https://gbprof.it/Spazi/libera-autonoma/REPORT.md)" = 404
+            echo "Libera autonoma: porte e risorse pubbliche verificate"
             git log -1 --oneline
