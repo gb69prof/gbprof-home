@@ -1,0 +1,19 @@
+body{background:radial-gradient(ellipse at 78% 0%,#17374650,transparent 46%),#080e13;min-height:100vh}
+.archive-main{min-height:64vh;padding:clamp(42px,7vw,90px) 0 110px}.archive-head{max-width:890px;margin:0 0 65px}
+.archive-head h1{font:normal clamp(56px,10vw,120px)/.99 Georgia,"Times New Roman",serif;letter-spacing:-.055em;margin:22px 0}.archive-head h1 em{font-weight:normal;color:#e4c394}
+.archive-head p{font:normal clamp(18px,2.2vw,25px)/1.65 Georgia,serif;color:#b9c7cf;max-width:32ch}
+.works{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;align-items:stretch}
+.work{display:flex;flex-direction:column;min-height:330px;padding:clamp(28px,4vw,48px);border:1px solid #ffffff2b;background:linear-gradient(135deg,#132430,#0e1922);text-decoration:none;transition:transform .2s,border-color .2s}
+.work:hover{border-color:#dcb988;transform:translateY(-3px)}.work:focus-visible{outline:3px solid #ffcc80;outline-offset:4px}
+.work-meta{display:flex;gap:14px;align-items:center;flex-wrap:wrap;color:#e6c793;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.work h2{font:normal clamp(28px,3.6vw,44px)/1.18 Georgia,serif;letter-spacing:-.025em;margin:28px 0 17px}
+.work p{color:#bfccd1;font-size:15px;line-height:1.78;max-width:48ch;margin:0}
+.work-arrow{display:block;margin-top:auto;border-top:1px solid #ffffff31;padding-top:20px;color:#e6c793;font-size:12px;letter-spacing:.11em}
+.empty{grid-column:1/-1;border-top:1px solid #ffffff32;padding:35px 0;color:#b9c4c7;font:italic 21px/1.65 Georgia,serif}
+.reading{max-width:760px}.reading h1{font:normal clamp(46px,7vw,76px)/1.11 Georgia,serif;letter-spacing:-.045em;margin:18px 0 26px}
+.reading .body{color:#e5e3df;font:19px/1.9 Georgia,serif}.reading .body p{margin:0 0 1.5em}.reading .body h2{font-size:30px;margin:2em 0 1em}
+.reading .body blockquote{margin:2.4em 0;border-left:2px solid #dcb988;padding-left:24px;color:#e4c393}
+@media(max-width:800px){.works{grid-template-columns:1fr}.work{min-height:270px}}
+@media(max-width:520px){.archive-head{margin-bottom:46px}.archive-main{padding-bottom:65px}.work h2{margin-top:20px}}
+@media(prefers-reduced-motion:reduce){.work{transition:none}}
+@media print{body{background:white;color:black}.work{break-inside:avoid}.archive-head h1 em,.work-meta,.work-arrow{color:#333}}
