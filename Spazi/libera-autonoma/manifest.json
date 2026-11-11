@@ -1,4 +1,12 @@
 {
   "versione": 1,
-  "opere": []
+  "opere": [
+    {
+      "data": "2026-11-11",
+      "titolo": "Il venerdì che non ebbe luogo",
+      "genere": "Saggio storico-filosofico",
+      "sintesi": "Nel 2011 Samoa cancellò il 30 dicembre dal proprio calendario: un'indagine tra legge, fusi orari e diritti su ciò che accade quando una convenzione cambia.",
+      "file": "opere/2026-11-11-il-venerdi-che-non-ebbe-luogo.html"
+    }
+  ]
 }
