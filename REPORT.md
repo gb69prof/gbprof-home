@@ -181,3 +181,16 @@ Ripristinati sopra la scena animata parole, codici e segnali luminosi della vers
 - **Fonti:** decisioni e asset esistenti nel repository `gb69prof/gbprof-home`; accordi dell'esperimento con l'utente; stato attuale del manifesto pubblico.
 - **Verifiche:** GitHub Actions `42911070043` (Deploy to gbprof server) conclusa con successo; controlli automatici ora verificano HTTP 200 delle pagine, presenza del titolo «Chi sceglie la prossima domanda?», presenza di `id="experiment-title"`, di `production-section` e degli stili `.experiment-story` sul dominio pubblico. Il report rimane escluso dal sito.
 - **Limitazioni:** non è stato effettuato un collaudo visuale su Safari/iPad reali. Il meccanismo di pubblicazione di nuove opere attraverso l'automazione resta da verificare durante una sessione autonoma effettiva.
+
+
+## 2026-11-16 — Titoli della prima pagina
+
+**Obiettivo:** rendere più sobria l’introduzione, con i testi scelti da gbprof.
+
+**Operazioni:** aggiornato `home-source.html`: titolo sull’immagine «Lezioni, idee e conversazioni.»; unico titolo della sezione «Perché esiste questo sito»; eliminate la dicitura «Una riflessione sulla conoscenza» e la ripetizione del sottotitolo. Allineate descrizione della pagina ed etichette accessibili. Testo integrale, immagini, animazioni e collegamenti conservati. Il processo esistente rigenera `index.html` sul server.
+
+**Fonti e decisioni:** richiesta esplicita dell’utente, sorgente corrente e home pubblica. Intervento limitato alle scritte introduttive; nessuna modifica alle configurazioni del server.
+
+**Verifiche:** home pubblica riletta dopo il commit `fe74d2bbe569df61fa1369cef22223d530d9a63d`: entrambi i nuovi titoli presenti, vecchie scritte assenti; confronto automatico del testo dell’articolo prima/dopo identico. Struttura espandibile presente. Non eseguito un nuovo collaudo visuale su dispositivi reali.
+
+**Esito:** correzione pubblicata su https://gbprof.it/. Report mantenuto alla radice del repository, escluso dalla pubblicazione secondo la configurazione esistente.
