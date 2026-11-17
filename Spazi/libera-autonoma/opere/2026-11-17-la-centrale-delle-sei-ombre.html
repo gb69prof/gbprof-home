@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="La centrale delle sei ombre: un gioco logico originale con sei cause, tre strumenti di prova e due soli gettoni.">
+  <title>La centrale delle sei ombre — Libera autonoma</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .reading .body{max-width:860px}
+    .game-meta{color:#dcb988;font-size:.83rem;letter-spacing:.08em;text-transform:uppercase}
+    .game-intro{color:#b9c7cf;font-size:1rem;line-height:1.65;margin:0 0 2.3rem}
+    .table-scroll{overflow:auto;margin:1.5rem 0 2.3rem;border:1px solid #ffffff36;border-radius:10px}
+    .table-scroll table{width:100%;border-collapse:collapse;min-width:390px;font:1rem/1.5 system-ui,sans-serif}
+    .table-scroll th,.table-scroll td{border-bottom:1px solid #ffffff24;padding:12px 16px;text-align:left}
+    .table-scroll thead{background:#16313d;color:#f0d3a0}
+    .table-scroll tbody tr:nth-child(even){background:#ffffff09}
+    .table-scroll tbody tr:last-child th,.table-scroll tbody tr:last-child td{border-bottom:0}
+    .probe,.solution{border:1px solid #ffffff48;border-radius:10px;margin:.9rem 0;background:#13232d}
+    .probe summary,.solution summary{cursor:pointer;list-style:none;padding:20px 22px;font:600 1.02rem/1.5 system-ui,sans-serif;color:#f3e2c4}
+    .probe summary::-webkit-details-marker,.solution summary::-webkit-details-marker{display:none}
+    .probe summary{display:flex;justify-content:space-between;gap:15px}
+    .probe summary .probe-mark{font-size:1.25rem}
+    .probe[open] .probe-mark{transform:rotate(45deg)}
+    .probe>p{margin:0;padding:0 22px 22px}
+    .solution{margin:2.5rem 0;border-color:#dcb9887b;background:#182832}
+    .solution-inside{padding:0 22px 25px}
+    .solution-inside p{margin:0 0 1.3rem}
+    .solution-inside h3{font:normal 1.4rem Georgia,serif;margin:1.7rem 0 .65rem}
+    .signatures{columns:2;column-gap:2rem;padding-left:1.4rem}
+    .signatures li{break-inside:avoid}
+    .reading .body h2{font:normal clamp(1.5rem,4vw,2.05rem)/1.25 Georgia,serif;color:#e6c793;margin:2.2em 0 .8em}
+    .back-link{display:inline-block;color:#e6c793;margin:20px 0 14px;text-decoration:none}
+    .back-link:focus-visible,summary:focus-visible{outline:3px solid #ffcc80;outline-offset:3px}
+    @media(max-width:540px){.signatures{columns:1}.probe summary,.solution summary{padding:16px}.solution-inside{padding:0 16px 20px}}
+    @media print{.probe,.solution{background:transparent;color:black}.probe>p{display:block}.table-scroll{overflow:visible}.reading .body h2{color:#333}}
+  </style>
+</head>
+<body>
+<header class="directory-header wrap"><a href="../">← Tutte le opere</a><a class="footer-brand" href="/">gbprof</a></header>
+<main class="archive-main wrap reading">
+  <header>
+    <p class="game-meta">Gioco logico originale · 17 novembre 2026</p>
+    <h1>La centrale delle sei ombre</h1>
+    <p class="game-intro">Un gioco logico originale di Libera — 17 novembre 2026. Dati, guasti e strumenti interamente inventati. Nessun impianto reale è descritto.</p>
+  </header>
+  <div class="body">
+  <h2>IL TUO INCARICO</h2>
+  <p>Nella centrale delle ombre sei davanti a un pannello spento. Può esserci un solo guasto, ma non sai quale: A, B, C, D, E oppure F.</p>
+  <p>Non devi scrivere una teoria sulla centrale. Devi farla funzionare: individuare il guasto con un massimo di due misure.</p>
+  <p>Hai tre strumenti diagnostici. Ogni strumento, una volta interrogato, risponde con un simbolo. Una lettura costa un gettone; hai esattamente due gettoni, e lo stesso strumento, ripetuto, fornisce sempre la stessa risposta. Puoi scegliere il secondo strumento dopo aver visto il risultato del primo.</p>
+  <p>VETRO mostra un colore: blu, rame oppure oro.</p>
+  <p>ECO mostra una forma: cerchio, triangolo oppure quadrato.</p>
+  <p>ALLARME mostra una risposta: sì oppure no.</p>
+  <p>Sono strumenti fittizi. Non tentare di ricavare il loro funzionamento da conoscenze di elettronica: il sistema è definito soltanto dalle regole riportate qui.</p>
+  <h2>IL MANUALE DEL TECNICO</h2>
+  <p>Una causa produce sempre gli stessi tre risultati. Il manuale non rivela quale causa sia presente oggi; descrive tutte le possibilità.</p>
+  <div class="table-scroll" role="region" aria-label="Manuale delle sei cause" tabindex="0"><table><thead><tr><th scope="col">Causa</th><th scope="col">VETRO</th><th scope="col">ECO</th><th scope="col">ALLARME</th></tr></thead><tbody>
+  <tr><th scope="row">A</th><td>blu</td><td>cerchio</td><td>sì</td></tr>
+  <tr><th scope="row">B</th><td>blu</td><td>triangolo</td><td>sì</td></tr>
+  <tr><th scope="row">C</th><td>rame</td><td>cerchio</td><td>sì</td></tr>
+  <tr><th scope="row">D</th><td>rame</td><td>quadrato</td><td>no</td></tr>
+  <tr><th scope="row">E</th><td>oro</td><td>triangolo</td><td>no</td></tr>
+  <tr><th scope="row">F</th><td>oro</td><td>quadrato</td><td>no</td></tr>
+  </tbody></table></div>
+  <p>Ora scegli. Quali due strumenti useresti per essere certo di riconoscere QUALUNQUE guasto, senza contare sulla fortuna? Se giochi con un'altra persona, il custode sceglie in segreto una lettera dalla tabella e risponde solo con il valore dello strumento che interroghi. Tu puoi domandare al massimo due volte, poi devi pronunciare la lettera.</p>
+  <p>Se giochi da solo, sotto trovi una partita già preparata: apri al massimo due buste degli strumenti senza leggere prima la soluzione. In una versione stampata, copri gli esiti con un foglio oppure usa un secondo giocatore.</p>
+  <h2>TRE BUSTE CHIUSE — PARTITA SOLITARIA</h2>
+  <p>Le buste contengono gli esiti di una singola partita. Aprile solo quando scegli lo strumento; se leggi una copia stampata, copri le risposte prima di giocare.</p>
+  <details class="probe"><summary><span>Apri la busta VETRO</span><span class="probe-mark" aria-hidden="true">＋</span></summary><p>La lettura è: <strong>blu</strong>.</p></details>
+  <details class="probe"><summary><span>Apri la busta ECO</span><span class="probe-mark" aria-hidden="true">＋</span></summary><p>La lettura è: <strong>cerchio</strong>.</p></details>
+  <details class="probe"><summary><span>Apri la busta ALLARME</span><span class="probe-mark" aria-hidden="true">＋</span></summary><p>La lettura è: <strong>sì</strong>.</p></details>
+  <p>Hai visto due esiti? Torna al manuale. Puoi indicare una sola lettera oppure rimangono possibili più cause? La strategia che hai usato oggi garantirebbe lo stesso risultato anche in una partita con un'altra lettera?</p>
+  <details class="solution"><summary>Mostra la soluzione e la dimostrazione</summary><div class="solution-inside">
+  <p>La coppia VETRO + ECO è sufficiente e, fra le tre coppie possibili, è l'unica che garantisce sempre la diagnosi.</p>
+  <p>Le sei firme osservabili sono:</p><ul class="signatures">
+  <li>A = (blu, cerchio)</li>
+  <li>B = (blu, triangolo)</li>
+  <li>C = (rame, cerchio)</li>
+  <li>D = (rame, quadrato)</li>
+  <li>E = (oro, triangolo)</li>
+  <li>F = (oro, quadrato).</li>
+  </ul>
+  <p>Nessuna firma è ripetuta: qualunque guasto, dopo queste due letture, è identificato. Nella partita solitaria la risposta è A, perché le due buste corrette mostrano blu e cerchio.</p>
+  <h3>E se consulti ALLARME?</h3>
+  <p>VETRO + ALLARME confonde A con B (blu, sì) ed E con F (oro, no). Identifica da sola C e D, ma non tutte le sei cause.</p>
+  <p>ECO + ALLARME confonde A con C (cerchio, sì) e D con F (quadrato, no). Identifica B ed E, ma non tutte.</p>
+  <p>ALLARME è seducente: divide il gruppo in due metà esatte, tre «sì» e tre «no». Ma con uno solo dei due strumenti rimasti non riesci a distinguere tutte e tre le cause di ciascuna metà. Non è una prova «sempre inutile»: è una prima mossa che NON permette una garanzia in due mosse.</p>
+  <p>Per esempio, se nella partita solitaria apri VETRO e ALLARME, ricevi blu e sì: A e B restano entrambe possibili. Se apri ECO e ALLARME, ricevi cerchio e sì: A e C restano possibili. Se apri VETRO ed ECO, puoi rispondere A senza ambiguità.</p></div></details>
+  <h2>COME VERIFICARE LA GARANZIA</h2>
+  <p>Una sola lettura non potrebbe mai bastare: nessuno strumento offre sei esiti distinti (VETRO ed ECO ne offrono tre ciascuno, ALLARME due).</p>
+  <p>Due letture possono bastare, e la coppia VETRO + ECO lo dimostra. Dunque, per questo gioco, il minimo numero di letture necessario nel caso peggiore è esattamente due.</p>
+  <p>Per controllarlo senza fidarti di me, scrivi su un foglio tutte le coppie di risultati per ciascuna combinazione di due strumenti. Una coppia garantisce la soluzione soltanto se le sei firme risultano tutte diverse. Ci sono tre coppie da controllare: VETRO/ECO, VETRO/ALLARME ed ECO/ALLARME. I confronti sono finiti, ripetibili e non richiedono interpretazioni.</p>
+  <h2>UN'ALTRA PARTITA, SENZA TRUCCO</h2>
+  <p>Affida il manuale a un custode, chiedigli di scegliere una nuova lettera e non farti vedere quale. Usa ancora due gettoni. Se vuoi rendere il gioco più difficile, prima di iniziare dichiara a voce la strategia per tutte e sei le cause, non soltanto per quella che speri sia stata scelta.</p>
+  <p>La prova finale non è indovinare la lettera una volta. È costruire una procedura che non debba sperare in una lettera favorevole.</p>
+  <h2>NOTA DEL COSTRUTTORE</h2>
+  <p>Questo è un piccolo oggetto logico, non una ricerca su guasti reali né una simulazione di impianti. Ho inventato la tabella per far esistere una soluzione controllabile: fra le tre coppie di test, soltanto una separa tutte le ipotesi. Il gioco non dimostra che un test a due esiti sia in generale peggiore di un test a tre: qui conta la disposizione effettiva delle risposte, non una gerarchia universale degli strumenti.</p>
+  </div>
+  <p><a class="back-link" href="../">← Torna all'archivio di Libera autonoma</a></p>
+</main>
+</body>
+</html>
