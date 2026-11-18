@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a1119">
+<meta name="description" content="L'ansia: dalla natura alla società. Una lezione di educazione civica per capire allerta biologica, cultura, stereotipi e libertà.">
+<title>L'ansia: dalla natura alla società | Educazione civica · gbprof</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1219;--ink:#182632;--paper:#fcfaf6;--gold:#d4aa72;--muted:#b9c5cb;--edge:#273640}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:26px}
+body{margin:0;color:#eef0ed;background:radial-gradient(ellipse at 8% 5%,#233141 0,transparent 34%),linear-gradient(160deg,#0b1219,#111f29 65%,#101922);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit;text-underline-offset:4px}a:focus-visible,button:focus-visible{outline:3px solid #e7bf84;outline-offset:4px}
+.skip{position:absolute;left:1rem;top:-70px;z-index:10;background:#fff;color:#111;padding:.7rem 1rem}.skip:focus{top:10px}
+.topbar{max-width:1220px;margin:auto;padding:22px 28px;display:flex;justify-content:space-between;gap:16px;align-items:center;border-bottom:1px solid #ffffff20}
+.back{font-size:13px;text-decoration:none;color:var(--muted)}.back:hover{color:var(--gold)}
+.brand{font:normal 29px Georgia,serif;letter-spacing:-.045em;text-decoration:none}
+.hero{max-width:1160px;margin:0 auto;padding:78px 28px 66px;display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:36px;align-items:end}
+.kicker{font-size:11px;letter-spacing:.19em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.hero h1{font:normal clamp(41px,5.6vw,76px)/1.09 Georgia,"Times New Roman",serif;letter-spacing:-.042em;max-width:16ch;margin:23px 0}
+.lead{color:#c9d5d9;font-size:clamp(17px,1.7vw,20px);line-height:1.65;max-width:62ch;margin:0}
+.hero-side{border-left:1px solid #d4aa7269;padding-left:28px;color:var(--muted);font-size:13px;line-height:1.8}
+.hero-side strong{display:block;color:#fff;font-size:14px;margin-bottom:6px}
+.hero-side a{display:inline-block;margin-top:17px;border:1px solid #d4aa7280;background:#d4aa7218;border-radius:8px;padding:12px 16px;color:#f6d3a4;text-decoration:none;font-weight:600}
+.hero-side a:hover{background:#d4aa7230}
+.layout{max-width:1210px;display:grid;grid-template-columns:226px minmax(0,1fr);gap:30px;align-items:start;margin:0 auto;padding:0 20px 80px}
+.toc{position:sticky;top:16px;padding:28px 8px 10px 8px;max-height:calc(100vh - 30px);overflow:auto}
+.toc strong{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.toc a{display:block;font-size:13px;text-decoration:none;color:#b5c3ca;padding:9px 12px;border-left:1px solid #72848b50}
+.toc a:hover{color:#fff;border-color:var(--gold);background:#ffffff06}
+.paper{background:var(--paper);color:var(--ink);border-radius:18px;box-shadow:0 25px 70px #0004;overflow:hidden}
+.reading{padding:clamp(28px,5.3vw,80px);max-width:100%}
+.reading .intro{font:normal clamp(24px,3vw,34px)/1.3 Georgia,serif;color:#253945;margin:0 0 36px}
+.reading section{scroll-margin-top:30px;border-top:1px solid #dfdfdb;padding-top:26px;margin-top:36px}
+.reading h2{font:normal clamp(25px,3.2vw,36px)/1.18 Georgia,serif;letter-spacing:-.022em;margin:0 0 19px}
+.reading h3{font:600 19px/1.35 system-ui,sans-serif;margin:25px 0 9px}
+.reading p{max-width:73ch;font-size:17px;line-height:1.83;margin:0 0 19px}
+.reading strong{color:#1e3946}
+.note{border-left:4px solid #b78b55;background:#f3eee3;padding:20px 24px;margin:26px 0;border-radius:0 10px 10px 0}
+.note p,.reading .note p{margin:0;font-size:16px}
+.question-top{background:#132d3b;color:#f7f0e4;padding:26px 30px;border-radius:13px;margin-bottom:38px}
+.question-top span{display:block;text-transform:uppercase;letter-spacing:.15em;font-size:11px;font-weight:750;color:#e6bc7f;margin-bottom:9px}
+.question-top p{font:normal clamp(20px,2.35vw,27px)/1.43 Georgia,serif;max-width:33em;margin:0}
+.steps{padding-left:21px;margin:18px 0 0}.steps li{font-size:16px;line-height:1.75;padding:0 0 12px 5px}
+.case{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0 20px}
+.case div{background:#f2f4f3;padding:21px;border-radius:12px;border:1px solid #dbe1e0}
+.case span{display:block;color:#52707e;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11px}
+.case p{font:italic 18px/1.48 Georgia,serif;margin:11px 0 0}
+.map-area{margin-top:46px!important;background:#f1f5f3;padding:clamp(18px,3.8vw,40px);border-radius:14px;border:1px solid #d4e0db}
+.map-area h2{margin-top:0}.map-area>p{font-size:15px;line-height:1.6}
+.concept-map{max-width:730px;margin:27px auto 8px;text-align:center;font-family:system-ui,-apple-system,sans-serif}
+.map-node{background:#fff;border:1px solid #cddad9;border-radius:14px;box-shadow:0 5px 16px #122b3811;padding:18px 20px}
+.map-node .n{display:block;text-transform:uppercase;letter-spacing:.12em;font-size:10px;font-weight:800;margin-bottom:6px;color:#476474}
+.map-node strong{display:block;color:#1b3440;font-size:17px;line-height:1.2}
+.map-node small{display:block;font-size:12.5px;line-height:1.5;color:#49616c;max-width:57ch;margin:7px auto 0}
+.map-node.nature{border-top:5px solid #3d8090}.map-node.need{border-top:5px solid #679571}.map-node.society{border-top:5px solid #d4a552}.map-node.culture{border-top:5px solid #8c79a9}.map-node.inside{border-top:5px solid #b86f6a}.map-node.freedom{border-top:5px solid #3b8c79}
+.map-arrow{font-size:26px;line-height:1.5;color:#67888b;font-weight:500}
+.map-branches{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:13px 0}
+.map-branches div{background:#f9f4f8;border:1px solid #dfd6e2;border-radius:9px;padding:13px;font-size:13px;color:#3e4552}
+.map-branches b{display:block;margin-bottom:5px;font-size:12px;color:#68547e}
+.map-branches+.map-arrow{margin-top:3px}
+.map-foot{font-size:13px;margin:19px 0 0;color:#44626b;line-height:1.6}
+.closing{margin-top:50px!important;background:linear-gradient(130deg,#102630,#183b45);border:none!important;border-radius:14px;color:white;padding:32px}
+.closing h2{color:#e3b97e;margin:0 0 15px}
+.closing p{color:#f7f8f5;font:normal clamp(23px,2.7vw,31px)/1.4 Georgia,serif;margin:0}
+.download-strip{border-top:1px solid #dedbd4;background:#f4f1ea;padding:26px clamp(26px,5vw,80px);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.download-strip p{font-size:13px;color:#485761;margin:0;max-width:42ch}
+.download-strip a{background:#183642;color:white;text-decoration:none;border-radius:8px;padding:12px 18px;font-size:13px;font-weight:650;text-align:center}
+.download-strip a:hover{background:#305c6c}
+.footer{max-width:1140px;margin:auto;padding:14px 26px 48px;color:#bac6c7;font-size:12px}
+@media(max-width:900px){.layout{grid-template-columns:1fr;max-width:850px}.toc{position:static;max-height:none;padding:0 12px 10px}.toc strong{display:block;margin-bottom:8px}.toc a{display:inline-block;border-left:none;border-bottom:1px solid #72848b60;padding:7px 8px}.hero{grid-template-columns:1fr;padding:55px 26px 36px}.hero-side{max-width:580px}}
+@media(max-width:600px){.topbar{padding:17px 19px}.hero{padding:42px 20px 28px}.hero h1{font-size:43px}.layout{padding:0 10px 60px;gap:18px}.paper{border-radius:10px}.reading{padding:28px 22px}.reading p{font-size:16px;line-height:1.75}.case{grid-template-columns:1fr}.map-branches{grid-template-columns:1fr}.map-area{padding:19px}.map-node{padding:16px 12px}.map-node strong{font-size:16px}.download-strip{display:block;padding:25px}.download-strip a{display:inline-block;margin-top:15px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{*{box-shadow:none!important}body{background:#fff;color:#111;font:11pt/1.5 Georgia,serif}.topbar,.toc,.hero-side,.download-strip,.footer{display:none!important}.hero{padding:0;display:block;max-width:none}.hero h1{font-size:25pt;margin:10pt 0}.lead{color:#111;font-size:12pt}.kicker{color:#111}.layout{display:block;padding:0;max-width:none}.paper{border-radius:0}.reading{padding:0}.reading p{font-size:11pt;line-height:1.5}.reading section{break-inside:auto}.map-area{break-inside:avoid;background:white}.map-node{break-inside:avoid}.closing{background:white;color:#111;border:1px solid #888!important}.closing h2,.closing p{color:#111}.case div{background:white}.question-top{background:white;color:#111;border:1px solid #888}.question-top p,.question-top span{color:#111}}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenuto">Vai alla lezione</a>
+<header class="topbar"><a class="back" href="../">← Educazione civica e cittadinanza</a><a class="brand" href="/">gbprof</a></header>
+<div class="hero">
+  <div><div class="kicker">EDUCAZIONE CIVICA E CITTADINANZA / LEZIONE 01</div>
+  <h1>L'ansia: dalla natura alla società</h1>
+  <p class="lead">L'ansia nasce come sistema di allerta. La nostra esperienza e la società possono però cambiarne gli oggetti, amplificarne l'intensità e trasformarla in giudizio su noi stessi. Comprenderlo è un esercizio di libertà.</p></div>
+  <aside class="hero-side"><strong>Per la quarta superiore</strong>Biologia, cultura, stereotipi, aspettative e cittadinanza.<br>Materiale didattico · 18 novembre 2026<br><a href="lezione.pdf" download="gbprof-lezione-ansia-natura-societa.pdf">↓ Scarica la lezione in PDF</a></aside>
+</div>
+<div class="layout">
+<nav class="toc" aria-label="Indice della lezione">
+<strong>In questa lezione</strong>
+<a href="#natura">01 · Perché l'ansia?</a>
+<a href="#bisogni">02 · Bisogni e cura</a>
+<a href="#cultura">03 · Cultura e società</a>
+<a href="#stereotipi">04 · Stereotipi</a>
+<a href="#giudizio">05 · Interiorizzazione</a>
+<a href="#cittadinanza">06 · Consapevolezza</a>
+<a href="#esempio">Esempio</a>
+<a href="#attivita">Attività</a>
+<a href="#mappa">Mappa concettuale</a>
+<a href="#domanda">Domanda conclusiva</a>
+</nav>
+<main id="contenuto" class="paper">
+<article class="reading">
+<div class="question-top"><span>La domanda che ci guiderà</span><p>Quante delle cose che ci fanno paura sono veri pericoli e quante sono diventate minacce perché abbiamo imparato a considerarle tali?</p></div>
+<p class="intro">La nostra capacità di prevedere un pericolo ci aiuta a vivere. Ma che cosa accade quando impariamo a considerare un voto, un giudizio o un errore come una minaccia al valore della nostra persona?</p>
+
+<section id="natura"><h2>1. Perché esiste l'ansia?</h2>
+<p>Immagina di sentire un rumore improvviso mentre attraversi un luogo isolato. Non sai che cosa l'abbia provocato, ma diventi più attento, il battito cardiaco può accelerare e ti prepari ad agire. Questo sistema di allerta è una risorsa sviluppata nel corso dell'evoluzione: aiuta a riconoscere i rischi e ad affrontare l'incertezza.</p>
+<p>La <strong>paura</strong> riguarda di solito una minaccia presente e identificabile; l'<strong>ansia</strong> riguarda spesso la possibilità che qualcosa di negativo accada. Le due esperienze si sovrappongono, ma non coincidono. Un'attivazione moderata può aiutarci a prepararci; quando diventa troppo intensa, continua o difficile da controllare, può ostacolare la vita quotidiana.</p>
+<div class="note"><p><strong>Un punto decisivo:</strong> il sistema di allerta ha una funzione adattiva, ma questo non significa che qualsiasi livello di ansia sia benefico.</p></div>
+</section>
+
+<section id="bisogni"><h2>2. I bisogni umani: sopravvivere, accudire, appartenere</h2>
+<p>L'essere umano ha bisogno di nutrimento, riparo, sicurezza, relazioni e protezione. La risposta di allerta può aiutare a riconoscere ciò che minaccia questi bisogni. Anche la cura di un neonato richiede vigilanza e capacità di rispondere ai segnali di bisogno: il pianto richiama l'attenzione degli adulti che lo accudiscono.</p>
+<p>Gravidanza, parto e allattamento comportano condizioni biologiche specifiche per molte donne. Non per questo l'ansia nasce dalla maternità, né l'accudimento è una capacità esclusivamente femminile: le risposte di cura dipendono anche dall'esperienza e dalle relazioni. I disturbi d'ansia sono mediamente più frequenti nelle ragazze e nelle donne, ma non esiste una spiegazione unica: concorrono fattori biologici, psicologici e sociali.</p>
+</section>
+
+<section id="cultura"><h2>3. Cultura e società: quando cambia il significato del pericolo</h2>
+<p>Oggi gran parte delle nostre preoccupazioni non riguarda un predatore o la mancanza di riparo, ma l'interrogazione, l'esame, il giudizio degli altri, l'esclusione da un gruppo, l'immagine del corpo o il futuro lavorativo. Queste situazioni possono avere conseguenze reali: non sono necessariamente paure inventate. Tuttavia il valore che attribuiamo a una prestazione può essere molto superiore alla sua conseguenza concreta.</p>
+<p>La cultura non è qualcosa di estraneo alla natura umana: imparare regole, valori e aspettative è una nostra capacità naturale. Attraverso l'apprendimento, però, possiamo arrivare a percepire un voto o una critica come se mettessero in discussione il nostro intero valore personale. <strong>Natura, esperienza e società si influenzano reciprocamente.</strong></p>
+</section>
+
+<section id="stereotipi"><h2>4. La società della prestazione e gli stereotipi</h2>
+<p>Essere preparati e impegnarsi a scuola è importante. Il problema comincia quando il rendimento diventa l'unica misura della persona: <strong>«Valgo soltanto se riesco»</strong>. Il confronto continuo può amplificare l'ansia e trasformare un errore in una minaccia alla nostra identità.</p>
+<p>Gli stereotipi di genere possono aggiungere pressioni: alcune ragazze imparano a sentirsi obbligate a essere impeccabili e responsabili; alcuni ragazzi a mostrarsi sempre forti e sicuri. Sono esempi di aspettative sociali, non leggi biologiche e non descrizioni valide per ogni individuo. Anche il modo di esprimere o nascondere l'ansia può essere influenzato da questi modelli.</p>
+<div class="note"><p><strong>Perché studiare gli stereotipi?</strong> Per renderli visibili. Ciò che abbiamo imparato a considerare inevitabile può essere discusso e, in parte, cambiato.</p></div>
+</section>
+
+<section id="giudizio"><h2>5. Quando la voce della società diventa la nostra</h2>
+<p>Le aspettative esteriori possono trasformarsi in un giudizio interiore: «Non devo deludere», «Non posso sbagliare», «Se fallisco, valgo meno». Così la preoccupazione non compare soltanto prima della verifica: può accompagnarci anche quando nessuno ci sta giudicando. Si crea un circolo fra aspettative, interpretazioni personali, tensione e ulteriori preoccupazioni.</p>
+<p>Non tutte le forme di ansia derivano dalle pressioni sociali e capire un condizionamento non significa far sparire automaticamente il disagio. Tuttavia riconoscerlo ci permette di discuterlo, chiedere aiuto e cambiare comportamenti e ambienti.</p>
+</section>
+
+<section id="cittadinanza"><h2>6. Dalla consapevolezza alla cittadinanza</h2>
+<p>La libertà non consiste nell'eliminare qualsiasi ansia, ma anche nel distinguere ciò che merita attenzione da ciò a cui abbiamo attribuito un peso sproporzionato. Significa poter sbagliare senza sentirsi sbagliati. La comunità scolastica ha una responsabilità: evitare umiliazioni, non deridere le fragilità, valutare i risultati senza ridurre le persone ai risultati.</p>
+<ul class="steps">
+<li><strong>Riconosci il segnale:</strong> che cosa sto provando nel corpo e quali pensieri sto facendo?</li>
+<li><strong>Esamina la minaccia:</strong> che cosa potrebbe realmente accadere? Che cosa sto immaginando?</li>
+<li><strong>Individua l'aspettativa:</strong> è una mia scelta, una richiesta concreta o uno stereotipo interiorizzato?</li>
+<li><strong>Cerca strategie e sostegno:</strong> preparazione realistica, riposo, confronto con adulti affidabili e, se l'ansia limita la vita quotidiana, aiuto professionale.</li>
+</ul></section>
+
+<section id="esempio"><h2>Un esempio da discutere</h2>
+<p>Due studenti prendono lo stesso voto, sei. Hanno però due interpretazioni differenti:</p>
+<div class="case"><div><span>Interpretazione A</span><p>«Ho deluso tutti, non sono capace.»</p></div><div><span>Interpretazione B</span><p>«È andata male, ma posso capire dove migliorare.»</p></div></div>
+<p>La differenza non dipende necessariamente dal sesso: dipende anche dalle esperienze, dalle aspettative interiorizzate e dalle risorse personali. <strong>Quale messaggio sociale può esserci dietro le due reazioni?</strong></p>
+</section>
+
+<section id="attivita"><h2>Attività per la classe</h2>
+<p>In piccoli gruppi, analizzate un <strong>caso immaginario</strong> di ansia scolastica. Separate quattro elementi: la minaccia concreta; ciò che la persona pensa possa accadere; le aspettative sociali presenti; una risposta personale e una modifica dell'ambiente scolastico che potrebbero aiutare.</p>
+<p>Non è necessario raccontare esperienze intime. L'obiettivo è imparare a riconoscere i meccanismi, non giudicare le persone.</p>
+</section>
+
+<section id="mappa" class="map-area" aria-labelledby="map-title"><h2 id="map-title">Mappa concettuale: dalla natura alla società</h2>
+<p>Le frecce mostrano un percorso possibile, non una legge rigida: ogni passaggio è influenzato anche da esperienze personali e condizioni biologiche.</p>
+<figure class="concept-map" aria-label="Schema che collega il sistema naturale di allerta alle pressioni sociali, agli stereotipi e alla consapevolezza.">
+<div class="map-node nature"><span class="n">01 / Natura</span><strong>Il sistema biologico di allerta</strong><small>Prevedere un rischio e preparare l'organismo all'azione è utile alla vita.</small></div>
+<div class="map-arrow" aria-hidden="true">↓</div>
+<div class="map-node need"><span class="n">02 / Bisogni</span><strong>Sicurezza, cura, appartenenza</strong><small>L'allerta può difendere bisogni essenziali e legami importanti.</small></div>
+<div class="map-arrow" aria-hidden="true">↓</div>
+<div class="map-node society"><span class="n">03 / Cultura e società</span><strong>Nuovi significati attribuiti ai rischi</strong><small>Scuola, successo, reputazione e relazioni diventano oggetti di preoccupazione.</small></div>
+<div class="map-arrow" aria-hidden="true">↓</div>
+<div class="map-node culture"><span class="n">04 / Aspettative e stereotipi</span><strong>«Come dovrei essere?»</strong><small>Alcuni modelli sociali possono aumentare la pressione e limitare la libertà.</small>
+<div class="map-branches"><div><b>Pressioni su alcune ragazze</b>«Devi essere impeccabile e sempre all'altezza.»</div><div><b>Pressioni su alcuni ragazzi</b>«Devi essere forte e non mostrare fragilità.»</div></div><small>Questi sono stereotipi sociali, non caratteristiche naturali universali.</small></div>
+<div class="map-arrow" aria-hidden="true">↓</div>
+<div class="map-node inside"><span class="n">05 / Interiorizzazione</span><strong>«Se fallisco, valgo meno»</strong><small>L'aspettativa diventa auto-giudizio e può amplificare l'ansia.</small></div>
+<div class="map-arrow" aria-hidden="true">↓</div>
+<div class="map-node freedom"><span class="n">06 / Consapevolezza e libertà</span><strong>Riconoscere la gabbia per poterla cambiare</strong><small>Distinguere rischi concreti e pressioni apprese; chiedere sostegno; costruire relazioni più giuste.</small></div>
+<figcaption class="map-foot">Natura, società ed esperienza non procedono in fila in modo meccanico: si influenzano anche a vicenda.</figcaption>
+</figure>
+</section>
+
+<section id="domanda" class="closing"><h2>La domanda con cui concludere</h2><p>«Quante delle cose che ci fanno paura sono veri pericoli e quante sono diventate minacce perché abbiamo imparato a considerarle tali?»</p></section>
+<p style="font-size:13px;color:#617079;margin-top:32px">Nota: questa lezione propone strumenti di comprensione, non diagnosi. L'ansia intensa o persistente merita ascolto e, quando necessario, il confronto con professionisti qualificati.</p>
+</article>
+<div class="download-strip"><p>La lezione completa è disponibile anche in formato PDF, per lo studio, la stampa e la condivisione in classe.</p><a href="lezione.pdf" download="gbprof-lezione-ansia-natura-societa.pdf">↓ Scarica PDF</a></div>
+</main>
+</div>
+<footer class="footer">gbprof · Educazione civica e cittadinanza · <a href="../">Torna all'indice delle lezioni</a></footer>
+</body></html>
