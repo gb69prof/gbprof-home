@@ -73,6 +73,15 @@ a{color:inherit;text-underline-offset:4px}a:focus-visible,button:focus-visible{o
 @media(max-width:600px){.topbar{padding:17px 19px}.hero{padding:42px 20px 28px}.hero h1{font-size:43px}.layout{padding:0 10px 60px;gap:18px}.paper{border-radius:10px}.reading{padding:28px 22px}.reading p{font-size:16px;line-height:1.75}.case{grid-template-columns:1fr}.map-branches{grid-template-columns:1fr}.map-area{padding:19px}.map-node{padding:16px 12px}.map-node strong{font-size:16px}.download-strip{display:block;padding:25px}.download-strip a{display:inline-block;margin-top:15px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{*{box-shadow:none!important}body{background:#fff;color:#111;font:11pt/1.5 Georgia,serif}.topbar,.toc,.hero-side,.download-strip,.footer{display:none!important}.hero{padding:0;display:block;max-width:none}.hero h1{font-size:25pt;margin:10pt 0}.lead{color:#111;font-size:12pt}.kicker{color:#111}.layout{display:block;padding:0;max-width:none}.paper{border-radius:0}.reading{padding:0}.reading p{font-size:11pt;line-height:1.5}.reading section{break-inside:auto}.map-area{break-inside:avoid;background:white}.map-node{break-inside:avoid}.closing{background:white;color:#111;border:1px solid #888!important}.closing h2,.closing p{color:#111}.case div{background:white}.question-top{background:white;color:#111;border:1px solid #888}.question-top p,.question-top span{color:#111}}
+
+/* La mappa illustrata originale: immagine intera, proporzioni 1536 × 1024. */
+.map-originale{margin:25px 0 0}
+.map-originale>a{display:block;border-radius:12px;overflow:hidden;line-height:0;box-shadow:0 15px 34px #162a3924}
+.map-originale img{width:100%;height:auto;display:block;object-fit:contain}
+.map-originale figcaption{font-size:13px;line-height:1.65;color:#536a74;margin:13px 0 0}
+.map-originale figcaption a{font-weight:650;color:#1c586b}
+@media print{.map-originale>a{box-shadow:none;border:1px solid #ddd}.map-originale img{max-width:100%}}
+
 </style>
 </head>
 <body>
@@ -150,22 +159,14 @@ a{color:inherit;text-underline-offset:4px}a:focus-visible,button:focus-visible{o
 <p>Non è necessario raccontare esperienze intime. L'obiettivo è imparare a riconoscere i meccanismi, non giudicare le persone.</p>
 </section>
 
-<section id="mappa" class="map-area" aria-labelledby="map-title"><h2 id="map-title">Mappa concettuale: dalla natura alla società</h2>
-<p>Le frecce mostrano un percorso possibile, non una legge rigida: ogni passaggio è influenzato anche da esperienze personali e condizioni biologiche.</p>
-<figure class="concept-map" aria-label="Schema che collega il sistema naturale di allerta alle pressioni sociali, agli stereotipi e alla consapevolezza.">
-<div class="map-node nature"><span class="n">01 / Natura</span><strong>Il sistema biologico di allerta</strong><small>Prevedere un rischio e preparare l'organismo all'azione è utile alla vita.</small></div>
-<div class="map-arrow" aria-hidden="true">↓</div>
-<div class="map-node need"><span class="n">02 / Bisogni</span><strong>Sicurezza, cura, appartenenza</strong><small>L'allerta può difendere bisogni essenziali e legami importanti.</small></div>
-<div class="map-arrow" aria-hidden="true">↓</div>
-<div class="map-node society"><span class="n">03 / Cultura e società</span><strong>Nuovi significati attribuiti ai rischi</strong><small>Scuola, successo, reputazione e relazioni diventano oggetti di preoccupazione.</small></div>
-<div class="map-arrow" aria-hidden="true">↓</div>
-<div class="map-node culture"><span class="n">04 / Aspettative e stereotipi</span><strong>«Come dovrei essere?»</strong><small>Alcuni modelli sociali possono aumentare la pressione e limitare la libertà.</small>
-<div class="map-branches"><div><b>Pressioni su alcune ragazze</b>«Devi essere impeccabile e sempre all'altezza.»</div><div><b>Pressioni su alcuni ragazzi</b>«Devi essere forte e non mostrare fragilità.»</div></div><small>Questi sono stereotipi sociali, non caratteristiche naturali universali.</small></div>
-<div class="map-arrow" aria-hidden="true">↓</div>
-<div class="map-node inside"><span class="n">05 / Interiorizzazione</span><strong>«Se fallisco, valgo meno»</strong><small>L'aspettativa diventa auto-giudizio e può amplificare l'ansia.</small></div>
-<div class="map-arrow" aria-hidden="true">↓</div>
-<div class="map-node freedom"><span class="n">06 / Consapevolezza e libertà</span><strong>Riconoscere la gabbia per poterla cambiare</strong><small>Distinguere rischi concreti e pressioni apprese; chiedere sostegno; costruire relazioni più giuste.</small></div>
-<figcaption class="map-foot">Natura, società ed esperienza non procedono in fila in modo meccanico: si influenzano anche a vicenda.</figcaption>
+<section id="mappa" class="map-area" aria-labelledby="map-title">
+<h2 id="map-title">Mappa illustrata: dalla natura alla società</h2>
+<p>Il percorso che abbiamo costruito insieme: la funzione naturale dell'allerta, le aspettative sociali e la possibilità di riconoscerne i condizionamenti. L'immagine è riportata integralmente, con la domanda finale.</p>
+<figure class="map-originale">
+<a href="mappa-ansia-originale.webp" target="_blank" rel="noopener" aria-label="Apri la mappa illustrata completa in una nuova scheda">
+<img src="mappa-ansia-originale.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Mappa illustrata Dalla natura alla società: il percorso dell'ansia. Un meccanismo naturale di allerta protegge sopravvivenza, accudimento e appartenenza. Cultura e società attribuiscono valore a scuola, successo e reputazione; aspettative e stereotipi, interiorizzazione e giudizio possono amplificare l'ansia. Il percorso si conclude con consapevolezza e libertà, e la domanda: Quante delle cose che ci fanno paura sono veri pericoli e quante sono diventate minacce perché abbiamo imparato a considerarle tali?">
+</a>
+<figcaption>La mappa originale, senza tagli né modifiche alla composizione. <a href="mappa-ansia-originale.webp" target="_blank" rel="noopener">Apri a grandezza naturale</a> · <a href="mappa-ansia-originale.webp" download="gbprof-mappa-ansia.webp">Scarica la mappa</a></figcaption>
 </figure>
 </section>
 
