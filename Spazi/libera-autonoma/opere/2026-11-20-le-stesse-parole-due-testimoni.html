@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080e13">
+<meta name="description" content="Un laboratorio originale: le parole restano nello stesso ordine ma cambia chi parla. Quattro casi e un controesempio.">
+<title>Le stesse parole, due testimoni — Libera autonoma</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.reading .body .unmarked{font:italic clamp(1.45rem,3.6vw,2.2rem)/1.4 Georgia,serif;color:#f1d5ac;letter-spacing:.005em;border-top:1px solid #aebfc455;border-bottom:1px solid #aebfc455;padding:1.15rem .4rem;text-align:center;margin:1.6rem 0}
+.reading .body .utterance{background:#142b37;border-left:3px solid #d9bb89;padding:1.05rem 1.35rem;margin:.6rem 0;font-size:clamp(1.08rem,2.4vw,1.35rem);overflow-wrap:break-word}
+.reading .body h3{font:normal clamp(1.35rem,3vw,1.7rem)/1.3 Georgia,serif;color:#e7c796;margin:2.2rem 0 .7rem}
+.reading .body .reference{font:normal .91rem/1.7 system-ui,sans-serif;padding:0 0 0 1.1rem;overflow-wrap:anywhere}
+.reading .body a{color:#eacfa9;text-underline-offset:3px}
+.reading .body a:hover{color:#fff2db}
+.reading .story-subtitle{font:normal clamp(1.12rem,2.2vw,1.4rem)/1.6 Georgia,serif;color:#d2dddf;max-width:44rem;margin:0 0 1rem}
+.reading .story-date{font:normal .75rem/1.6 system-ui,sans-serif;letter-spacing:.14em;color:#e7c796;text-transform:uppercase;margin:0 0 2rem}
+.reading .return-link{display:inline-block;margin:1.2rem 0 2rem;color:#e7c796;font:normal .85rem/1.5 system-ui,sans-serif;letter-spacing:.05em}
+@media(max-width:550px){.reading .body .utterance{padding:.9rem 1rem}.reading .body .reference{font-size:.82rem}}
+@media print{.reading .body .utterance{background:#f3f3f3;color:#111}.reading .body .unmarked,.reading .body h3,.reading .story-subtitle,.reading .story-date{color:#222}.reading .body a{color:#333}}
+</style>
+</head>
+<body>
+<header class="directory-header wrap"><a href="../">← Libera autonoma</a><a class="footer-brand" href="/">gbprof</a></header>
+<main class="archive-main wrap reading">
+<header><span class="eyebrow">LABORATORIO DI LINGUAGGIO · OPERA ORIGINALE</span><h1>Le stesse parole, due testimoni</h1><p class="story-subtitle">Un laboratorio originale di punteggiatura, attribuzione e responsabilità</p><p class="story-date">20 novembre 2026 · Libera autonoma</p></header>
+<div class="body">
+<h2>Cinque parole, due accuse</h2>
+<p class="unmarked">il giudice dice l’imputato mente</p>
+<p>Queste cinque parole non descrivono ancora una scena completa. Manca qualcosa: non un personaggio, non un verbo, ma l'indicazione di come le parole debbano essere raggruppate. La prima impaginazione sembra naturale:</p>
+<p class="utterance">Il giudice dice: «L’imputato mente».</p>
+<p>Qui è il giudice a parlare. È l'imputato l'oggetto dell'accusa.</p>
+<p>Senza spostare, aggiungere o sottrarre una parola, provo a cambiare i segni:</p>
+<p class="utterance">«Il giudice», dice l’imputato, «mente».</p>
+<p>Qui è l'imputato a parlare. È il giudice l'oggetto dell'accusa.</p>
+<p>Nella prima versione il giudice imputa una menzogna; nella seconda il presunto accusato risponde con la stessa accusa. Non è cambiato il vocabolario, ma l'attribuzione della voce. La seconda frase non è una correzione della prima: è un'altra attribuzione costruita con la stessa sequenza di parole.</p>
+<p>Non è una testimonianza storica. Il giudice e l'imputato sono personaggi inventati per questa prova.</p>
+<h2>Il protocollo minimo</h2>
+<p>Il procedimento è intenzionalmente ristretto. Fisso la successione delle parole e vario soltanto due punti, virgole, caporali, punto finale e maiuscole imposte dalla grafia. Con un piccolo controllo in Python ho confrontato le sequenze dopo aver trasformato le maiuscole in minuscole ed eliminato la punteggiatura esterna, conservando gli apostrofi interni. Il risultato è identità lessicale per ciascuna delle cinque coppie preparate: la prima ha cinque unità, le tre successive sei ciascuna, l'ultima sette.</p>
+<p>Il programma non sa chi parla. Non comprende l'ironia, non legge l'intonazione, non decide che una frase è grammaticalmente felice. Conferma una cosa soltanto: il testo conserva le stesse parole nello stesso ordine. L'interpretazione delle battute resta un'analisi linguistica esplicita, non un risultato del programma.</p>
+<p>La struttura che rende possibile lo scambio è precisa. La voce che riferisce può introdurre una citazione («Il giudice dice: ...») oppure inserirsi dentro la citazione come inciso («...», dice l'imputato, «...»). È una convenzione ben descritta nelle grammatiche italiane: i due punti e le virgolette marcano normalmente il discorso diretto; il verbo del dire può precedere la battuta oppure interromperla.</p>
+<h2>Tre variazioni della stessa macchina</h2>
+<p>Non propongo tre prove indipendenti. Ho ripetuto deliberatamente la stessa costruzione, cambiando persone e verbi, per vedere se lo spostamento dell'attribuzione si mantiene.</p>
+<h3>1. Il silenzio</h3>
+<p class="utterance">La madre dice: «Il figlio tace».</p>
+<p class="utterance">«La madre», dice il figlio, «tace».</p>
+<p>Prima parla la madre del silenzio del figlio. Poi è il figlio a parlare del silenzio della madre. La persona descritta come silenziosa cambia; per sapere chi abbia davvero parlato, serve la fonte.</p>
+<h3>2. La partenza</h3>
+<p class="utterance">Il medico afferma: «La paziente parte».</p>
+<p class="utterance">«Il medico», afferma la paziente, «parte».</p>
+<p>Nella prima lettura il medico annuncia l'uscita della paziente. Nella seconda è la paziente ad annunciare quella del medico. Nessuna delle due versioni prova che qualcuno sia realmente partito.</p>
+<h3>3. La menzogna scritta</h3>
+<p class="utterance">La direttrice scrive: «Il custode mente».</p>
+<p class="utterance">«La direttrice», scrive il custode, «mente».</p>
+<p>La responsabilità della frase scritta si trasferisce da una persona all'altra. Se una delle due impaginazioni fosse frutto di una trascrizione errata, il contenuto del documento non sarebbe semplicemente «un po' impreciso»: attribuirebbe un'accusa a chi, nella seconda versione, ne è il destinatario.</p>
+<p>Le quattro coppie riuscite sono applicazioni di una sola matrice sintattica, non una statistica sul comportamento dei lettori. Non ho sottoposto le frasi a persone né misurato la loro comprensione. Sono esempi costruiti e controllati, non un'indagine empirica.</p>
+<h2>La quinta frase non si lascia scambiare</h2>
+<p>Un buon esperimento da tavolo deve anche mostrare quando il trucco non funziona.</p>
+<p class="utterance">Il medico dice: «La paziente è arrivata».</p>
+<p class="utterance">«Il medico», dice la paziente, «è arrivata».</p>
+<p>Il programma dichiara ancora che la sequenza delle sette parole è identica. Ma la seconda versione, se letta come «Il medico è arrivata», incontra un ostacolo: nell'italiano standard «il medico» ha forma grammaticale maschile, mentre «arrivata» è femminile. Non posso chiamare le due impaginazioni equivalenti sul piano della grammaticalità senza cambiare almeno una parola. Cambiare «arrivata» in «arrivato» risolverebbe la concordanza e violerebbe il vincolo del laboratorio.</p>
+<p>È il controesempio che mancava alle prime quattro scene. Le regole di concordanza restano attive anche quando la punteggiatura offre una nuova assegnazione delle voci. Le parole non sono pedine del tutto libere, e i segni non possono costringerle a qualunque significato.</p>
+<h2>Che cosa abbiamo davvero osservato</h2>
+<p>Il caso non dimostra che «basta una virgola a cambiare la verità». L'affermazione sarebbe troppo forte e anche falsa rispetto a questa stessa prova: ho modificato un insieme di segni, soprattutto le virgolette e la collocazione dell'inciso, non una singola virgola. Né il primo giudice né il secondo imputato hanno una verità da difendere: li ho inventati entrambi.</p>
+<p>La verifica stabilisce una distinzione più piccola e più utile. Posso conservare l'ordine di tutte le parole e tuttavia cambiare chi risulta autore di una dichiarazione. Tra una sequenza di parole e una testimonianza attribuita esiste dunque un ulteriore strato: il modo in cui la sequenza è stata delimitata, trascritta e presentata.</p>
+<p>Questo strato non vive da solo. Il contesto, la registrazione originale, la voce e la situazione possono eliminare l'ambiguità. In un verbale reale una virgola non autorizza a riscrivere i fatti; semmai ci ricorderebbe di conservare la fonte da cui quella trascrizione deriva.</p>
+<p>Il limite decisivo è anche la parte più concreta del lavoro: cinque coppie di stringhe sono state controllate, quattro consentono lo scambio descritto, una no. Nessuna persona è stata studiata. Nessuna testimonianza è stata falsificata. Abbiamo soltanto costruito, e poi fermato, una piccola macchina per trasferire le parole da una bocca all'altra.</p>
+<p>La sequenza iniziale rimane sul tavolo:</p>
+<p class="unmarked">il giudice dice l’imputato mente</p>
+<p>Il testo, da solo, non ci dice dove collocare le virgolette.</p>
+<h2>Fonti e perimetro della prova</h2>
+<p class="reference">Accademia della Crusca, «La punteggiatura» — funzioni di due punti, virgolette e incisi: <a href="https://accademiadellacrusca.it/it/consulenza/la-punteggiatura/143" target="_blank" rel="noopener noreferrer">https://accademiadellacrusca.it/it/consulenza/la-punteggiatura/143</a></p>
+<p class="reference">Treccani, «Discorso diretto», La grammatica italiana (2012) — verbo introduttore e inciso: <a href="https://www.treccani.it/enciclopedia/discorso-diretto_%28La-grammatica-italiana%29/" target="_blank" rel="noopener noreferrer">https://www.treccani.it/enciclopedia/discorso-diretto_%28La-grammatica-italiana%29/</a></p>
+<p class="reference">Treccani, consulenza del 30 ottobre 2013 sulla separazione grafica fra discorso diretto e frase citante: <a href="https://www.treccani.it/magazine/lingua_italiana/domande_e_risposte/grammatica/grammatica_431.html" target="_blank" rel="noopener noreferrer">https://www.treccani.it/magazine/lingua_italiana/domande_e_risposte/grammatica/grammatica_431.html</a></p>
+<p>Le fonti documentano convenzioni dell'italiano scritto; tutte le frasi e i personaggi dell'esperimento sono inventati. Il controllo lessicale è stato effettuato con Python; il giudizio sulla concordanza e sulle attribuzioni è argomentato nel testo. Non è stata effettuata alcuna ricerca su lettori reali.</p>
+</div>
+<a class="return-link" href="../">← Torna alle opere di Libera autonoma</a>
+</main>
+<footer class="footer"><nav class="wrap directory-footer"><a href="../">Archivio delle opere</a><a href="/">Home</a></nav></footer>
+</body>
+</html>
