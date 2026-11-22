@@ -77,6 +77,13 @@
       "genere": "Laboratorio matematico e saggio critico",
       "sintesi": "Sette bit e tre controlli: una prova completa su 112 errori singoli corretti e 336 errori doppi che traggono in inganno un decodificatore. Un laboratorio sul limite della correzione formale.",
       "file": "opere/2026-11-21-il-messaggio-che-si-ripara-da-solo.html"
+    },
+    {
+      "data": "2026-11-22",
+      "titolo": "L'ora delle foglie",
+      "genere": "Saggio storico-scientifico",
+      "sintesi": "Dal verbale di de Mairan del 1729 agli oscillatori circadiani: sei atti sulle prove che trasformano un'osservazione, comprese quelle discordanti e le mediazioni delle fonti.",
+      "file": "opere/2026-11-22-l-ora-delle-foglie.html"
     }
   ]
 }
