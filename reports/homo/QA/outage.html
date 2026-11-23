@@ -1,0 +1,33 @@
+<!doctype html><html lang="it"><meta charset="utf-8"><title>Collaudo della cache HOMO</title><h1>Riapertura da cache</h1>
+<p>Questa pagina apre l’atlante in una copia di collaudo separata e verifica il recupero dei file in assenza della directory sul server.</p>
+<button>Esegui con origine indisponibile</button><output role="status">In attesa</output><pre id="log"></pre><div></div>
+<script>
+const dir='./qa-offline/Spazi/homo/';
+const wait=async fn=>{let start=performance.now();while(!fn()){if(performance.now()-start>12000)throw Error('timeout');await new Promise(r=>setTimeout(r,25))}};
+document.querySelector('button').onclick=async()=>{
+const out=document.querySelector('output'),lines=document.querySelector('pre');
+out.textContent='In corso';
+try{
+const f=document.createElement('iframe');f.src=dir+'#scheda/naledi';f.width=600;f.height=350;document.querySelector('div').append(f);
+await wait(()=>f.contentDocument?.querySelector('main h1')?.textContent==='Homo naledi');
+const w=f.contentWindow, d=f.contentDocument;
+let reg=await w.navigator.serviceWorker.getRegistration(),keys=await w.caches.keys();
+const key=keys.find(s=>s.startsWith('gbprof-homo-'+new URL(reg.scope).pathname+'-'));
+const cache=await w.caches.open(key),requests=await cache.keys();
+const results=[];
+for(const r of requests){
+ const response=await w.fetch(r.url,{cache:'reload'});const bytes=(await response.arrayBuffer()).byteLength;
+ if(!response.ok||!bytes)throw Error('Risorsa senza contenuto '+r.url);results.push(bytes);
+}
+const observations=[];
+for(const hash of ['scheda/luzon','atlante','tempo','archivio','scheda/sapiens/dossier']){
+ w.location.hash=hash;
+ await wait(()=>d.body.dataset.route===hash.split('/')[0]&&!!d.querySelector('main h1')&&(!hash.startsWith('scheda/')||d.querySelector('#routeContent')?.dataset.article===hash.split('/').slice(0,2).join('/')));
+ if(hash==='atlante')await wait(()=>d.querySelector('[data-slider]'));
+ observations.push(d.querySelector('main h1').innerText);
+}
+const invalid=await w.fetch('file-di-controllo-inesistente.txt',{cache:'reload'});
+lines.textContent=JSON.stringify({testoIniziale:'Homo naledi',scope:reg.scope,worker:reg.active.state,controlloNativo:!!w.navigator.serviceWorker.controller,fileLetti:results.length,byteTotali:results.reduce((a,b)=>a+b,0),sezioni:observations,statusControlloNonMemorizzato:invalid.status},null,2);
+}catch(e){lines.textContent=String(e)}out.textContent='Completato';
+};
+</script></html>

@@ -86,7 +86,7 @@ function search(){if(!C.ready)return;openPanel('Cerca nell’atlante',`<label cl
  inp.oninput=results;results();inp.focus()}
 document.querySelector('#searchBtn').onclick=search;
 document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();search()}});
-function selectedPassage(){const sel=getSelection();if(!sel?.rangeCount||sel.isCollapsed)return null;const range=sel.getRangeAt(0);let el=range.startContainer.parentElement?.closest('[data-pi]');if(!el||!el.contains(range.endContainer))return null;const before=range.cloneRange();before.selectNodeContents(el);before.setEnd(range.startContainer,range.startOffset);return {route:el.dataset.article,ci:Number(el.dataset.ci),pi:Number(el.dataset.pi),start:before.toString().length,end:before.toString().length+range.toString().length,quote:range.toString()}}
+function selectedPassage(){const sel=getSelection();if(!sel?.rangeCount||sel.isCollapsed)return null;const range=sel.getRangeAt(0);const node=range.startContainer;let el=(node.nodeType===Node.ELEMENT_NODE?node:node.parentElement)?.closest('[data-pi]');if(!el||!el.contains(range.endContainer))return null;const before=range.cloneRange();before.selectNodeContents(el);before.setEnd(range.startContainer,range.startOffset);return {route:el.dataset.article,ci:Number(el.dataset.ci),pi:Number(el.dataset.pi),start:before.toString().length,end:before.toString().length+range.toString().length,quote:range.toString()}}
 let held=null;
 document.addEventListener('selectionchange',()=>{let s=selectedPassage();if(s)held=s});
 function createNote(asMark){const el=document.querySelector('#routeContent'),article=el?.dataset.article;const pass=asMark?(selectedPassage()||held):null;

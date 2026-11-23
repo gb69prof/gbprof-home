@@ -15,6 +15,13 @@ def run(engine,base):
         page.set_default_timeout(20000)
         issues=[]
         page.on('pageerror',lambda error:issues.append(str(error)))
+        if base.startswith('https://gbprof.it/'):
+            page.goto('https://gbprof.it/#spazi',wait_until='domcontentloaded')
+            door=page.locator('#spazi a[href="/Spazi/homo/"]')
+            door.click()
+            page.wait_for_url(base)
+            page.wait_for_selector('.cover h1')
+            print(engine, 'accesso dalla sezione pubblica #spazi verificato')
         visit(page,base,'inizio')
         assert page.locator('.cover img').evaluate('(i)=>i.decode().then(()=>i.naturalWidth>0)')
         for route in ['umanita','fonti','immagini','metodi','genetica','anatomia','confronto','evoluzione','scheda/sapiens','scheda/luzon','tempo','atlante']:

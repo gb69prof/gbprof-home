@@ -1,0 +1,55 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><title>Collaudo HOMO</title>
+<style>body{margin:1rem;background:white;color:#111;font:16px/1.4 system-ui}pre{white-space:pre-wrap}iframe{display:block;border:1px solid #bbb;max-width:none}button{padding:.5rem}</style></head><body>
+<h1>Collaudo delle viewport</h1><p>Le tre finestre caricano la copia di anteprima dell’applicazione.</p>
+<button id="go">Esegui test</button> <output id="status" role="status">In attesa</output><pre id="log"></pre><div id="frames"></div>
+<script>
+const cases=[['desktop',1440,900],['tablet',1024,768],['telefono',390,844]];
+const routes=['inizio','prima','comparsa','umanita','atlante','tempo','evoluzione','anatomia','cultura','genetica','incontri','scomparsa','archivio','confronto','dibattiti','storia','glossario','fonti','metodi','immagini','ricerca','taccuino','scheda/sapiens','scheda/naledi','scheda/erectus','scheda/heidelberg','scheda/neanderthal','scheda/denisova','scheda/flores','scheda/luzon'];
+const state=document.querySelector('#status'),log=document.querySelector('#log'),frames=document.querySelector('#frames');
+const wait=async fn=>{let start=performance.now();while(true){if(fn())return;if(performance.now()-start>8000)throw Error('Tempo di risposta scaduto');await new Promise(r=>setTimeout(r,25));}};
+async function scan(label,width,height){
+ const frame=document.createElement('iframe');frame.width=width;frame.height=height;frame.title=label;frame.src=(new URLSearchParams(location.search).get('app')||'./')+'#inizio';frames.append(frame);
+ let checks=0,errors=[]; await wait(()=>frame.contentDocument?.querySelector('main h1'));
+ const w=frame.contentWindow,d=frame.contentDocument,q=s=>d.querySelector(s),all=s=>[...d.querySelectorAll(s)];
+ const result=(valid,info)=>{checks++;if(!valid)errors.push(info)};
+ const go=async path=>{w.location.hash=path;await wait(()=>d.body.dataset.route===path.split('/')[0]&&q('main h1')&&(path==='inizio'||q('#routeContent')?.firstElementChild)&&(!path.startsWith('scheda/')||q('#routeContent')?.dataset.article===path.split('/').slice(0,2).join('/')));if(path==='atlante')await wait(()=>q('[data-slider]'));};
+ for (const route of routes){await go(route);result(!q('main').textContent.includes('non è presente nell’indice'),route+' non disponibile');result(d.body.scrollWidth<=d.documentElement.clientWidth+2,route+' overflow '+d.body.scrollWidth+'/'+d.documentElement.clientWidth);result(all('main img').every(i=>i.hasAttribute('alt')),route+' alt');if(route.startsWith('scheda/'))result(all('.chapter').length>=8,route+' capitoli');}
+ await go('tempo');
+ for(const cb of all('input[name="pop"]'))if(cb.checked!==['sapiens','naledi'].includes(cb.value))cb.click();
+ result(q('#overlap').innerText.includes('79.000'),'sovrapposizione');
+ q('input[value=luzon]').click();result(q('#overlap').innerText.includes('indeterminabile'),'minimo aperto');
+ await go('atlante');const change=(s,v)=>{const el=q(s);el.value=v;el.dispatchEvent(new w.Event('change',{bubbles:true}));};
+ change('[data-region]','Africa');change('[data-period]','all');change('[data-species]','sapiens');result(!!q('[data-item="irhoud"]'),'sito Irhoud');
+ const vb=q('.pa-map').getAttribute('viewBox');q('[data-pan=in]').click();result(vb!==q('.pa-map').getAttribute('viewBox'),'zoom carta');
+ await go('anatomia');result(!!q('#comparison table'),'tabella anatomica');
+ await go('evoluzione');change('#treeModel','basal');result(q('#network').innerText.includes('H. floresiensis'),'modello alternativo');change('#rel','nd');result(q('#network').innerText.includes('Denny'),'Denny');
+ await go('archivio');q('input[name=q]').value='callao';q('input[name=q]').dispatchEvent(new w.Event('input',{bubbles:true}));result(all('[data-results] article').length===1,'filtro località');
+ await go('fonti');q('input[name=q]').value='10.1038/nature22336';q('input[name=q]').dispatchEvent(new w.Event('input',{bubbles:true}));result(all('[data-results] .source').length===1,'DOI duplicato o assente');
+ await go('immagini');const first=q('[data-image]');first.click();const img=q('#fullImage');if(img){await img.decode();result(img.naturalWidth>0,'immagine fallita');q('[data-action=zoom]').click();result(img.classList.contains('zoomed'),'zoom immagine');q('#closePanel').click()}else result(false,'modale immagine');
+ await go('inizio');
+ await go('scheda/naledi');
+ const getEvidence=()=>all('.chapter .level').map(e=>e.textContent),orig=all('.chapter').length;
+ q('#settingsBtn').click();q('#strictOpt').click();result(all('.chapter').length<orig&&getEvidence().every(s=>['Documentato','Fortemente supportato'].includes(s)),'filtro rigoroso');
+ change('#themeOpt','dark');result(d.documentElement.dataset.theme==='dark','tema dopo filtro');
+ q('#strictOpt').click();result(all('.chapter').length===orig,'ripristino filtro');
+ q('#readerOpt').click();result(d.body.classList.contains('reader'),'modalità lettura');q('#readerOpt').click();change('#themeOpt','auto');q('#closePanel').click();
+ const key='Test automatico HOMO '+label+' '+Date.now();
+ const firstPar=q('.chapter .prose p');
+ const range=d.createRange();range.setStart(firstPar.firstChild,0);range.setEnd(firstPar.firstChild,18);
+ const selection=w.getSelection();selection.removeAllRanges();selection.addRange(range);d.dispatchEvent(new w.Event('selectionchange'));
+ q('[data-action=highlight]').click();const form=q('dialog form');
+ result(!!form,'form evidenziatore');if(form){form.querySelector('textarea').value=key;form.requestSubmit();await wait(()=>q('mark'));result(q('mark').textContent.length===18,'intervallo evidenziato')}
+ if(q('[data-action=bookmark]')?.innerText.includes('Salva'))q('[data-action=bookmark]').click();
+ await go('taccuino');result(q('main').innerText.includes(key),'evidenziazione nel taccuino');
+ const docBefore=frame.contentDocument;frame.contentWindow.location.reload();await wait(()=>frame.contentDocument!==docBefore&&frame.contentDocument.querySelector('main h1'));
+ const doc2=frame.contentDocument, entry=[...doc2.querySelectorAll('article')].find(x=>x.textContent.includes(key));result(!!entry,'nota persistente dopo reload');
+ if(entry)entry.querySelector('[data-delete-note]').click();
+ const bm=doc2.querySelector('[data-remove-bookmark="scheda/naledi"]');result(!!bm,'segnalibro dopo reload');if(bm)bm.click();
+ const sw=await frame.contentWindow.navigator.serviceWorker?.getRegistration();
+ const cacheKeys=await frame.contentWindow.caches?.keys()||[];
+ const cache=cacheKeys.filter(k=>k.startsWith('gbprof-homo-')).at(-1);
+ let assets=0;if(cache){const c=await frame.contentWindow.caches.open(cache);assets=(await c.keys()).length;}
+ return {viewport:label,dimensioni:[width,height],verifiche:checks,problemi:errors,serviceWorker:sw?.active?.state||'non attivo',scope:sw?.scope||'',risorseInCache:assets};
+}
+document.querySelector('#go').onclick=async()=>{frames.replaceChildren();log.textContent='';state.textContent='In corso';let result=[];for(const [label,width,height] of cases){try{const entry=await scan(label,width,height);result.push(entry);log.textContent+=JSON.stringify(entry)+'\n'}catch(e){result.push({viewport:label,errore:e.message});log.textContent+=JSON.stringify(result.at(-1))+'\n'}}state.textContent='Completato';};
+</script></body></html>

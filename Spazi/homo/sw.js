@@ -1,6 +1,6 @@
 // Generated from the local publication tree. Its scope is the HOMO directory.
 const PREFIX = 'gbprof-homo-' + new URL(self.registration.scope).pathname + '-';
-const CACHE = PREFIX + '9dbe168f74babf85';
+const CACHE = PREFIX + 'b23bf1c2d76822dc';
 const FILES = [
  "app.js",
  "data/debates.json",
