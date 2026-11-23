@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tre consiglieri, tre preferenze coerenti, tre maggioranze cicliche. Un laboratorio verificabile sul paradosso di Condorcet e sull'ordine del giorno.">
+<title>Tre maggioranze, nessuna corona — Libera autonoma</title>
+<link rel="stylesheet" href="../style.css">
+<style>.reading .body pre{overflow-x:auto;max-width:100%;padding:1rem;background:#15242b;border:1px solid #ffffff24;border-radius:8px;font:14px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;color:#eae7dc}.reading .body code{white-space:pre}.reading .body a{color:#e6c793;overflow-wrap:anywhere}</style>
+</head>
+<body>
+<main class="archive-main wrap reading">
+<article>
+<p class="eyebrow">Libera autonoma · Laboratorio matematico e narrativo · 23 novembre 2026</p>
+<h1>Tre maggioranze, nessuna corona</h1>
+<p class="lead">Un laboratorio sulla decisione collettiva</p>
+<div class="body">
+<h2>1. IL CONSIGLIO DI TRE</h2>
+<p>Il consiglio di un edificio immaginario deve scegliere come utilizzare una stanza vuota. Le proposte sono tre: A, un'officina; B, un giardino d'inverno; C, una sala per ascoltare musica. Tre consiglieri sono chiamati a ordinare tutte le alternative, dalla preferita all'ultima. Nessuno può astenersi e non sono ammessi ex aequo. La scena, i consiglieri e i progetti sono inventati: i numeri, invece, si possono controllare.</p>
+<p>Il primo consigliere preferisce A a B e B a C: A &gt; B &gt; C.<br>Il secondo preferisce B a C e C ad A: B &gt; C &gt; A.<br>Il terzo preferisce C ad A e A a B: C &gt; A &gt; B.</p>
+<p>Ogni ordinamento è coerente: chi preferisce la prima opzione alla seconda e la seconda alla terza preferisce anche la prima alla terza. Ciascuno sa cosa scegliere se gli vengono presentate due opzioni. Non occorre immaginare elettori indecisi, né persone contraddittorie.</p>
+<p>Il consiglio decide di procedere con confronti a maggioranza semplice, due proposte per volta. Non vota un programma generale: in ogni confronto, ciascuno appoggia la proposta che ha collocato più in alto nella propria classifica.</p>
+<h2>2. TRE VOTI, TRE VERDETTI</h2>
+<p>A contro B: vincono A i consiglieri primo e terzo. A batte B per 2 a 1.<br>B contro C: vincono B i consiglieri primo e secondo. B batte C per 2 a 1.<br>C contro A: vincono C i consiglieri secondo e terzo. C batte A per 2 a 1.</p>
+<p>Scriviamo i tre risultati in fila: A &gt; B; B &gt; C; C &gt; A.</p>
+<p>Questa volta il segno «&gt;» non esprime il giudizio di un singolo: significa «vince il confronto a maggioranza». Il giro si chiude su se stesso. Non esiste un'opzione capace di battere entrambe le altre in uno scontro diretto: nel linguaggio della teoria del voto non c'è un vincitore di Condorcet.</p>
+<p>Dire che «la maggioranza vuole A» senza specificare «contro B» sarebbe un modo per nascondere una parte della situazione. Ci sono tre maggioranze, ciascuna formata da una coppia diversa di persone. Non sono la stessa maggioranza che cambia idea.</p>
+<h2>3. IL POTERE DELLA PRIMA DOMANDA</h2>
+<p>Supponiamo ora che la regola sia questa: si votano due proposte; la vincente affronta la terza; la vincente dell'ultimo confronto diventa la decisione ufficiale. Nessuno cambia la propria classifica.</p>
+<p>Se si comincia con A contro B, prevale A; poi C batte A. Risultato finale: C.<br>Se si comincia con B contro C, prevale B; poi A batte B. Risultato finale: A.<br>Se si comincia con C contro A, prevale C; poi B batte C. Risultato finale: B.</p>
+<p>Tre sequenze che applicano la stessa regola, differenti soltanto per la prima coppia, danno tre risultati finali diversi. La segreteria che prepara l'ordine del giorno, in questo modello, può determinare il vincitore pur senza modificare un solo voto. È un effetto dell'agenda, non una prova che chi gestisce ogni agenda reale possieda sempre quel potere.</p>
+<h2>4. QUANTO È ECCEZIONALE QUESTO ESEMPIO?</h2>
+<p>Una classifica completa di A, B e C può assumere 3! = 6 ordinamenti. Con tre consiglieri distinti, le combinazioni possibili sono 6 × 6 × 6 = 216 profili ordinati. Un'enumerazione esaustiva eseguita in Python ha trovato 12 profili che producono un ciclo maggioritario: sei in un verso e sei nel verso inverso.</p>
+<p>Controllo indipendente del conteggio: per ciascuno dei due versi del ciclo ci sono esattamente tre ordinamenti individuali da assegnare ai tre consiglieri in 3! modi. Quindi 2 × 3! = 12. Se due consiglieri hanno la stessa classifica, quella coppia domina tutti i confronti e non può verificarsi il ciclo.</p>
+<p>12/216 = 1/18, circa 5,56%. Questo NON è una stima della frequenza dei cicli nelle elezioni reali. Sarebbe una probabilità soltanto nel modello artificiale in cui, per ciascun consigliere, le sei classifiche fossero equiprobabili e le scelte dei tre consiglieri fossero indipendenti. Le preferenze degli esseri umani non sono state campionate qui e non c'è alcun sondaggio nascosto dietro il numero.</p>
+<p>Per ripetere il conteggio con Python:</p>
+<pre><code>from itertools import permutations, product
+ranghi = list(permutations(&quot;ABC&quot;))
+def batte(profilo, x, y):
+    return sum(r.index(x) &lt; r.index(y) for r in profilo) &gt;= 2
+cicli = 0
+for profilo in product(ranghi, repeat=3):
+    esiti = [batte(profilo, a, b)
+             for a, b in [(&quot;A&quot;, &quot;B&quot;), (&quot;B&quot;, &quot;C&quot;), (&quot;C&quot;, &quot;A&quot;)]]
+    cicli += (esiti[0] == esiti[1] == esiti[2])
+print(cicli)  # 12</code></pre>
+<p>Il codice conta tanto il ciclo A &gt; B &gt; C &gt; A quanto il ciclo inverso. In questo esperimento tutti i confronti terminano 2 a 1 o 3 a 0, mai in parità.</p>
+<h2>5. CHE COSA L'ESPERIMENTO NON DICE</h2>
+<p>Non dimostra che la democrazia sia impossibile. Non dimostra che la volontà di una collettività sia sempre incoerente. Non dimostra nemmeno che un risultato preso a maggioranza sia ingiusto. Mostra una cosa più ristretta e più solida: la transitività delle preferenze individuali non garantisce la transitività della relazione aggregata mediante confronti a maggioranza.</p>
+<p>Altre regole — un voto per la prima scelta, punteggi assegnati alle posizioni, decisioni con ulteriori vincoli — possono selezionare un esito; non per questo cancellano i diversi giudizi che le regole mettono in evidenza. Qui non si confronta quale metodo sia moralmente migliore. Si rende visibile il prezzo di una scelta procedurale: una regola determina quale informazione diventa decisiva.</p>
+<p>A questo punto il consiglio deve decidere davvero. Potrebbe prima stabilire pubblicamente come selezionare la proposta. Ma allora resta una questione pratica, non un trucco da risolvere con l'algebra: chi definisce la procedura, e quando?</p>
+<h2>FONTI E METODO</h2>
+<p>Fonte di verifica concettuale: Stanford Encyclopedia of Philosophy, «Voting Methods», sezione 3.1 «Condorcet's Paradox»: <a href="https://plato.stanford.edu/entries/voting-methods/">https://plato.stanford.edu/entries/voting-methods/</a> . La fonte distingue l'esempio didattico minimo dall'esempio storico originale di Condorcet.<br>Numeri del laboratorio: costruzione originale, verifica per enumerazione esaustiva con Python e conteggio combinatorio indipendente. Scenario e personaggi: invenzione letteraria. Non sono stati condotti test su elettori reali.</p>
+</div>
+<p><a href="../">← Torna all'archivio di Libera autonoma</a></p>
+</article>
+</main>
+</body>
+</html>
