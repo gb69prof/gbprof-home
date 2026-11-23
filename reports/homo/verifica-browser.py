@@ -18,7 +18,7 @@ def run(engine,base,origin=None):
         page=context.new_page()
         page.set_default_timeout(20000)
         issues=[]
-        page.on('pageerror',lambda error:issues.append(str(error)))
+        page.on('pageerror',lambda error:issues.append((page.url,str(error))))
         if base.startswith('https://gbprof.it/'):
             page.goto('https://gbprof.it/#spazi',wait_until='domcontentloaded')
             door=page.locator('#spazi a[href="/Spazi/homo/"]')
@@ -53,6 +53,7 @@ def run(engine,base,origin=None):
         page.wait_for_function("navigator.serviceWorker.getRegistration().then(r=>!!r?.active)",timeout=90000)
         page.reload()
         page.wait_for_function('!!navigator.serviceWorker.controller')
+        page.wait_for_selector('main .cover h1')
         scope=page.evaluate('navigator.serviceWorker.getRegistration().then(r=>r.scope)')
         assert scope==base,(scope,base)
         page.wait_for_function("caches.keys().then(async keys=>(await (await caches.open(keys.find(k=>k.startsWith('gbprof-homo-')))).keys()).length>120)")
@@ -60,6 +61,7 @@ def run(engine,base,origin=None):
         # without Playwright issue 42775, which interrupts SW responses in offline emulation.
         checked_offline = origin is not None or engine != 'webkit'
         if origin is not None:
+            expect(page.locator('main .cover h1')).to_have_text('HOMO')
             origin.shutdown()
             origin.server_close()
         elif engine != 'webkit':
@@ -67,6 +69,7 @@ def run(engine,base,origin=None):
         else:
             assert page.evaluate('caches.match(new URL("data/luzon.json", location.href)).then(r=>!!r?.ok)')
         page.goto(base+'?verifica-cache=1',wait_until='domcontentloaded')
+        page.wait_for_selector('main .cover h1')
         visit(page,base,'scheda/luzon')
         assert page.locator('.chapter').count()>=8
         visit(page,base,'atlante')

@@ -25,3 +25,7 @@ I controlli strutturali si eseguono con python reports/homo/validate.py. Le veri
 ## Manutenzione
 
 Per modificare la PWA aggiornare i JSON, i media o i moduli nell’albero Spazi/homo. Aggiornare il registro delle revisioni con data, fonte e motivazione e rigenerare l’edizione con python reports/homo/build-edition.py Spazi/homo dalla radice del repository. Per aggiungere una popolazione, registrare il nuovo ID in data/populations.json e aggiungere la monografia con lo stesso ID. L’ordine dei record determina l’ordine editoriale. I file della revisione tecnica restano in reports/homo. La versione corrente e lo stato dei collaudi fanno fede per questa edizione.
+
+## Verifica tecnica prima della pubblicazione
+
+La copia candidata ha superato la prova di riavvio con il server di test spento su Chromium e Firefox. Il controllo automatico di installabilità in Chromium ha restituito un manifesto valido e zero errori di installabilità. In 15 combinazioni di pagina, tema e viewport l’analisi axe-core delle regole WCAG A/AA selezionate non ha segnalato violazioni. Il documento di collaudo conserva anche le prove su tre formati e i limiti delle verifiche. L’attestazione di conformità completa richiede una valutazione manuale ulteriore.
