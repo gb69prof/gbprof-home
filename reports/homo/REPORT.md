@@ -29,3 +29,7 @@ Per modificare la PWA aggiornare i JSON, i media o i moduli nell’albero Spazi/
 ## Verifica tecnica prima della pubblicazione
 
 La copia candidata ha superato la prova di riavvio con il server di test spento su Chromium e Firefox. Il controllo automatico di installabilità in Chromium ha restituito un manifesto valido e zero errori di installabilità. In 15 combinazioni di pagina, tema e viewport l’analisi axe-core delle regole WCAG A/AA selezionate non ha segnalato violazioni. Il documento di collaudo conserva anche le prove su tre formati e i limiti delle verifiche. L’attestazione di conformità completa richiede una valutazione manuale ulteriore.
+
+## Stato finale
+
+Pubblicato e verificato su https://gbprof.it/Spazi/homo/, attraverso il collegamento nella sezione Spazi e passioni della home. Il workflow di distribuzione 45270128013 è riuscito. Il workflow 45270127899 è terminato con successo su Chromium, Firefox e WebKit. I tre motori hanno già dimostrato il riavvio della medesima PWA con il server di prova fisicamente indisponibile. La prova di circuito pubblico e i limiti dei singoli motori sono descritti in COLLAUDO.md. Il codice dell’applicazione e i dati attivi sono nella directory Spazi/homo del repository gb69prof/gbprof-home.

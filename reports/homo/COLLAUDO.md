@@ -1,6 +1,6 @@
 # Collaudo di HOMO
 
-**Edizione del 23 novembre 2026.** L’oggetto delle prove è la PWA italiana preparata per il percorso `/Spazi/homo/`. L’esito riguarda la copia di anteprima. Raggiungibilità del dominio pubblico e collegamento dalla home richiedono una verifica dopo il deployment.
+**Edizione del 23 novembre 2026.** L’oggetto delle prove è la PWA italiana preparata per il percorso `/Spazi/homo/`. Le prove di anteprima sono descritte nella tabella. I controlli successivi alla pubblicazione sono registrati in fondo alla pagina.
 
 ## Prove eseguite
 
@@ -20,7 +20,7 @@
 
 ## Limiti delle verifiche
 
-Il comportamento responsive è stato esercitato col motore Chromium a tre larghezze. Safari, Firefox, Edge, iPad fisico, LIM fisica, lettori di schermo e installazione dal menu di un sistema operativo richiedono verifiche dedicate. La prova della cache ha sottratto l’origine dei contenuti e disabilitato l’uso della normale cache HTTP nelle richieste di controllo. La connettività del computer restava attiva. I modelli tridimensionali di collezioni esterne richiedono connessione e dipendono dai rispettivi fornitori. Il controllo dei metadati di licenza e dell’accessibilità nel markup è documentale. La conformità integrale WCAG 2.2 AA e la validazione scientifica umana specialistica restano da accertare.
+Il comportamento responsive è stato esercitato col motore Chromium a tre larghezze. Le prove multibrowser successive sono riportate in fondo. Safari ed Edge sui dispositivi reali, iPad e LIM fisici, lettori di schermo e installazione dal menu di un sistema operativo richiedono verifiche dedicate. La prova della cache ha sottratto l’origine dei contenuti e disabilitato l’uso della normale cache HTTP nelle richieste di controllo. La connettività del computer restava attiva. I modelli tridimensionali di collezioni esterne richiedono connessione e dipendono dai rispettivi fornitori. Il controllo dei metadati di licenza e dell’accessibilità nel markup è documentale. La conformità integrale WCAG 2.2 AA e la validazione scientifica umana specialistica restano da accertare.
 
 ## Come ripetere
 
@@ -28,3 +28,15 @@ Il comportamento responsive è stato esercitato col motore Chromium a tre larghe
 - `QA/responsive.html` può essere servito su una copia di anteprima isolata. Il parametro `app` indica il percorso relativo della PWA. Il lettore locale di test apre tre viewport e riporta gli errori per dimensione.
 - `QA/outage.html` attende che la copia specifica `qa-offline/Spazi/homo/` sia stata installata nella cache dello stesso browser. Eseguire questa prova solo su una copia di test con il proprio ambito e dopo averne sottratto temporaneamente i file. Il sito di produzione non è coinvolto.
 - `python QA/browser.py --url URL_DI_COLLAUDO` contiene una suite Playwright aggiuntiva. In questa sessione l’avvio di un processo Chromium dalla shell è risultato inibito dalla creazione di socket locali. Le prove rendicontate nella tabella sono state eseguite nel browser Chrome connesso all’anteprima ufficiale.
+
+## Pubblicazione e collaudo dell’edizione distribuita
+
+L’edizione pubblica corrisponde al commit acabe2a2. La distribuzione sul server è riuscita il 23 novembre 2026. Il controllo della home ha individuato la porta «Esplora le altre umanità». Il clic ha aperto la copertina su https://gbprof.it/Spazi/homo/. L’hash dei contenuti del service worker dell’edizione è b23bf1c2d76822dc. I controlli automatici hanno verificato che il service worker pubblico corrispondesse byte per byte al file versionato.
+
+| Prova finale | Risultato |
+|---|---|
+| Chromium 141, Firefox 142 e WebKit 26 | Navigazione dalla home pubblica, lettura delle monografie, apertura del reperto di Bianfu, immagini, cronologia, segnalibri ed evidenziazioni superate in tutti e tre i motori. |
+| Offline | Con l’origine HTTP di test spenta i tre motori hanno riaperto la PWA, la monografia di Luzon, l’atlante e Bianfu. Sul dominio pubblico la ripetizione con rete disconnessa nel browser è riuscita su Chromium e Firefox. Per WebKit sono stati verificati cache pubblica e riavvio senza server sulla copia identica. |
+| Installabilità | Il protocollo DevTools di Chromium ha restituito un manifest valido e nessun errore di installabilità. |
+| Accessibilità automatizzata | axe-core 4.10.3 in 15 combinazioni di percorso, viewport e tema, con i criteri automatizzabili WCAG A/AA selezionati. Nessuna violazione segnalata nel campione. Restano aperte verifica manuale completa e prove assistive. |
+| Registri | [Distribuzione sul server](https://github.com/gb69prof/gbprof-home/actions/runs/45270128013) · [Collaudo della PWA pubblicata](https://github.com/gb69prof/gbprof-home/actions/runs/45270127899) · [Collaudo prima della pubblicazione](https://github.com/gb69prof/gbprof-home/actions/runs/45269841866). |

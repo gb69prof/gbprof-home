@@ -1,7 +1,7 @@
 {
   "obiettivo": "Atlante paleoantropologico HOMO",
   "destinazione": "https://gbprof.it/Spazi/homo/",
-  "stato": "in_revisione",
+  "stato": "completato",
   "data": "2026-11-23",
   "fasi": [
     {
@@ -56,7 +56,7 @@
       "output_atteso": "Controlli strutturali e browser",
       "dipende_da": "Fonti e dati verificati",
       "strumento": "Ambiente di lavoro e connettori autorizzati",
-      "stato": "in_revisione",
+      "stato": "completato",
       "evidenza": "Controlli strutturali e browser"
     },
     {
@@ -67,8 +67,10 @@
       "output_atteso": "Riscontro HTTPS e workflow GitHub",
       "dipende_da": "Fonti e dati verificati",
       "strumento": "Ambiente di lavoro e connettori autorizzati",
-      "stato": "in_revisione",
-      "evidenza": "Riscontro HTTPS e workflow GitHub"
+      "stato": "completato",
+      "evidenza": "Link aperto dalla sezione #spazi, HTTPS pubblico, workflow 45270128013."
     }
-  ]
+  ],
+  "verifica_pubblica": "https://gbprof.it/Spazi/homo/",
+  "limiti": "Revisione documentale; collaudo di motori desktop e viewport simulate; verifica manuale di accessibilità completa e controllo sui dispositivi fisici aperti."
 }
