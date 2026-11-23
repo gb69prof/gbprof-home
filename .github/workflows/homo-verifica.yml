@@ -27,6 +27,13 @@ jobs:
           python -m http.server 8010 --bind 127.0.0.1 >/tmp/homo-http.log 2>&1 &
           for i in $(seq 1 15); do if curl -fsS -o /dev/null http://127.0.0.1:8010/Spazi/homo/; then break; fi; sleep 1; done
           python reports/homo/verifica-browser.py "${{ matrix.engine }}" http://127.0.0.1:8010/Spazi/homo/
+      - name: Installabilità e accessibilità automatizzata
+        if: matrix.engine == 'chromium'
+        run: |
+          npm install --prefix "$RUNNER_TEMP/homo-qa" --ignore-scripts --no-audit --no-fund axe-core@4.10.3
+          python -m http.server 8011 --bind 127.0.0.1 >/tmp/homo-a11y.log 2>&1 &
+          for i in $(seq 1 15); do if curl -fsS -o /dev/null http://127.0.0.1:8011/Spazi/homo/; then break; fi; sleep 1; done
+          python reports/homo/accessibilita.py http://127.0.0.1:8011/Spazi/homo/ "$RUNNER_TEMP/homo-qa/node_modules/axe-core/axe.min.js"
       - name: Verifica versione e navigazione pubbliche
         if: github.ref == 'refs/heads/main'
         run: |
