@@ -1,0 +1,244 @@
+[
+  {
+    "id": "origine-africana",
+    "title": "Una culla o una rete di popolazioni africane?",
+    "question": "A quale scala geografica si può cercare l’origine di Homo sapiens, se caratteri del volto, della volta cranica e della dentatura compaiono in combinazioni diverse?",
+    "evidence": "I fossili marocchini di Jebel Irhoud mostrano intorno a 315.000 anni fa una morfologia facciale vicina alla nostra insieme a una scatola cranica più allungata. Le popolazioni antiche dell’Africa orientale e meridionale aggiungono combinazioni differenti. Nel 2026 i reperti di Thomas Quarry I, datati a circa 773.000 anni, hanno ampliato il confronto sulle radici più antiche della linea. Questi ultimi non sono una documentazione di Sapiens già formato a quella data.",
+    "interpretations": "Un’origine concentrata in una regione e successive espansioni oppure un insieme di popolazioni africane che scambiarono geni con frequenza variabile producono aspettative differenti. Ragsdale e colleghi mostrano che una struttura ancestrale debolmente differenziata, mantenuta da scambi, spiega molti segnali genomici. Non localizza sulla mappa ciascuna popolazione del modello.",
+    "verdict": "L’origine africana è fortemente supportata. Rimangono aperti il peso relativo delle regioni, i tempi delle connessioni e la possibilità di distinguerli con gli archivi oggi disponibili.",
+    "level": "Fortemente supportato",
+    "sources": [
+      {
+        "title": "Hublin et al., 2017 · Fossili di Jebel Irhoud",
+        "url": "https://doi.org/10.1038/nature22336"
+      },
+      {
+        "title": "Scerri et al., 2018 · Origine in popolazioni suddivise",
+        "url": "https://doi.org/10.1016/j.tree.2018.05.005"
+      },
+      {
+        "title": "Ragsdale et al., 2023 · Modello a struttura debole",
+        "url": "https://doi.org/10.1038/s41586-023-06055-y"
+      },
+      {
+        "title": "Hublin et al., 2026 · Thomas Quarry I",
+        "url": "https://doi.org/10.1038/s41586-025-09914-y"
+      }
+    ]
+  },
+  {
+    "id": "bodo-kabwe",
+    "title": "Bodo, Kabwe e i nomi del Pleistocene medio",
+    "question": "Quando due crani africani sono assegnati a un solo nome, stiamo riconoscendo una popolazione evolutiva oppure scegliendo un modo pratico di ordinare reperti diversamente conservati?",
+    "evidence": "Il cranio di Bodo in Etiopia dà riferimento alla proposta Homo bodoensis. Quello di Kabwe, in Zambia, è il riferimento storico di Homo rhodesiensis. Un’analisi diretta di Kabwe ha fornito una stima di 299.000 ± 25.000 anni. Un individuo che conserva una combinazione di tratti arcaici può quindi essere contemporaneo, su scala africana, ai primi individui riferiti alla nostra specie.",
+    "interpretations": "Roksandic e colleghi propongono di riorganizzare parte del materiale africano sotto il nome bodoensis, separandolo da forme europee affini ai Neanderthal. Delson e colleghi contestano sia la soluzione nomenclaturale sia la capacità del nuovo nome di chiarire le affinità. Il disaccordo coinvolge criteri diagnostici, regole di priorità e scelta degli esemplari da comprendere.",
+    "verdict": "La cronologia di Kabwe è un risultato separabile dalla sua classificazione. Biogeografia e conteggi vanno costruiti sui singoli reperti, evitando di trasformare due nomi concorrenti in due popolazioni accertate.",
+    "level": "Controverso",
+    "sources": [
+      {
+        "title": "Grün et al., 2020 · Datazione di Kabwe",
+        "url": "https://doi.org/10.1038/s41586-020-2165-4"
+      },
+      {
+        "title": "Roksandic et al., 2022 · Proposta Homo bodoensis",
+        "url": "https://doi.org/10.1002/evan.21929"
+      },
+      {
+        "title": "Delson e Stringer, 2022 · Critica della proposta",
+        "url": "https://doi.org/10.1002/evan.21950"
+      }
+    ]
+  },
+  {
+    "id": "mauer",
+    "title": "Quali fossili appartengono a Homo heidelbergensis?",
+    "question": "Possiamo usare una mandibola europea come riferimento di una specie che comprenderebbe anche popolazioni africane prossime all’origine di Sapiens?",
+    "evidence": "La mandibola di Mauer in Germania è l’esemplare tipo. La datazione del suo contesto indica 609.000 ± 40.000 anni. Una mandibola permette confronti dettagliati su denti e corpo mandibolare, mentre molti fossili assegnati alla stessa specie sono conservati soprattutto come crani. In Spagna, a Sima de los Huesos, il DNA nucleare di individui di circa 430.000 anni fa colloca quel particolare gruppo sul versante neanderthaliano.",
+    "interpretations": "L’uso ampio di heidelbergensis riunisce materiali di più continenti e lo interpreta talvolta come antenato comune. Un uso ristretto conserva soprattutto materiali europei antichi, spesso vicini alla linea neanderthaliana. Una terza scelta è riferirsi alle popolazioni per sito finché una diagnosi sia verificabile su elementi anatomici sovrapponibili.",
+    "verdict": "La presenza a Mauer è documentata. Origine, durata finale e contemporaneità con Sapiens cambiano con la composizione del gruppo scelto e richiedono che il criterio sia dichiarato.",
+    "level": "Controverso",
+    "sources": [
+      {
+        "title": "Wagner et al., 2010 · Cronologia di Mauer",
+        "url": "https://doi.org/10.1073/pnas.1012722107"
+      },
+      {
+        "title": "Stringer, 2012 · Lo stato di Homo heidelbergensis",
+        "url": "https://doi.org/10.1002/evan.21311"
+      },
+      {
+        "title": "Meyer et al., 2016 · DNA di Sima de los Huesos",
+        "url": "https://doi.org/10.1038/nature17405"
+      }
+    ]
+  },
+  {
+    "id": "denisoviani-asia",
+    "title": "Harbin, Xujiayao e il nome dei Denisoviani",
+    "question": "Con l’arrivo di prove molecolari, che cosa resta delle proposte Homo longi e Homo juluensis come popolazioni separate?",
+    "evidence": "Harbin, esemplare tipo di Homo longi, presenta affinità denisoviane sostenute nel 2025 sia dal DNA mitocondriale sia da proteine ossee. Nell’ottobre 2026 Xing e colleghi hanno riconosciuto proteine diagnostiche in due campioni di Xujiayao, sito di riferimento della proposta Homo juluensis. Si tratta di due ponti indipendenti fra la linea riconosciuta dalla genetica siberiana e fossili cinesi prima classificati a partire dalla forma.",
+    "interpretations": "Gli autori dello studio del 2026 estendono il confronto a materiali di Dali, Jinniushan e Hualongdong su basi morfologiche. L’estensione può spiegare caratteri condivisi, ma resta da verificare contro convergenza e variabilità interna. La nomenclatura formale richiede anche di stabilire quali campioni rappresentino davvero un medesimo taxon.",
+    "verdict": "Sommare Denisoviani, longi e juluensis come tre unità indipendenti duplicherebbe parte dell’archivio. La parentela di determinati reperti è molto meglio sostenuta del nome da applicare all’intero insieme asiatico.",
+    "level": "Controverso",
+    "sources": [
+      {
+        "title": "Fu et al., 2025 · DNA mitocondriale di Harbin",
+        "url": "https://doi.org/10.1016/j.cell.2025.05.040"
+      },
+      {
+        "title": "Fu et al., 2025 · Proteoma di Harbin",
+        "url": "https://doi.org/10.1126/science.adu9677"
+      },
+      {
+        "title": "Yang et al., 2026 · Rassegna della tassonomia asiatica",
+        "url": "https://doi.org/10.1038/s41559-026-02983-w"
+      },
+      {
+        "title": "Xing et al., 2026 · Proteine di Xujiayao",
+        "url": "https://doi.org/10.1038/s41586-026-11132-z"
+      }
+    ]
+  },
+  {
+    "id": "antenati-flores",
+    "title": "Da dove venivano gli abitanti di Flores?",
+    "question": "La piccola statura degli uomini di Flores fu acquisita sull’isola da antenati più grandi oppure conservava le proporzioni di una linea antica già piccola?",
+    "evidence": "I reperti di Mata Menge mostrano che esseri umani di dimensioni molto ridotte erano presenti a Flores circa 700.000 anni fa. Un frammento di omero adulto estende il confronto oltre denti e mandibole. Un molare studiato nel 2024 presenta affinità con Homo erectus antico di Giava. A Liang Bua, molto più tardi, il materiale di Homo floresiensis associa taglia ridotta a una combinazione particolare di caratteri di cranio, denti e scheletro.",
+    "interpretations": "Alcune analisi filogenetiche avvicinano Flores a forme più basali del genere Homo. Le nuove evidenze di Mata Menge danno peso alla derivazione da antenati asiatici affini a erectus attraverso riduzione insulare, ma manca una sequenza continua di fossili nel periodo dell’arrivo.",
+    "verdict": "L’antichità della piccola taglia sull’isola è ben sostenuta. Identificare una popolazione fondatrice precisa, descrivere tempi e meccanismi della riduzione e stabilire la parentela esatta fra i due siti restano problemi aperti.",
+    "level": "Controverso",
+    "sources": [
+      {
+        "title": "Argue et al., 2017 · Filogenesi anatomica",
+        "url": "https://doi.org/10.1016/j.jhevol.2017.02.006"
+      },
+      {
+        "title": "Kaifu et al., 2024 · Omero e denti di Mata Menge",
+        "url": "https://doi.org/10.1038/s41467-024-50649-7"
+      },
+      {
+        "title": "Sutikna et al., 2016 · Cronologia di Liang Bua",
+        "url": "https://doi.org/10.1038/nature17179"
+      }
+    ]
+  },
+  {
+    "id": "rising-star",
+    "title": "Che cosa accadde ai corpi di Rising Star?",
+    "question": "È possibile dimostrare il passaggio dalla presenza di resti umani in una camera profonda alla scelta intenzionale di scavare e ricoprire una sepoltura?",
+    "evidence": "Rising Star conserva numerosi resti di Homo naledi, alcuni ancora in relazione anatomica. Posizione, distribuzione, sedimenti ed eventuali limiti di fosse si possono studiare separatamente. L’accessibilità odierna della cavità è un’indicazione importante ma la configurazione dei passaggi nel Pleistocene e i movimenti successivi dei sedimenti vanno ricostruiti.",
+    "interpretations": "Berger e colleghi interpretano alcune concentrazioni come corpi deposti e coperti intenzionalmente. Le critiche riguardano la dimostrazione di fosse realmente scavate, il riempimento e la capacità degli scavi di escludere processi naturali o una deposizione senza successiva inumazione. Anche una deposizione intenzionale non dimostrerebbe da sola cerimonie, credenze o attribuzione dei segni sulle pareti.",
+    "verdict": "Le ossa, la loro attribuzione e la cronologia generale dispongono di sostegno indipendente. La sepoltura intenzionale resta discussa anche dopo la pubblicazione e le valutazioni pubbliche del 2025. Le alternative andrebbero discriminate con documentazione stratigrafica e confronti tafonomici replicabili.",
+    "level": "Controverso",
+    "sources": [
+      {
+        "title": "Dirks et al., 2017 · Età dei fossili e dei sedimenti",
+        "url": "https://doi.org/10.7554/eLife.24231"
+      },
+      {
+        "title": "Berger et al., 2025 · Interpretazione della deposizione e valutazioni eLife",
+        "url": "https://doi.org/10.7554/eLife.89106"
+      },
+      {
+        "title": "Martinón-Torres et al., 2024 · Critica tafonomica",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37953122/"
+      }
+    ]
+  },
+  {
+    "id": "simboli",
+    "title": "Tracce intenzionali, simboli e morti neanderthaliani",
+    "question": "Quali passaggi consentono di attribuire un gesto a un individuo neanderthaliano, e quali sarebbero necessari per riconoscerne il significato?",
+    "evidence": "Le tracce sulle pareti di La Roche-Cotard comprendono insiemi organizzati interpretati come segni digitali intenzionali. L’età della chiusura della cavità, precedente a circa 57.000 anni fa, delimita la loro cronologia. A Shanidar, la disposizione di più corpi nello stesso settore e l’analisi di Shanidar A pubblicata nell’ottobre 2026 sostengono una discussione documentata sul trattamento dei morti.",
+    "interpretations": "La posizione di un corpo può indicare collocazione deliberata anche se resta ignoto il significato dell’atto. A Shanidar gli accumuli di polline che avevano suggerito un’offerta di fiori si spiegano almeno in parte con attività di insetti. Analogamente, un tracciato intenzionale su roccia documenta azione controllata senza consegnarci la convenzione che lo avrebbe reso un simbolo condiviso dal gruppo.",
+    "verdict": "La varietà dei gesti neanderthaliani è ben documentata. La forza dell’inferenza simbolica cambia da sito a sito. Non è scientificamente giustificato dedurre una religione specifica da polline o incisioni.",
+    "level": "Fortemente supportato",
+    "sources": [
+      {
+        "title": "Marquet et al., 2023 · La Roche-Cotard",
+        "url": "https://doi.org/10.1371/journal.pone.0286568"
+      },
+      {
+        "title": "Hunt et al., 2023 · Polline di Shanidar",
+        "url": "https://doi.org/10.1016/j.jas.2023.105822"
+      },
+      {
+        "title": "Pomeroy et al., 2026 · Shanidar A",
+        "url": "https://doi.org/10.1038/s41598-026-69193-z"
+      }
+    ]
+  },
+  {
+    "id": "linguaggio",
+    "title": "Che cosa può fossilizzare di una lingua?",
+    "question": "Quali osservazioni riguardano davvero il linguaggio preistorico e fino a dove possiamo inferire l’esistenza di sistemi di comunicazione articolati?",
+    "evidence": "Le parti ossee dell’apparato uditivo permettono modelli di trasmissione del suono. Un confronto pubblicato nel 2021 restituisce per i Neanderthal capacità ricettive compatibili con componenti della comunicazione parlata umana. La paleogenetica mostra che condividevano due cambiamenti di FOXP2 con Homo sapiens. Uno studio del 2026 analizza l’evoluzione di regioni regolatorie in relazione a variazione di capacità linguistiche misurate in persone viventi.",
+    "interpretations": "Questi risultati rendono plausibili radici biologiche profonde di alcune capacità necessarie al parlare. Nessun singolo gene codifica una lingua, e un apparato adatto al parlato non determina automaticamente la struttura di una grammatica. Tecniche apprese e cooperazione offrono indizi indiretti sulle occasioni per comunicare, ma gesti, osservazione e parola possono concorrere diversamente all’apprendimento.",
+    "verdict": "Rimangono sconosciuti vocabolari, convenzioni e momento di origine delle lingue parlate. Per i gruppi molto frammentariamente attestati, attribuire capacità linguistiche specifiche a partire dalla sola capacità endocranica eccede le prove.",
+    "level": "Sconosciuto",
+    "sources": [
+      {
+        "title": "Krause et al., 2007 · FOXP2 nei Neanderthal",
+        "url": "https://doi.org/10.1016/j.cub.2007.10.008"
+      },
+      {
+        "title": "Conde-Valverde et al., 2021 · Modelli uditivi",
+        "url": "https://doi.org/10.1038/s41559-021-01391-6"
+      },
+      {
+        "title": "Science Advances, 2026 · Evoluzione regolatoria e capacità misurate oggi",
+        "url": "https://doi.org/10.1126/sciadv.aed5260"
+      }
+    ]
+  },
+  {
+    "id": "declino",
+    "title": "Una sola spiegazione per molte scomparse?",
+    "question": "Possiamo applicare la stessa causa alla fine dei Neanderthal europei, all’ultima presenza fossile di Flores e alla rarefazione delle tracce denisoviane?",
+    "evidence": "In Europa gli intervalli di presenza sono modellati su numerosi siti, mentre a Flores un singolo grande archivio, Liang Bua, condiziona molto la cronologia della scomparsa locale. Uno studio delle concrezioni dell’isola collega l’aumento dell’aridità stagionale al declino delle testimonianze di Homo floresiensis e di Stegodon. I dati del 2026 sulle popolazioni neanderthaliane indicano contrazioni in alcune genealogie materne e reti regionali relativamente ampie nel nordovest europeo.",
+    "interpretations": "Le risorse idriche e la disponibilità di prede, l’isolamento, le oscillazioni demografiche e l’assimilazione possono agire insieme o in regioni diverse. Una coincidenza fra siccità e ultima occupazione non mostra dove andarono i superstiti. Segmenti arcaici nei viventi provano alcune discendenze, senza dire quanti individui furono assimilati.",
+    "verdict": "L’estinzione simultanea e sistematica per mano dei Sapiens non è sostenuta da questi archivi. La spiegazione più controllabile nasce da confronti locali con cronologie indipendenti e modelli che producano previsioni distinguibili.",
+    "level": "Controverso",
+    "sources": [
+      {
+        "title": "Higham et al., 2014 · Ultime presenze neanderthaliane europee",
+        "url": "https://doi.org/10.1038/nature13621"
+      },
+      {
+        "title": "Communications Earth & Environment, 2025 · Aridità a Flores",
+        "url": "https://doi.org/10.1038/s43247-025-02961-3"
+      },
+      {
+        "title": "Fotiadou et al., 2026 · Genealogie materne tardive",
+        "url": "https://doi.org/10.1073/pnas.2520565123"
+      },
+      {
+        "title": "Bossoms Mesa et al., 2026 · Genomi del nordovest europeo",
+        "url": "https://doi.org/10.1038/s41586-026-10625-1"
+      }
+    ]
+  },
+  {
+    "id": "linee-fantasma",
+    "title": "Quando un segnale genetico sembra una popolazione perduta",
+    "question": "Un segmento di DNA molto divergente in persone viventi obbliga a introdurre una specie africana ancora senza fossili identificati?",
+    "evidence": "Il genoma ricombina e conserva in regioni diverse genealogie di età differenti. Alcuni schemi nei genomi dell’Africa occidentale sono stati interpretati nel 2020 come contributi di una linea arcaica non campionata direttamente. Per distinguere segnali simili, bisogna confrontare nello stesso modello frequenze delle varianti, lunghezza dei segmenti, tempi delle separazioni e possibili scambi.",
+    "interpretations": "Una linea rimasta a lungo isolata e poi mescolatasi con antenati dei viventi è una possibilità. Una popolazione ancestrale suddivisa in gruppi con scambi intermittenti può generare parte degli stessi schemi senza richiedere una specie distinta. Ragsdale e colleghi e, con una diversa modellazione, Cousins e colleghi mostrano quanto la ricostruzione dipenda da come viene rappresentata tale struttura.",
+    "verdict": "I segnali misurati nei genomi sono dati reali. Identità anatomica, nome zoologico, localizzazione esatta e durata di un’ipotetica specie donatrice restano prive di verifica diretta. Un fossile associato a informazione biomolecolare discriminante cambierebbe radicalmente il confronto.",
+    "level": "Controverso",
+    "sources": [
+      {
+        "title": "Durvasula e Sankararaman, 2020 · Segnali di introgressione arcaica",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32095519/"
+      },
+      {
+        "title": "Ragsdale et al., 2023 · Modello a struttura debole",
+        "url": "https://doi.org/10.1038/s41586-023-06055-y"
+      },
+      {
+        "title": "Cousins et al., 2025 · Modello coalescente strutturato",
+        "url": "https://doi.org/10.1038/s41588-025-02117-1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,376 @@
+{
+  "id": "flores",
+  "name": "Homo floresiensis",
+  "subtitle": "Flores, l'isola dei corpi minuti",
+  "sources": [
+    {
+      "id": "flores-soabasin",
+      "authors": "A. Brumm et al.",
+      "title": "Age and context of the oldest known hominin fossils from Flores",
+      "year": 2016,
+      "journal": "Nature",
+      "doi": "10.1038/nature17663",
+      "evidence": "Stratigrafia fluviale, ceneri vulcaniche, denti fossili e indicatori ambientali.",
+      "limits": "Data il deposito di Mata Menge. La genealogia con Liang Bua è un'inferenza.",
+      "url": "https://doi.org/10.1038/nature17663",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "flores-ancient",
+      "authors": "Y. Kaifu et al.",
+      "title": "Early evolution of small body size in Homo floresiensis",
+      "year": 2024,
+      "journal": "Nature Communications",
+      "doi": "10.1038/s41467-024-50649-7",
+      "evidence": "Istologia di un omero adulto e anatomia dentaria di Mata Menge.",
+      "limits": "Dimensioni dell'osso completo stimate da una diafisi. Una derivazione da erectus rimane un modello.",
+      "url": "https://doi.org/10.1038/s41467-024-50649-7",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "flores-lithic",
+      "authors": "A. Brumm et al.",
+      "title": "Hominins on Flores, Indonesia, by one million years ago",
+      "year": 2010,
+      "journal": "Nature",
+      "doi": "10.1038/nature08844",
+      "evidence": "Manufatti litici in posto a Wolo Sege, sotto un deposito vulcanico datato.",
+      "limits": "I manufatti non identificano la specie che li realizzò.",
+      "url": "https://doi.org/10.1038/nature08844",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "flores-brown",
+      "authors": "P. Brown et al.",
+      "title": "A new small-bodied hominin from the Late Pleistocene of Flores, Indonesia",
+      "year": 2004,
+      "journal": "Nature",
+      "doi": "10.1038/nature02999",
+      "evidence": "Descrizione anatomica e istituzione della specie su LB1.",
+      "limits": "Le prime età stratigrafiche sono superate. Statura e volume derivano da un individuo.",
+      "url": "https://doi.org/10.1038/nature02999",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "flores-more",
+      "authors": "M. J. Morwood et al.",
+      "title": "Further evidence for small-bodied hominins from the Late Pleistocene of Flores, Indonesia",
+      "year": 2005,
+      "journal": "Nature",
+      "doi": "10.1038/nature04022",
+      "evidence": "Ulteriori resti scheletrici e mandibolari da Liang Bua.",
+      "limits": "Per cronologia e comportamenti confrontare i riesami del 2016 e del 2026.",
+      "url": "https://doi.org/10.1038/nature04022",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "flores-chronology",
+      "authors": "T. Sutikna et al.",
+      "title": "Revised stratigraphy and chronology for Homo floresiensis at Liang Bua in Indonesia",
+      "year": 2016,
+      "journal": "Nature",
+      "doi": "10.1038/nature17179",
+      "evidence": "Nuovi scavi e datazioni del deposito rivedono il rapporto fra fossili e livelli.",
+      "limits": "La finestra dei manufatti attribuiti è più ampia di quella scheletrica.",
+      "url": "https://doi.org/10.1038/nature17179",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "flores-space",
+      "authors": "T. Sutikna et al.",
+      "title": "The spatio-temporal distribution of archaeological and faunal finds at Liang Bua (Flores, Indonesia) in light of the revised chronology for Homo floresiensis",
+      "year": 2018,
+      "journal": "Journal of Human Evolution",
+      "doi": "10.1016/j.jhevol.2018.07.001",
+      "evidence": "Successione delle faune e delle materie prime nell'area di scavo.",
+      "limits": "Una discontinuità tecnica non identifica da sola una nuova popolazione.",
+      "url": "https://doi.org/10.1016/j.jhevol.2018.07.001",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "flores-argu",
+      "authors": "D. Argue et al.",
+      "title": "The affinities of Homo floresiensis based on phylogenetic analyses of cranial, dental, and postcranial characters",
+      "year": 2017,
+      "journal": "Journal of Human Evolution",
+      "doi": "10.1016/j.jhevol.2017.02.006",
+      "evidence": "Analisi filogenetica di caratteri dello scheletro a favore di una ramificazione antica.",
+      "limits": "Risultato dipendente da taxa, caratteri e modello. Precede i ritrovamenti descritti nel 2024.",
+      "url": "https://doi.org/10.1016/j.jhevol.2017.02.006",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "flores-foot",
+      "authors": "W. L. Jungers et al.",
+      "title": "The foot of Homo floresiensis",
+      "year": 2009,
+      "journal": "Nature",
+      "doi": "10.1038/nature07989",
+      "evidence": "Confronto anatomico dei piedi e degli arti inferiori di LB1.",
+      "limits": "La forma suggerisce aspetti della biomeccanica, senza misurare velocità o andatura.",
+      "url": "https://doi.org/10.1038/nature07989",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "flores-wrist",
+      "authors": "M. W. Tocheri et al.",
+      "title": "The primitive wrist of Homo floresiensis and its implications for hominin evolution",
+      "year": 2007,
+      "journal": "Science",
+      "doi": "10.1126/science.1147143",
+      "evidence": "Anatomia comparata di tre carpali di LB1.",
+      "limits": "Il polso è una sola componente della funzione manuale.",
+      "url": "https://doi.org/10.1126/science.1147143",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "flores-hip",
+      "authors": "K. L. Lewton et al.",
+      "title": "Comparative Morphometric Analysis of the Pelvis of LB 1 (Homo floresiensis)",
+      "year": 2026,
+      "journal": "American Journal of Biological Anthropology",
+      "doi": "10.1002/ajpa.70339",
+      "evidence": "Morfometria del bacino di LB1 a confronto con altri ominini e primati.",
+      "limits": "Un bacino parziale impone vincoli alla ricostruzione locomotoria.",
+      "url": "https://doi.org/10.1002/ajpa.70339",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "flores-volume",
+      "authors": "D. Kubo, R. T. Kono e Y. Kaifu",
+      "title": "Brain size of Homo floresiensis and its evolutionary implications",
+      "year": 2013,
+      "journal": "Proceedings of the Royal Society B",
+      "doi": "10.1098/rspb.2013.0338",
+      "evidence": "Ricostruzione tomografica ad alta risoluzione dell'endocranio di LB1.",
+      "limits": "Il volume di un individuo è diverso da una media e non misura la cognizione.",
+      "url": "https://doi.org/10.1098/rspb.2013.0338",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "flores-stone",
+      "authors": "A. Brumm et al.",
+      "title": "Early stone technology on Flores and its implications for Homo floresiensis",
+      "year": 2006,
+      "journal": "Nature",
+      "doi": "10.1038/nature04618",
+      "evidence": "Confronto dei procedimenti di scheggiatura a Mata Menge e Liang Bua.",
+      "limits": "Somiglianze tecniche non dimostrano continuità genealogica o un determinato linguaggio.",
+      "url": "https://doi.org/10.1038/nature04618",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "flores-taph",
+      "authors": "E. G. Veatch et al.",
+      "title": "Taphonomic analysis at Liang Bua reveals the behavioral and technological capabilities of Homo floresiensis",
+      "year": 2026,
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.aeb7219",
+      "evidence": "Segni di morso, taglio e alterazione termica sulle ossa animali.",
+      "limits": "L'accesso secondario alle carcasse è inferito dal campione esaminato.",
+      "url": "https://doi.org/10.1126/sciadv.aeb7219",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "flores-rain",
+      "authors": "M. K. Gagan et al.",
+      "title": "Onset of summer aridification and the decline of Homo floresiensis at Liang Bua 61,000 years ago",
+      "year": 2025,
+      "journal": "Communications Earth & Environment",
+      "doi": "10.1038/s43247-025-02961-3",
+      "evidence": "Indicatori chimici in una stalagmite e abbondanza locale di stegodon.",
+      "limits": "Una correlazione locale non spiega da sola un'estinzione insulare.",
+      "url": "https://doi.org/10.1038/s43247-025-02961-3",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "flores-genomes",
+      "authors": "S. Tucci et al.",
+      "title": "Evolutionary history and adaptation of a human pygmy population of Flores Island, Indonesia",
+      "year": 2018,
+      "journal": "Science",
+      "doi": "10.1126/science.aar8486",
+      "evidence": "Varianti genomiche di abitanti contemporanei di Flores.",
+      "limits": "Manca un genoma antico di riferimento di Homo floresiensis. I risultati valgono per i campioni studiati.",
+      "url": "https://doi.org/10.1126/science.aar8486",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "flores-irhoud",
+      "authors": "J.-J. Hublin et al.",
+      "title": "New fossils from Jebel Irhoud, Morocco and the pan-African origin of Homo sapiens",
+      "year": 2017,
+      "journal": "Nature",
+      "doi": "10.1038/nature22336",
+      "evidence": "Marcatore africano per la contemporaneità su scala planetaria.",
+      "limits": "La presenza in Marocco non documenta una compresenza a Flores.",
+      "url": "https://doi.org/10.1038/nature22336",
+      "type": "Articolo sottoposto a revisione paritaria"
+    }
+  ],
+  "discoveries": [
+    "2003 · Rinvenimento dello scheletro LB1 a Liang Bua.",
+    "2004–2005 · Descrizione della specie e di ulteriori individui.",
+    "2010 · Manufatti di Wolo Sege documentano attività umana almeno un milione di anni fa.",
+    "2016 · Revisione stratigrafica di Liang Bua e datazione del contesto di Mata Menge.",
+    "2024 · Descrizione di un omero adulto eccezionalmente minuto a Mata Menge.",
+    "2025–2026 · Nuovi dati sul monsone, sulle carcasse e sulla morfologia pelvica."
+  ],
+  "specimens": [
+    "LB1 · Olotipo, scheletro adulto parziale con cranio, Liang Bua.",
+    "LB6 · Individuo rappresentato anche da una seconda mandibola di Liang Bua.",
+    "Mata Menge · Omero adulto parziale e denti di una popolazione antica affine, circa 700 ka.",
+    "Wolo Sege · Industria litica priva di fossili umani diagnostici."
+  ],
+  "glossary": {
+    "Endocranio": "Spazio interno della scatola cranica ricostruibile dal suo calco.",
+    "Olotipo": "Esemplare di riferimento a cui è legato il nome zoologico.",
+    "Carpale": "Ciascuno degli elementi ossei che compongono il polso.",
+    "Tafonomia": "Studio dei processi che interessano un organismo fra la morte e il ritrovamento.",
+    "Speleotema": "Deposito minerale di grotta, come una stalagmite.",
+    "Nanismo insulare": "Riduzione evolutiva della taglia corporea in una popolazione insulare.",
+    "Età minima": "Soglia di antichità. L'evento può essere più antico del valore indicato."
+  },
+  "chapters": [
+    {
+      "title": "Nel letto di un torrente",
+      "level": "Documentato",
+      "sources": [
+        "flores-soabasin",
+        "flores-ancient",
+        "flores-lithic"
+      ],
+      "paragraphs": [
+        "Per incontrare i primi esseri umani di Flores conviene uscire dalla grotta che li ha resi celebri. Nel centro dell'isola indonesiana, a Mata Menge, uno strato di arenaria segna il passaggio di un piccolo corso d'acqua scomparso. Circa settecentomila anni fa, nella conca di So'a si stendeva un paesaggio relativamente asciutto. Gli indizi botanici e geologici indicano praterie aperte e zone umide. Nell'acqua e lungo le rive si raccoglievano materiali differenti per origine e per peso. Fra i resti di animali, frammenti di denti e ossa umane finirono nello stesso archivio. Il torrente li ha consegnati al presente senza conservare l'esatta relazione che li univa in vita.",
+        "Chi si fermasse davanti alla carta dell'Indonesia potrebbe immaginare un cammino lungo le isole sino a Flores durante le glaciazioni. Abbassando il mare emergevano ampie distese della piattaforma continentale della Sonda, ma alcuni stretti profondi continuavano a separare le terre. Per arrivare a Flores, degli ominini attraversarono acqua marina. Lo sappiamo da quel che hanno lasciato sulla riva d'arrivo. La data della traversata, la riva dalla quale partirono, il mezzo che li sostenne e il grado di intenzionalità del viaggio restano fuori dalla portata degli scavi.",
+        "A Wolo Sege, ancora nel bacino di So'a, strumenti in pietra si trovavano sotto un deposito vulcanico di circa un milione di anni. La cenere dà una soglia di antichità alle attività che le stanno sotto. Nessun cranio di quel livello consente di assegnare un nome a chi scheggiò le pietre. Sulla carta scientifica di Flores devono perciò convivere due segni differenti, uno per un'attività riconoscibile, un altro per un corpo riconoscibile. Fra il primo sito e le ossa di Mata Menge passano già più generazioni di quante l'immaginazione riesca facilmente ad abbracciare."
+      ]
+    },
+    {
+      "title": "La persona sotto il calcare",
+      "level": "Documentato",
+      "sources": [
+        "flores-brown",
+        "flores-more",
+        "flores-chronology"
+      ],
+      "paragraphs": [
+        "Liang Bua è una cavità calcarea nella parte occidentale dell'isola. Nel 2003 una squadra di scavo indonesiana e australiana vi riportò alla luce parte dello scheletro di un individuo adulto. Lo scheletro ricevette la sigla LB1. La statura, ricostruita intorno a un metro, poteva suggerire a una prima occhiata quella di una bambina. I denti e la maturazione scheletrica raccontavano un'altra storia. Anche la combinazione di dimensioni craniche, forma della mandibola e proporzioni delle ossa differiva da quella di una persona attuale di bassa statura. La diagnosi richiese di confrontare tutte queste regioni insieme.",
+        "Nel 2004 Peter Brown e colleghi proposero il nome Homo floresiensis. LB1 divenne l'olotipo, l'individuo al quale il nome resta ancorato. È un incarico particolare per uno scheletro. Definisce il punto di riferimento al quale tornare quando emerge un nuovo reperto, eppure non può rivelare da solo quanto variassero fra loro i membri della popolazione. Quando un valore, per esempio la capacità della scatola cranica, proviene da LB1 soltanto, va ricordato il nome di quell'individuo. Scrivere una media della specie richiederebbe una serie di crani sufficientemente conservati.",
+        "La discussione iniziale riguardò anche la possibilità che LB1 fosse un individuo della nostra specie con una patologia della crescita. Un caso clinico particolare può alterare in modo vistoso l'aspetto di uno scheletro. La spiegazione doveva tuttavia rendere conto dei caratteri osservati in più distretti anatomici e, col procedere degli scavi, in più persone. Nel 2005 furono descritti ulteriori elementi degli arti e una seconda mandibola, LB6. Ciò che poteva apparire l'anomalia tutta individuale di uno scheletro acquistava una dimensione di popolazione. I reperti molto più antichi di Mata Menge avrebbero aggiunto un nuovo termine di confronto."
+      ]
+    },
+    {
+      "title": "Entrare in una grotta attraverso il tempo",
+      "level": "Documentato",
+      "sources": [
+        "flores-chronology",
+        "flores-space"
+      ],
+      "paragraphs": [
+        "Nelle prime ricostruzioni, LB1 risultava sorprendentemente recente, circa diciottomila anni fa. Si parlò della persistenza della sua popolazione quasi sino alla fine dell'ultima glaciazione. Una parte della difficoltà emerge se si immagina il fondo della grotta tagliato da un piano verticale. Nella stessa parete sono visibili antichi sedimenti rimasti in rilievo, superfici erose e apporti successivi che si sono addossati ai depositi già presenti. Due campioni prelevati alla medesima profondità sotto il pavimento odierno possono appartenere a storie geologiche distanti.",
+        "Con l'allargamento degli scavi, Thomas Sutikna e colleghi poterono seguire i contatti fra quei depositi attraverso più settori. Nel 2016 pubblicarono la revisione. Le ossa attribuite a Homo floresiensis a Liang Bua risalgono all'incirca all'intervallo fra centomila e sessantamila anni fa. Gli strumenti che gli autori considerano associabili alla popolazione si distribuiscono in una sequenza più ampia, da circa centonovantamila a cinquantamila anni fa. Il lettore che sovrapponga queste barre in una cronologia osserva differenze di decine di millenni semplicemente passando dall'osso all'attività attribuita.",
+        "Anche la vecchia data ha un posto nella storia scientifica del sito. Mostra perché datare bene un materiale non basti a stabilire l'età di un altro oggetto trovato nelle vicinanze. Prima viene la domanda stratigrafica, cioè se i due materiali abbiano realmente condiviso lo stesso episodio di deposizione. Seguono la scelta del campione e la valutazione della misura. La cronologia rivista ha cambiato soprattutto le domande sul rapporto con Homo sapiens. Il lungo periodo di possibile compresenza immaginato sulla scorta delle date iniziali perse la sua base locale."
+      ]
+    },
+    {
+      "title": "L'arto di un adulto",
+      "level": "Fortemente supportato",
+      "sources": [
+        "flores-ancient",
+        "flores-soabasin",
+        "flores-argu"
+      ],
+      "paragraphs": [
+        "A Mata Menge un frammento della parte centrale dell'omero bastava a porre un'alternativa importante. Un osso molto piccolo potrebbe appartenere a un bambino di una popolazione di statura normale oppure a un adulto di una popolazione minuta. Qui la forma esterna era soltanto il principio dell'indagine. La struttura del tessuto osseo ha permesso al gruppo di Yousuke Kaifu di riconoscere un individuo adulto. La ricostruzione pubblicata nel 2024 colloca il suo omero fra il nove e il sedici per cento al di sotto di quello di LB1 per le dimensioni considerate dagli autori. Si tratta di una stima da un frammento, con i margini che questo comporta.",
+        "L'importanza del confronto si coglie invertendo l'ordine della scoperta. Inizialmente un piccolo scheletro del Pleistocene superiore aveva fatto immaginare una riduzione recente su un'isola. Ora il bacino di So'a ci mette davanti a un adulto eccezionalmente piccolo già seicentomila anni abbondanti prima dell'individuo di Liang Bua. La riduzione di taglia, se partiamo da antenati più grandi, doveva essersi prodotta assai presto. L'animale giunto sull'isola e il primo abitante di cui possediamo ossa identificabili sono due pagine distinte della stessa indagine.",
+        "Un dente di Mata Menge mostra affinità con alcuni primi Homo erectus di Giava. Questo dato sostiene una discendenza da gruppi asiatici di erectus seguita da una storia insulare. Esiste anche un modello che collega Flores a una ramificazione più antica del genere Homo. Un'analisi comparativa di Debbie Argue e colleghi ha infatti ottenuto posizioni vicine a forme africane più antiche. Lo scenario richiede una dispersione asiatica ancora scarsamente documentata da fossili. D'altra parte il modello di una derivazione da erectus deve spiegare un insieme inconsueto di caratteri degli arti. Gli uomini di Mata Menge aggiungono prove di grande peso, ma non equivalgono a una successione osservata di genitori e figli."
+      ]
+    },
+    {
+      "title": "I piedi, il polso e il movimento",
+      "level": "Documentato",
+      "sources": [
+        "flores-foot",
+        "flores-wrist",
+        "flores-hip",
+        "flores-more"
+      ],
+      "paragraphs": [
+        "Ricostruire il passo di LB1 richiede di accostare ossa di forma piuttosto diversa dalle nostre. Il piede è lungo rispetto alla gamba. L'alluce è allineato agli altri raggi e l'insieme dello scheletro sostiene chiaramente una locomozione bipede. Altri particolari, incluse proporzioni interne del piede, differiscono dall'assetto abituale della nostra specie. Si può quindi rappresentare un individuo eretto, capace di spostarsi sul terreno, senza imporgli la lunghezza del nostro passo. Quanto fosse veloce, come distribuisse quotidianamente le sue percorrenze e se corresse su lunghe distanze sono problemi ulteriori.",
+        "Nell'analisi pubblicata nel 2026, Kristi Lewton e colleghi hanno confrontato il bacino di LB1 con bacini umani, di altri primati e di ominini fossili. Includere questa regione è essenziale perché il peso del tronco deve passare attraverso l'anca per arrivare al suolo. Dall'alto verso il basso, il movimento dipende da una catena di articolazioni. La conformazione del bacino di LB1 ha affinità con altri rappresentanti del genere Homo. Interpretare un piede relativamente lungo come prova di un'andatura complessivamente simile a quella di un'australopitecina avrebbe trascurato proprio questa catena.",
+        "Il polso racconta una storia diversa ancora. Tre ossa carpali di LB1 conservano conformazioni anatomiche antiche, discusse da Matthew Tocheri e colleghi nel confronto con gli ominini successivi. Fra le dita che impugnano una pietra e la spalla che la muove lavorano insieme molte superfici articolari. Da tre piccoli elementi si ricava un dato prezioso sulla storia della forma della mano. Per valutare le abilità manuali servono anche le pietre, perché quelle conservano il risultato di gesti effettivamente compiuti. Il lavoro dell'anatomista e quello dell'archeologo si incontrano qui sullo stesso problema, partendo da archivi materiali diversi."
+      ]
+    },
+    {
+      "title": "Una cavità di 426 centimetri cubici",
+      "level": "Documentato",
+      "sources": [
+        "flores-volume",
+        "flores-brown",
+        "flores-stone"
+      ],
+      "paragraphs": [
+        "LB1 ha una scatola cranica bassa e piccola. La descrizione iniziale proponeva una capacità endocranica di circa 380 centimetri cubici. Una ricostruzione tridimensionale successiva di Daisuke Kubo, Reiko Kono e Yousuke Kaifu, condotta su immagini tomografiche ad alta risoluzione, ha fornito una stima di 426 centimetri cubici. La differenza riguarda il metodo con cui si ricostruisce la superficie interna dell'osso, inclusi tratti sottili e danneggiati. In un museo digitale le due cifre possono perciò comparire una accanto all'altra, purché ciascuna abbia la sua data e il suo metodo.",
+        "Quello spazio conteneva il cervello e le strutture che lo accompagnavano. Il calco descrive la cavità al momento della morte. Non conserva circuiti nervosi, memorie apprese o abitudini sociali. La domanda su che cosa sapesse fare l'abitante di Flores diventa molto più concreta quando si prende in mano un nucleo di pietra e se ne segue la sequenza di distacchi. Per ottenere un margine affilato occorreva selezionare una superficie e impartire un colpo secondo un angolo adatto. Da una scheggia si può risalire ad alcune scelte compiute durante la sua produzione. Queste osservazioni avrebbero lo stesso valore anche senza conoscere il volume del cranio rinvenuto nella grotta."
+      ]
+    },
+    {
+      "title": "Chi arrivava per primo alla carcassa",
+      "level": "Fortemente supportato",
+      "sources": [
+        "flores-taph",
+        "flores-space",
+        "flores-stone"
+      ],
+      "paragraphs": [
+        "Per anni un'immagine suggestiva ha accompagnato i racconti di Flores. Un gruppo di piccoli esseri umani abbatteva uno stegodonte, il proboscidato insulare, ne trasportava la carne al riparo e la cuoceva. Il giacimento offriva realmente resti di stegodonte, pietre scheggiate e ossa umane. Per stabilire la sequenza di gesti che collegava questi elementi serviva tuttavia un'analisi delle superfici. Incidere una costa con il margine di una scheggia produce tracce diverse dal morso di un predatore. Anche il punto in cui il segno ricorre conta, perché alcune parti dello scheletro trattengono molta carne mentre altre offrono poco nutrimento.",
+        "Nel 2026 E. Grace Veatch e colleghi hanno pubblicato uno studio tafonomico sistematico. La distribuzione delle parti scheletriche e dei segni è compatibile con un accesso iniziale dei varani di Komodo a molte carcasse di stegodonte e con un successivo recupero di risorse da parte degli ominini. Esistono autentici segni di taglio. La revisione cambia il momento in cui l'animale entrava nella disponibilità umana. Per una comunità insulare riconoscere e sfruttare una risorsa già aperta da un altro predatore poteva richiedere esperienza dei luoghi, della materia animale e dei rischi. La parola «recupero» designa una strategia ecologica, senza stabilire una gerarchia di abilità.",
+        "Lo stesso lavoro ha ripreso in esame le ossa scure. Un osso annerito può risultare bruciato oppure aver assorbito composti di manganese dopo la deposizione. L'analisi ha trovato scarso sostegno a un uso abituale del fuoco nei livelli in esame. Questa conclusione precisa il contenuto del deposito osservato. Sarebbe un passo eccessivo trasformarla in un giudizio definitivo sulla capacità di accendere o trasportare il fuoco di tutti gli abitanti dell'isola, lungo l'intera durata della loro storia."
+      ]
+    },
+    {
+      "title": "Trasmettere un gesto",
+      "level": "Plausibile",
+      "sources": [
+        "flores-stone",
+        "flores-taph",
+        "flores-space"
+      ],
+      "paragraphs": [
+        "A Mata Menge e a Liang Bua i ricercatori hanno riconosciuto somiglianze nei procedimenti di scheggiatura. Si riconoscono sequenze ripetute nella scelta dei nuclei, nei punti d'impatto e nei margini che ne risultano. La continuità è interessante proprio perché attraversa contesti e millenni differenti. Può indicare il persistere di soluzioni efficaci e processi di apprendimento. Può anche riflettere proprietà dei materiali che suggeriscono ripetutamente uno stesso gesto. Per decidere quanto pesò la tradizione occorrerebbero più siti intermedi, dove seguire trasformazioni graduali o riconoscere una discontinuità.",
+        "È facile dare voce a una persona che insegna a scheggiare, molto più difficile dimostrare in quale modo comunicasse. Guardare un gesto, imitarlo, ricevere aiuto diretto e scambiarsi parole sono modi diversi di imparare. Le schegge testimoniano una competenza applicata, ma la registrazione del gesto si ferma prima del suono. La lingua parlata dagli abitanti di Flores, l'organizzazione delle loro famiglie, il trattamento dei morti e gli eventuali riti rimangono senza evidenze diagnostiche in questi siti. Anche per l'alimentazione il quadro è selettivo. Una costa incisa ha una probabilità di conservarsi incomparabilmente maggiore rispetto a un frutto raccolto e consumato."
+      ]
+    },
+    {
+      "title": "Quando la pioggia cambiò",
+      "level": "Plausibile",
+      "sources": [
+        "flores-rain",
+        "flores-taph",
+        "flores-space"
+      ],
+      "paragraphs": [
+        "Poco lontano da Liang Bua, nella cavità di Liang Luar, una stalagmite ha registrato nelle sue concrezioni la chimica delle acque percolate dalla superficie. Il rapporto tra magnesio e calcio e la composizione isotopica dell'ossigeno rispondono in maniera diversa alla quantità e alla stagionalità delle precipitazioni. Nel 2025 Michael Gagan e colleghi hanno incrociato questi segnali per ricostruire come variasse la disponibilità d'acqua nelle stagioni umide e secche. Fra circa sessantunmila e cinquantacinquemila anni fa, le precipitazioni estive stimate raggiunsero valori particolarmente bassi. Nella sequenza di Liang Bua calava anche l'abbondanza relativa degli stegodon.",
+        "Se una valle offre meno acqua, gli erbivori possono cambiare percorso. Gli esseri umani che sfruttano quegli animali o dipendono dalle stesse sorgenti possono spostarsi a loro volta. È una spiegazione plausibile della rarefazione dei reperti in un luogo, rafforzata dalla disponibilità di due archivi indipendenti. La stalagmite registra però variazioni idrologiche locali. Per dire che il cambiamento causò l'estinzione su tutta Flores occorrerebbe conoscere la situazione delle altre valli, delle coste e dei rifugi più umidi. Un abbandono del bacino di Liang Bua potrebbe apparire, osservato da un solo scavo, identico alla fine dell'intera popolazione."
+      ]
+    },
+    {
+      "title": "L'ultima traccia e il primo vicino",
+      "level": "Sconosciuto",
+      "sources": [
+        "flores-chronology",
+        "flores-space",
+        "flores-genomes",
+        "flores-irhoud"
+      ],
+      "paragraphs": [
+        "Gli esseri umani di Flores furono contemporanei di Homo sapiens su scala planetaria. Già circa trecentomila anni fa in Africa vivevano gruppi assegnati a una fase antica della nostra specie. Il periodo coperto dai fossili di Liang Bua, da circa centomila a sessantamila anni fa, cade interamente entro questa storia. Si possono dunque contare circa quarantamila anni fra gli estremi della finestra fossile locale, rendendo esplicito il tipo di prova usato. Il calcolo descrive due storie sullo stesso pianeta. Per collocarle insieme nello stesso bacino idrografico serve un'altra serie di osservazioni.",
+        "Nella grotta, attorno a quarantaseimila anni fa, cambia l'uso delle materie prime litiche. Sutikna e colleghi hanno proposto un legame con l'arrivo di Homo sapiens. Anche accogliendo questa lettura, la discontinuità in un deposito non mostra due popolazioni occupare insieme la grotta. Il mare separa Flores dalle altre isole e il sedimento non conserva ogni stagione di frequentazione. Un incontro rimane possibile, privo per ora di dimostrazione diretta. Restano senza risposta anche le domande sul ruolo della competizione e sulla possibilità che piccoli gruppi siano sopravvissuti più a lungo altrove sull'isola.",
+        "La genetica delle persone viventi ha consentito di formulare una verifica supplementare. Serena Tucci e colleghi hanno studiato abitanti contemporanei di Flores di bassa statura. Nei campioni sono emerse ascendenze arcaiche riconducibili a Neanderthal e Denisoviani, senza un segnale identificabile con Homo floresiensis. La vicinanza geografica e una statura in parte simile possono derivare da storie indipendenti. Manca tuttora un genoma di riferimento degli individui di Liang Bua che permetta un confronto diretto. Fra i futuri reperti più preziosi vi sarebbe anche un sito ben datato fuori dalla grotta. Un piccolo frammento trovato in un'altra valle potrebbe dirci, sulla fine di questa popolazione, qualcosa che nessuna nuova misura del cranio di LB1 sarà mai in grado di rivelare."
+      ]
+    }
+  ],
+  "version": "1.0",
+  "reviewed": "2026-11-23"
+}

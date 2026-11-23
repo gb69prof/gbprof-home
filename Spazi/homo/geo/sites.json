@@ -1,0 +1,1099 @@
+[
+  {
+    "id": "irhoud",
+    "name": "Jebel Irhoud",
+    "species": [
+      "sapiens"
+    ],
+    "region": "Africa · Marocco",
+    "coordinates": [
+      -8.87,
+      31.86
+    ],
+    "specimen": "Irhoud 10 e Irhoud 11",
+    "age": "315 ± 34 ka per la serie associata",
+    "spans": [
+      [
+        281,
+        349
+      ]
+    ],
+    "method": "Termoluminescenza di selci riscaldate, con controllo ESR/serie U su Irhoud 3.",
+    "discovery": "Primi resti nel 1961. Nuovi scavi dal 2004, pubblicati nel 2017.",
+    "description": "Un cranio frammentario e una mandibola adulta documentano un insieme di tratti facciali e dentali affini ai sapiens e una forma endocranica più allungata.",
+    "institution": "INSAP, Rabat, partner marocchino del progetto.",
+    "limits": "La media delle selci data un contesto archeologico. Non identifica un luogo di nascita unico della specie.",
+    "sources": [
+      {
+        "title": "Hublin et al., 2017 · New fossils from Jebel Irhoud",
+        "url": "https://doi.org/10.1038/nature22336"
+      },
+      {
+        "title": "Richter et al., 2017 · The age of the hominin fossils from Jebel Irhoud",
+        "url": "https://doi.org/10.1038/nature22335"
+      },
+      {
+        "title": "ROCEEH · Località africane, coordinate",
+        "url": "https://www.roceeh.uni-tuebingen.de/api/Africa-localities-lithics-hominins-paleofauna-120ka-1800ka.php"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "evidenceType": "Reperto fossile",
+    "dateLevel": "Fortemente supportato",
+    "ageType": "interval",
+    "minKa": 281,
+    "maxKa": 349
+  },
+  {
+    "id": "omo",
+    "name": "Omo Kibish",
+    "species": [
+      "sapiens"
+    ],
+    "region": "Africa · Etiopia",
+    "coordinates": [
+      35.93,
+      5.4
+    ],
+    "specimen": "Omo I, Kamoya’s Hominid Site",
+    "age": "Più antico del tufo sovrastante, datato 233 ± 22 ka",
+    "spans": [],
+    "method": "Correlazione geochimica della cenere KHS con un’eruzione dello Shala e datazione argon-argon del materiale vulcanico.",
+    "discovery": "1967, spedizione nella bassa valle dell’Omo.",
+    "description": "Cranio e resti postcraniali della formazione di Kibish. La cenere sovrapposta al deposito fossilifero consente di stabilire una soglia minima di antichità.",
+    "institution": "National Museum of Ethiopia, Addis Abeba.",
+    "limits": "Un limite inferiore aperto non si colloca automaticamente in una finestra temporale. Il punto resta consultabile con Tutte le epoche.",
+    "sources": [
+      {
+        "title": "Vidal et al., 2022 · Age of the oldest known Homo sapiens from eastern Africa",
+        "url": "https://doi.org/10.1038/s41586-021-04275-8"
+      },
+      {
+        "title": "Shea, 2008 · The Middle Stone Age archaeology of the Lower Omo Valley Kibish Formation",
+        "url": "https://doi.org/10.1016/j.jhevol.2008.05.014"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "ageType": "minimum",
+    "evidenceType": "Reperto fossile",
+    "dateLevel": "Fortemente supportato",
+    "minKa": null,
+    "maxKa": null,
+    "ageThresholds": [
+      {
+        "reperto": "Omo I, tufo sovrapposto",
+        "minKa": 233,
+        "sigmaKa": 22
+      }
+    ]
+  },
+  {
+    "id": "rising-star",
+    "name": "Rising Star · Dinaledi",
+    "species": [
+      "naledi"
+    ],
+    "region": "Africa · Sudafrica",
+    "coordinates": [
+      27.71,
+      -26.02
+    ],
+    "specimen": "DH1, materiale tipo di Homo naledi",
+    "age": "335–236 ka per il deposito fossilifero",
+    "spans": [
+      [
+        236,
+        335
+      ]
+    ],
+    "method": "U-Th sulle concrezioni, OSL sui sedimenti, serie U ed ESR su denti confrontate in un modello stratigrafico.",
+    "discovery": "2013, recuperi nella camera Dinaledi.",
+    "description": "Il materiale cranico di DH1 e le numerose altre ossa documentano una combinazione di caratteristiche della mano, dell’arto inferiore e della volta cranica.",
+    "institution": "Evolutionary Studies Institute, University of the Witwatersrand, Johannesburg.",
+    "limits": "L’intervallo riguarda la deposizione dei reperti studiati nella camera. I comportamenti proposti per spiegarla hanno un diverso grado di sostegno.",
+    "sources": [
+      {
+        "title": "Dirks et al., 2017 · The age of Homo naledi and associated sediments",
+        "url": "https://doi.org/10.7554/eLife.24231"
+      },
+      {
+        "title": "Berger et al., 2015 · Homo naledi, a new species of the genus Homo",
+        "url": "https://doi.org/10.7554/eLife.09560"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "evidenceType": "Reperto fossile",
+    "dateLevel": "Fortemente supportato",
+    "ageType": "interval",
+    "minKa": 236,
+    "maxKa": 335
+  },
+  {
+    "id": "ngandong",
+    "name": "Ngandong",
+    "species": [
+      "erectus"
+    ],
+    "region": "Asia · Giava, Indonesia",
+    "coordinates": [
+      111.5,
+      -7.2
+    ],
+    "specimen": "Ng 1 e serie delle calotte di Ngandong",
+    "age": "117–108 ka per il letto fossilifero",
+    "spans": [
+      [
+        108,
+        117
+      ]
+    ],
+    "method": "Modello bayesiano che integra datazione delle terrazze, luminescenza e analisi U/ESR della fauna associata.",
+    "discovery": "1931–1933, scavi del servizio geologico nelle Indie orientali olandesi.",
+    "description": "Nel terrazzo del Solo furono recuperate dodici calotte craniche e due tibie. La ricostruzione del contesto fluviale è essenziale per collocare questi resti nel tempo.",
+    "institution": "Collezioni geologiche indonesiane, Bandung.",
+    "limits": "Il punto rappresenta il settore del Solo, arrotondato. Un deposito alluvionale può riunire ossa trasportate; il suo intervallo non data la morte dell’ultimo erectus.",
+    "sources": [
+      {
+        "title": "Rizal et al., 2020 · Last appearance of Homo erectus at Ngandong",
+        "url": "https://doi.org/10.1038/s41586-019-1863-2"
+      },
+      {
+        "title": "Huffman et al., 2010 · Provenience reassessment of the 1931–1933 Ngandong Homo erectus",
+        "url": "https://paleoanthropology.org/ojs/index.php/paleo/article/view/603"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Settore del terrazzo del Solo nella carta di Rizal et al., posizione indicativa.",
+    "evidenceType": "Reperto fossile",
+    "dateLevel": "Fortemente supportato",
+    "ageType": "interval",
+    "minKa": 108,
+    "maxKa": 117
+  },
+  {
+    "id": "liang-bua",
+    "name": "Liang Bua",
+    "species": [
+      "flores"
+    ],
+    "region": "Asia · Flores, Indonesia",
+    "coordinates": [
+      120.44,
+      -8.53
+    ],
+    "specimen": "LB1 e altri resti della serie LB",
+    "age": "Fossili circa 100–60 ka. Manufatti attribuiti circa 190–50 ka.",
+    "spans": [
+      [
+        60,
+        100
+      ]
+    ],
+    "method": "Scavo stratigrafico tridimensionale, serie U, radiocarbonio e luminescenza su livelli e materiali associati.",
+    "discovery": "LB1 recuperato nel 2003. Prima descrizione nel 2004, revisione stratigrafica nel 2016.",
+    "description": "Lo scheletro parziale di un adulto, con cranio e numerosi elementi postcraniali, consente di stimare proporzioni e statura.",
+    "institution": "National Research and Development Centre for Archaeology, Giacarta, deposito indicato nella descrizione del 2009.",
+    "limits": "L’erosione dei sedimenti più antichi spiega perché materiali giovani si trovino a fianco dei fossili. Il filtro usa soltanto la finestra dei resti scheletrici.",
+    "sources": [
+      {
+        "title": "Sutikna et al., 2016 · Revised stratigraphy and chronology for Homo floresiensis",
+        "url": "https://doi.org/10.1038/nature17179"
+      },
+      {
+        "title": "Brown et al., 2004 · A new small-bodied hominin from the Late Pleistocene of Flores",
+        "url": "https://doi.org/10.1038/nature02999"
+      },
+      {
+        "title": "Larson et al., 2009 · Descriptions of the upper limb skeleton",
+        "url": "https://doi.org/10.1016/j.jhevol.2008.06.007"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "evidenceType": "Reperto fossile",
+    "dateLevel": "Fortemente supportato",
+    "ageType": "interval",
+    "minKa": 60,
+    "maxKa": 100
+  },
+  {
+    "id": "mata-menge",
+    "name": "Mata Menge",
+    "species": [
+      "flores"
+    ],
+    "region": "Asia · Flores, Indonesia",
+    "coordinates": [
+      121.1,
+      -8.69
+    ],
+    "specimen": "SOA-MM9, diafisi distale di omero",
+    "age": "Circa 700 ka",
+    "spans": [
+      [
+        700,
+        700
+      ]
+    ],
+    "method": "Cronologia stratigrafica del bacino di So’a, con datazioni dei depositi vulcanici e dei fossili associati.",
+    "discovery": "Frammento di omero recuperato nel 2013, studio pubblicato nel 2024.",
+    "description": "L’osso del braccio apparteneva a un individuo adulto di taglia molto piccola. Il confronto con Liang Bua estende la storia della piccola statura sull’isola.",
+    "institution": "Geological Museum, Bandung.",
+    "limits": "L’affinità con la popolazione di Liang Bua sostiene un legame evolutivo. La discendenza diretta fra individui rimane un’ipotesi.",
+    "sources": [
+      {
+        "title": "Kaifu et al., 2024 · Early evolution of small body size in Homo floresiensis",
+        "url": "https://doi.org/10.1038/s41467-024-50649-7"
+      },
+      {
+        "title": "Brumm et al., 2016 · Age and context of the oldest known hominin fossils from Flores",
+        "url": "https://doi.org/10.1038/nature17663"
+      }
+    ],
+    "level": "Fortemente supportato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "evidenceType": "Reperto fossile",
+    "dateLevel": "Fortemente supportato",
+    "ageType": "interval",
+    "minKa": 700,
+    "maxKa": 700
+  },
+  {
+    "id": "callao",
+    "name": "Callao Cave",
+    "species": [
+      "luzon"
+    ],
+    "region": "Asia · Luzon, Filippine",
+    "coordinates": [
+      121.82,
+      17.7
+    ],
+    "specimen": "CCH6, serie dentaria tipo, e metatarso CCH1",
+    "age": "Minimi originari di 50 e 67 ka; rianalisi propone un minimo di 134 ± 14 ka.",
+    "spans": [],
+    "method": "Serie dell’uranio. Il modello di assorbimento e di mobilità dell’uranio cambia la lettura dei risultati.",
+    "discovery": "Metatarso scoperto nel 2007, altri ritrovamenti nel 2011 e nel 2015. Specie descritta nel 2019.",
+    "description": "Denti, falangi della mano e del piede, un metatarso e un frammento di femore permettono un confronto anatomico, senza offrire elementi per un ritratto facciale.",
+    "institution": "National Museum of the Philippines, Manila.",
+    "limits": "Le soglie minime pubblicate non formano gli estremi di un periodo di sopravvivenza. Per questo il sito si trova tra quelli di tutte le epoche.",
+    "sources": [
+      {
+        "title": "Détroit et al., 2019 · A new species of Homo from the Late Pleistocene of the Philippines",
+        "url": "https://doi.org/10.1038/s41586-019-1067-9"
+      },
+      {
+        "title": "Grün e Stringer, 2023 · Direct dating of human fossils and the ever-changing story of human evolution",
+        "url": "https://doi.org/10.1016/j.quascirev.2023.108379"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "ageType": "minimum",
+    "evidenceType": "Reperto fossile",
+    "dateLevel": "Fortemente supportato",
+    "minKa": null,
+    "maxKa": null,
+    "ageThresholds": [
+      {
+        "reperto": "CCH1",
+        "minKa": 67,
+        "fonte": "Détroit et al., 2019"
+      },
+      {
+        "reperto": "CCH6-a",
+        "minKa": 50,
+        "fonte": "Détroit et al., 2019"
+      },
+      {
+        "reperto": "Revisione dei dati U-series",
+        "minKa": 134,
+        "sigmaKa": 14,
+        "fonte": "Grün e Stringer, 2023"
+      }
+    ]
+  },
+  {
+    "id": "denisova",
+    "name": "Denisova Cave",
+    "species": [
+      "neanderthal",
+      "denisova"
+    ],
+    "region": "Asia · Altaj, Siberia",
+    "coordinates": [
+      84.68,
+      51.4
+    ],
+    "specimen": "Denisova 11, «Denny»",
+    "age": "Circa 118–79 ka secondo il modello cronologico del 2019",
+    "spans": [
+      [
+        79.3,
+        118.1
+      ]
+    ],
+    "method": "Stima bayesiana da cronologia stratigrafica, osservazioni genetiche e datazioni associate.",
+    "discovery": "Identificazione genomica dei genitori pubblicata nel 2018.",
+    "description": "Un frammento di osso lungo conserva il genoma di un individuo femminile di prima generazione, con madre neanderthaliana e padre denisoviano.",
+    "institution": "Institute of Archaeology and Ethnography, Siberian Branch of the Russian Academy of Sciences, progetto di Denisova.",
+    "limits": "Il sito conserva almeno un figlio di quell’incontro. Non conosciamo il luogo in cui si incontrarono i genitori. Lo slider segue questo individuo, non l’intera sequenza della grotta.",
+    "sources": [
+      {
+        "title": "Slon et al., 2018 · The genome of the offspring of a Neandertal mother and a Denisovan father",
+        "url": "https://doi.org/10.1038/s41586-018-0455-x"
+      },
+      {
+        "title": "Douka et al., 2019 · Age estimates for hominin fossils at Denisova Cave",
+        "url": "https://doi.org/10.1038/s41586-018-0870-z"
+      },
+      {
+        "title": "Jacobs et al., 2025 · Pleistocene chronology and history of hominins and fauna at Denisova Cave",
+        "url": "https://doi.org/10.1038/s41467-025-60140-6"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "contact": true,
+    "evidenceType": "Reperto fossile",
+    "dateLevel": "Fortemente supportato",
+    "ageType": "interval",
+    "minKa": 79.3,
+    "maxKa": 118.1
+  },
+  {
+    "id": "baishiya",
+    "name": "Baishiya Karst Cave",
+    "species": [
+      "denisova"
+    ],
+    "region": "Asia · Altopiano tibetano",
+    "coordinates": [
+      102.57,
+      35.45
+    ],
+    "specimen": "Xiahe 1, mandibola; Xiahe 2, frammento di costola",
+    "age": "Xiahe 1 almeno 160 ka; Xiahe 2 nello strato 48–32 ka.",
+    "spans": [
+      [
+        32,
+        48
+      ]
+    ],
+    "method": "Serie U sulla crosta carbonatica della mandibola. Cronologia del sedimento per la costola. Identificazione mediante proteine antiche.",
+    "discovery": "Mandibola rinvenuta nel 1980, pubblicata nel 2019. Studio della costola pubblicato nel 2024.",
+    "description": "A circa 3.280 m di quota la costola Xiahe 2 aggiunge un osso postcraniale alla precedente scoperta della mandibola. La fauna lavorata documenta lo sfruttamento locale di risorse animali.",
+    "institution": "Lanzhou University, istituzione di riferimento del progetto.",
+    "limits": "Le ossa appartengono a intervalli distinti. Il simbolo temporale segue la costola, che ha due limiti pubblicati. Altri segnali derivano dal DNA dei sedimenti.",
+    "sources": [
+      {
+        "title": "Chen et al., 2019 · A late Middle Pleistocene Denisovan mandible",
+        "url": "https://doi.org/10.1038/s41586-019-1139-x"
+      },
+      {
+        "title": "Xia et al., 2024 · Middle and Late Pleistocene Denisovan subsistence",
+        "url": "https://doi.org/10.1038/s41586-024-07612-9"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "evidenceType": "Reperto fossile",
+    "dateLevel": "Fortemente supportato",
+    "ageType": "interval",
+    "minKa": 32,
+    "maxKa": 48,
+    "ageThresholds": [
+      {
+        "reperto": "Xiahe 1",
+        "minKa": 160
+      }
+    ]
+  },
+  {
+    "id": "harbin",
+    "name": "Harbin",
+    "species": [
+      "denisova"
+    ],
+    "region": "Asia · Heilongjiang, Cina",
+    "coordinates": [
+      126.6,
+      45.8
+    ],
+    "specimen": "HBSM2018-000018(A), cranio di Harbin",
+    "age": "Almeno 146 ka",
+    "spans": [],
+    "method": "Serie U direttamente sul cranio; provenienza ricostruita con confronti geochimici. DNA mitocondriale nel tartaro dentario.",
+    "discovery": "Rinvenimento riferito al 1933. Donazione nel 2018, descrizione nel 2021, studio molecolare nel 2025.",
+    "description": "Il cranio, proposto come tipo di Homo longi, conserva il segnale genetico mitocondriale denisoviano. Costituisce uno dei più importanti collegamenti fra anatomia cranica e dati molecolari in Asia.",
+    "institution": "Geoscience Museum, Hebei GEO University, Shijiazhuang.",
+    "limits": "La provenienza presso il ponte sul Songhua è riferita storicamente. Il segnaposto indica la città. La relazione molecolare di questo individuo non assegna automaticamente altri crani asiatici allo stesso gruppo.",
+    "sources": [
+      {
+        "title": "Shao et al., 2021 · Geochemical provenancing and direct dating of the Harbin archaic human cranium",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8454624/"
+      },
+      {
+        "title": "Fu et al., 2025 · Denisovan mitochondrial DNA from dental calculus of the Harbin cranium",
+        "url": "https://doi.org/10.1016/j.cell.2025.05.040"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Posizione orientativa della città. Punto di scavo e strato non documentati direttamente.",
+    "ageType": "minimum",
+    "evidenceType": "Reperto fossile",
+    "dateLevel": "Fortemente supportato",
+    "minKa": null,
+    "maxKa": null,
+    "ageThresholds": [
+      {
+        "reperto": "HBSM2018-000018(A)",
+        "minKa": 146
+      }
+    ]
+  },
+  {
+    "id": "bianfu",
+    "name": "Bianfu Cave",
+    "species": [
+      "denisova"
+    ],
+    "region": "Asia · Yunnan, Cina",
+    "coordinates": [
+      100.1654,
+      26.4621
+    ],
+    "specimen": "Due frammenti parietali, un radio prossimale e denti umani",
+    "age": "Livelli dei fossili circa 167–134 ka",
+    "spans": [
+      [
+        134,
+        167
+      ]
+    ],
+    "method": "Cronologia stratigrafica e radiometrica della cavità. Analisi proteomica per verificare l’affinità denisoviana.",
+    "discovery": "Scavo nel 2019, studi sulla cultura materiale e sui resti pubblicati nel settembre 2026.",
+    "description": "Le proteine hanno collegato ai Denisoviani frammenti cranici, un frammento del radio e due dei denti studiati. Pollini e fauna documentano localmente foreste di conifere e forme di foresta-steppa.",
+    "institution": "Yunnan Provincial Institute of Cultural Relics and Archaeology.",
+    "limits": "La sequenza culturale comprende un periodo più lungo di quello degli strati con fossili attribuiti. Il filtro usa i livelli dei fossili.",
+    "sources": [
+      {
+        "title": "Rao et al., 2026 · Ancient proteins identify various Denisovan remains from Southwest China",
+        "url": "https://doi.org/10.1038/s41586-026-10976-9"
+      },
+      {
+        "title": "Ruan et al., 2026 · Denisovans from southwestern China and their subsistence strategies",
+        "url": "https://doi.org/10.1038/s41586-026-10997-4"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "evidenceType": "Reperto fossile",
+    "dateLevel": "Fortemente supportato",
+    "ageType": "interval",
+    "minKa": 134,
+    "maxKa": 167
+  },
+  {
+    "id": "mauer",
+    "name": "Mauer · Grafenrain",
+    "species": [
+      "heidelberg"
+    ],
+    "region": "Europa · Germania",
+    "coordinates": [
+      8.8,
+      49.35
+    ],
+    "specimen": "Mauer 1, mandibola tipo",
+    "age": "609 ± 40 ka",
+    "spans": [
+      [
+        569,
+        649
+      ]
+    ],
+    "method": "ESR/serie U su denti di mammiferi e radiofluorescenza infrarossa su granuli di sabbia.",
+    "discovery": "1907, cava di sabbia di Grafenrain.",
+    "description": "Una mandibola robusta conserva una dentatura completa e serve da punto di riferimento nomenclaturale per Homo heidelbergensis. Il sedimento racconta un corso antico del Neckar.",
+    "institution": "Universität Heidelberg.",
+    "limits": "L’età del sito tipo precede il più antico sapiens del corpus. L’applicazione del nome ad altri reperti è una questione distinta.",
+    "sources": [
+      {
+        "title": "Wagner et al., 2010 · Radiometric dating of the type-site for Homo heidelbergensis",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2993404/"
+      },
+      {
+        "title": "Wagner et al., 2011 · Mauer, the type site: palaeoenvironment and age",
+        "url": "https://www.smnk.de/uploads/tx_psbpublication/WagnerEtAl2011QuatSciRev.pdf"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "evidenceType": "Reperto fossile",
+    "dateLevel": "Fortemente supportato",
+    "ageType": "interval",
+    "minKa": 569,
+    "maxKa": 649
+  },
+  {
+    "id": "sima",
+    "name": "Sima de los Huesos",
+    "species": [
+      "neanderthal"
+    ],
+    "region": "Europa · Spagna",
+    "coordinates": [
+      -3.52,
+      42.35
+    ],
+    "specimen": "Cranio 5 e campione scheletrico della Sima",
+    "age": "448 ± 15 ka per LU-6 (stima media modellata); la copertura del deposito aveva fornito un minimo vicino a 430 ka.",
+    "spans": [
+      [
+        433,
+        463
+      ]
+    ],
+    "method": "Luminescenza a singolo granulo e modello bayesiano per l’unità fossilifera LU-6. Confronto fra DNA nucleare, DNA mitocondriale e anatomia per l’affinità evolutiva.",
+    "discovery": "Primi resti umani riconosciuti nel 1976. Nuova analisi dei crani nel 2014 e del DNA nucleare nel 2016.",
+    "description": "Il deposito di Atapuerca conserva molti individui. Mascella, volto e denti mostrano caratteri che illuminano la storia iniziale della linea neanderthaliana.",
+    "institution": "Collezioni di Atapuerca, Burgos.",
+    "limits": "Il DNA nucleare colloca il campione sul ramo neanderthaliano. Il DNA mitocondriale racconta una storia più complessa. La scheda non conta la Sima come una specie distinta.",
+    "sources": [
+      {
+        "title": "Demuro et al., 2019 · New bracketing luminescence ages constrain the Sima de los Huesos hominin fossils to MIS 12",
+        "url": "https://doi.org/10.1016/j.jhevol.2018.12.003"
+      },
+      {
+        "title": "Arsuaga et al., 2014 · Neandertal roots: cranial and chronological evidence",
+        "url": "https://doi.org/10.1126/science.1253958"
+      },
+      {
+        "title": "Meyer et al., 2016 · Nuclear DNA sequences from the Middle Pleistocene Sima de los Huesos hominins",
+        "url": "https://doi.org/10.1038/nature17405"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "evidenceType": "Reperto fossile",
+    "dateLevel": "Fortemente supportato",
+    "ageType": "interval",
+    "minKa": 433,
+    "maxKa": 463
+  },
+  {
+    "id": "vindija",
+    "name": "Vindija",
+    "species": [
+      "neanderthal"
+    ],
+    "region": "Europa · Croazia",
+    "coordinates": [
+      16.24,
+      46.3
+    ],
+    "specimen": "Vindija 33.19, frammento osseo",
+    "age": "Circa 52 ka, stima genomica",
+    "spans": [
+      [
+        52,
+        52
+      ]
+    ],
+    "method": "Stima genomica basata sull’accumulo di sostituzioni; datazioni al radiocarbonio su altri resti del sito.",
+    "discovery": "Scavi di Mirko Malez nel XX secolo. Genoma ad alta copertura pubblicato nel 2017.",
+    "description": "Il sequenziamento del frammento attribuito a un individuo femminile offre un confronto per le sequenze neanderthaliane presenti nei genomi umani successivi.",
+    "institution": "Croatian Academy of Sciences and Arts, Zagabria.",
+    "limits": "Le precedenti date molto recenti di altri reperti a Vindija hanno risentito delle contaminazioni. Una data stimata dal genoma non ha la natura di una misura radiocarbonica.",
+    "sources": [
+      {
+        "title": "Prüfer et al., 2017 · A high-coverage Neandertal genome from Vindija Cave",
+        "url": "https://doi.org/10.1126/science.aao1887"
+      },
+      {
+        "title": "Devièse et al., 2017 · Direct dating of Neanderthal remains from Vindija Cave",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5635904/"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "evidenceType": "Reperto fossile",
+    "dateLevel": "Fortemente supportato",
+    "ageType": "interval",
+    "minKa": 52,
+    "maxKa": 52
+  },
+  {
+    "id": "shanidar",
+    "name": "Shanidar Cave",
+    "species": [
+      "neanderthal"
+    ],
+    "region": "Asia · Kurdistan iracheno",
+    "coordinates": [
+      44.22,
+      36.84
+    ],
+    "specimen": "Shanidar Z",
+    "age": "Intorno a 70 ka, stima contestuale",
+    "spans": [
+      [
+        70,
+        70
+      ]
+    ],
+    "method": "Cronologia del riempimento sedimentario e datazioni ottiche associate agli scavi recenti.",
+    "discovery": "Scoperta dei resti articolati nel nuovo ciclo di scavi, iniziato nel 2014. Pubblicazione nel 2020.",
+    "description": "Il corpo si trovava in una depressione. Il recupero del cranio schiacciato e degli elementi in connessione anatomica ha dato nuova materia alla discussione sul trattamento dei morti.",
+    "institution": "Direzione delle antichità del Kurdistan iracheno e progetto Shanidar Cave.",
+    "limits": "La posizione del corpo è osservabile; la precisa sequenza dei gesti compiuti dagli altri individui richiede interpretazione.",
+    "sources": [
+      {
+        "title": "Pomeroy et al., 2020 · New Neanderthal remains associated with the flower burial at Shanidar Cave",
+        "url": "https://doi.org/10.15184/aqy.2019.207"
+      },
+      {
+        "title": "University of Cambridge · Shanidar Z",
+        "url": "https://www.cam.ac.uk/stories/shanidarz"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "evidenceType": "Reperto fossile",
+    "dateLevel": "Fortemente supportato",
+    "ageType": "interval",
+    "minKa": 70,
+    "maxKa": 70
+  },
+  {
+    "id": "oase",
+    "name": "Peștera cu Oase",
+    "species": [
+      "sapiens"
+    ],
+    "region": "Europa · Romania",
+    "coordinates": [
+      21.83,
+      45.02
+    ],
+    "specimen": "Oase 1, mandibola",
+    "age": "Circa 42–37 ka",
+    "spans": [
+      [
+        37,
+        42
+      ]
+    ],
+    "method": "Radiocarbonio sul reperto; analisi dei segmenti di DNA neanderthaliano per la distanza genealogica.",
+    "discovery": "Mandibola rinvenuta nel 2002, genoma pubblicato nel 2015.",
+    "description": "La lunghezza dei segmenti di ascendenza neanderthaliana indica un antenato neanderthaliano a circa quattro-sei generazioni di distanza.",
+    "institution": "Istituto di speleologia Emil Racoviță, progetto di ricerca romeno.",
+    "limits": "La grotta identifica il ritrovamento della mandibola. L’incontro fra i suoi antenati potrebbe essere avvenuto altrove.",
+    "sources": [
+      {
+        "title": "Fu et al., 2015 · An early modern human from Romania with a recent Neanderthal ancestor",
+        "url": "https://doi.org/10.1038/nature14558"
+      },
+      {
+        "title": "Rougier et al., 2007 · Peştera cu Oase 2 and the cranial morphology of early modern Europeans",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1783092/"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "contact": true,
+    "evidenceType": "Reperto fossile",
+    "dateLevel": "Fortemente supportato",
+    "ageType": "interval",
+    "minKa": 37,
+    "maxKa": 42
+  },
+  {
+    "id": "penghu",
+    "name": "Canale di Penghu",
+    "species": [
+      "denisova"
+    ],
+    "region": "Asia · Stretto di Taiwan",
+    "coordinates": [
+      119.95,
+      23.55
+    ],
+    "specimen": "Penghu 1, emimandibola",
+    "age": "Due finestre candidate, 190–130 o 70–10 ka",
+    "spans": [
+      [
+        130,
+        190
+      ],
+      [
+        10,
+        70
+      ]
+    ],
+    "method": "Confronti faunistici e storia del livello del mare. Paleoproteomica sull’individuo.",
+    "discovery": "Recupero da reti da pesca. Prima descrizione scientifica nel 2015, identificazione proteomica nel 2025.",
+    "description": "La mandibola robusta appartiene a un individuo maschile collegato ai Denisoviani dalle proteine recuperate.",
+    "institution": "National Museum of Natural Science, Taichung.",
+    "limits": "Mancano le coordinate esatte e la stratigrafia di rinvenimento. Le due finestre corrispondono a differenti scenari: il filtro rigoroso le esclude.",
+    "sources": [
+      {
+        "title": "Tsutaya et al., 2025 · A male Denisovan from Pleistocene Taiwan",
+        "url": "https://doi.org/10.1126/science.ads3888"
+      },
+      {
+        "title": "Chang et al., 2015 · The first archaic Homo from Taiwan",
+        "url": "https://doi.org/10.1038/ncomms7037"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Indicatore regionale del canale sottomarino, non punto di recupero.",
+    "dateLevel": "Controverso",
+    "evidenceType": "Reperto fossile",
+    "ageType": "interval",
+    "minKa": null,
+    "maxKa": null
+  },
+  {
+    "id": "madjedbebe",
+    "name": "Madjedbebe",
+    "species": [
+      "sapiens"
+    ],
+    "region": "Oceania · Australia",
+    "coordinates": [
+      132.9,
+      -12.5
+    ],
+    "specimen": "Complesso litico del riparo, nessun fossile umano diagnostico",
+    "age": "Circa 65 ± 6 ka per l’inizio dell’occupazione proposto dagli scavatori",
+    "spans": [
+      [
+        59,
+        71
+      ]
+    ],
+    "method": "Luminescenza otticamente stimolata dei sedimenti e modello stratigrafico.",
+    "discovery": "Primi scavi negli anni Settanta; nuova campagna pubblicata nel 2017.",
+    "description": "In questo riparo della terra dei Mirarr, strumenti in pietra e ocra documentano attività umane. Dal punto di vista geografico il sito appartiene al continente pleistocenico di Sahul.",
+    "institution": "Progetto Madjedbebe con i custodi tradizionali Mirarr.",
+    "limits": "È un sito archeologico di confronto. L’associazione della fase più antica con l’età dei sedimenti è discussa. Posizione approssimata alla regione.",
+    "sources": [
+      {
+        "title": "Clarkson et al., 2017 · Human occupation of northern Australia by 65,000 years ago",
+        "url": "https://doi.org/10.1038/nature22968"
+      },
+      {
+        "title": "O’Connell et al., 2018 · When did Homo sapiens first reach Southeast Asia and Sahul?",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6112744/"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Settore della Terra di Arnhem, posizione regionale.",
+    "dateLevel": "Controverso",
+    "evidenceType": "Sito archeologico",
+    "ageType": "interval",
+    "minKa": 59,
+    "maxKa": 71
+  },
+  {
+    "id": "feldhofer",
+    "name": "Kleine Feldhofer Grotte",
+    "species": [
+      "neanderthal"
+    ],
+    "region": "Europa · Germania",
+    "coordinates": [
+      6.95,
+      51.23
+    ],
+    "specimen": "Neandertal 1, esemplare tipo",
+    "age": "39.900 ± 620 anni radiocarbonici BP, misura non calibrata",
+    "spans": [],
+    "method": "AMS sul collagene dell’omero. Gli anni radiocarbonici vanno calibrati prima del confronto con il calendario.",
+    "discovery": "1856, cavatori nella valle del Düssel; nuove indagini nell’area di scarico nel 1997 e 2000.",
+    "description": "Una calotta cranica e ossa postcraniali recuperate durante l’estrazione del calcare fornirono il riferimento per il nome Homo neanderthalensis. Altri frammenti rinvenuti molto più tardi si ricongiungono ai primi.",
+    "institution": "LVR-LandesMuseum Bonn.",
+    "limits": "La scheda conserva la misura pubblicata e l’unità originale. Per evitare di usare anni radiocarbonici come anni di calendario, il reperto è accessibile nella vista di tutte le epoche.",
+    "sources": [
+      {
+        "title": "Schmitz et al., 2002 · The Neandertal type site revisited",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC130635/"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "ageType": "uncalibrated",
+    "evidenceType": "Reperto fossile",
+    "dateLevel": "Fortemente supportato",
+    "minKa": null,
+    "maxKa": null
+  },
+  {
+    "id": "bacho-kiro",
+    "name": "Bacho Kiro",
+    "species": [
+      "sapiens"
+    ],
+    "region": "Europa · Bulgaria",
+    "coordinates": [
+      25.43,
+      42.95
+    ],
+    "specimen": "BB7-240, frammento osseo",
+    "age": "45,55–43,94 ka cal BP per BB7-240",
+    "spans": [
+      [
+        43.94,
+        45.55
+      ]
+    ],
+    "method": "Radiocarbonio con calibrazione; DNA nucleare per valutare la lunghezza dei segmenti ereditati.",
+    "discovery": "Campagne dal 2015; pubblicazioni cronologiche nel 2020 e genomiche nel 2021.",
+    "description": "Diversi individui sapiens del Paleolitico superiore iniziale avevano antenati neanderthaliani recenti. Bacho Kiro documenta un altro caso, indipendente da Oase.",
+    "institution": "National Archaeological Institute with Museum, Bulgarian Academy of Sciences, istituzione del progetto.",
+    "limits": "Lo slider segue BB7-240. Età degli altri reperti e numero di generazioni dall’antenato recente variano fra individui.",
+    "sources": [
+      {
+        "title": "Hajdinjak et al., 2021 · Initial Upper Palaeolithic humans in Europe had recent Neanderthal ancestry",
+        "url": "https://doi.org/10.1038/s41586-021-03335-3"
+      },
+      {
+        "title": "Fewlass et al., 2020 · A 14C chronology for the Middle to Upper Palaeolithic transition at Bacho Kiro Cave",
+        "url": "https://doi.org/10.1038/s41559-020-1136-3"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "contact": true,
+    "evidenceType": "Reperto fossile",
+    "dateLevel": "Fortemente supportato",
+    "ageType": "interval",
+    "minKa": 43.94,
+    "maxKa": 45.55
+  },
+  {
+    "id": "misliya",
+    "name": "Misliya Cave",
+    "species": [
+      "sapiens"
+    ],
+    "region": "Asia · Monte Carmelo",
+    "coordinates": [
+      34.97,
+      32.67
+    ],
+    "specimen": "Misliya-1, emimascellare sinistro",
+    "age": "194–177 ka proposti nella pubblicazione del 2018",
+    "spans": [
+      [
+        177,
+        194
+      ]
+    ],
+    "method": "Serie U ed ESR, con età dipendenti dal modello del comportamento dell’uranio e dal confronto con il contesto.",
+    "discovery": "Rinvenimento nel 2002. Descrizione e discussione cronologica pubblicate nel 2018.",
+    "description": "Una porzione dell’arcata superiore con denti permanenti è stata attribuita al clade sapiens sulla base di misure e confronti tridimensionali.",
+    "institution": "Progetto Misliya Cave, Università di Tel Aviv e Università di Haifa.",
+    "limits": "La stima cronologica ha ricevuto obiezioni sulla lettura dei dati dell’uranio. Il sito resta consultabile, mentre la finestra discussa è esclusa dal filtro rigoroso.",
+    "sources": [
+      {
+        "title": "Hershkovitz et al., 2018 · The earliest modern humans outside Africa",
+        "url": "https://doi.org/10.1126/science.aap8369"
+      },
+      {
+        "title": "Sharp e Paces, 2018 · Comment on The earliest modern humans outside Africa",
+        "url": "https://doi.org/10.1126/science.aat6598"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "dateLevel": "Controverso",
+    "evidenceType": "Reperto fossile",
+    "ageType": "interval",
+    "minKa": 177,
+    "maxKa": 194
+  },
+  {
+    "id": "xujiayao",
+    "name": "Xujiayao · Houjiayao",
+    "species": [
+      "denisova"
+    ],
+    "region": "Asia · Bacino di Nihewan, Cina",
+    "coordinates": [
+      113.98,
+      40.1
+    ],
+    "specimen": "XJY-6 (PA1490), parietale; XJY-14 (PA1497), ramo mandibolare",
+    "age": "Circa 199–138 ka per il complesso fossilifero secondo Xing et al. (2026)",
+    "spans": [
+      [
+        138,
+        199
+      ]
+    ],
+    "method": "Datazione combinata serie U/ESR per il complesso. Identificazione dei due frammenti mediante paleoproteomica, controllata su più peptidi.",
+    "discovery": "Resti recuperati nelle campagne 1976–1979. Risultati proteomici pubblicati il 21 ottobre 2026.",
+    "description": "Un frammento di parietale destro e parte del ramo destro di una mandibola conservano una variante del collagene condivisa dai Denisoviani con riferimento molecolare. Il risultato lega i reperti di Xujiayao al gruppo denisoviano.",
+    "institution": "Institute of Vertebrate Paleontology and Paleoanthropology, Chinese Academy of Sciences, istituto coinvolto nello studio.",
+    "limits": "Xujiayao è anche il sito di riferimento di Homo juluensis. L’estensione dell’attribuzione a reperti di altri siti, quali Dali e Jinniushan, si basa su confronti morfologici e resta distinta dai risultati molecolari su XJY-6 e XJY-14.",
+    "sources": [
+      {
+        "title": "Xing et al., 2026 · The proteome of Middle Pleistocene Xujiayao and common Denisovan morphology",
+        "url": "https://doi.org/10.1038/s41586-026-11132-z"
+      },
+      {
+        "title": "Trinkaus et al., 2017 · External auditory exostoses in the Xuchang and Xujiayao human remains",
+        "url": "https://doi.org/10.1371/journal.pone.0189390"
+      }
+    ],
+    "level": "Documentato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "dateLevel": "Fortemente supportato",
+    "evidenceType": "Reperto fossile",
+    "ageType": "interval",
+    "minKa": 138,
+    "maxKa": 199
+  },
+  {
+    "id": "naxian",
+    "name": "Naxian Cave",
+    "species": [
+      "erectus"
+    ],
+    "region": "Asia · Guangxi, Cina",
+    "coordinates": [
+      107.23,
+      22.45
+    ],
+    "specimen": "NX-A1-123, NX-B1-127 e NX-B2-9; altri tre denti",
+    "age": "319–241 ka per il deposito",
+    "spans": [
+      [
+        241,
+        319
+      ]
+    ],
+    "method": "Modellazione bayesiana di luminescenza dei sedimenti, serie U, ESR accoppiata e relazioni stratigrafiche. Morfometria e proteomica dello smalto per i confronti anatomici.",
+    "discovery": "Analisi pubblicate il 18 novembre 2026.",
+    "description": "La morfologia di sei denti rinvenuti a Naxian concorda con un’attribuzione a Homo erectus. Tre hanno fornito proteine dello smalto informative. Gli indicatori ambientali collegano la popolazione a un paesaggio forestale.",
+    "institution": "Institute of Vertebrate Paleontology and Paleoanthropology, Pechino, istituzione scientifica del progetto.",
+    "limits": "La scheda usa la finestra del solo deposito di Naxian. I due primi molari potrebbero provenire dai lati opposti della stessa bocca.",
+    "sources": [
+      {
+        "title": "Liao et al., 2026 · Evidence for late Middle Pleistocene Homo erectus in mainland East Asia",
+        "url": "https://doi.org/10.1038/s41586-026-11271-3"
+      },
+      {
+        "title": "Westaway et al., 2026 · Rainforest adaptation in late Homo erectus from southern China",
+        "url": "https://doi.org/10.1038/s41586-026-11155-6"
+      }
+    ],
+    "level": "Fortemente supportato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Posizione arrotondata della grotta nell’area indicata in fig. 1 di Westaway et al.",
+    "dateLevel": "Fortemente supportato",
+    "evidenceType": "Reperto fossile",
+    "ageType": "interval",
+    "minKa": 241,
+    "maxKa": 319
+  },
+  {
+    "id": "baxian",
+    "name": "Baxian Cave",
+    "species": [
+      "erectus"
+    ],
+    "region": "Asia · Guangxi, Cina",
+    "coordinates": [
+      107.35,
+      22.575
+    ],
+    "specimen": "PA1799, premolare inferiore; PA1798; PA1796, molare di affinità incerta",
+    "age": "324–184 ka per il deposito",
+    "spans": [
+      [
+        184,
+        324
+      ]
+    ],
+    "method": "Cronologia integrata dei sedimenti, carbonati e denti con luminescenza, serie U ed ESR. Proteomica dello smalto e morfometria.",
+    "discovery": "Analisi pubblicate il 18 novembre 2026.",
+    "description": "Il premolare PA1799 associa proteine e morfologia compatibili con Homo erectus. Il molare PA1796 differisce dagli altri esemplari di Baxian e Naxian. Le proprietà isotopiche dei denti e della fauna contribuiscono a ricostruire l’ambiente.",
+    "institution": "Institute of Vertebrate Paleontology and Paleoanthropology, Pechino, istituzione scientifica del progetto.",
+    "limits": "Per PA1796 gli autori discutono un’affinità denisoviana fra diverse possibilità. Questo sito compare fra le evidenze per erectus, senza attribuire PA1796 ai Denisoviani.",
+    "sources": [
+      {
+        "title": "Liao et al., 2026 · Evidence for late Middle Pleistocene Homo erectus in mainland East Asia",
+        "url": "https://doi.org/10.1038/s41586-026-11271-3"
+      },
+      {
+        "title": "Westaway et al., 2026 · Rainforest adaptation in late Homo erectus from southern China",
+        "url": "https://doi.org/10.1038/s41586-026-11155-6"
+      },
+      {
+        "title": "IVPP · Coordinate della località nella documentazione geologica di Baxian",
+        "url": "https://www.ivpp.cas.cn/cbw/gjzdwxb/xbwzxz/201903/P020190705564277401755.pdf"
+      }
+    ],
+    "level": "Fortemente supportato",
+    "version": 1,
+    "reviewed": "2026-11-23",
+    "coordinateScope": "Località di scavo, arrotondata per la scala della carta.",
+    "dateLevel": "Fortemente supportato",
+    "evidenceType": "Reperto fossile",
+    "ageType": "interval",
+    "minKa": 184,
+    "maxKa": 324
+  }
+]

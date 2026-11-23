@@ -1,0 +1,156 @@
+[
+  {
+    "id": "cover",
+    "title": "Tre volti del Pleistocene",
+    "type": "Ricostruzione scientificamente informata generata con IA",
+    "src": "media/cover.webp",
+    "species": [
+      "sapiens",
+      "neanderthal",
+      "erectus"
+    ],
+    "caption": "Tre sculture craniofacciali in argilla illustrano, da sinistra, un primo Sapiens nordafricano, un Neanderthal e un Erectus africano. L’accostamento museale separa individui vissuti in tempi e luoghi diversi.",
+    "credit": "gbprof · Libera, elaborazione con IA",
+    "license": "Produzione originale per l’atlante HOMO",
+    "url": "",
+    "documented": "Da Irhoud provengono un viso relativamente retratto e una volta allungata. La Ferrassie documenta fronte sfuggente e massiccio mediofacciale proiettato. I crani di erectus mostrano una volta lunga e bassa e un toro sopraorbitario.",
+    "plausible": "Lo spessore dei tessuti traduce soltanto in modo approssimativo la forma ossea.",
+    "artistic": "Argilla, finitura, luce, disposizione e parte dei tessuti molli sono scelte illustrative. Le sculture digitali non riproducono opere realmente esposte.",
+    "prompt": "Wide horizontal editorial photograph of a museum installation consisting of three sculpted clay HEADS only. Each individual object is a detached terracotta portrait sculpture on its own nearly invisible black museum pedestal, defined from the crown to just under the chin, with NO shoulders, clothing, torso or body in the sculpture. Fine textured reddish-brown fired clay in the style of a scientific museum facial reconstruction study. Warm chiaroscuro and a charcoal black plain studio wall. Three heads that are fully separated left to right, all approximately the same height. Left study: early Homo sapiens from Jebel Irhoud, with a fairly flat face, elongated braincase. Middle study: large projecting Neanderthal midface, large nasal region, two arches above the eyes and low forehead. Right study: African Homo erectus, elongated low vault, a continuous ridge over both eyes, receding forehead. Artistic, respectful, calm faces, eyes softly sculpted in unpainted clay. Photographic natural side lighting, high-end science museum catalogue cover, 2.5:1 panoramic. No words, cutlines, graphics, logos or inscriptions.",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Hublin et al. (2017), New fossils from Jebel Irhoud, Morocco and the pan-African origin of Homo sapiens",
+        "url": "https://doi.org/10.1038/nature22336"
+      },
+      {
+        "title": "Smithsonian Human Origins Program, La Ferrassie 1",
+        "url": "https://humanorigins.si.edu/evidence/human-fossils/fossils/la-ferrassie"
+      },
+      {
+        "title": "Smithsonian Human Origins Program, Homo erectus",
+        "url": "https://humanorigins.si.edu/evidence/human-fossils/species/homo-erectus"
+      }
+    ]
+  },
+  {
+    "id": "denisova-bianfu",
+    "title": "Il paesaggio di Bianfu",
+    "type": "Ricostruzione scientificamente informata generata con IA",
+    "src": "media/denisova-bianfu.webp",
+    "species": [
+      "denisova"
+    ],
+    "caption": "Interpretazione ambientale del settore dello Yunnan documentato a Bianfu. Resti faunistici e pollini indicano boschi di conifere o foresta-steppa nelle fasi considerate.",
+    "credit": "gbprof · Libera, elaborazione con IA",
+    "license": "Produzione originale per l’atlante HOMO",
+    "url": "",
+    "documented": "I livelli della grotta conservano quattro denti e frammenti postcraniali e cranici. I dati faunistici e pollinici delineano un paesaggio a conifere o di foresta-steppa.",
+    "plausible": "Una fascia aperta con alberi radi può illustrare il gradiente fra bosco e steppa.",
+    "artistic": "La forma precisa della valle, l’ora, la visibilità e la distribuzione degli alberi sono scelte artistiche. Nessun volto è stato ricostruito.",
+    "prompt": "Naturalistic photographic-quality scientific illustration for a museum of human origins. Real skin texture, dignified individuals, documentary natural light, no typography, text, labels, symbols, graphic overlays, display cases, jewelry, modern items, ape stereotypes, violence or battle. Illustrative soft tissues, never fake archaeological photographs. Wide landscape 3:2, quiet highland southwestern China in the Middle Pleistocene, view FROM inside a modest limestone shelter toward a conifer-dominated forest-steppe mosaic, scattered pines like an open woodland alternating with grassy slope, distant hazy ridges, cool morning sunlight, naturalistic geology, realistic but not an exact depiction of a modern cave; no humans, buildings, artifacts, giant ferns or dinosaurs. Wide spatial depth, a study of habitat, editorial field photograph aesthetic.",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Denisovans from southwestern China and their subsistence strategies (2026)",
+        "url": "https://doi.org/10.1038/s41586-026-10997-4"
+      }
+    ]
+  },
+  {
+    "id": "ferrassie-ambiente",
+    "title": "Un riparo nella Dordogna",
+    "type": "Ricostruzione scientificamente informata generata con IA",
+    "src": "media/ferrassie-ambiente.webp",
+    "species": [
+      "neanderthal"
+    ],
+    "caption": "La Ferrassie documenta il rapporto tra parete calcarea, sedimenti e fasi di occupazione. L’apertura illustrata consente di leggere il funzionamento di un riparo roccioso.",
+    "credit": "gbprof · Libera, elaborazione con IA",
+    "license": "Produzione originale per l’atlante HOMO",
+    "url": "https://doi.org/10.1007/s41982-023-00159-7",
+    "documented": "La Ferrassie documenta il rapporto tra parete calcarea, sedimenti e fasi di occupazione. L’apertura illustrata consente di leggere il funzionamento di un riparo roccioso.",
+    "plausible": "Scelta di una fisionomia del paesaggio compatibile con gli indizi geologici o climatici della pubblicazione.",
+    "artistic": "Colore, illuminazione, inquadratura e dettaglio locale sono illustrativi. La scena non riproduce il sito topografico.",
+    "prompt": "Create a square four-panel natural history museum landscape plate, each quadrant its own panoramic paleoenvironment reconstruction; clean straight 2x2 grid with zero border or lettering. No people, animals, tools, artifacts or buildings. Upper left: a modest limestone overhang in the Dordogne, temperate open woodland, cooler pale sky, sparse deciduous trees, sediment layered on shelter floor. Upper right: a tropical Indonesian karst basin of Flores with an open seasonal forest and grasses beneath a grey limestone overhang, partly dry seasonal stream bed, distant mountains. Lower left: a wide active braided river in central Java, low gravel-and-sand bars of dark volcaniclastic sediment, metered sunlight on the water, woodland in distant low hills, viewpoint at the bank. Lower right: dark underground dolomite passage in the South African highveld, a subtle illustrative raking light reveals rough fracture surfaces and reddish brown sediment. A museum-quality photo-realistic environment study with spatial depth, correct geology, landscapes completely distinct, no inscriptions, no decorative elements, no picture frames, no artifacts or signs of human presence.",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Studio di riferimento sulla formazione del sito",
+        "url": "https://doi.org/10.1007/s41982-023-00159-7"
+      }
+    ]
+  },
+  {
+    "id": "flores-ambiente",
+    "title": "La stagionalità di Flores",
+    "type": "Ricostruzione scientificamente informata generata con IA",
+    "src": "media/flores-ambiente.webp",
+    "species": [
+      "flores"
+    ],
+    "caption": "Le variazioni delle precipitazioni sono ricostruite studiando i depositi di grotta. Una stagione relativamente asciutta è illustrata qui con corsi d’acqua bassi e vegetazione aperta.",
+    "credit": "gbprof · Libera, elaborazione con IA",
+    "license": "Produzione originale per l’atlante HOMO",
+    "url": "https://doi.org/10.1038/s43247-025-02961-3",
+    "documented": "Le variazioni delle precipitazioni sono ricostruite studiando i depositi di grotta. Una stagione relativamente asciutta è illustrata qui con corsi d’acqua bassi e vegetazione aperta.",
+    "plausible": "Scelta di una fisionomia del paesaggio compatibile con gli indizi geologici o climatici della pubblicazione.",
+    "artistic": "Colore, illuminazione, inquadratura e dettaglio locale sono illustrativi. La scena non riproduce il sito topografico.",
+    "prompt": "Create a square four-panel natural history museum landscape plate, each quadrant its own panoramic paleoenvironment reconstruction; clean straight 2x2 grid with zero border or lettering. No people, animals, tools, artifacts or buildings. Upper left: a modest limestone overhang in the Dordogne, temperate open woodland, cooler pale sky, sparse deciduous trees, sediment layered on shelter floor. Upper right: a tropical Indonesian karst basin of Flores with an open seasonal forest and grasses beneath a grey limestone overhang, partly dry seasonal stream bed, distant mountains. Lower left: a wide active braided river in central Java, low gravel-and-sand bars of dark volcaniclastic sediment, metered sunlight on the water, woodland in distant low hills, viewpoint at the bank. Lower right: dark underground dolomite passage in the South African highveld, a subtle illustrative raking light reveals rough fracture surfaces and reddish brown sediment. A museum-quality photo-realistic environment study with spatial depth, correct geology, landscapes completely distinct, no inscriptions, no decorative elements, no picture frames, no artifacts or signs of human presence.",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Gagan et al. (2025)",
+        "url": "https://doi.org/10.1038/s43247-025-02961-3"
+      }
+    ]
+  },
+  {
+    "id": "solo-ambiente",
+    "title": "Le barre del fiume Solo",
+    "type": "Ricostruzione scientificamente informata generata con IA",
+    "src": "media/solo-ambiente.webp",
+    "species": [
+      "erectus"
+    ],
+    "caption": "A Ngandong i fossili provengono da sedimenti di terrazzo del fiume Solo. Le ghiaie e le sabbie dell’immagine illustrano come il trasporto fluviale costruisca un deposito.",
+    "credit": "gbprof · Libera, elaborazione con IA",
+    "license": "Produzione originale per l’atlante HOMO",
+    "url": "https://doi.org/10.1038/s41586-019-1863-2",
+    "documented": "A Ngandong i fossili provengono da sedimenti di terrazzo del fiume Solo. Le ghiaie e le sabbie dell’immagine illustrano come il trasporto fluviale costruisca un deposito.",
+    "plausible": "Scelta di una fisionomia del paesaggio compatibile con gli indizi geologici o climatici della pubblicazione.",
+    "artistic": "Colore, illuminazione, inquadratura e dettaglio locale sono illustrativi. La scena non riproduce il sito topografico.",
+    "prompt": "Create a square four-panel natural history museum landscape plate, each quadrant its own panoramic paleoenvironment reconstruction; clean straight 2x2 grid with zero border or lettering. No people, animals, tools, artifacts or buildings. Upper left: a modest limestone overhang in the Dordogne, temperate open woodland, cooler pale sky, sparse deciduous trees, sediment layered on shelter floor. Upper right: a tropical Indonesian karst basin of Flores with an open seasonal forest and grasses beneath a grey limestone overhang, partly dry seasonal stream bed, distant mountains. Lower left: a wide active braided river in central Java, low gravel-and-sand bars of dark volcaniclastic sediment, metered sunlight on the water, woodland in distant low hills, viewpoint at the bank. Lower right: dark underground dolomite passage in the South African highveld, a subtle illustrative raking light reveals rough fracture surfaces and reddish brown sediment. A museum-quality photo-realistic environment study with spatial depth, correct geology, landscapes completely distinct, no inscriptions, no decorative elements, no picture frames, no artifacts or signs of human presence.",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Rizal et al. (2020)",
+        "url": "https://doi.org/10.1038/s41586-019-1863-2"
+      }
+    ]
+  },
+  {
+    "id": "rising-ambiente",
+    "title": "Il carso in profondità",
+    "type": "Ricostruzione scientificamente informata generata con IA",
+    "src": "media/rising-ambiente.webp",
+    "species": [
+      "naledi"
+    ],
+    "caption": "Il sistema di Rising Star si apre nella dolomia. Le fratture della roccia e i sedimenti rossastri costituiscono elementi plausibili per illustrare il contesto sotterraneo.",
+    "credit": "gbprof · Libera, elaborazione con IA",
+    "license": "Produzione originale per l’atlante HOMO",
+    "url": "https://doi.org/10.7554/eLife.09561",
+    "documented": "Il sistema di Rising Star si apre nella dolomia. Le fratture della roccia e i sedimenti rossastri costituiscono elementi plausibili per illustrare il contesto sotterraneo.",
+    "plausible": "Scelta di una fisionomia del paesaggio compatibile con gli indizi geologici o climatici della pubblicazione.",
+    "artistic": "Colore, illuminazione, inquadratura e dettaglio locale sono illustrativi. La scena non riproduce il sito topografico.",
+    "prompt": "Create a square four-panel natural history museum landscape plate, each quadrant its own panoramic paleoenvironment reconstruction; clean straight 2x2 grid with zero border or lettering. No people, animals, tools, artifacts or buildings. Upper left: a modest limestone overhang in the Dordogne, temperate open woodland, cooler pale sky, sparse deciduous trees, sediment layered on shelter floor. Upper right: a tropical Indonesian karst basin of Flores with an open seasonal forest and grasses beneath a grey limestone overhang, partly dry seasonal stream bed, distant mountains. Lower left: a wide active braided river in central Java, low gravel-and-sand bars of dark volcaniclastic sediment, metered sunlight on the water, woodland in distant low hills, viewpoint at the bank. Lower right: dark underground dolomite passage in the South African highveld, a subtle illustrative raking light reveals rough fracture surfaces and reddish brown sediment. A museum-quality photo-realistic environment study with spatial depth, correct geology, landscapes completely distinct, no inscriptions, no decorative elements, no picture frames, no artifacts or signs of human presence.",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Dirks et al. (2015)",
+        "url": "https://doi.org/10.7554/eLife.09561"
+      }
+    ]
+  }
+]

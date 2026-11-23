@@ -1,0 +1,349 @@
+{
+  "id": "naledi",
+  "name": "Homo naledi",
+  "subtitle": "La camera di Dinaledi, le mani curve e il problema dei morti",
+  "chapters": [
+    {
+      "title": "Il paesaggio che manca",
+      "level": "Documentato",
+      "sources": [
+        "naledi-context",
+        "naledi-dating"
+      ],
+      "paragraphs": [
+        "Nella camera di Dinaledi, sotto il suolo del Sudafrica, mancava proprio ciò che di solito permette a un paleontologo di cominciare il suo racconto. Niente branco di antilopi da ricostruire attraverso le ossa, nessun grande carnivoro del quale seguire i denti fra le prede. Nell’accumulo descritto nel 2015, i grandi vertebrati erano rappresentati dagli ominini. Per avvicinarsi a questo mondo occorre partire dal pavimento. Argille fini e sedimento derivato in parte dalla roccia della cavità si sono mescolati a ossa, molte fragili, alcune vicine nella posizione anatomica. Una patina o una frattura possono dire se un elemento è stato spostato e che cosa gli è accaduto dopo la morte. Su quanto crescesse alla luce del sole, sopra le persone che finirono qui, questo deposito ha molto meno da dire.",
+        "Il sistema di Rising Star si trova nella regione carsica a nord-ovest di Johannesburg. Acqua e roccia hanno costruito volumi, restringimenti, colate minerali e dislivelli. Il percorso che un visitatore dovrebbe compiere oggi può essere descritto e misurato. Riportarlo intatto indietro di centinaia di migliaia di anni è un’operazione più delicata. La profondità e l’oscurità di una camera rendono straordinario ritrovarvi molti resti umani. Rendono anche facile trasformare quel luogo in un teatro per scene immaginarie. Cominciamo dunque dalle persone delle quali restano le ossa. Dove dormissero abitualmente, quale aria respirassero all’aperto e quanto tempo trascorressero in questa grotta sono domande da conservare aperte durante la discesa."
+      ]
+    },
+    {
+      "title": "Il lavoro sul fondo della grotta",
+      "level": "Documentato",
+      "sources": [
+        "naledi-diagnosis",
+        "naledi-context",
+        "naledi-lesedi"
+      ],
+      "paragraphs": [
+        "Nel 2013 gli speleologi Rick Hunter e Steven Tucker individuarono resti ossei nel sistema sotterraneo. Le fotografie portarono all’organizzazione di scavi coordinati da Lee Berger, con una squadra capace di lavorare in passaggi stretti. Una volta nella camera, raggiungere i reperti era soltanto l’inizio. Per scavare un insieme così fitto occorre registrare forma, orientamento e posizione di ogni elemento prima di prelevarlo. Un’osservazione del genere spesso è irripetibile. Una fotografia del fossile pulito in laboratorio non restituirà più quale osso gli poggiava contro o quanto sedimento lo separava da una seconda concentrazione.",
+        "La prima descrizione scientifica, pubblicata nel 2015, riguardava più di millecinquecento elementi, attribuiti ad almeno quindici individui. Il numero minimo di individui si ottiene cercando ripetizioni incompatibili con un unico corpo. Se due elementi dello stesso lato e dello stesso tipo sono entrambi presenti, occorrono almeno due individui. Età e dimensioni aiutano a separare resti altrimenti simili. Questo censimento minimo resta un conteggio del deposito scavato. La possibilità di descrivere una specie da più persone di età diverse è rara e preziosa. Permette di chiedersi se una forma insolita si ripeta oppure rappresenti soltanto una particolarità individuale.",
+        "Nel 2017 vennero pubblicati i materiali della camera di Lesedi, provenienti da una parte diversa di Rising Star. Il cranio LES1, soprannominato Neo, offriva una verifica particolarmente istruttiva. Caratteri già descritti a Dinaledi ritornavano in un individuo più grande e in una seconda associazione di parti scheletriche. La somiglianza fra le camere rafforzava l’attribuzione anatomica, mentre l’esatta contemporaneità dei depositi richiedeva una verifica geologica distinta."
+      ]
+    },
+    {
+      "title": "Un orologio dentro un dente",
+      "level": "Documentato",
+      "sources": [
+        "naledi-dating",
+        "naledi-context",
+        "naledi-evolution"
+      ],
+      "paragraphs": [
+        "Alla prima pubblicazione mancava un dato fondamentale. Le ossa potevano essere descritte in dettaglio senza che si sapesse quando fossero arrivate sul fondo. La combinazione di scatola cranica piccola e caratteri che ricordavano forme molto antiche invitava alcuni osservatori a collocarle lontano nel tempo. Nelle grotte manca spesso la comoda successione di strati immaginata da chi apre un manuale di geologia. Il pavimento si erode, le spaccature fanno passare particelle fini, a tratti un velo di calcite ricopre ciò che era esposto. La storia della camera doveva essere ricostruita prima di attribuirle un numero.",
+        "Paul Dirks e colleghi presero in esame più orologi naturali. Nei denti alcuni difetti del reticolo cristallino registrano l’irraggiamento ricevuto. Per tradurlo in anni bisogna conoscere la dose accumulata e stimare come sia cambiato nel tempo l’ambiente radioattivo del reperto. Le serie dell’uranio aiutano a seguire l’ingresso di questo elemento nel materiale. Nelle colate di calcite, i rapporti fra uranio e torio forniscono invece vincoli alla formazione del deposito minerale. Se una colata ricopre un fossile, quest’ultimo doveva già trovarsi lì quando la colata cominciò a formarsi. Sedimenti, denti e calcite descrivono così eventi fisici differenti, che devono infine risultare compatibili.",
+        "Nel 2017 il confronto collocò la deposizione dei fossili di Dinaledi fra 335 mila e 236 mila anni fa. Una finestra ampia quasi centomila anni può sembrare imprecisa. Bastava invece a rovesciare l’aspettativa di una popolazione remota, prossima per età ai primi Homo. I suoi membri avevano abitato il continente africano durante una fase in cui esistevano già forme riconducibili al lignaggio sapiens. La finestra non misura per quanto tempo la grotta abbia accolto corpi o per quanto tempo la specie sia vissuta."
+      ]
+    },
+    {
+      "title": "Come si riconosce una specie",
+      "level": "Fortemente supportato",
+      "sources": [
+        "naledi-diagnosis",
+        "naledi-lesedi",
+        "naledi-evolution"
+      ],
+      "paragraphs": [
+        "L’olotipo di Homo naledi è il riferimento al quale rimane ancorato il nome. La diagnosi si appoggia però all’intero confronto anatomico. Si osserva quanto certi caratteri varino tra adulti, come cambino con l’età e quali associazioni ricorrano in più parti del corpo. Nel caso di Rising Star spalle e tronco, denti, mani e arti inferiori portano ciascuno una parte dell’argomento. Un singolo dente di piccola taglia potrebbe entrare nel campo di variazione di diversi gruppi. Una combinazione ripetuta di caratteri in denti, mandibole e scheletro ha un potere discriminante maggiore. È l’insieme ad aver persuaso il gruppo di ricerca a proporre una specie distinta.",
+        "Stabilire dove essa si collochi nell’albero è un problema ulteriore. Un carattere può essere stato conservato da un antenato lontano mentre altri cambiavano. Due popolazioni possono giungere a una soluzione funzionale simile sotto pressioni analoghe. Le genealogie ricostruite contando somiglianze dovrebbero quindi tenere conto del tipo di carattere e del suo ordine di comparsa. Per naledi sono state considerate varie affinità con membri antichi di Homo. L’età relativamente giovane del deposito dimostra la sopravvivenza di quella combinazione fino al Pleistocene medio avanzato. Lo stesso risultato permette storie precedenti anche molto lunghe, delle quali mancano per ora i passaggi intermedi.",
+        "Possiamo visualizzare questa difficoltà pensando a due fotografie di famiglia, senza nomi, separate da molte generazioni. Una somiglianza ereditaria è informativa, ma non basta per disegnare tutti i passaggi della discendenza. In un albero prudente naledi merita dunque un ramo identificabile, accompagnato da più possibilità di attacco. La singola biforcazione precisa che sembra indispensabile al disegnatore può essere proprio il dato che il fossile conserva peggio."
+      ]
+    },
+    {
+      "title": "Un piede per camminare, dita per afferrare",
+      "level": "Fortemente supportato",
+      "sources": [
+        "naledi-foot",
+        "naledi-hand",
+        "naledi-diagnosis"
+      ],
+      "paragraphs": [
+        "Se del corpo di naledi si fosse conservato soltanto il piede, l’abitudine al cammino eretto sarebbe risultata piuttosto convincente. Tra più di cento elementi analizzati c’è un piede adulto quasi completo. L’alluce è in linea con le altre dita e alcune articolazioni della caviglia e del tarso sono adatte a sostenere il corpo e a trasmettere la spinta nel passo. Le falangi prossimali delle dita rimangono però più curve rispetto alla media umana attuale e alcuni caratteri suggeriscono un arco longitudinale mediale meno pronunciato. Le differenze riguardano la maniera di appoggiare e muovere il piede. Sarebbe arbitrario tradurle in una postura costantemente piegata o in un’incapacità di percorrere terreno aperto.",
+        "Dalla mano arriva una combinazione ancora diversa. Pollice, palmo e polso presentano adattamenti a prese forti e precise. Le dita lunghe e curve suggeriscono che serrare la mano attorno a supporti e sostenere carichi durante l’arrampicata avessero importanza. Un individuo che camminava abitualmente su due gambe poteva ancora sfruttare efficacemente l’arrampicata. Il corpo conserva più soluzioni meccaniche nello stesso tempo. Ricostruire uno strumento impugnato o una scena di vita sugli alberi richiederebbe altri indizi sul contesto.",
+        "Le stime della massa corporea ricavate da porzioni di femore coprono approssimativamente da quaranta a cinquantasei chilogrammi nel campione pubblicato. Una tibia ha suggerito una statura nell’ordine di un metro e quarantacinque. Queste cifre vengono da relazioni statistiche ricavate in gruppi di confronto. Il peso di una singola persona viva non si conserva in un femore. Una tavola alla stessa scala può mostrare il reperto e l’intervallo stimato, lasciando al lettore la possibilità di riconoscere il passaggio dalla misura alla ricostruzione."
+      ]
+    },
+    {
+      "title": "Quanta vita resta in una corona dentaria",
+      "level": "Plausibile",
+      "sources": [
+        "naledi-diet",
+        "naledi-juvenile",
+        "naledi-diagnosis"
+      ],
+      "paragraphs": [
+        "Un molare comunica con l’esterno attraverso la sua superficie. Cuspidi, bacini e rilievi incontrano cibi, particelle minerali e denti antagonisti ogni giorno, modificandosi con l’uso. Michael Berthaume e colleghi hanno studiato la topografia dentaria di naledi per chiedersi a quali sollecitazioni fosse particolarmente adatta. Una corona con buone proprietà di resistenza può avere valore quando nella bocca giungono spesso sostanze abrasive. Due situazioni apparentemente diverse produrrebbero quel risultato. Il cibo stesso potrebbe contenere particelle dure, oppure piccole quantità di sabbia e polvere potrebbero aderire al cibo prima della masticazione. Gli organi sotterranei delle piante offrono un esempio possibile del secondo processo. Il dente non permette di identificare una certa radice come pietanza abituale.",
+        "Il confronto apre una veduta indiretta sul mondo esterno, resa necessaria dalla povertà di resti alimentari associati agli scheletri. Non conosciamo la proporzione di carne e vegetali consumati, l’estensione di un territorio di raccolta o il modo in cui i gruppi distribuivano gli alimenti. Possiamo però capire quali adattamenti avrebbero reso possibile utilizzare risorse durevoli in quel paesaggio. Una misura meccanica resta verificabile anche quando la scena quotidiana ammette più ricostruzioni.",
+        "Un giovane di Dinaledi permette di introdurre un altro aspetto della vita quotidiana, il lungo lavoro di crescere. L’associazione di parti immature degli arti e del tronco offre indicazioni sulle fasi di sviluppo dello scheletro. Per dare a una fase un’età precisa in anni bisognerebbe conoscere il ritmo di maturazione della specie. Se si applicano calendari di crescita differenti, cambia la stima. La distinzione fra età biologica relativa ed età anagrafica è essenziale quando si vuole seguire un bambino di naledi senza trasformarlo automaticamente in un bambino dei nostri giorni."
+      ]
+    },
+    {
+      "title": "Dentro un cranio piccolo",
+      "level": "Documentato",
+      "sources": [
+        "naledi-endocast",
+        "naledi-lesedi",
+        "naledi-diagnosis"
+      ],
+      "paragraphs": [
+        "Sul tavolo di un laboratorio una cavità cranica può essere riempita virtualmente a partire dalle superfici interne ricostruite. Gli esemplari compositi di Dinaledi hanno dato stime di circa 465 e 560 centimetri cubi. Per LES1, più completo, la stima è circa 610. Questi risultati differiscono per individuo e per procedura di ricostruzione. Raggrupparli in una singola media avrebbe poco senso senza tenere conto del modo in cui sono stati ottenuti. Anche attribuire il sesso sulla sola base della grandezza del cranio introduce un’ipotesi che dovrebbe essere controllata con dati indipendenti.",
+        "I calchi hanno anche una superficie. Alcuni rilievi del cervello lasciano segni sulla parete interna del cranio, che si possono confrontare con quelli di altri fossili. Ralph Holloway e colleghi hanno riconosciuto in certe regioni frontali una disposizione con somiglianze rispetto ad altri Homo, malgrado la capacità contenuta. Un endocasto restituisce un involucro e alcune impronte. L’organizzazione fine delle connessioni, l’attività durante un compito e la storia dell’apprendimento individuale sono altre dimensioni. La combinazione fra volume ridotto e forme di regioni relativamente riorganizzate rende poco plausibile un’equazione elementare fra centimetri cubi e comportamento.",
+        "Questi fossili diventano particolarmente istruttivi quando si discute di linguaggio. Un pollice adatto alla presa non offre da solo un manufatto datato. Allo stesso modo una regione endocranica con una certa forma non offre una parola pronunciata. Se naledi trasmetteva informazioni complesse con la voce o combinava gesti e suoni, il materiale oggi disponibile lascia aperti i dettagli. Possiamo tuttavia porre la domanda senza imporle in anticipo la risposta suggerita dalle dimensioni del cranio."
+      ]
+    },
+    {
+      "title": "Cosa accadde ai morti",
+      "level": "Controverso",
+      "sources": [
+        "naledi-context",
+        "naledi-burial",
+        "naledi-critique",
+        "naledi-marks"
+      ],
+      "paragraphs": [
+        "Le ossa di Dinaledi appartenevano a persone di età diverse. Mancavano molti degli accompagnatori abituali dei depositi di carnivori e una parte delle ossa minute si era conservata. Il gruppo che studiò il contesto propose già nel 2015 che dei corpi potessero essere stati portati nel sistema intenzionalmente. È importante seguire l’ipotesi passo dopo passo. Il trasporto deliberato di un corpo, la sua deposizione in un punto scelto, lo scavo di una fossa e la celebrazione di un rito sono azioni differenti. Ogni passaggio aggiunge una domanda per la quale occorrono evidenze specifiche. Una concentrazione ossea può cambiare forma per movimenti del sedimento o per il cedimento dei tessuti molli durante la decomposizione.",
+        "Nel 2023 apparvero preprint che sostenevano una vera e propria sepoltura. María Martinón-Torres e colleghi contestarono l’identificazione, chiedendo una migliore esclusione di dinamiche naturali e una documentazione più decisiva delle strutture. Il testo sulla sepoltura apparso in versione finale su eLife nel 2025 amplia dati e argomentazioni e interpreta tre concentrazioni come compatibili con l’intenzionale interramento. La valutazione editoriale pubblica registra un disaccordo persistente. Un revisore trovò convincente l’argomentazione rivista, un altro ritenne incompleta la prova di una conclusione univoca. Conviene leggere le revisioni accanto alla risposta degli autori. Danno accesso alle ragioni che una formula generica di approvazione o bocciatura nasconderebbe.",
+        "Un secondo studio descrive segni sulle pareti interpretati dagli autori come incisioni. Anche dimostrandone l’origine intenzionale, resterebbe da determinarne l’età e da identificarne gli esecutori. L’associazione spaziale con resti di una specie non soddisfa automaticamente questi criteri. Nemmeno l’oscurità della camera dimostra di per sé che naledi vi usasse regolarmente il fuoco. Una scena di persone che trasportano torce verso una tomba incidendo le pareti sommerebbe molte inferenze indipendenti in una sola immagine dall’apparenza ingannevolmente certa."
+      ]
+    },
+    {
+      "title": "Lo smalto e un risultato inatteso",
+      "level": "Documentato",
+      "sources": [
+        "naledi-enamel",
+        "naledi-ward"
+      ],
+      "paragraphs": [
+        "Nel giugno 2026 uno studio di Palesa Madupe e colleghi ha aggiunto un tipo di informazione che la morfologia non poteva fornire. Nello smalto si possono conservare frammenti di proteine prodotti durante la formazione del dente. Estraendone quantità minute è possibile cercare sequenze caratteristiche, comprese quelle associate alle forme dell’amelogenina codificate sui cromosomi sessuali. Il gruppo ha analizzato ventitré denti che rappresentano almeno venti individui. In nessuno dei campioni è emerso un segnale convincente della forma associata al cromosoma Y. Gli autori hanno esaminato la possibilità di cause tecniche e hanno confrontato altri peptidi recuperati. Il dato di partenza è dunque una distribuzione inattesa in un insieme specifico di reperti.",
+        "Se fosse noto con certezza che nella popolazione originaria i marcatori si comportavano come nel riferimento moderno, una forte selezione dei corpi presenti sarebbe un’interpretazione da considerare. Ma la biologia della proteina nella specie, ciò che il metodo può recuperare e il modo in cui i denti sono entrati nel campione fanno parte del problema. La combinazione dei dati molecolari con una buona serie anatomica può cambiare perfino il modo di leggere la differenza di taglia tra individui. Un carattere ritenuto tipico dei maschi in base a un confronto esterno potrebbe avere una storia diversa.",
+        "Per l’archeologia dei morti il risultato apre pertanto un nuovo controllo. Altri siti con materiale attribuibile a naledi offrirebbero un confronto prezioso per la presenza dei marcatori. Nuovi depositi scavati con registrazione spaziale fine aiuterebbero a stabilire come si siano formati i campioni. Concludere già oggi che esistesse un luogo riservato alle sepolture femminili darebbe alla proteina una capacità di testimoniare le intenzioni che nessuna analisi le ha conferito."
+      ]
+    },
+    {
+      "title": "Contemporanei quanto, vicini dove",
+      "level": "Sconosciuto",
+      "sources": [
+        "naledi-dating",
+        "naledi-irhoud",
+        "naledi-evolution",
+        "naledi-enamel"
+      ],
+      "paragraphs": [
+        "La carta dell’Africa offre una verifica semplice. Collochiamo una puntina a Jebel Irhoud e una seconda a Rising Star. La prima indica una testimonianza nordafricana del lignaggio sapiens attorno a 315 mila anni fa. La seconda indica un complesso sudafricano i cui fossili datati ricadono fra 335 mila e 236 mila anni fa. Sovrapponendo le fasce d’incertezza, gli individui possono appartenere allo stesso grande intervallo cronologico. La distanza fra le puntine rimane però quella di buona parte di un continente. Disegnare un tratto fra i due luoghi aggiungerebbe un viaggio o un contatto di cui nessuna delle due puntine porta traccia. Neppure l’intero intervallo di Dinaledi può diventare un computo degli anni trascorsi insieme a sapiens.",
+        "La stessa distinzione vale quando si cerca di dire come naledi sia scomparso. L’estremo recente della finestra di datazione si riferisce ai resti che possediamo. Il gruppo biologico poteva vivere altrove o durare oltre la deposizione conosciuta. Una sola regione di ritrovamento produce un serio squilibrio nel campione geografico. Storie di cambiamento climatico, isolamento, competizione o assorbimento in altre popolazioni descrivono meccanismi possibili in generale. Senza una successione di popolazioni datate, una prova di contatto o un segnale genealogico attribuibile a naledi, non possiamo scegliere fra quei meccanismi nel caso concreto.",
+        "Ci resta un’eredità scientifica molto precisa. Una specie che alla prima occhiata sembrava appartenere a un capitolo remoto del genere Homo è entrata nel mondo dei nostri primi contemporanei. Il cambiamento è venuto dalla geologia e dai denti. A sua volta ha costretto paleontologi e archeologi a riesaminare quale essere umano potesse camminare, imparare e forse lavorare la pietra nell’Africa del Pleistocene medio. Un solo sistema di grotte ha cambiato il calendario. A stabilirne la vera estensione nello spazio potrebbe essere, un giorno, un reperto trovato altrove."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "naledi-diagnosis",
+      "authors": "L. R. Berger et al.",
+      "title": "Homo naledi, a new species of the genus Homo from the Dinaledi Chamber, South Africa",
+      "year": 2015,
+      "journal": "eLife",
+      "doi": "10.7554/eLife.09560",
+      "url": "https://doi.org/10.7554/eLife.09560",
+      "evidence": "Studio primario. Diagnosi, anatomia comparata, stime scheletriche, materiale di riferimento.",
+      "limits": "Diagnosi morfologica. Datazione numerica pubblicata successivamente."
+    },
+    {
+      "id": "naledi-context",
+      "authors": "P. H. G. M. Dirks et al.",
+      "title": "Geological and taphonomic context for the new hominin species Homo naledi from the Dinaledi Chamber, South Africa",
+      "year": 2015,
+      "journal": "eLife",
+      "doi": "10.7554/eLife.09561",
+      "url": "https://doi.org/10.7554/eLife.09561",
+      "evidence": "Studio primario del deposito, dei processi di trasporto e delle superfici ossee.",
+      "limits": "L’accessibilità antica e il meccanismo d’ingresso dei corpi richiedono interpretazione."
+    },
+    {
+      "id": "naledi-dating",
+      "authors": "P. H. G. M. Dirks et al.",
+      "title": "The age of Homo naledi and associated sediments in the Rising Star Cave, South Africa",
+      "year": 2017,
+      "journal": "eLife",
+      "doi": "10.7554/eLife.24231",
+      "url": "https://doi.org/10.7554/eLife.24231",
+      "evidence": "Studio primario di denti, sedimenti e depositi di calcite con più tecniche.",
+      "limits": "Intervallo di deposizione, sensibile anche al modello di esposizione alle radiazioni. Si applica a Dinaledi."
+    },
+    {
+      "id": "naledi-lesedi",
+      "authors": "J. Hawks et al.",
+      "title": "New fossil remains of Homo naledi from the Lesedi Chamber, South Africa",
+      "year": 2017,
+      "journal": "eLife",
+      "doi": "10.7554/eLife.24232",
+      "url": "https://doi.org/10.7554/eLife.24232",
+      "evidence": "Studio primario di una camera distinta e del cranio LES1.",
+      "limits": "L’attribuzione anatomica non trasferisce automaticamente la datazione di un’altra camera."
+    },
+    {
+      "id": "naledi-evolution",
+      "authors": "L. R. Berger, J. Hawks, P. H. G. M. Dirks, M. Elliott, E. M. Roberts",
+      "title": "Homo naledi and Pleistocene hominin evolution in subequatorial Africa",
+      "year": 2017,
+      "journal": "eLife",
+      "doi": "10.7554/eLife.24234",
+      "url": "https://doi.org/10.7554/eLife.24234",
+      "evidence": "Sintesi interpretativa delle affinità e della collocazione cronologica.",
+      "limits": "Le ipotesi sulla discendenza e sulle industrie prive di fossili sono alternative da verificare."
+    },
+    {
+      "id": "naledi-hand",
+      "authors": "T. L. Kivell et al.",
+      "title": "The hand of Homo naledi",
+      "year": 2015,
+      "journal": "Nature Communications",
+      "doi": "10.1038/ncomms9431",
+      "url": "https://doi.org/10.1038/ncomms9431",
+      "evidence": "Studio primario delle mani, confronto funzionale e morfologico.",
+      "limits": "La predisposizione a una presa non dimostra un’industria determinata."
+    },
+    {
+      "id": "naledi-foot",
+      "authors": "W. E. H. Harcourt-Smith et al.",
+      "title": "The foot of Homo naledi",
+      "year": 2015,
+      "journal": "Nature Communications",
+      "doi": "10.1038/ncomms9432",
+      "url": "https://doi.org/10.1038/ncomms9432",
+      "evidence": "Studio primario di 107 elementi del piede, compreso un piede quasi intero.",
+      "limits": "L’andatura e le superfici frequentate sono inferenze funzionali."
+    },
+    {
+      "id": "naledi-diet",
+      "authors": "M. A. Berthaume, L. K. Delezene, K. Kupczik",
+      "title": "Dental topography and the diet of Homo naledi",
+      "year": 2018,
+      "journal": "Journal of Human Evolution",
+      "doi": "10.1016/j.jhevol.2018.02.006",
+      "url": "https://doi.org/10.1016/j.jhevol.2018.02.006",
+      "evidence": "Studio primario di topografia dentaria e resistenza all’usura.",
+      "limits": "Le proprietà meccaniche della dieta non rivelano le singole specie vegetali o animali consumate."
+    },
+    {
+      "id": "naledi-endocast",
+      "authors": "R. L. Holloway et al.",
+      "title": "Endocast morphology of Homo naledi from the Dinaledi Chamber, South Africa",
+      "year": 2018,
+      "journal": "Proceedings of the National Academy of Sciences",
+      "doi": "10.1073/pnas.1720842115",
+      "url": "https://doi.org/10.1073/pnas.1720842115",
+      "evidence": "Studio primario dei calchi endocranici e delle asimmetrie.",
+      "limits": "I segni sulle superfici non misurano competenze cognitive o linguistiche."
+    },
+    {
+      "id": "naledi-juvenile",
+      "authors": "D. R. Bolter, M. C. Elliott, J. Hawks, L. R. Berger",
+      "title": "Immature remains and the first partial skeleton of a juvenile Homo naledi, a late Middle Pleistocene hominin from South Africa",
+      "year": 2020,
+      "journal": "PLOS ONE",
+      "doi": "10.1371/journal.pone.0230440",
+      "url": "https://doi.org/10.1371/journal.pone.0230440",
+      "evidence": "Studio primario dell’associazione di elementi immaturi e della maturazione.",
+      "limits": "Le stime di età in anni dipendono dalla crescita assunta nel confronto."
+    },
+    {
+      "id": "naledi-burial",
+      "authors": "L. R. Berger et al.",
+      "title": "Evidence for deliberate burial of the dead by Homo naledi",
+      "year": 2025,
+      "journal": "eLife",
+      "doi": "10.7554/eLife.89106.3",
+      "url": "https://doi.org/10.7554/eLife.89106.3",
+      "evidence": "Ricerca primaria con valutazioni pubbliche, Version of Record del 1º settembre 2025.",
+      "limits": "I revisori della versione rivista divergono sulla sufficienza delle evidenze."
+    },
+    {
+      "id": "naledi-critique",
+      "authors": "M. Martinón-Torres et al.",
+      "title": "No scientific evidence that Homo naledi buried their dead and produced rock art",
+      "year": 2024,
+      "journal": "Journal of Human Evolution",
+      "doi": "10.1016/j.jhevol.2023.103464",
+      "url": "https://doi.org/10.1016/j.jhevol.2023.103464",
+      "evidence": "Analisi critica dei criteri di diagnosi archeologica, anticipata online nel 2023.",
+      "limits": "Discute le prime formulazioni. Per la revisione successiva leggere anche la versione eLife 2025."
+    },
+    {
+      "id": "naledi-marks",
+      "authors": "L. R. Berger et al.",
+      "title": "An initial report of circa 241,000- to 335,000-year-old rock engravings and their relation to Homo naledi in the Rising Star cave system, South Africa",
+      "year": 2025,
+      "journal": "eLife",
+      "doi": "10.7554/eLife.89102",
+      "url": "https://doi.org/10.7554/eLife.89102",
+      "evidence": "Relazione primaria con revisioni pubbliche su segni osservati sulle pareti.",
+      "limits": "Età, agenti responsabili e intenzione dei segni non sono dimostrati in modo indipendente."
+    },
+    {
+      "id": "naledi-enamel",
+      "authors": "P. P. Madupe et al.",
+      "title": "Proteomic analysis of dental enamel from 20 Homo naledi individuals shows no male markers",
+      "year": 2026,
+      "journal": "Cell",
+      "doi": "10.1016/j.cell.2026.05.044",
+      "url": "https://doi.org/10.1016/j.cell.2026.05.044",
+      "evidence": "Studio primario, proteine dello smalto su 23 denti di almeno venti individui.",
+      "limits": "L’assenza di marcatori maschili nel campione non identifica un rito o la composizione della popolazione."
+    },
+    {
+      "id": "naledi-ward",
+      "authors": "D. L. Ward",
+      "title": "Missing: amelogenin Y",
+      "year": 2026,
+      "journal": "Nature Ecology & Evolution",
+      "doi": "10.1038/s41559-026-03155-6",
+      "url": "https://doi.org/10.1038/s41559-026-03155-6",
+      "evidence": "Nota editoriale di ricerca sul risultato proteomico e le sue alternative.",
+      "limits": "Commento allo studio di Madupe, senza dati indipendenti aggiuntivi."
+    },
+    {
+      "id": "naledi-irhoud",
+      "authors": "D. Richter et al.",
+      "title": "The age of the hominin fossils from Jebel Irhoud, Morocco, and the origins of the Middle Stone Age",
+      "year": 2017,
+      "journal": "Nature",
+      "doi": "10.1038/nature22335",
+      "url": "https://doi.org/10.1038/nature22335",
+      "evidence": "Studio primario, cronologia del sito nordafricano.",
+      "limits": "La comparazione con Dinaledi riguarda le età e non stabilisce un contatto."
+    }
+  ],
+  "discoveries": [
+    "2013 · Gli speleologi individuano resti nel sistema di Rising Star. Cominciano gli scavi.",
+    "2015 · La diagnosi istituisce Homo naledi e viene pubblicato il contesto geologico di Dinaledi.",
+    "2017 · La datazione combinata vincola la deposizione dei fossili di Dinaledi a 335–236 mila anni fa. Viene descritto il materiale di Lesedi.",
+    "2018 · Endocranio e topografia dentaria aprono confronti su organizzazione cerebrale e adattamenti alimentari.",
+    "2023–2025 · Preprint, critiche e versioni pubblicate discutono deposizione intenzionale, sepolture e segni sulle pareti.",
+    "2026 · Viene pubblicata l’analisi paleoproteomica di denti riferiti ad almeno venti individui."
+  ],
+  "specimens": [
+    "DH1 · olotipo, materiale cranico e mandibolare",
+    "Hand 1 · mano destra pressoché completa",
+    "Foot 1 · piede destro pressoché completo",
+    "LES1, Neo · cranio e resti associati di Lesedi"
+  ],
+  "glossary": {
+    "Tafonomia": "Studio dei processi che intervengono fra la morte e il recupero di un resto.",
+    "Olotipo": "Esemplare di riferimento al quale è ancorato il nome di una specie.",
+    "Mosaico anatomico": "Combinazione di caratteri con storie evolutive differenti.",
+    "Endocasto": "Calco della cavità cranica, fisico o virtuale.",
+    "Amelogenina": "Proteina implicata nella formazione dello smalto, di cui possono conservarsi frammenti.",
+    "US-ESR": "Datazione che combina serie dell’uranio e risonanza di spin elettronico.",
+    "Speleotema": "Deposito minerale formato in ambiente di grotta, per esempio da acqua di percolazione."
+  },
+  "version": "1.0",
+  "reviewed": "2026-11-23"
+}

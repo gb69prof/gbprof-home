@@ -1,0 +1,325 @@
+{
+  "id": "luzon",
+  "name": "Homo luzonensis",
+  "subtitle": "Callao, la storia racchiusa in sette denti",
+  "sources": [
+    {
+      "id": "luzon-coast",
+      "authors": "S. O’Connor, J. Louys, S. Kealy e S. C. Samper Carro",
+      "title": "Hominin Dispersal and Settlement East of Huxley’s Line: The Role of Sea Level Changes, Island Size, and Subsistence Behavior",
+      "year": 2017,
+      "journal": "Current Anthropology",
+      "doi": "10.1086/694252",
+      "evidence": "Sintesi delle barriere marine, dei livelli del mare e dei reperti faunistici insulari, compresi i segni sui cervidi di Callao.",
+      "limits": "La descrizione della specie e la revisione di età sono posteriori. Percorsi e mezzi della traversata restano ipotetici.",
+      "url": "https://doi.org/10.1086/694252",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "luzon-species",
+      "authors": "F. Détroit et al.",
+      "title": "A new species of Homo from the Late Pleistocene of the Philippines",
+      "year": 2019,
+      "journal": "Nature",
+      "doi": "10.1038/s41586-019-1067-9",
+      "evidence": "Descrizione di sette denti e di elementi postcranici di Callao, diagnosi tassonomica.",
+      "limits": "Mancano cranio e arti completi. Le età alle serie dell'uranio erano minime.",
+      "url": "https://doi.org/10.1038/s41586-019-1067-9",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "luzon-first",
+      "authors": "A. S. Mijares et al.",
+      "title": "New evidence for a 67,000-year-old human presence at Callao Cave, Luzon, Philippines",
+      "year": 2010,
+      "journal": "Journal of Human Evolution",
+      "doi": "10.1016/j.jhevol.2010.04.008",
+      "evidence": "Anatomia comparata e stima minima iniziale per CCH1.",
+      "limits": "Il solo metatarsale non discrimina la specie. Gli isotopi sono stati successivamente riesaminati.",
+      "url": "https://doi.org/10.1016/j.jhevol.2010.04.008",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "luzon-kalinga",
+      "authors": "T. Ingicco et al.",
+      "title": "Earliest known hominin activity in the Philippines by 709 thousand years ago",
+      "year": 2018,
+      "journal": "Nature",
+      "doi": "10.1038/s41586-018-0072-8",
+      "evidence": "Carcassa di rinoceronte lavorata, litica e datazioni del giacimento.",
+      "limits": "L'identità biologica degli autori è ignota.",
+      "url": "https://doi.org/10.1038/s41586-018-0072-8",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "luzon-dental",
+      "authors": "C. Zanolli et al.",
+      "title": "Further analyses of the structural organization of Homo luzonensis teeth: Evolutionary implications",
+      "year": 2022,
+      "journal": "Journal of Human Evolution",
+      "doi": "10.1016/j.jhevol.2021.103124",
+      "evidence": "Microtomografia e confronto dei tessuti dentari interni ed esterni.",
+      "limits": "Il sostegno a un'affinità con erectus deriva da un campione piccolo.",
+      "url": "https://doi.org/10.1016/j.jhevol.2021.103124",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "luzon-tree",
+      "authors": "P. Gousset, J. Bardin, I. Rouget, A. S. Mijares e F. Détroit",
+      "title": "Homo luzonensis and the role of homoplasy in the morphology of hominin insular species",
+      "year": 2026,
+      "journal": "Cladistics",
+      "doi": "10.1111/cla.70027",
+      "evidence": "Analisi cladistica sui denti e sugli elementi postcranici adulti con confronto di topologie.",
+      "limits": "Le affinità dipendono dai caratteri disponibili, con possibile omoplasia.",
+      "url": "https://doi.org/10.1111/cla.70027",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "luzon-dating",
+      "authors": "R. Grün e C. Stringer",
+      "title": "Direct dating of human fossils and the ever-changing story of human evolution",
+      "year": 2023,
+      "journal": "Quaternary Science Reviews",
+      "doi": "10.1016/j.quascirev.2023.108379",
+      "evidence": "Riesame metodologico e isotopico. Età minima rivista di 134 ± 14 ka per Homo luzonensis.",
+      "limits": "Limite minimo e incertezza della misura non delimitano l'esistenza della specie.",
+      "url": "https://doi.org/10.1016/j.quascirev.2023.108379",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "luzon-basin",
+      "authors": "J.-B. Lambard et al.",
+      "title": "Geochronological advances in human and proboscideans first arrival date in the Philippines archipelago (Cagayan valley, Luzon Island)",
+      "year": 2024,
+      "journal": "Quaternary Geochronology",
+      "doi": "10.1016/j.quageo.2024.101597",
+      "evidence": "Nuovi vincoli ESR e argon-argon su sequenze archeologiche della valle.",
+      "limits": "Le attività anteriori a Callao non sono attribuibili automaticamente alla specie.",
+      "url": "https://doi.org/10.1016/j.quageo.2024.101597",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "luzon-prehistory",
+      "authors": "A. F. Pawlik e R. Fuentes",
+      "title": "Prehistoric Hunter-Gatherers in the Philippines—Subsistence strategies, adaptation, and behaviour in maritime environments",
+      "year": 2023,
+      "journal": "Frontiers in Earth Science",
+      "doi": "10.3389/feart.2023.1110147",
+      "evidence": "Rassegna delle evidenze archeologiche filippine stratificate.",
+      "limits": "La cronologia di Callao va integrata con la successiva revisione isotopica.",
+      "url": "https://doi.org/10.3389/feart.2023.1110147",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "luzon-tabon",
+      "authors": "F. Détroit et al.",
+      "title": "Upper Pleistocene Homo sapiens from the Tabon cave (Palawan, The Philippines): description and dating of new discoveries",
+      "year": 2004,
+      "journal": "Comptes Rendus Palevol",
+      "doi": "10.1016/j.crpv.2004.06.004",
+      "evidence": "Resti di Homo sapiens e intervalli di datazione da un'altra isola dell'arcipelago.",
+      "limits": "Nessuna dimostrazione di compresenza locale con la popolazione di Callao.",
+      "url": "https://doi.org/10.1016/j.crpv.2004.06.004",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "luzon-genes",
+      "authors": "M. Larena et al.",
+      "title": "Philippine Ayta possess the highest level of Denisovan ancestry in the world",
+      "year": 2021,
+      "journal": "Current Biology",
+      "doi": "10.1016/j.cub.2021.07.022",
+      "evidence": "Dati genomici in popolazioni viventi documentano ascendenza affine ai Denisoviani.",
+      "limits": "Nessun genoma di Callao. Non dimostra identità denisoviana o incroci di Homo luzonensis.",
+      "url": "https://doi.org/10.1016/j.cub.2021.07.022",
+      "type": "Articolo sottoposto a revisione paritaria"
+    },
+    {
+      "id": "luzon-irhoud",
+      "authors": "J.-J. Hublin et al.",
+      "title": "New fossils from Jebel Irhoud, Morocco and the pan-African origin of Homo sapiens",
+      "year": 2017,
+      "journal": "Nature",
+      "doi": "10.1038/nature22336",
+      "evidence": "Riferimento fossile africano per la cronologia globale di sapiens.",
+      "limits": "Il dato riguarda l'Africa e non identifica i gruppi passati da Luzon.",
+      "url": "https://doi.org/10.1038/nature22336",
+      "type": "Articolo sottoposto a revisione paritaria"
+    }
+  ],
+  "discoveries": [
+    "2007 · Recupero del terzo metatarsale CCH1 a Callao.",
+    "2010 · Pubblicazione del metatarsale e della prima età minima.",
+    "2018 · Pubblicazione del rinoceronte lavorato di Kalinga, senza identificazione degli ominini.",
+    "2019 · Détroit, Mijares e colleghi descrivono Homo luzonensis.",
+    "2022 · Comparazione microtomografica dei sette denti.",
+    "2023 · Riesame isotopico con limite minimo di 134 ± 14 ka.",
+    "2024 · Nuova cronologia dei siti all'aperto nel bacino del Cagayan.",
+    "2026 · Analisi cladistica dell'omoplasia e delle affinità con H. erectus."
+  ],
+  "specimens": [
+    "CCH1 · Terzo metatarsale, scoperto nel 2007.",
+    "CCH6 a–e · Cinque denti mascellari di un individuo, olotipo.",
+    "CCH8 e CCH9 · Premolare e terzo molare superiori, paratipi.",
+    "CCH2 e CCH5 · Falangi della mano.",
+    "CCH3 e CCH4 · Falangi del piede, fra cui la falange prossimale CCH4.",
+    "CCH7 · Porzione della diafisi di un femore giovanile.",
+    "Kalinga · Rinoceronte con tracce di macellazione e manufatti. Autori di specie indeterminata."
+  ],
+  "glossary": {
+    "Metatarsale": "Osso del piede posto tra il tarso e la base di un dito.",
+    "Giunzione smalto-dentina": "Superficie di contatto fra i tessuti della corona, studiabile in microtomografia.",
+    "Omoplasia": "Somiglianza acquisita indipendentemente in linee diverse, anche per reversione.",
+    "Plesiomorfia": "Condizione ancestrale di un carattere rispetto al gruppo considerato.",
+    "Cladistica": "Analisi delle relazioni di parentela basata sulla distribuzione di caratteri.",
+    "Età minima": "Vincolo che permette un'età reale più antica del limite stimato.",
+    "Diafisi": "Tratto centrale di un osso lungo.",
+    "Olotipo": "Esemplare al quale è ancorato il nome di una specie."
+  },
+  "chapters": [
+    {
+      "title": "La valle che si apre sul mare",
+      "level": "Documentato",
+      "sources": [
+        "luzon-coast",
+        "luzon-species",
+        "luzon-kalinga"
+      ],
+      "paragraphs": [
+        "Sulla carta attuale delle Filippine, Luzon occupa gran parte del nord dell'arcipelago. Nella provincia di Cagayan, presso Peñablanca, il calcare custodisce la grotta di Callao. Fra queste colline e la terraferma asiatica il mare ha ripetutamente spostato le sue rive. Nei periodi glaciali le coste avanzavano e le isole crescevano, senza che tutti gli stretti profondi venissero colmati. A un ominino che fosse giunto a Luzon dal continente sarebbe occorso attraversare almeno un braccio di mare. Non disponiamo dell'oggetto o della testimonianza che ci dica come avvenne quel passaggio.",
+        "Al riparo nella roccia arrivarono resti di cervidi, suidi e di un bovide oggi estinto. Poco più lontano, nella stessa grande valle ma in sedimenti molto più antichi, vivevano rinoceronti, proboscidati, tartarughe d'acqua dolce e varani. I due paesaggi si possono situare sulla medesima carta geografica. Distano però abbastanza nel tempo da richiedere due scene differenti. Un disegnatore che collocasse tutti quegli animali all'ingresso di Callao, attorno a una famiglia di Homo luzonensis, darebbe alla valle una fauna composta assemblando livelli geologici diversi. Il problema delle Filippine è innanzitutto imparare a leggere un territorio a più profondità.",
+        "Di chi abitò la grotta sono rimasti denti, frammenti di mani e piedi, una parte di femore. Della pioggia che cadeva in una particolare stagione, dell'altezza degli alberi davanti all'ingresso o degli abitanti di una determinata giornata non abbiamo una registrazione altrettanto precisa. Possiamo ricostruire un mondo tropicale insulare nel quale le vie lungo i corsi d'acqua e gli ostacoli marini avevano un peso concreto. Per avvicinarci a una persona, bisogna abbandonare la veduta panoramica e osservare un osso lungo pochi centimetri."
+      ]
+    },
+    {
+      "title": "Un piede prima di un nome",
+      "level": "Documentato",
+      "sources": [
+        "luzon-first",
+        "luzon-species"
+      ],
+      "paragraphs": [
+        "Nel 2007, durante le ricerche dirette da Armand Salvador Mijares, nel livello oggi noto come strato 14 venne in luce un terzo metatarsale. Il metatarso è il tratto del piede compreso fra le ossa vicine alla caviglia e le dita. L'elemento di Callao ricevette la sigla CCH1. Era gracile, abbastanza simile in alcune proporzioni a quello di esseri umani attuali di corporatura minuta. Nei confronti anatomici rientravano però anche ominini fossili assai differenti. Il gruppo presentò il ritrovamento nel 2010 come prova della presenza del genere Homo sull'isola. La prudenza dell'attribuzione lasciava aperta la possibilità di imparare altro senza dover difendere una identificazione prematura.",
+        "Continuando gli scavi vennero alla luce dodici elementi umani aggiuntivi. Si trattava di sette denti superiori, due falangi della mano, due del piede e un tratto della parte centrale del femore appartenente a un individuo immaturo. Gli elementi conservati rappresentavano almeno tre persone. Dire «almeno» ha un significato operativo. Ripetizioni anatomiche e differenze di sviluppo impediscono di ricondurre tutto a uno o due individui. Le parti presenti una volta sola, invece, non rivelano sempre a quale di quelle persone appartenessero. Il numero minimo di individui è una conclusione verificabile anche quando è impossibile riunire gli scheletri.",
+        "Nel 2019 Florent Détroit, Mijares e colleghi presentarono questa combinazione con il nome di Homo luzonensis. Il riferimento formale del nome è CCH6, un gruppo di cinque denti dello stesso individuo. La sequenza della scoperta è istruttiva. L'osso che portò i ricercatori alla specie e l'esemplare su cui la specie è stata nominata sono differenti. Una vetrina ordinata soltanto per importanza tassonomica comincerebbe dai cinque denti. Una storia di scavo deve cominciare invece dal piede, perché fu il suo ritrovamento a rendere decisiva la ricerca dei pezzi mancanti."
+      ]
+    },
+    {
+      "title": "I denti, fuori e dentro",
+      "level": "Documentato",
+      "sources": [
+        "luzon-dental",
+        "luzon-species"
+      ],
+      "paragraphs": [
+        "Cinque denti superiori accostati permettono di osservare le proporzioni fra molari e premolari di una stessa persona. Nei molari colpiscono le dimensioni minute e la relativa semplicità della superficie masticatoria. I premolari, guardati in rapporto ai molari, sono relativamente grandi e hanno radici più complesse di quanto solitamente avvenga nella nostra specie. Quando si riconoscono due o tre radici, entra in gioco una parte dell'anatomia che in un individuo vivente rimarrebbe nascosta nell'osso. È la combinazione di questi particolari, confrontata con altre dentature fossili, a motivare la diagnosi di Callao.",
+        "Da un dente sciolto si può ottenere ancora molto. Nel lavoro pubblicato nel 2022, Clément Zanolli e colleghi utilizzarono la microtomografia per osservare i tessuti interni dei sette denti. I raggi X attraversano con diversa facilità smalto e dentina. Da una serie di immagini si ricostruiscono superfici che dividono i tessuti e volumi come la cavità della polpa. La giunzione tra smalto e dentina conserva la disposizione dei rilievi dentari anche dove la masticazione ha consumato la superficie esterna. Si riesce così a distinguere una parte del progetto di crescita del dente dalle modificazioni che ha subito negli anni.",
+        "I ricercatori hanno confrontato il disegno esterno della corona e la struttura interna con denti appartenenti a più popolazioni del genere Homo. Alcune affinità riguardano Homo erectus dell'Asia, altre richiamano i reperti di Flores. Si tratta di più osservazioni su uno stesso sistema biologico, e questo invita alla precisione nel pesarle. Due particolari dello stesso dente possono dipendere dallo stesso processo di sviluppo. Una somiglianza riscontrata anche in una parte del cranio, o in un carattere degli arti indipendente dalla dentatura, avrebbe un diverso valore di conferma. A Callao molte di quelle verifiche aspettano fossili ancora da trovare."
+      ]
+    },
+    {
+      "title": "Il corpo che possiamo disegnare",
+      "level": "Fortemente supportato",
+      "sources": [
+        "luzon-species",
+        "luzon-dental",
+        "luzon-tree"
+      ],
+      "paragraphs": [
+        "La falange del piede CCH4 presenta una curvatura pronunciata e superfici d'inserzione dei muscoli flessori ben sviluppate. Se si accostano il suo profilo e quello di una falange umana recente, la differenza ha una forma visibile, misurabile. Alcune somiglianze richiamano ominini molto più antichi, incluse forme africane che ricorrevano a una locomozione diversificata. È stato suggerito che gli abitanti di Luzon conservassero una componente di arrampicata. Per passare dalla forma alla frequenza di un comportamento, tuttavia, occorrerebbe conoscere il piede completo, l'attacco alla caviglia, il ginocchio, il bacino e il rapporto dell'insieme con il peso corporeo.",
+        "Un arrampicatore occasionale e un individuo che trascorre gran parte della giornata sugli alberi possono entrambi possedere dita utilizzabili per la presa. Le ossa registrano effetti dell'eredità, dello sviluppo e delle sollecitazioni, in proporzioni non facili da separare. Un osso ricurvo dimostra che esisteva un determinato profilo. La scena in cui la persona afferra un ramo è un'ipotesi sul significato di quel profilo. Le due cose meritano di essere mostrate a livelli distinti in una tavola di anatomia comparata.",
+        "Il femore giovanile è incompleto. Non offre la lunghezza di un arto adulto dalla quale partire per stimare la statura. Piccoli molari e un metatarsale gracile sono indizi suggestivi di dimensioni contenute, ma la dentatura, il piede e l'intero corpo possono cambiare di taglia a ritmi diversi nel corso dell'evoluzione. Non possediamo un cranio dal quale ricavare il volume endocranico o il profilo facciale. A scala metrica si possono legittimamente confrontare i denti omologhi e le porzioni scheletriche conservate. Disegnare un intero individuo alto quanto LB1 di Flores introdurrebbe nel ritratto proprio la misura che intendiamo scoprire."
+      ]
+    },
+    {
+      "title": "L'orologio aperto dell'uranio",
+      "level": "Fortemente supportato",
+      "sources": [
+        "luzon-first",
+        "luzon-dating",
+        "luzon-species",
+        "luzon-basin"
+      ],
+      "paragraphs": [
+        "Per CCH1, nel 2010, la datazione mediante serie dell'uranio restituì un'età minima di 66,7 ± 1 migliaia di anni. Per il dente CCH6-a, nel lavoro descrittivo del 2019, era riportato un limite minimo di circa cinquantamila anni. È da questi valori che deriva la dicitura «tra 67.000 e 50.000 anni fa», a lungo ripetuta nelle cronologie. Ma l'estremo giovane era già una soglia minima. Trattare quei due numeri come primo e ultimo anno della specie implica due trasformazioni improprie, da vincolo su un campione a data della sua morte e da una data individuale a una proprietà di tutta la popolazione.",
+        "Durante la vita, un dente e un osso non contengono necessariamente la quantità di uranio che avranno dopo millenni nel terreno. Le acque circolanti possono introdurre uranio nei tessuti mineralizzati. Nel tempo, dalle trasformazioni radioattive dell'uranio si accumulano prodotti di decadimento, fra i quali il torio. Il rapporto misurato oggi dipende anche dal momento in cui l'uranio penetrò e da eventuali apporti successivi. Se molta materia entrò tardi, un calcolo che presuppone un ingresso unico e antico può far sembrare troppo giovane il reperto. Per questo la posizione dei punti misurati all'interno del campione può essere informativa quanto il singolo valore numerico.",
+        "Nel 2023 Rainer Grün e Chris Stringer hanno riletto i dati isotopici tenendo conto delle sovrapposizioni prodotte da apporti secondari. Hanno proposto per Homo luzonensis un'età minima di 134 ± 14 migliaia di anni. Un lavoro geocronologico del 2024 sul bacino del Cagayan richiama questa revisione. Il margine di quattordicimila anni esprime l'incertezza sul valore stimato, mentre «minima» specifica il rapporto tra quel valore e l'età effettiva. La popolazione potrebbe essere più antica. Non si ricava da questa misura una sopravvivenza continua fra 134.000 e 50.000 anni fa. Per documentarla servirebbero più presenze collocate con sicurezza a passaggi successivi della sequenza."
+      ]
+    },
+    {
+      "title": "Il rinoceronte di Kalinga",
+      "level": "Documentato",
+      "sources": [
+        "luzon-kalinga",
+        "luzon-basin",
+        "luzon-coast"
+      ],
+      "paragraphs": [
+        "I terrazzi e i sedimenti della valle del Cagayan hanno offerto testimonianze molto più antiche di attività umana. A Kalinga, in una matrice argillosa, gli scavi hanno restituito uno scheletro quasi completo e disarticolato di rinoceronte associato a cinquantasette manufatti litici. Su varie ossa si riconoscono tracce di lavorazione. Il deposito è stato situato fra circa 777.000 e 631.000 anni fa, con una stima centrale di circa 709.000. La datazione si fonda su misure compiute sullo smalto e sui sedimenti, fra cui la risonanza di spin elettronico. Una singola carcassa lega così la storia di un animale a quella di una presenza umana molto antica.",
+        "Ciò che manca, in mezzo a tutte queste prove, è un resto anatomico umano diagnostico. Il nome di chi trovò o si procurò il rinoceronte è aperto. Il dato riferibile con sicurezza a quegli individui è una parte del loro comportamento. Sapevano utilizzare margini taglienti per trattare una carcassa. Anche qui, scuoiare o disarticolare e abbattere l'animale sono azioni diverse. Delle prime possiamo trovare tracce sull'osso. Per documentare la seconda occorrerebbe un altro genere di evidenza. L'intervallo fra il rinoceronte e i fossili di Callao lascia spazio a molte storie demografiche reciprocamente incompatibili.",
+        "Nel 2024 Jean-Baptiste Lambard e colleghi hanno esteso i controlli cronologici ad altre località della valle, con segnalazioni di attività comprese fra stime di circa 796.000 e 273.000 anni fa, ciascuna con il suo margine di errore. Questo rende meno isolata la finestra archeologica di Kalinga. Si rafforza l'immagine di una regione frequentata a più riprese. Per dimostrare che tutti gli autori appartenessero alla linea evolutiva di Callao occorrerebbe riconoscere tratti anatomici lungo il percorso. Il fatto che chi troviamo alla fine della sequenza avesse antenati su qualche isola non ci dice automaticamente quali siano quei siti ancestrali."
+      ]
+    },
+    {
+      "title": "La vita intorno alla grotta",
+      "level": "Plausibile",
+      "sources": [
+        "luzon-coast",
+        "luzon-species",
+        "luzon-first",
+        "luzon-prehistory"
+      ],
+      "paragraphs": [
+        "A Callao i resti dei cervidi assumono un significato particolare perché sono stati segnalati su alcune ossa segni interpretati come tagli. Per il livello in questione le sintesi richiamano anche la mancanza di manufatti litici recuperati nello stesso contesto. Le due osservazioni possono convivere. Uno strumento potrebbe essere stato riportato via, eseguito in un materiale deperibile o rimasto fuori dalla superficie scavata. Fra queste possibilità nessun elemento disponibile autorizza a scegliere il bambù, una scheggia di pietra o un'altra materia come utensile tipico di Homo luzonensis.",
+        "Si può invece ragionare sulla formazione del deposito. Una cavità raccoglie animali che vi entrano da soli, materiali trasportati dall'acqua, resti portati da predatori e prodotti di attività umane. Distinguere le tracce microscopiche di un taglio dalle rigature provocate da calpestio o sedimenti è il primo passo per attribuire un agente. Accertato il taglio, restano da determinare il suo scopo, l'epoca e la popolazione responsabile. In uno strato frequentato e rimaneggiato in più momenti, la distanza cronologica fra un cervo e un dente umano può essere assai maggiore della loro distanza sul piano di scavo.",
+        "La grotta conserva anche livelli più recenti, ai quali sono stati riferiti focolari, carboni e schegge. Per l'interpretazione delle pratiche quotidiane è decisivo tenere ciascun ritrovamento nel proprio strato. L'esistenza di un focolare in una fase posteriore non documenta il controllo del fuoco da parte dell'umanità che lasciò i denti. La disposizione dei letti, la ripartizione dei compiti, il linguaggio o il trattamento dei morti non hanno qui indicatori sufficienti. Per immaginare una giornata possiamo riconoscere esigenze reali, come procurarsi acqua e cibo. Per trasformare quell'immaginazione in conoscenza servono tracce in grado di sopravvivere a interpretazioni alternative."
+      ]
+    },
+    {
+      "title": "La parentela nelle superfici",
+      "level": "Controverso",
+      "sources": [
+        "luzon-tree",
+        "luzon-dental",
+        "luzon-species"
+      ],
+      "paragraphs": [
+        "Se una falange somiglia a quella di un ominino africano molto antico, la spiegazione più intuitiva è che ne discenda da vicino. Una seconda possibilità è che una popolazione asiatica con un suo percorso evolutivo abbia sviluppato o riacquistato una forma simile. La somiglianza comparsa indipendentemente prende il nome di omoplasia. In un'isola, condizioni ripetute di disponibilità delle risorse, superficie occupabile e isolamento possono cambiare le pressioni selettive. Resta da dimostrare quali condizioni agirono su una determinata popolazione e per quanto tempo. Parlare di «effetto dell'isola» senza specificare un meccanismo non risolve la questione.",
+        "Nel 2026 Pierre Gousset e colleghi hanno messo alla prova più genealogie con un'analisi cladistica dei denti e degli elementi postcranici adulti. I caratteri dentari sostengono alberi nei quali Homo luzonensis è vicino a Homo erectus. Gli autori ritengono probabile un'origine da una popolazione asiatica di erectus evolutasi in isolamento. È una proposta corroborata dal parallelo studio delle strutture dentarie interne. Il suo grado di sostegno non permette di risalire al gruppo preciso che attraversò il mare o di identificare con certezza quali caratteri siano riemersi per convergenza.",
+        "Una nuova mandibola con denti ancora inseriti cambierebbe il problema. Permetterebbe di collegare le dimensioni della dentatura a quelle di una parte più ampia del viso e di descrivere caratteri oggi assenti dalle matrici comparative. Un cranio pressoché completo modificherebbe ancora di più il ventaglio dei confronti. Aggiungere un solo reperto ben scelto può valere più che ripetere molte analisi sugli stessi sette denti. Queste ultime riducono l'errore di misura e rivelano strutture interne, mentre un campione anatomico nuovo mette alla prova la generalità delle nostre ipotesi."
+      ]
+    },
+    {
+      "title": "Il vicino di cui non conosciamo l'incontro",
+      "level": "Sconosciuto",
+      "sources": [
+        "luzon-irhoud",
+        "luzon-dating",
+        "luzon-tabon",
+        "luzon-genes"
+      ],
+      "paragraphs": [
+        "Quando gli ominini di Callao lasciavano le loro tracce, la storia di Homo sapiens era già in corso in Africa. Questa è la contemporaneità planetaria che dà agli abitanti di Luzon il loro posto nell'atlante. Quantificare quanto durò la sovrapposizione richiederebbe due estremi temporali pertinenti per ciascuna popolazione. Le soglie minime di Callao non forniscono il primo e l'ultimo abitante. Inserirle in un calcolatore come estremi chiusi produrrebbe una durata precisa soltanto in apparenza. Per questo il valore corretto per la durata locale e per l'intervallo totale di incontro resta indeterminato.",
+        "A Tabon, sull'isola di Palawan, sono stati descritti resti attribuiti alla nostra specie, fra i quali un frammento di tibia con una stima pubblicata intorno a quarantasettemila anni fa e un ampio margine. Palawan e Luzon ricadono nello stesso Stato contemporaneo, ma sono due isole con storie geologiche diverse. Un punto su ciascuna isola documenta due reperti, non l'esistenza di un tragitto che li unisse nello stesso momento. Per stabilire contatto servirebbero testimonianze condivise, per esempio individui sicuramente contemporanei in un contesto circoscritto e un ulteriore indizio di interazione, oppure parentela genetica riconoscibile.",
+        "Quest'ultima possibilità ha ricevuto particolare attenzione da quando le analisi del DNA di popolazioni filippine attuali hanno rivelato una marcata componente denisoviana negli Ayta Magbukon studiati da Maximilian Larena e colleghi. Il risultato mostra che alcuni antenati di persone viventi ebbero rapporti con gruppi geneticamente affini ai Denisoviani. Il luogo dell'incontro e il nome da attribuire a fossili privi di un genoma comparabile restano domande distinte. Associare quella sequenza di DNA proprio ai denti di Callao richiederebbe evidenza molecolare riferibile con sicurezza agli individui fossili. Neppure una futura parentela stretta basterebbe, da sola, a dimostrare che lo scambio avvenne alle porte di questa particolare grotta."
+      ]
+    },
+    {
+      "title": "Alla ricerca della pagina successiva",
+      "level": "Sconosciuto",
+      "sources": [
+        "luzon-species",
+        "luzon-dating",
+        "luzon-basin",
+        "luzon-tree"
+      ],
+      "paragraphs": [
+        "Luzon non ci ha consegnato la scena conclusiva della sua umanità fossile. Un ultimo ritrovamento nello spazio limitato di un saggio di scavo potrebbe segnare il progressivo abbandono di una valle, un cambiamento nel modo di usare la grotta, l'erosione dei depositi più recenti o semplicemente la loro mancata individuazione. Una piccola popolazione insulare potrebbe essere sensibile ai cambiamenti ambientali e alle fluttuazioni demografiche. Non abbiamo per Callao una serie di conteggi, ambienti e generazioni che dimostri una di queste cause. L'ipotesi di una sostituzione da parte di Homo sapiens aggiunge un attore del quale andrebbe prima stabilita la compresenza locale.",
+        "L'eredità più concreta di questi individui è il cambiamento di scala che impongono alla nostra ricerca. Dove si sarebbe potuto cercare solo la data d'arrivo dei primi sapiens si è aperta la storia di una forma umana distinta, conosciuta attraverso elementi anatomici che un secolo fa sarebbero facilmente passati inosservati. Domani un livello all'aperto nella valle potrebbe collegare una tecnologia a un'identità anatomica. Un osso di Callao proveniente da un'altra unità e datato indipendentemente consentirebbe finalmente di tracciare un intervallo fossile. Per ora quel che sappiamo di Luzon ha la forma di una piccola collezione ben localizzata, capace di cambiare il disegno di un intero arcipelago."
+      ]
+    }
+  ],
+  "version": "1.0",
+  "reviewed": "2026-11-23"
+}

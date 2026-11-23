@@ -1,0 +1,220 @@
+[
+  {
+    "id": "stratigrafia",
+    "title": "Stratigrafia",
+    "principle": "Seguire il contatto fra due depositi permette di stabilire quale episodio preceda l'altro. La geometria delle superfici rivela anche ciò che manca. Un taglio erosivo asporta materiale già presente e può essere riempito molto più tardi. Disegnare le sezioni e collegarle fra settori di scavo permette di ricostruire la successione degli eventi prima di assegnare loro un'età numerica.",
+    "example": "Liang Bua. Gli strati addossati a una porzione di sedimento antico rimasta in rilievo avevano tratto in inganno la prima lettura. Estendendo gli scavi, Sutikna e colleghi hanno ricollocato i resti di H. floresiensis fra circa 100 e 60 mila anni fa.",
+    "limit": "Un oggetto eroso da un deposito antico può finire in uno recente. La stessa profondità rispetto al pavimento odierno non equivale alla stessa età.",
+    "sources": [
+      {
+        "title": "Sutikna et al., 2016 · Stratigrafia e cronologia di Liang Bua",
+        "url": "https://doi.org/10.1038/nature17179"
+      }
+    ],
+    "version": "1.0",
+    "reviewed": "2026-11-23"
+  },
+  {
+    "id": "radiocarbonio",
+    "title": "Radiocarbonio",
+    "principle": "Durante la vita gli organismi scambiano carbonio con l'ambiente. Dopo la morte, il carbonio-14 decade con un tempo di dimezzamento di circa 5.730 anni. La quota rimasta consente di stimare il tempo trascorso. Poiché la concentrazione atmosferica è variata, la misura va calibrata per ottenere un intervallo di anni di calendario. Il riferimento convenzionale di «prima del presente» è il 1950.",
+    "example": "Nella ricostruzione di Higham e colleghi sui contesti europei dei Neanderthal, nuove misure e controlli sui campioni hanno permesso di confrontare regioni diverse. Una data su un osso umano riguarda quell'individuo. Una data su carbone associato dipende anche dall'interpretazione dello strato.",
+    "limit": "Oltre circa 50 mila anni resta pochissimo carbonio-14. Una minima contaminazione recente può ringiovanire drasticamente un campione antico. La morte di un albero e l'accensione di un focolare con il suo legno possono avvenire in tempi diversi.",
+    "sources": [
+      {
+        "title": "Higham et al., 2014 · Cronologia dei contesti neanderthaliani",
+        "url": "https://doi.org/10.1038/nature13621"
+      }
+    ],
+    "version": "1.0",
+    "reviewed": "2026-11-23"
+  },
+  {
+    "id": "serie-uranio",
+    "title": "Serie dell'uranio",
+    "principle": "Uranio e torio hanno comportamenti diversi nelle acque naturali. Nella calcite appena formata si può incorporare uranio con poco torio iniziale. Il torio prodotto nel tempo permette di stimare quando si formò quella calcite. Su ossa e denti bisogna invece ricostruire anche l'ingresso e la possibile perdita di uranio dopo il seppellimento.",
+    "example": "Xiahe. La crosta carbonatica aderente alla mandibola ha fornito un'età minima di circa 160 mila anni per il reperto preesistente. A Callao, un riesame degli apporti successivi di uranio ha portato Grün e Stringer a proporre una soglia minima di 134 ± 14 mila anni.",
+    "limit": "La data della crosta è quella della sua formazione. Un'età minima lascia aperta la possibilità che l'oggetto sia più antico. Su sistemi aperti il risultato dipende dall'interpretazione degli scambi chimici.",
+    "sources": [
+      {
+        "title": "Chen et al., 2019 · Mandibola di Xiahe",
+        "url": "https://doi.org/10.1038/s41586-019-1139-x"
+      },
+      {
+        "title": "Grün e Stringer, 2023 · Datazione diretta e mobilità dell’uranio",
+        "url": "https://doi.org/10.1016/j.quascirev.2023.108379"
+      }
+    ],
+    "version": "1.0",
+    "reviewed": "2026-11-23"
+  },
+  {
+    "id": "termoluminescenza",
+    "title": "Termoluminescenza",
+    "principle": "Alcuni minerali accumulano cariche intrappolate per effetto della radioattività ambientale. Un forte riscaldamento può azzerare il segnale preesistente. In laboratorio il materiale, nuovamente riscaldato, emette luce. La dose accumulata, confrontata con quella ricevuta ogni anno, permette di stimare il tempo dall'ultimo riscaldamento sufficiente.",
+    "example": "Jebel Irhoud. Nel 2017 Richter e colleghi hanno datato col metodo le selci riscaldate del deposito che contiene fossili umani. La media ponderata di circa 315 ± 34 mila anni riguarda le selci e fornisce il quadro cronologico dell'associazione.",
+    "limit": "Un riscaldamento iniziale insufficiente lascia segnale residuo. Servono controlli sull'ambiente radioattivo e sulla relazione tra l'oggetto scaldato e il fossile.",
+    "sources": [
+      {
+        "title": "Richter et al., 2017 · Le selci riscaldate di Jebel Irhoud",
+        "url": "https://doi.org/10.1038/nature22335"
+      }
+    ],
+    "version": "1.0",
+    "reviewed": "2026-11-23"
+  },
+  {
+    "id": "osl",
+    "title": "Luminescenza otticamente stimolata",
+    "principle": "L'esposizione alla luce solare può svuotare alcune trappole elettroniche nei granuli minerali. Una volta sepolti al buio, i granuli tornano ad accumulare carica. Stimolandoli con luce in condizioni controllate si ricava la dose assorbita e, conoscendo il tasso locale d'irraggiamento, si stima il tempo trascorso dal seppellimento.",
+    "example": "Denisova. Nel 2019 Jacobs e colleghi hanno ricostruito con datazioni ottiche la successione dei sedimenti della grotta. Questo quadro aiuta a posizionare fossili e manufatti recuperati nei vari settori e a confrontare occupazioni separate nel tempo.",
+    "limit": "Un granulo trasportato al buio può conservare parte del segnale precedente. Rimescolamento e variazioni del tasso di dose influiscono sulla stima. La deposizione del granulo e la morte dell'ominino sono eventi da collegare con la stratigrafia.",
+    "sources": [
+      {
+        "title": "Jacobs et al., 2019 · Datazione ottica dei sedimenti di Denisova",
+        "url": "https://doi.org/10.1038/s41586-018-0843-2"
+      }
+    ],
+    "version": "1.0",
+    "reviewed": "2026-11-23"
+  },
+  {
+    "id": "esr",
+    "title": "Risonanza di spin elettronico",
+    "principle": "La radiazione naturale induce difetti in determinati materiali. Una parte di questi contiene elettroni spaiati che possono essere rilevati in un campo magnetico. Nello smalto dentario il segnale registra la dose accumulata. Per convertirla in anni occorre ricostruire sia la radiazione del sedimento sia l'eventuale contributo dell'uranio entrato nei tessuti.",
+    "example": "Rising Star. Dirks e colleghi hanno affiancato misure ESR e delle serie dell'uranio su denti di H. naledi ai vincoli forniti dalle concrezioni e dai sedimenti. L'intervallo finale di circa 335–236 mila anni nasce dalla convergenza di queste osservazioni.",
+    "limit": "Diversi scenari d'assorbimento dell'uranio possono produrre età diverse. Le condizioni in grotta cambiano e la dose annua va modellata, con un'incertezza che deve figurare nel risultato.",
+    "sources": [
+      {
+        "title": "Dirks et al., 2017 · Età dei resti di Homo naledi",
+        "url": "https://doi.org/10.7554/eLife.24231"
+      }
+    ],
+    "version": "1.0",
+    "reviewed": "2026-11-23"
+  },
+  {
+    "id": "paleomagnetismo",
+    "title": "Paleomagnetismo",
+    "principle": "Durante il raffreddamento delle lave o la deposizione e consolidazione di alcuni sedimenti, minerali magnetici possono conservare un orientamento legato al campo terrestre dell'epoca. Le successioni di polarità normale e inversa si confrontano con una scala geomagnetica calibrata indipendentemente. Una serie di campioni ordinati fornisce più informazione di un singolo campione.",
+    "example": "Dmanisi, in Georgia. Ferring e colleghi hanno confrontato la successione magnetica e il basalto sottostante con la cronologia geologica. Alcuni dei più antichi livelli di frequentazione stanno nella parte finale del subcron Olduvai, fra circa 1,85 e 1,78 milioni di anni fa.",
+    "limit": "La stessa polarità ricorre in epoche differenti. Alterazioni chimiche o riscaldamenti successivi possono riscrivere il segnale. Servono vincoli indipendenti per identificare l'episodio giusto.",
+    "sources": [
+      {
+        "title": "Ferring et al., 2011 · Prime frequentazioni di Dmanisi",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/21646521/"
+      }
+    ],
+    "version": "1.0",
+    "reviewed": "2026-11-23"
+  },
+  {
+    "id": "morfometria",
+    "title": "Morfometria",
+    "principle": "Due denti possono avere la stessa larghezza e un disegno diverso delle cuspidi. La morfometria registra misure o punti anatomici omologhi e confronta la variabilità nelle forme. L'allineamento dei punti permette di distinguere posizione e orientamento dalle differenze di forma. Si può poi verificare separatamente quanto la forma dipenda dalla taglia.",
+    "example": "Callao. Zanolli e colleghi hanno studiato, oltre alla corona visibile, la superficie che separa smalto e dentina. Le somiglianze con alcuni Homo asiatici risultano confrontabili su più parti dei denti e contribuiscono a discutere le parentele di H. luzonensis.",
+    "limit": "Somiglianza, variabilità individuale, adattamento e parentela possono produrre segnali sovrapposti. Campioni piccoli e deformazioni fossili riducono il potere discriminante.",
+    "sources": [
+      {
+        "title": "Zanolli et al., 2022 · Strutture dentarie di Homo luzonensis",
+        "url": "https://doi.org/10.1016/j.jhevol.2021.103124"
+      }
+    ],
+    "version": "1.0",
+    "reviewed": "2026-11-23"
+  },
+  {
+    "id": "isotopi",
+    "title": "Analisi degli isotopi stabili",
+    "principle": "Gli isotopi stabili di un elemento differiscono per massa e possono distribuirsi in proporzioni differenti lungo i passaggi della rete alimentare o nel ciclo dell'acqua. Il rapporto fra isotopi dell'azoto in tessuti come il collagene aiuta a ricostruire la posizione trofica. Il riferimento indispensabile è la fauna locale, perché i valori di partenza cambiano con l'ambiente.",
+    "example": "Jaouen e colleghi hanno misurato rapporti isotopici in singoli amminoacidi del collagene di campioni neanderthaliani. Separare amminoacidi con comportamenti differenti ha reso più informativa l'interpretazione di valori elevati di azoto-15 nel caso studiato.",
+    "limit": "Il collagene informa soprattutto sulla componente proteica della dieta. Un risultato su singoli individui non descrive automaticamente tutti i pasti, le stagioni o l'intera distribuzione di una popolazione.",
+    "sources": [
+      {
+        "title": "Jaouen et al., 2019 · Isotopi di singoli amminoacidi",
+        "url": "https://doi.org/10.1073/pnas.1814087116"
+      }
+    ],
+    "version": "1.0",
+    "reviewed": "2026-11-23"
+  },
+  {
+    "id": "paleogenetica",
+    "title": "Paleogenetica",
+    "principle": "Il DNA antico sopravvive spesso in piccoli frammenti. Gli studiosi valutano se lunghezza, alterazioni chimiche e distribuzione dei segnali sono compatibili con l'antichità del campione e stimano la contaminazione. Il DNA nucleare conserva contributi di molti antenati. Quello mitocondriale segue di norma una sola linea materna.",
+    "example": "Denisova 11. Dal suo DNA nucleare Slon e colleghi hanno riconosciuto una figlia di madre neanderthaliana e padre denisoviano. Il DNA mitocondriale è coerente con la linea materna. Le due osservazioni rispondono a domande distinte sulla stessa persona.",
+    "limit": "Con poco DNA il risultato può essere ambiguo. Una genealogia mitocondriale da sola non stabilisce una ripartizione dell'intera ascendenza. La frequenza degli incontri richiede più individui e modelli di popolazione.",
+    "sources": [
+      {
+        "title": "Slon et al., 2018 · Il genoma di Denisova 11",
+        "url": "https://doi.org/10.1038/s41586-018-0455-x"
+      }
+    ],
+    "version": "1.0",
+    "reviewed": "2026-11-23"
+  },
+  {
+    "id": "paleoproteomica",
+    "title": "Paleoproteomica",
+    "principle": "Le proteine possono persistere in tessuti mineralizzati dove il DNA è ormai illeggibile. Frammenti proteici conservano sequenze di amminoacidi. Quando alcune posizioni variano fra gruppi di riferimento, il confronto può restringere l'identità dell'organismo. Il numero di posizioni informative conta più del semplice numero di frammenti riconosciuti.",
+    "example": "Xiahe. Nel 2019 Chen, Welker e colleghi hanno utilizzato proteine antiche della mandibola recuperata sull'altopiano tibetano per sostenerne l'affinità denisoviana. Su uno stesso reperto, proteine e crosta carbonatica hanno risposto a domande diverse, rispettivamente sulla parentela e sull'età minima.",
+    "limit": "Molte proteine sono quasi identiche in gruppi vicini. Una classificazione dipende dalle sequenze comparative disponibili e non restituisce le migliaia di genealogie locali osservabili in un genoma completo.",
+    "sources": [
+      {
+        "title": "Chen et al., 2019 · Proteine antiche della mandibola di Xiahe",
+        "url": "https://doi.org/10.1038/s41586-019-1139-x"
+      }
+    ],
+    "version": "1.0",
+    "reviewed": "2026-11-23"
+  },
+  {
+    "id": "ricostruzione",
+    "title": "Ricostruzione anatomica",
+    "principle": "Lo studio digitale comincia separando osso, sedimento e fratture nelle immagini tomografiche. I frammenti si possono riallineare sfruttando punti di contatto e simmetrie. Le lacune si stimano con l'altro lato o con campioni comparativi. Conservare più soluzioni compatibili permette di misurare quanto cambino volume e forma al variare delle scelte.",
+    "example": "Per LB1 di Flores, Kubo e colleghi hanno ricostruito ad alta risoluzione la cavità interna del cranio ottenendo una stima di 426 cm³. La superficie ricavata rappresenta il limite osseo della cavità, con correzioni nelle regioni difficili da delimitare.",
+    "limit": "Più manca dell'originale, più aumenta il peso dei riferimenti scelti. Un volto illustrato introduce tessuti molli, carnagione e particolari individuali che un cranio non permette generalmente di determinare.",
+    "sources": [
+      {
+        "title": "Gunz et al., 2009 · Principi della ricostruzione virtuale",
+        "url": "https://doi.org/10.1016/j.jhevol.2009.04.004"
+      },
+      {
+        "title": "Kubo et al., 2013 · Endocranio di LB1",
+        "url": "https://doi.org/10.1098/rspb.2013.0338"
+      }
+    ],
+    "version": "1.0",
+    "reviewed": "2026-11-23"
+  },
+  {
+    "id": "tafonomia",
+    "title": "Tafonomia",
+    "principle": "Una superficie ossea può registrare taglio, morso, calpestio, trasporto, radici o alterazioni del sedimento. La tafonomia ricostruisce l'ordine possibile di questi processi confrontando profili dei segni, posizione sull'osso, fratture e parti anatomiche presenti nell'insieme. Le prove sperimentali aiutano a distinguere modificazioni apparentemente simili.",
+    "example": "Liang Bua. Nel 2026 Veatch e colleghi hanno confrontato i segni sulle ossa di stegodonte e la rappresentazione delle diverse parti della carcassa. L'insieme favorisce un accesso iniziale dei varani e un recupero successivo di alcune risorse da parte degli ominini.",
+    "limit": "Cause diverse possono lasciare segni simili. Un osso tagliato dimostra lavorazione, ma da solo non stabilisce chi uccise l'animale. Campionamento e conservazione selettiva influiscono sull'insieme.",
+    "sources": [
+      {
+        "title": "Veatch et al., 2026 · Tafonomia di Liang Bua",
+        "url": "https://doi.org/10.1126/sciadv.aeb7219"
+      }
+    ],
+    "version": "1.0",
+    "reviewed": "2026-11-23"
+  },
+  {
+    "id": "bayes",
+    "title": "Modelli cronologici bayesiani",
+    "principle": "Una datazione esprime un insieme di età più o meno compatibili con la misura. Un modello bayesiano combina queste informazioni con vincoli espliciti, per esempio che un deposito debba precederne un altro. Il risultato è una distribuzione di probabilità aggiornata. Si possono confrontare modelli alternativi e verificare quali campioni siano incompatibili con la successione proposta.",
+    "example": "A Denisova, Douka e colleghi hanno integrato dati del contesto, datazioni e informazioni sui fossili per ottenere intervalli per i singoli reperti. Un intervallo più ristretto di quello di una misura isolata può derivare dall'ordine degli eventi incorporato nel modello.",
+    "limit": "La precisione dipende anche dalle ipotesi introdotte. Se un reperto è stato rimaneggiato, forzarlo nello strato sbagliato può dare una stima apparentemente precisa ma distorta. Un intervallo va accompagnato dal suo livello di probabilità.",
+    "sources": [
+      {
+        "title": "Douka et al., 2019 · Modelli per la cronologia di Denisova",
+        "url": "https://doi.org/10.1038/s41586-018-0870-z"
+      }
+    ],
+    "version": "1.0",
+    "reviewed": "2026-11-23"
+  }
+]

@@ -1,0 +1,51 @@
+name: HOMO — collaudo dei browser
+on:
+  push:
+    branches: [main, homo-atlante-20261123]
+    paths:
+      - 'Spazi/homo/**'
+      - 'reports/homo/verifica-browser.py'
+      - '.github/workflows/homo-verifica.yml'
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        engine: [chromium, firefox, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepara il browser di prova
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps "${{ matrix.engine }}"
+      - name: Collauda la copia del repository
+        run: |
+          python -m http.server 8010 --bind 127.0.0.1 >/tmp/homo-http.log 2>&1 &
+          for i in $(seq 1 15); do if curl -fsS -o /dev/null http://127.0.0.1:8010/Spazi/homo/; then break; fi; sleep 1; done
+          python reports/homo/verifica-browser.py "${{ matrix.engine }}" http://127.0.0.1:8010/Spazi/homo/
+      - name: Verifica versione e navigazione pubbliche
+        if: github.ref == 'refs/heads/main'
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from urllib.request import urlopen
+          from time import sleep
+          base='https://gbprof.it/Spazi/homo/'
+          expected=Path('Spazi/homo/sw.js').read_bytes()
+          for attempt in range(25):
+              try:
+                  if urlopen(base+'sw.js',timeout=12).read()==expected:
+                      break
+              except OSError:
+                  pass
+              sleep(4)
+          else:
+              raise SystemExit('Edizione attesa non presente sul sito')
+          for page in ['https://gbprof.it/', 'https://gbprof.it/Spazi/']:
+              assert 'href="/Spazi/homo/"' in urlopen(page,timeout=25).read().decode()
+          PY
+          python reports/homo/verifica-browser.py "${{ matrix.engine }}" https://gbprof.it/Spazi/homo/

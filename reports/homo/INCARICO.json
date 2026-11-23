@@ -1,0 +1,74 @@
+{
+  "obiettivo": "Atlante paleoantropologico HOMO",
+  "destinazione": "https://gbprof.it/Spazi/homo/",
+  "stato": "in_revisione",
+  "data": "2026-11-23",
+  "fasi": [
+    {
+      "fase": "Ricerca e redazione",
+      "ruolo": "NARRAZIONE",
+      "modo_esecuzione": "agente_distinto_verificato",
+      "input": "Capitolato e fonti del progetto",
+      "output_atteso": "Otto monografie e riferimenti",
+      "dipende_da": "Fonti e dati verificati",
+      "strumento": "Ambiente di lavoro e connettori autorizzati",
+      "stato": "completato",
+      "evidenza": "Otto monografie e riferimenti"
+    },
+    {
+      "fase": "Carte e archivio",
+      "ruolo": "FONTI",
+      "modo_esecuzione": "agente_distinto_verificato",
+      "input": "Capitolato e fonti del progetto",
+      "output_atteso": "24 siti, 15 epoche",
+      "dipende_da": "Fonti e dati verificati",
+      "strumento": "Ambiente di lavoro e connettori autorizzati",
+      "stato": "completato",
+      "evidenza": "24 siti, 15 epoche"
+    },
+    {
+      "fase": "Iconografia",
+      "ruolo": "VISUALE",
+      "modo_esecuzione": "agente_distinto_verificato",
+      "input": "Capitolato e fonti del progetto",
+      "output_atteso": "Catalogo e dossier",
+      "dipende_da": "Fonti e dati verificati",
+      "strumento": "Ambiente di lavoro e connettori autorizzati",
+      "stato": "completato",
+      "evidenza": "Catalogo e dossier"
+    },
+    {
+      "fase": "Sviluppo",
+      "ruolo": "PRODUZIONE",
+      "modo_esecuzione": "tool_reale",
+      "input": "Capitolato e fonti del progetto",
+      "output_atteso": "PWA e test",
+      "dipende_da": "Fonti e dati verificati",
+      "strumento": "Ambiente di lavoro e connettori autorizzati",
+      "stato": "completato",
+      "evidenza": "PWA e test"
+    },
+    {
+      "fase": "Revisione",
+      "ruolo": "CRITERIO",
+      "modo_esecuzione": "agente_distinto_verificato",
+      "input": "Capitolato e fonti del progetto",
+      "output_atteso": "Controlli strutturali e browser",
+      "dipende_da": "Fonti e dati verificati",
+      "strumento": "Ambiente di lavoro e connettori autorizzati",
+      "stato": "in_revisione",
+      "evidenza": "Controlli strutturali e browser"
+    },
+    {
+      "fase": "Pubblicazione",
+      "ruolo": "TRACCIA",
+      "modo_esecuzione": "tool_reale",
+      "input": "Capitolato e fonti del progetto",
+      "output_atteso": "Riscontro HTTPS e workflow GitHub",
+      "dipende_da": "Fonti e dati verificati",
+      "strumento": "Ambiente di lavoro e connettori autorizzati",
+      "stato": "in_revisione",
+      "evidenza": "Riscontro HTTPS e workflow GitHub"
+    }
+  ]
+}

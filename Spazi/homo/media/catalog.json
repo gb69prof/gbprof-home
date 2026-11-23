@@ -1,0 +1,1126 @@
+[
+  {
+    "id": "cover",
+    "title": "Tre volti del Pleistocene",
+    "type": "Ricostruzione scientificamente informata generata con IA",
+    "src": "media/cover.webp",
+    "species": [
+      "sapiens",
+      "neanderthal",
+      "erectus"
+    ],
+    "caption": "Tre sculture craniofacciali in argilla illustrano, da sinistra, un primo Sapiens nordafricano, un Neanderthal e un Erectus africano. L’accostamento museale separa individui vissuti in tempi e luoghi diversi.",
+    "credit": "gbprof · Libera, elaborazione con IA",
+    "license": "Produzione originale per l’atlante HOMO",
+    "url": "",
+    "documented": "Da Irhoud provengono un viso relativamente retratto e una volta allungata. La Ferrassie documenta fronte sfuggente e massiccio mediofacciale proiettato. I crani di erectus mostrano una volta lunga e bassa e un toro sopraorbitario.",
+    "plausible": "Lo spessore dei tessuti traduce soltanto in modo approssimativo la forma ossea.",
+    "artistic": "Argilla, finitura, luce, disposizione e parte dei tessuti molli sono scelte illustrative. Le sculture digitali non riproducono opere realmente esposte.",
+    "prompt": "Wide horizontal editorial photograph of a museum installation consisting of three sculpted clay HEADS only. Each individual object is a detached terracotta portrait sculpture on its own nearly invisible black museum pedestal, defined from the crown to just under the chin, with NO shoulders, clothing, torso or body in the sculpture. Fine textured reddish-brown fired clay in the style of a scientific museum facial reconstruction study. Warm chiaroscuro and a charcoal black plain studio wall. Three heads that are fully separated left to right, all approximately the same height. Left study: early Homo sapiens from Jebel Irhoud, with a fairly flat face, elongated braincase. Middle study: large projecting Neanderthal midface, large nasal region, two arches above the eyes and low forehead. Right study: African Homo erectus, elongated low vault, a continuous ridge over both eyes, receding forehead. Artistic, respectful, calm faces, eyes softly sculpted in unpainted clay. Photographic natural side lighting, high-end science museum catalogue cover, 2.5:1 panoramic. No words, cutlines, graphics, logos or inscriptions.",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Hublin et al. (2017), New fossils from Jebel Irhoud, Morocco and the pan-African origin of Homo sapiens",
+        "url": "https://doi.org/10.1038/nature22336"
+      },
+      {
+        "title": "Smithsonian Human Origins Program, La Ferrassie 1",
+        "url": "https://humanorigins.si.edu/evidence/human-fossils/fossils/la-ferrassie"
+      },
+      {
+        "title": "Smithsonian Human Origins Program, Homo erectus",
+        "url": "https://humanorigins.si.edu/evidence/human-fossils/species/homo-erectus"
+      }
+    ]
+  },
+  {
+    "id": "denisova-bianfu",
+    "title": "Il paesaggio di Bianfu",
+    "type": "Ricostruzione scientificamente informata generata con IA",
+    "src": "media/denisova-bianfu.webp",
+    "species": [
+      "denisova"
+    ],
+    "caption": "Interpretazione ambientale del settore dello Yunnan documentato a Bianfu. Resti faunistici e pollini indicano boschi di conifere o foresta-steppa nelle fasi considerate.",
+    "credit": "gbprof · Libera, elaborazione con IA",
+    "license": "Produzione originale per l’atlante HOMO",
+    "url": "",
+    "documented": "I livelli della grotta conservano quattro denti e frammenti postcraniali e cranici. I dati faunistici e pollinici delineano un paesaggio a conifere o di foresta-steppa.",
+    "plausible": "Una fascia aperta con alberi radi può illustrare il gradiente fra bosco e steppa.",
+    "artistic": "La forma precisa della valle, l’ora, la visibilità e la distribuzione degli alberi sono scelte artistiche. Nessun volto è stato ricostruito.",
+    "prompt": "Naturalistic photographic-quality scientific illustration for a museum of human origins. Real skin texture, dignified individuals, documentary natural light, no typography, text, labels, symbols, graphic overlays, display cases, jewelry, modern items, ape stereotypes, violence or battle. Illustrative soft tissues, never fake archaeological photographs. Wide landscape 3:2, quiet highland southwestern China in the Middle Pleistocene, view FROM inside a modest limestone shelter toward a conifer-dominated forest-steppe mosaic, scattered pines like an open woodland alternating with grassy slope, distant hazy ridges, cool morning sunlight, naturalistic geology, realistic but not an exact depiction of a modern cave; no humans, buildings, artifacts, giant ferns or dinosaurs. Wide spatial depth, a study of habitat, editorial field photograph aesthetic.",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Denisovans from southwestern China and their subsistence strategies (2026)",
+        "url": "https://doi.org/10.1038/s41586-026-10997-4"
+      }
+    ]
+  },
+  {
+    "id": "ferrassie-ambiente",
+    "title": "Un riparo nella Dordogna",
+    "type": "Ricostruzione scientificamente informata generata con IA",
+    "src": "media/ferrassie-ambiente.webp",
+    "species": [
+      "neanderthal"
+    ],
+    "caption": "La Ferrassie documenta il rapporto tra parete calcarea, sedimenti e fasi di occupazione. L’apertura illustrata consente di leggere il funzionamento di un riparo roccioso.",
+    "credit": "gbprof · Libera, elaborazione con IA",
+    "license": "Produzione originale per l’atlante HOMO",
+    "url": "https://doi.org/10.1007/s41982-023-00159-7",
+    "documented": "La Ferrassie documenta il rapporto tra parete calcarea, sedimenti e fasi di occupazione. L’apertura illustrata consente di leggere il funzionamento di un riparo roccioso.",
+    "plausible": "Scelta di una fisionomia del paesaggio compatibile con gli indizi geologici o climatici della pubblicazione.",
+    "artistic": "Colore, illuminazione, inquadratura e dettaglio locale sono illustrativi. La scena non riproduce il sito topografico.",
+    "prompt": "Create a square four-panel natural history museum landscape plate, each quadrant its own panoramic paleoenvironment reconstruction; clean straight 2x2 grid with zero border or lettering. No people, animals, tools, artifacts or buildings. Upper left: a modest limestone overhang in the Dordogne, temperate open woodland, cooler pale sky, sparse deciduous trees, sediment layered on shelter floor. Upper right: a tropical Indonesian karst basin of Flores with an open seasonal forest and grasses beneath a grey limestone overhang, partly dry seasonal stream bed, distant mountains. Lower left: a wide active braided river in central Java, low gravel-and-sand bars of dark volcaniclastic sediment, metered sunlight on the water, woodland in distant low hills, viewpoint at the bank. Lower right: dark underground dolomite passage in the South African highveld, a subtle illustrative raking light reveals rough fracture surfaces and reddish brown sediment. A museum-quality photo-realistic environment study with spatial depth, correct geology, landscapes completely distinct, no inscriptions, no decorative elements, no picture frames, no artifacts or signs of human presence.",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Studio di riferimento sulla formazione del sito",
+        "url": "https://doi.org/10.1007/s41982-023-00159-7"
+      }
+    ]
+  },
+  {
+    "id": "flores-ambiente",
+    "title": "La stagionalità di Flores",
+    "type": "Ricostruzione scientificamente informata generata con IA",
+    "src": "media/flores-ambiente.webp",
+    "species": [
+      "flores"
+    ],
+    "caption": "Le variazioni delle precipitazioni sono ricostruite studiando i depositi di grotta. Una stagione relativamente asciutta è illustrata qui con corsi d’acqua bassi e vegetazione aperta.",
+    "credit": "gbprof · Libera, elaborazione con IA",
+    "license": "Produzione originale per l’atlante HOMO",
+    "url": "https://doi.org/10.1038/s43247-025-02961-3",
+    "documented": "Le variazioni delle precipitazioni sono ricostruite studiando i depositi di grotta. Una stagione relativamente asciutta è illustrata qui con corsi d’acqua bassi e vegetazione aperta.",
+    "plausible": "Scelta di una fisionomia del paesaggio compatibile con gli indizi geologici o climatici della pubblicazione.",
+    "artistic": "Colore, illuminazione, inquadratura e dettaglio locale sono illustrativi. La scena non riproduce il sito topografico.",
+    "prompt": "Create a square four-panel natural history museum landscape plate, each quadrant its own panoramic paleoenvironment reconstruction; clean straight 2x2 grid with zero border or lettering. No people, animals, tools, artifacts or buildings. Upper left: a modest limestone overhang in the Dordogne, temperate open woodland, cooler pale sky, sparse deciduous trees, sediment layered on shelter floor. Upper right: a tropical Indonesian karst basin of Flores with an open seasonal forest and grasses beneath a grey limestone overhang, partly dry seasonal stream bed, distant mountains. Lower left: a wide active braided river in central Java, low gravel-and-sand bars of dark volcaniclastic sediment, metered sunlight on the water, woodland in distant low hills, viewpoint at the bank. Lower right: dark underground dolomite passage in the South African highveld, a subtle illustrative raking light reveals rough fracture surfaces and reddish brown sediment. A museum-quality photo-realistic environment study with spatial depth, correct geology, landscapes completely distinct, no inscriptions, no decorative elements, no picture frames, no artifacts or signs of human presence.",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Gagan et al. (2025)",
+        "url": "https://doi.org/10.1038/s43247-025-02961-3"
+      }
+    ]
+  },
+  {
+    "id": "solo-ambiente",
+    "title": "Le barre del fiume Solo",
+    "type": "Ricostruzione scientificamente informata generata con IA",
+    "src": "media/solo-ambiente.webp",
+    "species": [
+      "erectus"
+    ],
+    "caption": "A Ngandong i fossili provengono da sedimenti di terrazzo del fiume Solo. Le ghiaie e le sabbie dell’immagine illustrano come il trasporto fluviale costruisca un deposito.",
+    "credit": "gbprof · Libera, elaborazione con IA",
+    "license": "Produzione originale per l’atlante HOMO",
+    "url": "https://doi.org/10.1038/s41586-019-1863-2",
+    "documented": "A Ngandong i fossili provengono da sedimenti di terrazzo del fiume Solo. Le ghiaie e le sabbie dell’immagine illustrano come il trasporto fluviale costruisca un deposito.",
+    "plausible": "Scelta di una fisionomia del paesaggio compatibile con gli indizi geologici o climatici della pubblicazione.",
+    "artistic": "Colore, illuminazione, inquadratura e dettaglio locale sono illustrativi. La scena non riproduce il sito topografico.",
+    "prompt": "Create a square four-panel natural history museum landscape plate, each quadrant its own panoramic paleoenvironment reconstruction; clean straight 2x2 grid with zero border or lettering. No people, animals, tools, artifacts or buildings. Upper left: a modest limestone overhang in the Dordogne, temperate open woodland, cooler pale sky, sparse deciduous trees, sediment layered on shelter floor. Upper right: a tropical Indonesian karst basin of Flores with an open seasonal forest and grasses beneath a grey limestone overhang, partly dry seasonal stream bed, distant mountains. Lower left: a wide active braided river in central Java, low gravel-and-sand bars of dark volcaniclastic sediment, metered sunlight on the water, woodland in distant low hills, viewpoint at the bank. Lower right: dark underground dolomite passage in the South African highveld, a subtle illustrative raking light reveals rough fracture surfaces and reddish brown sediment. A museum-quality photo-realistic environment study with spatial depth, correct geology, landscapes completely distinct, no inscriptions, no decorative elements, no picture frames, no artifacts or signs of human presence.",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Rizal et al. (2020)",
+        "url": "https://doi.org/10.1038/s41586-019-1863-2"
+      }
+    ]
+  },
+  {
+    "id": "rising-ambiente",
+    "title": "Il carso in profondità",
+    "type": "Ricostruzione scientificamente informata generata con IA",
+    "src": "media/rising-ambiente.webp",
+    "species": [
+      "naledi"
+    ],
+    "caption": "Il sistema di Rising Star si apre nella dolomia. Le fratture della roccia e i sedimenti rossastri costituiscono elementi plausibili per illustrare il contesto sotterraneo.",
+    "credit": "gbprof · Libera, elaborazione con IA",
+    "license": "Produzione originale per l’atlante HOMO",
+    "url": "https://doi.org/10.7554/eLife.09561",
+    "documented": "Il sistema di Rising Star si apre nella dolomia. Le fratture della roccia e i sedimenti rossastri costituiscono elementi plausibili per illustrare il contesto sotterraneo.",
+    "plausible": "Scelta di una fisionomia del paesaggio compatibile con gli indizi geologici o climatici della pubblicazione.",
+    "artistic": "Colore, illuminazione, inquadratura e dettaglio locale sono illustrativi. La scena non riproduce il sito topografico.",
+    "prompt": "Create a square four-panel natural history museum landscape plate, each quadrant its own panoramic paleoenvironment reconstruction; clean straight 2x2 grid with zero border or lettering. No people, animals, tools, artifacts or buildings. Upper left: a modest limestone overhang in the Dordogne, temperate open woodland, cooler pale sky, sparse deciduous trees, sediment layered on shelter floor. Upper right: a tropical Indonesian karst basin of Flores with an open seasonal forest and grasses beneath a grey limestone overhang, partly dry seasonal stream bed, distant mountains. Lower left: a wide active braided river in central Java, low gravel-and-sand bars of dark volcaniclastic sediment, metered sunlight on the water, woodland in distant low hills, viewpoint at the bank. Lower right: dark underground dolomite passage in the South African highveld, a subtle illustrative raking light reveals rough fracture surfaces and reddish brown sediment. A museum-quality photo-realistic environment study with spatial depth, correct geology, landscapes completely distinct, no inscriptions, no decorative elements, no picture frames, no artifacts or signs of human presence.",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Dirks et al. (2015)",
+        "url": "https://doi.org/10.7554/eLife.09561"
+      }
+    ]
+  },
+  {
+    "id": "irhoud",
+    "title": "Irhoud 10 nello scavo",
+    "type": "Fotografia documentaria",
+    "src": "media/irhoud.webp",
+    "species": [
+      "sapiens"
+    ],
+    "caption": "Jean-Jacques Hublin indica il cranio Irhoud 10 ancora inglobato nel deposito. Le orbite emergono vicino all’indice del ricercatore. La posizione delle ossa sul terreno precede qualsiasi ricostruzione virtuale.",
+    "credit": "Shannon McPherron · Max Planck Institute for Evolutionary Anthropology",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Hublin_at_Jebel_Irhoud.jpg",
+    "documented": "Jean-Jacques Hublin indica il cranio Irhoud 10 ancora inglobato nel deposito. Le orbite emergono vicino all’indice del ricercatore. La posizione delle ossa sul terreno precede qualsiasi ricostruzione virtuale.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP per la consultazione.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Hublin at Jebel Irhoud.jpg · Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Hublin_at_Jebel_Irhoud.jpg"
+      },
+      {
+        "title": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "title": "Pubblicazione o collezione di riferimento",
+        "url": "https://doi.org/10.1038/nature22336"
+      }
+    ]
+  },
+  {
+    "id": "mauer",
+    "title": "La mandibola di Mauer",
+    "type": "Fotografia documentaria",
+    "src": "media/mauer.webp",
+    "species": [
+      "heidelberg"
+    ],
+    "caption": "Fotografia dell’originale che dà il nome a Homo heidelbergensis. L’arcata dentaria e il corpo mandibolare sono osservabili insieme. Da questa mandibola non si ricavano né la forma della volta cranica né la statura dell’individuo.",
+    "credit": "Gerbil",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Mandibel_from_Mauer.JPG",
+    "documented": "Fotografia dell’originale che dà il nome a Homo heidelbergensis. L’arcata dentaria e il corpo mandibolare sono osservabili insieme. Da questa mandibola non si ricavano né la forma della volta cranica né la statura dell’individuo.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP per la consultazione.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Mandibel from Mauer.JPG · Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Mandibel_from_Mauer.JPG"
+      },
+      {
+        "title": "CC BY 3.0",
+        "url": "https://creativecommons.org/licenses/by/3.0/"
+      },
+      {
+        "title": "Pubblicazione o collezione di riferimento",
+        "url": "https://doi.org/10.1073/pnas.1012722107"
+      }
+    ]
+  },
+  {
+    "id": "ngandong",
+    "title": "Ngandong I in più proiezioni",
+    "type": "Tavola anatomica",
+    "src": "media/ngandong.webp",
+    "species": [
+      "erectus"
+    ],
+    "caption": "Le vedute della calotta provengono dalla monografia postuma di Weidenreich sui resti giavanesi. Le lacune anatomiche restano visibili. Per la cronologia del contesto si rimanda all’analisi di Rizal e colleghi.",
+    "credit": "Franz Weidenreich · American Museum of Natural History, tavola pubblicata nel 1951",
+    "license": "Pubblico dominio · stato documentato nella scheda Commons",
+    "licenseUrl": "",
+    "url": "https://commons.wikimedia.org/wiki/File:Solo_Skull_I.png",
+    "documented": "Le vedute della calotta provengono dalla monografia postuma di Weidenreich sui resti giavanesi. Le lacune anatomiche restano visibili. Per la cronologia del contesto si rimanda all’analisi di Rizal e colleghi.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP per la consultazione.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Solo Skull I.png · Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Solo_Skull_I.png"
+      },
+      {
+        "title": "Pubblicazione o collezione di riferimento",
+        "url": "https://doi.org/10.1038/s41586-019-1863-2"
+      }
+    ]
+  },
+  {
+    "id": "chapelle",
+    "title": "La Chapelle-aux-Saints",
+    "type": "Fotografia documentaria",
+    "src": "media/chapelle.webp",
+    "species": [
+      "neanderthal"
+    ],
+    "caption": "Vista frontale del cranio attribuito all’individuo scoperto nel 1908 a La Chapelle-aux-Saints. La fotografia museale rende leggibili arcate sopraorbitarie e apertura nasale. Il colorito dipende dall’illuminazione e dal materiale esposto.",
+    "credit": "Luna04",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Homo_sapiens_neanderthalensis.jpg",
+    "documented": "Vista frontale del cranio attribuito all’individuo scoperto nel 1908 a La Chapelle-aux-Saints. La fotografia museale rende leggibili arcate sopraorbitarie e apertura nasale. Il colorito dipende dall’illuminazione e dal materiale esposto.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP per la consultazione.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Homo sapiens neanderthalensis.jpg · Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Homo_sapiens_neanderthalensis.jpg"
+      },
+      {
+        "title": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+      }
+    ]
+  },
+  {
+    "id": "liang-bua",
+    "title": "Lo scavo di Liang Bua",
+    "type": "Fotografia documentaria",
+    "src": "media/liang-bua.webp",
+    "species": [
+      "flores"
+    ],
+    "caption": "Vista dall’interno della grotta di Flores nell’agosto 2007. La luce diurna e l’attrezzatura di scavo permettono di leggere dimensioni e accessibilità del riparo attuale. I sedimenti pleistocenici si studiano nei tagli stratigrafici.",
+    "credit": "Rosino",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Homo_floresiensis_cave.jpg",
+    "documented": "Vista dall’interno della grotta di Flores nell’agosto 2007. La luce diurna e l’attrezzatura di scavo permettono di leggere dimensioni e accessibilità del riparo attuale. I sedimenti pleistocenici si studiano nei tagli stratigrafici.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP per la consultazione.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Homo floresiensis cave.jpg · Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Homo_floresiensis_cave.jpg"
+      },
+      {
+        "title": "CC BY-SA 2.0",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0/"
+      },
+      {
+        "title": "Pubblicazione o collezione di riferimento",
+        "url": "https://doi.org/10.1038/nature17179"
+      }
+    ]
+  },
+  {
+    "id": "flores-calco",
+    "title": "Il calco museale del cranio di Flores",
+    "type": "Fotografia documentaria",
+    "src": "media/flores-calco.webp",
+    "species": [
+      "flores"
+    ],
+    "caption": "Calco conservato nella collezione geologica di Losanna. Questa replica di studio visualizza la forma cranica ricostruita. Materiale e colore sono quelli del calco, che va distinto dal fossile indonesiano.",
+    "credit": "Rama · collezione MGL, inv. 95216",
+    "license": "CC BY-SA 3.0 FR",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+    "url": "https://commons.wikimedia.org/wiki/File:Homo_Florensiensis-MGL_95216-P4150647-white.jpg",
+    "documented": "Calco conservato nella collezione geologica di Losanna. Questa replica di studio visualizza la forma cranica ricostruita. Materiale e colore sono quelli del calco, che va distinto dal fossile indonesiano.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP per la consultazione.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Homo Florensiensis-MGL 95216-P4150647-white.jpg · Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Homo_Florensiensis-MGL_95216-P4150647-white.jpg"
+      },
+      {
+        "title": "CC BY-SA 3.0 FR",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+      },
+      {
+        "title": "Pubblicazione o collezione di riferimento",
+        "url": "https://humanorigins.si.edu/evidence/human-fossils/fossils/lb-1"
+      }
+    ]
+  },
+  {
+    "id": "callao",
+    "title": "Il complesso carsico di Callao",
+    "type": "Fotografia documentaria",
+    "src": "media/callao.webp",
+    "species": [
+      "luzon"
+    ],
+    "caption": "Veduta del complesso di Callao a Luzon nel 2018. I percorsi di visita e le attrezzature moderni suggeriscono la scala dell’ambiente attuale. Le condizioni pleistoceniche richiedono uno studio separato.",
+    "credit": "Klienneeco",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:CallaoCave.jpg",
+    "documented": "Veduta del complesso di Callao a Luzon nel 2018. I percorsi di visita e le attrezzature moderni suggeriscono la scala dell’ambiente attuale. Le condizioni pleistoceniche richiedono uno studio separato.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP per la consultazione.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "CallaoCave.jpg · Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:CallaoCave.jpg"
+      },
+      {
+        "title": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      {
+        "title": "Pubblicazione o collezione di riferimento",
+        "url": "https://doi.org/10.1038/s41586-019-1067-9"
+      }
+    ]
+  },
+  {
+    "id": "luzon-denti",
+    "title": "Cinque denti di Callao",
+    "type": "Fotografia documentaria",
+    "src": "media/luzon-denti.webp",
+    "species": [
+      "luzon"
+    ],
+    "caption": "Cinque denti attribuiti a Homo luzonensis. Dimensioni e morfologia dentale sono centrali nella diagnosi originale. La foto non ha una scala metrica e non permette di ricavare la forma del volto.",
+    "credit": "Luzonensis",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:LuzonensisMolars.jpg",
+    "documented": "Cinque denti attribuiti a Homo luzonensis. Dimensioni e morfologia dentale sono centrali nella diagnosi originale. La foto non ha una scala metrica e non permette di ricavare la forma del volto.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP per la consultazione.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "LuzonensisMolars.jpg · Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:LuzonensisMolars.jpg"
+      },
+      {
+        "title": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      {
+        "title": "Pubblicazione o collezione di riferimento",
+        "url": "https://doi.org/10.1038/s41586-019-1067-9"
+      }
+    ]
+  },
+  {
+    "id": "naledi-scheletri",
+    "title": "I reperti di Dinaledi",
+    "type": "Fotografia documentaria",
+    "src": "media/naledi-scheletri.webp",
+    "species": [
+      "naledi"
+    ],
+    "caption": "Quadro d’insieme degli elementi impiegati nella diagnosi della specie. La disposizione centrale raggruppa ossa di più individui. È una composizione anatomica di laboratorio, distinta dalla posizione degli elementi nello scavo.",
+    "credit": "Lee R. Berger e collaboratori · eLife, 2015",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Homo_naledi_skeletal_specimens.jpg",
+    "documented": "Quadro d’insieme degli elementi impiegati nella diagnosi della specie. La disposizione centrale raggruppa ossa di più individui. È una composizione anatomica di laboratorio, distinta dalla posizione degli elementi nello scavo.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP per la consultazione.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Homo naledi skeletal specimens.jpg · Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Homo_naledi_skeletal_specimens.jpg"
+      },
+      {
+        "title": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "title": "Pubblicazione o collezione di riferimento",
+        "url": "https://doi.org/10.7554/eLife.09560"
+      }
+    ]
+  },
+  {
+    "id": "naledi-mano",
+    "title": "Dinaledi · mano destra",
+    "type": "Fotografia documentaria",
+    "src": "media/naledi-mano.webp",
+    "species": [
+      "naledi"
+    ],
+    "caption": "Vedute palmare e dorsale della mano 1. Mancava il pisiforme. Gli elementi quasi completi consentono di confrontare direttamente proporzioni digitali e pollice, mentre l’uso concreto della mano richiede altre prove.",
+    "credit": "Lee R. Berger e collaboratori · eLife, 2015",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Homo_naledi_hand.jpg",
+    "documented": "Vedute palmare e dorsale della mano 1. Mancava il pisiforme. Gli elementi quasi completi consentono di confrontare direttamente proporzioni digitali e pollice, mentre l’uso concreto della mano richiede altre prove.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP per la consultazione.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Homo naledi hand.jpg · Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Homo_naledi_hand.jpg"
+      },
+      {
+        "title": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "title": "Pubblicazione o collezione di riferimento",
+        "url": "https://doi.org/10.7554/eLife.09560"
+      }
+    ]
+  },
+  {
+    "id": "naledi-piede",
+    "title": "Dinaledi · piede",
+    "type": "Fotografia documentaria",
+    "src": "media/naledi-piede.webp",
+    "species": [
+      "naledi"
+    ],
+    "caption": "Tavola fotografica degli elementi del piede pubblicata nella descrizione di Homo naledi. La barra originale conserva la corrispondenza metrica anche quando l’immagine viene ingrandita.",
+    "credit": "Lee R. Berger e collaboratori · eLife, 2015",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Homo_naledi_foot.jpg",
+    "documented": "Tavola fotografica degli elementi del piede pubblicata nella descrizione di Homo naledi. La barra originale conserva la corrispondenza metrica anche quando l’immagine viene ingrandita.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP per la consultazione.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Homo naledi foot.jpg · Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Homo_naledi_foot.jpg"
+      },
+      {
+        "title": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "title": "Pubblicazione o collezione di riferimento",
+        "url": "https://doi.org/10.7554/eLife.09560"
+      }
+    ]
+  },
+  {
+    "id": "naledi-dh3",
+    "title": "Il paratipo DH3",
+    "type": "Tavola anatomica",
+    "src": "media/naledi-dh3.webp",
+    "species": [
+      "naledi"
+    ],
+    "caption": "Vedute complementari di cranio e mandibola attribuiti al paratipo DH3. La dentatura presenta forte usura. La barra metrica originale misura 10 cm.",
+    "credit": "Lee R. Berger e collaboratori · eLife, 2015",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Homo_naledi_paratype_DH3.jpg",
+    "documented": "Vedute complementari di cranio e mandibola attribuiti al paratipo DH3. La dentatura presenta forte usura. La barra metrica originale misura 10 cm.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP per la consultazione.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Homo naledi paratype DH3.jpg · Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Homo_naledi_paratype_DH3.jpg"
+      },
+      {
+        "title": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "title": "Pubblicazione o collezione di riferimento",
+        "url": "https://doi.org/10.7554/eLife.09560"
+      }
+    ]
+  },
+  {
+    "id": "harbin",
+    "title": "Il cranio di Harbin",
+    "type": "Fotografia documentaria",
+    "src": "media/harbin.webp",
+    "species": [
+      "denisova"
+    ],
+    "caption": "Vista del cranio designato come olotipo di Homo longi. Il DNA mitocondriale estratto dal tartaro lo collega ai Denisoviani. La foto documenta un individuo, senza definire tutti i possibili aspetti di quella popolazione.",
+    "credit": "Fu e collaboratori · Cell, 2025, fig. 1A. Ritaglio pubblicato su Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Homo_longi_holotype.jpg",
+    "documented": "Vista del cranio designato come olotipo di Homo longi. Il DNA mitocondriale estratto dal tartaro lo collega ai Denisoviani. La foto documenta un individuo, senza definire tutti i possibili aspetti di quella popolazione.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP per la consultazione.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Homo longi holotype.jpg · Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Homo_longi_holotype.jpg"
+      },
+      {
+        "title": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "title": "Pubblicazione o collezione di riferimento",
+        "url": "https://doi.org/10.1016/j.cell.2025.05.040"
+      }
+    ]
+  },
+  {
+    "id": "baishiya",
+    "title": "L’ingresso di Baishiya",
+    "type": "Fotografia documentaria",
+    "src": "media/baishiya.webp",
+    "species": [
+      "denisova"
+    ],
+    "caption": "Ingresso della grotta carsica di Baishiya sull’altopiano tibetano, fotografato nel 2016. La mandibola di Xiahe e i successivi scavi fanno di questo luogo un riferimento per la presenza denisoviana in quota.",
+    "credit": "Dongju Zhang",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Baishiya_Karst_Cave.jpg",
+    "documented": "Ingresso della grotta carsica di Baishiya sull’altopiano tibetano, fotografato nel 2016. La mandibola di Xiahe e i successivi scavi fanno di questo luogo un riferimento per la presenza denisoviana in quota.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP per la consultazione.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Baishiya Karst Cave.jpg · Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Baishiya_Karst_Cave.jpg"
+      },
+      {
+        "title": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      {
+        "title": "Pubblicazione o collezione di riferimento",
+        "url": "https://doi.org/10.1038/s41586-024-07612-9"
+      }
+    ]
+  },
+  {
+    "id": "xiahe",
+    "title": "La mandibola di Xiahe",
+    "type": "Fotografia documentaria",
+    "src": "media/xiahe.webp",
+    "species": [
+      "denisova"
+    ],
+    "caption": "Il frammento mandibolare conserva due molari. La sua attribuzione ai Denisoviani passò attraverso il confronto di proteine antiche, aprendo una via indipendente dalla conservazione del DNA.",
+    "credit": "Dongju Zhang",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Xiahe_mandible.jpg",
+    "documented": "Il frammento mandibolare conserva due molari. La sua attribuzione ai Denisoviani passò attraverso il confronto di proteine antiche, aprendo una via indipendente dalla conservazione del DNA.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP per la consultazione.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Xiahe mandible.jpg · Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Xiahe_mandible.jpg"
+      },
+      {
+        "title": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      {
+        "title": "Pubblicazione o collezione di riferimento",
+        "url": "https://doi.org/10.1038/s41586-019-1139-x"
+      }
+    ]
+  },
+  {
+    "id": "mata-menge",
+    "title": "Omeri e denti di Flores",
+    "species": [
+      "flores"
+    ],
+    "src": "media/mata-menge.webp",
+    "caption": "Il frammento di omero SOA-MM9 è mostrato in sei orientamenti (a–f) e in sezione (g). L’omero di LB1 compare nei pannelli h–i; nei pannelli j–k figurano il canino deciduo SOA-MM10 e il molare SOA-MM11. Leggere la scala propria di ciascun gruppo di pannelli.",
+    "type": "Tavola anatomica",
+    "credit": "Yousuke Kaifu e collaboratori · Nature Communications (2024), fig. 1",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://www.nature.com/articles/s41467-024-50649-7/figures/1",
+    "documented": "Il frammento di omero SOA-MM9 è mostrato in sei orientamenti (a–f) e in sezione (g). L’omero di LB1 compare nei pannelli h–i; nei pannelli j–k figurano il canino deciduo SOA-MM10 e il molare SOA-MM11. Leggere la scala propria di ciascun gruppo di pannelli.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP; pannelli originali conservati.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Kaifu et al. (2024) · Early evolution of small body size in Homo floresiensis",
+        "url": "https://doi.org/10.1038/s41467-024-50649-7"
+      },
+      {
+        "title": "Figura originale",
+        "url": "https://www.nature.com/articles/s41467-024-50649-7/figures/1"
+      },
+      {
+        "title": "Licenza Creative Commons",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ]
+  },
+  {
+    "id": "omeri-confronto",
+    "title": "La sezione trasversa degli omeri",
+    "species": [
+      "erectus",
+      "flores",
+      "naledi",
+      "sapiens"
+    ],
+    "src": "media/omeri-confronto.webp",
+    "caption": "Confronto tra le dimensioni delle sezioni distali degli omeri mediante centroid size, un indice morfometrico. L’asse orizzontale è metrico e comune ai gruppi. I simboli pieni e vuoti distinguono adulti e subadulti. Le dimensioni sezionali sono distinte dalle stature.",
+    "type": "Visualizzazione di dati",
+    "credit": "Yousuke Kaifu e collaboratori · Nature Communications (2024), fig. 4",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://www.nature.com/articles/s41467-024-50649-7/figures/4",
+    "documented": "Confronto tra le dimensioni delle sezioni distali degli omeri mediante centroid size, un indice morfometrico. L’asse orizzontale è metrico e comune ai gruppi. I simboli pieni e vuoti distinguono adulti e subadulti. Le dimensioni sezionali sono distinte dalle stature.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP; pannelli originali conservati.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Kaifu et al. (2024) · Early evolution of small body size in Homo floresiensis",
+        "url": "https://doi.org/10.1038/s41467-024-50649-7"
+      },
+      {
+        "title": "Figura originale",
+        "url": "https://www.nature.com/articles/s41467-024-50649-7/figures/4"
+      },
+      {
+        "title": "Licenza Creative Commons",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ]
+  },
+  {
+    "id": "omero-tc",
+    "title": "Dentro l’omero di Mata Menge",
+    "species": [
+      "flores"
+    ],
+    "src": "media/omero-tc.webp",
+    "caption": "Alla veduta virtuale della superficie di SOA-MM9 si affiancano sezioni tomografiche trasverse. I numeri rimandano alle posizioni lungo la diafisi, permettendo di seguire la geometria dell’osso dall’esterno all’interno.",
+    "type": "Tavola anatomica",
+    "credit": "Yousuke Kaifu e collaboratori · Nature Communications (2024), fig. 5",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://www.nature.com/articles/s41467-024-50649-7/figures/5",
+    "documented": "Alla veduta virtuale della superficie di SOA-MM9 si affiancano sezioni tomografiche trasverse. I numeri rimandano alle posizioni lungo la diafisi, permettendo di seguire la geometria dell’osso dall’esterno all’interno.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP; pannelli originali conservati.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Kaifu et al. (2024) · Early evolution of small body size in Homo floresiensis",
+        "url": "https://doi.org/10.1038/s41467-024-50649-7"
+      },
+      {
+        "title": "Figura originale",
+        "url": "https://www.nature.com/articles/s41467-024-50649-7/figures/5"
+      },
+      {
+        "title": "Licenza Creative Commons",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ]
+  },
+  {
+    "id": "scala-omeri",
+    "title": "Due omeri sulla stessa scala",
+    "species": [
+      "flores"
+    ],
+    "src": "media/scala-omeri.svg",
+    "type": "Visualizzazione di dati",
+    "caption": "Distanza tra il forame nutritizio (NF) e il margine superiore della depressione che conduce alla fossa olecranica (hOF), nella diafisi distale dell’omero. SOA-MM9 misura 58 mm tra questi punti, LB1 64 mm. Il forame nutritizio occupa posizioni variabili. La distanza tra i due punti non è la lunghezza totale dell’osso.",
+    "credit": "Elaborazione gbprof da Kaifu et al. (2024)",
+    "license": "Elaborazione originale per l’atlante HOMO",
+    "url": "https://doi.org/10.1038/s41467-024-50649-7",
+    "date": "2026-11-23",
+    "documented": "Misure lette nella sezione Humeral size dell’articolo. Entrambi i segmenti usano sette unità grafiche per millimetro.",
+    "plausible": "",
+    "artistic": "I segmenti mostrano distanze anatomiche e non riproducono il contorno dell’osso.",
+    "prompt": "",
+    "sources": [
+      {
+        "title": "Kaifu et al. (2024)",
+        "url": "https://doi.org/10.1038/s41467-024-50649-7"
+      },
+      {
+        "title": "Dati utilizzati per il disegno",
+        "url": "media/misure-omeri.json"
+      }
+    ]
+  },
+  {
+    "id": "irhoud-tc",
+    "title": "Il calco endocranico di Irhoud",
+    "species": [
+      "sapiens"
+    ],
+    "src": "media/irhoud-tc.webp",
+    "type": "Tavola anatomica",
+    "caption": "La ricostruzione virtuale unisce elementi cranici di Irhoud e rende visibile la forma dello spazio endocranico. Il colore esplicativo isola la superficie ricostruita. Questa immagine istituzionale è un modello scientifico digitale.",
+    "credit": "Philipp Gunz · MPI EVA, Lipsia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Oldest_Homo_sapiens_skull.webp",
+    "documented": "La ricostruzione virtuale unisce elementi cranici di Irhoud e rende visibile la forma dello spazio endocranico. Il colore esplicativo isola la superficie ricostruita. Questa immagine istituzionale è un modello scientifico digitale.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Scheda dell’immagine e provenienza",
+        "url": "https://commons.wikimedia.org/wiki/File:Oldest_Homo_sapiens_skull.webp"
+      },
+      {
+        "title": "Licenza Creative Commons",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      {
+        "title": "Contesto scientifico",
+        "url": "https://doi.org/10.1038/nature22336"
+      }
+    ]
+  },
+  {
+    "id": "feldhofer-stampa",
+    "title": "La calotta di Feldhofer nel 1859",
+    "species": [
+      "neanderthal"
+    ],
+    "src": "media/feldhofer-stampa.webp",
+    "type": "Tavola anatomica",
+    "caption": "Illustrazione dell’olotipo Neandertal 1 pubblicata da Fuhlrott. I contorni e la prospettiva restituiscono la lettura anatomica dell’autore ottocentesco. La tavola è una testimonianza della storia della ricerca.",
+    "credit": "Johann Carl Fuhlrott · litografia di Henry & Cohen, Bonn (1859)",
+    "license": "Pubblico dominio",
+    "licenseUrl": "",
+    "url": "https://commons.wikimedia.org/wiki/File:Neandertal_1_Calvarium.jpg",
+    "documented": "Illustrazione dell’olotipo Neandertal 1 pubblicata da Fuhlrott. I contorni e la prospettiva restituiscono la lettura anatomica dell’autore ottocentesco. La tavola è una testimonianza della storia della ricerca.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Scheda dell’immagine e provenienza",
+        "url": "https://commons.wikimedia.org/wiki/File:Neandertal_1_Calvarium.jpg"
+      }
+    ]
+  },
+  {
+    "id": "mauer-rx",
+    "title": "Un’immagine a raggi X del 1908",
+    "species": [
+      "heidelberg"
+    ],
+    "src": "media/mauer-rx.webp",
+    "type": "Tavola anatomica",
+    "caption": "Radiografia della mandibola tipo riprodotta nella descrizione originale. Permette di osservare come la paleoantropologia impiegasse già i raggi X per analizzare l’interno del reperto.",
+    "credit": "Otto Schoetensack · monografia del 1908, tavola IX",
+    "license": "Pubblico dominio",
+    "licenseUrl": "",
+    "url": "https://commons.wikimedia.org/wiki/File:Homo_heidelbergensis_(Erstbeschreibung)_04.jpg",
+    "documented": "Radiografia della mandibola tipo riprodotta nella descrizione originale. Permette di osservare come la paleoantropologia impiegasse già i raggi X per analizzare l’interno del reperto.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Scheda dell’immagine e provenienza",
+        "url": "https://commons.wikimedia.org/wiki/File:Homo_heidelbergensis_(Erstbeschreibung)_04.jpg"
+      }
+    ]
+  },
+  {
+    "id": "dmanisi-scavo",
+    "title": "Una campagna a Dmanisi",
+    "species": [
+      "erectus"
+    ],
+    "src": "media/dmanisi-scavo.webp",
+    "type": "Fotografia documentaria",
+    "caption": "Scavo georgiano di Dmanisi nel settembre 2007. I ricercatori hanno documentato qui una delle più antiche presenze del genere Homo fuori dall’Africa. La data della ripresa si riferisce al lavoro sul terreno.",
+    "credit": "Georgian National Museum",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Dmanisi_excavation_site_(2007).jpg",
+    "documented": "Scavo georgiano di Dmanisi nel settembre 2007. I ricercatori hanno documentato qui una delle più antiche presenze del genere Homo fuori dall’Africa. La data della ripresa si riferisce al lavoro sul terreno.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Scheda dell’immagine e provenienza",
+        "url": "https://commons.wikimedia.org/wiki/File:Dmanisi_excavation_site_(2007).jpg"
+      },
+      {
+        "title": "Licenza Creative Commons",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      {
+        "title": "Contesto scientifico",
+        "url": "https://humanorigins.si.edu/evidence/human-fossils/fossils/d3444"
+      }
+    ]
+  },
+  {
+    "id": "mauer-cava",
+    "title": "La cava del Grafenrain",
+    "species": [
+      "heidelberg"
+    ],
+    "src": "media/mauer-cava.webp",
+    "type": "Fotografia documentaria",
+    "caption": "L’antica cava di sabbia nel 2007. Secondo l’autore della fotografia, il punto del ritrovamento del 1907 si trova più indietro e resta sepolto sotto il materiale usato per riempire la cava.",
+    "credit": "p.schmelzle",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Mauer-sandgrube.jpg",
+    "documented": "L’antica cava di sabbia nel 2007. Secondo l’autore della fotografia, il punto del ritrovamento del 1907 si trova più indietro e resta sepolto sotto il materiale usato per riempire la cava.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Scheda dell’immagine e provenienza",
+        "url": "https://commons.wikimedia.org/wiki/File:Mauer-sandgrube.jpg"
+      },
+      {
+        "title": "Licenza Creative Commons",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      {
+        "title": "Contesto scientifico",
+        "url": "https://doi.org/10.1073/pnas.1012722107"
+      }
+    ]
+  },
+  {
+    "id": "neanderthal-modello",
+    "title": "Un Neanderthal nella ricostruzione di Mettmann",
+    "species": [
+      "neanderthal"
+    ],
+    "src": "media/neanderthal-modello.webp",
+    "type": "Ipotesi illustrativa",
+    "caption": "Esposizione museale di un individuo neanderthaliano seduto durante la lavorazione di materiale animale. La postura, le pelli e il gesto sono ipotesi del diorama. La fotografia ritrae un modello contemporaneo.",
+    "credit": "Neanderthal Museum, Mettmann · versione schiarita da Fährtenleser",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Homo_sapiens_neanderthalensis-J%C3%A4ger.jpg",
+    "documented": "Esposizione museale di un individuo neanderthaliano seduto durante la lavorazione di materiale animale. La postura, le pelli e il gesto sono ipotesi del diorama. La fotografia ritrae un modello contemporaneo.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Fonte dell’immagine, autori e descrizione",
+        "url": "https://commons.wikimedia.org/wiki/File:Homo_sapiens_neanderthalensis-J%C3%A4ger.jpg"
+      },
+      {
+        "title": "Condizioni di riutilizzo",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  {
+    "id": "turkana-modello",
+    "title": "Nariokotome nel modello dei fratelli Kennis",
+    "species": [
+      "erectus"
+    ],
+    "src": "media/turkana-modello.webp",
+    "type": "Ipotesi illustrativa",
+    "caption": "La ricostruzione museale prende a riferimento il giovane di Nariokotome. Le proporzioni scheletriche del fossile offrono vincoli più diretti di capelli, copertura corporea o gesto.",
+    "credit": "Neanderthal Museum, Mettmann · modello di Kennis & Kennis Reconstructions",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Homo-erectus_Turkana-Boy_(Ausschnitt)_Fundort_Nariokotome%2C_Kenia%2C_Rekonstruktion_im_Neanderthal_Museum.jpg",
+    "documented": "La ricostruzione museale prende a riferimento il giovane di Nariokotome. Le proporzioni scheletriche del fossile offrono vincoli più diretti di capelli, copertura corporea o gesto.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Fonte dell’immagine, autori e descrizione",
+        "url": "https://commons.wikimedia.org/wiki/File:Homo-erectus_Turkana-Boy_(Ausschnitt)_Fundort_Nariokotome%2C_Kenia%2C_Rekonstruktion_im_Neanderthal_Museum.jpg"
+      },
+      {
+        "title": "Condizioni di riutilizzo",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  {
+    "id": "oase-modello",
+    "title": "Un primo Sapiens europeo",
+    "species": [
+      "sapiens"
+    ],
+    "src": "media/oase-modello.webp",
+    "type": "Ipotesi illustrativa",
+    "caption": "Ricostruzione museale ispirata ai reperti di Peștera cu Oase, Romania. Gli autori traducono in un volto i vincoli posti dalle ossa. Acconciatura, espressione e vestiario restano interpretazioni.",
+    "credit": "Daniela Hitzemann · Neanderthal Museum, Mettmann",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Homo_sapiens_sapiens%2C_Oase%2C_Rum%C3%A4nien_(Daniela_Hitzemann).jpg",
+    "documented": "Ricostruzione museale ispirata ai reperti di Peștera cu Oase, Romania. Gli autori traducono in un volto i vincoli posti dalle ossa. Acconciatura, espressione e vestiario restano interpretazioni.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Fonte dell’immagine, autori e descrizione",
+        "url": "https://commons.wikimedia.org/wiki/File:Homo_sapiens_sapiens%2C_Oase%2C_Rum%C3%A4nien_(Daniela_Hitzemann).jpg"
+      },
+      {
+        "title": "Condizioni di riutilizzo",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  {
+    "id": "flores-volto",
+    "title": "Flores · approssimazione facciale",
+    "species": [
+      "flores"
+    ],
+    "src": "media/flores-volto.webp",
+    "type": "Ipotesi illustrativa",
+    "caption": "Modello facciale digitale di Cícero Moraes. La ricostruzione rende visibile una delle possibili soluzioni per i tessuti molli. Incarnato, iride, peli ed espressione sono elementi artistici.",
+    "credit": "Cícero Moraes (2023)",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Homo_floresiensis_-_facial_approximation_-_color_2.jpg",
+    "documented": "Modello facciale digitale di Cícero Moraes. La ricostruzione rende visibile una delle possibili soluzioni per i tessuti molli. Incarnato, iride, peli ed espressione sono elementi artistici.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Fonte dell’immagine, autori e descrizione",
+        "url": "https://commons.wikimedia.org/wiki/File:Homo_floresiensis_-_facial_approximation_-_color_2.jpg"
+      },
+      {
+        "title": "Condizioni di riutilizzo",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  {
+    "id": "nariokotome-corpo",
+    "title": "Lo scheletro ricostruito di Nariokotome",
+    "species": [
+      "erectus"
+    ],
+    "src": "media/nariokotome-corpo.webp",
+    "type": "Fotografia documentaria",
+    "caption": "Ricostruzione scheletrica museale di KNM-WT 15000. La lunghezza relativa degli arti e il rapporto con il tronco sono leggibili nel corpo intero. Il fossile appartiene a un individuo in crescita, quindi il montaggio non rappresenta una statura adulta media.",
+    "credit": "U.Name.Me · Naturhistorisches Museum Wien",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Turkana_Boy_rec.jpg",
+    "documented": "Ricostruzione scheletrica museale di KNM-WT 15000. La lunghezza relativa degli arti e il rapporto con il tronco sono leggibili nel corpo intero. Il fossile appartiene a un individuo in crescita, quindi il montaggio non rappresenta una statura adulta media.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Fonte dell’immagine, autori e descrizione",
+        "url": "https://commons.wikimedia.org/wiki/File:Turkana_Boy_rec.jpg"
+      },
+      {
+        "title": "Condizioni di riutilizzo",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  {
+    "id": "neanderthal-corpo",
+    "title": "L’intero scheletro neanderthaliano",
+    "species": [
+      "neanderthal"
+    ],
+    "src": "media/neanderthal-corpo.webp",
+    "type": "Fotografia documentaria",
+    "caption": "Scheletro composito esposto all’American Museum of Natural History di New York. L’insieme permette di osservare gabbia toracica e proporzioni degli arti. Il museo ha composto la figura da elementi diversi.",
+    "credit": "Ryan Schwark · American Museum of Natural History",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Neanderthal_at_AMNH.jpg",
+    "documented": "Scheletro composito esposto all’American Museum of Natural History di New York. L’insieme permette di osservare gabbia toracica e proporzioni degli arti. Il museo ha composto la figura da elementi diversi.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Fonte dell’immagine, autori e descrizione",
+        "url": "https://commons.wikimedia.org/wiki/File:Neanderthal_at_AMNH.jpg"
+      },
+      {
+        "title": "Condizioni di riutilizzo",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ]
+  },
+  {
+    "id": "crani-singapore",
+    "title": "Due crani nella stessa vetrina",
+    "species": [
+      "neanderthal",
+      "sapiens"
+    ],
+    "src": "media/crani-singapore.webp",
+    "type": "Fotografia documentaria",
+    "caption": "Le repliche esposte affiancano La Chapelle-aux-Saints 1 e un cranio umano moderno. Confronta la forma delle orbite, la proiezione del mediofacciale e la volta. La prospettiva fotografica rende improprio misurare le dimensioni sulla riproduzione.",
+    "credit": "Jacklee · Lee Kong Chian Natural History Museum, National University of Singapore",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Replica_skulls_of_a_Neanderthal_(Homo_neanderthalensis)_and_a_human_(Homo_sapiens_sapiens)%2C_Lee_Kong_Chian_Natural_History_Museum%2C_Singapore_-_20150808.jpg",
+    "documented": "Le repliche esposte affiancano La Chapelle-aux-Saints 1 e un cranio umano moderno. Confronta la forma delle orbite, la proiezione del mediofacciale e la volta. La prospettiva fotografica rende improprio misurare le dimensioni sulla riproduzione.",
+    "plausible": "",
+    "artistic": "Ridimensionamento proporzionale e conversione in WebP.",
+    "prompt": "",
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "title": "Fonte dell’immagine, autori e descrizione",
+        "url": "https://commons.wikimedia.org/wiki/File:Replica_skulls_of_a_Neanderthal_(Homo_neanderthalensis)_and_a_human_(Homo_sapiens_sapiens)%2C_Lee_Kong_Chian_Natural_History_Museum%2C_Singapore_-_20150808.jpg"
+      },
+      {
+        "title": "Condizioni di riutilizzo",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  }
+]

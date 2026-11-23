@@ -1,0 +1,226 @@
+[
+  {
+    "id": "prima",
+    "title": "Il mondo prima di Homo sapiens",
+    "subtitle": "Un piede nel fango del Turkana, una cava marocchina e una grotta spagnola raccontano tre mondi già umani.",
+    "chapters": [
+      {
+        "title": "Una riva, un passo",
+        "paragraphs": [
+          "Per avvicinarsi a un mondo precedente alla nostra specie basta guardare verso il basso. A Ileret, nella regione del lago Turkana, la superficie di un antico suolo conserva impronte umane di circa un milione e mezzo di anni. Nell'appoggio del piede e nella posizione dell'alluce i ricercatori leggono caratteristiche di una camminata in parte familiare. L'acqua e il sedimento permisero a un gesto di pochi istanti di sopravvivere. Non conservarono il volto della persona che lo eseguì. Si può proporre un'attribuzione al gruppo di erectus sulla base di anatomia, età e contesto, lasciando distinta l'osservazione diretta.",
+          "Nel Caucaso meridionale le prove della presenza umana sono ancora più antiche. A Dmanisi sono stati trovati utensili in depositi che indicano frequentazioni ripetute tra circa 1,85 e 1,78 milioni di anni fa. In altri livelli dello stesso sito compaiono crani e resti dello scheletro. La successione dimostra quanto sia differente chiedere quando entrarono persone in una valle e quando si formò un deposito che ne conserva le ossa. Il primo fenomeno può essere documentabile anche dove il secondo non è mai avvenuto."
+        ],
+        "level": "Fortemente supportato",
+        "sources": [
+          {
+            "title": "Matthew R. Bennett et al. (2009). Early hominin foot morphology based on 1.5-million-year-old footprints from Ileret, Kenya",
+            "url": "https://doi.org/10.1126/science.1168132"
+          },
+          {
+            "title": "Ferring et al. (2011). Earliest human occupations at Dmanisi (Georgian Caucasus) dated to 1.85–1.78 Ma",
+            "url": "https://doi.org/10.1073/pnas.1106638108"
+          }
+        ]
+      },
+      {
+        "title": "Prima dei nomi familiari",
+        "paragraphs": [
+          "A Casablanca i sedimenti della cava Thomas I hanno restituito fossili umani di circa 773 mila anni. La loro combinazione di caratteri ha indotto i ricercatori a studiarli in rapporto alle popolazioni prossime alla base della linea sapiens. A Mauer, in Germania, una mandibola di un contesto datato a circa 609 mila anni dà il nome a Homo heidelbergensis. La differenza di età fra le due località si può leggere in una tabella. La relazione genealogica richiederebbe altre prove. Una mandibola europea non discende per definizione da una mandibola africana soltanto perché le colonne geografiche e cronologiche si lasciano ordinare in quella sequenza.",
+          "Alla Sima de los Huesos, in Spagna, il DNA nucleare colloca individui del Pleistocene medio più vicino ai Neanderthal che ai Denisoviani. Quando si approssima la data d'apparizione dei primi sapiens africani, quindi, la ramificazione ha già una storia lunga. Se potessimo cancellare dalle carte il nome della nostra specie, resterebbero rive percorse a piedi, territori occupati più volte, ambienti attraversati da gruppi imparentati in modi differenti. Per verificare questa ricostruzione si può interrogare ciascun sito con una domanda distinta. Che cosa è sopravvissuto al passaggio delle persone? Che cosa permette di attribuire una data al passaggio? Quale osservazione, se ve ne sono, permette di attribuire a quelle persone un nome?"
+        ],
+        "level": "Fortemente supportato",
+        "sources": [
+          {
+            "title": "Jean-Jacques Hublin et al. (2026). Early hominins from Morocco basal to the Homo sapiens lineage",
+            "url": "https://doi.org/10.1038/s41586-025-09914-y"
+          },
+          {
+            "title": "Günther A. Wagner et al. (2010). Radiometric dating of the type-site for Homo heidelbergensis at Mauer, Germany",
+            "url": "https://doi.org/10.1073/pnas.1012722107"
+          },
+          {
+            "title": "Matthias Meyer et al. (2016). Nuclear DNA sequences from the Middle Pleistocene Sima de los Huesos hominins",
+            "url": "https://doi.org/10.1038/nature17405"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "comparsa",
+    "title": "La comparsa di Homo sapiens",
+    "subtitle": "Per riconoscere l'origine di una specie occorre confrontare ciò che cambia in un volto, in una popolazione e in un paesaggio.",
+    "chapters": [
+      {
+        "title": "Una faccia antica che si riconosce",
+        "paragraphs": [
+          "Nel giacimento marocchino di Jebel Irhoud si trovano resti che pongono una domanda concreta. Come si riconoscerebbe un essere umano vicino all'inizio della nostra storia evolutiva? Guardando il volto e la dentatura, alcuni caratteri si avvicinano a quelli dei sapiens più recenti. Guardando invece la forma della scatola cranica, si osserva un profilo più allungato di quello tipico delle popolazioni umane odierne. Dentro lo stesso insieme di reperti convivono cambiamenti che hanno seguito tempi diversi. Scegliere un unico tratto come interruttore dell'intera specie renderebbe incomprensibile proprio questa combinazione.",
+          "Gli utensili di selce che antichi fuochi avevano riscaldato hanno consentito di misurare il tempo trascorso dall'ultimo forte riscaldamento. Il risultato medio è di 315 mila anni, con un'incertezza di 34 mila. L'età si riferisce a materiali associati ai fossili e la loro posizione nello strato è parte dell'argomento. Il lettore può controllare separatamente i due lavori pubblicati nel 2017. Uno sostiene l'attribuzione biologica, l'altro ricostruisce la cronologia attraverso misure fisiche. Una revisione in uno dei campi non obbligherebbe automaticamente ad abbandonare le conclusioni dell'altro."
+        ],
+        "level": "Fortemente supportato",
+        "sources": [
+          {
+            "title": "Hublin et al. (2017). New fossils from Jebel Irhoud, Morocco and the pan-African origin of Homo sapiens",
+            "url": "https://doi.org/10.1038/nature22336"
+          },
+          {
+            "title": "Daniel Richter et al. (2017). The age of the hominin fossils from Jebel Irhoud, Morocco, and the origins of the Middle Stone Age",
+            "url": "https://doi.org/10.1038/nature22335"
+          }
+        ]
+      },
+      {
+        "title": "Quando l'età è un limite",
+        "paragraphs": [
+          "A Omo Kibish, in Etiopia, una cenere vulcanica ricopre l'unità in cui si trova Omo I. I ricercatori hanno collegato la composizione di quella cenere ai prodotti di un'eruzione del vulcano Shala e ne hanno datato i depositi più vicini al vulcano. L'eruzione ha un'età stimata di 233 ± 22 mila anni. Poiché la cenere si trova sopra il livello umano, Omo I è più antico. Confrontare quel risultato con Jebel Irhoud significa quindi confrontare un limite minimo con una stima centrale, due quantità che hanno significati differenti anche quando la scala cronologica è la stessa.",
+          "Più a sud, a Kabwe, un cranio morfologicamente diverso è datato direttamente a 299 ± 25 mila anni. Il quadro africano contiene, in uno stesso ampio intervallo, forme umane che non si lasciano ordinare in una catena uniforme. Si può riconoscere una sovrapposizione di età senza conoscere la distanza che normalmente separava le popolazioni o la frequenza con cui si spostavano."
+        ],
+        "level": "Documentato",
+        "sources": [
+          {
+            "title": "Vidal et al. (2022). Age of the oldest known Homo sapiens from eastern Africa",
+            "url": "https://doi.org/10.1038/s41586-021-04275-8"
+          },
+          {
+            "title": "Rainer Grün et al. (2020). Dating the skull from Broken Hill, Zambia, and its position in human evolution",
+            "url": "https://doi.org/10.1038/s41586-020-2165-4"
+          }
+        ]
+      },
+      {
+        "title": "Origini distribuite",
+        "paragraphs": [
+          "Diversi modelli attribuiscono un ruolo alle popolazioni distribuite in più parti dell'Africa e collegate da scambi discontinui. Confrontando genomi contemporanei, Aaron Ragsdale e colleghi hanno mostrato che una struttura demografica antica relativamente debole ma persistente può spiegare aspetti della variabilità odierna. La compatibilità di un modello con i dati lascia aperte alternative. Un futuro fossile ben datato può aggiungere un territorio o una combinazione anatomica finora assenti. Più difficile sarà identificare l'individuo che per primo «fu sapiens». In una popolazione che cambia attraverso le generazioni quella soglia dipende anche dai caratteri che uno studioso sceglie di seguire."
+        ],
+        "level": "Plausibile",
+        "sources": [
+          {
+            "title": "Scerri et al. (2018). Did Our Species Evolve in Subdivided Populations across Africa, and Why Does It Matter?",
+            "url": "https://doi.org/10.1016/j.tree.2018.05.005"
+          },
+          {
+            "title": "Ragsdale et al. (2023). A weakly structured stem for human origins in Africa",
+            "url": "https://doi.org/10.1038/s41586-023-06055-y"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cultura",
+    "title": "Archeologia e cultura materiale",
+    "subtitle": "Una valva, una superficie di selce, un osso di cavallo. Riconoscere un gesto richiede prove diverse da quelle necessarie per interpretarne lo scopo.",
+    "chapters": [
+      {
+        "title": "L'oggetto che era anche un alimento",
+        "paragraphs": [
+          "A Trinil gli scavi di fine Ottocento hanno portato nelle collezioni valve di molluschi d'acqua dolce. Sembravano soprattutto una testimonianza della fauna. Tornando sulla loro superficie con domande differenti, i ricercatori hanno individuato perforazioni localizzate, un margine lavorato e, su un esemplare, una sequenza di segmenti incisi. Il medesimo materiale poteva essere una risorsa alimentare, una materia da lavorare e una superficie su cui lasciare un segno. I reperti sono associati al sito tipo di Homo erectus e l'ipotesi della partecipazione di questi ominini va letta insieme alla storia stratigrafica complessa degli scavi.",
+          "Una valva intenzionalmente incisa mostra che qualcuno ebbe un certo controllo sulla traiettoria di un oggetto appuntito. Stabilire che la figura aveva un significato condiviso richiederebbe indizi ulteriori, come ricorrenze distribuite in contesti che ne chiariscano l'uso. La mancanza di quei confronti lascia aperto lo scopo. È già possibile descrivere il gesto e discutere quali spiegazioni alternative siano compatibili con la forma dei solchi."
+        ],
+        "level": "Fortemente supportato",
+        "sources": [
+          {
+            "title": "Josephine C. A. Joordens et al. (2015). Homo erectus at Trinil on Java used shells for tool production and engraving",
+            "url": "https://doi.org/10.1038/nature13962"
+          },
+          {
+            "title": "Eduard Pop et al. (2023). Reconstructing the provenance of the hominin fossils from Trinil (Java, Indonesia) through an integrated analysis of the historical and recent excavations",
+            "url": "https://doi.org/10.1016/j.jhevol.2022.103312"
+          }
+        ]
+      },
+      {
+        "title": "Quello che resta di un pasto",
+        "paragraphs": [
+          "A Boxgrove, in Inghilterra, ossa di cavallo e tracce di lavorazione della selce permettono di ricomporre una sequenza di attività di circa 480 mila anni fa. La distribuzione dei materiali sul terreno registra parte dei movimenti avvenuti durante lo sfruttamento della carcassa. Su una scapola una frattura aveva fatto pensare a una ferita riportata durante la caccia. Un riesame microscopico e sperimentale ha trovato una corrispondenza migliore con la percussione dell'osso, compatibile con l'accesso a risorse nutritive al suo interno.",
+          "Il cambiamento sembra piccolo, ma sposta quel gesto da prima della morte dell'animale a un momento successivo. La prova che la carcassa fu lavorata resta forte. La precisa modalità con cui l'animale morì non è scritta in quella frattura. È un buon esercizio invertire le domande. Un segno che sostiene un'ipotesi di macellazione sarebbe anche sufficiente a ricostruire come il gruppo si fosse procurato la preda? Le risposte possono divergere davanti al medesimo osso."
+        ],
+        "level": "Fortemente supportato",
+        "sources": [
+          {
+            "title": "UCL Institute of Archaeology (2020). Eating out was a very social matter for early humans",
+            "url": "https://www.ucl.ac.uk/news/2020/aug/eating-out-was-very-social-matter-early-humans"
+          },
+          {
+            "title": "Annemieke Milks et al. (2025). A reanalysis of the ‘perforated’ scapula from the Boxgrove Horse Butchery Site",
+            "url": "https://doi.org/10.1016/j.quaint.2025.109995"
+          }
+        ]
+      },
+      {
+        "title": "Il mestiere che il tempo ha cancellato",
+        "paragraphs": [
+          "Schöningen, in Germania, conserva manufatti di legno che in moltissimi altri siti sarebbero scomparsi. La loro presenza dimostra quanto sarebbe incompleta una storia delle tecniche scritta soltanto attraverso gli oggetti di pietra. La revisione del 2025 propone per il livello un'età vicina a 200 mila anni. A Wonderwerk, in Sudafrica, la testimonianza è ancora diversa. Minuscoli residui combusti, osservati nella posizione originaria, documentano che il fuoco interessò l'interno della grotta circa un milione di anni fa. Sia il legno conservato sia la cenere ci ricordano che ogni ambiente seleziona ciò che arriva fino a noi. Dove uno scavo restituisce soprattutto selci, il catalogo disponibile è quello degli oggetti sopravvissuti in quel deposito, non necessariamente l'intero corredo di una comunità."
+        ],
+        "level": "Documentato",
+        "sources": [
+          {
+            "title": "Jarod M. Hutson et al. (2025). Revised age for Schöningen hunting spears indicates intensification of Neanderthal cooperative behavior around 200,000 years ago",
+            "url": "https://doi.org/10.1126/sciadv.adv0752"
+          },
+          {
+            "title": "Francesco Berna et al. (2012). Microstratigraphic evidence of in situ fire in the Acheulean strata of Wonderwerk Cave, Northern Cape province, South Africa",
+            "url": "https://doi.org/10.1073/pnas.1117620109"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "incontri",
+    "title": "Incontri, convivenze e migrazioni",
+    "subtitle": "Con quali prove si può passare da due punti sulla carta a un incontro fra due persone?",
+    "chapters": [
+      {
+        "title": "Due luoghi che non s'incontrano",
+        "paragraphs": [
+          "A Ngandong, a Giava, si trovano resti di Homo erectus in un livello formato fra circa 117 e 108 mila anni fa. A Jebel Irhoud, in Marocco, fossili riferiti ai primi sapiens sono già presenti intorno a 315 mila anni fa. Mettendo i due siti su una linea del tempo si ricava che le loro popolazioni, considerate nella storia globale, furono contemporanee. Sulla carta le località appaiono lontanissime. Se si cerca un sito più vicino a Giava si incontra Lida Ajer, a Sumatra, dove denti attribuiti a sapiens sono stati collocati tra 73 e 63 mila anni fa. La distanza geografica è diminuita, mentre rimane un divario temporale importante.",
+          "Questo confronto rende leggibile il limite dei colori sovrapposti in un atlante. Una macchia ampia può aiutare a riconoscere una regione, ma non identifica un villaggio condiviso, una valle stagionale percorsa a pochi anni di distanza o l'incontro di due individui. Anche il rischio inverso va considerato. L'assenza di una traccia nel punto che oggi separa due siti non dimostra che nessuno abbia mai percorso quel territorio."
+        ],
+        "level": "Documentato",
+        "sources": [
+          {
+            "title": "Yan Rizal et al. (2020). Last appearance of Homo erectus at Ngandong, Java, 117,000–108,000 years ago",
+            "url": "https://doi.org/10.1038/s41586-019-1863-2"
+          },
+          {
+            "title": "Kira E. Westaway et al. (2017). An early modern human presence in Sumatra 73,000–63,000 years ago",
+            "url": "https://doi.org/10.1038/nature23452"
+          },
+          {
+            "title": "Daniel Richter et al. (2017). The age of the hominin fossils from Jebel Irhoud, Morocco, and the origins of the Middle Stone Age",
+            "url": "https://doi.org/10.1038/nature22335"
+          }
+        ]
+      },
+      {
+        "title": "La famiglia di Denisova 11",
+        "paragraphs": [
+          "Nella grotta di Denisova, sui monti Altai, un piccolo frammento osseo ha conservato una testimonianza di tutt'altro genere. Il confronto del DNA nucleare ha mostrato che la giovane denominata Denisova 11 aveva una madre neanderthaliana e un padre denisoviano. Qui la prova porta a una coppia di genitori appartenenti a linee differenti. Il luogo di ritrovamento del frammento fissa un punto sulla carta, ma il genoma non specifica dove i genitori si fossero conosciuti, quale lingua parlassero o con quale gruppo fosse cresciuta la figlia.",
+          "Gli stessi dati suggeriscono movimenti più ampi. L'affinità della madre con Neanderthal occidentali di epoca successiva, rispetto ad altri Neanderthal antichi dell'Altai, è coerente con spostamenti di popolazione attraverso l'Eurasia. La migrazione si ricostruisce dal confronto con altri campioni. La parentela immediata della giovane emerge invece dal suo proprio genoma. Sono due scale d'indagine diverse, pur fondate sull'analisi del medesimo reperto."
+        ],
+        "level": "Documentato",
+        "sources": [
+          {
+            "title": "Slon et al. (2018). The genome of the offspring of a Neanderthal mother and a Denisovan father",
+            "url": "https://doi.org/10.1038/s41586-018-0455-x"
+          }
+        ]
+      },
+      {
+        "title": "Un incontro poche generazioni prima",
+        "paragraphs": [
+          "Nella grotta bulgara di Bacho Kiro alcuni dei primi sapiens del Paleolitico superiore europeo conservano tratti di ascendenza neanderthaliana relativamente lunghi. A ogni generazione la ricombinazione tende a frammentare i segmenti ereditati. Individuarne di lunghi permette quindi di riconoscere in questi individui antenati neanderthaliani vissuti poche generazioni prima. La mescolanza è documentata anche se il luogo preciso dell'incontro resta ignoto.",
+          "Si possono così ordinare le prove senza attribuire loro una percentuale arbitraria. Per Ngandong abbiamo contemporaneità planetaria con sapiens. A Bacho Kiro riconosciamo un incontro nella storia familiare recente degli individui esaminati. A Denisova 11 la parentela diretta raggiunge addirittura la generazione dei genitori, che appartenevano a due linee arcaiche distinte. Il passo decisivo, ogni volta, consiste nel chiedere quale distanza separi l'evento che ci interessa dalla traccia che è rimasta."
+        ],
+        "level": "Fortemente supportato",
+        "sources": [
+          {
+            "title": "Hajdinjak et al. (2021). Initial Upper Palaeolithic humans in Europe had recent Neanderthal ancestry",
+            "url": "https://doi.org/10.1038/s41586-021-03335-3"
+          }
+        ]
+      }
+    ]
+  }
+]

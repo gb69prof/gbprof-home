@@ -1,0 +1,318 @@
+[
+ {
+  "id": "sapiens",
+  "name": "Homo sapiens",
+  "region": "Africa e mondo",
+  "anchors": "Jebel Irhoud · Omo Kibish",
+  "start": 315.0,
+  "end": 0.0,
+  "label": "315 ± 34 ka – oggi",
+  "limits": "La stima centrale del contesto marocchino è un riferimento convenzionale. La specie è vivente.",
+  "level": "Fortemente supportato",
+  "refs": [
+   "richter",
+   "irhoud",
+   "omo"
+  ],
+  "volume": 1375.0,
+  "measure": "Jebel Irhoud 1, 1.375 ± 6 cm³; stima tomografica.",
+  "face": "Volto relativamente retratto già a Irhoud. La globularità della volta si afferma in seguito.",
+  "teeth": "Mento osseo caratteristico in esemplari recenti; la combinazione dei tratti varia nei primi fossili.",
+  "body": "Proporzioni e stature variano tra popolazioni ed epoche.",
+  "anatomyRefs": [
+   "volume",
+   "irhoud"
+  ],
+  "bounds": [
+   [
+    349,
+    281,
+    "Prima attestazione di riferimento"
+   ],
+   [
+    0,
+    0,
+    "Presenza attuale"
+   ]
+  ],
+  "version": "1.1",
+  "reviewed": "2026-11-23",
+  "chronologyKind": "series"
+ },
+ {
+  "id": "neanderthal",
+  "name": "Homo neanderthalensis",
+  "region": "Europa, Asia sudoccidentale e Siberia meridionale",
+  "anchors": "Sima de los Huesos · La Ferrassie",
+  "start": 448.0,
+  "end": 40.0,
+  "label": "Linea precoce 448 ± 15 ka · termine europeo ≈40 ka",
+  "limits": "La stima media del livello LU-6 della Sima è 448 ± 15 ka. Il termine musteriano europeo, 41,03–39,26 ka cal BP al 95,4%, è un indicatore archeologico regionale. Il calcolo usa 40 ka arrotondati.",
+  "level": "Fortemente supportato",
+  "refs": [
+   "simaeta",
+   "sima",
+   "higham",
+   "belgio"
+  ],
+  "volume": 1650.0,
+  "measure": "La Ferrassie 1, circa 1.650 cm³; stima museale.",
+  "face": "Volta allungata, regione media del volto proiettata. La distribuzione dei caratteri cambia nel tempo.",
+  "teeth": "Ricorrono robustezza mandibolare e spazio retromolare, con variabilità individuale.",
+  "body": "Tronco ampio e segmenti distali relativamente corti in numerosi esemplari.",
+  "anatomyRefs": [
+   "lf",
+   "simapost",
+   "sima"
+  ],
+  "bounds": [
+   [
+    463,
+    433,
+    "Sima, livello LU-6 (448 ± 15 ka)"
+   ],
+   [
+    41.03,
+    39.26,
+    "Limite musteriano modellato europeo"
+   ]
+  ],
+  "version": "1.1",
+  "reviewed": "2026-11-23",
+  "chronologyKind": "series"
+ },
+ {
+  "id": "denisova",
+  "name": "Denisoviani",
+  "region": "Asia",
+  "anchors": "Denisova · Baishiya · Bianfu",
+  "start": 200.0,
+  "end": 40.0,
+  "label": "Fossili selezionati ≈200 ka · livello di 48–32 ka",
+  "limits": "Il calcolo usa i fossili siberiani di un livello di circa 200 ka e il centro convenzionale del livello di Xiahe 2, 40 ka. I sedimenti denisoviani più antichi e le due finestre alternative di Penghu restano fuori dal calcolo.",
+  "level": "Fortemente supportato",
+  "refs": [
+   "densib",
+   "dencave",
+   "xia",
+   "penghu",
+   "rao",
+   "ruan"
+  ],
+  "volume": 1420.0,
+  "measure": "Cranio di Harbin, circa 1.420 cm³; stima sul reperto.",
+  "face": "Harbin documenta una volta lunga e bassa e un'ampia faccia. È un punto di confronto individuale.",
+  "teeth": "Grandi molari in più esemplari. Xiahe permette un confronto diretto del corpo mandibolare.",
+  "body": "La porzione prossimale del radio di Bianfu documenta l’avambraccio. Altezza corporea ignota.",
+  "anatomyRefs": [
+   "ni",
+   "harbin",
+   "rao",
+   "xmand"
+  ],
+  "bounds": [
+   [
+    217,
+    187,
+    "Sedimento dei fossili della camera est, 217–187 ka al 95,4%"
+   ],
+   [
+    48,
+    32,
+    "Livello della costola Xiahe 2"
+   ]
+  ],
+  "version": "1.1",
+  "reviewed": "2026-11-23",
+  "chronologyKind": "series"
+ },
+ {
+  "id": "erectus",
+  "name": "Homo erectus",
+  "region": "Africa ed Eurasia",
+  "anchors": "Drimolen · Dmanisi · Ngandong",
+  "start": 1995.0,
+  "end": 112.5,
+  "label": "Drimolen 2,04–1,95 Ma · Ngandong 117–108 ka",
+  "limits": "In senso ampio si include il giovane DNH 134, attribuito per affinità morfologica. Il confronto impiega i centri delle due finestre (1.995 e 112,5 ka). Ngandong data il deposito fluviale.",
+  "level": "Fortemente supportato",
+  "refs": [
+   "drimolen",
+   "dmanisi",
+   "liao",
+   "rizal"
+  ],
+  "volume": 546.0,
+  "measure": "Dmanisi D4500, 546 cm³; stima su tomografia, attribuzione ampia.",
+  "face": "Volta spesso allungata, arcate sopraccigliari marcate. Le popolazioni coprono un lungo intervallo.",
+  "teeth": "Ampia variabilità dentale e facciale a Dmanisi; il Guangxi aggiunge confronti proteomici.",
+  "body": "Alcuni scheletri africani mostrano gambe relativamente lunghe. Non sono disponibili per tutti i siti asiatici.",
+  "anatomyRefs": [
+   "dmanisi",
+   "liao",
+   "turkana"
+  ],
+  "bounds": [
+   [
+    2040,
+    1950,
+    "Drimolen, cranio giovanile DNH 134"
+   ],
+   [
+    117,
+    108,
+    "Ultimo deposito a Ngandong"
+   ]
+  ],
+  "version": "1.1",
+  "reviewed": "2026-11-23",
+  "chronologyKind": "series"
+ },
+ {
+  "id": "heidelberg",
+  "name": "Homo heidelbergensis",
+  "region": "Europa; Africa sotto attribuzione ampia",
+  "anchors": "Mauer · Kabwe",
+  "start": 609.0,
+  "end": 299.0,
+  "label": "Mauer 609 ± 40 ka; Kabwe 299 ± 25 ka",
+  "limits": "Gli estremi appartengono a reperti accostati solo in una classificazione ampia. Il nome in senso stretto è ancorato alla mandibola di Mauer.",
+  "level": "Controverso",
+  "refs": [
+   "mauer",
+   "kabwe",
+   "heidstatus",
+   "delson"
+  ],
+  "volume": null,
+  "measure": "La mandibola tipo di Mauer non conserva la volta cranica.",
+  "face": "Mauer non permette di ricostruire la faccia superiore. L’inclusione dei crani africani è dibattuta.",
+  "teeth": "La mandibola tipo è massiccia e priva di un mento moderno.",
+  "body": "Il reperto tipo non documenta statura, mani né proporzioni corporee.",
+  "anatomyRefs": [
+   "mauer",
+   "kabwe"
+  ],
+  "bounds": [
+   [
+    649,
+    569,
+    "Mauer"
+   ],
+   [
+    324,
+    274,
+    "Kabwe, attribuzione discussa"
+   ]
+  ],
+  "version": "1.1",
+  "reviewed": "2026-11-23",
+  "chronologyKind": "taxonomy"
+ },
+ {
+  "id": "naledi",
+  "name": "Homo naledi",
+  "region": "Africa australe",
+  "anchors": "Rising Star · Dinaledi",
+  "start": 335.0,
+  "end": 236.0,
+  "label": "Deposizione 335–236 ka",
+  "limits": "La finestra cronologica riguarda il deposito di Dinaledi. Un singolo evento al suo interno resta possibile.",
+  "level": "Documentato",
+  "refs": [
+   "dirks"
+  ],
+  "volume": 610.0,
+  "measure": "LES1, circa 610 cm³; ricostruzione dell’endocranio.",
+  "face": "Volta piccola e combinazione peculiare di tratti cranici e dentali.",
+  "teeth": "Denti postcanini relativamente piccoli. Le serie diagnostiche comprendono più individui.",
+  "body": "Piede compatibile con bipedismo abituale; le falangi manuali curve coesistono con un polso adatto alla manipolazione.",
+  "anatomyRefs": [
+   "neo",
+   "nhand",
+   "nfoot",
+   "dirks"
+  ],
+  "bounds": [
+   [
+    335,
+    236,
+    "Unica finestra del deposito Dinaledi"
+   ]
+  ],
+  "version": "1.1",
+  "reviewed": "2026-11-23",
+  "chronologyKind": "deposit"
+ },
+ {
+  "id": "flores",
+  "name": "Homo floresiensis",
+  "region": "Indonesia",
+  "anchors": "Liang Bua · Mata Menge",
+  "start": 100.0,
+  "end": 60.0,
+  "label": "Ossa a Liang Bua ≈100–60 ka",
+  "limits": "Il calcolo usa solo i resti di Liang Bua. Strumenti attribuiti fino a circa 50 ka; a Mata Menge fossili affini di circa 700 ka.",
+  "level": "Documentato",
+  "refs": [
+   "sutikna",
+   "kaifu"
+  ],
+  "volume": 426.0,
+  "measure": "LB1, 426 cm³; ricostruzione da scansioni.",
+  "face": "Volta di piccole dimensioni, diversa da quella tipica di sapiens.",
+  "teeth": "Dentatura con combinazione di caratteri derivati e più antichi.",
+  "body": "LB1 è un adulto di statura stimata intorno a 1,06 m. Il piede relativamente lungo ha caratteristiche proprie.",
+  "anatomyRefs": [
+   "kubo",
+   "ffoot",
+   "lb1",
+   "kaifu",
+   "argue"
+  ],
+  "bounds": [
+   [
+    100,
+    60,
+    "Finestra dei resti di Liang Bua"
+   ]
+  ],
+  "version": "1.1",
+  "reviewed": "2026-11-23",
+  "chronologyKind": "siteSeries"
+ },
+ {
+  "id": "luzon",
+  "name": "Homo luzonensis",
+  "region": "Filippine",
+  "anchors": "Callao Cave",
+  "start": null,
+  "end": null,
+  "label": "Limiti minimi; proposta ≥134 ± 14 ka",
+  "limits": "Date minime U-series, inizialmente 67 e 50 ka su elementi distinti. Una successiva rivalutazione propone un vincolo minimo più antico. Durata e ultimo esemplare non sono determinabili.",
+  "level": "Fortemente supportato",
+  "refs": [
+   "detroit",
+   "grunl"
+  ],
+  "volume": null,
+  "measure": "Mancano una volta cranica e un endocasto misurabili.",
+  "face": "Nessun cranio descritto nella serie tipo. Un ritratto facciale introdurrebbe caratteri arbitrari.",
+  "teeth": "Premolari e molari superiori combinano caratteristiche utili alla diagnosi.",
+  "body": "Falangi di mano e piede, metatarso e frammento femorale. La statura rimane sconosciuta.",
+  "anatomyRefs": [
+   "detroit",
+   "grunl"
+  ],
+  "bounds": [
+   [
+    148,
+    120,
+    "Incertezza sulla stima del limite minimo riconsiderato (134 ± 14 ka)"
+   ]
+  ],
+  "version": "1.1",
+  "reviewed": "2026-11-23",
+  "chronologyKind": "minimum"
+ }
+]

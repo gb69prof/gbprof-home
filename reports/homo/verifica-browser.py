@@ -1,0 +1,65 @@
+"""Controlla una PWA servita su HTTP(S), inclusi la cache e il ritorno offline."""
+import argparse
+from urllib.parse import urljoin
+from playwright.sync_api import sync_playwright
+
+def visit(page, base, fragment):
+    page.goto(base + '#' + fragment, wait_until='domcontentloaded')
+    page.wait_for_function("(r) => document.body.dataset.route === r && !!document.querySelector('main h1')",arg=fragment.split('/')[0])
+
+def run(engine,base):
+    with sync_playwright() as runtime:
+        browser=getattr(runtime,engine).launch()
+        context=browser.new_context(viewport={'width':390,'height':844},locale='it-IT')
+        page=context.new_page()
+        page.set_default_timeout(20000)
+        issues=[]
+        page.on('pageerror',lambda error:issues.append(str(error)))
+        visit(page,base,'inizio')
+        assert page.locator('.cover img').evaluate('(i)=>i.decode().then(()=>i.naturalWidth>0)')
+        for route in ['umanita','fonti','immagini','metodi','genetica','anatomia','confronto','evoluzione','scheda/sapiens','scheda/luzon','tempo','atlante']:
+            visit(page,base,route)
+            if route=='atlante':page.locator('[data-slider]').wait_for()
+            assert page.locator('main').evaluate('el=>el.scrollWidth <= document.documentElement.clientWidth+2'),route
+        visit(page,base,'scheda/naledi')
+        page.locator('[data-action=bookmark]').click()
+        visit(page,base,'taccuino')
+        assert page.locator('main a[href="#scheda/naledi"]').count()
+        visit(page,base,'scheda/denisova')
+        page.locator('p[data-pi]').first.evaluate("""p=>{const range=document.createRange();range.selectNodeContents(p);range.setEnd(p.firstChild,20);const s=getSelection();s.removeAllRanges();s.addRange(range)}""")
+        page.locator('[data-action=highlight]').click()
+        page.locator('textarea').fill('Verifica del taccuino')
+        page.locator('#noteForm button').click()
+        assert page.locator('main mark').count()==1
+        visit(page,base,'tempo')
+        page.locator('input[value=luzon]').check()
+        assert 'indetermin' in page.locator('#overlap').inner_text().lower()
+        visit(page,base,'archivio')
+        page.locator('input[name=q]').fill('Bianfu')
+        page.locator('a[href="#reperto/bianfu"]').click()
+        assert page.locator('main h1').inner_text()=='Bianfu Cave' or 'Bianfu' in page.locator('main h1').inner_text()
+        visit(page,base,'inizio')
+        page.wait_for_function("navigator.serviceWorker.getRegistration().then(r=>!!r?.active)",timeout=90000)
+        page.reload()
+        page.wait_for_function('!!navigator.serviceWorker.controller')
+        scope=page.evaluate('navigator.serviceWorker.getRegistration().then(r=>r.scope)')
+        assert scope==base,(scope,base)
+        page.wait_for_function("caches.keys().then(async keys=>(await (await caches.open(keys.find(k=>k.startsWith('gbprof-homo-')))).keys()).length>120)")
+        context.set_offline(True)
+        page.reload(wait_until='domcontentloaded')
+        visit(page,base,'scheda/luzon')
+        assert page.locator('.chapter').count()>=8
+        visit(page,base,'atlante')
+        page.locator('[data-slider]').wait_for()
+        visit(page,base,'reperto/bianfu')
+        assert 'Bianfu' in page.locator('main h1').inner_text()
+        assert not issues,issues
+        print(engine,browser.version,base,'lettura, interazione, immagini, monografie e carte offline superate')
+        browser.close()
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser()
+    parser.add_argument('engine',choices=['chromium','firefox','webkit'])
+    parser.add_argument('url')
+    args=parser.parse_args()
+    run(args.engine,args.url)

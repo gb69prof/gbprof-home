@@ -1,0 +1,20 @@
+{
+  "id": "scala-omeri",
+  "unit": "mm",
+  "measure": "Distanza NF–hOF",
+  "records": [
+    {
+      "specimen": "SOA-MM9",
+      "site": "Mata Menge",
+      "value": 58
+    },
+    {
+      "specimen": "LB1",
+      "site": "Liang Bua",
+      "value": 64
+    }
+  ],
+  "source": "https://doi.org/10.1038/s41467-024-50649-7",
+  "method": "Distanza tra il forame nutritizio (NF) e il margine superiore della depressione che conduce alla fossa olecranica (hOF), nella diafisi distale dell’omero.",
+  "limit": "Il forame nutritizio occupa posizioni variabili. La distanza tra i due punti non è la lunghezza totale dell’osso."
+}

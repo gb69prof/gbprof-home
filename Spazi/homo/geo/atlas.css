@@ -1,0 +1,26 @@
+.paleo-atlas{color:inherit;max-width:100%;--pa-stroke:color-mix(in srgb,currentColor 26%,transparent);line-height:1.5}
+.paleo-atlas .pa-controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,12rem),1fr));gap:.75rem;margin:.5rem 0 1rem}
+.paleo-atlas .pa-controls label,.paleo-atlas .pa-time label{display:flex;flex-direction:column;gap:.3rem;font-size:.95rem;font-weight:600}
+.paleo-atlas select,.paleo-atlas button{font:inherit;color:inherit;min-height:44px;background:transparent;border:1px solid var(--pa-stroke);border-radius:.25rem;padding:.35rem .7rem;cursor:pointer}
+.paleo-atlas select{width:100%;background-color:var(--paper,Canvas);color:var(--ink,CanvasText)}
+.paleo-atlas .pa-time{border-block:1px solid var(--pa-stroke);padding:.8rem 0;display:grid;grid-template-columns:minmax(10rem,1fr) minmax(9rem,1fr);gap:1rem;align-items:center}
+.paleo-atlas .pa-time output{font:1.4rem Georgia,serif}.paleo-atlas input[type=range]{max-width:100%;width:100%;accent-color:#86502e;margin:0;min-height:32px}
+.paleo-atlas .pa-time p,.paleo-atlas .pa-frame figcaption,.paleo-atlas .pa-key,.paleo-atlas .pa-status{font-size:.94rem}.paleo-atlas .pa-time p{margin:0}
+.paleo-atlas .pa-layers,.paleo-atlas .pa-key,.paleo-atlas .pa-nav{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem .9rem}
+.paleo-atlas .pa-layers{padding-block:.5rem}.paleo-atlas .pa-layers span{font-weight:650}.paleo-atlas .pa-layers label{display:inline-flex;align-items:center;gap:.35rem;min-height:44px;font-size:.95rem;cursor:pointer}.paleo-atlas input[type=checkbox]{accent-color:#86502e}
+.paleo-atlas .pa-frame{margin:0 0 .75rem;border:1px solid var(--pa-stroke);border-radius:.3rem;overflow:hidden;display:block;background:transparent}
+.paleo-atlas .pa-view{background:#8caaac;overflow:hidden}.paleo-atlas .pa-map{display:block;width:100%;max-height:38rem;overflow:hidden}
+.paleo-atlas .pa-map image{pointer-events:none}
+.paleo-atlas .pa-grid{stroke:#293f41;stroke-opacity:.30;stroke-width:1;vector-effect:non-scaling-stroke}.paleo-atlas .pa-coordinate{fill:#203331;font-family:system-ui,sans-serif;paint-order:stroke;stroke:#ece4c8;stroke-width:1.6px;vector-effect:non-scaling-stroke;pointer-events:none}
+.paleo-atlas .pa-marker,.paleo-atlas .pa-interpretation{cursor:pointer}.paleo-atlas .pa-dot{fill:#5d2e22;stroke:#fff4d9;stroke-width:2;vector-effect:non-scaling-stroke}.paleo-atlas .pa-contact{fill:none;stroke:#952d19;stroke-width:2.5;vector-effect:non-scaling-stroke}
+.paleo-atlas .pa-corridor{fill:none;stroke:#73417a;stroke-width:3;stroke-dasharray:7 4;vector-effect:non-scaling-stroke}
+.paleo-atlas .pa-range,.paleo-atlas .pa-overlap{fill:rgba(255,252,230,.3);stroke:#69351c;stroke-width:2.5;vector-effect:non-scaling-stroke}.paleo-atlas .pa-range{stroke:#5b4776;stroke-dasharray:2 3}
+.paleo-atlas .pa-nav,.paleo-atlas .pa-frame figcaption{padding:.5rem .75rem}.paleo-atlas .pa-nav{border-bottom:1px solid var(--pa-stroke);gap:.25rem}.paleo-atlas .pa-nav button{font-size:.85rem;min-width:44px}
+.paleo-atlas .pa-key span{display:inline-flex;gap:.32rem;align-items:center}.paleo-atlas .pa-key i{display:inline-block;height:.72em;width:.72em;background:var(--pa-color);border:1px solid #4b4b43}
+.paleo-atlas .pa-record,.paleo-atlas .pa-method{display:block;border-block-start:1px solid var(--pa-stroke);padding:.45rem .1rem;margin:0}
+.paleo-atlas summary{cursor:pointer;padding:.45rem .1rem;font-weight:640;min-height:38px;box-sizing:border-box}
+.paleo-atlas summary span{font-size:.86rem;font-weight:400;margin-left:.45rem}.paleo-atlas details p{margin:.45rem 0}.paleo-atlas details a{text-decoration:underline}.paleo-atlas details[open]{padding-bottom:.7rem}
+.paleo-atlas :focus-visible{outline:3px solid #ad672f;outline-offset:2px}.paleo-atlas .pa-marker:focus .pa-dot{fill:white;stroke:black;stroke-width:3}
+@media(max-width:620px){.paleo-atlas .pa-time{grid-template-columns:1fr;gap:.25rem}.paleo-atlas .pa-controls{gap:.4rem}.paleo-atlas .pa-nav button{padding:.3rem .45rem}.paleo-atlas .pa-key{gap:.2rem .6rem}}
+.paleo-atlas .pa-frame.pa-expanded{position:fixed;z-index:10000;inset:0;margin:0;padding:clamp(.5rem,2vw,1.5rem);background:Canvas;color:CanvasText;display:flex;flex-direction:column;border-radius:0;overflow:auto}
+.paleo-atlas .pa-expanded .pa-view{flex:1;min-height:35vh;display:grid;align-items:center}.paleo-atlas .pa-expanded .pa-map{height:100%;max-height:calc(100dvh - 10rem)}.paleo-atlas .pa-downloads a{text-decoration:underline}

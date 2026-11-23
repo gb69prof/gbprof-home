@@ -1,0 +1,406 @@
+{
+  "id": "sapiens",
+  "name": "Homo sapiens",
+  "subtitle": "Il volto di Irhoud e la lunga formazione di una specie africana",
+  "chapters": [
+    {
+      "title": "Una gazzella a Jebel Irhoud",
+      "level": "Documentato",
+      "sources": [
+        "sapiens-fauna",
+        "sapiens-irhoud",
+        "sapiens-richter"
+      ],
+      "paragraphs": [
+        "Un frammento di mandibola di gazzella conserva denti abbastanza caratteristici da permettere a una specialista di riconoscere l’animale dopo trecentomila anni. Proviene da Jebel Irhoud, in Marocco, dove un rilievo calcareo ospitava una cavità frequentata da esseri umani. Fra le ossa animali identificate da Teresa Steele, le gazzelle ricorrono con particolare frequenza. Ci sono anche resti di zebre e di altri erbivori. Sono indizi di paesaggi aperti nei dintorni e di prede a disposizione degli abitanti. La vegetazione esatta all’ingresso della grotta e il tempo che faceva in una determinata stagione sfuggono a questa lettura. Possiamo tuttavia immaginare la distanza da percorrere fra un animale abbattuto e il luogo in cui una parte della carcassa veniva consumata.",
+        "Sugli ossi sono rimasti segni di taglio e fratture compatibili con la lavorazione. Su frammenti di selce è rimasta la traccia del calore. Le due cose possono apparire modeste davanti a un cranio quasi intero, eppure ci introducono in una giornata umana con una precisione che il cranio da solo non avrebbe. Qualcuno portò sul posto materia commestibile, ne separò delle parti e lasciò dietro di sé scarti che finirono nel sedimento. La pietra raccolse l’impronta di un fuoco. Chi compì questi gesti aveva una struttura del volto sorprendentemente vicina alla nostra. Se ne avessimo visto il profilo di spalle, la forma più allungata della scatola cranica ci avrebbe forse sorpresi. È da questa strana familiarità, osservata in persone vissute sotto cieli africani, che comincia la storia paleontologica di Homo sapiens."
+      ]
+    },
+    {
+      "title": "Il cranio che cambiò compagnia",
+      "level": "Documentato",
+      "sources": [
+        "sapiens-irhoud",
+        "sapiens-richter",
+        "sapiens-lithics"
+      ],
+      "paragraphs": [
+        "Il primo cranio di Jebel Irhoud emerse nel 1961 durante lavori minerari. Un fossile raccolto così entra in un museo accompagnato da una difficoltà che nessuna fotografia accurata può eliminare. Parte del suo contesto originario è già andata perduta. Anche nuovi frammenti, denti e strumenti recuperati negli anni seguenti dovevano essere collocati nel tempo. L’aspetto robusto di alcuni caratteri favorì per un periodo confronti con i Neanderthal. Per rivedere l’identificazione servivano sia nuovi resti confrontabili, sia un deposito ancora leggibile sul terreno. Le campagne riprese da Abdelouahed Ben-Ncer, Jean-Jacques Hublin e colleghi trovarono una porzione di sedimento sopravvissuta alle attività estrattive. Lì emergevano altre parti di volto e di mandibola, insieme con ossa animali e pietre lavorate.",
+        "Nel 2017 uscirono due articoli complementari. Il gruppo di Hublin ricostruì digitalmente le parti deformate e confrontò il volto, le mandibole e i denti con un campione più ampio. Il gruppo di Daniel Richter studiò le selci riscaldate. Quando una pietra adatta viene scaldata abbastanza, una parte della sua memoria di radiazione si azzera. Misurarne il successivo accumulo aiuta a risalire all’episodio di riscaldamento. La media ponderata delle stime fu di 315 mila anni, con un’incertezza di 34 mila. Una data indipendente ricalcolata su un dente della mandibola giovanile Irhoud 3 forniva 286 mila anni, con un’incertezza di 32 mila. I valori concordano entro i rispettivi margini. La loro forza sta nell’avere misurato materiali e processi differenti. Nei resti marocchini gli autori identificarono una fase precoce del lignaggio sapiens."
+      ]
+    },
+    {
+      "title": "Imparare da una cenere lontana",
+      "level": "Documentato",
+      "sources": [
+        "sapiens-omo",
+        "sapiens-oldomo",
+        "sapiens-herto",
+        "sapiens-clark"
+      ],
+      "paragraphs": [
+        "Nel sud-ovest dell’Etiopia, i sedimenti della formazione di Kibish raccontano una storia diversa. Omo I, ritrovato nel 1967, comprende parti del cranio e dello scheletro. La volta alta e il mento ben riconoscibile rendono la sua anatomia particolarmente importante per lo studio degli esseri umani simili a quelli attuali. In questa regione le eruzioni hanno disseminato ceneri che, depositandosi, hanno lasciato orizzonti riconoscibili. Le cronologie precedenti collocavano il fossile intorno a 195 mila anni fa. Poi è arrivata una domanda da geologi. A quale eruzione apparteneva davvero la cenere che copriva i depositi contenenti Omo I?",
+        "Per rispondere, Céline Vidal e colleghi hanno confrontato la chimica del vetro vulcanico con quella di depositi vicini ai possibili vulcani sorgente. Il materiale fine sopra Omo I si collegava a una grande eruzione dello Shala, distante centinaia di chilometri. Più vicino al vulcano, i cristalli adatti alla misura hanno permesso di datare l’evento a 233 mila anni fa, con 22 mila anni di incertezza. L’individuo sepolto sotto la cenere era già morto allora. Anche un’età di poco anteriore e un’età molto anteriore soddisfano questa relazione stratigrafica. Nel database il risultato deve quindi apparire come limite minimo, ossia come età che il fossile oltrepassa.",
+        "A Herto, nella valle del medio Awash, altri crani di adulti e di un immaturo documentano esseri umani vissuti circa 160 mila anni fa. Gli autori proposero il nome sottospecifico idaltu per questa combinazione di robustezza e caratteri vicini ai nostri. Il valore dei reperti sopravvive alle preferenze tassonomiche. I tre siti africani ci restituiscono individui differenti, con documenti diversi e incertezze di tipo diverso."
+      ]
+    },
+    {
+      "title": "Un corpo che prende forma a più velocità",
+      "level": "Fortemente supportato",
+      "sources": [
+        "sapiens-irhoud",
+        "sapiens-neubauer",
+        "sapiens-omo",
+        "sapiens-herto"
+      ],
+      "paragraphs": [
+        "Accostando un volto di Irhoud alla parte posteriore del suo cranio si rischia di provare una sensazione ingannevole. Sembra che due epoche differenti convivano nella stessa persona. Accade perché abbiamo preso come unità di confronto una testa odierna e ne cerchiamo all’indietro tutti i caratteri insieme. In un organismo che cresce, le regioni anatomiche rispondono a vincoli in parte indipendenti. La faccia e i denti di Irhoud presentano somiglianze quantitative con quelli di sapiens più recenti, mentre la parte che contiene l’encefalo conserva una geometria diversa. La robustezza di una mandibola, considerata isolatamente, dice poco sulla posizione che un individuo occupa nell’insieme delle popolazioni del Pleistocene.",
+        "Un lavoro di Simon Neubauer, Jean-Jacques Hublin e Philipp Gunz ha seguito il cambiamento di forma dell’endocranio attraverso una serie di fossili. Dalle scansioni si ricava un calco digitale della cavità. Punti omologhi e superfici permettono di confrontare proporzioni tenendo separata, per quanto possibile, la dimensione. Le forme prossime alla variabilità attuale compaiono gradualmente. Il risultato rende imprudente fissare la nascita della specie al giorno in cui una testa avrebbe finalmente raggiunto una certa capacità. Due cavità di volume simile possono differire per forma. Nessuna delle due offre la registrazione delle parole pronunciate dal suo proprietario o della sua capacità di disegnare.",
+        "Anche la ricostruzione del resto del corpo richiede una disciplina analoga. A Irhoud la documentazione è particolarmente informativa per testa e dentatura. Inventare la statura dei cacciatori a partire da questi elementi renderebbe attraente una tavola illustrata e inutilizzabile una tabella scientifica. Un intervallo ricavato da popolazioni odierne cambierebbe il campione senza dirlo al lettore. L’alternativa più informativa è illustrare quali ossa si conservano in ogni sito e quale domanda ciascuna permette di porre."
+      ]
+    },
+    {
+      "title": "Quale Africa per le nostre origini",
+      "level": "Plausibile",
+      "sources": [
+        "sapiens-scerri",
+        "sapiens-ragsdale",
+        "sapiens-thomas"
+      ],
+      "paragraphs": [
+        "Una singola parola, Africa, può apparire una risposta geografica precisa solo se si guarda il continente da molto lontano. Tra il Marocco di Irhoud, il Rift etiopico e le coste meridionali corrono migliaia di chilometri, con bacini, alture e fasce di vegetazione che hanno cambiato posizione nel corso delle oscillazioni climatiche. Una valle percorribile in una fase più umida poteva diventare una barriera in un periodo successivo. Lo stesso genere di variazione avveniva su coste la cui posizione cambiava con il livello del mare. Un gruppo poteva conservare a lungo tradizioni locali e ritrovare, in un’altra fase, occasioni di movimento e di scambio.",
+        "Eleanor Scerri e colleghi hanno proposto di pensare l’origine della nostra specie in popolazioni africane suddivise, con connessioni variabili. I genomi forniscono un modo diverso di interrogare l’ipotesi. Aaron Ragsdale e il suo gruppo hanno confrontato i segnali di parentela nei genomi di popolazioni attuali con le aspettative di storie demografiche alternative. Un modello nel quale gruppi ancestrali restavano debolmente differenziati scambiando geni spiegava i dati analizzati. La conclusione riguarda la capacità esplicativa di un modello. Per trasformare due popolazioni statistiche in due comunità riconoscibili su una carta servirebbero altre evidenze.",
+        "Nel 2026 i fossili della Grotte à Hominidés di Thomas Quarry I, a Casablanca, hanno allargato il confronto a circa 773 mila anni fa. Mandibole e denti conservano combinazioni di caratteri pertinenti alle popolazioni vicine alle radici delle successive linee umane. Che si tratti di antenati diretti resta indimostrato. Anticipare a questa data il primo sapiens confonderebbe una ricerca sulle premesse evolutive con una diagnosi di appartenenza alla specie."
+      ]
+    },
+    {
+      "title": "Cosa insegna una scheggia",
+      "level": "Documentato",
+      "sources": [
+        "sapiens-lithics",
+        "sapiens-richter",
+        "sapiens-fauna",
+        "sapiens-pinnacle"
+      ],
+      "paragraphs": [
+        "Sul pavimento di una grotta, una scheggia può sembrare un oggetto concluso. Per leggerla, l’archeologo ripercorre in senso inverso la successione dei colpi impressi sulla pietra. A Irhoud numerosi supporti furono prodotti con metodi Levallois. L’artigiano preparava superfici e convessità del nucleo per orientare il distacco successivo. Una parte del lavoro più delicato si trova perciò nelle assenze, sulle superfici negative che il pezzo conserva. I raschiatoi sono frequenti nell’insieme studiato, mentre nuclei e scarti di alcune fasi sono relativamente scarsi. La raccolta poteva dipendere dall’uso particolare della cavità e da ciò che vi fu portato già preparato. La distinzione delle fasi richiede persino di tenere conto dei gusti dei primi raccoglitori, più attenti agli oggetti vistosi che ai piccoli detriti.",
+        "Queste tecniche richiedevano mani addestrate e un apprendimento ripetuto. La loro comparsa presso un determinato sito documenta un sapere, senza identificare da sola la specie dei suoi inventori o la forma del loro insegnamento. Lo si comprende cambiando ambiente. A Pinnacle Point, sul litorale sudafricano, i depositi di circa 164 mila anni fa contengono molluschi marini sfruttati dagli esseri umani e pigmenti. Chi vi cercava risorse doveva avere familiarità con un paesaggio costiero periodicamente modificato dalla distanza del mare. A Irhoud la gazzella ci ha introdotti in un mondo di erbivori terrestri. Qui una conchiglia apre una finestra sulla battigia. Scambiare una delle due scene per il ritratto generale della vita di sapiens lascerebbe fuori la parte più interessante del confronto, la diversità delle soluzioni locali."
+      ]
+    },
+    {
+      "title": "Segni da indossare, tracce da leggere",
+      "level": "Fortemente supportato",
+      "sources": [
+        "sapiens-beads",
+        "sapiens-blombos",
+        "sapiens-mtoto"
+      ],
+      "paragraphs": [
+        "A Bizmoune, vicino all’odierna Essaouira, alcuni piccoli gusci marini pongono una domanda diversa da quella suscitata dai molluschi di Pinnacle Point. La scelta di tipi particolari e le tracce d’uso hanno indotto i ricercatori a interpretarli come ornamenti personali. Molti provengono da depositi datati ad almeno circa 142 mila anni fa. Un oggetto indossato può viaggiare con il suo proprietario e rendere visibile un’identità a chi lo vede. Il significato preciso dipende però da una comunità che gli attribuisce valore. Dalle superfici usurate si può risalire al contatto ripetuto. È molto più difficile stabilire se una serie di gusci esprimesse età, appartenenza, un vincolo fra persone o semplicemente una preferenza.",
+        "A Blombos, in Sudafrica, una scheggia proveniente da livelli di circa 73 mila anni fa porta una trama di linee rosse. Microscopia ed esperimenti hanno permesso agli studiosi di proporre che qualcuno le avesse tracciate con ocra. Il margine della pietra interrompe il disegno. Quel frammento conserva dunque anche la traccia di qualcosa che abbiamo perduto. Allo stesso modo, a Panga ya Saidi, in Kenya, la posizione di un bambino di pochi anni, la disposizione delle articolazioni e i sedimenti documentano una sepoltura di circa 78 mila anni fa. L’atto materiale si lascia ricostruire con buone ragioni. La storia che gli adulti raccontarono di quella morte, le parole che dissero e gli eventuali gesti compiuti intorno alla fossa appartengono a un altro ordine di conoscenza. Una monografia può rendere percepibile quella perdita senza riempirla di discorsi inventati."
+      ]
+    },
+    {
+      "title": "Quante volte si può uscire da un continente",
+      "level": "Documentato",
+      "sources": [
+        "sapiens-misliya",
+        "sapiens-bacho",
+        "sapiens-scerri"
+      ],
+      "paragraphs": [
+        "Sulla costa orientale del Mediterraneo, la grotta di Misliya ha restituito parte di un mascellare superiore che ancora porta denti. L’analisi anatomica e più linee di datazione hanno collocato la presenza di persone appartenenti al lignaggio sapiens nell’attuale Israele fra circa 194 mila e 177 mila anni fa. Un mascellare stabilisce un fatto geografico straordinario. Entro quella finestra persone con quei caratteri erano arrivate nel Levante. Il reperto non reca indicazioni sul numero di generazioni che vi restarono o sulla destinazione dei loro figli. Una presenza precoce può precedere di molto l’espansione che lasciò discendenti numerosi in altre regioni.",
+        "Osservata su una mappa, una freccia che va dall’Africa all’Eurasia tende a unire in un unico movimento esperienze distanti decine di millenni. Nella vita di una comunità mobile la frontiera continentale odierna aveva ben poco significato. A contare erano passaggi praticabili, fonti d’acqua, territori familiari e gruppi con i quali ci si poteva incontrare. La parola migrazione acquista un contenuto più preciso se viene accompagnata dal tipo di documento. Una mandibola o un dente attestano la presenza in un luogo. Una successione di industrie simili può riflettere movimento di persone ma anche circolazione di tecniche. Una genealogia ricostruita dal DNA segue invece soltanto le ascendenze che hanno lasciato traccia nei campioni esaminati. È così possibile che il primo fossile noto in un territorio e la più antica ascendenza ancora riconoscibile vi arrivino in momenti diversi."
+      ]
+    },
+    {
+      "title": "Gli incontri scritti nei genomi",
+      "level": "Documentato",
+      "sources": [
+        "sapiens-bacho",
+        "sapiens-iasi",
+        "sapiens-reich",
+        "sapiens-dirks"
+      ],
+      "paragraphs": [
+        "Nella grotta bulgara di Bacho Kiro, tre individui vissuti fra circa 46 mila e 43 mila anni fa hanno cambiato il modo di raccontare l’incontro europeo fra sapiens e Neanderthal. Nei loro genomi compaiono tratti di ascendenza neanderthaliana. Quando gli antenati sono recenti, segmenti relativamente lunghi resistono ancora alla ricombinazione che, a ogni generazione, rimescola le copie ereditate dai genitori. I ricercatori hanno riconosciuto antenati neanderthaliani risalenti a poche generazioni prima. Da una simile evidenza si ricava qualcosa di più concreto di una vicinanza su una mappa. Le genealogie si erano realmente unite. Come fossero organizzate socialmente quelle famiglie resta fuori dalla portata dei dati.",
+        "Campioni antichi e attuali confrontati su scala più ampia permettono invece di studiare la parte di ascendenza neanderthaliana condivisa da numerose popolazioni successive. Una ricerca del 2024 ne ha ricostruito una fase prolungata. Questo segnale comune e i singoli antenati recenti di Bacho Kiro rispondono a domande diverse. Un altro ramo, individuato grazie ai resti della grotta di Denisova in Siberia, ha lasciato contributi riconoscibili soprattutto in alcune popolazioni dell’Oceania e dell’Asia. Dal luogo in cui si conserva un fossile non discende il luogo preciso di tutti gli incroci.",
+        "Con Homo naledi possiamo formulare un’affermazione più circoscritta. Gli intervalli di Irhoud e di Rising Star si intersecano sul calendario africano, ma i due siti distano migliaia di chilometri. Nessun individuo documenta un incontro tra quelle due popolazioni. Anche per molte altre umanità contemporanee la pagina più corretta dell’atlante mostra una sovrapposizione di età e lascia vuota la casella dell’ascendenza condivisa."
+      ]
+    },
+    {
+      "title": "L’unica specie rimasta",
+      "level": "Fortemente supportato",
+      "sources": [
+        "sapiens-ragsdale",
+        "sapiens-iasi",
+        "sapiens-reich",
+        "sapiens-scerri"
+      ],
+      "paragraphs": [
+        "Per raccontare l’ultimo capitolo di una specie, un paleontologo cerca di solito le presenze più recenti e il momento in cui scompaiono dal record. Nel caso di sapiens, il lettore stesso prolunga la serie. Siamo i discendenti di alcune popolazioni del Pleistocene e apparteniamo a una specie ancora esistente. Questo fatto tende una trappola narrativa. Poiché conosciamo il risultato, possiamo essere tentati di attribuire a ogni carattere del primo volto africano una funzione decisiva per la futura espansione. Le testimonianze trattate in queste pagine permettono un racconto meno prevedibile. Una regione fu abitata in anticipo senza che se ne possa seguire tutta la discendenza. Un’altra conserva figli e nipoti di persone appartenenti a gruppi che classifichiamo diversamente. Una terza ha trattenuto il segno di un’attività quotidiana che sfugge del tutto al DNA.",
+        "Resta aperta soprattutto la geografia delle connessioni africane. Quali corridoi mettevano in contatto gruppi distanti? Quanto durarono gli isolamenti locali? Quali popolazioni sono ancora invisibili per condizioni di conservazione o assenza di scavi? Nuove misure su un livello di cenere possono cambiare la priorità fra due siti. Lo studio di un singolo bambino può correggere il quadro sociale che sembrava emergere dagli adulti. Il contributo più duraturo dei primi sapiens alla conoscenza contemporanea è forse questo invito alla precisione. Si può appartenere alla nostra storia evolutiva avendo una testa di forma diversa dalla nostra, abitando paesaggi che oggi faremmo fatica a riconoscere e partecipando a comunità di cui nessuna popolazione attuale conserva il nome."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "sapiens-irhoud",
+      "authors": "J.-J. Hublin et al.",
+      "title": "New fossils from Jebel Irhoud, Morocco and the pan-African origin of Homo sapiens",
+      "year": 2017,
+      "journal": "Nature",
+      "doi": "10.1038/nature22336",
+      "url": "https://doi.org/10.1038/nature22336",
+      "evidence": "Studio primario di fossili e morfometria comparativa.",
+      "limits": "Il posto dei primi membri della linea dipende dalla definizione morfologica di specie."
+    },
+    {
+      "id": "sapiens-richter",
+      "authors": "D. Richter et al.",
+      "title": "The age of the hominin fossils from Jebel Irhoud, Morocco, and the origins of the Middle Stone Age",
+      "year": 2017,
+      "journal": "Nature",
+      "doi": "10.1038/nature22335",
+      "url": "https://doi.org/10.1038/nature22335",
+      "evidence": "Studio primario, termoluminescenza delle selci e US-ESR del dente di Irhoud 3.",
+      "limits": "L’età media ha incertezza. Un evento termico appartiene al contesto, un dente a un individuo."
+    },
+    {
+      "id": "sapiens-fauna",
+      "authors": "K. Holder con T. Steele",
+      "title": "Moroccan Fossils Show Human Ancestors’ Diet of Game",
+      "year": 2017,
+      "journal": "University of California, Davis",
+      "doi": "",
+      "url": "https://www.ucdavis.edu/news/moroccan-fossils-show-human-ancestors-diet-game",
+      "evidence": "Sintesi istituzionale della ricercatrice che ha analizzato le ossa animali.",
+      "limits": "La composizione del deposito seleziona le risorse che si conservano."
+    },
+    {
+      "id": "sapiens-lithics",
+      "authors": "S. P. McPherron, Ž. Režek, A. Ben-Ncer, J.-J. Hublin",
+      "title": "The Lithic Assemblages of Jbel Irhoud",
+      "year": 2019,
+      "journal": "Bulletin d’Archéologie Marocaine",
+      "doi": "",
+      "url": "https://app.wadi.dev/api/media/image?inline=&path=stores%2F45%2Fcontenu_de_publication%2F36319%2F1-Ben-Ncer-12_07_20.pdf_0171751274716.pdf",
+      "evidence": "Studio specialistico dei nuclei, delle schegge e degli strumenti.",
+      "limits": "Le vecchie raccolte e gli scavi controllati presentano condizioni di campionamento diverse."
+    },
+    {
+      "id": "sapiens-omo",
+      "authors": "C. M. Vidal et al.",
+      "title": "Age of the oldest known Homo sapiens from eastern Africa",
+      "year": 2022,
+      "journal": "Nature",
+      "doi": "10.1038/s41586-021-04275-8",
+      "url": "https://doi.org/10.1038/s41586-021-04275-8",
+      "evidence": "Studio primario, correlazione geochimica e datazione del vulcanismo.",
+      "limits": "Età minima per Omo I. La correlazione non si applica automaticamente a Herto."
+    },
+    {
+      "id": "sapiens-oldomo",
+      "authors": "I. McDougall, F. H. Brown, J. G. Fleagle",
+      "title": "Stratigraphic placement and age of modern humans from Kibish, Ethiopia",
+      "year": 2005,
+      "journal": "Nature",
+      "doi": "10.1038/nature03258",
+      "url": "https://doi.org/10.1038/nature03258",
+      "evidence": "Studio primario sulla successione dei depositi di Kibish.",
+      "limits": "La cronologia proposta è stata rivista nel 2022."
+    },
+    {
+      "id": "sapiens-herto",
+      "authors": "T. D. White et al.",
+      "title": "Pleistocene Homo sapiens from Middle Awash, Ethiopia",
+      "year": 2003,
+      "journal": "Nature",
+      "doi": "10.1038/nature01669",
+      "url": "https://doi.org/10.1038/nature01669",
+      "evidence": "Studio primario dei crani di Herto e delle modifiche sulle loro superfici.",
+      "limits": "La classificazione sottospecifica è una proposta tassonomica."
+    },
+    {
+      "id": "sapiens-clark",
+      "authors": "J. D. Clark et al.",
+      "title": "Stratigraphic, chronological and behavioural contexts of Pleistocene Homo sapiens from Middle Awash, Ethiopia",
+      "year": 2003,
+      "journal": "Nature",
+      "doi": "10.1038/nature01670",
+      "url": "https://doi.org/10.1038/nature01670",
+      "evidence": "Studio primario di geologia, archeologia e fauna del sito.",
+      "limits": "Un orizzonte archeologico può riunire più momenti di attività."
+    },
+    {
+      "id": "sapiens-neubauer",
+      "authors": "S. Neubauer, J.-J. Hublin, P. Gunz",
+      "title": "The evolution of modern human brain shape",
+      "year": 2018,
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.aao5961",
+      "url": "https://doi.org/10.1126/sciadv.aao5961",
+      "evidence": "Studio primario di calchi endocranici digitali e morfometria.",
+      "limits": "Gli endocasti restituiscono geometrie, senza permettere di ricostruire esperienze o linguaggio."
+    },
+    {
+      "id": "sapiens-scerri",
+      "authors": "E. M. L. Scerri et al.",
+      "title": "Did Our Species Evolve in Subdivided Populations across Africa, and Why Does It Matter?",
+      "year": 2018,
+      "journal": "Trends in Ecology & Evolution",
+      "doi": "10.1016/j.tree.2018.05.005",
+      "url": "https://doi.org/10.1016/j.tree.2018.05.005",
+      "evidence": "Rassegna interpretativa, confronto di archeologia, fossili e paleoambienti.",
+      "limits": "La connessione di due popolazioni in un particolare momento resta da dimostrare."
+    },
+    {
+      "id": "sapiens-ragsdale",
+      "authors": "A. P. Ragsdale et al.",
+      "title": "A weakly structured stem for human origins in Africa",
+      "year": 2023,
+      "journal": "Nature",
+      "doi": "10.1038/s41586-023-06055-y",
+      "url": "https://doi.org/10.1038/s41586-023-06055-y",
+      "evidence": "Studio primario, confronto tra modelli demografici su genomi attuali.",
+      "limits": "Più storie possono produrre parte degli stessi segnali statistici."
+    },
+    {
+      "id": "sapiens-thomas",
+      "authors": "J.-J. Hublin et al.",
+      "title": "Early hominins from Morocco basal to the Homo sapiens lineage",
+      "year": 2026,
+      "journal": "Nature",
+      "doi": "10.1038/s41586-025-09914-y",
+      "url": "https://doi.org/10.1038/s41586-025-09914-y",
+      "evidence": "Studio primario di morfologia dento-mandibolare e paleomagnetismo.",
+      "limits": "La vicinanza morfologica a una divergenza non identifica un antenato individuale diretto."
+    },
+    {
+      "id": "sapiens-pinnacle",
+      "authors": "C. W. Marean et al.",
+      "title": "Early human use of marine resources and pigment in South Africa during the Middle Pleistocene",
+      "year": 2007,
+      "journal": "Nature",
+      "doi": "10.1038/nature06204",
+      "url": "https://doi.org/10.1038/nature06204",
+      "evidence": "Studio primario di resti di molluschi, pigmenti e industrie su pietra.",
+      "limits": "Le evidenze di un sito costiero non valgono per l’intera specie."
+    },
+    {
+      "id": "sapiens-beads",
+      "authors": "E. M. Sehasseh et al.",
+      "title": "Early Middle Stone Age personal ornaments from Bizmoune Cave, Essaouira, Morocco",
+      "year": 2021,
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.abi8620",
+      "url": "https://doi.org/10.1126/sciadv.abi8620",
+      "evidence": "Studio primario di conchiglie, usure e contesto.",
+      "limits": "L’identità o il messaggio comunicato dall’ornamento restano ignoti."
+    },
+    {
+      "id": "sapiens-blombos",
+      "authors": "C. S. Henshilwood et al.",
+      "title": "An abstract drawing from the 73,000-year-old levels at Blombos Cave, South Africa",
+      "year": 2018,
+      "journal": "Nature",
+      "doi": "10.1038/s41586-018-0514-3",
+      "url": "https://doi.org/10.1038/s41586-018-0514-3",
+      "evidence": "Studio primario delle tracce di ocra su una scheggia.",
+      "limits": "L’identificazione della tecnica non decifra il significato del motivo."
+    },
+    {
+      "id": "sapiens-mtoto",
+      "authors": "M. Martinón-Torres et al.",
+      "title": "Earliest known human burial in Africa",
+      "year": 2021,
+      "journal": "Nature",
+      "doi": "10.1038/s41586-021-03457-8",
+      "url": "https://doi.org/10.1038/s41586-021-03457-8",
+      "evidence": "Studio primario, micromorfologia, tafonomia, posizione di resti infantili.",
+      "limits": "Si può ricostruire la deposizione con più precisione del contenuto simbolico."
+    },
+    {
+      "id": "sapiens-misliya",
+      "authors": "I. Hershkovitz et al.",
+      "title": "The earliest modern humans outside Africa",
+      "year": 2018,
+      "journal": "Science",
+      "doi": "10.1126/science.aap8369",
+      "url": "https://doi.org/10.1126/science.aap8369",
+      "evidence": "Studio primario, mascellare e datazione con più tecniche.",
+      "limits": "La presenza nel Levante non assicura una discendenza continua."
+    },
+    {
+      "id": "sapiens-bacho",
+      "authors": "M. Hajdinjak et al.",
+      "title": "Initial Upper Palaeolithic humans in Europe had recent Neanderthal ancestry",
+      "year": 2021,
+      "journal": "Nature",
+      "doi": "10.1038/s41586-021-03335-3",
+      "url": "https://doi.org/10.1038/s41586-021-03335-3",
+      "evidence": "Studio primario di genomi antichi da Bacho Kiro.",
+      "limits": "La storia di questi individui ha una scala regionale."
+    },
+    {
+      "id": "sapiens-iasi",
+      "authors": "L. N. M. Iasi et al.",
+      "title": "Neanderthal ancestry through time: Insights from genomes of ancient and present-day humans",
+      "year": 2024,
+      "journal": "Science",
+      "doi": "10.1126/science.adq3010",
+      "url": "https://doi.org/10.1126/science.adq3010",
+      "evidence": "Studio primario, segmento arcaico e cronologia dell’introgressione.",
+      "limits": "L’intervallo ricostruito per l’ascendenza condivisa non comprende tutti gli incontri."
+    },
+    {
+      "id": "sapiens-reich",
+      "authors": "D. Reich et al.",
+      "title": "Genetic history of an archaic hominin group from Denisova Cave in Siberia",
+      "year": 2010,
+      "journal": "Nature",
+      "doi": "10.1038/nature09710",
+      "url": "https://doi.org/10.1038/nature09710",
+      "evidence": "Studio primario, confronto di DNA denisoviano e genomi umani.",
+      "limits": "Le percentuali dipendono dal campione e dal metodo di inferenza."
+    },
+    {
+      "id": "sapiens-dirks",
+      "authors": "P. H. G. M. Dirks et al.",
+      "title": "The age of Homo naledi and associated sediments in the Rising Star Cave, South Africa",
+      "year": 2017,
+      "journal": "eLife",
+      "doi": "10.7554/eLife.24231",
+      "url": "https://doi.org/10.7554/eLife.24231",
+      "evidence": "Studio primario sulla cronologia di Dinaledi.",
+      "limits": "Le finestre temporali sovrapposte non localizzano incontri."
+    }
+  ],
+  "discoveries": [
+    "1961 · Un cranio viene alla luce nei lavori minerari di Jebel Irhoud in Marocco.",
+    "1967 · In Etiopia si recuperano i fossili di Omo Kibish.",
+    "2003 · Vengono pubblicati i crani di Herto e il loro contesto.",
+    "2017 · Scavi, anatomia e termoluminescenza cambiano il posto di Irhoud nella storia umana.",
+    "2022 · La correlazione delle ceneri di Omo con il vulcano Shala rivede il limite minimo per Omo I.",
+    "2026 · Thomas Quarry I riapre il problema delle popolazioni prossime alla divergenza tra le grandi linee."
+  ],
+  "specimens": [
+    "Irhoud 1 · cranio",
+    "Irhoud 3 · mandibola immatura",
+    "Irhoud 10 · resti facciali",
+    "Irhoud 11 · mandibola",
+    "Omo I · cranio e scheletro parziale",
+    "BOU-VP-16/1 · cranio adulto di Herto",
+    "Misliya-1 · mascellare"
+  ],
+  "glossary": {
+    "Termoluminescenza": "Luce emessa al riscaldamento da minerali che hanno accumulato energia dopo un precedente riscaldamento significativo.",
+    "Endocranio": "Superficie interna della cavità del cranio, riproducibile in calco fisico o digitale.",
+    "Introgressione": "Ingresso e persistenza di varianti genetiche in una popolazione attraverso incroci e successive generazioni.",
+    "Tefra": "Materiale espulso da un’eruzione, correlabile a distanza tramite la sua firma chimica.",
+    "Levallois": "Famiglia di metodi che preparano le superfici di un nucleo di pietra per controllare il successivo distacco.",
+    "Struttura di popolazione": "Ripartizione di una popolazione in gruppi tra i quali gli scambi genetici possono variare nel tempo."
+  },
+  "version": "1.0",
+  "reviewed": "2026-11-23"
+}

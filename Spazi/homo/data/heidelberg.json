@@ -1,0 +1,421 @@
+{
+  "id": "heidelberg",
+  "name": "Homo heidelbergensis",
+  "subtitle": "Dalla mandibola di Mauer al cranio di Kabwe, un problema di parentela nel Pleistocene medio.",
+  "chapters": [
+    {
+      "title": "Una mandibola nelle sabbie del Neckar",
+      "level": "Documentato",
+      "sources": [
+        "heidelberg-ambiente",
+        "heidelberg-wagner",
+        "heidelberg-museo"
+      ],
+      "paragraphs": [
+        "A sud-est di Heidelberg, dove oggi si trova la località di Mauer, un antico corso del Neckar trasportava ghiaia, sabbia, denti di mammiferi, frammenti di scheletri. Tra i depositi fluviali sono rimaste tracce di un intervallo temperato del Pleistocene medio. Nei depositi superiori si alternano polveri accumulate in condizioni più fredde e suoli sviluppatisi durante fasi più miti. Immaginare una Germania perennemente sepolta sotto il ghiaccio, a quest'altezza della sua storia, sarebbe tanto fuorviante quanto collocare l'antico fiume esattamente dove scorre il suo discendente moderno.",
+        "Nel 1907 Daniel Hartmann lavorava nella cava di sabbia del Grafenrain, a circa ventiquattro metri sotto la superficie, quando riconobbe una mandibola fra i materiali estratti. Nei pressi si recuperavano da tempo fossili di animali. Otto Schoetensack, studioso di Heidelberg, aveva spiegato agli operai come individuare resti umani. La scoperta ebbe bisogno di entrambe le competenze, quella di chi conosceva i materiali che emergevano ogni giorno e quella di chi aveva formulato una domanda su un antichissimo popolamento europeo. Schoetensack documentò la posizione e l'anno seguente pubblicò la descrizione del fossile.",
+        "L'osso si era spezzato in due. Su alcuni denti erano rimasti cementati sabbia e un ciottolo. La dentatura appariva umana, mentre i rami della mandibola erano particolarmente robusti e mancava il mento osseo sporgente tipico della nostra specie. Schoetensack propose il nome Homo heidelbergensis. La mandibola è tuttora il riferimento che fissa quel nome. Nella cava, a differenza di quanto accaduto in altre località, non si è poi ricomposto un popolo intero osso dopo osso. Per questo il punto di partenza più onesto della monografia è un individuo con denti ben conservati e con moltissime parti del corpo ancora ignote."
+      ]
+    },
+    {
+      "title": "Gli orologi del deposito",
+      "level": "Fortemente supportato",
+      "sources": [
+        "heidelberg-ambiente",
+        "heidelberg-wagner",
+        "heidelberg-falgueres"
+      ],
+      "paragraphs": [
+        "Per quasi un secolo gli animali hanno aiutato a stabilire quando visse quell'individuo. La presenza di determinate forme di piccoli mammiferi e la successione dei depositi restringevano l'intervallo possibile. Un animale può comparire tardi in una valle o permanervi più a lungo che altrove. La biostratigrafia ricava gran parte della sua efficacia dal confronto fra più specie e più sezioni, oltre che dalla conoscenza delle loro preferenze ambientali. A Mauer, anche dopo aver identificato con buona sicurezza condizioni interglaciali, rimaneva da capire a quale degli intervalli temperati attribuire le sabbie.",
+        "Günther Wagner e colleghi hanno affrontato il problema misurando proprietà fisiche diverse in materiali diversi. I denti fossili di mammiferi associati si prestano a una combinazione di risonanza di spin elettronico e studio delle serie dell'uranio. Nei granuli di sabbia un segnale di radiofluorescenza offre una via indipendente. I due procedimenti hanno vincoli differenti rispetto alla storia del deposito. La loro convergenza ha permesso di attribuire al contesto del ritrovamento un'età di 609 mila anni, con un'incertezza di 40 mila. Non sarebbe corretto scrivere che un esame diretto sull'osso umano ha stabilito in quale anno morì il suo proprietario.",
+        "La mandibola rimane insolitamente importante perché le testimonianze europee di quel periodo sono rare e spesso frammentarie. Una rassegna pubblicata nel 2026 da Christophe Falguères e colleghi torna infatti a considerarla un riferimento per il confronto con i pochi denti e segmenti scheletrici di età analoga. Essere un riferimento cronologico ha un'implicazione precisa. Se in una regione si trova un singolo osso più recente, si può valutarlo rispetto a un campione collocato abbastanza bene nel tempo. Non ne segue che fra la cava tedesca e la nuova località sia esistito un flusso ininterrotto di individui con la stessa anatomia."
+      ]
+    },
+    {
+      "title": "Come si allarga il significato di un nome",
+      "level": "Controverso",
+      "sources": [
+        "heidelberg-stringer",
+        "heidelberg-athreya",
+        "heidelberg-falgueres"
+      ],
+      "paragraphs": [
+        "In un museo si può incontrare una ricostruzione di heidelbergensis con arcate sopracciliari possenti, volto ampio e un cranio che contiene un cervello più voluminoso di quello di molti erectus. Davanti a quel ritratto vale la pena chiedersi da quale cranio provengano fronte e sopracciglia. Di Mauer possediamo soltanto la mandibola. Per disegnare la parte superiore del volto bisogna aver deciso che altri crani appartengano allo stesso gruppo. Quella decisione precede la ricostruzione e in parte la determina. È perciò possibile trovare immagini diverse, scientificamente argomentate e riferite a concetti diversi della stessa specie.",
+        "Nell'accezione ampia il nome ha riunito materiali europei e africani e, per alcuni autori, anche asiatici, collocati fra forme più antiche e le successive popolazioni neanderthaliane o sapiens. Il vantaggio era di dare forma a somiglianze ricorrenti e di proporre una storia evolutiva verificabile. La difficoltà è stabilire se i caratteri condivisi furono ereditati da un antenato esclusivo di quel gruppo. Alcuni potrebbero essere più antichi e presenti anche in altre linee. Altri potrebbero essersi sviluppati separatamente. Un insieme di fossili accomunati dal fatto di precedere i Neanderthal e i sapiens pienamente riconoscibili rischia di rispecchiare soprattutto il nostro modo di ordinare le vetrine.",
+        "In un'accezione più stretta il nome si riferisce invece a una parte delle popolazioni europee. Anche in questo caso gli specialisti divergono su quali reperti affiancare al fossile tipo. Chris Stringer ha sottolineato, fra l'altro, quanto l'inclusione dei resti spagnoli della Sima de los Huesos possa confondere i rapporti con i primi Neanderthal. Esistono anche proposte di abbandonare il nome come grande categoria evolutiva. Nessuna di queste opzioni fa sparire la mandibola di Mauer. Cambiano le relazioni che ogni autore ritiene di poterle attribuire, un dettaglio che diventa determinante appena si vogliano contare le popolazioni contemporanee."
+      ]
+    },
+    {
+      "title": "La grotta che restituì molti individui",
+      "level": "Fortemente supportato",
+      "sources": [
+        "heidelberg-cranios",
+        "heidelberg-simaeta",
+        "heidelberg-post"
+      ],
+      "paragraphs": [
+        "Per comprendere perché isolare i caratteri di una popolazione sia così difficile bisogna entrare nella Sierra de Atapuerca, vicino a Burgos. Alla Sima de los Huesos migliaia di frammenti di scheletro si sono conservati nel fondo di un sistema carsico. Il campione consente di affiancare diversi crani provenienti dallo stesso contesto, invece di porre fianco a fianco un individuo tedesco e uno africano separati da centinaia di migliaia di anni. Le differenze fra i singoli diventano parte dell'informazione disponibile e riducono il rischio di trasformare una caratteristica individuale in una diagnosi di specie.",
+        "Nel 2014 Juan Luis Arsuaga e colleghi analizzarono diciassette crani. Nel volto, nelle strutture impegnate nella masticazione e nei denti riconobbero caratteri che avvicinano la popolazione alla linea neanderthaliana. La volta cranica non presentava ancora l'intero insieme dei tratti caratteristici dei Neanderthal più recenti. Si potevano così osservare parti dell'anatomia che avevano acquisito combinazioni nuove in tempi diversi. Se si fosse cercato soltanto un individuo con tutti i tratti già riuniti si sarebbe perso proprio quel tratto della storia evolutiva che i reperti illuminano meglio.",
+        "Per lungo tempo il riferimento cronologico più citato fu circa 430 mila anni. Nel 2019 Martina Demuro e colleghi hanno modellato le età dei sedimenti alla base, all'interno e sopra il livello ricco di ossa. La stima media per quel livello è circa 448 mila anni, con un'incertezza di 15 mila. La nuova cifra e la vecchia età minima appartengono a domande differenti poste allo stesso deposito. Aggiornare un'etichetta in museo dovrebbe significare spiegare questa differenza, soprattutto quando dal valore adottato si vuole dedurre da quanto tempo esistevano in Europa popolazioni con caratteri neanderthaliani."
+      ]
+    },
+    {
+      "title": "La parentela nascosta nell'osso",
+      "level": "Fortemente supportato",
+      "sources": [
+        "heidelberg-nuclear",
+        "heidelberg-mito",
+        "heidelberg-cranios"
+      ],
+      "paragraphs": [
+        "Nel materiale della Sima si sono conservate anche tracce molecolari. La prima sorpresa giunse dal DNA mitocondriale, una piccola porzione del patrimonio genetico che passa soprattutto attraverso la linea materna. La sequenza studiata risultava più vicina a quella denisoviana di quanto avrebbero fatto prevedere i caratteri del volto e dei denti. Si sarebbe potuto concludere sbrigativamente di aver trovato Denisoviani in una grotta spagnola. La deduzione dipendeva però dal presupposto che la storia di una singola linea materna coincidesse con la storia della popolazione nel suo insieme.",
+        "Nel 2016 Matthias Meyer e colleghi pubblicarono sequenze di DNA nucleare. Per gli individui analizzati il confronto nucleare indicò un'affinità più stretta con i Neanderthal che con i Denisoviani. Il risultato rafforzò la lettura di una popolazione collocata lungo la linea neanderthaliana. È un risultato circoscritto e insieme profondo. Vuol dire che la separazione fra le linee neanderthaliana e denisoviana precede questi individui. Non ci dice che la mandibola tedesca di Mauer, che è più antica e per la quale manca un confronto genetico equivalente, appartenga automaticamente alla stessa popolazione.",
+        "Si può capire la discrepanza pensando alla propria genealogia. Seguendo soltanto la madre della madre, fra molti antenati di ogni generazione si sceglie un percorso particolare. Seguire un gran numero di regioni del genoma apre finestre su percorsi diversi. Antiche varianti possono sopravvivere in gruppi imparentati e contatti fra popolazioni possono ridistribuirle. Ai dati molecolari servono modelli per distinguere questi scenari, soprattutto quando il DNA antico si conserva in frammenti brevissimi. Il contrasto iniziale alla Sima ha reso più preciso tanto il racconto dei reperti quanto il genere di domande che possiamo rivolgere al loro DNA."
+      ]
+    },
+    {
+      "title": "Corpi, alimentazione e gesti",
+      "level": "Fortemente supportato",
+      "sources": [
+        "heidelberg-post",
+        "heidelberg-dieta",
+        "heidelberg-box",
+        "heidelberg-scapola"
+      ],
+      "paragraphs": [
+        "Quando si prova a immaginare una persona di Mauer che attraversa la valle, i limiti anatomici riappaiono. L'osso della mandibola non documenta la lunghezza degli arti, la forma della mano, la massa corporea o il volume endocranico. A Sima de los Huesos si conservano invece parti del bacino e degli arti che indicano corpi ampi e robusti. Anche in quella raccolta la statura e il peso restano stime ricavate dalle ossa, con un'incertezza che varia in funzione dell'elemento misurato. I dati descrivono quella popolazione spagnola, già vicina alla linea neanderthaliana. Usarli come misure del singolo di Mauer significherebbe attribuirgli proprio la parentela che stiamo cercando di stabilire.",
+        "Sui molari della Sima si conserva il lento effetto della masticazione. Una ricerca pubblicata nel 2026 ha ricostruito la distribuzione delle superfici di usura in primi e secondi molari superiori. Laura Martín-Francés e colleghi la ritengono compatibile con il consumo sia di tessuti animali sia di risorse vegetali. Il quadro locale suggerisce una maggiore varietà ecologica di quanto ci si aspetterebbe disegnando tutto il continente con i colori uniformi di una fase glaciale. L'usura ci avvicina alle proprietà dei cibi lavorati nel tempo. Non permette di includere nel menù una particolare specie di bacca o di stabilire quali alimenti fossero disponibili ogni singola stagione.",
+        "In Inghilterra, a Boxgrove, resti della lavorazione della selce e ossa di cavallo raccontano la macellazione di una carcassa circa 480 mila anni fa. Un'evidenza che sembrava particolarmente eloquente era una frattura sulla scapola. Confronti sperimentali pubblicati nel 2025 hanno indicato una somiglianza maggiore con segni di percussione per sfruttare le risorse interne all'osso che con un impatto durante la caccia. Il lavoro lascia intatta la documentazione della macellazione e precisa quale gesto sia più compatibile con quella singola traccia. Il sito ha restituito inoltre denti e una tibia da contesti differenti. Riunire ogni azione e ogni osso sotto il ritratto di un unico cacciatore di Heidelberg cancellerebbe le informazioni più fini ottenute dallo scavo."
+      ]
+    },
+    {
+      "title": "Il legno e i morti",
+      "level": "Controverso",
+      "sources": [
+        "heidelberg-hutson",
+        "heidelberg-scapola",
+        "heidelberg-white",
+        "heidelberg-roks"
+      ],
+      "paragraphs": [
+        "Per gran parte del Pleistocene medio manici, contenitori e altri oggetti di materiale deperibile possono essere scomparsi quasi completamente. Per questo il legno eccezionalmente conservato a Schöningen, in Germania, ha avuto un peso decisivo nel riconoscere la complessità delle attività di caccia. La domanda sull'identità degli autori dipende, fra le altre cose, dalla cronologia. Una nuova analisi pubblicata nel 2025 colloca il livello con le lance intorno a 200 mila anni fa e lo interpreta nel quadro del comportamento cooperativo neanderthaliano. Continuare a presentarlo come una prova diretta delle abilità dei contemporanei dell'individuo di Mauer trascurerebbe una differenza di centinaia di migliaia di anni.",
+        "Anche il trattamento dei morti richiede una grammatica delle prove. Sul cranio africano di Bodo sono presenti segni di taglio. La loro posizione e la loro morfologia furono interpretate da Tim White come indizi di rimozione intenzionale dei tessuti molli. Una traccia può sostenere questa descrizione dell'atto senza rivelarne il motivo. Per dedurne un rituale bisognerebbe comprendere il rapporto tra chi agì e chi era morto, ricostruire eventuali gesti ripetuti, valutare spiegazioni alternative. Non possediamo per quel cranio una serie di osservazioni capace di raccontare tutto questo. Inoltre Bodo stesso è stato attribuito a gruppi differenti.",
+        "Il linguaggio lascia una difficoltà ancora maggiore. Una tecnologia in più passaggi implica apprendimento e memoria. Una macellazione può richiedere la coordinazione di più persone. Per passare da qui a una descrizione delle loro parole, della sintassi o dei significati condivisi servirebbe un tipo di indicatore che questi giacimenti non offrono. Attribuire all'individuo di Mauer una prima frase sarebbe fantasia. La domanda scientifica rimane aperta proprio perché si può smontare quel salto logico e chiedersi quali componenti della comunicazione siano effettivamente accessibili con il prossimo confronto."
+      ]
+    },
+    {
+      "title": "L'uomo di Kabwe e il tempo dei primi sapiens",
+      "level": "Fortemente supportato",
+      "sources": [
+        "heidelberg-kabwe",
+        "heidelberg-scheda",
+        "heidelberg-irhoud",
+        "heidelberg-athreya"
+      ],
+      "paragraphs": [
+        "Nel 1921, in una miniera dell'attuale Zambia, fu recuperato un cranio con un massiccio rilievo sopra le orbite, una scatola cranica dal profilo basso e denti segnati da carie. Arthur Smith Woodward lo descrisse sotto il nome Homo rhodesiensis. Nella letteratura il sito compare anche come Broken Hill. In altri lavori questo stesso reperto è stato incluso in Homo heidelbergensis. Chi consultasse due cataloghi e sommasse i nomi rischierebbe di ricavare due specie contemporanee dalle ossa di una sola persona. Il codice Kabwe 1 consente di seguire l'individuo attraverso i mutamenti del vocabolario.",
+        "Il lavoro minerario ha asportato il giacimento. Non è dunque possibile rimettere mano al deposito originario e campionare uno a uno gli strati sopra e sotto il cranio. Rainer Grün e colleghi hanno affrontato nel 2020 il problema con misure dirette sul reperto, ottenendo una migliore stima di 299 mila anni, con 25 mila anni di incertezza a due deviazioni standard. Per un fossile che in alcune ricostruzioni era ritenuto molto più antico, questo intervallo cambia la parte che gli si può assegnare nella storia africana.",
+        "In Marocco i reperti di Jebel Irhoud associati ai primi sapiens hanno un'età stimata intorno a 315 mila anni. Le due cronologie si sovrappongono entro le rispettive incertezze. Possiamo pertanto collocare in Africa popolazioni dalla diversa anatomia durante una medesima ampia fase del Pleistocene medio. Possiamo perfino riconoscere che chiamare Kabwe un antenato diretto e universale della nostra specie è assai meno ovvio di quanto suggeriva la vecchia disposizione in fila. Restano migliaia di chilometri fra i due siti e non possediamo una prova di incontro, né dati genetici che identifichino una discendenza recente fra quegli individui. Calcolare la durata di una convivenza locale non sarebbe possibile."
+      ]
+    },
+    {
+      "title": "Bodo, Casablanca e l'antenato che cerchiamo",
+      "level": "Controverso",
+      "sources": [
+        "heidelberg-roks",
+        "heidelberg-delson",
+        "heidelberg-casablanca",
+        "heidelberg-white"
+      ],
+      "paragraphs": [
+        "La ricerca di un antenato comune a sapiens e ai suoi più stretti parenti ha portato a cercare un nome per le popolazioni africane del Pleistocene medio. Il cranio di Bodo, in Etiopia, è stato scelto come riferimento della proposta Homo bodoensis. Nell'interpretazione di Mirjana Roksandic e colleghi questa categoria dovrebbe chiarire la posizione di diverse popolazioni africane e distinguere il loro percorso da quello europeo che conduce ai Neanderthal. Lo status della proposta resta discusso. Eric Delson e Chris Stringer hanno contestato, fra l'altro, la necessità del nuovo nome e il trattamento riservato alle denominazioni precedenti.",
+        "La difficoltà investe due lavori scientifici separabili. La nomenclatura disciplina il modo in cui si assegnano i nomi ai tipi e si stabiliscono eventuali precedenze. La ricostruzione della parentela si fonda su confronti anatomici, molecolari, cronologici e geografici. Può accadere che un gruppo di studiosi condivida un'osservazione importante su Bodo e continui a usare un nome diverso per classificarlo. Viceversa, due schede con la stessa denominazione possono celare ipotesi discendenti molto differenti. La soluzione più trasparente è conservare sito e individuo accanto a ciascuna proposta e dichiarare da quale pubblicazione essa provenga.",
+        "Anche il repertorio dei confronti si è ampliato. Nel gennaio 2026 Jean-Jacques Hublin e colleghi hanno descritto resti umani dalla Grotte à Hominidés della cava Thomas I, a Casablanca, datati a circa 773 mila anni. Il gruppo interpreta la combinazione di caratteri come vicina a popolazioni prossime alla base della linea sapiens. Ciò non equivale a retrodatare la comparsa della nostra specie a 773 mila anni fa, né a indicare uno specifico individuo come antenato genealogico. Un fossile può stare vicino alla base di una linea, conservare caratteri che si ritengono simili a quelli ancestrali, e appartenere a un ramo laterale."
+      ]
+    },
+    {
+      "title": "Una scomparsa che dipende dalla domanda",
+      "level": "Sconosciuto",
+      "sources": [
+        "heidelberg-stringer",
+        "heidelberg-kabwe",
+        "heidelberg-nuclear",
+        "heidelberg-casablanca"
+      ],
+      "paragraphs": [
+        "Dove finisce la storia di heidelbergensis? Se si fissa lo sguardo sulla mandibola tipo, abbiamo un'occorrenza ben collocata nel Pleistocene medio europeo, senza una serie locale che arrivi fino ai primi sapiens. Se si adotta una definizione estesa a Kabwe, l'intervallo investe il tempo dei primi sapiens africani. Se si contano come heidelbergensis popolazioni europee che mostrano già tratti neanderthaliani, si sta assegnando un nome a una fase di un processo nel quale il DNA e l'anatomia documentano continuità evolutive. La risposta numerica dipende tanto dai reperti quanto dai criteri con cui li si è messi nella stessa colonna.",
+        "Sarebbe quindi arbitrario cercare un unico disastro, una particolare malattia o una competizione finale con sapiens come spiegazione della «scomparsa». Un gruppo locale può essersi estinto. Altri gruppi possono essersi trasformati, frammentati o ricongiunti. Il passaggio da un'etichetta alla successiva in una tavola didattica può segnalare semplicemente che la combinazione anatomica è divenuta distinguibile ai nostri occhi. Per decidere tra scenari biologici servirebbero serie meglio campionate nel tempo e nello spazio, idealmente con dati anatomici e molecolari ottenuti dagli stessi individui. Per Mauer e Kabwe l'evidenza disponibile è asimmetrica, e la risposta deve rispettare quell'asimmetria.",
+        "Rimane un lascito più concreto di qualsiasi ritratto. Nelle sabbie del Neckar è sopravvissuta la parte di un corpo con cui una persona masticò durante la propria vita. La forma della sua mandibola ci obbliga ancora a confrontarla con denti di Spagna, crani dello Zambia e reperti marocchini. Centodiciannove anni di confronti non l'hanno consumata come domanda. Ogni nuovo campione può aiutare a distinguere ciò che diversi individui avevano davvero ereditato in comune da ciò che siamo stati noi a riunire, utilmente ma provvisoriamente, sotto un solo nome."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "heidelberg-ambiente",
+      "authors": "Günther A. Wagner, Lutz Christian Maul, Manfred Löscher e H. Dieter Schreiber",
+      "year": 2011,
+      "journal": "Quaternary Science Reviews",
+      "title": "Mauer – the type site of Homo heidelbergensis: palaeoenvironment and age",
+      "doi": "10.1016/j.quascirev.2010.01.013",
+      "url": "https://doi.org/10.1016/j.quascirev.2010.01.013",
+      "evidence": "Ricostruzione del contesto fluviale e interglaciale, storia degli scavi e fauna.",
+      "limits": "L’inquadramento biostratigrafico ammetteva più correlazioni climatiche."
+    },
+    {
+      "id": "heidelberg-wagner",
+      "authors": "Günther A. Wagner et al.",
+      "year": 2010,
+      "journal": "PNAS",
+      "title": "Radiometric dating of the type-site for Homo heidelbergensis at Mauer, Germany",
+      "doi": "10.1073/pnas.1012722107",
+      "url": "https://doi.org/10.1073/pnas.1012722107",
+      "evidence": "ESR/serie dell’uranio su denti animali e radiofluorescenza infrarossa sui sedimenti.",
+      "limits": "Età del contesto di 609 ± 40 ka, non misura diretta sulla mandibola."
+    },
+    {
+      "id": "heidelberg-museo",
+      "authors": "Universität Heidelberg, Institute of Earth Sciences",
+      "year": "s.d.",
+      "journal": "Geological-Palaeontological Museum",
+      "title": "Museum – Mauer mandible",
+      "doi": null,
+      "url": "https://www.geow.uni-heidelberg.de/en/museum",
+      "evidence": "Istituzione conservatrice e storia del rinvenimento.",
+      "limits": "Scheda museale, consultata il 23 novembre 2026."
+    },
+    {
+      "id": "heidelberg-falgueres",
+      "authors": "Christophe Falguères, Qingfeng Shao, Jean-Jacques Bahain e Amélie Vialet",
+      "year": 2026,
+      "journal": "L’Anthropologie",
+      "title": "La mandibule de Mauer (Homo heidelbergensis), un fossile de référence pour le Pléistocène moyen en Europe",
+      "doi": "10.1016/j.anthro.2026.103506",
+      "url": "https://doi.org/10.1016/j.anthro.2026.103506",
+      "evidence": "Riesame di Mauer come riferimento nel record europeo.",
+      "limits": "La scarsità di confronti coevi limita la diagnosi."
+    },
+    {
+      "id": "heidelberg-stringer",
+      "authors": "Chris Stringer",
+      "year": 2012,
+      "journal": "Evolutionary Anthropology",
+      "title": "The status of Homo heidelbergensis (Schoetensack 1908)",
+      "doi": "10.1002/evan.21311",
+      "url": "https://doi.org/10.1002/evan.21311",
+      "evidence": "Rassegna dei problemi tassonomici e delle affinità tra fossili.",
+      "limits": "Le proposte filogenetiche discusse non sono tutte ugualmente condivise."
+    },
+    {
+      "id": "heidelberg-athreya",
+      "authors": "Sheela Athreya e Allison Hopkins",
+      "year": 2021,
+      "journal": "American Journal of Physical Anthropology",
+      "title": "Conceptual issues in hominin taxonomy: Homo heidelbergensis and an ethnobiological reframing of species",
+      "doi": "10.1002/ajpa.24330",
+      "url": "https://doi.org/10.1002/ajpa.24330",
+      "evidence": "Analisi delle attribuzioni storiche, dei concetti di specie e della variabilità.",
+      "limits": "Le ipotesi classificatorie sono interpretazioni della documentazione."
+    },
+    {
+      "id": "heidelberg-cranios",
+      "authors": "Juan Luis Arsuaga et al.",
+      "year": 2014,
+      "journal": "Science",
+      "title": "Neandertal roots: Cranial and chronological evidence from Sima de los Huesos",
+      "doi": "10.1126/science.1253958",
+      "url": "https://doi.org/10.1126/science.1253958",
+      "evidence": "Confronto fra diciassette crani della Sima e caratteri derivati neanderthaliani.",
+      "limits": "Il campione descrive una popolazione spagnola specifica."
+    },
+    {
+      "id": "heidelberg-simaeta",
+      "authors": "Martina Demuro et al.",
+      "year": 2019,
+      "journal": "Journal of Human Evolution",
+      "title": "New bracketing luminescence ages constrain the Sima de los Huesos hominin fossils (Atapuerca, Spain) to MIS 12",
+      "doi": "10.1016/j.jhevol.2018.12.003",
+      "url": "https://doi.org/10.1016/j.jhevol.2018.12.003",
+      "evidence": "Luminescenza a singolo granulo e modello stratigrafico del livello LU-6.",
+      "limits": "Età media modellata 448 ± 15 ka. La data del livello non coincide necessariamente con la morte di ogni individuo."
+    },
+    {
+      "id": "heidelberg-post",
+      "authors": "Juan Luis Arsuaga et al.",
+      "year": 2015,
+      "journal": "PNAS",
+      "title": "Postcranial morphology of the middle Pleistocene humans from Sima de los Huesos, Spain",
+      "doi": "10.1073/pnas.1514828112",
+      "url": "https://doi.org/10.1073/pnas.1514828112",
+      "evidence": "Analisi di bacini e arti, proporzioni e variabilità nel campione della Sima.",
+      "limits": "Le stime corporee non possono essere trasferite direttamente alla mandibola di Mauer."
+    },
+    {
+      "id": "heidelberg-mito",
+      "authors": "Matthias Meyer et al.",
+      "year": 2014,
+      "journal": "Nature",
+      "title": "A mitochondrial genome sequence of a hominin from Sima de los Huesos",
+      "doi": "10.1038/nature12788",
+      "url": "https://doi.org/10.1038/nature12788",
+      "evidence": "Confronto del DNA mitocondriale da un osso della Sima.",
+      "limits": "Il mitogenoma documenta una linea ereditaria particolare."
+    },
+    {
+      "id": "heidelberg-nuclear",
+      "authors": "Matthias Meyer et al.",
+      "year": 2016,
+      "journal": "Nature",
+      "title": "Nuclear DNA sequences from the Middle Pleistocene Sima de los Huesos hominins",
+      "doi": "10.1038/nature17405",
+      "url": "https://doi.org/10.1038/nature17405",
+      "evidence": "Sequenze nucleari avvicinano gli individui analizzati ai Neanderthal.",
+      "limits": "Non identifica geneticamente tutti i fossili inclusi in heidelbergensis."
+    },
+    {
+      "id": "heidelberg-dieta",
+      "authors": "Laura Martín-Francés et al.",
+      "year": 2026,
+      "journal": "Journal of Human Evolution",
+      "title": "Reconstructing dietary preferences in the Middle Pleistocene Sima de los Huesos population: A molar macrowear perspective",
+      "doi": "10.1016/j.jhevol.2025.103797",
+      "url": "https://doi.org/10.1016/j.jhevol.2025.103797",
+      "evidence": "Analisi delle superfici di usura dei molari e confronto con informazioni paleoecologiche.",
+      "limits": "L’usura rispecchia proprietà meccaniche e abitudini, non un inventario preciso di cibi."
+    },
+    {
+      "id": "heidelberg-box",
+      "authors": "UCL Institute of Archaeology",
+      "year": 2020,
+      "journal": "University College London",
+      "title": "Eating out was a very social matter for early humans",
+      "doi": null,
+      "url": "https://www.ucl.ac.uk/news/2020/aug/eating-out-was-very-social-matter-early-humans",
+      "evidence": "Comunicazione dell’istituzione sulla monografia dello scavo di Boxgrove.",
+      "limits": "Sintesi istituzionale. Le ipotesi sull’organizzazione sociale superano il dato anatomico diretto."
+    },
+    {
+      "id": "heidelberg-scapola",
+      "authors": "Annemieke Milks et al.",
+      "year": 2025,
+      "journal": "Quaternary International",
+      "title": "A reanalysis of the ‘perforated’ scapula from the Boxgrove Horse Butchery Site",
+      "doi": "10.1016/j.quaint.2025.109995",
+      "url": "https://doi.org/10.1016/j.quaint.2025.109995",
+      "evidence": "Microscopia ed esperimenti su fratture ossee e distinzione dei contesti di Boxgrove.",
+      "limits": "Risultato limitato al segno analizzato, non esclude la caccia nel sito."
+    },
+    {
+      "id": "heidelberg-hutson",
+      "authors": "Jarod M. Hutson et al.",
+      "year": 2025,
+      "journal": "Science Advances",
+      "title": "Revised age for Schöningen hunting spears indicates intensification of Neanderthal cooperative behavior around 200,000 years ago",
+      "doi": "10.1126/sciadv.adv0752",
+      "url": "https://doi.org/10.1126/sciadv.adv0752",
+      "evidence": "Riesame cronologico del livello con manufatti lignei.",
+      "limits": "L’attribuzione degli autori delle attività si basa su contesto e cronologia."
+    },
+    {
+      "id": "heidelberg-white",
+      "authors": "Tim D. White",
+      "year": 1986,
+      "journal": "American Journal of Physical Anthropology",
+      "title": "Cut marks on the Bodo cranium: a case of prehistoric defleshing",
+      "doi": "10.1002/ajpa.1330690410",
+      "url": "https://doi.org/10.1002/ajpa.1330690410",
+      "evidence": "Posizione e morfologia delle incisioni sul cranio di Bodo.",
+      "limits": "I segni non identificano movente, rituale o specie di chi agì."
+    },
+    {
+      "id": "heidelberg-roks",
+      "authors": "Mirjana Roksandic et al.",
+      "year": 2022,
+      "journal": "Evolutionary Anthropology",
+      "title": "Resolving the “muddle in the middle”: The case for Homo bodoensis sp. nov.",
+      "doi": "10.1002/evan.21929",
+      "url": "https://doi.org/10.1002/evan.21929",
+      "evidence": "Proposta tassonomica basata su Bodo.",
+      "limits": "Proposta discussa, pubblicata online nel 2021 e in fascicolo nel 2022."
+    },
+    {
+      "id": "heidelberg-delson",
+      "authors": "Eric Delson e Chris Stringer",
+      "year": 2022,
+      "journal": "Evolutionary Anthropology",
+      "title": "The naming of Homo bodoensis by Roksandic and colleagues does not resolve issues surrounding Middle Pleistocene human evolution",
+      "doi": "10.1002/evan.21950",
+      "url": "https://doi.org/10.1002/evan.21950",
+      "evidence": "Critica tassonomica e nomenclaturale della proposta bodoensis.",
+      "limits": "Discutere la validità di un nome non risolve da solo le parentele."
+    },
+    {
+      "id": "heidelberg-kabwe",
+      "authors": "Rainer Grün et al.",
+      "year": 2020,
+      "journal": "Nature",
+      "title": "Dating the skull from Broken Hill, Zambia, and its position in human evolution",
+      "doi": "10.1038/s41586-020-2165-4",
+      "url": "https://doi.org/10.1038/s41586-020-2165-4",
+      "evidence": "Analisi diretta del reperto e stima di 299 ± 25 ka a 2σ.",
+      "limits": "Il deposito originale è stato distrutto dall’attività mineraria."
+    },
+    {
+      "id": "heidelberg-scheda",
+      "authors": "Smithsonian Institution, Human Origins Program",
+      "year": "s.d.",
+      "journal": "National Museum of Natural History",
+      "title": "Kabwe 1",
+      "doi": null,
+      "url": "https://humanorigins.si.edu/evidence/human-fossils/fossils/kabwe-1",
+      "evidence": "Documentazione museale di anatomia, patologie dentali e classificazione iniziale.",
+      "limits": "Consultato il 23 novembre 2026. Per l’età si usa la pubblicazione primaria di Grün et al."
+    },
+    {
+      "id": "heidelberg-casablanca",
+      "authors": "Jean-Jacques Hublin et al.",
+      "year": 2026,
+      "journal": "Nature",
+      "title": "Early hominins from Morocco basal to the Homo sapiens lineage",
+      "doi": "10.1038/s41586-025-09914-y",
+      "url": "https://doi.org/10.1038/s41586-025-09914-y",
+      "evidence": "Nuovi fossili e cronologia della cava Thomas I di Casablanca, circa 773 ka.",
+      "limits": "La posizione proposta alla base della linea sapiens non equivale a discendenza genealogica individuale."
+    },
+    {
+      "id": "heidelberg-irhoud",
+      "authors": "Daniel Richter et al.",
+      "year": 2017,
+      "journal": "Nature",
+      "title": "The age of the hominin fossils from Jebel Irhoud, Morocco, and the origins of the Middle Stone Age",
+      "doi": "10.1038/nature22335",
+      "url": "https://doi.org/10.1038/nature22335",
+      "evidence": "Termoluminescenza delle selci riscaldate associate ai fossili e ridatazione di un dente.",
+      "limits": "Il valore di 315 ± 34 ka riguarda il contesto e ha un’incertezza."
+    }
+  ],
+  "discoveries": [
+    "1907–1908 · Daniel Hartmann scopre la mandibola. Otto Schoetensack definisce Homo heidelbergensis.",
+    "1921 · Scoperta di Kabwe 1 e istituzione di Homo rhodesiensis.",
+    "1976 · Rinvenimento del cranio di Bodo in Etiopia.",
+    "2010 · Età numerica del contesto di Mauer: 609 ± 40 ka.",
+    "2014–2016 · Morfologia, DNA mitocondriale e DNA nucleare illuminano rami diversi della storia della Sima.",
+    "2019–2020 · Nuovo modello per la Sima, datazione diretta di Kabwe.",
+    "2021–2022 · Proposta di Homo bodoensis e discussione della sua validità.",
+    "2026 · Nuovi confronti marocchini e aggiornamenti su Mauer e sull’alimentazione della Sima."
+  ],
+  "specimens": [
+    "Mauer 1 · Mandibola tipo, conservata all’Università di Heidelberg.",
+    "Sima de los Huesos · Campione spagnolo riferibile alla linea neanderthaliana, frequentemente incluso in classificazioni storiche più ampie.",
+    "Kabwe 1 / Broken Hill 1 · Cranio tipo di H. rhodesiensis e controverso confronto africano per heidelbergensis.",
+    "Bodo 1 · Cranio di riferimento per la proposta H. bodoensis.",
+    "Boxgrove · Tibia e incisivi da contesti differenti, attribuzione da valutare separatamente."
+  ],
+  "glossary": {
+    "Olotipo": "Esemplare al quale è ancorato il nome di una specie.",
+    "Carattere derivato": "Tratto che, rispetto alla condizione ancestrale ipotizzata, è comparso lungo una linea.",
+    "Morfologia a mosaico": "Combinazione di caratteri che si sono modificati con tempi diversi in parti diverse dello scheletro.",
+    "Mitogenoma": "Patrimonio genetico contenuto nei mitocondri, trasmesso negli esseri umani prevalentemente per via materna.",
+    "Biostratigrafia": "Confronto di strati sulla base del loro contenuto fossile.",
+    "Ipodigma": "Il campione di fossili che un autore riunisce sotto un nome è detto ipodigma. Può essere rivisto senza spostare il nome dal suo tipo."
+  }
+}
