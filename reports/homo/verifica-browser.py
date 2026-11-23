@@ -5,7 +5,7 @@ from functools import partial
 from threading import Thread
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import sync_playwright, expect
 
 def visit(page, base, fragment):
     page.goto(base + '#' + fragment, wait_until='domcontentloaded')
@@ -48,7 +48,7 @@ def run(engine,base,origin=None):
         visit(page,base,'archivio')
         page.locator('input[name=q]').fill('Bianfu')
         page.locator('a[href="#reperto/bianfu"]').click()
-        assert page.locator('main h1').inner_text()=='Bianfu Cave' or 'Bianfu' in page.locator('main h1').inner_text()
+        expect(page.locator('main h1')).to_contain_text('Bianfu')
         visit(page,base,'inizio')
         page.wait_for_function("navigator.serviceWorker.getRegistration().then(r=>!!r?.active)",timeout=90000)
         page.reload()
