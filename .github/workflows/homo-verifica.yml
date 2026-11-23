@@ -24,8 +24,6 @@ jobs:
           python -m playwright install --with-deps "${{ matrix.engine }}"
       - name: Collauda la copia del repository
         run: |
-          python -m http.server 8010 --bind 127.0.0.1 >/tmp/homo-http.log 2>&1 &
-          for i in $(seq 1 15); do if curl -fsS -o /dev/null http://127.0.0.1:8010/Spazi/homo/; then break; fi; sleep 1; done
           python reports/homo/verifica-browser.py "${{ matrix.engine }}" http://127.0.0.1:8010/Spazi/homo/
       - name: Installabilità e accessibilità automatizzata
         if: matrix.engine == 'chromium'

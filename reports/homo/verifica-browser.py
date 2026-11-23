@@ -1,13 +1,17 @@
 """Controlla una PWA servita su HTTP(S), inclusi la cache e il ritorno offline."""
 import argparse
-from urllib.parse import urljoin
+from urllib.parse import urlsplit
+from functools import partial
+from threading import Thread
+from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
+from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 def visit(page, base, fragment):
     page.goto(base + '#' + fragment, wait_until='domcontentloaded')
     page.wait_for_function("(r) => document.body.dataset.route === r && !!document.querySelector('main h1')",arg=fragment.split('/')[0])
 
-def run(engine,base):
+def run(engine,base,origin=None):
     with sync_playwright() as runtime:
         browser=getattr(runtime,engine).launch()
         context=browser.new_context(viewport={'width':390,'height':844},locale='it-IT')
@@ -52,8 +56,17 @@ def run(engine,base):
         scope=page.evaluate('navigator.serviceWorker.getRegistration().then(r=>r.scope)')
         assert scope==base,(scope,base)
         page.wait_for_function("caches.keys().then(async keys=>(await (await caches.open(keys.find(k=>k.startsWith('gbprof-homo-')))).keys()).length>120)")
-        context.set_offline(True)
-        page.reload(wait_until='domcontentloaded')
+        # Stop the actual local origin for all three engines. This also tests WebKit
+        # without Playwright issue 42775, which interrupts SW responses in offline emulation.
+        checked_offline = origin is not None or engine != 'webkit'
+        if origin is not None:
+            origin.shutdown()
+            origin.server_close()
+        elif engine != 'webkit':
+            context.set_offline(True)
+        else:
+            assert page.evaluate('caches.match(new URL("data/luzon.json", location.href)).then(r=>!!r?.ok)')
+        page.goto(base+'?verifica-cache=1',wait_until='domcontentloaded')
         visit(page,base,'scheda/luzon')
         assert page.locator('.chapter').count()>=8
         visit(page,base,'atlante')
@@ -61,7 +74,7 @@ def run(engine,base):
         visit(page,base,'reperto/bianfu')
         assert 'Bianfu' in page.locator('main h1').inner_text()
         assert not issues,issues
-        print(engine,browser.version,base,'lettura, interazione, immagini, monografie e carte offline superate')
+        print(engine,browser.version,base,'lettura, interazione e immagini verificate;', 'avvio da cache con origine indisponibile' if checked_offline else 'cache pubblica verificata; offline provato sulla copia identica del repository')
         browser.close()
 
 if __name__=='__main__':
@@ -69,4 +82,14 @@ if __name__=='__main__':
     parser.add_argument('engine',choices=['chromium','firefox','webkit'])
     parser.add_argument('url')
     args=parser.parse_args()
-    run(args.engine,args.url)
+    if urlsplit(args.url).hostname=='127.0.0.1':
+        root=Path(__file__).resolve().parents[2]
+        server=ThreadingHTTPServer(('127.0.0.1',urlsplit(args.url).port),partial(SimpleHTTPRequestHandler,directory=str(root)))
+        Thread(target=server.serve_forever,daemon=True).start()
+        try:
+            run(args.engine,args.url,server)
+        finally:
+            server.shutdown()
+            server.server_close()
+    else:
+        run(args.engine,args.url)
