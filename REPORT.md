@@ -194,3 +194,14 @@ Ripristinati sopra la scena animata parole, codici e segnali luminosi della vers
 **Verifiche:** home pubblica riletta dopo il commit `fe74d2bbe569df61fa1369cef22223d530d9a63d`: entrambi i nuovi titoli presenti, vecchie scritte assenti; confronto automatico del testo dell’articolo prima/dopo identico. Struttura espandibile presente. Non eseguito un nuovo collaudo visuale su dispositivi reali.
 
 **Esito:** correzione pubblicata su https://gbprof.it/. Report mantenuto alla radice del repository, escluso dalla pubblicazione secondo la configurazione esistente.
+
+
+## 2026-11-24 — Daunia nel tempo: trasferimento dell'accesso
+
+**Obiettivo:** spostare l'accesso alla PWA da Utility a Spazi e passioni (`/#spazi`).
+
+**Operazioni e decisioni:** aggiunta una scheda coerente con lo stile esistente accanto a HOMO in `Spazi/index.html` ([commit](https://github.com/gb69prof/gbprof-home/commit/f9cdcfe1faa7cebde5734b75fa4722d67564a4af)); rimossa la scheda da `UTILITY/index.html` ([commit](https://github.com/gb69prof/UTILITY/commit/a43edbd70e55a6b882858c30c02c9968d1d83f3d)). Conservati URL, ancora `#esplora`, file e risorse della PWA. Il workflow esistente rigenera la homepage da `Spazi/index.html`.
+
+**Fonti e verifiche:** richiesta utente, sorgenti correnti dei due repository, `tools/bundle-home.py` e workflow deploy. Riletti entrambi i sorgenti dopo i commit: nuovo link presente, vecchia scheda assente; file della PWA ancora presente. Nessuno stato CI disponibile per i due commit; accesso HTTP diretto al dominio non disponibile in questa sessione.
+
+**Esito:** modifiche salvate e verificate su GitHub; pubblicazione effettiva sul dominio non confermata. Nessuna modifica alle configurazioni del server.
