@@ -1,0 +1,98 @@
+{
+  "verificato": "2026-11-24T07:02:46.104648+00:00",
+  "commit": "a2761d98f3395ed8fabb34e7842e4cdf68b44443",
+  "note": "Confronto byte per byte delle risposte pubbliche con il contenuto pubblicato dal repository. Gli ultimi due controlli riguardano la riservatezza del percorso editoriale sul sito.",
+  "risorse": [
+    {
+      "url": "https://gbprof.it/Spazi/homo/",
+      "status": 200,
+      "bytes": 2897,
+      "sha256": "6d9a89cc4a62ddd3e3ae76bcb8b4d986c9f905347de27036175c32da472f5d79"
+    },
+    {
+      "url": "https://gbprof.it/Spazi/homo/app.js",
+      "status": 200,
+      "bytes": 31046,
+      "sha256": "617c6cbce5cbafe121b31f60a2087e5681609d671fa71b73913794bcff7d17cc"
+    },
+    {
+      "url": "https://gbprof.it/Spazi/homo/sw.js",
+      "status": 200,
+      "bytes": 8279,
+      "sha256": "3e06292c8a10ab5f8ff7a69b47e4a0ab9256d4cc70e5f00f29d509dcbe41d6d3"
+    },
+    {
+      "url": "https://gbprof.it/Spazi/homo/atlante-italia/",
+      "status": 200,
+      "bytes": 2184,
+      "sha256": "a2b737cba948520506d7e1ab4ac00e7dc176d9581ce0d2aff97b886c63f458b7"
+    },
+    {
+      "url": "https://gbprof.it/Spazi/homo/atlante-italia/app.js",
+      "status": 200,
+      "bytes": 7942,
+      "sha256": "96c60220b9d50a3d3b4e941315d84a7a407951a0cf24ee81cfe56cf398af1668"
+    },
+    {
+      "url": "https://gbprof.it/Spazi/homo/atlante-italia/style.css",
+      "status": 200,
+      "bytes": 12029,
+      "sha256": "ed52a4ba0680075dcdb4c8ad0f5d97c8213eb59e44ec0f335cb024451f96077b"
+    },
+    {
+      "url": "https://gbprof.it/Spazi/homo/atlante-italia/data/reperti.csv",
+      "status": 200,
+      "bytes": 457594,
+      "sha256": "e7fa017295f329351dbdcb5f6b4dcff7b208a890a9431155de9828768ca2ea8b"
+    },
+    {
+      "url": "https://gbprof.it/Spazi/homo/atlante-italia/data/catalogo.json",
+      "status": 200,
+      "bytes": 1882387,
+      "sha256": "b6ae27ad98ec87480a2c41bd41b0de483f5b670f69e63d1b1313e9b4c861c75b"
+    },
+    {
+      "url": "https://gbprof.it/Spazi/homo/atlante-italia/geo/fonti.json",
+      "status": 200,
+      "bytes": 6668,
+      "sha256": "1472fd53b77a0dc64010b3ab03e2250cd53230f8d1d10c4ad0a8b8cbb77c4d31"
+    },
+    {
+      "url": "https://gbprof.it/Spazi/homo/atlante-italia/lab/models/circeo-1.glb",
+      "status": 200,
+      "bytes": 257564,
+      "sha256": "24fff391d4a3b7cc41e2bdc21fd63e1f03ba855729eda9f08ea7681d9b56bbfb"
+    },
+    {
+      "url": "https://gbprof.it/Spazi/homo/atlante-italia/lab/models/predmosti.glb",
+      "status": 200,
+      "bytes": 223592,
+      "sha256": "535b518f778db4e71c1ed90f435dd9b6f3e5c4633ffa3978660c4f9db8a4e35d"
+    },
+    {
+      "url": "https://gbprof.it/Spazi/homo/atlante-italia/lab/models/la-quina-5.glb",
+      "status": 200,
+      "bytes": 210236,
+      "sha256": "290f197403bf76ca01fc42e3a3041a38c52de05bf525775d9f425f4a544347f0"
+    },
+    {
+      "url": "https://gbprof.it/Spazi/homo/atlante-italia/lab/models/kabwe.glb",
+      "status": 200,
+      "bytes": 284068,
+      "sha256": "a424d9fa286fc5fe6bbeff34807548668f403da1dadc7661a0224e059bd2256a"
+    },
+    {
+      "url": "https://gbprof.it/reports/homo/atlante-italia/REPORT.md",
+      "status": 404,
+      "bytes": 0,
+      "sha256": null
+    },
+    {
+      "url": "https://gbprof.it/Spazi/homo/atlante-italia/REPORT.md",
+      "status": 404,
+      "bytes": 0,
+      "sha256": null
+    }
+  ],
+  "browser": "Su gbprof.it in Chromium 158.0.8127.88 verificati ingresso dal portale, cambio scena, filtro Veirana, download CSV, collegamenti a componenti dello scheletro, itinerario Puglia, carta, tempo, laboratorio anatomico e scheda di edizione."
+}
