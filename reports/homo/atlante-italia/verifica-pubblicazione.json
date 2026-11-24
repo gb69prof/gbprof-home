@@ -94,5 +94,11 @@
       "sha256": null
     }
   ],
-  "browser": "Su gbprof.it in Chromium 158.0.8127.88 verificati ingresso dal portale, cambio scena, filtro Veirana, download CSV, collegamenti a componenti dello scheletro, itinerario Puglia, carta, tempo, laboratorio anatomico e scheda di edizione."
+  "browser": "Su gbprof.it in Chromium 158.0.8127.88 verificati ingresso dal portale, cambio scena, filtro Veirana, download CSV, collegamenti a componenti dello scheletro, itinerario Puglia, carta, tempo, laboratorio anatomico e scheda di edizione.",
+  "webkit": {
+    "version": "26.5",
+    "copia_repository": "Suite integrata HOMO e Atlante eseguita con WebKit. Verificate lettura, interazioni, immagini e avvio offline dopo lo spegnimento del server locale.",
+    "sito_pubblico": "Su gbprof.it verificati porta in HOMO, cambio scena, ricerca e CSV, collegamenti ai componenti di Veirana, Puglia, mappa, cronologia, anatomia e conteggi.",
+    "github_actions": "La prima esecuzione del solo job WebKit è scaduta durante il download delle dipendenze Ubuntu. La prova indipendente sui file del repository e sulla pubblicazione è stata completata con WebKit 26.5."
+  }
 }

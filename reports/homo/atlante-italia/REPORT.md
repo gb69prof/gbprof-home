@@ -51,4 +51,6 @@ Il 24 novembre 2026 il server di gbprof.it ha distribuito l’edizione del commi
 
 In Chromium sul dominio pubblico sono stati verificati l’ingresso dalla porta in HOMO, il cambio di paesaggio, la ricerca di Veirana, il download del CSV, i collegamenti ai componenti dello scheletro, il percorso pugliese, carta e cronologia, laboratorio e conteggi di edizione.
 
+I collaudi Chromium e Firefox del workflow sono passati anche sul sito pubblico. Nella prima esecuzione WebKit il runner ha esaurito il tempo scaricando le librerie di sistema da Ubuntu. È stato richiesto un nuovo tentativo. Un collaudo indipendente con WebKit 26.5 ha verificato l’edizione sul dominio pubblico (ingresso, filtro, CSV, associazioni di Veirana, Puglia, mappe, laboratorio e conteggi) e l’avvio offline con il server della copia locale spento.
+
 [Riscontri HTTP e impronte SHA-256](verifica-pubblicazione.json) · [Pubblicazione sul server](https://github.com/gb69prof/gbprof-home/actions/runs/45344665181) · [Collaudo Chromium, Firefox e WebKit](https://github.com/gb69prof/gbprof-home/actions/runs/45344665203).
