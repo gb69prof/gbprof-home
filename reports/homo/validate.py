@@ -156,7 +156,7 @@ class Audit:
         for url in parser.urls:
             path=urlparse(url)
             if not path.scheme and path.path:
-                self.local(unquote(path.path))
+                self.local(unquote(path.path) + ('index.html' if path.path.endswith('/') else ''))
         mf=self.read('manifest.webmanifest')
         self.check(mf.get('scope','./') in ('.','./','/Spazi/homo/'),'Manifest può interferire con altre app')
         self.check(mf.get('display') in ('standalone','fullscreen','minimal-ui'), 'Modalità installata')

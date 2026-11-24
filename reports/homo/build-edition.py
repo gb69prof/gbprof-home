@@ -51,7 +51,7 @@ self.addEventListener('fetch', event => {
   const request = event.request, url = new URL(request.url), scope = new URL(self.registration.scope);
   if (request.method !== 'GET' || url.origin !== scope.origin || !url.pathname.startsWith(scope.pathname)) return;
   url.hash = ''; url.search = '';
-  if (url.pathname === scope.pathname) url.pathname += 'index.html';
+  if (url.pathname.endsWith('/')) url.pathname += 'index.html';
   if (!URLS.has(url.href)) return;
   event.respondWith((async () => {
     const cache = await caches.open(CACHE);

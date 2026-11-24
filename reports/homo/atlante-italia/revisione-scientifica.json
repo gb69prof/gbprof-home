@@ -1,0 +1,130 @@
+{
+  "date": "2026-11-24",
+  "scope": "Controllo indipendente pacchetti arcaici e transizione; il revisore ha prodotto il pacchetto sapiens. Controllo meccanico di tutte le relazioni e controllo scientifico mirato.",
+  "files": {
+    "arcaici": {
+      "sites": 47,
+      "finds": 130,
+      "individuals": 12,
+      "sha256": "4ec79bab858c3167b8f62c7bc4ebc489d7906aa9229e89ee5cb76581f740e58a",
+      "relationIssues": []
+    },
+    "transizione": {
+      "sites": 19,
+      "finds": 166,
+      "individuals": 41,
+      "sha256": "8226cab5413cc7df3a25c7d3685b3167bed883112811aae51861ec7d387653a7",
+      "relationIssues": []
+    },
+    "sapiens": {
+      "sites": 34,
+      "finds": 684,
+      "individuals": 127,
+      "sha256": "fd5a4d8d8d00359cfad9e6e7b07428aa415c42285bb6e33741a8aa7dd2817368",
+      "relationIssues": []
+    }
+  },
+  "overlap": [
+    [
+      "grotta-del-fossellone",
+      "Un sito. Fossellone 3 del Musteriano è distinto da Fossellone 1 (scapola) e 2 (mascellare)."
+    ],
+    [
+      "grotta-di-fumane",
+      "Un sito. Fumane 1,4,5 musteriani, Fumane 2 con mtDNA sapiens nel Protoaurignaziano, Fumane 6 tassonomicamente indeterminato. Fumane 3 escluso, perché animale secondo iNEAL 2024. Usare georeferenza ISPRA dal pacchetto arcaico."
+    ],
+    [
+      "riparo-tagliente",
+      "Un sito. Tagliente 3–4 del Paleolitico medio distinti dal complesso Epigravettiano Tagliente 1 (scheletro) + Tagliente 2 (mandibola). Entrambi riferiti alla stessa persona. Usare coordinate dello studio Posth 2023."
+    ],
+    [
+      "grotta-del-cavallo",
+      "Un sito. Cavallo A e D (musteriano) distinti da B, C, E e F della serie studiata in Moroni 2018. Il vecchio dente D di Grotta del Poggio descritto in Palma di Cesnola e Messeri 1967 non coincide con l’incisivo Cavallo D di Fabbri 2016. Usare PU520."
+    ],
+    [
+      "roccia-san-sebastiano",
+      "Un sito. RSS1 musteriano e RSS2 uluzziano non sono lo stesso dente. Coordinate del pacchetto arcaico."
+    ],
+    [
+      "grotta-continenza",
+      "Un sito. Continenza 1 dei livelli 28–29, Continenza 2–4 del livello 30 (lotto con MNI 3), 5–7 dei livelli 31–35. I codici di campionamento GC dei denti non sono numeri identificativi dei precedenti scheletri. Evitare di ricavare MNI cumulando i campioni."
+    ],
+    [
+      "grotta-oriente e grotta-d-oriente",
+      "Un sito su Favignana con alias ortografico. Oriente C del Paleolitico finale è distinto dai record mesolitici Oriente B e X."
+    ],
+    [
+      "riparo-broion e grotta-del-broion",
+      "Due siti distinti. Non accorpare: canino del Riparo (Neanderthal) e resti gravettiani della Grotta."
+    ],
+    [
+      "Quinzano e Romanelli",
+      "Quinzano 1 ha attribuzione e cronologia controverse. Gli scheletri Romanelli 1–3 vanno esclusi dal Paleolitico (Sardella 2026); la datazione medievale non si trasferisce automaticamente a Romanelli 4–13."
+    ]
+  ],
+  "chronology": [
+    {
+      "ids": [
+        "grotta-di-fumane-1",
+        "grotta-di-fumane-4",
+        "grotta-di-fumane-5"
+      ],
+      "issue": "Una data minima 47.600 cal BP dei contesti A9/A11 non è un limite massimo con età minima di 43.900.",
+      "status": "Correzione controllata nel file arcaici.json, limite minimo 47.600 con estremo antico aperto.",
+      "sources": [
+        "https://doi.org/10.1371/journal.pone.0068572",
+        "https://doi.org/10.1016/j.jhevol.2020.102867"
+      ]
+    },
+    {
+      "ids": [
+        "ceprano-1"
+      ],
+      "issue": "Una seconda stima del 2011 è 353±4 ka sui feldspati dei sedimenti. Serve affiancarla al modello 430–385 ka, senza trasformarla in una datazione del cranio.",
+      "status": "Segnalata all’archivista.",
+      "sources": [
+        "https://air.unimi.it/handle/2434/165814"
+      ]
+    },
+    {
+      "ids": [
+        "ph-date-654"
+      ],
+      "issue": "10.090±80 BP è dato come radiocarbonio dello strato 7 in JASs 2005 p.116, mentre il database classifica la stessa misura come AAR.",
+      "status": "Entrambe le trascrizioni sono segnalate nel pacchetto sapiens; non trattare la misura come datazione diretta dei singoli elementi.",
+      "sources": [
+        "https://www.isita-org.com/isita/Publications/CatalogoFossili/CatalogueItalianFossil.pdf"
+      ]
+    }
+  ],
+  "additionalJASS": [
+    {
+      "site": "Capelvenere, distinto da Torre dell’Alto",
+      "status": "Integrato dal collega responsabile degli arcaici, reperto capelvenere-m1."
+    },
+    {
+      "site": "Arene Candide",
+      "status": "Aggiunto AC5 (ac5-scheletro e ac5-ind); sei sigle di inventario della necropoli, pur disponibili come schede, possono designare parti dei medesimi individui secondo Sparacello 2018."
+    },
+    {
+      "site": "Continenza",
+      "status": "Aggiunta unità aggregata continenza-234, resti commisti del livello 30. Le tre persone minime non sono tre scheletri individualmente assegnabili."
+    },
+    {
+      "site": "Corbeddu, Portalbera, Rapolano",
+      "status": "Nelle note o nelle schede del 2005. Copertura affidata al coordinatore."
+    },
+    {
+      "site": "Farnesina, Olmo, Mezzena, San Bernardino",
+      "status": "Casi storici schedati con esclusione; non vanno ricontati come fossili paleolitici. Per Olmo segnalare cronologia dell’età del Bronzo secondo il catalogo italiano 2005 e pareri discordanti senza affidarsi al sommario della metodologia PaleoHumans."
+    }
+  ],
+  "limitations": "La corrispondenza tra siti dell’indice JASs e i tre pacchetti è stata controllata. Il confronto a campione di numeri di reperto e nuove pubblicazioni non dimostra che ogni esemplare d’Italia sia stato verificato sulle collezioni. Le somme di schede di individuo non costituiscono un NMI nazionale.",
+  "mergeChecked": {
+    "scope": "Controllo intermedio sul catalogo unitario, prima della pubblicazione",
+    "sources": "Nessun riferimento spezzato o identificativo duplicato nelle tabelle di siti, reperti, individui, contesti, datazioni e associazioni miste.",
+    "oriente": "I tre record Oriente B, X e C confluivano nel solo sito grotta-oriente.",
+    "coordinates": "Coordinate preferenziali confermate nella fusione per Tagliente, Fumane, Cavallo e Roccia San Sebastiano.",
+    "possibleSiteDuplicates": "Le voci Farnesina, San Bernardino ed Olmo contenute in due pacchetti vanno accorpate. Nella versione controllata il totale dei siti comprende anche quelli esclusi e le testimonianze indirette."
+  }
+}

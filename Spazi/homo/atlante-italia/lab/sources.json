@@ -1,0 +1,358 @@
+[
+  {
+    "id": "lab-peretto",
+    "title": "A Human Deciduous Tooth and New 40Ar/39Ar Dating Results from the Middle Pleistocene Archaeological Site of Isernia La Pineta, Southern Italy",
+    "authors": "Peretto C., Arnaud J., Moggi-Cecchi J. et al.",
+    "year": 2015,
+    "url": "https://doi.org/10.1371/journal.pone.0140091",
+    "doi": "10.1371/journal.pone.0140091",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-zanolli",
+    "title": "The Middle Pleistocene (MIS 12) human dental remains from Fontana Ranuccio (Latium) and Visogliano (Friuli-Venezia Giulia), Italy. A comparative high resolution endostructural assessment",
+    "authors": "Zanolli C., Martinón-Torres M., Bernardini F. et al.",
+    "year": 2018,
+    "url": "https://doi.org/10.1371/journal.pone.0189773",
+    "doi": "10.1371/journal.pone.0189773",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-sorrentino",
+    "title": "Unique foot posture in Neanderthals reflects their body mass and high mechanical stress",
+    "authors": "Sorrentino R., Stephens N., Marchi D. et al.",
+    "year": 2021,
+    "url": "https://doi.org/10.1016/j.jhevol.2021.103093",
+    "doi": "10.1016/j.jhevol.2021.103093",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-gona",
+    "title": "A Female Homo erectus Pelvis from Gona, Ethiopia",
+    "authors": "Simpson S., Quade J., Levin N. et al.",
+    "year": 2008,
+    "url": "https://doi.org/10.1126/science.1163592",
+    "doi": "10.1126/science.1163592",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-posth",
+    "title": "Palaeogenomics of Upper Palaeolithic to Neolithic European hunter-gatherers",
+    "authors": "Posth C., Yu H., Ghalichi A. et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1038/s41586-023-05726-0",
+    "doi": "10.1038/s41586-023-05726-0",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-vindija",
+    "title": "A high-coverage Neandertal genome from Vindija Cave in Croatia",
+    "authors": "Prüfer K., de Filippo C., Grote S. et al.",
+    "year": 2017,
+    "url": "https://doi.org/10.1126/science.aao1887",
+    "doi": "10.1126/science.aao1887",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-higham",
+    "title": "Chronometric data and stratigraphic evidence support discontinuity between Neanderthals and early Homo sapiens in the Italian Peninsula",
+    "authors": "Higham T., Frouin M., Douka K. et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1038/s41467-024-51546-9",
+    "doi": "10.1038/s41467-024-51546-9",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-cavallo",
+    "title": "Early dispersal of modern humans in Europe and implications for Neanderthal behaviour",
+    "authors": "Benazzi S., Douka K., Fornai C. et al.",
+    "year": 2011,
+    "url": "https://doi.org/10.1038/nature10617",
+    "doi": "10.1038/nature10617",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-oxilia",
+    "title": "Direct evidence that late Neanderthal occupation precedes a technological shift in southwestern Italy",
+    "authors": "Oxilia G., Bortolini E., Marciani G. et al.",
+    "year": 2022,
+    "url": "https://doi.org/10.1002/ajpa.24593",
+    "doi": "10.1002/ajpa.24593",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-protein",
+    "title": "The dental proteome of Homo antecessor",
+    "authors": "Welker F., Ramos-Madrigal J., Gutenbrunner P. et al.",
+    "year": 2020,
+    "url": "https://doi.org/10.1038/s41586-020-2153-8",
+    "doi": "10.1038/s41586-020-2153-8",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-intcal",
+    "title": "The IntCal20 Northern Hemisphere Radiocarbon Age Calibration Curve (0–55 cal kBP)",
+    "authors": "Reimer P., Austin W., Bard E. et al.",
+    "year": 2020,
+    "url": "https://doi.org/10.1017/RDC.2020.41",
+    "doi": "10.1017/RDC.2020.41",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-lari",
+    "title": "The Neanderthal in the karst: First dating, morphometric, and paleogenetic data on the fossil skeleton from Altamura (Italy)",
+    "authors": "Lari M., Di Vincenzo F., Borsato A. et al.",
+    "year": 2015,
+    "url": "https://doi.org/10.1016/j.jhevol.2015.02.007",
+    "doi": "10.1016/j.jhevol.2015.02.007",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-tagliente",
+    "title": "Early Alpine occupation backdates westward human migration in Late Glacial Europe",
+    "authors": "Bortolini E., Pagani L., Oxilia G. et al.",
+    "year": 2021,
+    "url": "https://doi.org/10.1016/j.cub.2021.03.078",
+    "doi": "10.1016/j.cub.2021.03.078",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-kebara",
+    "title": "Virtual reconstruction of the Kebara 2 Neanderthal pelvis",
+    "authors": "Adegboyega M. T. et al.",
+    "year": 2021,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33360685/",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-archi",
+    "title": "The mandible of Guattari, Archi 1 and Fate 2 in the European Evolutionary Context: Morphological and Morphometrical study and Application of Elliptic Fourier Analysis to the mandibulare symphysis outlines",
+    "authors": "Arnaud J. M. M.",
+    "year": 2014,
+    "url": "https://sfera.unife.it/handle/11392/2276416",
+    "type": "Tesi di ricerca",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-turkana",
+    "title": "KNM-WT 15000",
+    "authors": "Smithsonian Human Origins Program",
+    "year": null,
+    "url": "https://humanorigins.si.edu/evidence/human-fossils/fossils/knm-wt-15000",
+    "type": "Scheda museale",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-composito",
+    "title": "Neanderthal Composite Skeleton",
+    "authors": "Smithsonian Human Origins Program",
+    "year": null,
+    "url": "https://humanorigins.si.edu/evidence/human-fossils/fossils/neanderthal-composite-skeleton",
+    "type": "Scheda museale",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-sangiran",
+    "title": "Sangiran 17",
+    "authors": "Smithsonian Institution, NMNH – Anthropology",
+    "year": null,
+    "url": "https://www.si.edu/object/3d/homo-erectus-cranium:b2c8c6ff-069d-42da-98ae-9bf12fce60f2",
+    "type": "Modello museale di un calco",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-kabwe",
+    "title": "Kabwe 1",
+    "authors": "Smithsonian Institution, NMNH – Anthropology",
+    "year": null,
+    "url": "https://www.si.edu/object/3d/homo-heidelbergensis-cranium:875362ca-8f60-4c40-b170-462392480281",
+    "type": "Modello museale di un calco",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-ferrassie",
+    "title": "La Ferrassie 1, cranio",
+    "authors": "Smithsonian Institution, NMNH – Anthropology",
+    "year": null,
+    "url": "https://www.si.edu/object/3d/homo-neanderthalensis-cranium:62c5a1ab-24bc-467d-8566-5e67be2fc41d",
+    "type": "Modello museale di un calco",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-cromagnon",
+    "title": "Cro-Magnon 1",
+    "authors": "Smithsonian Institution, NMNH – Anthropology",
+    "year": null,
+    "url": "https://www.si.edu/object/3d/homo-sapiens-cranium:09d681b2-5ae9-44a8-b444-8e31bb40305e",
+    "type": "Modello museale di un calco",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-ferrassie-jaw",
+    "title": "La Ferrassie 1, mandibola",
+    "authors": "Smithsonian Institution, NMNH – Anthropology",
+    "year": null,
+    "url": "https://www.si.edu/object/3d/homo-neanderthalensis-mandible:b205ddc0-71c6-4f8c-9fc4-07f15d49d99f",
+    "type": "Modello museale di un calco",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-micarelli",
+    "title": "The oldest fossil hominin from Italy: Reassessment of the femoral diaphysis from Venosa-Notarchirico in its Acheulean context",
+    "authors": "Micarelli I., Minozzi S., Rodríguez L. et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.quascirev.2024.108709",
+    "doi": "10.1016/j.quascirev.2024.108709",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-profico",
+    "title": "Virtual excavation and analysis of the early Neanderthal cranium from Altamura (Italy)",
+    "authors": "Profico A., Buzi C., Di Vincenzo F. et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1038/s42003-023-04644-1",
+    "doi": "10.1038/s42003-023-04644-1",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-slon",
+    "title": "The genome of the offspring of a Neanderthal mother and a Denisovan father",
+    "authors": "Slon V., Mafessoni F., Vernot B. et al.",
+    "year": 2018,
+    "url": "https://doi.org/10.1038/s41586-018-0455-x",
+    "doi": "10.1038/s41586-018-0455-x",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-mura",
+    "title": "Life history and ancestry of the late Upper Palaeolithic infant from Grotta delle Mura, Italy",
+    "authors": "Higgins O. A., Modi A., Cannariato C. et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1038/s41467-024-51150-x",
+    "doi": "10.1038/s41467-024-51150-x",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-divincenzo",
+    "title": "Digital reconstruction of the Ceprano calvarium (Italy), and implications for its interpretation",
+    "authors": "Di Vincenzo F., Profico A., Bernardini F. et al.",
+    "year": 2017,
+    "url": "https://doi.org/10.1038/s41598-017-14437-2",
+    "doi": "10.1038/s41598-017-14437-2",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-bardo",
+    "title": "The implications of thumb movements for Neanderthal and modern human manipulation",
+    "authors": "Bardo A., Moncel M.-H., Dunmore C. J. et al.",
+    "year": 2020,
+    "url": "https://doi.org/10.1038/s41598-020-75694-2",
+    "doi": "10.1038/s41598-020-75694-2",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-buzi",
+    "title": "The pre-modern human fossil record in Italy from the Middle to the Late Pleistocene: an updated reappraisal",
+    "authors": "Buzi C., Di Vincenzo F., Profico A., Manzi G.",
+    "year": 2021,
+    "url": "https://doi.org/10.26382/AMQ.2021.03",
+    "doi": "10.26382/AMQ.2021.03",
+    "type": "Revisione scientifica",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-zollikofer",
+    "title": "Insights into Neanderthal development, childbirth, and locomotion from the Palomas and Dederiyeh pelves",
+    "authors": "Zollikofer C. P. E., Ponce de León M. S. et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1073/pnas.2535303123",
+    "doi": "10.1073/pnas.2535303123",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-saccopastore",
+    "title": "Saccopastore 1 · modello tridimensionale di un calco",
+    "authors": "Smithsonian Institution, NMNH – Anthropology",
+    "year": null,
+    "url": "https://www.si.edu/object/3d/homo-neanderthalensis-cranium:fe7bd1eb-c632-4201-81e2-fc592592ee57",
+    "type": "Modello museale di un calco",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-kenyon-circeo-1",
+    "title": "Monte Circeo I cranium · 3D Hominin Artifact Models",
+    "authors": "Kenyon College · Department of Anthropology",
+    "year": 2019,
+    "url": "https://digital.kenyon.edu/hominin/8/",
+    "type": "Modello museale di un calco",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-kenyon-la-quina-5",
+    "title": "La Quina 5 cranium · 3D Hominin Artifact Models",
+    "authors": "Kenyon College · Department of Anthropology",
+    "year": 2019,
+    "url": "https://digital.kenyon.edu/hominin/2/",
+    "type": "Modello museale di un calco",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-kenyon-kabwe",
+    "title": "Kabwe Skull · 3D Hominin Artifact Models",
+    "authors": "Kenyon College · Department of Anthropology",
+    "year": 2019,
+    "url": "https://digital.kenyon.edu/hominin/4/",
+    "type": "Modello museale di un calco",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-kenyon-predmosti",
+    "title": "Predmosti · 3D Hominin Artifact Models",
+    "authors": "Kenyon College · Department of Anthropology",
+    "year": 2019,
+    "url": "https://digital.kenyon.edu/hominin/13/",
+    "type": "Modello museale di un calco",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-poggio",
+    "title": "The Human Remains From the MIS 6 Site of Grotta Del Poggio (Cilento, Southern Italy): A Taxonomic and Chronological Reassessment",
+    "authors": "Piccirilli E., Sorrentino R., Seghi F. et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1002/ajpa.70188",
+    "doi": "10.1002/ajpa.70188",
+    "type": "Studio primario",
+    "verified": "2026-11-24"
+  },
+  {
+    "id": "lab-poggio-dati",
+    "title": "Data to perform geometric morphometric analyses of the Neanderthal upper first permanent molar GP1 from Grotta del Poggio",
+    "authors": "Piccirilli E., Sorrentino R., Seghi F. et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.6092/unibo/amsacta/8337",
+    "doi": "10.6092/unibo/amsacta/8337",
+    "type": "Dataset aperto",
+    "verified": "2026-11-24"
+  }
+]

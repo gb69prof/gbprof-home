@@ -1,0 +1,186 @@
+{
+  "sources": [
+    {
+      "id": "geo-ticino",
+      "title": "The Ticino-Toce glacier system (Swiss-Italian Alps) in the framework of the Alpine Last Glacial Maximum",
+      "authors": "Kamleitner, Ivy-Ochs, Monegato, Gianotti et al.",
+      "year": 2022,
+      "type": "Studio scientifico",
+      "url": "https://doi.org/10.1016/j.quascirev.2022.107400",
+      "doi": "10.1016/j.quascirev.2022.107400"
+    },
+    {
+      "id": "geo-posth",
+      "title": "Palaeogenomics of Upper Palaeolithic to Neolithic European hunter-gatherers",
+      "authors": "Posth, Yu, Ghalichi, Rougier et al.",
+      "year": 2023,
+      "type": "Studio scientifico",
+      "url": "https://doi.org/10.1038/s41586-023-05726-0",
+      "doi": "10.1038/s41586-023-05726-0"
+    },
+    {
+      "id": "geo-lr04",
+      "title": "A Pliocene‐Pleistocene stack of 57 globally distributed benthic δ 18 O records",
+      "authors": "Lisiecki, Raymo",
+      "year": 2005,
+      "type": "Studio scientifico",
+      "url": "https://doi.org/10.1029/2004PA001071",
+      "doi": "10.1029/2004PA001071"
+    },
+    {
+      "id": "geo-lgm",
+      "title": "The Last Glacial Maximum",
+      "authors": "Clark, Dyke, Shakun, Carlson et al.",
+      "year": 2009,
+      "type": "Studio scientifico",
+      "url": "https://doi.org/10.1126/science.1172873",
+      "doi": "10.1126/science.1172873"
+    },
+    {
+      "id": "geo-monticchio",
+      "title": "Evidence for last interglacial chronology and environmental change from Southern Europe",
+      "authors": "Brauer, Allen, Mingram, Dulski et al.",
+      "year": 2007,
+      "type": "Studio scientifico",
+      "url": "https://doi.org/10.1073/pnas.0603321104",
+      "doi": "10.1073/pnas.0603321104"
+    },
+    {
+      "id": "geo-irhoud",
+      "title": "The age of the hominin fossils from Jebel Irhoud, Morocco, and the origins of the Middle Stone Age",
+      "authors": "Richter, Grün, Joannes-Boyau, Steele et al.",
+      "year": 2017,
+      "type": "Studio scientifico",
+      "url": "https://doi.org/10.1038/nature22335",
+      "doi": "10.1038/nature22335"
+    },
+    {
+      "id": "geo-adriatico",
+      "title": "Mid and Late Upper Palaeolithic in the Adriatic Basin: Chronology, transitions and human adaptations to a changing landscape",
+      "authors": "Ruiz-Redondo, Vukosavljević, Tomasso, Peresani et al.",
+      "year": 2022,
+      "type": "Studio scientifico",
+      "url": "https://doi.org/10.1016/j.quascirev.2021.107319",
+      "doi": "10.1016/j.quascirev.2021.107319"
+    },
+    {
+      "id": "geo-etopo",
+      "title": "ETOPO1 1 Arc-Minute Global Relief Model",
+      "authors": "Amante, C. ed Eakins, B. W.",
+      "year": 2009,
+      "url": "https://doi.org/10.7289/V5C8276M",
+      "type": "Dataset"
+    },
+    {
+      "id": "geo-istat",
+      "title": "Confini delle unità amministrative a fini statistici · distribuzione GeoJSON",
+      "authors": "ISTAT / Openpolis",
+      "year": 2026,
+      "url": "https://github.com/openpolis/geojson-italy",
+      "type": "Dataset"
+    },
+    {
+      "id": "geo-ne",
+      "title": "Natural Earth · Admin 0 Countries 1:50m",
+      "authors": "Natural Earth",
+      "year": null,
+      "url": "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/",
+      "type": "Dataset"
+    },
+    {
+      "id": "geo-slw",
+      "title": "Shelf sea extent rasters (SLW140 2021)",
+      "authors": "De Groeve, J. et al.",
+      "year": 2022,
+      "url": "https://doi.org/10.21942/uva.20029220.v1",
+      "type": "Dataset"
+    },
+    {
+      "id": "geo-glacimontis",
+      "title": "GLACIMONTIS",
+      "authors": "Lima, A. C. et al.",
+      "year": 2025,
+      "url": "https://doi.org/10.5281/zenodo.15600659",
+      "type": "Dataset"
+    },
+    {
+      "id": "geo-lr04-data",
+      "title": "Appendix 1 · Global Plio-Pleistocene stack of benthic oxygen isotope records",
+      "authors": "Lisiecki, L. E. e Raymo, M. E.",
+      "year": 2005,
+      "url": "https://doi.org/10.1594/PANGAEA.701576",
+      "type": "Dataset"
+    },
+    {
+      "id": "geo-pastclim",
+      "title": "Krapp 2021, versione 1.2.2 · distribuzione per pastclim",
+      "authors": "Leonardi, M. e Manica, A.",
+      "year": 2023,
+      "url": "https://zenodo.org/records/8415273",
+      "type": "Dataset"
+    },
+    {
+      "id": "geo-costa",
+      "title": "Global raster dataset on historical coastline positions and shelf sea extents since the Last Glacial Maximum",
+      "authors": "De Groeve, J. et al.",
+      "year": 2022,
+      "url": "https://doi.org/10.1111/geb.13573",
+      "doi": "10.1111/geb.13573",
+      "type": "Studio scientifico"
+    },
+    {
+      "id": "geo-lima",
+      "title": "Mountain glacier extents at the Last Glacial Maximum",
+      "authors": "Lima, A. C. et al.",
+      "year": 2026,
+      "url": "https://doi.org/10.1038/s41597-026-06841-z",
+      "doi": "10.1038/s41597-026-06841-z",
+      "type": "Studio scientifico"
+    },
+    {
+      "id": "geo-orta",
+      "title": "Timing and flow pattern of the Orta Glacier (European Alps) during the Last Glacial Maximum",
+      "authors": "Braakhekke, J. et al.",
+      "year": 2020,
+      "url": "https://doi.org/10.1111/bor.12427",
+      "doi": "10.1111/bor.12427",
+      "type": "Studio scientifico"
+    },
+    {
+      "id": "geo-appennino",
+      "title": "Last glacial maximum glaciers in the Northern Apennines reflect primarily the influence of southerly storm-tracks in the western Mediterranean",
+      "authors": "Baroni, C. et al.",
+      "year": 2018,
+      "url": "https://doi.org/10.1016/j.quascirev.2018.07.003",
+      "doi": "10.1016/j.quascirev.2018.07.003",
+      "type": "Studio scientifico"
+    },
+    {
+      "id": "geo-krapp",
+      "title": "A statistics-based reconstruction of high-resolution global terrestrial climate for the last 800,000 years",
+      "authors": "Krapp, M. et al.",
+      "year": 2021,
+      "url": "https://doi.org/10.1038/s41597-021-01009-3",
+      "doi": "10.1038/s41597-021-01009-3",
+      "type": "Studio scientifico"
+    },
+    {
+      "id": "geo-atapuerca",
+      "title": "The earliest human face of Western Europe",
+      "authors": "Huguet, R. et al.",
+      "year": 2025,
+      "url": "https://doi.org/10.1038/s41586-025-08681-0",
+      "doi": "10.1038/s41586-025-08681-0",
+      "type": "Studio scientifico"
+    },
+    {
+      "id": "geo-dmanisi",
+      "title": "Earliest human occupations at Dmanisi (Georgian Caucasus) dated to 1.85–1.78 Ma",
+      "authors": "Ferring, R. et al.",
+      "year": 2011,
+      "url": "https://doi.org/10.1073/pnas.1106638108",
+      "doi": "10.1073/pnas.1106638108",
+      "type": "Studio scientifico"
+    }
+  ]
+}

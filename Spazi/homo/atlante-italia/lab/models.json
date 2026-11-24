@@ -1,0 +1,223 @@
+[
+  {
+    "id": "model-fe7bd1eb-c632-4201-81e2-fc592592ee57",
+    "siteNames": [
+      "Saccopastore"
+    ],
+    "name": "Saccopastore 1",
+    "anatomy": "Cranio",
+    "origin": "Linea neandertaliana · Lazio",
+    "source": "lab-saccopastore",
+    "refs": [
+      "lab-saccopastore"
+    ],
+    "url": "https://www.si.edu/object/3d/homo-neanderthalensis-cranium:fe7bd1eb-c632-4201-81e2-fc592592ee57",
+    "viewer": "https://3d-api.si.edu/voyager/3d_package:fe7bd1eb-c632-4201-81e2-fc592592ee57",
+    "author": "Smithsonian Institution, National Museum of Natural History",
+    "category": "Scansione tridimensionale di un calco",
+    "unit": "mm",
+    "license": "Smithsonian · uso didattico, personale e non commerciale. Il modello è caricato dal museo su richiesta.",
+    "licenseUrl": "https://www.si.edu/termsofuse",
+    "verified": "2026-11-24",
+    "mesh": "https://3d-api.si.edu/content/document/fe7bd1eb-c632-4201-81e2-fc592592ee57/saccopastore-1-cranium-20k-thumb.glb"
+  },
+  {
+    "id": "model-b2c8c6ff-069d-42da-98ae-9bf12fce60f2",
+    "siteNames": [],
+    "name": "Sangiran 17",
+    "anatomy": "Cranio",
+    "origin": "Homo erectus · Giava, Indonesia",
+    "source": "lab-sangiran",
+    "refs": [
+      "lab-sangiran"
+    ],
+    "url": "https://www.si.edu/object/3d/homo-erectus-cranium:b2c8c6ff-069d-42da-98ae-9bf12fce60f2",
+    "viewer": "https://3d-api.si.edu/voyager/3d_package:b2c8c6ff-069d-42da-98ae-9bf12fce60f2",
+    "author": "Smithsonian Institution, National Museum of Natural History",
+    "category": "Scansione tridimensionale di un calco",
+    "unit": "mm",
+    "license": "Smithsonian · uso didattico, personale e non commerciale. Il modello è caricato dal museo su richiesta.",
+    "licenseUrl": "https://www.si.edu/termsofuse",
+    "verified": "2026-11-24",
+    "mesh": "https://3d-api.si.edu/content/document/b2c8c6ff-069d-42da-98ae-9bf12fce60f2/sangiran-17-cranium-20k-thumb.glb"
+  },
+  {
+    "id": "model-875362ca-8f60-4c40-b170-462392480281",
+    "siteNames": [],
+    "name": "Kabwe 1",
+    "anatomy": "Cranio",
+    "origin": "Homo heidelbergensis sensu Smithsonian · Zambia",
+    "source": "lab-kabwe",
+    "refs": [
+      "lab-kabwe"
+    ],
+    "url": "https://www.si.edu/object/3d/homo-heidelbergensis-cranium:875362ca-8f60-4c40-b170-462392480281",
+    "viewer": "https://3d-api.si.edu/voyager/3d_package:875362ca-8f60-4c40-b170-462392480281",
+    "author": "Smithsonian Institution, National Museum of Natural History",
+    "category": "Scansione tridimensionale di un calco",
+    "unit": "mm",
+    "license": "Smithsonian · uso didattico, personale e non commerciale. Il modello è caricato dal museo su richiesta.",
+    "licenseUrl": "https://www.si.edu/termsofuse",
+    "verified": "2026-11-24",
+    "mesh": "https://3d-api.si.edu/content/document/875362ca-8f60-4c40-b170-462392480281/kabwe-1-cranium-20k-thumb.glb"
+  },
+  {
+    "id": "model-62c5a1ab-24bc-467d-8566-5e67be2fc41d",
+    "siteNames": [],
+    "name": "La Ferrassie 1",
+    "anatomy": "Cranio",
+    "origin": "Homo neanderthalensis · Francia",
+    "source": "lab-ferrassie",
+    "refs": [
+      "lab-ferrassie"
+    ],
+    "url": "https://www.si.edu/object/3d/homo-neanderthalensis-cranium:62c5a1ab-24bc-467d-8566-5e67be2fc41d",
+    "viewer": "https://3d-api.si.edu/voyager/3d_package:62c5a1ab-24bc-467d-8566-5e67be2fc41d",
+    "author": "Smithsonian Institution, National Museum of Natural History",
+    "category": "Scansione tridimensionale di un calco",
+    "unit": "mm",
+    "license": "Smithsonian · uso didattico, personale e non commerciale. Il modello è caricato dal museo su richiesta.",
+    "licenseUrl": "https://www.si.edu/termsofuse",
+    "verified": "2026-11-24",
+    "mesh": "https://3d-api.si.edu/content/document/62c5a1ab-24bc-467d-8566-5e67be2fc41d/la-ferrassie-cranium-20k-thumb.glb"
+  },
+  {
+    "id": "model-09d681b2-5ae9-44a8-b444-8e31bb40305e",
+    "siteNames": [],
+    "name": "Cro-Magnon 1",
+    "anatomy": "Cranio",
+    "origin": "Homo sapiens · Francia",
+    "source": "lab-cromagnon",
+    "refs": [
+      "lab-cromagnon"
+    ],
+    "url": "https://www.si.edu/object/3d/homo-sapiens-cranium:09d681b2-5ae9-44a8-b444-8e31bb40305e",
+    "viewer": "https://3d-api.si.edu/voyager/3d_package:09d681b2-5ae9-44a8-b444-8e31bb40305e",
+    "author": "Smithsonian Institution, National Museum of Natural History",
+    "category": "Scansione tridimensionale di un calco",
+    "unit": "mm",
+    "license": "Smithsonian · uso didattico, personale e non commerciale. Il modello è caricato dal museo su richiesta.",
+    "licenseUrl": "https://www.si.edu/termsofuse",
+    "verified": "2026-11-24",
+    "mesh": "https://3d-api.si.edu/content/document/09d681b2-5ae9-44a8-b444-8e31bb40305e/cromagnon-cranium-20k-thumb.glb"
+  },
+  {
+    "id": "model-b205ddc0-71c6-4f8c-9fc4-07f15d49d99f",
+    "siteNames": [],
+    "name": "La Ferrassie 1",
+    "anatomy": "Mandibola",
+    "origin": "Mandibola neandertaliana adulta · Francia",
+    "source": "lab-ferrassie-jaw",
+    "refs": [
+      "lab-ferrassie-jaw"
+    ],
+    "url": "https://www.si.edu/object/3d/homo-neanderthalensis-mandible:b205ddc0-71c6-4f8c-9fc4-07f15d49d99f",
+    "viewer": "https://3d-api.si.edu/voyager/3d_package:b205ddc0-71c6-4f8c-9fc4-07f15d49d99f",
+    "author": "Smithsonian Institution, National Museum of Natural History",
+    "category": "Scansione tridimensionale di un calco",
+    "unit": "mm",
+    "license": "Smithsonian · uso didattico, personale e non commerciale. Il modello è caricato dal museo su richiesta.",
+    "licenseUrl": "https://www.si.edu/termsofuse",
+    "verified": "2026-11-24",
+    "mesh": "https://3d-api.si.edu/content/document/b205ddc0-71c6-4f8c-9fc4-07f15d49d99f/la-ferrassie-mandible-20k-thumb.glb"
+  },
+  {
+    "id": "model-kenyon-circeo-1",
+    "siteNames": [
+      "Grotta Guattari",
+      "Circeo"
+    ],
+    "name": "Circeo 1",
+    "anatomy": "Cranio",
+    "origin": "Kenyon College, Department of Anthropology. Scansione di calco.",
+    "source": "lab-kenyon-circeo-1",
+    "refs": [
+      "lab-kenyon-circeo-1"
+    ],
+    "url": "https://digital.kenyon.edu/hominin/8/",
+    "viewer": "https://sketchfab.com/3d-models/monte-circeo-i-cranium-da3c43d553974890a0b1b2952b72cebf",
+    "author": "Kenyon College, Department of Anthropology · digitalkenyon",
+    "category": "Scansione tridimensionale di un calco",
+    "unit": null,
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "rightsSource": "https://api.sketchfab.com/v3/models/da3c43d553974890a0b1b2952b72cebf",
+    "mesh": "models/circeo-1.glb",
+    "verified": "2026-11-24",
+    "changes": "Riduzione didattica della triangolazione originale con raggruppamento spaziale dei vertici, colore uniforme, centratura e normalizzazione della scala. Geometrie mancanti lasciate aperte. Compressione Draco della geometria per il caricamento locale.",
+    "originalFaces": 6635098,
+    "displayFaces": 77048
+  },
+  {
+    "id": "model-kenyon-la-quina-5",
+    "siteNames": [],
+    "name": "La Quina 5",
+    "anatomy": "Cranio",
+    "origin": "Kenyon College, Department of Anthropology. Scansione di calco.",
+    "source": "lab-kenyon-la-quina-5",
+    "refs": [
+      "lab-kenyon-la-quina-5"
+    ],
+    "url": "https://digital.kenyon.edu/hominin/2/",
+    "viewer": "https://sketchfab.com/3d-models/la-quina-5-cranium-e728f07dcfa04d01b3b24f62b767fe10",
+    "author": "Kenyon College, Department of Anthropology · digitalkenyon",
+    "category": "Scansione tridimensionale di un calco",
+    "unit": null,
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "rightsSource": "https://api.sketchfab.com/v3/models/e728f07dcfa04d01b3b24f62b767fe10",
+    "mesh": "models/la-quina-5.glb",
+    "verified": "2026-11-24",
+    "changes": "Riduzione didattica della triangolazione originale con raggruppamento spaziale dei vertici, colore uniforme, centratura e normalizzazione della scala. Geometrie mancanti lasciate aperte. Compressione Draco della geometria per il caricamento locale.",
+    "originalFaces": 12094806,
+    "displayFaces": 66220
+  },
+  {
+    "id": "model-kenyon-kabwe",
+    "siteNames": [],
+    "name": "Kabwe 1",
+    "anatomy": "Cranio",
+    "origin": "Kenyon College, Department of Anthropology. Scansione di calco.",
+    "source": "lab-kenyon-kabwe",
+    "refs": [
+      "lab-kenyon-kabwe"
+    ],
+    "url": "https://digital.kenyon.edu/hominin/4/",
+    "viewer": "https://sketchfab.com/3d-models/kabwe-skull-3b861f63f25a4fe0a1c12a05112f304b",
+    "author": "Kenyon College, Department of Anthropology · digitalkenyon",
+    "category": "Scansione tridimensionale di un calco",
+    "unit": null,
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "rightsSource": "https://api.sketchfab.com/v3/models/3b861f63f25a4fe0a1c12a05112f304b",
+    "mesh": "models/kabwe.glb",
+    "verified": "2026-11-24",
+    "changes": "Riduzione didattica della triangolazione originale con raggruppamento spaziale dei vertici, colore uniforme, centratura e normalizzazione della scala. Geometrie mancanti lasciate aperte. Compressione Draco della geometria per il caricamento locale.",
+    "originalFaces": 6349544,
+    "displayFaces": 73442
+  },
+  {
+    "id": "model-kenyon-predmosti",
+    "siteNames": [],
+    "name": "Předmostí",
+    "anatomy": "Cranio",
+    "origin": "Kenyon College, Department of Anthropology. Scansione di calco.",
+    "source": "lab-kenyon-predmosti",
+    "refs": [
+      "lab-kenyon-predmosti"
+    ],
+    "url": "https://digital.kenyon.edu/hominin/13/",
+    "viewer": "https://sketchfab.com/3d-models/predmosti-ab48394987fd48ecb25b5b914a33bb4e",
+    "author": "Kenyon College, Department of Anthropology · digitalkenyon",
+    "category": "Scansione tridimensionale di un calco",
+    "unit": null,
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "rightsSource": "https://api.sketchfab.com/v3/models/ab48394987fd48ecb25b5b914a33bb4e",
+    "mesh": "models/predmosti.glb",
+    "verified": "2026-11-24",
+    "changes": "Riduzione didattica della triangolazione originale con raggruppamento spaziale dei vertici, colore uniforme, centratura e normalizzazione della scala. Geometrie mancanti lasciate aperte. Compressione Draco della geometria per il caricamento locale.",
+    "originalFaces": 5919364,
+    "displayFaces": 69141
+  }
+]

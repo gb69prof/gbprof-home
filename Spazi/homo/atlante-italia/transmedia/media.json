@@ -1,0 +1,53 @@
+[
+  {
+    "file": "assets/fontana-nuova-23.webp",
+    "title": "Fon-23, frammento di osso parietale. Il campione non ha fornito collagene per una datazione diretta.",
+    "category": "Fotografia del reperto originale",
+    "author": "Gianpiero Di Maida, Marcello A. Mannino, Ben Krause-Kyora, Theis Zetner Trolle Jensen e Sahra Talamo (2019)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://doi.org/10.1371/journal.pone.0213173.s026",
+    "siteNames": [
+      "Riparo di Fontana Nuova",
+      "Fontana Nuova"
+    ],
+    "findIds": [
+      "tr-fon23"
+    ],
+    "changes": "Conversione WebP mantenendo la scala grafica originale."
+  },
+  {
+    "file": "assets/fontana-nuova-24.webp",
+    "title": "Fon-24, secondo molare superiore. Il collagene della dentina ha fornito una data mesolitica.",
+    "category": "Fotografia del reperto originale",
+    "author": "Gianpiero Di Maida, Marcello A. Mannino, Ben Krause-Kyora, Theis Zetner Trolle Jensen e Sahra Talamo (2019)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://doi.org/10.1371/journal.pone.0213173.s027",
+    "siteNames": [
+      "Riparo di Fontana Nuova",
+      "Fontana Nuova"
+    ],
+    "findIds": [
+      "tr-fon24"
+    ],
+    "changes": "Conversione WebP mantenendo la scala grafica originale."
+  },
+  {
+    "file": "assets/fontana-nuova-25.webp",
+    "title": "Fon-25, premolare superiore del riparo di Fontana Nuova, prima del prelievo per le analisi.",
+    "category": "Fotografia del reperto originale",
+    "author": "Gianpiero Di Maida, Marcello A. Mannino, Ben Krause-Kyora, Theis Zetner Trolle Jensen e Sahra Talamo (2019)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://doi.org/10.1371/journal.pone.0213173.s028",
+    "siteNames": [
+      "Riparo di Fontana Nuova",
+      "Fontana Nuova"
+    ],
+    "findIds": [
+      "tr-fon25"
+    ],
+    "changes": "Conversione WebP mantenendo la scala grafica originale."
+  }
+]

@@ -1,0 +1,82 @@
+@import url('./vendor/leaflet.css');
+
+.atlas-geo {
+  --ag-ink: #263b3c;
+  --ag-light: #f5f3eb;
+  --ag-rule: #d9d8c8;
+  --ag-green: #386657;
+  color: var(--ag-ink);
+  font: 1rem/1.55 system-ui, sans-serif;
+  min-width: 0;
+}
+.atlas-geo *, .atlas-geo *::after, .atlas-geo *::before {box-sizing:border-box}
+.atlas-geo a {color:#255d62;text-decoration:underline}
+.atlas-geo h3,.atlas-geo h4,.atlas-geo p {margin:.3em 0 .7em}
+.atlas-geo h3,.atlas-geo h4 {line-height:1.22}
+.atlas-geo button, .atlas-geo select, .atlas-geo input:not([type=range]) {
+  min-height:42px; border:1px solid #b8bcae;
+  border-radius:.45rem; padding:.45rem .7rem; color:var(--ag-ink);
+  background:#fffdf5; font:inherit; line-height:1.3;
+}
+.atlas-geo button {cursor:pointer}
+.atlas-geo button:hover,.atlas-geo button:focus-visible {border-color:#426952;background:#e8ecdf}
+.atlas-geo button:disabled {opacity:.45;cursor:default}
+.atlas-geo :focus-visible {outline:3px solid #ad6837;outline-offset:2px}
+.atlas-geo select {width:100%;min-width:0;max-width:100%;text-overflow:ellipsis}
+.atlas-geo label {display:flex;flex-direction:column;gap:.22rem;font-size:.92rem;font-weight:600;min-width:0}
+.atlas-geo label select,.atlas-geo label input {font-weight:400}
+.ag-top,.ag-filtergrid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}
+.ag-top {padding-bottom:.6rem}
+.ag-layerControls,.ag-controlrow,.ag-result-head,.ag-pages,.ag-joint {display:flex;align-items:end;gap:.75rem;flex-wrap:wrap}
+.ag-layerControls:not(:empty) {margin:.5rem 0 .7rem}
+.ag-layerControls label {min-width:12rem}
+.ag-layerNote {font-size:.95rem}
+.atlas-geo .ag-map {position:relative;height:clamp(390px,65vh,710px);width:100%;isolation:isolate;background:#9dbdc0;border:1px solid #bfc6b7;border-radius:.65rem;z-index:0;font:14px/1.35 system-ui,sans-serif;}
+.atlas-geo .ag-map img.leaflet-image-layer {max-width:none!important;max-height:none!important;object-fit:fill;border:0;border-radius:0}
+.atlas-geo .leaflet-control-zoom a {color:#183d41;text-decoration:none;background:#fffdf5}
+.ag-map .ag-label {color:#34483e;text-align:center;font-size:10px;font-weight:650;white-space:normal;line-height:1.12;text-shadow:0 1px 2px white,0 -1px 1px white;pointer-events:none}
+.ag-map .ag-route {font-size:14px;color:#74305e}
+.ag-map .ag-marker {background:transparent;border:0;display:grid;place-items:center}
+.ag-map .ag-marker span,.ag-legend i {width:15px;height:15px;border-radius:100%;background:var(--ag-color);border:2px solid white;box-shadow:0 0 0 1px #53625b}
+.ag-map .ag-marker span {display:grid;place-items:center;font-size:10px;line-height:1;color:white;font-weight:bold}
+.ag-map .ag-marker.ag-approx span {border-style:dashed}
+.ag-map .ag-marker:focus,.ag-map .ag-marker:hover {z-index:9999!important}
+.ag-map .ag-marker:focus span,.ag-map .ag-marker:hover span {transform:scale(1.3)}
+.ag-legend {display:flex;flex-wrap:wrap;gap:.4rem 1.15rem;margin:.8rem 0 1.2rem!important;padding:0!important;list-style:none}
+.ag-legend li {display:flex;align-items:center;gap:.35em;margin:0!important;font-size:.88rem}
+.ag-legend i {flex:none;width:11px;height:11px;box-shadow:none;border:0}
+.ag-selection {display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.6rem;border:1px solid #c6c9b8;border-left:4px solid #886840;padding:.8rem 1rem;margin:.65rem 0 1rem;background:#f4f1e6}
+.ag-selection[hidden] {display:none}
+.ag-selection strong {font-size:1.12rem}
+.atlas-geo .ag-selection p {margin:0}
+.atlas-geo details {margin:.7rem 0;padding:.75rem 1rem;background:var(--ag-light);border:1px solid var(--ag-rule);border-radius:.55rem}
+.atlas-geo details>summary {display:list-item;cursor:pointer;font-weight:650;color:#314b44}
+.ag-time-body {padding-top:1rem}
+.ag-controlrow {align-items:end}
+.ag-sliders {display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:.8rem 0 .3rem}
+.ag-sliders input[type=range] {width:100%;accent-color:var(--ag-green);padding:0;direction:rtl}
+.ag-plot {margin:1rem 0;background:#e9eee5;padding:.7rem 1rem .4rem}
+.ag-plot-label,.ag-axis {display:flex;justify-content:space-between;gap:.5rem}
+.ag-plot svg {display:block;width:100%;height:95px;margin-top:.5rem}
+.ag-plot p,.ag-event-note {font-size:.9rem}
+.ag-comparison {max-width:22rem}
+.ag-events {margin:1rem 0 0}
+.ag-events h4 {padding-top:1rem;margin:.25rem 0 .45rem}
+.ag-event {display:grid;grid-template-columns:minmax(160px,40%) 1fr;gap:.7rem;align-items:center;border-bottom:1px solid var(--ag-rule);padding:.3rem 0}
+.ag-event small,.ag-siterow small {display:block;font-size:.82rem}
+.ag-track {height:12px;position:relative;border-radius:6px;background:#e0e0d4}
+.ag-track i {position:absolute;top:2px;height:8px;min-width:2px;background:var(--ag-color);border-radius:5px}
+.atlas-geo .ag-event-note {margin:.2rem 0 .75rem;color:#4c5b50}
+.ag-filtergrid {margin-top:.7rem}
+.ag-result-head {margin-top:1.4rem;align-items:center;justify-content:space-between}
+.ag-results {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem}
+.atlas-geo .ag-siterow {text-align:left;border-color:var(--ag-rule);background:#fbf9f1;min-width:0;overflow-wrap:anywhere}
+.ag-siterow strong {font:600 .98rem/1.35 system-ui,sans-serif}
+.ag-siterow small {font-weight:400;margin-top:.15rem}
+.ag-pages {align-items:center;justify-content:end;margin:.65rem 0}
+.ag-provenance {font-size:.94rem}
+.ag-provenance ul {padding-left:1.25rem}
+.ag-provenance li {margin:.45rem 0}
+@media(max-width:760px){.ag-top,.ag-filtergrid,.ag-results {grid-template-columns:repeat(2,minmax(0,1fr))}.ag-top label:last-child {grid-column:1/-1}.ag-top{gap:.55rem}}
+@media(max-width:480px){.atlas-geo .ag-map {height:400px}.ag-results {grid-template-columns:1fr}.ag-event {grid-template-columns:minmax(125px,47%) 1fr}.ag-filtergrid,.ag-sliders {gap:.55rem}.atlas-geo details {padding:.6rem}.ag-controlrow button {min-height:38px}.ag-plot {padding:.6rem}.ag-layerControls button {text-align:left}.ag-legend {gap:.3rem .75rem}.ag-result-head {align-items:start}.ag-result-head h3 {font-size:1.2rem}}
+@media(prefers-reduced-motion:reduce){.atlas-geo * {scroll-behavior:auto!important;animation-duration:0s!important;transition-duration:0s!important}}
