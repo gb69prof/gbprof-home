@@ -1,0 +1,59 @@
+name: Collaudo browser HOMO
+on:
+  push:
+    branches: [homo-fonti-museali]
+    paths: [qa-paleo-browser/avvia.txt]
+permissions:
+  contents: write
+jobs:
+  chromium:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: verifica
+          sparse-checkout: qa-paleo-browser
+      - name: Leggi la revisione da verificare
+        id: revisione
+        working-directory: verifica
+        run: |
+          sha=$(head -1 qa-paleo-browser/avvia.txt | tr -d '\r')
+          if ! [[ "$sha" =~ ^[0-9a-f]{40}$ ]]; then exit 1; fi
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
+        with:
+          path: candidato
+          ref: ${{ steps.revisione.outputs.sha }}
+          sparse-checkout: Spazi/homo
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Prepara Chromium
+        working-directory: verifica/qa-paleo-browser
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          if command -v google-chrome >/dev/null; then
+            echo "CHROME_BIN=$(command -v google-chrome)" >> "$GITHUB_ENV"
+          else
+            npx playwright install --with-deps chromium
+          fi
+      - name: Prova HTTP, touch e service worker senza rete
+        id: prova
+        working-directory: verifica/qa-paleo-browser
+        env:
+          CANDIDATE_SHA: ${{ steps.revisione.outputs.sha }}
+        run: node prova_http.mjs ../../candidato/Spazi/homo risultati
+      - name: Conserva verbale e schermate nel solo ramo QA
+        if: always() && steps.prova.outcome != 'skipped'
+        working-directory: verifica
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- qa-paleo-browser/risultati
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Registra il collaudo Chromium della sala HOMO"
+          git fetch --depth=15 origin homo-fonti-museali
+          git rebase FETCH_HEAD
+          git push origin HEAD:homo-fonti-museali
