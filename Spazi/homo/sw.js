@@ -1,8 +1,20 @@
 // Generated from the local publication tree. Its scope is the HOMO directory.
 const PREFIX = 'gbprof-homo-' + new URL(self.registration.scope).pathname + '-';
-const CACHE = PREFIX + '6fcf923587efbc2e';
+const CACHE = PREFIX + '2026-11-25-paleo-121';
 const FILES = [
  "app.js",
+ "ricostruzioni/visita.js",
+ "ricostruzioni/italia.js",
+ "ricostruzioni/sala.css",
+ "ricostruzioni/catalogo.json",
+ "ricostruzioni/modelli/CREDITI.md",
+ "ricostruzioni/modelli/RepertoLF1.jpg",
+ "ricostruzioni/modelli/VoltoLF1.jpg",
+ "ricostruzioni/modelli/FiguraLF1.jpg",
+ "ricostruzioni/modelli/BustoHarbin.jpg",
+ "ricostruzioni/modelli/FiguraLB1.jpg",
+ "ricostruzioni/modelli/MandibolaDH3.jpg",
+ "ricostruzioni/modelli/CranioLES1.jpg",
  "atlante-italia/app.js",
  "atlante-italia/catalogo.js",
  "atlante-italia/common.js",
@@ -211,6 +223,7 @@ const FILES = [
  "ui/style.css"
 ];
 const URLS = new Set(FILES.map(path => new URL(path, self.registration.scope).href));
+const MODELS = new Set(['RepertoLF1','VoltoLF1','FiguraLF1','BustoHarbin','FiguraLB1','MandibolaDH3','CranioLES1'].map(name=>new URL('ricostruzioni/modelli/'+name+'.glb',self.registration.scope).href));
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
@@ -238,6 +251,16 @@ self.addEventListener('fetch', event => {
   if (request.method !== 'GET' || url.origin !== scope.origin || !url.pathname.startsWith(scope.pathname)) return;
   url.hash = ''; url.search = '';
   if (url.pathname.endsWith('/')) url.pathname += 'index.html';
+  if (MODELS.has(url.href) && !request.headers.has('range')) {
+    event.respondWith((async()=>{
+      const cache=await caches.open(CACHE),stored=await cache.match(url.href);
+      if(stored)return stored;
+      const model=await fetch(request);
+      if(model.status===200)await cache.put(url.href,model.clone()).catch(()=>{});
+      return model;
+    })());
+    return;
+  }
   if (!URLS.has(url.href)) return;
   event.respondWith((async () => {
     const cache = await caches.open(CACHE);

@@ -1,3 +1,4 @@
+import {mostraRepertoItaliano} from '../ricostruzioni/italia.js';
 import {esc,it,href,link,door,doorGrid,page,gallery} from './common.js';
 import {catalog,detail} from './catalogo.js';
 import {sections,article,library,source,locationPage,staticSection} from './letture.js';
@@ -21,7 +22,7 @@ async function route(move=true){
  let [r='inizio',id='',filter='']=(location.hash.slice(1)||'inizio').split('/').map(decodeURIComponent);
  if(r==='inizio')home();
  else if(r==='catalogo')catalog(main,data,id||'reperti',filter);
- else if(['sito','reperto','individuo'].includes(r))main.innerHTML=detail(data,r,id);
+ else if(['sito','reperto','individuo'].includes(r)){main.innerHTML=detail(data,r,id);mostraRepertoItaliano(main,data,r,id);}
  else if(r==='lezione'||r==='puglia'){const a=data.articles.find(x=>x.id===(r==='puglia'?'lez-puglia':id));main.innerHTML=article(data,a);if(r==='puglia')main.querySelector('.pagebody').insertAdjacentHTML('afterbegin','<div class="pills" style="margin-bottom:18px">'+link('regione','Puglia','Carta e catalogo della Puglia','pill')+link('lezione','lez-coste','Le coste del Pleistocene','pill')+'</div>')}
  else if(r==='biblioteca')library(main,data);
  else if(r==='fonte')main.innerHTML=source(data,id);
