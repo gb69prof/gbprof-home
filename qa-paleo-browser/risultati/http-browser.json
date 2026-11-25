@@ -1,0 +1,191 @@
+{
+  "browser": "157.0.8103.78",
+  "server": "HTTP locale ordinario (127.0.0.1), service worker attivo, Chromium reale headless",
+  "data": "2026-11-25T10:41:42.884Z",
+  "commit": "6b6e0d49cb19b936a73bdee864e23f6a5489ed5f",
+  "prove": [
+    {
+      "prova": "Ingressi alle tre fasi di LF1",
+      "esito": "superata",
+      "dettaglio": [
+        "Osserva il reperto",
+        "Dal reperto al volto",
+        "Incontralo nel suo ambiente"
+      ]
+    },
+    {
+      "prova": "LF1 RepertoLF1.glb, osservazione e interazione",
+      "esito": "superata",
+      "dettaglio": {
+        "file": "RepertoLF1.glb",
+        "dimensioni": [
+          0.1583462730050087,
+          0.1717495620250702,
+          0.23238404095172882
+        ],
+        "animazioni": [],
+        "osservazione": "La volta è lunga e bassa. Confronta il contorno in vista laterale."
+      }
+    },
+    {
+      "prova": "LF1 VoltoLF1.glb, osservazione e interazione",
+      "esito": "superata",
+      "dettaglio": {
+        "file": "VoltoLF1.glb",
+        "dimensioni": [
+          0.5191411375999451,
+          0.3280184268951416,
+          0.28346405178308487
+        ],
+        "animazioni": [],
+        "osservazione": "Il modello segue l’inclinazione del frontale. Capigliatura e spessore della cute dipendono dalle scelte anatomiche e visive."
+      }
+    },
+    {
+      "prova": "LF1 FiguraLF1.glb, osservazione e interazione",
+      "esito": "superata",
+      "dettaglio": {
+        "file": "FiguraLF1.glb",
+        "dimensioni": [
+          1.1133912581005132,
+          1.6100185920484962,
+          0.5886004196951887
+        ],
+        "animazioni": [
+          "Animation"
+        ],
+        "osservazione": "Il movimento del torace dà ritmo alla figura seduta.",
+        "pausa": true
+      }
+    },
+    {
+      "prova": "BustoHarbin.glb caricato e renderizzato",
+      "esito": "superata",
+      "dettaglio": {
+        "file": "BustoHarbin.glb",
+        "dimensioni": [
+          0.24431255459785461,
+          0.32559816539287567,
+          0.2532811164855957
+        ],
+        "animazioni": []
+      }
+    },
+    {
+      "prova": "FiguraLB1.glb caricato e renderizzato",
+      "esito": "superata",
+      "dettaglio": {
+        "file": "FiguraLB1.glb",
+        "dimensioni": [
+          0.7223984003067017,
+          1.0023630857467651,
+          0.2297648787498474
+        ],
+        "animazioni": []
+      }
+    },
+    {
+      "prova": "CranioLES1.glb caricato e renderizzato",
+      "esito": "superata",
+      "dettaglio": {
+        "file": "CranioLES1.glb",
+        "dimensioni": [
+          0.18853262066841125,
+          0.17409028857946396,
+          0.13277722895145416
+        ],
+        "animazioni": []
+      }
+    },
+    {
+      "prova": "Scheda italiana di Guattari e confronto con il fossile francese",
+      "esito": "superata",
+      "dettaglio": "../#scheda/neanderthal/ricostruzione"
+    },
+    {
+      "prova": "Visita offline dopo il primo caricamento, incluso modello 3D",
+      "esito": "superata",
+      "dettaglio": {
+        "cache": [
+          "ricostruzioni/modelli/RepertoLF1.glb",
+          "ricostruzioni/modelli/VoltoLF1.glb",
+          "ricostruzioni/modelli/FiguraLF1.glb",
+          "ricostruzioni/modelli/BustoHarbin.glb",
+          "ricostruzioni/modelli/FiguraLB1.glb",
+          "ricostruzioni/modelli/MandibolaDH3.glb",
+          "ricostruzioni/modelli/CranioLES1.glb"
+        ],
+        "riaperti": [
+          [
+            "ricostruzioni/modelli/RepertoLF1.glb",
+            200,
+            1286672
+          ],
+          [
+            "ricostruzioni/modelli/VoltoLF1.glb",
+            200,
+            1828088
+          ],
+          [
+            "ricostruzioni/modelli/FiguraLF1.glb",
+            200,
+            3109196
+          ],
+          [
+            "ricostruzioni/modelli/BustoHarbin.glb",
+            200,
+            754224
+          ],
+          [
+            "ricostruzioni/modelli/FiguraLB1.glb",
+            200,
+            229644
+          ],
+          [
+            "ricostruzioni/modelli/MandibolaDH3.glb",
+            200,
+            339840
+          ],
+          [
+            "ricostruzioni/modelli/CranioLES1.glb",
+            200,
+            663480
+          ]
+        ],
+        "offline": true,
+        "file": "RepertoLF1.glb",
+        "dimensioni": [
+          0.1583462730050087,
+          0.1717495620250702,
+          0.23238404095172882
+        ],
+        "animazioni": []
+      }
+    },
+    {
+      "prova": "Fallback su mancato trasferimento del GLB",
+      "esito": "superata",
+      "dettaglio": "Il modello non è disponibile. Puoi consultare la tavola statica, le osservazioni e le fonti."
+    },
+    {
+      "prova": "Smartphone emulato e gesto touch per la rotazione",
+      "esito": "superata",
+      "dettaglio": {
+        "file": "RepertoLF1.glb",
+        "dimensioni": [
+          0.1583462730050087,
+          0.1717495620250702,
+          0.23238404095172882
+        ],
+        "animazioni": [],
+        "viewport": 390,
+        "contenuto": 390,
+        "touch": 1,
+        "angoloPrima": 0.3141592653589793,
+        "angoloDopo": 2.014248567972981
+      }
+    }
+  ],
+  "erroriRuntime": [],
+  "richiesteHTTP": 569
+}
