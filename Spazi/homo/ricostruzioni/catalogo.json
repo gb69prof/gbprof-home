@@ -1,0 +1,744 @@
+{
+  "versione": "1.2.1",
+  "edizione": "2026-11-25",
+  "titolo": "Dal reperto all’individuo",
+  "atlante": "https://gbprof.it/Spazi/homo/",
+  "etichette": [
+    "Documentato",
+    "Stimato",
+    "Scelta di rappresentazione"
+  ],
+  "revisione": "Documentazione bibliografica e iconografica verificata per questa edizione. Revisione paleontologica specialistica del prodotto non ancora acquisita.",
+  "notaCronologia": "ka indica migliaia di anni fa. Le età si riferiscono all’esemplare o al contesto secondo la singola scheda. Sovrapposizione nel tempo, presenza nello stesso territorio e contatto documentato sono evidenze distinte.",
+  "capitoli": [
+    {
+      "id": "lf1",
+      "idAtlante": "neanderthal",
+      "titolo": "La Ferrassie 1",
+      "specie": "Homo neanderthalensis",
+      "localita": "Savignac-de-Miremont, Dordogna, Francia",
+      "cronologia": "42,6–39,8 mila anni cal BP per la deposizione associata",
+      "inventario": "MNHN-HA-23645-2 (cranio e mandibola)",
+      "istituzione": "Muséum national d’Histoire naturelle, Parigi",
+      "parti": "Cranio, mandibola e gran parte dello scheletro postcraniale.",
+      "cronologiaNota": "Balzeau et al. (2026): datazioni radiocarboniche su fauna sotto lo scheletro. Il modello colloca la deposizione associata fra 42.610 e 39.830 anni cal BP (95,4%). Rivede le stime precedenti del contesto; manca una data diretta dello scheletro.",
+      "tipoData": "contesto",
+      "minKa": 39.83,
+      "maxKa": 42.61,
+      "sogliaKa": null,
+      "coordinateNota": "Riparo della Dordogna, coordinate arrotondate.",
+      "lat": 44.95,
+      "lon": 0.94,
+      "url": "https://gbprof.it/Spazi/homo/#scheda/neanderthal",
+      "immagineWeb": "media/ferrassie-ambiente.webp",
+      "immagineUnity": "Paleo/Tavole/ferrassie-ambiente",
+      "immagineTitolo": "Un riparo nella Dordogna",
+      "immagineCredito": "gbprof · Libera, elaborazione con IA",
+      "immagineLicenza": "Produzione originale per l’atlante HOMO",
+      "immagineFonte": "https://doi.org/10.1007/s41982-023-00159-7",
+      "immagineDidascalia": "La Ferrassie documenta il rapporto tra parete calcarea, sedimenti e fasi di occupazione. L’apertura illustrata consente di leggere il funzionamento di un riparo roccioso.",
+      "modelloUnity": "Paleo/Modelli/RepertoLF1",
+      "modelloEsterno": "https://sketchfab.com/3d-models/homo-neanderthalensis-la-ferrassie-1-deee9c36d66548ef82a7ae32c25a707b",
+      "visteEsterne": [
+        {
+          "fase": "reperto",
+          "tipo": "Scansione a luce strutturata del calco di La Ferrassie 1",
+          "modelloUnity": "Paleo/Modelli/RepertoLF1",
+          "modelloWeb": "ricostruzioni/modelli/RepertoLF1.glb",
+          "posterWeb": "ricostruzioni/modelli/RepertoLF1.jpg",
+          "livello": "Documentato",
+          "url": "https://sketchfab.com/3d-models/homo-neanderthalensis-la-ferrassie-1-deee9c36d66548ef82a7ae32c25a707b",
+          "licenza": "Service de biologie du comportement, Université de Liège · CC BY 4.0",
+          "licenzaUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "didascalia": "La superficie deriva dal calco dell’Université de Liège. La riproduzione del calco e l’acquisizione digitale introducono ciascuna un margine di scarto rispetto al fossile."
+        },
+        {
+          "fase": "confronto",
+          "tipo": "Calco Smithsonian, confronto indipendente",
+          "url": "https://humanorigins.si.edu/evidence/3d-collection/fossils/891/la-ferrassie",
+          "embed": "https://3d-api.si.edu/voyager/3d_package:62c5a1ab-24bc-467d-8566-5e67be2fc41d",
+          "licenza": "Consultazione nel visualizzatore ufficiale; diritti e condizioni specifici nella scheda dell’oggetto."
+        }
+      ],
+      "diritti": "La geometria distribuita con Unity e con l’atlante deriva dal calco digitalizzato dall’Université de Liège con licenza CC BY 4.0. Il calco dello Smithsonian è disponibile nel suo visualizzatore come confronto indipendente. Il MNHN conserva l’originale e ne pubblica la scheda.",
+      "pagine": [
+        {
+          "titolo": "Sotto il riparo",
+          "testo": "Nel 1909 Denis Peyrony e Louis Capitan scoprirono le ossa di un adulto sotto il Grand Abri. Ruota il calco di questo individuo, digitalizzato dall’Université de Liège, e segui il profilo basso della volta fino al rilievo sopra le orbite. Il fossile originale è conservato a Parigi.",
+          "livello": "Documentato"
+        },
+        {
+          "titolo": "Come si data questo incontro",
+          "testo": "Sei frammenti di fauna deposti sotto lo scheletro hanno permesso di datare il contesto. Nel 2026 il modello colloca la deposizione fra 42.610 e 39.830 anni calibrati prima del presente, con una probabilità del 95,4%. Il campione è di origine animale.",
+          "livello": "Stimato"
+        },
+        {
+          "titolo": "Che cosa racconta il corpo",
+          "testo": "La conservazione dello scheletro permette un confronto insolito fra testa e corpo dello stesso individuo. Il museo stima un uomo adulto alto circa 1,60 m. Forma del torace, massa muscolare e spessori della pelle richiedono passaggi interpretativi distinti.",
+          "livello": "Stimato"
+        },
+        {
+          "titolo": "Dal cranio al volto",
+          "testo": "Il bordo delle orbite e l’apertura nasale impongono vincoli alla posizione degli occhi e alla radice del naso. Labbra e padiglioni auricolari lasciano più possibilità. L’approssimazione facciale della sala illustra una soluzione compatibile, in attesa di revisione specialistica.",
+          "livello": "Stimato"
+        },
+        {
+          "titolo": "Una scheggia tra le dita",
+          "testo": "Una simulazione basata sulle ossa della mano destra di LF1 mostra che le estremità di pollice e indice potevano toccarsi. Una presa di precisione è quindi plausibile. La scheggia richiama i manufatti musteriani del sito e il mantello la lavorazione delle pelli documentata in altri ripari della Dordogna.",
+          "livello": "Stimato"
+        },
+        {
+          "titolo": "L’incontro",
+          "testo": "La figura solleva lo sguardo dalla pietra. Il gesto, il movimento del respiro, capelli, carnagione e taglio del mantello appartengono all’allestimento. La valle oltre il riparo evoca la Dordogna pleistocenica. Il punto di vista e il paesaggio visibile sono ricostruiti.",
+          "livello": "Scelta di rappresentazione"
+        }
+      ],
+      "fonti": [
+        {
+          "titolo": "MNHN · Homme de La Ferrassie 1",
+          "url": "https://www.mnhn.fr/fr/homme-de-la-ferrassie-1"
+        },
+        {
+          "titolo": "Université de Liège, Service de biologie du comportement · Scansione del calco usata nella sala",
+          "url": "https://sketchfab.com/3d-models/homo-neanderthalensis-la-ferrassie-1-deee9c36d66548ef82a7ae32c25a707b"
+        },
+        {
+          "titolo": "Balzeau et al., 2026 · Radiocarbonio sulla fauna associata a LF1",
+          "url": "https://doi.org/10.1016/j.jas.2026.106515"
+        },
+        {
+          "titolo": "Guérin et al., 2023 · Datazione del sedimento associato a LF1",
+          "url": "https://doi.org/10.48738/2023.iss1.811"
+        },
+        {
+          "titolo": "Talamo et al., 2020 · Cronologia e contesti del riparo",
+          "url": "https://doi.org/10.1002/jqs.3236"
+        },
+        {
+          "url": "https://doi.org/10.1038/422395a",
+          "titolo": "Niewoehner et al., 2003 · La presa di precisione nella mano di LF1"
+        },
+        {
+          "titolo": "Soressi et al., 2013 · Strumenti per le pelli in altri siti della Dordogna",
+          "url": "https://doi.org/10.1073/pnas.1302730110"
+        },
+        {
+          "titolo": "Smithsonian · Confronto con il calco digitale",
+          "url": "https://humanorigins.si.edu/evidence/3d-collection/fossils/891/la-ferrassie"
+        }
+      ],
+      "descrizioneModello": "Il cranio manipolabile deriva dalla scansione a luce strutturata di un calco di La Ferrassie 1, pubblicata dal Service de biologie du comportement dell’Université de Liège. La superficie digitalizzata documenta il calco. L’originale è conservato al Muséum national d’Histoire naturelle di Parigi.",
+      "licenzaModello": "Homo neanderthalensis (La Ferrassie 1), Service de biologie du comportement, Université de Liège · CC BY 4.0 · adattamento per la sala gbprof, 2026.",
+      "licenzaModelloUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "harbin",
+      "idAtlante": "denisova",
+      "titolo": "Il cranio di Harbin",
+      "specie": "Denisoviani",
+      "localita": "Harbin, Heilongjiang, Cina",
+      "cronologia": "Almeno 146 mila anni fa",
+      "inventario": "HBSM2018-000018(A)",
+      "istituzione": "Geoscience Museum, Hebei GEO University, Shijiazhuang",
+      "parti": "Cranio quasi completo con un molare superiore. Manca la mandibola.",
+      "cronologiaNota": "Datazione diretta con serie dell’uranio. Il minimo lascia aperta l’età più antica. Il punto esatto del recupero e il livello stratigrafico restano incerti.",
+      "tipoData": "minimo",
+      "minKa": null,
+      "maxKa": null,
+      "sogliaKa": 146,
+      "coordinateNota": "Posizione orientativa della città. Punto di scavo e strato non documentati direttamente.",
+      "lat": 45.8,
+      "lon": 126.6,
+      "url": "https://gbprof.it/Spazi/homo/#scheda/denisova",
+      "immagineWeb": "media/harbin.webp",
+      "immagineUnity": "Paleo/Tavole/harbin",
+      "immagineTitolo": "Il cranio di Harbin",
+      "immagineCredito": "Fu e collaboratori · Cell, 2025, fig. 1A. Ritaglio pubblicato su Wikimedia Commons",
+      "immagineLicenza": "CC BY 4.0",
+      "immagineFonte": "https://commons.wikimedia.org/wiki/File:Homo_longi_holotype.jpg",
+      "immagineDidascalia": "Vista del cranio designato come olotipo di Homo longi. Il DNA mitocondriale estratto dal tartaro lo collega ai Denisoviani. La foto documenta un individuo, senza definire tutti i possibili aspetti di quella popolazione.",
+      "licenzaUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "modelloUnity": "",
+      "modelloEsterno": "",
+      "visteEsterne": [
+        {
+          "fase": "volto",
+          "tipo": "Approssimazione artistico-anatomica pubblicata da Cícero Moraes",
+          "url": "https://commons.wikimedia.org/wiki/File:Homo_longi_-_bust_-_Moraes_et_al._2026.stl",
+          "licenza": "Cícero Moraes, 2026 · CC BY-SA 4.0",
+          "embed": "",
+          "modelloUnity": "Paleo/Modelli/BustoHarbin",
+          "modelloWeb": "ricostruzioni/modelli/BustoHarbin.glb",
+          "posterWeb": "ricostruzioni/modelli/BustoHarbin.jpg",
+          "posterUnity": "Paleo/Tavole/busto-harbin",
+          "livello": "Scelta di rappresentazione",
+          "didascalia": "Approssimazione facciale di Cícero Moraes. Il busto ha finitura neutra e misura 32,56 cm, base compresa, alla scala espositiva scelta."
+        }
+      ],
+      "diritti": "Le fonti scientifiche sono citate e collegate. Per ogni immagine è indicata la licenza specifica.",
+      "pagine": [
+        {
+          "titolo": "Un cranio ritrovato",
+          "testo": "Ampie orbite, arcate sopraorbitarie robuste e una volta lunga e bassa disegnano un profilo riconoscibile. Il reperto fu donato al museo nel 2018. Le circostanze riferite per il ritrovamento a Harbin lasciano aperta la posizione esatta dello scavo.",
+          "livello": "Documentato"
+        },
+        {
+          "titolo": "La traccia nel tartaro",
+          "testo": "Nel 2025 dal tartaro è stato recuperato DNA mitocondriale. La sequenza si colloca nella variabilità denisoviana. Un’analisi indipendente ha identificato 95 proteine antiche nell’osso petroso e varianti condivise con Denisova 3.",
+          "livello": "Documentato"
+        },
+        {
+          "titolo": "Un individuo, due nomi",
+          "testo": "Nel 2021 il cranio divenne l’esemplare tipo di Homo longi. Le due evidenze molecolari sostengono la sua appartenenza a una popolazione denisoviana. L’estensione del nome ad altri fossili asiatici richiede prove specifiche per ciascun reperto.",
+          "livello": "Stimato"
+        },
+        {
+          "titolo": "Quanto si può ricostruire",
+          "testo": "Manca la mandibola dell’individuo di Harbin. Nel busto di Cícero Moraes, il mento, le labbra e le orecchie integrano le parti che il fossile lascia aperte. Ruota il volto, poi torna alla fotografia del cranio per riconoscere la fronte e il bordo delle orbite.",
+          "livello": "Scelta di rappresentazione"
+        }
+      ],
+      "fonti": [
+        {
+          "titolo": "Ji et al., 2021 · Descrizione e deposito del tipo",
+          "url": "https://doi.org/10.1016/j.xinn.2021.100132"
+        },
+        {
+          "titolo": "Shao et al., 2021 · Datazione e provenienza",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8454624/"
+        },
+        {
+          "titolo": "Fu et al., 2025 · Il proteoma di Harbin",
+          "url": "https://doi.org/10.1126/science.adu9677"
+        },
+        {
+          "titolo": "Fu et al., 2025 · DNA mitocondriale dal tartaro",
+          "url": "https://doi.org/10.1016/j.cell.2025.05.040"
+        },
+        {
+          "titolo": "Moraes, 2023 · Approssimazione facciale del cranio di Harbin",
+          "url": "https://doi.org/10.6084/m9.figshare.24648591"
+        },
+        {
+          "titolo": "Cícero Moraes, 2026 · STL originale del busto di Harbin",
+          "url": "https://commons.wikimedia.org/wiki/File:Homo_longi_-_bust_-_Moraes_et_al._2026.stl"
+        }
+      ],
+      "modelloVoltoUnity": "Paleo/Modelli/BustoHarbin"
+    },
+    {
+      "id": "lb1",
+      "idAtlante": "flores",
+      "titolo": "LB1 di Liang Bua",
+      "specie": "Homo floresiensis",
+      "localita": "Grotta di Liang Bua, isola di Flores, Indonesia",
+      "cronologia": "Circa 100–60 mila anni fa per i fossili",
+      "inventario": "LB1",
+      "istituzione": "National Research Centre of Archaeology, Giacarta, deposito riportato dalle schede scientifiche",
+      "parti": "Cranio, mandibola e scheletro parziale con elementi di arti, mani, piedi e bacino.",
+      "cronologiaNota": "Intervallo stratigrafico della serie fossile. La data di circa 80 mila anni è la stima riassuntiva dello Smithsonian per LB1.",
+      "tipoData": "contesto",
+      "minKa": 60,
+      "maxKa": 100,
+      "sogliaKa": null,
+      "coordinateNota": "Località di scavo, arrotondata per la scala della carta.",
+      "lat": -8.53,
+      "lon": 120.44,
+      "url": "https://gbprof.it/Spazi/homo/#scheda/flores",
+      "immagineWeb": "media/flores-calco.webp",
+      "immagineUnity": "Paleo/Tavole/flores-calco",
+      "immagineTitolo": "Il calco museale del cranio di Flores",
+      "immagineCredito": "Rama · collezione MGL, inv. 95216",
+      "immagineLicenza": "CC BY-SA 3.0 FR",
+      "immagineFonte": "https://commons.wikimedia.org/wiki/File:Homo_Florensiensis-MGL_95216-P4150647-white.jpg",
+      "immagineDidascalia": "Calco conservato nella collezione geologica di Losanna. Questa replica di studio visualizza la forma cranica ricostruita. Materiale e colore sono quelli del calco, che va distinto dal fossile indonesiano.",
+      "licenzaUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+      "modelloUnity": "",
+      "modelloEsterno": "https://3d.si.edu/object/3d/homo-floresiensis-cranium%3A425a517b-8308-4ac9-8f3b-08f74e4ff9e5",
+      "visteEsterne": [
+        {
+          "fase": "reperto",
+          "tipo": "Scansione di calco",
+          "url": "https://3d.si.edu/object/3d/homo-floresiensis-cranium%3A425a517b-8308-4ac9-8f3b-08f74e4ff9e5",
+          "embed": "https://3d-api.si.edu/voyager/3d_package:425a517b-8308-4ac9-8f3b-08f74e4ff9e5",
+          "licenza": "Consultazione nel visualizzatore ufficiale; diritti e condizioni specifici nella scheda dell’oggetto."
+        },
+        {
+          "fase": "volto",
+          "tipo": "Approssimazione pubblicata · immagine",
+          "url": "https://commons.wikimedia.org/wiki/File:Homo_floresiensis_-_facial_approximation_-_color_2.jpg",
+          "immagineWeb": "media/flores-volto.webp",
+          "immagineUnity": "Paleo/Tavole/flores-volto",
+          "licenza": "Cícero Moraes, 2023 · CC BY-SA 4.0"
+        },
+        {
+          "fase": "individuo",
+          "tipo": "Ricostruzione illustrativa delle proporzioni corporee",
+          "url": "https://zenodo.org/records/10288681",
+          "embed": "https://sketchfab.com/models/999139d0d1084bd28e3bed63884125d9/embed",
+          "download": "https://zenodo.org/records/10288681/files/999139d0d1084bd28e3bed63884125d9.glb?download=1",
+          "licenza": "Keith Chan, 2022 · CC BY 4.0",
+          "modelloUnity": "Paleo/Modelli/FiguraLB1",
+          "modelloWeb": "ricostruzioni/modelli/FiguraLB1.glb",
+          "posterWeb": "ricostruzioni/modelli/FiguraLB1.jpg",
+          "posterUnity": "Paleo/Tavole/figura-lb1",
+          "livello": "Scelta di rappresentazione",
+          "didascalia": "Figura corporea di Keith Chan in posa A, con materiale verde uniforme. Mantiene l’altezza metrica originale di 1,002 m."
+        }
+      ],
+      "diritti": "Le fonti scientifiche sono citate e collegate. Per ogni immagine è indicata la licenza specifica.",
+      "pagine": [
+        {
+          "titolo": "Nella grotta di Flores",
+          "testo": "Gli scavi del 2003 portarono alla luce il cranio e parte dello scheletro di un adulto. Mani, piedi e parti del bacino aggiungono indizi che il solo cranio avrebbe lasciato sfuggire. Il calco fotografato appartiene alle collezioni di Losanna.",
+          "livello": "Documentato"
+        },
+        {
+          "titolo": "Misurare un corpo",
+          "testo": "Dalle ossa lunghe è stata stimata una statura di poco superiore al metro. La serie scheletrica oggi è collocata fra circa 100 e 60 mila anni fa. Sedimenti più giovani si erano accumulati accanto a quelli fossiliferi, complicando la prima lettura.",
+          "livello": "Stimato"
+        },
+        {
+          "titolo": "Ritrovare un possibile volto",
+          "testo": "La ricostruzione del 2023 parte dalla tomografia di LB1, completa per simmetria alcune lacune e usa deformazioni comparative per i tessuti. I confronti anatomici scelti dall’autore condizionano il risultato. Colore degli occhi, peli ed espressione sono scelte illustrative.",
+          "livello": "Scelta di rappresentazione"
+        },
+        {
+          "titolo": "La statura a scala umana",
+          "testo": "La figura di Keith Chan misura circa un metro, come indicano gli studi sulle proporzioni di LB1. La posa a braccia discoste espone la lunghezza relativa degli arti. Il verde uniforme è il materiale del modello didattico. Le proporzioni del volto e dei tessuti molli hanno un margine interpretativo.",
+          "livello": "Scelta di rappresentazione"
+        }
+      ],
+      "fonti": [
+        {
+          "titolo": "Brown et al., 2004 · Lo scheletro e la diagnosi",
+          "url": "https://doi.org/10.1038/nature02999"
+        },
+        {
+          "titolo": "Sutikna et al., 2016 · Revisione della stratigrafia",
+          "url": "https://doi.org/10.1038/nature17179"
+        },
+        {
+          "titolo": "Smithsonian · Fossile LB1 e parti conservate",
+          "url": "https://humanorigins.si.edu/evidence/human-fossils/fossils/lb-1"
+        },
+        {
+          "titolo": "Moraes, 2023 · Metodo dell’approssimazione facciale",
+          "url": "https://ortogonline.com/doc/pt_br/OrtogOnLineMag/6/Floresiensis.html"
+        },
+        {
+          "titolo": "Keith Chan, 2022 · Modello corporeo interpretativo di LB1",
+          "url": "https://doi.org/10.5281/zenodo.10288681"
+        }
+      ],
+      "modelloFiguraUnity": "Paleo/Modelli/FiguraLB1"
+    },
+    {
+      "id": "dh3",
+      "idAtlante": "naledi",
+      "titolo": "DH3 nella camera Dinaledi",
+      "specie": "Homo naledi",
+      "localita": "Rising Star, camera Dinaledi, Sudafrica",
+      "cronologia": "Tra 335 e 236 mila anni fa per il deposito",
+      "inventario": "DH3 · mandibola U.W. 101-361",
+      "istituzione": "Evolutionary Studies Institute, University of the Witwatersrand, Johannesburg",
+      "parti": "Porzione di volta cranica e mandibola frammentaria associata con molari molto usurati.",
+      "cronologiaNota": "Intervallo per il deposito di Dinaledi. Lo studio combina età di sedimenti, concrezioni e denti; il valore non è una data diretta di morte di DH3.",
+      "tipoData": "contesto",
+      "minKa": 236,
+      "maxKa": 335,
+      "sogliaKa": null,
+      "coordinateNota": "Località di scavo, arrotondata per la scala della carta.",
+      "lat": -26.02,
+      "lon": 27.71,
+      "url": "https://gbprof.it/Spazi/homo/#scheda/naledi",
+      "immagineWeb": "media/naledi-dh3.webp",
+      "immagineUnity": "Paleo/Tavole/naledi-dh3",
+      "immagineTitolo": "Il paratipo DH3",
+      "immagineCredito": "Lee R. Berger e collaboratori · eLife, 2015",
+      "immagineLicenza": "CC BY 4.0",
+      "immagineFonte": "https://commons.wikimedia.org/wiki/File:Homo_naledi_paratype_DH3.jpg",
+      "immagineDidascalia": "Vedute complementari di cranio e mandibola attribuiti al paratipo DH3. La dentatura presenta forte usura. La barra metrica originale misura 10 cm.",
+      "licenzaUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "modelloUnity": "Paleo/Modelli/MandibolaDH3",
+      "modelloEsterno": "",
+      "visteEsterne": [],
+      "diritti": "Le fonti scientifiche sono citate e collegate. Il credito e la licenza specifici accompagnano ogni tavola.",
+      "pagine": [
+        {
+          "titolo": "Un frammento alla volta",
+          "testo": "Le ossa della camera Dinaledi appartengono a numerosi individui. La tavola isola DH3: cerca prima i frammenti della volta cranica, poi la mandibola. Una scala di dieci centimetri permette di confrontare le sei viste.",
+          "livello": "Documentato"
+        },
+        {
+          "titolo": "La mandibola in mano",
+          "testo": "Le vedute mediale e occlusale della mandibola U.W. 101-361 hanno guidato la forma dell’oggetto. La barra della tavola fornisce la scala, circa 10 cm di lunghezza. La superficie fra i profili è interpolata. La tinta uniforme indica le zone prive di proiezione fotografica.",
+          "livello": "Stimato"
+        },
+        {
+          "titolo": "I denti di DH3",
+          "testo": "Le superfici dei molari sono consumate. L’usura è fra gli indizi che suggeriscono per DH3 un’età adulta relativamente avanzata. Nella mandibola si osserva la storia di questa persona. La mano e il piede documentati altrove nella sala di scavo appartengono al campione collettivo.",
+          "livello": "Stimato"
+        },
+        {
+          "titolo": "Il limite del ritratto",
+          "testo": "Lasciamo aperto il contorno del volto dove mancano le ossa. La camera conserva resti di età compatibile con quella dei primi sapiens conosciuti in altre regioni africane. Finora i fossili di Dinaledi non documentano un incontro fra i due gruppi.",
+          "livello": "Scelta di rappresentazione"
+        }
+      ],
+      "fonti": [
+        {
+          "titolo": "Berger et al., 2015 · Descrizione di DH3 e tavola 4",
+          "url": "https://doi.org/10.7554/eLife.09560"
+        },
+        {
+          "titolo": "Dirks et al., 2017 · Età dei depositi di Dinaledi",
+          "url": "https://doi.org/10.7554/eLife.24231"
+        },
+        {
+          "titolo": "Tavola originale di DH3 con viste della mandibola",
+          "url": "https://commons.wikimedia.org/wiki/File:Homo_naledi_paratype_DH3.jpg"
+        }
+      ],
+      "descrizioneModello": "U.W. 101-361, porzione mandibolare. Involucro stimato da due sagome fotografiche in scala. La trama fotografica copre le viste mediale e occlusale; la tinta uniforme indica la superficie interpolata.",
+      "licenzaModello": "CC BY 4.0 · tavola di Lee R. Berger e collaboratori (2015); elaborazione tridimensionale gbprof, 2026."
+    },
+    {
+      "id": "irhoud10",
+      "idAtlante": "sapiens",
+      "titolo": "Irhoud 10 nel sedimento",
+      "specie": "Homo sapiens",
+      "localita": "Jebel Irhoud, Marocco",
+      "cronologia": "315 ± 34 mila anni fa per il livello",
+      "inventario": "Irhoud 10",
+      "istituzione": "Institut national des sciences de l’archéologie et du patrimoine (INSAP), Rabat, istituto marocchino partner dello scavo",
+      "parti": "Resti craniofacciali frammentari con parti della regione orbitale e mascellare.",
+      "cronologiaNota": "Datazione per termoluminescenza di selci riscaldate associate nello strato 7; l’incertezza accompagna la stima.",
+      "tipoData": "stima_con_incertezza",
+      "minKa": 281,
+      "maxKa": 349,
+      "sogliaKa": null,
+      "coordinateNota": "Località di scavo, arrotondata per la scala della carta.",
+      "lat": 31.86,
+      "lon": -8.87,
+      "url": "https://gbprof.it/Spazi/homo/#scheda/sapiens",
+      "immagineWeb": "media/irhoud.webp",
+      "immagineUnity": "Paleo/Tavole/irhoud",
+      "immagineTitolo": "Irhoud 10 nello scavo",
+      "immagineCredito": "Shannon McPherron · Max Planck Institute for Evolutionary Anthropology",
+      "immagineLicenza": "CC BY 4.0",
+      "immagineFonte": "https://commons.wikimedia.org/wiki/File:Hublin_at_Jebel_Irhoud.jpg",
+      "immagineDidascalia": "Jean-Jacques Hublin indica il cranio Irhoud 10 ancora inglobato nel deposito. Le orbite emergono vicino all’indice del ricercatore. La posizione delle ossa sul terreno precede qualsiasi ricostruzione virtuale.",
+      "licenzaUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "modelloUnity": "",
+      "modelloEsterno": "",
+      "visteEsterne": [],
+      "diritti": "Le fonti scientifiche sono citate e collegate. Il credito e la licenza specifici accompagnano ogni tavola.",
+      "pagine": [
+        {
+          "titolo": "Due orbite nella terra",
+          "testo": "Nella fotografia Jean-Jacques Hublin indica i resti di Irhoud 10 prima della rimozione. Riconoscere il margine di un’orbita nel sedimento è il primo passo. La posizione dei frammenti, registrata durante lo scavo, orienta la ricomposizione successiva.",
+          "livello": "Documentato"
+        },
+        {
+          "titolo": "Dare un’età allo strato",
+          "testo": "Gli archeologi hanno misurato il tempo trascorso dal riscaldamento delle selci associate. La stima di 315 ± 34 mila anni situa l’occupazione e i fossili del livello. Per confrontare questa età con Dinaledi occorre tenere in vista sia gli intervalli sia la distanza geografica.",
+          "livello": "Stimato"
+        },
+        {
+          "titolo": "Dai frammenti alla faccia",
+          "testo": "L’orientamento reciproco delle ossa influisce sulla geometria della faccia ricostruita. Altri reperti di Jebel Irhoud aiutano il confronto. La fotografia scelta invita a distinguere ciò che appare ancora nel sedimento da una ricostruzione composita.",
+          "livello": "Scelta di rappresentazione"
+        }
+      ],
+      "fonti": [
+        {
+          "titolo": "Hublin et al., 2017 · I fossili di Jebel Irhoud",
+          "url": "https://doi.org/10.1038/nature22336"
+        },
+        {
+          "titolo": "Richter et al., 2017 · Cronologia del livello archeologico",
+          "url": "https://doi.org/10.1038/nature22335"
+        },
+        {
+          "titolo": "Archivi CNRS · Ricerche a Djebel Irhoud",
+          "url": "https://archives.mae.cnrs.fr/index.php/fouilles-de-djebel-irhoud-maroc"
+        }
+      ]
+    },
+    {
+      "id": "cch6",
+      "idAtlante": "luzon",
+      "titolo": "Cinque denti di Callao",
+      "specie": "Homo luzonensis",
+      "localita": "Callao Cave, Luzon settentrionale, Filippine",
+      "cronologia": "Almeno 50 mila anni per CCH6-a nella pubblicazione del 2019",
+      "inventario": "CCH6-a–e",
+      "istituzione": "National Museum of the Philippines, Manila",
+      "parti": "Cinque denti postcanini superiori destri, dal terzo premolare al terzo molare secondo la nomenclatura antropologica.",
+      "cronologiaNota": "Le serie dell’uranio pongono un minimo. Esistono rianalisi con soglie più antiche per il materiale di Callao. Il minimo attribuito a CCH1 riguarda un altro reperto.",
+      "tipoData": "minimo",
+      "minKa": null,
+      "maxKa": null,
+      "sogliaKa": 50,
+      "coordinateNota": "Località di scavo, arrotondata per la scala della carta.",
+      "lat": 17.7,
+      "lon": 121.82,
+      "url": "https://gbprof.it/Spazi/homo/#scheda/luzon",
+      "immagineWeb": "media/luzon-denti.webp",
+      "immagineUnity": "Paleo/Tavole/luzon-denti",
+      "immagineTitolo": "Cinque denti di Callao",
+      "immagineCredito": "Luzonensis",
+      "immagineLicenza": "CC BY-SA 4.0",
+      "immagineFonte": "https://commons.wikimedia.org/wiki/File:LuzonensisMolars.jpg",
+      "immagineDidascalia": "Cinque denti attribuiti a Homo luzonensis. Dimensioni e morfologia dentale sono centrali nella diagnosi originale. La foto non ha una scala metrica e non permette di ricavare la forma del volto.",
+      "licenzaUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "modelloUnity": "",
+      "modelloEsterno": "",
+      "visteEsterne": [],
+      "diritti": "Le fonti scientifiche sono citate e collegate. Il credito e la licenza specifici accompagnano ogni tavola.",
+      "pagine": [
+        {
+          "titolo": "Cinque denti, una persona",
+          "testo": "Le superfici con cui i denti si toccavano combaciano. Dimensioni, grado di usura e contatti hanno permesso di assegnare i cinque elementi CCH6 a un solo individuo. La serie comprende due premolari e tre molari superiori destri.",
+          "livello": "Documentato"
+        },
+        {
+          "titolo": "Un’età minima",
+          "testo": "La pubblicazione del 2019 ricava dal molare CCH6-a un minimo di circa 50 mila anni con le serie dell’uranio. La lettura dipende dalla storia dell’uranio nei tessuti. Datazioni e rianalisi di altri resti del sito vanno mantenute distinte.",
+          "livello": "Stimato"
+        },
+        {
+          "titolo": "Fin dove arriva un dente",
+          "testo": "Le corone e le radici consentono confronti con altri gruppi umani. L’altezza del corpo, l’ampiezza della faccia e la forma della punta del naso restano aperte. Le falangi e il femore trovati nella grotta non completano automaticamente lo scheletro di questa persona.",
+          "livello": "Scelta di rappresentazione"
+        }
+      ],
+      "fonti": [
+        {
+          "titolo": "Détroit et al., 2019 · Il materiale tipo di Callao",
+          "url": "https://doi.org/10.1038/s41586-019-1067-9"
+        },
+        {
+          "titolo": "Zanolli et al., 2022 · Struttura interna dei denti",
+          "url": "https://doi.org/10.1016/j.jhevol.2021.103124"
+        },
+        {
+          "titolo": "Grün e Stringer, 2023 · Questioni di datazione diretta",
+          "url": "https://doi.org/10.1016/j.quascirev.2023.108379"
+        }
+      ]
+    },
+    {
+      "id": "ngandong",
+      "idAtlante": "erectus",
+      "titolo": "Ngandong I, la calotta del Solo",
+      "specie": "Homo erectus",
+      "localita": "Terrazzo del fiume Solo, Ngandong, Giava, Indonesia",
+      "cronologia": "Tra 117 e 108 mila anni fa per il deposito",
+      "inventario": "Ng 1 · Solo Skull I",
+      "istituzione": "Collezioni geologiche indonesiane, Bandung",
+      "parti": "Calotta cranica priva di gran parte della base. Manca la faccia.",
+      "cronologiaNota": "Modello cronologico del livello fluviale, basato sulla terrazza e sui reperti associati. Il trasporto può separare nel tempo la morte e la deposizione.",
+      "tipoData": "contesto",
+      "minKa": 108,
+      "maxKa": 117,
+      "sogliaKa": null,
+      "coordinateNota": "Settore del terrazzo del Solo nella carta di Rizal et al., posizione indicativa.",
+      "lat": -7.2,
+      "lon": 111.5,
+      "url": "https://gbprof.it/Spazi/homo/#scheda/erectus",
+      "immagineWeb": "media/ngandong.webp",
+      "immagineUnity": "Paleo/Tavole/ngandong",
+      "immagineTitolo": "Ngandong I in più proiezioni",
+      "immagineCredito": "Franz Weidenreich · American Museum of Natural History, tavola pubblicata nel 1951",
+      "immagineLicenza": "Pubblico dominio · stato documentato nella scheda Commons",
+      "immagineFonte": "https://commons.wikimedia.org/wiki/File:Solo_Skull_I.png",
+      "immagineDidascalia": "Le vedute della calotta provengono dalla monografia postuma di Weidenreich sui resti giavanesi. Le lacune anatomiche restano visibili. Per la cronologia del contesto si rimanda all’analisi di Rizal e colleghi.",
+      "licenzaUrl": "",
+      "modelloUnity": "",
+      "modelloEsterno": "",
+      "visteEsterne": [],
+      "diritti": "Le fonti scientifiche sono citate e collegate. Il credito e la licenza specifici accompagnano ogni tavola.",
+      "pagine": [
+        {
+          "titolo": "Un cranio nel terrazzo",
+          "testo": "Ngandong I fu riconosciuto nel 1931 fra i fossili del fiume Solo. La tavola storica mostra la stessa calotta da quattro punti di vista. La superficie esterna della volta e l’apertura della base si distinguono anche senza che si conservi la faccia.",
+          "livello": "Documentato"
+        },
+        {
+          "titolo": "Quando arrivarono le ossa",
+          "testo": "Le età delle terrazze e della fauna indicano che il letto fossilifero si formò fra 117 e 108 mila anni fa. Un fiume può raccogliere resti più antichi. Questo intervallo data il deposito e offre un limite alla presenza locale conosciuta di erectus.",
+          "livello": "Stimato"
+        },
+        {
+          "titolo": "Il volto assente",
+          "testo": "Le vedute documentano i contorni della volta che si sono conservati. L’assenza di ossa facciali aumenta l’incertezza di qualsiasi ritratto. In questa scheda le quattro proiezioni servono a riconoscere lo stesso oggetto mentre cambia il punto di vista.",
+          "livello": "Scelta di rappresentazione"
+        }
+      ],
+      "fonti": [
+        {
+          "titolo": "Huffman et al., 2010 · Registro e provenienza degli individui",
+          "url": "https://paleoanthropology.org/ojs/index.php/paleo/article/view/603"
+        },
+        {
+          "titolo": "Rizal et al., 2020 · Cronologia del deposito di Ngandong",
+          "url": "https://doi.org/10.1038/s41586-019-1863-2"
+        },
+        {
+          "titolo": "Weidenreich, 1951 · Tavola anatomica di Ngandong I",
+          "url": "https://commons.wikimedia.org/wiki/File:Solo_Skull_I.png"
+        }
+      ]
+    },
+    {
+      "id": "mauer",
+      "idAtlante": "heidelberg",
+      "titolo": "Mauer 1, la mandibola tipo",
+      "specie": "Homo heidelbergensis",
+      "localita": "Grafenrain, Mauer, Germania",
+      "cronologia": "609 ± 40 mila anni fa per il deposito",
+      "inventario": "Mauer 1",
+      "istituzione": "Università di Heidelberg, Institut für Geowissenschaften",
+      "parti": "Mandibola robusta con dentatura permanente.",
+      "cronologiaNota": "Stima per il livello sabbioso ottenuta da due metodi indipendenti sui sedimenti e sulla fauna. Il valore precede le prime attestazioni di sapiens incluse nell’atlante.",
+      "tipoData": "stima_con_incertezza",
+      "minKa": 569,
+      "maxKa": 649,
+      "sogliaKa": null,
+      "coordinateNota": "Località di scavo, arrotondata per la scala della carta.",
+      "lat": 49.35,
+      "lon": 8.8,
+      "url": "https://gbprof.it/Spazi/homo/#scheda/heidelberg",
+      "immagineWeb": "media/mauer.webp",
+      "immagineUnity": "Paleo/Tavole/mauer",
+      "immagineTitolo": "La mandibola di Mauer",
+      "immagineCredito": "Gerbil",
+      "immagineLicenza": "CC BY 3.0",
+      "immagineFonte": "https://commons.wikimedia.org/wiki/File:Mandibel_from_Mauer.JPG",
+      "immagineDidascalia": "Fotografia dell’originale che dà il nome a Homo heidelbergensis. L’arcata dentaria e il corpo mandibolare sono osservabili insieme. Da questa mandibola non si ricavano né la forma della volta cranica né la statura dell’individuo.",
+      "licenzaUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "modelloUnity": "",
+      "modelloEsterno": "",
+      "visteEsterne": [],
+      "diritti": "Le fonti scientifiche sono citate e collegate. Il credito e la licenza specifici accompagnano ogni tavola.",
+      "pagine": [
+        {
+          "titolo": "Una mandibola nella sabbia",
+          "testo": "Nell’ottobre 1907, nella cava di Grafenrain, emerse una mandibola. La forma robusta del corpo e i denti conservati ne fanno un riferimento per il confronto. Schoetensack la scelse per definire il nome Homo heidelbergensis.",
+          "livello": "Documentato"
+        },
+        {
+          "titolo": "Una sabbia antica",
+          "testo": "Due metodi applicati a granuli di sabbia e denti animali associati collocano il livello intorno a 609 mila anni fa, con un’incertezza di circa 40 mila. Il reperto tipo è quindi molto più antico dei sapiens di Jebel Irhoud.",
+          "livello": "Stimato"
+        },
+        {
+          "titolo": "Un nome, più interpretazioni",
+          "testo": "Quali altri fossili debbano rientrare in Homo heidelbergensis è oggetto di discussione. Guardare una mandibola permette di valutare alcune affinità. Assegnarle il cranio, il corpo o un ambiente italiano di altri individui aggiungerebbe legami ancora da dimostrare.",
+          "livello": "Scelta di rappresentazione"
+        }
+      ],
+      "fonti": [
+        {
+          "titolo": "Università di Heidelberg · Museo geologico",
+          "url": "https://www.geow.uni-heidelberg.de/en/museum"
+        },
+        {
+          "titolo": "Wagner et al., 2010 · Datazione del sito tipo",
+          "url": "https://doi.org/10.1073/pnas.1012722107"
+        },
+        {
+          "titolo": "Stringer, 2012 · Lo status di Homo heidelbergensis",
+          "url": "https://doi.org/10.1002/evan.21311"
+        }
+      ]
+    },
+    {
+      "id": "les1",
+      "idAtlante": "naledi",
+      "titolo": "Neo, il cranio della camera Lesedi",
+      "specie": "Homo naledi",
+      "localita": "Rising Star, camera Lesedi, Sudafrica",
+      "cronologia": "Età di LES1 indeterminata",
+      "inventario": "LES1, detto Neo · camera U.W. 102",
+      "istituzione": "University of the Witwatersrand, Johannesburg",
+      "parti": "Cranio in più frammenti, ricomposto con la mandibola. Gli scopritori associano allo stesso individuo anche elementi del tronco e degli arti.",
+      "cronologiaNota": "La serie di Lesedi è priva di una stima cronologica indipendente. L’intervallo 335–236 mila anni riguarda la camera Dinaledi, un altro deposito del complesso.",
+      "tipoData": "non_determinata",
+      "minKa": null,
+      "maxKa": null,
+      "sogliaKa": null,
+      "coordinateNota": "Punto arrotondato del sistema carsico Rising Star. La carta colloca l’intero complesso.",
+      "lat": -26.02,
+      "lon": 27.71,
+      "url": "https://gbprof.it/Spazi/homo/#scheda/naledi",
+      "immagineWeb": "ricostruzioni/modelli/CranioLES1.jpg",
+      "immagineUnity": "Paleo/Tavole/les1",
+      "immagineTitolo": "Neo, la ricomposizione Wits in tre quarti",
+      "immagineCredito": "University of the Witwatersrand · MorphoSource 000054666 · versione VR di Keith Chan · rendering gbprof, 2026",
+      "immagineLicenza": "CC BY-NC 4.0",
+      "immagineFonte": "https://www.morphosource.org/concern/media/000054666",
+      "immagineDidascalia": "Vista della ricomposizione istituzionale di LES1. Si distinguono la volta cranica, l’apertura dell’orbita e la mandibola. Le fotografie dei frammenti isolati offrono il confronto con le parti conservate.",
+      "licenzaUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "modelloUnity": "Paleo/Modelli/CranioLES1",
+      "modelloEsterno": "https://www.morphosource.org/concern/media/000054666",
+      "visteEsterne": [
+        {
+          "fase": "reperto",
+          "tipo": "Scansione della ricomposizione Wits",
+          "url": "https://www.morphosource.org/concern/media/000054666",
+          "licenza": "CC BY-NC 4.0 · University of the Witwatersrand, collezione Homo naledi «Neo», MorphoSource 000054666 · versione VR di Keith Chan · conversione e rendering gbprof, 2026."
+        }
+      ],
+      "diritti": "Scansione Wits, adattamento VR di Keith Chan e riproduzioni del modello sono disponibili con attribuzione per usi non commerciali, CC BY-NC 4.0.",
+      "pagine": [
+        {
+          "titolo": "Due camere, due persone",
+          "testo": "Gli scavi della camera Lesedi hanno restituito le parti craniche di un adulto soprannominato Neo. I ricercatori le attribuiscono a LES1 e descrivono ossa del tronco e degli arti probabilmente associate. DH3, l’altra persona presente nel libro, proviene dalla camera Dinaledi.",
+          "livello": "Documentato"
+        },
+        {
+          "titolo": "Dai frammenti al cranio",
+          "testo": "Ruota il cranio e cerca le linee di giunzione attorno all’orbita e sulla volta. Stai osservando una scansione laser della ricomposizione pubblicata dalla University of the Witwatersrand. Nelle fotografie dello studio puoi riconoscere i singoli frammenti prima del montaggio.",
+          "livello": "Documentato"
+        },
+        {
+          "titolo": "Lo spazio interno",
+          "testo": "Gli autori hanno ricostruito virtualmente la superficie interna del cranio e stimato un volume di circa 610 cm³. Il risultato dipende dalle correzioni e dal completamento delle porzioni mancanti.",
+          "livello": "Stimato"
+        },
+        {
+          "titolo": "Un confronto verificabile",
+          "testo": "Il libro presenta il cranio ricomposto accanto alla mandibola di DH3. Puoi confrontare le parti conservate sapendo da quale camera proviene ciascun modello. L’età di Lesedi resta aperta.",
+          "livello": "Scelta di rappresentazione"
+        }
+      ],
+      "fonti": [
+        {
+          "titolo": "Hawks et al., 2017 · Fossili e ricostruzione della camera Lesedi",
+          "url": "https://doi.org/10.7554/eLife.24232"
+        },
+        {
+          "titolo": "University of the Witwatersrand · Fotografie della serie e della ricomposizione di LES1",
+          "url": "https://www.wits.ac.za/homonaledi/age/images/"
+        },
+        {
+          "titolo": "MorphoSource · U.W. 102, scansione laser della ricostruzione di Neo, media 000054666",
+          "url": "https://www.morphosource.org/concern/media/000054666"
+        },
+        {
+          "titolo": "Keith Chan · Attribuzione del modello 3D Neo alla collezione Wits",
+          "url": "https://github.com/chekeichan/anVRopomotron/blob/master/CREDITS.md"
+        },
+        {
+          "titolo": "Brophy et al., 2024 · Contesti cronologici di Rising Star",
+          "url": "https://doi.org/10.1080/03014460.2024.2321128"
+        }
+      ],
+      "descrizioneModello": "Scansione laser della ricomposizione Wits di LES1. Conserva i completamenti della ricostruzione pubblicata e la geometria della versione VR di Keith Chan.",
+      "licenzaModello": "CC BY-NC 4.0 · University of the Witwatersrand, collezione Homo naledi «Neo», MorphoSource 000054666 · versione VR di Keith Chan · conversione e rendering gbprof, 2026."
+    }
+  ]
+}
