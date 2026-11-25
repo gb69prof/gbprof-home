@@ -69,6 +69,11 @@ async function chapterLesedi(ex){
 }
 try {
   await record('Ingressi alle tre fasi di LF1',async()=>{
+    await page.goto(base,{waitUntil:'domcontentloaded'});
+    const entry=page.getByRole('link',{name:/Esplora le umanit/}).first();
+    await entry.click();
+    await page.locator('a[href="#scheda/neanderthal"]').first().click();
+    await page.waitForSelector('paleo-visita[specie=neanderthal] .viste button');
     const ex=await go(page,'neanderthal');const labels=await ex.locator('.viste button').allTextContents();
     assert.equal(labels.length,3);await snapshot(page,ex,'01-desktop-scheda');return labels;
   });
