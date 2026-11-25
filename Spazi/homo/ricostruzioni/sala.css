@@ -1,0 +1,31 @@
+.paleo {display:block;margin:1.3rem 0 2rem;padding:clamp(1rem,3.5vw,2.6rem);border:1px solid #bbae91;border-radius:5px;background:#f1ecdf;color:#232923;line-height:1.5}
+.paleo * {box-sizing:border-box}
+.paleo header {position:static;background:none;color:inherit;padding:0;border:0}
+.paleo h2 {font:500 clamp(1.7rem,4.5vw,3.1rem)/1.05 Georgia,serif;margin:.2em 0}
+.paleo h3 {font:600 1.2rem/1.25 Georgia,serif;margin:.5em 0}
+.paleo p {margin:.55em 0;max-width:78ch}
+.paleo a {color:#315147;text-decoration:underline;text-underline-offset:.15em}
+.paleo .localita {font-size:.9rem;color:#465244}
+.paleo .viste,.paleo .comandi,.paleo .punti {display:flex;flex-wrap:wrap;gap:.5rem;margin:.85rem 0}
+.paleo button {background:#fcf9f2;color:#263e34;border:1px solid #857e6a;border-radius:3px;font:inherit;font-size:.91rem;padding:.55em .78em;min-height:44px;cursor:pointer;touch-action:manipulation}
+.paleo button[aria-pressed=true],.paleo button.avvia {background:#294239;color:#fff;border-color:#294239}
+.paleo button:disabled {opacity:.55}
+.paleo :focus-visible {outline:3px solid #9c5427;outline-offset:3px}
+.paleo .esposizione {display:grid;grid-template-columns:minmax(0,1.28fr) minmax(14rem,.8fr);align-items:start;gap:clamp(1rem,3vw,2rem);margin:1.2rem 0}
+.paleo figure {margin:0;min-width:0}
+.paleo .vetrina {position:relative;overflow:hidden;background:#232b27;border-radius:4px;aspect-ratio:4/3;isolation:isolate}
+.paleo .vetrina img,.paleo model-viewer,.paleo .vetrina iframe {display:block;width:100%;height:100%;border:0;background:transparent}
+.paleo .vetrina img {object-fit:contain}
+.paleo .ambiente {background:linear-gradient(#ffffff00 65%,#241d176b),url('../media/ferrassie-ambiente.webp') center/cover}
+.paleo figcaption {padding:.5em 0;color:#495043;font-size:.85rem;line-height:1.45}
+.paleo .evidenze {padding:0;margin:.5rem 0}
+.paleo .evidenze dt {font-weight:700;margin:.65rem 0 .12rem}
+.paleo .evidenze dd {margin:0}
+.paleo .punti button {border-radius:2rem;font-size:.85rem}
+.paleo .hotspot {border-radius:100%;min-width:30px;min-height:30px;padding:0;font-weight:700;background:#fff8d8;border:2px solid #5b4934}
+.paleo details {margin:.65rem 0;padding:.55rem 0;border-top:1px solid #c7bdab}
+.paleo summary {cursor:pointer;font-weight:600}
+.paleo [hidden] {display:none!important}
+.paleo .stato {font-size:.9rem}
+@media(max-width:760px){.paleo .esposizione{display:block}.paleo .vetrina{max-height:60vh}.paleo .scheda{margin-top:1.2rem}}
+@media print{.paleo button,.paleo model-viewer{display:none}.paleo{break-inside:avoid}}
