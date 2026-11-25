@@ -99,12 +99,20 @@ try {
   await record('Visita offline dopo il primo caricamento, incluso modello 3D',async()=>{
     const ex=await go(page,'neanderthal');await open3d(page,ex,0,'RepertoLF1.glb');
     await page.waitForFunction(()=>Boolean(navigator.serviceWorker.controller),null,{timeout:60000});
-    const key=await page.evaluate(async()=>{const c=await caches.keys();for(const key of c){const cache=await caches.open(key);if(await cache.match(new URL('ricostruzioni/modelli/RepertoLF1.glb',location.href)))return key;}return '';});assert(key,'GLB non registrato nella cache offline');
+    const files=['RepertoLF1','VoltoLF1','FiguraLF1','BustoHarbin','FiguraLB1','MandibolaDH3','CranioLES1'].map(n=>'ricostruzioni/modelli/'+n+'.glb');
+    const warmed=await page.evaluate(async list=>Promise.all(list.map(async asset=>{
+      const r=await fetch(asset);const bytes=await r.arrayBuffer();return {file:asset,status:r.status,magic:String.fromCharCode(...new Uint8Array(bytes,0,4))};
+    })),files);
+    assert(warmed.every(x=>x.status===200&&x.magic==='glTF'),JSON.stringify(warmed));
+    const cached=await page.evaluate(async list=>{const keys=await caches.keys();const out=[];for(const file of list){for(const key of keys){const cache=await caches.open(key);if(await cache.match(new URL(file,location.href))){out.push(file);break;}}}return out;},files);
+    assert.equal(cached.length,7,'Modelli nella CacheStorage: '+cached.join(', '));
     await desktop.setOffline(true);
     try{
       await page.reload({waitUntil:'domcontentloaded'});await ex.locator('.viste button').first().waitFor();
       const info=await open3d(page,ex,0,'RepertoLF1.glb');assert.equal(await page.evaluate(()=>navigator.onLine),false);
-      await snapshot(page,ex,'09-offline');return {cache:key,offline:true,...info};
+      const reopened=await page.evaluate(async list=>Promise.all(list.map(async file=>{const response=await fetch(file,{cache:'no-store'});return [file,response.status,(await response.arrayBuffer()).byteLength];})),files);
+      assert(reopened.every(row=>row[1]===200&&row[2]>1000),JSON.stringify(reopened));
+      await snapshot(page,ex,'09-offline');return {cache:cached,riaperti:reopened,offline:true,...info};
     }finally{await desktop.setOffline(false);}
   });
   await record('Fallback su mancato trasferimento del GLB',async()=>{
