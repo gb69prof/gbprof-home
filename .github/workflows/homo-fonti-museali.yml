@@ -1,0 +1,102 @@
+name: Acquisisci fonti paleoantropologiche
+on:
+  push:
+    branches: [homo-fonti-museali]
+    paths: ['.github/workflows/homo-fonti-museali.yml']
+permissions: {}
+jobs:
+  acquisizione:
+    if: github.ref == 'refs/heads/homo-fonti-museali' && github.repository == 'gb69prof/gbprof-home'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: homo-fonti-museali
+      - name: Confronta le impronte e registra le fonti
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: python
+        run: |
+          import base64
+          import hashlib
+          import json
+          import os
+          from pathlib import Path
+          import subprocess
+          import tempfile
+          from urllib.request import Request, urlopen
+
+          records = [
+              {
+                  "file": "ULiege_La_Ferrassie_1.glb",
+                  "opera": "Homo neanderthalensis (La Ferrassie 1), scansione del calco",
+                  "autore": "Service de biologie du comportement, Université de Liège",
+                  "licenza": "https://creativecommons.org/licenses/by/4.0/",
+                  "fonte": "https://sketchfab.com/3d-models/homo-neanderthalensis-la-ferrassie-1-deee9c36d66548ef82a7ae32c25a707b",
+                  "url": "https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-102/deee9c36d66548ef82a7ae32c25a707b.glb",
+                  "algoritmo": "sha256", "impronta": "db8ec455d0bd3f64431b16fdbf926450200b886227ab95f9bf5a83a5775b0cd8",
+              },
+              {
+                  "file": "Moraes_Harbin_2026.stl",
+                  "opera": "Homo longi, approssimazione facciale di Harbin",
+                  "autore": "Cicero Moraes", "licenza": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "fonte": "https://commons.wikimedia.org/wiki/File:Homo_longi_-_bust_-_Moraes_et_al._2026.stl",
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Homo_longi_-_bust_-_Moraes_et_al._2026.stl",
+                  "algoritmo": "sha1", "impronta": "ef8ce554c8a558ec1e19d63b2d6176fc39809e1d",
+              },
+              {
+                  "file": "Keith_Chan_LB1_APose.glb",
+                  "opera": "LB1 (Homo floresiensis), figura didattica in posa A",
+                  "autore": "Keith Chan", "licenza": "https://creativecommons.org/licenses/by/4.0/",
+                  "fonte": "https://sketchfab.com/3d-models/lb1-homo-floresiensis-a-pose-999139d0d1084bd28e3bed63884125d9",
+                  "url": "https://zenodo.org/records/10288681/files/999139d0d1084bd28e3bed63884125d9.glb?download=1",
+                  "algoritmo": "md5", "impronta": "3ec97bfc0d9d1ab50a5fa6cd61652f4f",
+              },
+          ]
+
+          def store_blob(data):
+              document = json.dumps({"encoding":"base64","content":base64.b64encode(data).decode()}).encode()
+              req = Request("https://api.github.com/repos/gb69prof/gbprof-home/git/blobs",
+                            data=document, method="POST", headers={
+                                "Authorization":"Bearer " + os.environ["GH_TOKEN"],
+                                "Content-Type":"application/json", "Accept":"application/vnd.github+json",
+                                "X-GitHub-Api-Version":"2022-11-28", "User-Agent":"gbprof-archivio-museale"})
+              with urlopen(req, timeout=45) as response:
+                  return json.load(response)["sha"]
+
+          destination = Path("reports/homo/crediti-fonti-museali.json")
+          destination.parent.mkdir(parents=True, exist_ok=True)
+          files_ok = 0
+          for record in records:
+              try:
+                  with tempfile.TemporaryDirectory() as tmp:
+                      file = Path(tmp) / record["file"]
+                      subprocess.run(["curl", "--silent", "--show-error", "--fail", "--location",
+                                      "--proto", "=https", "--proto-redir", "=https",
+                                      "--retry", "3", "--retry-all-errors", "--max-time", "120",
+                                      "--user-agent", "Biblioteca-gbprof/1.0 (educational 3D sources; https://github.com/gb69prof)",
+                                      "--output", str(file), record["url"]], check=True)
+                      data = file.read_bytes()
+                  if hashlib.new(record["algoritmo"], data).hexdigest() != record["impronta"]:
+                      raise ValueError("impronta diversa da quella pubblicata")
+                  record["bytes"] = len(data)
+                  record["sha256"] = hashlib.sha256(data).hexdigest()
+                  record["parti_git"] = [store_blob(data[i:i+360000]) for i in range(0,len(data),360000)]
+                  record["stato"] = "verificato"
+                  files_ok += 1
+              except Exception as exc:
+                  record["stato"] = "respinto"
+                  print(record["file"], type(exc).__name__, str(exc), flush=True)
+              print(record["file"], record["stato"], flush=True)
+          destination.write_text(json.dumps(records, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          subprocess.run(["git","config","user.name","github-actions[bot]"],check=True)
+          subprocess.run(["git","config","user.email","41898282+github-actions[bot]@users.noreply.github.com"],check=True)
+          subprocess.run(["git", "add", "--", str(destination)],check=True)
+          if subprocess.run(["git","diff","--cached","--quiet"]).returncode:
+              subprocess.run(["git","commit","-m","Registra crediti e impronte delle fonti museali"],check=True)
+              subprocess.run(["git","push","origin","HEAD:refs/heads/homo-fonti-museali"],check=True)
+          if files_ok != len(records):
+              raise SystemExit("Fonti non acquisite: " + str(len(records)-files_ok))
