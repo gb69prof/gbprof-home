@@ -58,7 +58,7 @@ jobs:
           ]
 
           def store_blob(data):
-              document = json.dumps({"encoding":"base64","content":base64.b64encode(data).decode()}).encode()
+              document = json.dumps({"encoding":"utf-8","content":base64.b64encode(data).decode()}).encode()
               req = Request("https://api.github.com/repos/gb69prof/gbprof-home/git/blobs",
                             data=document, method="POST", headers={
                                 "Authorization":"Bearer " + os.environ["GH_TOKEN"],
@@ -84,6 +84,7 @@ jobs:
                       raise ValueError("impronta diversa da quella pubblicata")
                   record["bytes"] = len(data)
                   record["sha256"] = hashlib.sha256(data).hexdigest()
+                  record["codifica_parti"] = "base64"
                   record["parti_git"] = [store_blob(data[i:i+360000]) for i in range(0,len(data),360000)]
                   record["stato"] = "verificato"
                   files_ok += 1
